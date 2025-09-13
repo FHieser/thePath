@@ -83,6 +83,6 @@ Perfect for both new players learning the system and experienced groups optimizi
 ## Implementation Notes
 
 Based on the complete Daggerheart System Reference Document located at:
-`daggerheart-srd/` (submodule from https://github.com/seansbox/daggerheart-srd.git)
+`lib/daggerheart-srd/` (submodule from https://github.com/seansbox/daggerheart-srd.git)
 
 Each agent references specific files and directories within the SRD for comprehensive, accurate system knowledge.

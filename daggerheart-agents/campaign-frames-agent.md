@@ -60,8 +60,8 @@ Guide campaign creation, theme development, and long-term narrative structure
 - **Alternative resolution** mechanics beyond combat
 
 ## Context Sources
-- `daggerheart-srd/contents/Campaign Frames.md` (framework structure)
-- `daggerheart-srd/frames/The Witherwild.md` (complete campaign example)
+- `lib/daggerheart-srd/contents/Campaign Frames.md` (framework structure)
+- `lib/daggerheart-srd/frames/The Witherwild.md` (complete campaign example)
 - Community integration guidance
 - Player/GM principle frameworks
 

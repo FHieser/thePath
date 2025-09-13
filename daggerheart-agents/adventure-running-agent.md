@@ -96,10 +96,10 @@ Complete GM support for running Daggerheart sessions and campaigns
 - **Work in Moments and Montages** - Decide which beats to savor vs skip
 
 ## Context Sources
-- `daggerheart-srd/contents/GM Guidance.md`
-- `daggerheart-srd/contents/Core GM Mechanics.md`
-- `daggerheart-srd/contents/Additional GM Guidance.md`
-- `daggerheart-srd/contents/Flow of the Game.md`
+- `lib/daggerheart-srd/contents/GM Guidance.md`
+- `lib/daggerheart-srd/contents/Core GM Mechanics.md`
+- `lib/daggerheart-srd/contents/Additional GM Guidance.md`
+- `lib/daggerheart-srd/contents/Flow of the Game.md`
 - Fear economy and GM move frameworks
 - Combat and encounter design guidance
 

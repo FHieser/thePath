@@ -41,18 +41,18 @@ Manage all aspects of weapons, armor, loot, and treasure in Daggerheart
 - **Equipment repair** and maintenance tracking
 
 ## Context Sources
-- `daggerheart-srd/contents/Equipment.md`
-- `daggerheart-srd/contents/Weapons.md`
-- `daggerheart-srd/contents/Armor.md`
-- `daggerheart-srd/contents/Loot.md`
-- `daggerheart-srd/contents/Gold.md`
-- `daggerheart-srd/contents/Primary Weapon Tables.md`
-- `daggerheart-srd/contents/Secondary Weapon Tables.md`
-- `daggerheart-srd/contents/Armor Tables.md`
-- `daggerheart-srd/contents/Consumables.md`
-- Individual weapon files in `daggerheart-srd/weapons/`
-- Individual armor files in `daggerheart-srd/armor/`
-- Individual item files in `daggerheart-srd/items/`
+- `lib/daggerheart-srd/contents/Equipment.md`
+- `lib/daggerheart-srd/contents/Weapons.md`
+- `lib/daggerheart-srd/contents/Armor.md`
+- `lib/daggerheart-srd/contents/Loot.md`
+- `lib/daggerheart-srd/contents/Gold.md`
+- `lib/daggerheart-srd/contents/Primary Weapon Tables.md`
+- `lib/daggerheart-srd/contents/Secondary Weapon Tables.md`
+- `lib/daggerheart-srd/contents/Armor Tables.md`
+- `lib/daggerheart-srd/contents/Consumables.md`
+- Individual weapon files in `lib/daggerheart-srd/weapons/`
+- Individual armor files in `lib/daggerheart-srd/armor/`
+- Individual item files in `lib/daggerheart-srd/items/`
 
 ## Agent Workflow
 1. **Selection:** Help choose appropriate equipment for character builds and concepts

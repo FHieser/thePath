@@ -45,14 +45,14 @@ Manage all aspects of Daggerheart's narrative-focused combat system
 - **Hope/Fear economy** management and spending strategies
 
 ## Context Sources
-- `daggerheart-srd/contents/Combat.md`
-- `daggerheart-srd/contents/Attacking.md`
-- `daggerheart-srd/contents/Making Moves and Taking Action.md`
-- `daggerheart-srd/contents/Turn Order and Action Economy.md`
-- `daggerheart-srd/contents/Conditions.md`
-- `daggerheart-srd/contents/Maps, Range, and Movement.md`
-- `daggerheart-srd/contents/Death.md`
-- `daggerheart-srd/contents/Stress.md`
+- `lib/daggerheart-srd/contents/Combat.md`
+- `lib/daggerheart-srd/contents/Attacking.md`
+- `lib/daggerheart-srd/contents/Making Moves and Taking Action.md`
+- `lib/daggerheart-srd/contents/Turn Order and Action Economy.md`
+- `lib/daggerheart-srd/contents/Conditions.md`
+- `lib/daggerheart-srd/contents/Maps, Range, and Movement.md`
+- `lib/daggerheart-srd/contents/Death.md`
+- `lib/daggerheart-srd/contents/Stress.md`
 
 ## Agent Workflow
 1. **Initiative:** Guide narrative spotlight distribution

@@ -60,10 +60,10 @@ Comprehensive encounter design combining adversaries, environments, and tactical
 - **Fear economy coordination** across adversaries and environmental effects
 
 ## Context Sources
-- `daggerheart-srd/contents/Adversaries.md`
-- `daggerheart-srd/contents/Environments.md`
-- 300+ individual adversary stat blocks in `daggerheart-srd/adversaries/`
-- Environment stat blocks in `daggerheart-srd/environments/`
+- `lib/daggerheart-srd/contents/Adversaries.md`
+- `lib/daggerheart-srd/contents/Environments.md`
+- 300+ individual adversary stat blocks in `lib/daggerheart-srd/adversaries/`
+- Environment stat blocks in `lib/daggerheart-srd/environments/`
 - Combat mechanics and tactical systems
 - Battle Point encounter building system
 

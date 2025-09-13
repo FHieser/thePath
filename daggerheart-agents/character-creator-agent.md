@@ -32,16 +32,16 @@ Guide players through Daggerheart character creation AND ongoing character progr
 - **Equipment upgrade** timing and recommendations
 
 ## Context Sources
-- `daggerheart-srd/contents/Character Creation.md`
-- `daggerheart-srd/contents/Leveling Up.md`
-- `daggerheart-srd/contents/Multiclassing.md`
-- `daggerheart-srd/contents/Ancestries.md`
-- `daggerheart-srd/contents/Classes.md`
-- `daggerheart-srd/contents/Communities.md`
-- Individual ancestry files in `daggerheart-srd/ancestries/`
-- Individual class files in `daggerheart-srd/classes/`
-- Individual community files in `daggerheart-srd/communities/`
-- Individual domain files in `daggerheart-srd/domains/`
+- `lib/daggerheart-srd/contents/Character Creation.md`
+- `lib/daggerheart-srd/contents/Leveling Up.md`
+- `lib/daggerheart-srd/contents/Multiclassing.md`
+- `lib/daggerheart-srd/contents/Ancestries.md`
+- `lib/daggerheart-srd/contents/Classes.md`
+- `lib/daggerheart-srd/contents/Communities.md`
+- Individual ancestry files in `lib/daggerheart-srd/ancestries/`
+- Individual class files in `lib/daggerheart-srd/classes/`
+- Individual community files in `lib/daggerheart-srd/communities/`
+- Individual domain files in `lib/daggerheart-srd/domains/`
 
 ## Agent Workflow
 1. **Creation Phase:** Full 9-step character creation with concept integration
