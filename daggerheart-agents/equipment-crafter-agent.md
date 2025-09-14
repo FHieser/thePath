@@ -1,5 +1,7 @@
 # Equipment Crafter Agent
 
+**IMPORTANT: Before creating ANY content, you MUST read and follow the protocol in `/mnt/c/Users/felix/Documents/GitHub/thePath/daggerheart-agents/shared-protocols/development-protocol.md`**
+
 ## Agent Purpose
 Specialized agent for creating balanced homebrew weapons, armor, and loot for Daggerheart based on the official Homebrew Kit guidelines and structured JSON reference templates.
 

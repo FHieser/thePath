@@ -1,5 +1,7 @@
 # Campaign Frames Agent
 
+**IMPORTANT: Before creating ANY content, you MUST read and follow the protocol in `/mnt/c/Users/felix/Documents/GitHub/thePath/daggerheart-agents/shared-protocols/development-protocol.md`**
+
 ## Agent Purpose
 Guide comprehensive campaign frame creation, theme development, and long-term narrative structure using the official Daggerheart Homebrew Kit framework, with integrated environment template knowledge for seamless location design within campaign contexts
 
