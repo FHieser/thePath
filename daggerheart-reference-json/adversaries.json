@@ -1,0 +1,410 @@
+{
+  "adversaries": {
+    "template": {
+      "name": "string",
+      "tier": "1-4",
+      "type": "Minion|Standard|Bruiser|Skulk|Leader|Solo|Horde|Ranged|Social|Support",
+      "description": "string",
+      "motives_tactics": ["string", "string"],
+      "difficulty": "number",
+      "thresholds": {
+        "major": "number",
+        "severe": "number"
+      },
+      "hit_points": "number",
+      "stress": "number",
+      "attack": {
+        "modifier": "number",
+        "weapon": "string",
+        "range": "string",
+        "damage": "string",
+        "type": "physical|magic"
+      },
+      "experiences": [
+        {
+          "name": "string",
+          "bonus": "number"
+        }
+      ],
+      "features": {
+        "passives": [
+          {
+            "name": "string",
+            "description": "string"
+          }
+        ],
+        "actions": [
+          {
+            "name": "string",
+            "cost": "Fear|Stress|none",
+            "description": "string"
+          }
+        ],
+        "reactions": [
+          {
+            "name": "string",
+            "trigger": "string",
+            "cost": "Fear|Stress|none",
+            "description": "string"
+          }
+        ]
+      }
+    },
+    "types": {
+      "minion": {
+        "description": "Weak adversaries meant to be defeated quickly, often in groups",
+        "typical_features": "Few features, Group Attack, Minion (defeated in one successful hit)",
+        "hp_range": "1-2",
+        "feature_count": "1-2 total"
+      },
+      "standard": {
+        "description": "Baseline adversaries that provide moderate challenge",
+        "typical_features": "Balanced mix of offense and utility",
+        "hp_range": "3-6",
+        "feature_count": "2-4 total"
+      },
+      "bruiser": {
+        "description": "High-damage, low-complexity adversaries",
+        "typical_features": "High damage output, lower attack modifiers, simple tactics",
+        "hp_range": "4-8",
+        "feature_count": "2-3 total, damage-focused"
+      },
+      "skulk": {
+        "description": "Stealthy, precision-based adversaries",
+        "typical_features": "Stealth abilities, precision strikes, mobility",
+        "hp_range": "3-5",
+        "feature_count": "3-4 total, stealth/mobility-focused"
+      },
+      "leader": {
+        "description": "Adversaries that command and coordinate others",
+        "typical_features": "Command abilities, troop summoning, tactical bonuses",
+        "hp_range": "5-8",
+        "feature_count": "4-6 total, many actions"
+      },
+      "solo": {
+        "description": "Single powerful adversaries designed to face entire parties",
+        "typical_features": "Multiple actions per turn, Relentless, Phase Changes",
+        "hp_range": "8-12",
+        "feature_count": "5-8 total, often Relentless"
+      },
+      "horde": {
+        "description": "Large groups that weaken as they take damage",
+        "typical_features": "Horde feature (damage decreases with HP loss), area effects",
+        "hp_range": "6-10",
+        "feature_count": "2-3 plus Horde feature"
+      },
+      "ranged": {
+        "description": "Distance-focused combatants",
+        "typical_features": "Higher attack modifiers, ranged attacks, positioning abilities",
+        "hp_range": "3-6",
+        "feature_count": "2-4 total, range-focused"
+      },
+      "social": {
+        "description": "Adversaries for interpersonal conflicts",
+        "typical_features": "Social manipulation, information gathering, non-combat resolution",
+        "hp_range": "Variable",
+        "feature_count": "3-6 total, many roleplay tools"
+      },
+      "support": {
+        "description": "Adversaries that enhance other threats",
+        "typical_features": "Healing, buffs, environmental control, low damage",
+        "hp_range": "3-5",
+        "feature_count": "3-4 total, utility-focused"
+      }
+    },
+    "scaling_guidelines": {
+      "improvised_statistics_by_tier": {
+        "tier_1": {
+          "attack_modifier": 1,
+          "damage_dice": "1d6+2 to 1d12+4",
+          "difficulty": 11,
+          "damage_thresholds": "Major 7/Severe 12"
+        },
+        "tier_2": {
+          "attack_modifier": 2,
+          "damage_dice": "2d6+3 to 2d12+4",
+          "difficulty": 14,
+          "damage_thresholds": "Major 10/Severe 20"
+        },
+        "tier_3": {
+          "attack_modifier": 3,
+          "damage_dice": "3d8+3 to 3d12+5",
+          "difficulty": 17,
+          "damage_thresholds": "Major 20/Severe 32"
+        },
+        "tier_4": {
+          "attack_modifier": 4,
+          "damage_dice": "4d8+10 to 4d12+15",
+          "difficulty": 20,
+          "damage_thresholds": "Major 25/Severe 45"
+        }
+      },
+      "hit_points_guidelines": {
+        "1": "Single successful hit defeats, no damage thresholds needed (Minion)",
+        "2": "Defeated in one hit, definitely down in two (requires Major threshold only)",
+        "3": "Could be defeated in one big hit, few hits otherwise",
+        "4-6": "Safest range for lasting a few hits without dragging",
+        "7-9": "Tougher adversaries that last the whole fight",
+        "10+": "Boss-level adversaries, use sparingly"
+      },
+      "damage_allocation_by_type": {
+        "bruisers_solos": "d10s or d12s - highest damage",
+        "hordes": "d8s or d10s initially, reduce to d4s/d6s when damaged",
+        "leaders": "d10s if combat-focused, d8s if command-focused",
+        "minions": "Flat damage instead of dice pools",
+        "ranged": "d8s or d10s - slightly higher damage",
+        "social_support": "d4s and d6s - lowest damage",
+        "skulks_standards": "d6s or d8s - moderate damage"
+      },
+      "attack_modifier_adjustments": {
+        "increase_by_1to4": "For adversaries that should hit more often",
+        "decrease_by_1to4": "For adversaries with especially powerful attacks",
+        "bruisers_minions_social": "Often lower attack modifiers",
+        "ranged": "Higher attack modifiers",
+        "solos_leaders": "Highest attack modifiers"
+      }
+    },
+    "common_features": [
+      {
+        "name": "Momentum",
+        "type": "Reaction",
+        "description": "When this adversary makes a successful attack against a PC, you gain a Fear.",
+        "typical_users": "Bruisers, Leaders, Solos",
+        "balance_note": "Creates more action opportunities for GM"
+      },
+      {
+        "name": "Relentless (X)",
+        "type": "Passive",
+        "description": "This adversary can be spotlighted up to X times per GM turn. Spend Fear as usual to spotlight them.",
+        "typical_users": "Solo adversaries primarily",
+        "balance_note": "Allows single adversary to compete with full party"
+      },
+      {
+        "name": "Slow",
+        "type": "Passive",
+        "description": "When you spotlight this adversary and they don't have a token on their stat block, they can't act yet. Place a token and describe preparation. Next spotlight with token allows action.",
+        "typical_users": "Powerful adversaries with devastating attacks",
+        "balance_note": "Telegraphs dangerous attacks, gives players reaction time"
+      },
+      {
+        "name": "Terrifying",
+        "type": "Passive",
+        "description": "When this adversary makes a successful attack, all PCs within Close range lose a Hope and you gain a Fear.",
+        "typical_users": "Major threats, boss-level adversaries",
+        "balance_note": "More powerful than Momentum - don't combine both"
+      },
+      {
+        "name": "Group Attack",
+        "type": "Passive",
+        "description": "Multiple minions can combine attacks for increased effectiveness",
+        "typical_users": "Minions exclusively",
+        "balance_note": "Makes minion swarms threatening despite individual weakness"
+      },
+      {
+        "name": "Horde",
+        "type": "Passive",
+        "description": "Damage decreases as the horde takes damage, representing loss of numbers",
+        "typical_users": "Horde-type adversaries only",
+        "balance_note": "Creates diminishing threat curve as battle progresses"
+      }
+    ],
+    "feature_balance": {
+      "limitations": {
+        "resource_costs": "Most common - Stress or Fear costs limit usage",
+        "action_reaction_rolls": "Require successful rolls or grant targets reaction rolls",
+        "usage_limits": "Once per rest, once per session, or vault placement",
+        "tokens": "Add/spend tokens to track limited uses"
+      },
+      "fear_features": {
+        "design_rule": "Features that cost Fear shouldn't generate Fear (avoid feedback loops)",
+        "power_level": "Reserved for most impactful effects",
+        "cost_range": "Usually 1-2 Fear maximum",
+        "scene_impact": "Should create turning points or reversals"
+      },
+      "cognitive_load": {
+        "reaction_limit": "Avoid too many reactions - heaviest GM mental load",
+        "feature_count_by_type": {
+          "minions_hordes": "Fewest features (1-3 total)",
+          "standards_bruisers_skulks_ranged_support": "Moderate features (2-4 total)",
+          "leaders_social": "More features for versatility (3-6 total)",
+          "solos": "Most features but manageable as single adversary (4-8 total)"
+        }
+      }
+    },
+    "examples": {
+      "tier_1_bandit": {
+        "name": "Bandit",
+        "tier": 1,
+        "type": "Standard",
+        "description": "A desperate outlaw who has turned to highway robbery.",
+        "motives_tactics": ["Survive", "Get paid", "Avoid authorities"],
+        "difficulty": 11,
+        "thresholds": {
+          "major": 7,
+          "severe": 12
+        },
+        "hit_points": 4,
+        "stress": 3,
+        "attack": {
+          "modifier": 1,
+          "weapon": "Rusty Sword",
+          "range": "Melee",
+          "damage": "1d8+2",
+          "type": "physical"
+        },
+        "experiences": [
+          {
+            "name": "Dirty Fighting",
+            "bonus": 2
+          }
+        ],
+        "features": {
+          "passives": [
+            {
+              "name": "Opportunist",
+              "description": "Gains advantage on attacks against Vulnerable targets."
+            }
+          ],
+          "actions": [
+            {
+              "name": "Desperate Strike",
+              "cost": "Stress",
+              "description": "Make an attack with advantage, but become Vulnerable until your next turn."
+            }
+          ],
+          "reactions": []
+        }
+      },
+      "tier_2_assassin_poisoner": {
+        "name": "Assassin Poisoner",
+        "tier": 2,
+        "type": "Skulk",
+        "description": "A cunning scoundrel skilled in both poisons and ambushing.",
+        "motives_tactics": ["Anticipate", "Get paid", "Kill", "Taint food and water"],
+        "difficulty": 14,
+        "thresholds": {
+          "major": 8,
+          "severe": 16
+        },
+        "hit_points": 4,
+        "stress": 4,
+        "attack": {
+          "modifier": 3,
+          "weapon": "Poisoned Throwing Dagger",
+          "range": "Close",
+          "damage": "2d8+1",
+          "type": "physical"
+        },
+        "experiences": [
+          {
+            "name": "Intrusion",
+            "bonus": 2
+          }
+        ],
+        "features": {
+          "passives": [
+            {
+              "name": "Grindletooth Venom",
+              "description": "Targets who mark HP from the Assassin's attacks are Vulnerable until they clear a HP."
+            },
+            {
+              "name": "Out of Nowhere",
+              "description": "The Assassin has advantage on attacks if they are Hidden."
+            }
+          ],
+          "actions": [
+            {
+              "name": "Fumigation",
+              "cost": "none",
+              "description": "Drop a smoke bomb that fills the air within Close range with smoke, Dizzying all targets in this area. Dizzied targets have disadvantage on their next action roll, then clear the condition."
+            }
+          ],
+          "reactions": []
+        }
+      },
+      "tier_3_ogre_bruiser": {
+        "name": "Ogre Bruiser",
+        "tier": 3,
+        "type": "Bruiser",
+        "description": "A massive, simple-minded giant with tremendous physical strength.",
+        "motives_tactics": ["Smash obstacles", "Follow orders", "Intimidate smaller creatures"],
+        "difficulty": 16,
+        "thresholds": {
+          "major": 20,
+          "severe": 32
+        },
+        "hit_points": 8,
+        "stress": 2,
+        "attack": {
+          "modifier": 2,
+          "weapon": "Massive Club",
+          "range": "Melee",
+          "damage": "3d12+5",
+          "type": "physical"
+        },
+        "experiences": [
+          {
+            "name": "Intimidation",
+            "bonus": 3
+          }
+        ],
+        "features": {
+          "passives": [
+            {
+              "name": "Thick Hide",
+              "description": "Reduce all damage taken by 2 (minimum 1)."
+            }
+          ],
+          "actions": [
+            {
+              "name": "Ground Slam",
+              "cost": "Stress",
+              "description": "Make an attack against all targets within Very Close range. Successful hits knock targets prone."
+            }
+          ],
+          "reactions": [
+            {
+              "name": "Momentum",
+              "trigger": "When this adversary makes a successful attack against a PC",
+              "cost": "none",
+              "description": "You gain a Fear."
+            }
+          ]
+        }
+      }
+    },
+    "scaling_example": {
+      "assassin_poisoner_scaling": {
+        "tier_1_version": {
+          "changes_from_tier_2": [
+            "Difficulty: 14 → 12",
+            "Attack modifier: +3 → +2",
+            "Damage: 2d8+1 → 1d8",
+            "Thresholds: 8/16 → 5/10",
+            "Removed: Grindletooth Venom feature"
+          ]
+        },
+        "tier_3_version": {
+          "changes_from_tier_2": [
+            "Difficulty: 14 → 16",
+            "Attack modifier: +3 → +4",
+            "Damage: 2d8+1 → 3d8+4",
+            "Thresholds: 8/16 → 15/30",
+            "Hit Points: 4 → 4 (could increase to 5)"
+          ]
+        },
+        "tier_4_version": {
+          "changes_from_tier_2": [
+            "Difficulty: 14 → 19",
+            "Attack modifier: +3 → +5",
+            "Damage: 2d8+1 → 4d8+8",
+            "Thresholds: 8/16 → 21/35",
+            "Hit Points: 4 → 5",
+            "Experience bonuses increased",
+            "New reaction: 'On the Move' added"
+          ]
+        }
+      }
+    }
+  }
+}

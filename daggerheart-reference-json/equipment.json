@@ -1,0 +1,359 @@
+{
+  "equipment": {
+    "weapons": {
+      "template": {
+        "name": "string",
+        "tier": "1-4",
+        "type": "Primary|Secondary",
+        "range": "Melee|Very Close|Close|Far|Very Far",
+        "trait": "Strength|Agility|Finesse|Instinct|Presence|Knowledge",
+        "damage": {
+          "dice": "string (e.g., '1d8', '2d6')",
+          "bonus": "number",
+          "type": "physical|magic"
+        },
+        "burden": "1|2",
+        "feature": {
+          "name": "string",
+          "description": "string"
+        }
+      },
+      "damage_scaling": {
+        "base_damage": {
+          "melee_very_close_close": {
+            "one_handed": "d8",
+            "two_handed": "d10"
+          },
+          "far_very_far": {
+            "one_handed": "d6",
+            "two_handed": "d6"
+          }
+        },
+        "tier_bonuses": {
+          "tier_1": {
+            "one_handed": 1,
+            "two_handed": 3
+          },
+          "tier_2": {
+            "one_handed": 3,
+            "two_handed": 6
+          },
+          "tier_3": {
+            "one_handed": 6,
+            "two_handed": 9
+          },
+          "tier_4": {
+            "one_handed": 9,
+            "two_handed": 12
+          }
+        }
+      },
+      "design_principles": {
+        "two_handed_weapons": "Higher damage but often have negative features",
+        "ranged_weapons": "Smaller damage dice compared to melee of same tier",
+        "positive_features": "Reduce damage die or bonus to balance",
+        "negative_features": "Increase damage die or bonus to compensate",
+        "secondary_weapons": "Lower damage bonuses, only one-handed, often support primary attacks"
+      },
+      "features": {
+        "primary_weapon_features": [
+          {
+            "name": "Brutal",
+            "description": "When you roll the maximum value on a damage die, roll an additional damage die.",
+            "balance_note": "Positive feature - may reduce base damage"
+          },
+          {
+            "name": "Burning",
+            "description": "When you roll a 6 on a damage die, the target must mark a Stress.",
+            "balance_note": "Positive feature - may reduce base damage"
+          },
+          {
+            "name": "Cumbersome",
+            "description": "−1 to Finesse",
+            "balance_note": "Negative feature - may increase base damage"
+          },
+          {
+            "name": "Deadly",
+            "description": "When you deal Severe damage, the target must mark an additional HP.",
+            "balance_note": "Positive feature - may reduce base damage"
+          },
+          {
+            "name": "Dueling",
+            "description": "When there are no other creatures within Close range of the target, gain advantage on your attack roll against them.",
+            "balance_note": "Situational positive - minor damage adjustment"
+          },
+          {
+            "name": "Heavy",
+            "description": "−1 to Evasion",
+            "balance_note": "Negative feature - may increase base damage"
+          },
+          {
+            "name": "Massive",
+            "description": "−1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.",
+            "balance_note": "Mixed feature - penalty with benefit"
+          },
+          {
+            "name": "Powerful",
+            "description": "On a successful attack, roll an additional damage die and discard the lowest result.",
+            "balance_note": "Positive feature - may reduce base damage"
+          },
+          {
+            "name": "Quick",
+            "description": "When you make an attack, you can mark a Stress to target another creature within range.",
+            "balance_note": "Positive feature - may reduce base damage"
+          },
+          {
+            "name": "Reliable",
+            "description": "+1 to attack rolls",
+            "balance_note": "Strong positive feature - significant damage reduction"
+          },
+          {
+            "name": "Reloading",
+            "description": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again.",
+            "balance_note": "Negative feature - may increase base damage"
+          },
+          {
+            "name": "Scary",
+            "description": "On a successful attack, the target must mark a Stress.",
+            "balance_note": "Positive feature - may reduce base damage"
+          }
+        ],
+        "secondary_weapon_features": [
+          {
+            "name": "Barrier",
+            "description": "+2 to Armor Score; −1 to Evasion",
+            "scaling": "Fixed bonus regardless of tier"
+          },
+          {
+            "name": "Paired",
+            "description": "+2 to primary weapon damage to targets within Melee range",
+            "scaling": "Tier 1: +2, Tier 2: +3, Tier 3: +4, Tier 4: +5"
+          },
+          {
+            "name": "Protective",
+            "description": "+1 to Armor Score",
+            "scaling": "Bonus equals tier (Tier 3 = +3 Armor Score)"
+          }
+        ]
+      },
+      "examples": {
+        "tier_1_broadsword": {
+          "name": "Broadsword",
+          "tier": 1,
+          "type": "Primary",
+          "range": "Melee",
+          "trait": "Strength",
+          "damage": {
+            "dice": "1d8",
+            "bonus": 0,
+            "type": "physical"
+          },
+          "burden": 1,
+          "feature": {
+            "name": "Reliable",
+            "description": "+1 to attack rolls"
+          },
+          "design_note": "Reliable feature reduced damage from d8+1 to d8+0"
+        },
+        "tier_2_greatsword": {
+          "name": "Greatsword",
+          "tier": 2,
+          "type": "Primary",
+          "range": "Melee",
+          "trait": "Strength",
+          "damage": {
+            "dice": "1d10",
+            "bonus": 6,
+            "type": "physical"
+          },
+          "burden": 2,
+          "feature": {
+            "name": "Massive",
+            "description": "−1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+          },
+          "design_note": "Standard two-handed Tier 2 damage with mixed feature"
+        },
+        "tier_1_buckler": {
+          "name": "Buckler",
+          "tier": 1,
+          "type": "Secondary",
+          "range": "Melee",
+          "trait": "Finesse",
+          "damage": {
+            "dice": "1d4",
+            "bonus": 0,
+            "type": "physical"
+          },
+          "burden": 1,
+          "feature": {
+            "name": "Protective",
+            "description": "+1 to Armor Score"
+          }
+        }
+      }
+    },
+    "armor": {
+      "template": {
+        "name": "string",
+        "tier": "1-4",
+        "armor_score": "number",
+        "damage_thresholds": {
+          "major": "number",
+          "severe": "number"
+        },
+        "feature": {
+          "name": "string",
+          "description": "string"
+        }
+      },
+      "scaling_guidelines": {
+        "tier_1": {
+          "thresholds_range": "5/11 to 8/17",
+          "score_range": "3 to 4"
+        },
+        "tier_2": {
+          "thresholds_range": "7/16 to 13/28",
+          "score_range": "4 to 5"
+        },
+        "tier_3": {
+          "thresholds_range": "9/23 to 17/43",
+          "score_range": "5 to 6"
+        },
+        "tier_4": {
+          "thresholds_range": "11/32 to 18/48",
+          "score_range": "6 to 8"
+        }
+      },
+      "design_principles": {
+        "high_protection_armor": "Higher Armor Score and thresholds usually have negative features",
+        "light_armor": "Low protection for tier often has positive features",
+        "balance_rule": "Armor with both high slots AND high thresholds should almost never have beneficial features"
+      },
+      "features": [
+        {
+          "name": "Flexible",
+          "description": "+1 to Evasion",
+          "balance_note": "Positive feature - typically on lighter armor"
+        },
+        {
+          "name": "Heavy",
+          "description": "−1 to Evasion",
+          "balance_note": "Negative feature - allows higher protection"
+        },
+        {
+          "name": "Very Heavy",
+          "description": "−2 to Evasion; −1 to Agility",
+          "balance_note": "Strong negative feature - allows much higher protection"
+        },
+        {
+          "name": "Resilient",
+          "description": "Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot.",
+          "balance_note": "Positive feature - may reduce protection values"
+        },
+        {
+          "name": "Fortified",
+          "description": "When you mark an Armor Slot, you reduce the severity of an attack by two thresholds instead of one.",
+          "balance_note": "Strong positive feature - significant protection reduction needed"
+        },
+        {
+          "name": "Channeling",
+          "description": "+1 to Spellcast Rolls",
+          "balance_note": "Specialized positive feature for spellcasters"
+        }
+      ],
+      "examples": {
+        "tier_1_leather_armor": {
+          "name": "Leather Armor",
+          "tier": 1,
+          "armor_score": 3,
+          "damage_thresholds": {
+            "major": 6,
+            "severe": 12
+          },
+          "feature": {
+            "name": "Flexible",
+            "description": "+1 to Evasion"
+          },
+          "design_note": "Low protection compensated by positive feature"
+        },
+        "tier_2_chainmail": {
+          "name": "Chainmail",
+          "tier": 2,
+          "armor_score": 5,
+          "damage_thresholds": {
+            "major": 10,
+            "severe": 20
+          },
+          "feature": {
+            "name": "Heavy",
+            "description": "−1 to Evasion"
+          },
+          "design_note": "High protection balanced by negative feature"
+        },
+        "tier_3_plate_armor": {
+          "name": "Plate Armor",
+          "tier": 3,
+          "armor_score": 6,
+          "damage_thresholds": {
+            "major": 17,
+            "severe": 43
+          },
+          "feature": {
+            "name": "Very Heavy",
+            "description": "−2 to Evasion; −1 to Agility"
+          },
+          "design_note": "Maximum protection with significant penalties"
+        }
+      }
+    },
+    "items_and_consumables": {
+      "items": {
+        "description": "Reusable equipment that enhances gameplay",
+        "categories": [
+          "Magical gems/stones (modify weapons/armor)",
+          "Improved traveling gear",
+          "Unique clothing and accessories",
+          "Magical tools",
+          "Minor artifacts",
+          "Recipes for consumables"
+        ],
+        "design_principles": [
+          "Should illustrate and support character motivations",
+          "Enhancement over replacement philosophy",
+          "Allow attachment to existing equipment via gems/modifications",
+          "Recipes encourage consumable use by making them renewable"
+        ]
+      },
+      "consumables": {
+        "description": "Limited-use items with hoarding prevention",
+        "design_principles": [
+          "5-item hoarding limit per consumable type",
+          "Useful enough to keep but not so powerful players hoard them",
+          "Good rewards for minor accomplishments",
+          "Don't build encounters expecting PC consumable use"
+        ],
+        "categories": [
+          "Special ammunition for ranged weapons",
+          "Enchanted rations",
+          "Runestones (one-time magical effects)",
+          "Temporary ability enhancements",
+          "Environmental protection items"
+        ],
+        "creation_guidelines": {
+          "power_level": "Less powerful than permanent features but more than standard actions",
+          "duration_options": [
+            "Until next roll with Fear",
+            "Until next rest",
+            "Single use immediately",
+            "Scene duration"
+          ],
+          "inspiration_sources": [
+            "Existing features made temporary",
+            "Scaled-down versions of powerful abilities",
+            "Situational advantages for specific challenges"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "daggerheart_reference_index": {
+    "description": "JSON structure references for Daggerheart homebrew content creation",
+    "version": "1.0",
+    "based_on": "Daggerheart Homebrew Kit v1.0 (July 31, 2025)",
+    "files": {
+      "environments.json": {
+        "description": "Templates and examples for environment creation",
+        "contains": [
+          "Environment template structure",
+          "Four environment types (Exploration, Social, Traversal, Event)",
+          "Feature design guidelines (passives, actions, reactions)",
+          "Example environments with complete stat blocks",
+          "Difficulty scaling by tier",
+          "GM question writing guidelines"
+        ],
+        "key_sections": [
+          "environments.template",
+          "environments.types",
+          "environments.examples",
+          "environments.creation_guidelines"
+        ]
+      },
+      "equipment.json": {
+        "description": "Weapon, armor, and item creation structures",
+        "contains": [
+          "Weapon template with damage scaling tables",
+          "Primary and secondary weapon features",
+          "Armor template with tier-appropriate guidelines",
+          "Items and consumables design principles",
+          "Balance considerations and feature trade-offs",
+          "Complete examples for all tiers"
+        ],
+        "key_sections": [
+          "equipment.weapons.template",
+          "equipment.weapons.damage_scaling",
+          "equipment.weapons.features",
+          "equipment.armor",
+          "equipment.items_and_consumables"
+        ]
+      },
+      "adversaries.json": {
+        "description": "Adversary creation templates and scaling guidelines",
+        "contains": [
+          "Adversary template structure",
+          "All 10 adversary types with descriptions",
+          "Improvised statistics by tier (official table)",
+          "Hit points guidelines and damage allocation",
+          "Common features (Momentum, Relentless, etc.)",
+          "Feature balance and cognitive load considerations",
+          "Scaling examples and tier conversion"
+        ],
+        "key_sections": [
+          "adversaries.template",
+          "adversaries.types",
+          "adversaries.scaling_guidelines",
+          "adversaries.common_features",
+          "adversaries.examples"
+        ]
+      }
+    },
+    "usage_guidelines": {
+      "for_agents": [
+        "Reference these structures when creating homebrew content",
+        "Use templates as starting points for new content",
+        "Follow scaling guidelines for tier-appropriate balance",
+        "Apply design principles consistently across content types",
+        "Validate creations against examples and guidelines"
+      ],
+      "for_developers": [
+        "JSON structures can be imported for content generation tools",
+        "Templates provide validation schemas for homebrew content",
+        "Examples serve as test cases for balance algorithms",
+        "Guidelines can be programmatically enforced"
+      ],
+      "key_principles": [
+        "Balance narrative focus and dynamic combat",
+        "Streamline mechanics and limit cognitive load",
+        "Design asymmetrically (PC vs adversary features)",
+        "Maintain tier-appropriate power levels",
+        "Follow official scaling tables and guidelines"
+      ]
+    },
+    "reference_tables": {
+      "tier_scaling": {
+        "tiers": "1-4 (character progression)",
+        "attack_modifiers": "T1: +1, T2: +2, T3: +3, T4: +4",
+        "difficulties": "T1: 11, T2: 14, T3: 17, T4: 20",
+        "damage_examples": "T1: 1d6+2 to 1d12+4, T2: 2d6+3 to 2d12+4, etc."
+      },
+      "weapon_damage_scaling": {
+        "base_melee_one_handed": "d8",
+        "base_melee_two_handed": "d10",
+        "base_ranged": "d6",
+        "tier_bonuses": "T1: +1/+3, T2: +3/+6, T3: +6/+9, T4: +9/+12"
+      },
+      "hit_points_guidelines": {
+        "minion": "1 HP (one-shot)",
+        "standard": "4-6 HP (few hits)",
+        "tough": "7-9 HP (whole fight)",
+        "boss": "10+ HP (use sparingly)"
+      }
+    },
+    "design_validation": {
+      "questions_to_ask": [
+        "Does this follow Daggerheart's 7 design principles?",
+        "Is the power level appropriate for its tier?",
+        "Does it use correct terminology and mechanics?",
+        "Will this add to or detract from table fun?",
+        "Is the cognitive load manageable for players/GM?",
+        "Does it enhance rather than replace existing content?"
+      ],
+      "red_flags": [
+        "PC features that reference Armor Slots or adversary mechanics",
+        "Adversary features that reference Hope or PC-specific mechanics",
+        "Weapons with high damage AND powerful positive features",
+        "Armor with high protection AND beneficial features",
+        "Too many reaction features on single adversary",
+        "Features that create positive feedback loops with Fear generation"
+      ]
+    }
+  }
+}
