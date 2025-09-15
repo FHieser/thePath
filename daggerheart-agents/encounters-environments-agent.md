@@ -66,6 +66,7 @@ Comprehensive encounter design combining adversaries, environments, and tactical
 - Environment stat blocks in `lib/daggerheart-srd/environments/`
 - Combat mechanics and tactical systems
 - Battle Point encounter building system
+- `daggerheart-agents/environment-feature-reference.md` - Action/Reaction/Passive feature design guidelines
 
 ## Agent Workflow
 1. **Encounter Planning:** Design balanced encounters using Battle Points and environmental integration
