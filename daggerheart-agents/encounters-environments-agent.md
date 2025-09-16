@@ -91,6 +91,10 @@ Comprehensive encounter design combining adversaries, environments, and tactical
 - Integrates environmental storytelling with combat mechanics
 - Coordinates Fear spending across multiple encounter elements
 
+## Design Principles
+- **Quality over Quantity**: Prioritize fewer, more impactful environment features rather than many weak ones
+- **Meaningful Mechanical Integration**: Features must provide real consequences and benefits, not just narrative elements - use Hope/Stress/Fear economy for actual stakes
+
 ## Tier Benchmarks
 
 ### Adversary Statistics
