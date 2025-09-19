@@ -17,9 +17,6 @@
 
   *What specific events shake the community's foundation? How do different residents cope with collective trauma and loss?*
 
-***Creatures in the Mist - Action:*** Spend 3 Fear to have Mist creatures breach the village's protective barrier and attack directly. This creates a challenging encounter as the creatures threaten residents and sacred spaces.
-
-  *What types of creatures emerge from the Mist? How do villagers react when their sanctuary is violated?*
 
 ## FEATURE QUESTIONS
 
