@@ -13,7 +13,7 @@
 
   *Who is leading this project? How will it look when completed? How are the players contributing to the effort?*
 
-***Path Security Projects - Passive:*** PCs can invest time and resources toward Path infrastructure improvements using materials and tools from the village supplies. These projects reduce specific Path location difficulties or remove dangerous features when completed.
+***Path Security Projects - Passive:*** PCs can invest time and resources toward Path infrastructure improvements using materials and tools from the village supplies. These projects reduce specific Path location difficulties or remove dangerous features when completed. PCs can only carry one security upgrade set per Path journey due to equipment limitations.
 
   *Who provides the specialized tools needed for this work? What materials does this Path section need? How do the PCs plan to make it safer?*
 
@@ -44,17 +44,19 @@
 - **Advanced Forge Expansion** (4 days) - Can be built each time PCs increase in Tier, allowing creation of equipment matching the party's current Tier
 
 **Path Security Projects:**
-- **Bridge Repairs** - Remove "Treacherous Crossing" feature from specific locations
-- **Trail Markers** - Reduce difficulty of navigation rolls by 2
-- **Safety Shelters** - Add emergency rest points that clear Mist Marks
-- **Cleared Obstacles** - Remove environmental hazards or dangerous terrain features
+- **Bridge Repair Kit** - Remove "Treacherous Crossing" feature from one specific location
+- **Trail Marker Set** - Reduce difficulty of navigation rolls by 2 at one specific location
+- **Portable Shelter Kit** - Add emergency rest point that clears Mist Marks at one location
+- **Obstacle Clearing Tools** - Remove one environmental hazard or dangerous terrain feature
+
+*Note: PCs can only carry one security upgrade set per Path journey due to equipment weight and complexity.*
 
 **Custom Project Guidelines:**
 GMs and players are encouraged to design unique projects that fit campaign needs. Consider mechanically sound benefits (difficulty reductions, resource bonuses, new capabilities) or flavorful additions (fast travel stations to important locations, housing for key NPCs, specialized workshops for character backgrounds). Each project should provide lasting mechanical or narrative benefits.
 
 ## FEATURE QUESTIONS
 
-- What items does the village consider absolutely essential for survival?
-- How do residents maintain and repair equipment with limited resources?
-- What would the village sacrifice to acquire a particular type of supply?
-- How does the community prevent hoarding during times of plenty?
+- How does the community celebrate when major projects are completed?
+- What materials are the hardest for the village to acquire or produce?
+- Which villager has the most expertise in construction and project management?
+- What past project failure still haunts the community's planning decisions?
