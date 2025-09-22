@@ -98,6 +98,7 @@ Access to structured adversary creation templates:
 - **Complete Stat Block Structure**: Name, tier, type, description, motives, difficulty, thresholds, HP, attack stats, experiences, features
 - **Feature Categories**: Passives (always active), Actions (GM-initiated), Reactions (triggered responses)
 - **Environment Templates**: Four types with difficulty scaling and feature design guidelines
+- **Official Benchmarks**: Reference `lib/og-dhsrd/index.html` for official adversary benchmarks, tier scaling tables, and design guidelines
 - **Validation Framework**: Design principle compliance and red flag detection
 
 **Design Principles:**
@@ -123,12 +124,13 @@ Access to structured adversary creation templates:
 
 **Content Creation Workflow:**
 1. **Concept Definition**: Establish adversary/environment role and narrative purpose
-2. **Type Selection**: Choose appropriate type from 10 adversary or 4 environment options
-3. **Template Application**: Use JSON structure with proper field completion
-4. **Statistics Assignment**: Apply tier-appropriate numbers from official scaling tables
-5. **Feature Selection**: Choose 1-3 features that capture core concept without overloading
-6. **Balance Validation**: Check against design principles and cognitive load guidelines
-7. **Integration Testing**: Consider interactions with PC abilities and other content
+2. **Benchmark Reference**: Consult `lib/og-dhsrd/index.html` for official tier scaling and type benchmarks
+3. **Type Selection**: Choose appropriate type from 10 adversary or 4 environment options
+4. **Template Application**: Use JSON structure with proper field completion
+5. **Statistics Assignment**: Apply tier-appropriate numbers from official scaling tables
+6. **Feature Selection**: Choose 1-3 features that capture core concept without overloading
+7. **Balance Validation**: Check against design principles and cognitive load guidelines
+8. **Integration Testing**: Consider interactions with PC abilities and other content
 
 **Environment Creation Process:**
 1. **Type Selection**: Choose based on intended player interaction (mystery, social, physical, dramatic)

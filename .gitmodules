@@ -1,3 +1,6 @@
 [submodule "lib/daggerheart-srd"]
 	path = lib/daggerheart-srd
 	url = https://github.com/seansbox/daggerheart-srd.git
+[submodule "lib/og-dhsrd"]
+	path = lib/og-dhsrd
+	url = https://github.com/callmepartario/og-dhsrd.git

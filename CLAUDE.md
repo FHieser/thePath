@@ -26,6 +26,7 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
 
 ### Data Sources
 - **Official SRD**: `lib/daggerheart-srd/` contains complete rules, classes, ancestries, equipment, adversaries
+- **SRD HTML Reference**: `lib/og-dhsrd/index.html` contains the complete Daggerheart SRD in HTML format with adversary benchmarks, scaling guidelines, and design principles
 - **Campaign Content**: `the-path-campaign/` contains location-specific materials and framework
 - **Processed Data**: `lib/daggerheart-srd/.build/json/` contains structured game data (weapons, adversaries, environments, etc.)
 
@@ -55,9 +56,11 @@ Locations are organized in `the-path-campaign/locations/` with detailed descript
 
 ### Data Access Patterns
 - SRD content: Read from `lib/daggerheart-srd/contents/` and subdirectories
+- SRD reference: Use `lib/og-dhsrd/index.html` for adversary benchmarks, tier scaling, and design guidelines
 - Game data: Access JSON files in `lib/daggerheart-srd/.build/json/`
 - Campaign content: Organize in `the-path-campaign/` following existing patterns
 - Location details: Place in `the-path-campaign/locations/[location-name]/`
+- Adversaries: Place custom adversaries in `the-path-campaign/adversaries/`
 
 ### File Organization
 - Campaign framework files go in `the-path-campaign/framework/`
