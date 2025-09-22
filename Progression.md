@@ -75,7 +75,7 @@
 
 ---
 
-## **Feature Roadmap**
+## **Completed Development**
 
 ### **Phase 1: Core Framework** *(Completed ✅)*
 - ✅ Campaign overview and core mechanics
@@ -84,7 +84,7 @@
 - ✅ Sacred Flame resource mechanics
 - ✅ Session structure guidelines
 
-### **Phase 2: Content Systems** *(Current)*
+### **Phase 2: Content Systems** *(Completed ✅)*
 - ✅ Village in the Mist hub implementation with modular card system
 - ✅ Community Hearth enhanced with meaningful mechanical features
 - ✅ Forge environment streamlined with reliable capabilities and proper formatting
@@ -93,25 +93,7 @@
 - ✅ Supply Cache transformed into village project coordination hub with Path security improvements
 - ✅ Village overview updated to reflect all location cards and mechanics
 - ✅ Complete village location system with interconnected features and progression tracking
-- [ ] Location templates for different environment types
-- [ ] NPC creation and relationship systems
-- [ ] Event system for dynamic storytelling
-- [ ] Sacred Flame resource economy details
-- [ ] Location memory and environmental storytelling
-
-### **Phase 3: GM Tools** *(Future)*
-- [ ] Tarot card mapping system and deck templates
-- [ ] Grid layout templates for different path lengths
-- [ ] Quick reference sheets for Path Reader role
-- [ ] Sacred Flame economy tracking tools
-- [ ] Location stability management guides
-
-### **Phase 4: Advanced Features** *(Long-term)*
-- [ ] Multiple concurrent Paths
-- [ ] Complex faction interactions
-- [ ] Player-driven world changes
-- [ ] Cross-Path connections
-- [ ] Legacy campaign content
+- ✅ Mist creature adversaries (Walker, Wraith Leader, Stalker) with Heat Seekers mechanics
 
 ---
 
