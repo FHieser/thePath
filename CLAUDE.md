@@ -15,7 +15,7 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
 - `lib/daggerheart-srd/` - Git submodule containing official Daggerheart SRD with complete rules and content
 - `homebrew-kit/` - Official Daggerheart Homebrew Kit PDF (v1.0) for content creation guidelines
 - `Pitch.md` - Campaign concept and core mechanics overview
-- `Progression.md` - Character progression and campaign advancement (ignore per user instruction)
+- `Progression.md` - Character progression and campaign advancement
 
 ### Campaign Frame: "The Path"
 - World shrouded in otherworldly mist making normal travel impossible
