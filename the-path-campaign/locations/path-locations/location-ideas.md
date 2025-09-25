@@ -118,6 +118,7 @@ Future location types could include: Water/River Locations, Deep Forest Location
 - Resource-Rich: Location contains specific materials the village currently needs (timber, stone, herbs, etc.) - GM adapts based on current village projects.
 - Inhabited: Location has NPCs present - travelers, refugees, traders, or other communities.
 - Cave Mouth: The entrance to a deep cave system carved into a rocky hillside - adds underground access to any location.
+- Water Feature: Location includes flowing water elements (springs, streams, waterfalls, or pools) - adds aquatic travel options, fresh water sources, and potential water-based hazards or creatures.
 
 ---
 
