@@ -13,13 +13,15 @@
 
   *What goods were traded here? Why was this crossroads abandoned? Who might still claim territorial rights to this location?*
 
-***Watch Tower Vantage - Passive:*** The tall stone tower provides commanding views of the surrounding area. PCs who climb to the top can make an Instinct roll to spot distant threats, opportunities, or points of interest. The elevated position grants advantage on rolls to detect approaching danger or identify safe travel routes. @todo there is always a social encounter here.This place contains a place to put flame in making it permanently habitable
+***Watch Tower Hold - Social:*** The tall stone tower's upper chamber always shelters a traveler, scout, or refugee seeking safety from the mist - there is always a social encounter here. The tower's ancient brazier can hold up to 2 Sacred Flames, creating a permanent flame sanctuary that wards off mist creatures and provides safe rest for all travelers when lit with proper Flame Essence.
 
-  *What threats did this tower originally watch for? How far can you see from its height? What landmarks become visible from this vantage point?*
+  *Who seeks shelter in this tower? What stories do they tell of their travels? How much protection would 2 Sacred Flames provide to this crossroads?*
 
-***Well of Rumors - Social:*** The old stone well has become a traditional stopping point for travelers. PCs who spend time here can make a Presence roll to encounter other travelers or hear useful rumors. On a success, gain valuable information about nearby locations or current events. On a failure with Fear, the information proves dangerously misleading. @todo access to the underground?
 
-  *What travelers still use this crossroads? What rumors have proven true or false? Why do people still gather at this abandoned well?*
+***Central Well - Passive:*** This location has the Cave Mouth modifier - the well provides access to underground tunnel systems.
+
+  *How deep do these tunnels go? What underground locations can be reached from here? Who else might use these hidden passages?*
+
 
 ***Crossroads Ambush - Action:*** When PCs appear to be carrying valuable goods or seem vulnerable, spend a Fear to have bandits or desperate scavengers emerge from hiding spots around the trading grounds. They demand tolls, tribute, or attempt outright robbery, using the terrain's multiple hiding spots to their advantage.
 
