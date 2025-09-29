@@ -5,6 +5,7 @@
 **Impulses:** Sustain alien life cycles, decompose and recycle matter, challenge surface dwellers' understanding
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Underground, Wild Beasts
 > **Potential Adversaries:** Fungal Creatures (Spore Cloud, Mycelium Mass), Cave Predators, Decomposer Swarms
 
 ## FEATURES
@@ -13,7 +14,7 @@
 
   *How do these giant fungi sustain themselves without sunlight? What creatures depend on the mushroom ecosystem? Which fungi are beneficial versus dangerous?*
 
-***Bone Pile Warnings - Passive:*** Scattered skeletal remains tell the story of something large and hungry that lairs in these depths. PCs who examine the bones can make a Lore roll. On a success, identify what creatures met their end here and learn about the predator's hunting patterns. The bones also reveal safe paths through the fungal maze. @todo this location always contains a predator
+***Bone Pile Warnings - Passive:*** Scattered skeletal remains tell the story of something large and hungry that lairs in these depths. This location always contains a predator that uses the fungal maze for ambush tactics. PCs who examine the bones can make a Lore roll. On a success, identify what creatures met their end here and learn about the predator's hunting patterns. The bones also reveal safe paths through the fungal maze.
 
   *What powerful predator accumulated these remains? How recently were these creatures killed? Do the bones show signs of being arranged deliberately?*
 

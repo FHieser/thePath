@@ -5,6 +5,7 @@
 **Impulses:** Reveal industrial history, conceal dangerous mining hazards, guard whatever lies behind sealed barriers
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Underground
 > **Potential Adversaries:** Mining Constructs, Tunnel Dwellers, Sealed Horrors
 
 ## FEATURES

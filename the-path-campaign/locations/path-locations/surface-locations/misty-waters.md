@@ -5,6 +5,7 @@
 **Impulses:** Conceal dangerous depths, preserve drowned memories, lure the unwary to watery graves
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable
 > **Potential Adversaries:** Aquatic Beasts (Giant Pike, Bog Shambler), Drowned Spirits, Mist Phantoms
 
 ## FEATURES

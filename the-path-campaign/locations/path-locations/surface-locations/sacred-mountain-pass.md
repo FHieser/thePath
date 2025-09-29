@@ -5,6 +5,7 @@
 **Impulses:** Challenge travelers with dangerous terrain, preserve ancient sacred traditions, guard the flame's mysteries
 
 > **Difficulty:** 11
+> **Modifiers:** Stable
 > **Potential Adversaries:** Mountain Beasts (Giant Eagle, Stone Bear), Flame Guardians, Mist-touched Pilgrims
 
 ## FEATURES

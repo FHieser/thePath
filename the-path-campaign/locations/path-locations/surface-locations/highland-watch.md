@@ -5,6 +5,7 @@
 **Impulses:** Maintain vigilance against mist incursions, provide elevated sanctuary, preserve anti-mist defenses
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable
 > **Potential Adversaries:** Mist Walkers, Highland Predators (Mist-touched variants), Corrupted Stone Guardians
 
 ## FEATURES

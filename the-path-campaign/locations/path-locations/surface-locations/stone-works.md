@@ -5,6 +5,7 @@
 **Impulses:** Echo with ancient industry, reveal hidden geological treasures, challenge with unstable terrain
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Cave Mouth
 > **Potential Adversaries:** Stone Elementals, Crystal Guardians, Quarry Scavengers
 
 ## FEATURES

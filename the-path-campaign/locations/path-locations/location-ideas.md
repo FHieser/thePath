@@ -114,8 +114,11 @@ Future location types could include: Water/River Locations, Deep Forest Location
 ### Location Modifiers
 *Optional overlays that transform base locations*
 
+- **Stable**: Location maintains its relative grid position and connections between sessions. Cannot disappear into the Mist. May be naturally stable (ancient sites, Sacred Flame sanctuaries) or stabilized by players using Flame Essence rituals.
+- **Unstable**: Location disappears into the Mist between sessions and may reappear randomly. Most new locations start as Unstable unless stabilized by players or inherently stable due to powerful anchors.
+- **Underground**: Location connects only to other Underground locations or surface Cave Mouth locations. Creates separate underground navigation network.
+- **Wild Beasts**: Location always contains an encounter with wild beasts - predators, territorial creatures, or dangerous wildlife.
 - Mist-Touched: Location corrupted by prolonged mist exposure - adds Mist Walkers, reality distortions, and unstable terrain.
-- Resource-Rich: Location contains specific materials the village currently needs (timber, stone, herbs, etc.) - GM adapts based on current village projects.
 - Inhabited: Location has NPCs present - travelers, refugees, traders, or other communities.
 - Cave Mouth: The entrance to a deep cave system carved into a rocky hillside - adds underground access to any location.
 - Water Feature: Location includes flowing water elements (springs, streams, waterfalls, or pools) - adds aquatic travel options, fresh water sources, and potential water-based hazards or creatures.

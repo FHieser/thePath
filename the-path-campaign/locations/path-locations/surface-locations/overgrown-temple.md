@@ -5,6 +5,7 @@
 **Impulses:** Guard ancient sacred knowledge, test worthiness through trials of nature, preserve forgotten rituals
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable
 > **Potential Adversaries:** Plant Creatures (Thorn Vine, Strangling Root), Temple Guardians, Ancient Spirits
 
 ## FEATURES

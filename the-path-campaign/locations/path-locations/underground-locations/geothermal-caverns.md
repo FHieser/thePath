@@ -5,6 +5,7 @@
 **Impulses:** Test endurance against extreme heat, power ancient mechanisms, reveal geological secrets
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Underground
 > **Potential Adversaries:** Fire Elementals, Heat-adapted Creatures, Malfunctioning Constructs
 
 ## FEATURES

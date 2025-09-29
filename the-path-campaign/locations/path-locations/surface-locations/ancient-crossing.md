@@ -5,6 +5,7 @@
 **Impulses:** Test courage and balance, preserve forgotten history, warn of dangers below
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Cave Mouth
 > **Potential Adversaries:** Stone Guardians, Cliff Dwellers, Ancient Spirits
 
 ## FEATURES

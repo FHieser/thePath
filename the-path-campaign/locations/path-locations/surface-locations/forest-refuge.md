@@ -5,6 +5,7 @@
 **Impulses:** Offer shelter and secrets, test visitors' intentions, preserve woodland mysteries
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Inhabited
 > **Potential Adversaries:** Forest Beasts (Dire Wolf, Glass Snake), Woodland Spirits, Suspicious Hermit
 
 ## FEATURES

@@ -5,6 +5,7 @@
 **Impulses:** Echo with past commerce, provide strategic vantage points, conceal forgotten treasures
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Inhabited, Cave Mouth
 > **Potential Adversaries:** Bandits, Scavenger Merchants, Territorial Beasts
 
 ## FEATURES

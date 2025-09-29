@@ -5,6 +5,7 @@
 **Impulses:** Test endurance against the elements, reveal forgotten offerings, echo with voices of the past
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable
 > **Potential Adversaries:** Beasts (Dire Wolf, Glass Snake), Wind Spirits, Lost Travelers
 
 ## FEATURES

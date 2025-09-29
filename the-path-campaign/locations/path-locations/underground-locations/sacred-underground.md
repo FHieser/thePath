@@ -5,6 +5,7 @@
 **Impulses:** Answer seekers' questions through ancient echoes, guard against those who would abuse sacred knowledge, preserve underground mysteries
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Underground, Wild Beasts
 > **Potential Adversaries:** Stone Guardians, Echo Wraiths, Deep Predators
 
 ## FEATURES

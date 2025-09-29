@@ -5,6 +5,7 @@
 **Impulses:** Channel water through hidden passages, power forgotten mechanisms, test endurance and navigation skills
 
 > **Difficulty:** 11
+> **Modifiers:** Unstable, Underground
 > **Potential Adversaries:** Aquatic Predators (Giant Pike, Tunnel Eel), Water Spirits, Mechanical Guardians
 
 ## FEATURES
