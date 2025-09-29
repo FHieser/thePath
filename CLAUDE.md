@@ -67,6 +67,7 @@ Locations are organized in `the-path-campaign/locations/` with detailed descript
 - Individual location content goes in `the-path-campaign/locations/[location-name]/`
 - Follow existing naming patterns (e.g., `[feature]-card.md` for location features)
 - Use descriptive filenames that match the content purpose
+- **Style Guide**: Follow `STYLE-GUIDE.md` for consistent modifier terminology and formatting
 
 ## Important Notes
 
