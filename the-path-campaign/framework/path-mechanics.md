@@ -21,6 +21,21 @@ Locations exist in one of two states:
 
 The Path network uses a **Grid System** where stable locations maintain consistent relative positioning to each other, while unstable locations disappear into the Mist between sessions and may reappear randomly.
 
+### **Location Modifiers**
+All locations use a modifier system to define their mechanical properties:
+
+**Universal Modifiers** (every location has one):
+- **Stable**: Cannot disappear, maintains grid position (Sacred Flame locations, player-stabilized sites)
+- **Unstable**: May disappear between sessions, repositions randomly (most locations by default)
+
+**Optional Modifiers** (add specific functionality):
+- **Underground**: Connects only to other Underground locations or Cave Mouth surface locations
+- **Cave Mouth**: Provides access between surface and Underground networks
+- **Inhabited**: Always contains NPCs - travelers, refugees, or residents
+- **Wild Beasts**: Always contains dangerous creature encounters
+- **Mist-Touched**: Corrupted by mist exposure (adds distortions, Mist Walkers)
+- **Water Feature**: Includes flowing water elements (streams, pools, springs)
+
 ---
 
 ## **Path Generation System**
@@ -251,6 +266,118 @@ Before each session:
 - **Flame Essence Economy**: Track resource gathering and consumption
 - **Location Evolution**: How each location changes based on player visits
 - **Narrative Continuity**: Maintaining story threads across random configurations
+
+---
+
+## **Location Design Guidelines**
+
+### **Creating New Path Locations**
+
+#### **Step 1: Core Concept**
+Define your location's central theme and purpose:
+- **Environmental Theme**: What does this place look like and feel like?
+- **Narrative Purpose**: What role does it serve in the campaign?
+- **Mechanical Challenge**: What obstacles or opportunities does it present?
+- **Tier Level**: Tier 1 (level 1) for current Path system
+
+#### **Step 2: Choose Modifiers**
+Every location needs modifiers that define its mechanical properties:
+
+**Required - Stability State:**
+- Choose **Stable** only for Sacred Flame sites or special anchored locations
+- Choose **Unstable** for most locations (default state)
+
+**Optional - Functional Modifiers:**
+- **Underground**: If it's a cave, tunnel system, or subterranean space
+- **Cave Mouth**: If it provides access to underground areas
+- **Inhabited**: If NPCs are always present
+- **Wild Beasts**: If dangerous creatures always inhabit the area
+- **Mist-Touched**: If corrupted by prolonged mist exposure
+- **Water Feature**: If water elements are central to the location
+
+#### **Step 3: Design 3-4 Features**
+Each location needs 3-4 distinct features following Daggerheart standards:
+
+**Feature Types:**
+- **Passive**: Always-available benefits or information gathering
+- **Action**: GM spends Fear to trigger during scenes
+- **Reaction**: Triggered by specific player actions or circumstances
+- **Counter System**: Progressive mechanics that track ongoing challenges
+
+**Feature Design Principles:**
+- Each feature should support the location's theme
+- Include both mechanical effects and narrative prompts
+- Provide clear success/failure outcomes
+- Include GM questions to spark improvisation
+
+#### **Step 4: Integration Requirements**
+
+**Modifier Integration:**
+- Reference modifiers using standardized language (see STYLE-GUIDE.md)
+- Ensure features support the chosen modifiers mechanically
+- Underground locations should mention connection rules
+- Cave Mouth locations need clear underground access features
+
+**Campaign Theme Integration:**
+- Maintain mist-world atmosphere and themes
+- Consider how Sacred Flames or anti-mist defenses might factor in
+- Include elements that support Path network storytelling
+- Ensure content supports level 1 characters (Tier 1)
+
+### **Location Template Structure**
+
+```markdown
+# [LOCATION NAME]
+
+***Tier 1 [Type]***
+*[One-sentence evocative description]*
+**Impulses:** [3 thematic impulses that guide GM decisions]
+
+> **Difficulty:** 11
+> **Modifiers:** [Universal], [Optional], [Optional]
+> **Potential Adversaries:** [3 appropriate threats for the location]
+
+## FEATURES
+
+***[Feature Name] - [Type]:*** [Mechanical description with clear triggers and outcomes]
+
+  *[2-3 GM questions that prompt improvisation and discovery]*
+
+[Repeat for 3-4 features total]
+
+## FEATURE QUESTIONS
+
+- [4 broad questions about the location's history and mysteries]
+- [Questions should inspire long-term campaign development]
+```
+
+### **Design Best Practices**
+
+**Mechanical Balance:**
+- Counter systems should have clear endpoints (3-4 steps typical)
+- Damage should follow Daggerheart scaling (1d6+1 to 1d8+3 for Tier 1)
+- Include both Hope and Fear outcomes where appropriate
+- Provide meaningful player choice in feature interactions
+
+**Narrative Integration:**
+- Features should tell a story about the location
+- Include elements that change based on player actions
+- Provide hooks that connect to broader campaign themes
+- Leave room for GM interpretation and expansion
+
+**Modifier Synergy:**
+- **Underground** + **Wild Beasts**: Deep predators, cave-dwelling threats
+- **Cave Mouth** + **Inhabited**: Underground refugees, tunnel guides
+- **Stable** + **Inhabited**: Permanent communities, established NPCs
+- **Unstable** + **Mist-Touched**: Locations consumed by supernatural forces
+
+### **Testing Your Location**
+Before adding to the campaign:
+- [ ] Verify all modifiers are properly integrated
+- [ ] Ensure 3-4 complete features with clear mechanics
+- [ ] Check that Tier 1 scaling is appropriate (level 1)
+- [ ] Confirm location supports campaign themes
+- [ ] Review formatting against STYLE-GUIDE.md standards
 
 ---
 
