@@ -21,7 +21,7 @@
 
   *Who was buried in these sacred grounds? What connection did they have to the temple? What offerings would appease the restless dead?*
 
-***Ritual Garden's Gift - Passive:*** The temple's ceremonial gardens have grown wild but still bear sacred herbs and plants. PCs who tend to the garden with proper reverence can make an Instinct roll. On a success, harvest valuable ritual components or healing herbs. The overgrowth guides worthy hands to what they need most. @todo consumables
+***Ritual Garden's Gift - Passive:*** The temple's ceremonial gardens have grown wild but still bear sacred herbs and plants. PCs who tend to the garden with proper reverence can make an Instinct roll. On a success, roll 1d6 to harvest one consumable: Minor Health Potion (1-2), Minor Stamina Potion (3-4), or Grindletooth Venom (5-6). On a success with Hope, choose which of the three consumables you harvest.
 
   *Which plants were cultivated for sacred purposes? How does the wild growth decide what each visitor needs? What rituals require these specific herbs?*
 

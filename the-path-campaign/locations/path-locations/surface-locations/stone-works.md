@@ -9,7 +9,7 @@
 
 ## FEATURES
 
-***Exposed Quarry Faces - Passive:*** The excavated stone walls show clear tool marks and reveal valuable information about the area's geology. PCs who examine the quarry walls can make a Lore roll to identify useful stone types or mineral deposits. On a success with Hope, locate a valuable vein that could be mined with proper tools. @todo money?
+***Exposed Quarry Faces - Passive:*** The excavated stone walls show clear tool marks and reveal valuable information about the area's geology. PCs who examine the quarry walls can make a Lore roll to identify useful stone types or mineral deposits. On a success, locate common stone worth 1d4 handfuls. On a success with Hope, locate quality materials worth 1d4+3 handfuls. Extraction requires proper tools.
 
   *What types of stone were quarried here? Why was this operation abandoned? What tools and techniques did the quarry workers use?*
 
