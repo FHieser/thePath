@@ -10,17 +10,17 @@
 
 ## FEATURES
 
-***Mysterious Dwelling - Passive:*** The hut beneath the massive oak appears empty but shows recent signs of habitation. PCs investigating can make an Instinct roll. On a success, they find useful supplies (healing herbs, travel rations, or basic equipment). On a success with Fear, the dwelling's inhabitant returns unexpectedly.
+***Mysterious Dwelling - Passive:*** The hut beneath the massive oak appears empty but shows recent signs of habitation. This dwelling grants the location the **Inhabited** modifier. PCs investigating can make an Instinct roll. On a success, they find useful supplies (healing herbs, travel rations, or basic equipment). On a success with Fear, the dwelling's inhabitant returns unexpectedly.
 
   *Who lives in this remote dwelling? Why did they choose such an isolated location? What do their personal belongings reveal about them?*
 
-***Shadowed Grove - Action:*** @todo 
+***Fairy Light Grove - Passive:*** The grove is illuminated by gentle, floating fairy lights that drift between the trees. These lights provide protection against mist corruption - it costs 2 additional Fear to make this location Mist-Touched.
 
-***Mushroom Ring Magic - Passive:*** Teleport??
+  *What creates these fairy lights? Do they respond to the PCs' presence? What happens if the lights are extinguished?* 
 
-***Forest Guardian's Test - Reaction:*** When PCs show disrespect to the forest (starting fires carelessly, harming ancient trees, disturbing wildlife), the forest itself responds. Tree roots emerge to restrain the offender (Restrained condition) until they make amends or succeed on a Presence roll to show genuine remorse.
+***Mushroom Ring Magic - Passive:*** When a PC steps into the fairy ring, they can choose to teleport to another mushroom ring on the current Path configuration (if one exists). The sudden displacement through fey magic is disorienting - the PC takes 2 Stress. If no other ring exists on the current Path, nothing happens and the magic lies dormant.
 
-  *How does the forest communicate its displeasure? What actions constitute proper respect? What must PCs do to make amends?*
+  *Where does the ring connect to this session? What strange sensations accompany the teleportation? What fey entities might notice frequent use?*
 
 ## FEATURE QUESTIONS
 
