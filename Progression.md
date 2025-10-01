@@ -62,9 +62,9 @@
 ## **Current Development Phase**
 
 ### **Active Work** *(What we're building now)*
-- **Faction System Development**: Creating comprehensive faction framework with lore and mechanics
+- **Session 1 Prototype Complete**: All materials ready for first playable session
+- **Faction System Development**: Creating comprehensive faction framework with lore and mechanics (2/9 complete)
 - **Campaign Worldbuilding**: Establishing High Lore cosmology and faction relationships
-- **Faction Template System**: Standardized workflow for faction creation with themes, history, goals, relationships, rumors, and plot hooks
 
 ### **Next Session Priorities**
 - ✅ Complete Village in the Mist location cards with enhanced mechanics
@@ -78,12 +78,12 @@
 - ✅ Complete The Rootbound faction (nature guardians)
 - ✅ Finalize Forest Refuge location (fairy lights, mushroom ring teleportation)
 - ✅ Add Mist-Touched Fear economy mechanic (3 Fear base cost)
-- [ ] Complete Session 1 prototype preparation:
-  - [ ] Create The Watcher NPC for Forest Refuge
-  - [ ] Create Village NPC roster (3-5 NPCs)
-  - [ ] Prepare encounter stat blocks for Initial Path
-  - [ ] Create Session 1 GM guide
-  - [ ] Build quick reference sheet for 4 locations
+- ✅ Complete Session 1 prototype preparation:
+  - ✅ Create The Watcher NPC for Forest Refuge (silent Rootbound guardian)
+  - ✅ Define Initial Path route and encounters
+  - ✅ Specify Forest Refuge combat (Jagged Knife gang: 1 Lieutenant, 3 Bandits, 1 Kneebreaker)
+  - ✅ Specify Windswept Grasslands combat (Mist Born horde: 1 Wraith Leader, 2 Stalkers, 32 Walkers)
+  - ✅ Session starts in media res on the Path (no Village prep needed)
 - [ ] Complete remaining 6 factions (Mist Born, Flame Seekers, Ember Traders, Factionless, Mist Clergy, Deep Dwellers, Brass Mechanicorum)
 - [ ] Build tarot card system with location assignments
 - [ ] Develop Sacred Flame resource mechanics in detail
@@ -158,7 +158,24 @@
 - ✅ Path-mechanics.md relocated to path-locations directory for better organization
 - ✅ Self-contained location development system established
 
-### **Phase 7: Lore & Faction System** *(In Progress 🔄)*
+### **Phase 7: Session 1 Prototype** *(Completed ✅)*
+- ✅ Initial Path configuration finalized:
+  - ✅ 4 locations: Windswept Grasslands, Ancient Crossing, Forest Refuge, Sacred Mountain Pass
+  - ✅ 2 combat encounters with specified adversaries
+  - ✅ 1 NPC encounter (The Watcher introduction to Rootbound)
+  - ✅ Session structure: start on Path, return through same locations
+- ✅ Forest Refuge mechanics complete:
+  - ✅ Fairy Light Grove (costs +2 Fear to make Mist-Touched)
+  - ✅ Mushroom Ring Magic (teleportation for 2 Stress)
+  - ✅ Mysterious Dwelling (grants Inhabited modifier)
+- ✅ The Watcher NPC created:
+  - ✅ Silent guardian with deer skull and moss robe
+  - ✅ Grateful for clearing marauders
+  - ✅ Offers healing items and demonstrates Rootbound abilities
+- ✅ All adversary stat blocks identified in SRD
+- ✅ **Campaign ready for first playable session**
+
+### **Phase 8: Lore & Faction System** *(In Progress 🔄)*
 - ✅ High Lore foundation established (BaseIdea.md):
   - ✅ Pantheon and imprisoned god cosmology
   - ✅ Mist as divine prison mechanism
