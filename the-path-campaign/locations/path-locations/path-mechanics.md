@@ -2,7 +2,7 @@
 
 ## Core Path System
 
-The Path network forms the backbone of campaign exploration, providing structured yet dynamic connections between locations in the mist-shrouded world.
+The Path network forms the backbone of campaign exploration, providing structured yet dynamic connections between locations in the mist-shrouded world. @todo rework this to fit to the developed path locations
 
 ---
 
@@ -33,7 +33,7 @@ All locations use a modifier system to define their mechanical properties:
 - **Cave Mouth**: Provides access between surface and Underground networks
 - **Inhabited**: Always contains NPCs - travelers, refugees, or residents
 - **Wild Beasts**: Always contains dangerous creature encounters
-- **Mist-Touched**: Corrupted by mist exposure (adds distortions, Mist Walkers)
+- **Mist-Touched**: Corrupted by mist exposure (adds distortions, Mist Walkers). **GM can spend 3 Fear to make a location Mist-Touched.**
 - **Water Feature**: Includes flowing water elements (streams, pools, springs)
 
 ---
