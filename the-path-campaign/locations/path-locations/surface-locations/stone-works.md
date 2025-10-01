@@ -18,15 +18,17 @@
 
   *Which sections of the quarry are most unstable? Are there signs warning of dangerous areas? What caused the extensive structural damage?*
 
-***Crystal Resonance - Passive:*** The underground chambers are filled with naturally occurring crystals that hum with harmonic energy. PCs can attune to the crystals' frequency by making a Spellcast roll. On a success, gain advantage on the next action roll involving sound, communication, or magical detection. The crystals also amplify voices, making whispers audible throughout the chambers. @todo rewrite this feature
+***Pulley System Network - Passive:*** The quarry workers installed an elaborate system of ropes, pulleys, and counterweights to move heavy stone blocks. The mechanisms are old but functional. PCs can make a Finesse roll to operate the hoists safely. On a success, transport heavy loads between quarry levels or create improvised bridges across gaps using suspended platforms. On a failure, the stressed ropes snap - any creatures on the platform must make an Agility Reaction Roll or fall, taking 1d10 physical damage.
 
-  *What natural forces created these crystal formations? How do the crystals interact with magical energy? What happens when multiple crystals resonate together?*
+  *Which pulley routes are still operational? What loads remain suspended in mid-air? Could the system be restored to full function?*
 
-@todo add modifier cave mouth
+***Abandoned Mine Shafts - Action:*** The quarry workers dug exploratory tunnels deep into the cliff face, many now dangerously unstable. When PCs traverse these narrow passages, spend a Fear to trigger a partial collapse. All creatures in the shaft must succeed on an Agility Reaction Roll or take 1d8+1 physical damage from falling debris and become Restrained by rubble until freed (requires a successful Strength roll by them or an ally).
+
+  *What were the miners searching for in these shafts? Why were some tunnels abandoned halfway through? Are there unexplored branches deeper in the rock?*
 
 ## FEATURE QUESTIONS
 
 - What ancient civilization or organization operated this extensive quarry?
-- How do the resonant crystals connect to the area's magical properties?
-- What valuable materials remain hidden within the abandoned excavations?
+- What valuable materials were the miners searching for in the deepest shafts?
+- How much of the original pulley system remains functional after years of abandonment?
 - Could the quarry operations be safely resumed with proper preparation?
