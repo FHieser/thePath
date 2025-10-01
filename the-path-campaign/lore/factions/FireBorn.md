@@ -76,6 +76,8 @@
 
 **Factionless**: Ignored - Unless they interfere with Fire Born goals or routes, beneath notice.
 
+**The Rootbound**: Wary - Ancient beings recognize each other. Seldom cooperate, but mutual respect for age and power.
+
 ### Mist Aligned
 **Mist Clergy**: Hostile - Ideological enemies, though Fire Born may not even understand their arguments clearly. Different ancient perspectives.
 

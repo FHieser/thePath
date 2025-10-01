@@ -62,20 +62,31 @@
 ## **Current Development Phase**
 
 ### **Active Work** *(What we're building now)*
-- **Tarot Card System**: Building card assignments and Path generation mechanics
-- **Sacred Flame Details**: Expanding resource mechanics with specific costs and maintenance
-- **GM Tools**: Creating quick-start guides and session management tools
-- **Playtesting Preparation**: All location systems complete, ready for actual gameplay testing
+- **Faction System Development**: Creating comprehensive faction framework with lore and mechanics
+- **Campaign Worldbuilding**: Establishing High Lore cosmology and faction relationships
+- **Faction Template System**: Standardized workflow for faction creation with themes, history, goals, relationships, rumors, and plot hooks
 
 ### **Next Session Priorities**
 - ✅ Complete Village in the Mist location cards with enhanced mechanics
 - ✅ Design location templates for different environment types (14 environments created)
 - ✅ Implement location modifier application system (5 modifier types implemented)
 - ✅ Create location interconnection system for Path generation (Underground network rules)
+- ✅ Establish High Lore foundation (imprisoned god, pantheon, mist origin)
+- ✅ Design faction spectrum system (Flame → Neutral → Mist + Underground)
+- ✅ Create faction development workflow and template
+- ✅ Complete Fire Born faction (ancient flame-bound servants)
+- ✅ Complete The Rootbound faction (nature guardians)
+- ✅ Finalize Forest Refuge location (fairy lights, mushroom ring teleportation)
+- ✅ Add Mist-Touched Fear economy mechanic (3 Fear base cost)
+- [ ] Complete Session 1 prototype preparation:
+  - [ ] Create The Watcher NPC for Forest Refuge
+  - [ ] Create Village NPC roster (3-5 NPCs)
+  - [ ] Prepare encounter stat blocks for Initial Path
+  - [ ] Create Session 1 GM guide
+  - [ ] Build quick reference sheet for 4 locations
+- [ ] Complete remaining 6 factions (Mist Born, Flame Seekers, Ember Traders, Factionless, Mist Clergy, Deep Dwellers, Brass Mechanicorum)
 - [ ] Build tarot card system with location assignments
 - [ ] Develop Sacred Flame resource mechanics in detail
-- [ ] Create comprehensive GM quick-start guide
-- [ ] Design first playable Path configuration templates
 
 ---
 
@@ -146,6 +157,35 @@
 - ✅ Tier 1 scaling corrected (level 1 only) throughout all documentation
 - ✅ Path-mechanics.md relocated to path-locations directory for better organization
 - ✅ Self-contained location development system established
+
+### **Phase 7: Lore & Faction System** *(In Progress 🔄)*
+- ✅ High Lore foundation established (BaseIdea.md):
+  - ✅ Pantheon and imprisoned god cosmology
+  - ✅ Mist as divine prison mechanism
+  - ✅ Sacred flame origin as god's lingering power
+  - ✅ "Easy to enter, impossible to leave" asymmetric geography
+- ✅ Faction spectrum system designed:
+  - ✅ Flame Aligned (Fire Born, Flame Seekers)
+  - ✅ Neutral (Ember Traders, Factionless, **The Rootbound**)
+  - ✅ Mist Aligned (Mist Clergy, Mist Born)
+  - ✅ Underground (Deep Dwellers, Brass Mechanicorum)
+- ✅ Faction development framework:
+  - ✅ ExampleFaction.md template with 10-section workflow
+  - ✅ Standardized sections: Themes, History, Goals, Housing, Territories, Mist Protection, Subgroups, Relationships, Rumors, Plot Hooks
+  - ✅ Collaborative development methodology documented
+- ✅ Fire Born faction completed:
+  - ✅ Ancient servants transformed by mist into flame-dependent beings
+  - ✅ Massive brazier carriers (elephant to city-sized mobile temples)
+  - ✅ Cryptid-rare encounters (legendary status)
+  - ✅ 3 subgroups: Bearers, Paladins, Guardians
+  - ✅ 4 plot hooks with escalating player engagement
+- ✅ The Rootbound faction completed:
+  - ✅ Shrewd guardians of natural sanctuaries (neither flame nor mist)
+  - ✅ Highly individualistic, no formal organization
+  - ✅ Ancient beings with mysterious origins and primal magic
+  - ✅ Connect via mushroom circles, tunnels, and Path omens
+  - ✅ 5 plot hooks emphasizing territorial nature and individual agendas
+- 🔄 Remaining factions in development (7/9 completed)
 
 ---
 

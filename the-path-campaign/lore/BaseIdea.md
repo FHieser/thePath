@@ -59,3 +59,9 @@ There are different factions in the lands of the mist, that try to survive or ev
 - Ancient machines and mechanoids from underground
 - Old structures scattered everywhere
 - Origins and purpose unclear
+
+### The Rootbound
+- Shrewd guardians of natural sanctuaries
+- Highly individualistic, each with their own domain
+- Neither flame nor underground - nature resists mist naturally
+- Ancient and mysterious, neutral by choice
