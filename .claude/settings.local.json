@@ -3,7 +3,8 @@
     "allow": [
       "Bash(find:*)",
       "Bash(mv:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "SlashCommand(/give-me-five:*)"
     ],
     "deny": [],
     "ask": []
