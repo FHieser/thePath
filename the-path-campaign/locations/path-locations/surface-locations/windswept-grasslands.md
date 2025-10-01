@@ -10,11 +10,7 @@
 
 ## FEATURES
 
-***Ancient Offerings - Passive:*** The weathered hillside shrine holds scattered offerings from long-gone travelers. A PC can spend time examining the shrine and make an Instinct roll. On a success, they find something useful (GM's choice of minor equipment, hope token, or clue about the area). On a success with Fear, they also trigger the ire of protective spirits.
-
-  *What kind of offerings were left here? Why did the shrine's caretakers abandon it? What spirits still watch over this place?*
-
-***Gusting Gale - Action:*** Powerful wind gusts sweep across the grasslands. All creatures must succeed on a Strength Reaction Roll (11) or be pushed Close range in the wind's direction and have disadvantage on their next action roll. Flying creatures have disadvantage on this roll.
+***Gusting Gale - Action:*** Powerful wind gusts sweep across the grasslands. All creatures that are not protected by the wind must succeed on a Strength Reaction Roll or be pushed Close range in the wind's direction and have disadvantage on their next action roll. Flying creatures have disadvantage on this roll.
 
   *Which direction does the wind push creatures? What does the wind carry with it? How does the landscape change the wind's path?*
 
