@@ -10,11 +10,11 @@
 
 ## FEATURES
 
-***Rocky Outcrop Fortification - Passive:***
+***Rocky Outcrop Fortification - Passive:*** @todo feature missing 
 
 ***Watchtower Vantage - Passive:*** The ancient stone tower provides commanding views of the surrounding landscape. PCs who climb to the top can survey the area and gain a general description of one of the nearby environments currently connected to this location. With careful observation, they can identify modifications present in the surrounding environments (such as Mist-Touched, Resource-Rich, Inhabited, etc.). The elevated position reveals what ground-level travel cannot.
 
-***Signal Fire Ward - Action:*** 
+***Signal Fire Ward - Action:*** @todo feature missing
 
   *What fuel keeps the protective flames burning? How long do the wards remain active? What happens when the fire dies and mist creatures surround the position?*
 

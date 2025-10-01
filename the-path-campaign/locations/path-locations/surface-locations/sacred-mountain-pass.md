@@ -22,7 +22,7 @@
 
   *From which direction do the winds come? Do they carry voices or other sounds? How did ancient ceremonies account for these dangerous winds?*
 
-***Ancient Echoes - Reaction:*** When PCs perform any ritual or ceremony at the mountain peak, the stones echo with memories of past ceremonies. Spend a Fear to manifest ghostly figures of ancient worshippers who either aid (+2 to the ceremony roll) or interfere (disadvantage) based on the PCs' reverence.
+***Ancient Echoes - Reaction:*** When PCs perform any ritual or ceremony at the mountain peak, the stones echo with memories of past ceremonies. Spend a Fear to manifest ghostly figures of ancient worshippers who either aid (+2 to the ceremony roll) or interfere (disadvantage) based on the PCs' reverence. @todo rework
 
   *What ceremonies were once performed here? Who were the ancient worshippers? What do the echoes reveal about the mountain's history?*
 
