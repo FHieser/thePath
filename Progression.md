@@ -62,7 +62,7 @@
 ## **Current Development Phase**
 
 ### **Active Work** *(What we're building now)*
-- **Session 1 Prototype Complete**: All materials ready for first playable session
+- **Session 2 Development**: Fear Guide complete, Village NPCs complete (3 core NPCs: Brenner, Nix, Donatello)
 - **Faction System Development**: Creating comprehensive faction framework with lore and mechanics (2/9 complete)
 - **Campaign Worldbuilding**: Establishing High Lore cosmology and faction relationships
 
@@ -176,6 +176,12 @@
 - ✅ **Campaign ready for first playable session**
 
 ### **Phase 8: Lore & Faction System** *(In Progress 🔄)*
+- ✅ Village NPC system established (3 core NPCs created):
+  - ✅ Brenner (Giant Flame Keeper/Smith) - Fire Born transformation arc with flame carrier
+  - ✅ Nix (Goblin Hearth Keeper) - Chaotic gossip hub and information network
+  - ✅ Donatello (Galapa Senior Flame Gatherer) - Superstitious ninja turtle with mist immunity talisman
+
+### **Phase 9: Lore & Faction System** *(In Progress 🔄)*
 - ✅ High Lore foundation established (BaseIdea.md):
   - ✅ Pantheon and imprisoned god cosmology
   - ✅ Mist as divine prison mechanism
