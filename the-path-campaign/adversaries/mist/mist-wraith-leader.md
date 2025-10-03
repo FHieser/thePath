@@ -19,13 +19,13 @@
 They are the hounds sent out by the mist to seek out flames and extinguish them. The Wraith Leader prioritizes fire, light sources, and warm-blooded creatures when selecting targets.
 
 ### Rally the Lost — Action
-**Spend 2 Fear** to spotlight the Wraith Leader and up to 1d4 Mist Walkers within Far range. All spotlighted creatures can immediately take their turn.
+**Spend 2 Fear** to spotlight the Wraith Leader and the number of players mist walkers within Far range. All spotlighted creatures can immediately take their turn.
 
 ### Chilling Presence — Reaction
 When this adversary makes a successful attack against a PC, you gain a Fear.
 
 ### Call to the Mist — Action
-Once per scene, **mark a Stress** to summon 1d4 Mist Walkers who emerge from the surrounding mist at Far range. These reinforcements appear ready to act on the GM's next turn.
+Once per scene, **mark a Stress** to summon 1d4 Mist Walkers for each player who emerge from the surrounding mist at Far range. These reinforcements appear ready to act on the GM's next turn.
 
 ---
 

@@ -22,7 +22,7 @@
 
   *What lies at the bottom of these ancient stairs? Why were they built leading down from the bridge? What has made its home in the depths?*
 
-***Loose Stone Trap - Action:*** Spend 1 Fear to have a stone become loose under a PC's foot as they move across the bridge. They must make an Agility Reaction Roll. On a failure, they are Restrained until they succeed on a Strength and they must mark a Stress.
+***Loose Stone Trap - Action:*** Spend 1 Fear to have a stone become loose under a PC's foot as they move across the bridge. They must mark a stress and make an Agility Reaction Roll. On a failure, they are Restrained until they succeed on a Strength and take 1d4 damage.
 
   *Which stones are most unstable? How deep are the gaps where stones have fallen? What dangers lurk in the crevices below the bridge?*
 
