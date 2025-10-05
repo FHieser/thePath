@@ -19,6 +19,9 @@
 ## The Twist
 [What makes this NPC surprising or memorable? Hidden agenda, secret identity, unexpected ability, moral complexity, etc.]
 
+## Theme in Relation to PCs
+[How this NPC challenges, mirrors, or contrasts with the party's choices and values - loyalty vs. survival, idealism vs. pragmatism, faction allegiance vs. independence, etc.]
+
 ## Goals & Motivations
 - [What they want]
 - [Why they want it]

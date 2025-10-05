@@ -24,6 +24,9 @@
 ## The Twist
 Unknowingly transforming into Fire Born. The flame lines aren't scars - they're the first stage of becoming something more than human. Once the transformation completes, they'll awaken the ancient flame carrier buried beneath the village and gain control of it. They dismiss the changes as occupational hazards, unaware they're being called to bond with a dormant temple-construct.
 
+## Theme in Relation to PCs
+**Duty vs. Destiny** - Brenner mirrors players' choices between serving the community's immediate needs versus pursuing greater destinies. As they transform, they'll face the choice to embrace divine calling or resist to remain the village smith. Challenges PCs who seek glory over service.
+
 ## Goals & Motivations
 - Serve the community that gave them purpose (primary duty)
 - Keep the Sacred Flame burning

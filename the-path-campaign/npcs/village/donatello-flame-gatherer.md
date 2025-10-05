@@ -23,6 +23,9 @@
 ## The Twist
 One of their talismans grants mist immunity. If they're ever lost in the mist, they reappear at the village unharmed with no memory of how they got back. They don't know which talisman does it or that it even exists. Has happened multiple times - they attribute it to "luck" and "proper rituals." Great plot hook when PCs witness it or when the talisman is lost/stolen.
 
+## Theme in Relation to PCs
+**Preparation vs. Recklessness** - Donatello embodies the value of rituals and preparation in a deadly world. Challenges impulsive PCs who rush into danger, while showing pragmatic PCs that superstition can coexist with survival wisdom. Tests whether players respect tradition or dismiss it as nonsense.
+
 ## Goals & Motivations
 - Keep gatherer teams alive (every loss adds another tally)
 - Perform proper rituals before expeditions (intense croaking, throwing mud on team members' faces for protection)

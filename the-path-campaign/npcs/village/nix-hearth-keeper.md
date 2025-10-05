@@ -22,6 +22,9 @@
 ## The Twist
 Extremely curious - eavesdrops on everything, knows every village secret. People think the chaos means they're not paying attention. They're always paying attention.
 
+## Theme in Relation to PCs
+**Privacy vs. Community** - Nix challenges the party's boundaries and secrets. Shows that in a small survival community, privacy is a luxury. Forces PCs to decide what they're willing to share and what they'll fight to keep hidden. Tests trust within the party when their secrets become village gossip.
+
 ## Goals & Motivations
 - Learn everyone's stories and secrets
 - Keep the community connected and laughing

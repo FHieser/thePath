@@ -19,6 +19,9 @@
 ## The Twist
 **Silent Guardian:** The Watcher cannot speak at all. All communication happens through gestures, pointing, and the environment responding to their presence (fairy lights brightening/dimming, forest sounds changing). Players must interpret their intentions.
 
+## Theme in Relation to PCs
+**Respect vs. Exploitation** - The Watcher judges whether PCs treat sanctuaries as sacred spaces or resources to be exploited. Mirrors the party's relationship with nature and ancient places. Rewards reverence, punishes greed. Forces PCs to prove their intentions through actions, not words.
+
 ## Goals & Motivations
 - Protect Forest Refuge's natural mist resistance
 - Test if visitors respect the sanctuary
