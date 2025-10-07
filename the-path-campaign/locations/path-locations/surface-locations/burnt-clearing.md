@@ -1,44 +1,43 @@
 # BURNT CLEARING
 
-***Tier 1 [Type TBD]***
+***Tier 1 Exploration***
 *A scorched forest sanctuary dying from a battle between Fire Born and Mist creatures, where ash drifts like snow and embers refuse to die.*
-**Impulses:** [TBD - Echo with past violence, reveal the cost of faction warfare, offer dying sanctuary's last gifts]
+**Impulses:** Echo with past violence, reveal the cost of faction warfare, offer the dying sanctuary's last gifts before it fades
 
 > **Difficulty:** 11
-> **Modifiers:** Unstable, Inhabited (the Lost bandits)
+> **Modifiers:** Unstable
 > **Potential Adversaries:** The Lost (bandit crew), Mist creatures (encroaching), Desperate Refugees
-
-## BACKSTORY
-
-A Fire Born group was ambushed by Mist Born creatures while passing through this natural sanctuary. The resulting battle scorched the forest with Sacred Flame powers and mist corruption. The Rootbound guardian was critically wounded trying to protect their domain. Both factions left after the fight, leaving the sanctuary to die. The Lost - a bandit crew who lost their own sanctuary - now occupy the ruins, using the guardian's fading protection while they can.
 
 ## FEATURES
 
-***Fire-Scarred Sentinel - [Type TBD]:*** The massive central tree that survived the flames, blackened but still living. [Needs mechanics - landmark? climbing challenge? holds secrets?]
+***Fire-Scarred Sentinel - Counter System:*** The massive blackened tree still holds remnants of its ancient protective essence. Start a Sentinel Protection counter at 7. Each time PCs visit this location, reduce the counter by 1. While the counter is above 0, the tree's lingering power provides protection against mist corruption - it costs 2 additional Fear to make this location Mist-Touched. At 3: The tree's bark begins to crumble and its protective aura visibly dims. At 0: The tree's protection fails completely - this benefit is lost and the location becomes vulnerable to mist encroachment.
 
-  *[Feature questions TBD]*
+  *What will happen to the sanctuary when the tree's protection finally fails? Can the tree's essence be restored, or is its death inevitable? What signs show the tree's power fading with each visit?*
 
-***Ash Drift - [Type TBD]:*** Piles of ash that blow like snow across the dead ground. [Needs mechanics - obscures vision? tracks footprints? hazard?]
+***Ash Drift - Action:*** Spend 1 Fear to have ash swirl up in choking clouds from the scorched ground. All creatures in the affected area have their vision obscured to Close range and have disadvantage on ranged attacks and Instinct rolls to perceive their surroundings until the ash settles (end of the scene or when strong wind clears it).
 
-  *[Feature questions TBD]*
+  *Do the ash clouds reveal hidden threats or conceal them further? What memories or visions might emerge from disturbed ash? How do The Lost navigate through these constant ash storms?*
 
-***Ember Core - [Type TBD]:*** A spot where the ground still glows faintly with heat from the battle. [Needs mechanics - warmth source? danger zone? flame power remnant?]
+***Ember Core - Passive:*** The ground glows with an unsettling, ominous light born from the tree's unhealed wounds. The flickering flames cast distorted shadows and illuminate the entire clearing in sickly orange hues. PCs spending extended time in this clearing (more than 1 hour) must make a Presence roll. On a failure, mark 1 Stress from the oppressive atmosphere of lingering pain and violence. On a failure with Fear, mark 1 Stress and lose 1 Hope as the flames seem to whisper accusations and memories of the battle.
 
-  *[Feature questions TBD]*
+  *What shadows and shapes do the flames cast that unnerve visitors? Do the flames grow brighter or dimmer when someone suffers nearby? Can the oppressive atmosphere be lifted, or is it permanent?*
 
-***Spring Grotto - Passive:*** A small cave beneath the Fire-Scarred Sentinel where an underground spring still flows, untouched by flames. The cool water and living moss provide natural healing. PCs who rest here for at least 1 hour can clear 1 Stress. The grotto can only accommodate 3 people at a time. The dying Rootbound guardian shelters here.
+***Spring Grotto - Passive:*** A small cave beneath the Fire-Scarred Sentinel where an underground spring still flows, untouched by flames. The cool water and living moss provide natural healing. PCs who rest here for at least 1 hour can clear 1 Stress. The grotto can only accommodate 3 people at a time.
 
-  *Who controls access to this healing sanctuary? What does the guardian want from visitors? How long can the spring sustain its healing power?*
+  *Who controls access to this healing sanctuary? How long can the spring sustain its healing power?*
 
 ## FEATURE QUESTIONS
 
 - What happened to the Fire Born and Mist Born who fought here?
-- Can the Rootbound guardian be saved, or is their death inevitable?
 - How long before the sanctuary's protection fails completely and mist consumes it?
-- What would the Lost bandits do if they lost this refuge too?
-- Could the burnt forest regenerate if the guardian survives?
+- Could the burnt forest regenerate?
 
 ---
+
+
+## BACKSTORY
+
+A Fire Born group was ambushed by Mist Born creatures while passing through this natural sanctuary. The resulting battle scorched the forest with Sacred Flame powers and mist corruption. The Rootbound guardian was critically wounded trying to protect their domain. Both factions left after the fight, leaving the sanctuary to die. The Lost - a bandit crew who lost their own sanctuary - now occupy the ruins, using the guardian's fading protection while they can.
 
 ## DESIGN NOTES
 
@@ -54,10 +53,3 @@ A Fire Born group was ambushed by Mist Born creatures while passing through this
 - Exploit the dying sanctuary (take what they can before it collapses)
 - Ignore it (moral choice - not their problem)
 
-**Mist Encroachment:** The burnt areas have no natural resistance. Mist creeps closer daily. Timer mechanic?
-
-@todo Complete feature mechanics for Fire-Scarred Sentinel, Ash Drift, and Ember Core
-@todo Name and detail the Rootbound guardian
-@todo Define Impulses and location type (Social? Exploration? Both?)
-@todo Determine if this location should be Stable or Unstable
-@todo Consider adding visible mist boundary feature showing daily encroachment

@@ -14,7 +14,7 @@
 
   *What makes this particular section so dangerous? Are there signs of previous accidents? How do experienced mountain travelers navigate safely?*
 
-***Sacred Flame Blessing - Passive:*** At the Flame Shrine, PCs can spend time in reverent contemplation of the flickering Sacred Flame. Make a Presence roll. On a success, clear 2 Stress. On a success with Hope, also gain advantage on the next roll made to resist fear or despair.
+***Sacred Flame Blessing - Passive:*** At the Flame Shrine, PCs can spend time in reverent contemplation of the flickering Sacred Flame. Make a Presence roll. On a success, clear 1 Stress. On a success with Hope, clear 2 Stress instead.
 
   *How does the Sacred Flame respond to each PC? What visions or feelings does the flame inspire? Why does this flame burn when others have been extinguished?*
 
@@ -22,9 +22,9 @@
 
   *From which direction do the winds come? Do they carry voices or other sounds? How did ancient ceremonies account for these dangerous winds?*
 
-***Ancient Echoes - Reaction:*** When PCs perform any ritual or ceremony at the mountain peak, the stones echo with memories of past ceremonies. Spend a Fear to manifest ghostly figures of ancient worshippers who either aid (+2 to the ceremony roll) or interfere (disadvantage) based on the PCs' reverence. @todo rework
+***Mountain Vantage - Passive:*** Hidden near the Sacred Flame at the peak is an ancient viewing point where the mountain's height pierces through the mist. From this vantage, PCs can clearly survey the entire current Path configuration spread below. They can identify which locations (if any) are Mist-Touched by the telltale signs of corruption - writhing fog patterns, distorted boundaries, or unnatural darkness.
 
-  *What ceremonies were once performed here? Who were the ancient worshippers? What do the echoes reveal about the mountain's history?*
+  *What ancient purpose did this viewing point serve for the flame keepers? How obvious is the corruption when viewed from above compared to ground level? Can PCs see beyond the current Path to locations not yet connected?*
 
 ## FEATURE QUESTIONS
 

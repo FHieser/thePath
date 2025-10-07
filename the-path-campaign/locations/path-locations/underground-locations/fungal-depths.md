@@ -18,9 +18,9 @@
 
   *What powerful predator accumulated these remains? How recently were these creatures killed? Do the bones show signs of being arranged deliberately?*
 
-***Root Chamber Passage - Passive:*** Massive tree roots have broken through the cavern ceiling, creating natural bridges and passages between different levels. The roots are sturdy enough to support travel but some sections are rotting or unstable. PCs must make Agility rolls when traversing damaged root sections or risk falling to the chamber floor below. @todo rework
+***Ant Colony Territory - Passive/Reaction:*** The ant colony's well-maintained trails provide the safest routes through the fungal depths - no navigation needed, no getting lost. The massive nest structure serves as a central landmark, and PCs can observe worker ants constantly transporting corpses and edible fungi along the trails toward the nest. The colony is passive if undisturbed. If the colony structure takes any damage, all creatures within Very Close range of the nest immediately take 1d8+4 physical damage from explosive defensive swarms. Additionally, the entire territorial zone becomes hostile - any creature in the territory takes 1d4+2 damage at the start of each turn from relentless ant attacks until they leave the area.
 
-  *How do surface tree roots extend so deeply underground? What connection exists between the surface forest and these fungal depths? Are the roots healthy or being consumed by the fungi?*
+  *What marks the territorial boundaries? How do the ants distinguish threats from travelers? How long does the defensive state last?*
 
 ***Unpredictable Spore Cloud - Action:*** Disturbing certain mushroom clusters releases thick clouds of spores with varying effects. All creatures in Close range are affected. Roll a d6: On 1-2, creatures take 1d6+1 poison damage; On 3-4, creatures mark 2 Stress from disorientation and nausea; On 5-6, creatures lose 1 Hope as despair-inducing spores cloud their judgment.
 
