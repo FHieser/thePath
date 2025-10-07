@@ -62,9 +62,9 @@
 ## **Current Development Phase**
 
 ### **Active Work** *(What we're building now)*
-- **Session 2 Development**: Fear Guide complete, Village NPCs complete (3 core NPCs: Brenner, Nix, Donatello)
+- **Location Feature Refinement**: Completing TBD features and enhancing existing locations with new mechanics
+- **Deep Forest Location Development**: Creating new surface location type with organic traversal challenges
 - **Faction System Development**: Creating comprehensive faction framework with lore and mechanics (2/9 complete)
-- **Campaign Worldbuilding**: Establishing High Lore cosmology and faction relationships
 
 ### **Next Session Priorities**
 - ✅ Complete Village in the Mist location cards with enhanced mechanics
@@ -210,6 +210,31 @@
   - ✅ 5 plot hooks emphasizing territorial nature and individual agendas
 - 🔄 Remaining factions in development (7/9 completed)
 
+### **Phase 10: Location Feature Enhancement** *(Completed ✅)* *(October 7, 2025)*
+- ✅ Burnt Clearing complete implementation:
+  - ✅ Changed to Exploration type (faction warfare aftermath theme)
+  - ✅ Fire-Scarred Sentinel 7-stage counter tracking fading protection
+  - ✅ Ash Drift action feature for choking clouds
+  - ✅ Ember Core passive stress/hope mechanic from oppressive atmosphere
+  - ✅ Spring Grotto stress relief sanctuary (guardian placeholder for later)
+- ✅ Sacred Mountain Pass refinement:
+  - ✅ Mountain Vantage passive feature for surveying Path configuration
+  - ✅ Replaced Ancient Echoes with strategic reconnaissance tool
+  - ✅ Reveals Mist-Touched locations from peak vantage point
+- ✅ Fungal Depths enhancement:
+  - ✅ Ant Colony Territory passive/reaction feature
+  - ✅ Navigation aid via ant trails through fungal maze
+  - ✅ Corpse-hauling ant behavior integrated thematically
+  - ✅ Defensive swarm mechanics (1d8+4 initial, 1d4+2 ongoing damage)
+- ✅ Verdant Crossing creation (new Deep Forest location):
+  - ✅ Tier 1 Traversal with cliff descent/ascent mechanics
+  - ✅ Bidirectional counter system (4→0 descending, 0→4 ascending)
+  - ✅ Group Agility roll mechanics with shared consequences
+  - ✅ Fungal Shelf Shortcut high-risk/high-reward feature (advance 2, fall multiplied damage)
+  - ✅ Luminescent Moss reaction (disadvantage on hiding when covered in spores)
+  - ✅ Insect Paradise passive integrating Wild Beasts modifier
+  - ✅ Complete thematic cohesion: fungi + roots + insects + bioluminescence
+
 ---
 
 ## **Technical Debt & Improvements**
@@ -236,12 +261,13 @@
 
 ## **Repository Statistics**
 
-**Total Files Created**: 82+
+**Total Files Created**: 83+
 **Campaign Components Built**: 98%
 **Framework Completion**: 100%
 **Content Ready for Play**: 98%
+**Path Locations**: 15 complete (10 surface, 5 underground)
 
-**Development Sessions**: 5
+**Development Sessions**: 6
 **Major Restructures**: 1
 **Framework Revisions**: 2
 **Active Development Branches**: main
