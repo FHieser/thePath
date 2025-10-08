@@ -235,6 +235,26 @@
   - ✅ Insect Paradise passive integrating Wild Beasts modifier
   - ✅ Complete thematic cohesion: fungi + roots + insects + bioluminescence
 
+### **Phase 11: Mist Mechanics & Adversary Expansion** *(Completed ✅)* *(October 8, 2025)*
+- ✅ Comprehensive Mist Interaction Rules system (path-mechanics.md):
+  - ✅ Mist token escalation mechanics (1-3 / 4-5 / 6-7 / 8+ character loss)
+  - ✅ Player choice at each tier (Hope/Stress, Fear/HP, both)
+  - ✅ Sacred Flame as only clearing method (rest at flame location)
+  - ✅ Mist-Touched location creation rules (3 Fear during path, 2 Fear pre-planning)
+  - ✅ Off-Path corruption system (all non-Path locations are Mist-Touched)
+- ✅ Mist Crab adversary (Tier 1 Bruiser):
+  - ✅ Crystallized Shell reaction (4 uses, reduces HP marked by 1, becomes Vulnerable when depleted)
+  - ✅ Pincer Grasp passive (Restrain up to 2 targets on successful attacks)
+  - ✅ Crushing Grip action (spend Fear to auto-hit all grabbed targets for 1d12+4 phy)
+  - ✅ Living Platform passive (+2 Evasion to rider, dismount on shell break/Severe damage)
+  - ✅ Based on official Hermit Crab's Borrowed Shell feature
+- ✅ Mist Thrower adversary (Tier 1 Support):
+  - ✅ Heat Seekers passive (prioritize flames/warmth/light)
+  - ✅ Mist Spray action (area attack, immune to Heat Seekers adversaries)
+  - ✅ Spread the Mist action (create corruption zones, enable Sacred Flame breach)
+  - ✅ Mist token application integrated with campaign mechanics
+  - ✅ Support role: battlefield control through corruption zones
+
 ---
 
 ## **Technical Debt & Improvements**

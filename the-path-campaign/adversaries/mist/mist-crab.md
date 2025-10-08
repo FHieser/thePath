@@ -1,0 +1,32 @@
+# Mist Crab
+
+**Tier 1 Bruiser**
+
+*A massive crustacean that has emerged from the depths of the mist, its shell covered in hardened crystalline formations of frozen otherworldly fog. Its oversized claws click and scrape as it prowls for warm-blooded prey to crush and drag into the darkness.*
+
+**Motives and Tactics:** Grab and crush prey, use shell for protection, serve as mobile platform for other mist creatures
+
+**Difficulty:** 13
+**Thresholds:** 8/16
+**HP:** 5
+**Stress:** 3
+**ATK:** +0 **Crushing Claw:** Melee — 1d12+4 phy
+**Experience:** Powerhouse +3
+
+## Features
+
+### Crystallized Shell — Reaction
+**Uses: 4.** When the Mist Crab takes damage, reduce the number of Hit Points the Mist Crab should mark as the result of incoming damage by one. While this ability has no remaining uses, the Mist Crab is Vulnerable.
+
+### Pincer Grasp — Passive
+When the Mist Crab makes a successful attack against a PC, that target becomes Restrained by the crab's crushing claws in addition to taking damage. The crab can hold up to 2 creatures this way. A Restrained creature can use an action to make an Agility or Finesse roll against the crab's difficulty (13) to escape. If the crab takes Severe damage (16+) or greater, all grabbed creatures are immediately freed.
+
+### Crushing Grip — Action
+**Spend a Fear** to have the crab make a standard attack (1d12+4 phy) against all creatures currently Restrained by Pincer Grasp. These attacks automatically hit and deal normal damage (roll separately for each target).
+
+### Living Platform — Passive
+One adversary of similar size or smaller can ride atop the Mist Crab's shell. While mounted, the rider gains +2 Evasion against attacks and can act independently on their own turn. The rider moves with the crab. If the crab takes Severe damage (16+), is defeated, or Crystallized Shell loses all uses, the rider must succeed on an Agility roll (Difficulty 13) or fall prone in a Close range position. Once the shell is broken (Crystallized Shell has no uses remaining), no adversary can mount the crab.
+
+---
+
+*These creatures were once ordinary crabs that inhabited the waterways and shores before The Path consumed the world. Now transformed by prolonged exposure to the otherworldly mist, they have grown massive and aggressive, their shells crystallizing with frozen fog that provides both armor and a platform for other mist-touched beings.*

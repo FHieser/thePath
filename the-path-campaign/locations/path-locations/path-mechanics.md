@@ -174,40 +174,42 @@ Over multiple visits:
 
 ## **Mist Interaction Rules**
 
-### **Mist Exposure**
-When players leave marked paths or safe zones:
+### **Mist Tokens**
 
-#### **Mist Mark Accumulation**
-- **Light Exposure** (1 hour off-path): Gain 1 Mist Mark
-- **Moderate Exposure** (4 hours off-path): Gain 2 Mist Marks
-- **Heavy Exposure** (8+ hours off-path): Gain 3 Mist Marks
-- **Extreme Exposure** (overnight in Mist): Gain 5 Mist Marks
+The otherworldly mist that shrouds The Path corrupts and consumes those exposed to its influence. Characters accumulate **Mist tokens** through various means during their travels, and the corruption worsens with each token gained.
 
-#### **Mist Mark Effects**
-- **1-2 Marks**: Minor disorientation, -1 to navigation checks
-- **3-4 Marks**: Hallucinations, -2 to Instinct and Presence rolls
-- **5-6 Marks**: Memory confusion, -3 to all mental rolls
-- **7+ Marks**: Severe corruption, risk of permanent effects
+#### **Gaining Mist Tokens**
 
-### **Mist Clearing**
-Remove Mist Marks through:
-- **Sacred Flame Rest**: Remove all marks after full rest at sanctuary
-- **Cleansing Rituals**: Specific spells or items reduce marks
-- **Natural Recovery**: Remove 1 mark per week of sanctuary rest
-- **Story Events**: Major victories or revelations may clear marks
+Characters may gain Mist tokens from:
+- **Mist-Touched locations**: Spending extended time in corrupted areas
+- **Adversary abilities**: Certain mist creatures can inflict Mist tokens
 
-### **Mist Encounters**
-When exposure checks fail:
-- **Mist Creatures**: Hostile entities that live within the phenomenon
-- **Temporal Distortions**: Time moves differently, affecting resources
-- **False Paths**: Illusions that lead to wrong destinations
-- **Memory Echoes**: Visions of past events in the location
+#### **Mist Token Corruption Effects**
 
-**TODO**: Create separate Mist Environment mechanics including:
-- Automatic Fear token generation upon entry
-- Enhanced Mist Mark accumulation and effects
-- Specific encounter tables and environmental hazards
-- Integration with Daggerheart's existing environment system
+**Mist tokens (Condition):** When you gain a Mist token, immediately suffer consequences based on your total number of tokens:
+
+- **1-3 Tokens**: Choose one: Lose 1 Hope OR mark a Stress
+- **4-5 Tokens**: Choose one: GM gains 1 Fear OR lose 1 HP
+- **6-7 Tokens**: Suffer both effects from the previous tier (choose one from each: Hope/Stress AND Fear/HP)
+- **8+ Tokens**: Your character is consumed by the mist and lost. Create a new character.
+
+**Clearing Mist Tokens:**
+- **Resting at Sacred Flame**: PCs that rest at a location with a Sacred Flame lose all Mist tokens 
+
+#### **Mist-Touched Locations**
+
+Locations can become corrupted by prolonged mist exposure, marked with the **Mist-Touched** modifier:
+
+**Creating Mist-Touched Areas:**
+- **GM spends 3 Fear** to make a location or area Mist-Touched for the rest of the path
+- **GM spends 2 Fear at the start of the path** to make a location or area Mist-Touched for the rest of the path
+- Certain adversary abilities can create temporary Mist-Touched zones
+- Locations may start as Mist-Touched due to story circumstances
+- All locations that are not on the path are mist-touched @todo increase detail
+
+**Effects of Mist-Touched Areas:**
+- Thick supernatural fog reduces visibility
+- @todo will encounter mist touched if on the path
 
 ---
 
