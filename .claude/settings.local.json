@@ -4,7 +4,8 @@
       "Bash(find:*)",
       "Bash(mv:*)",
       "Bash(cat:*)",
-      "SlashCommand(/give-me-five:*)"
+      "SlashCommand(/give-me-five:*)",
+      "Bash(tree:*)"
     ],
     "deny": [],
     "ask": []
