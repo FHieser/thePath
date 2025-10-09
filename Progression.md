@@ -62,8 +62,8 @@
 ## **Current Development Phase**
 
 ### **Active Work** *(What we're building now)*
-- **Location Feature Refinement**: Completing TBD features and enhancing existing locations with new mechanics
-- **Deep Forest Location Development**: Creating new surface location type with organic traversal challenges
+- **Spider Queen's Domain Side-Quest**: Tier 2 two-location dungeon with linked surface/underground structure
+- **Adversary Creation**: 5 spider-themed adversaries for Tier 2 encounters
 - **Faction System Development**: Creating comprehensive faction framework with lore and mechanics (2/9 complete)
 
 ### **Next Session Priorities**
@@ -198,6 +198,25 @@
   - ✅ Collaborative development methodology documented
 - ✅ Fire Born faction completed:
   - ✅ Ancient servants transformed by mist into flame-dependent beings
+
+### **Phase 10: Spider Queen's Domain Side-Quest** *(In Progress 🔄)*
+- ✅ **The Silken Spire** (Tier 2 Surface Location - Complete):
+  - ✅ Silk castle architecture woven entirely from spider silk
+  - ✅ 6 complete features: Queen's Fortress (linked structure), Silk Watchtowers (2-position reconnaissance), Queen's Emissary (speaking spider), Sentinel Chamber (guard room), Mushroom Cultivation (resource harvesting), Silk Strand Descent (elevator to underground)
+  - ✅ Side-branch mechanics (dead-end optional exploration)
+  - ✅ Fungal symbiosis system integrated
+  - ✅ Modifiers: Unstable, Wild Beasts, Cave Mouth
+- 🔄 **The Brood Throne** (Tier 2 Underground Location - Framework):
+  - ✅ Core structure with 2 complete features (Queen's Fortress, Silk Strand Descent)
+  - 📝 3 outlined features needing refinement: Egg Chamber, Silk Vault (treasure), Queen's Throne (boss encounter)
+  - ✅ TODO checklist added for 5 required adversaries
+  - ✅ Modifiers: Unstable, Underground, Wild Beasts
+- 📝 **Adversaries Pending** (Tier 2):
+  - [ ] Spider Queen (Solo) - Main boss
+  - [ ] Giant Spider Bruiser - Elite guardians
+  - [ ] Spider Emissary - Speaking envoy
+  - [ ] Spider Minion - Worker/scouts
+  - [ ] Spider Swarm (Horde) - Defensive young
   - ✅ Massive brazier carriers (elephant to city-sized mobile temples)
   - ✅ Cryptid-rare encounters (legendary status)
   - ✅ 3 subgroups: Bearers, Paladins, Guardians
