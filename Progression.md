@@ -206,10 +206,17 @@
   - ✅ Side-branch mechanics (dead-end optional exploration)
   - ✅ Fungal symbiosis system integrated
   - ✅ Modifiers: Unstable, Wild Beasts, Cave Mouth
-- 🔄 **The Brood Throne** (Tier 2 Underground Location - Framework):
-  - ✅ Core structure with 2 complete features (Queen's Fortress, Silk Strand Descent)
-  - 📝 3 outlined features needing refinement: Egg Chamber, Silk Vault (treasure), Queen's Throne (boss encounter)
-  - ✅ TODO checklist added for 5 required adversaries
+- ✅ **The Brood Throne** (Tier 2 Underground Location - Complete):
+  - ✅ Core structure with 6 complete features:
+    - ✅ Queen's Fortress (unified domain with Silken Spire)
+    - ✅ Silk Strand Descent (100-foot descent with group Agility check)
+    - ✅ The Silk Vault (treasure/egg chamber with 3-stage Disturbance Counter: 1 Fear → Fight encounter → Queen confrontation)
+    - ✅ The Queen's Throne (elevated combat arena with +2 Evasion, Summon the Brood ability for 1 Fear/3 BP)
+    - ✅ Ancient Foundation Engine (4 scattered components, repair quest to stabilize location permanently)
+    - ✅ Prey Storage (rescue prisoners: 1 Hope per prisoner, 1 Fear per 2 prisoners)
+  - ✅ Interconnected feature economy (Disturbance Counter, Hope/Fear trades, Battle Point summoning)
+  - ✅ Multiple approach vectors (combat, stealth, negotiation, puzzle-solving)
+  - ✅ Campaign-impacting quest (engine repair changes Unstable → Stable)
   - ✅ Modifiers: Unstable, Underground, Wild Beasts
 - 📝 **Adversaries Pending** (Tier 2):
   - [ ] Spider Queen (Solo) - Main boss

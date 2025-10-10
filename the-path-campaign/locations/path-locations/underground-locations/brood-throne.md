@@ -18,17 +18,21 @@
 
   *How deep does the shaft descend before reaching the underground chamber? What sounds echo up from the Brood Throne below? Can the spiders cut the silk ropes to trap intruders below or prevent pursuit?*
 
-***@TODO Egg Chamber - Passive/Action:*** [Feature about nursery chambers with thousands of egg sacs - resource for Spider Queen, potential hostage situation, environmental hazard with hatching spiders]
+***The Silk Vault - Passive/Action:*** Hundreds of egg sacs hang from the walls alongside silk-wrapped treasure bundles from previous victims. PCs can attempt to carefully extract treasures with a Finesse roll (Difficulty 14). On a **success**, they claim **5 handfuls of gold** without disturbing the eggs. On a **failure**, their clumsy movements send vibrations through the silk - add **1 point** to the **Disturbance Counter** and they get no treasure from that bundle. When the counter reaches **1 point**, the GM gains **1 Fear**. When the counter reaches **2 points**, the players are attacked by spiders (Fight encounter). When the counter reaches **3 points**, the Spider Queen becomes aware and confronts the PCs immediately.
 
-  *How many eggs does the Queen tend? What happens if the egg chambers are threatened? Do the eggs have different developmental stages?*
+  *How many eggs does the Queen tend? What happens if the egg chambers are threatened? Do the eggs have different developmental stages? What treasures has the Queen collected? How does she decide what to keep versus consume? Are any items cursed or trapped?*
 
-***@TODO Silk Vault - Passive:*** [Feature about treasure wrapped in silk - loot from previous victims, trade goods, magical items preserved in webbing - reward for completing the dungeon]
-
-  *What treasures has the Queen collected? How does she decide what to keep versus consume? Are any items cursed or trapped?*
-
-***@TODO The Queen's Throne - Passive/Action:*** [Feature about encountering the Spider Queen herself - social interaction possibility, boss fight setup, potential negotiation or combat depending on player approach]
+***The Queen's Throne - Passive/Action:*** The massive throne of woven silk dominates the chamber's center, elevated 10 feet above the floor with silk strand "steps" leading up. Dozens of holes puncture the ceiling above, connecting to spider tunnels throughout the fortress. The Spider Queen fights from this high ground, gaining **+2 to Evasion** while on the throne due to superior positioning. PCs can climb the silk strands (Agility roll, Difficulty 12) to reach her level and negate this bonus. If the throne takes damage (Threshold 3), it collapses, causing the Queen to fall and become Vulnerable until the end of her next turn. **Summon the Brood (Active):** The GM can spend **1 Fear** to have the Spider Queen screech a summoning call. Spiders pour from the ceiling holes - add **up to 3 Battle Points** worth of spiders to the encounter.
 
   *Why does the Queen allow some visitors to live? What does she desire most? Can she be reasoned with, or is combat inevitable?*
+
+***Ancient Foundation Engine - Passive/Action:*** The underground tunnel opens into pre-Mist ruins containing a massive brass and crystal engine. The Spider Queen built her throne room directly above this partially-destroyed engine, instinctively drawn to its protective aura. The engine's deep thrumming resonance keeps the mist from fully penetrating this location, but damage has caused it to fail gradually - this explains the location's Unstable modifier. **4 missing engine components** can be found scattered throughout this location and the Silken Spire above. PCs who recognize these parts (Knowledge roll, Difficulty 13) realize they could repair the engine. Each component bears ancient engravings that hint at the engine's purpose - to create a permanent mist-free sanctuary. Retrieving all 4 components and reinstalling them (requires time and tools) allows a final Knowledge roll (Difficulty 15). Success permanently changes the location from Unstable to Stable, creating a lasting sanctuary.
+
+  *How long has this engine been here? What civilization built it? Are there other engines like this on the Path?*
+
+***Prey Storage - Passive/Action:*** The western alcove contains dozens of silk-wrapped victims suspended from the ceiling, paralyzed by spider venom and unconscious. Most are recent captures - merchants, travelers, underground dwellers. PCs can cut down cocoons to free prisoners, who awaken weak and disoriented, requiring escort to escape. For each prisoner freed, PCs gain **1 Hope** that can be distributed among the party as they choose. However, for every **2 prisoners freed**, the GM gains **1 Fear** as the disturbance attracts spider attention and complicates the escape.
+
+  *Who are the prisoners? How long have they been here? Do any of them have connections to factions or settlements the PCs know?*
 
 ## FEATURE QUESTIONS
 
