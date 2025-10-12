@@ -199,7 +199,7 @@
 - ✅ Fire Born faction completed:
   - ✅ Ancient servants transformed by mist into flame-dependent beings
 
-### **Phase 10: Spider Queen's Domain Side-Quest** *(In Progress 🔄)*
+### **Phase 10: Spider Queen's Domain Side-Quest** *(Completed ✅)* *(October 12, 2025)*
 - ✅ **The Silken Spire** (Tier 2 Surface Location - Complete):
   - ✅ Silk castle architecture woven entirely from spider silk
   - ✅ 6 complete features: Queen's Fortress (linked structure), Silk Watchtowers (2-position reconnaissance), Queen's Emissary (speaking spider), Sentinel Chamber (guard room), Mushroom Cultivation (resource harvesting), Silk Strand Descent (elevator to underground)
@@ -218,12 +218,18 @@
   - ✅ Multiple approach vectors (combat, stealth, negotiation, puzzle-solving)
   - ✅ Campaign-impacting quest (engine repair changes Unstable → Stable)
   - ✅ Modifiers: Unstable, Underground, Wild Beasts
-- 📝 **Adversaries Pending** (Tier 2):
-  - [ ] Spider Queen (Solo) - Main boss
-  - [ ] Giant Spider Bruiser - Elite guardians
-  - [ ] Spider Emissary - Speaking envoy
-  - [ ] Spider Minion - Worker/scouts
-  - [ ] Spider Swarm (Horde) - Defensive young
+- ✅ **Complete Adversary Suite** (Tier 2):
+  - ✅ Spider Queen (Solo) - Ancient intelligent ruler with Relentless (2), Summon the Brood, Necrotoxin Strike, Queen's Command
+  - ✅ Giant Spider Guardian (Bruiser) - Elite guards with Frenzy Strike (Fear AoE) and Web Anchor (Stress restraint)
+  - ✅ Spider Emissary (Standard) - Speaking diplomat with Voice of the Queen and Paralytic Venom
+  - ✅ Spider Minion (Minion) - Worker spiders with Ceiling Skitter advantage and Web Spray group attack
+  - ✅ Spider Swarm (Horde 2/HP) - Defensive spiderlings with Web Cocoon and egg protection mechanics
+- ✅ **Perfect mechanical integration:**
+  - ✅ All adversaries follow official Tier 2 benchmarks
+  - ✅ Summon the Brood matches Queen's Throne feature (1 Fear = 3 BP)
+  - ✅ Queen's Command buffs all spiders (+1 attack)
+  - ✅ Web mechanics create tactical restraint options
+  - ✅ Multiple difficulty options for GM flexibility
   - ✅ Massive brazier carriers (elephant to city-sized mobile temples)
   - ✅ Cryptid-rare encounters (legendary status)
   - ✅ 3 subgroups: Bearers, Paladins, Guardians
