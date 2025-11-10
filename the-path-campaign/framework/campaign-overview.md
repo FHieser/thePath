@@ -2,7 +2,7 @@
 
 ## Core Campaign Concept
 
-**"The Path"** is a Daggerheart campaign frame built around exploration, mystery, and evolving locations in a mist-shrouded world where normal travel is impossible.
+**"The Path"** is a Daggerheart campaign frame built on reusable environment cards that require minimal GM prep. It combines mysterious mist-world themes with roguelike randomization—players draw tarot cards to build each journey's route while location states persist between sessions. This creates flexible play experiences: run quick one-shots with random paths, or build long campaigns where player choices permanently reshape the world.
 
 ---
 
