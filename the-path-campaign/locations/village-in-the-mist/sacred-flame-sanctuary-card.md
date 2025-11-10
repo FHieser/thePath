@@ -9,9 +9,9 @@
 
 ## FEATURES
 
-***Sacred Rest - Passive:*** PCs can clear all Mist Marks as a downtime activity by spending time in meditation and prayer near the Sacred Flame.
+***Sacred Cleansing - Passive:*** When PCs rest in the village, they automatically cleanse 1d4 + Tier Mist tokens without spending a downtime move. The village flame's exceptional power and the community's accumulated cleansing knowledge make this the safest sanctuary. PCs still choose their normal two downtime moves.
 
-  *What rituals cleanse the mist's corruption from your body and spirit?*
+  *What rituals cleanse the mist's corruption from your body and spirit? How does the village community support your recovery?*
 
 ***Flame Crisis - Reaction:*** When Flame Essence runs critically low, the GM gains 2 Fear as panic spreads through the village and the Sacred Flame's protective power weakens.
 
