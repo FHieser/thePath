@@ -62,8 +62,7 @@
 ## **Current Development Phase**
 
 ### **Active Work** *(What we're building now)*
-- **Spider Queen's Domain Side-Quest**: Tier 2 two-location dungeon with linked surface/underground structure
-- **Adversary Creation**: 5 spider-themed adversaries for Tier 2 encounters
+- **Path Mechanics v2 Documentation**: Comprehensive rewrite of path-mechanics.md with improved organization and complete modifier system
 - **Faction System Development**: Creating comprehensive faction framework with lore and mechanics (2/9 complete)
 
 ### **Next Session Priorities**
@@ -286,6 +285,80 @@
   - ✅ Spread the Mist action (create corruption zones, enable Sacred Flame breach)
   - ✅ Mist token application integrated with campaign mechanics
   - ✅ Support role: battlefield control through corruption zones
+
+### **Phase 12: Path Mechanics v2 Documentation** *(Completed ✅)* *(October 13-18, 2025)*
+- ✅ Complete rewrite of Grid System section:
+  - ✅ High-level overview of dual-purpose (current Path + persistent geography)
+  - ✅ Coordinate system explanation (extensible grid with negative columns, inverse rows)
+  - ✅ Stable/Unstable location definitions moved from Modifiers section
+  - ✅ Underground location type explanation
+  - ✅ Clean transition to Placement Method section
+- ✅ Complete Placement Method section:
+  - ✅ Deliberate Placement description (full GM control)
+  - ✅ Random Draw description (emergent gameplay with GM placement decisions)
+  - ✅ Player-directed placement as advanced Random Draw option
+  - ✅ Face-down card rules
+  - ✅ Recommendation for new campaigns (4-6 locations, Flame-Touched to Flame-Touched, gradual complexity)
+- ✅ Complete Example Path Creation section:
+  - ✅ 7-step Path creation process (Starting Point → Path Length → Placement Method → Choose Locations → Place on Grid → Add Underground → Review Connections)
+  - ✅ Session 1 example with linear 5-location surface Path
+  - ✅ Session 2 example with branching paths and underground network
+  - ✅ Corrected route descriptions (no direct east from A1, Cave Mouth access required)
+- ✅ Reorganize Modifiers section to remove duplication:
+  - ✅ High-level overview explaining modifier categories
+  - ✅ Location Persistence Modifiers (Unstable, Stable) - moved from Grid System
+  - ✅ Vertical Navigation Modifiers (Cave Mouth, Underground) with extensibility note for additional layers
+  - ✅ Corruption & Protection Modifiers (Flame-Touched, Mist-Touched) with full descriptions
+  - ✅ Environmental & Encounter Modifiers (Wild Beasts, Inhabited) with gameplay implications
+- ✅ Complete Special Placement Modifiers section:
+  - ✅ Routes(X) system for connection requirements (1-4 adjacent locations)
+  - ✅ Linked(Location Name) for locations that appear together
+  - ✅ Removed Water Feature (not a placement modifier)
+  - ✅ Removed duplicate Underground Access subsection
+- ✅ Complete Session Tracking section:
+  - ✅ Location Cards subsection (card-to-location mapping with examples)
+  - ✅ Grid and Location Persistence subsection (visual before/after grids showing expansion and stabilization)
+  - ✅ Location Counters subsection (tracking ongoing feature states)
+  - ✅ NPC Positions subsection (character locations and attitudes)
+  - ✅ Made all examples campaign-agnostic (removed Moonfield-specific references)
+- ✅ Complete Mist Mechanics section:
+  - ✅ Streamlined prose while maintaining explanatory style
+  - ✅ Mist-Touched Locations with corruption rules
+  - ✅ Off-Path Travel with random location draws
+  - ✅ Mist Corruption with escalating token system (1-3 / 4-5 / 6-7 / 8+ tiers)
+  - ✅ Fear Spending Options integrated
+- ✅ Complete Flame Mechanics section:
+  - ✅ Comprehensive Flame Essence system (extraction from living flames, GM gains 2 Fear)
+  - ✅ Village Consumption mechanics (1 per day, Breach Counter for failure)
+  - ✅ Establishing New Sacred Flames (four-tier brazier quality system)
+  - ✅ Flame Canisters (single-use active flame containers for emergencies)
+  - ✅ Cleansing Mist Corruption (new downtime move, scales with Tier)
+  - ✅ Village Exception (auto-cleanse 1d4 + Tier without consuming downtime move)
+- ✅ Sacred Flame Sanctuary card updated:
+  - ✅ New "Sacred Cleansing" passive feature
+  - ✅ Automatic Mist token removal during village rest
+  - ✅ Integrated with path-mechanics-v2.md Flame Mechanics section
+
+### **Phase 13: Flame Mechanics Design** *(Completed ✅)* *(October 18, 2025)*
+- ✅ Systematic one-by-one design process for all Flame mechanics aspects:
+  - ✅ **Flame Essence Nature**: Condensed flame energy extracted from living Sacred Flames (weakens source temporarily)
+  - ✅ **Location Stabilization**: Four-tier brazier quality system (Fire Born ancient → mortal-crafted, sacred sites → normal locations)
+  - ✅ **Brazier Requirements**: Mixed approach supporting campaign progression (early scavenging → late crafting)
+  - ✅ **Flame Canisters**: Single-use active flame containers (Very Close aura, emergency cleansing, burns out)
+  - ✅ **Resting Mechanics**: New "Cleanse Corruption" downtime move (1d4+Tier / ALL tokens, competes with other moves)
+  - ✅ **Village Exception**: Auto-cleanse 1d4+Tier tokens without consuming downtime move
+- ✅ Complete integration with Daggerheart SRD rest system:
+  - ✅ Downtime move structure maintained (choose 2 moves)
+  - ✅ Tier-based scaling (1d4 + Tier for short rest, ALL for long rest)
+  - ✅ Competitive resource allocation (cleanse vs heal/prepare)
+- ✅ Fear economy expansion:
+  - ✅ GM gains 2 Fear when players extract Essence
+  - ✅ GM gains 2 Fear when players fill Flame Canisters
+  - ✅ GM gains 2 Fear when village reserves drop critically low
+- ✅ Conceptual coherence with Fire Born lore:
+  - ✅ Sacred Flames channel imprisoned god's power
+  - ✅ Mortals parasitically harvest from Fire Born's navigation network
+  - ✅ Two-phase campaign arc (salvage ancient flames → forge new network)
 
 ---
 
