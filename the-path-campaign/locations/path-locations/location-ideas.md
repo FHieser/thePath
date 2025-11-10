@@ -76,17 +76,8 @@ Future location types could include: Water/River Locations, Deep Forest Location
     - Bone Wind Chimes: Skeletal remains strung between branches, clinking in the breeze
 
 -**@todo a**
-    - Hanging Garden: Vines and flowers growing suspended between trees without touching ground
-    - Hanging Cages: Rusted iron cages dangling from high branches, some still occupied by old bones
-
-    - @todo ancient Botanium from Brass Mechanicorum
-
--**@todo a**
     - Beehive Tree: A hollow trunk buzzing with thousands of wild bees
     - Mushroom Circle: A perfect ring of massive toadstools that seems to hum with energy
--**@todo a**
-    - Spider Nursery: A tree wrapped entirely in silk, writhing with young spiders
-    - Fox Den: A burrow network beneath exposed roots, mysteriously quiet
 -**@todo a**
 - Root Throne: Exposed roots forming a natural seat beneath an ancient tree
 - Singing Stones: Smooth river rocks stacked in a cairn that hums in the wind

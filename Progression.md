@@ -390,7 +390,7 @@
 **Campaign Components Built**: 98%
 **Framework Completion**: 100%
 **Content Ready for Play**: 98%
-**Path Locations**: 15 complete (10 surface, 5 underground)
+**Path Locations**: 16 complete (11 surface, 5 underground)
 
 **Development Sessions**: 6
 **Major Restructures**: 1
