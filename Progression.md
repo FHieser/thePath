@@ -266,7 +266,20 @@
   - ✅ Insect Paradise passive integrating Wild Beasts modifier
   - ✅ Complete thematic cohesion: fungi + roots + insects + bioluminescence
 
-### **Phase 11: Mist Mechanics & Adversary Expansion** *(Completed ✅)* *(October 8, 2025)*
+### **Phase 11: Deep Forest Locations** *(Completed ✅)* *(November 13, 2025)*
+- ✅ Hollow Woods (Tier 1 Exploration - Complete):
+  - ✅ Ancient Hollows passive (3 Hope first visit from studying ancient carvings)
+  - ✅ Carve History action (invest 1 Hope, retrieve 2 Hope from respective carvings)
+  - ✅ Hidden Ritual Circle counter system (Familiarity counter: reveals at 3 visits)
+  - ✅ Blood sacrifice mechanics (HP for Mist token cleansing, 5 HP for Sanctuary Blessing)
+  - ✅ Sanctuary Blessing grants Stable + mist protection until next Path
+  - ✅ Bark Shedding Trees passive (disadvantage on repositioning/stealth, harvestable resource)
+  - ✅ Mushroom Ring Magic teleportation (connects to Forest Refuge)
+  - ✅ Progressive discovery system rewards repeated exploration
+  - ✅ Modifiers: Unstable (until blessed), Rootbound Hermits theme
+  - ✅ Strategic location stabilization mechanics
+
+### **Phase 12: Mist Mechanics & Adversary Expansion** *(Completed ✅)* *(October 8, 2025)*
 - ✅ Comprehensive Mist Interaction Rules system (path-mechanics.md):
   - ✅ Mist token escalation mechanics (1-3 / 4-5 / 6-7 / 8+ character loss)
   - ✅ Player choice at each tier (Hope/Stress, Fear/HP, both)
@@ -386,11 +399,11 @@
 
 ## **Repository Statistics**
 
-**Total Files Created**: 83+
+**Total Files Created**: 84+
 **Campaign Components Built**: 98%
 **Framework Completion**: 100%
 **Content Ready for Play**: 98%
-**Path Locations**: 16 complete (11 surface, 5 underground)
+**Path Locations**: 17 complete (12 surface, 5 underground)
 
 **Development Sessions**: 6
 **Major Restructures**: 1

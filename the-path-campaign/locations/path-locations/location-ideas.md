@@ -62,12 +62,11 @@ Future location types could include: Water/River Locations, Deep Forest Location
 
 **Deep Forest Locations:**
 
-- **Hollow Woods**
-    - Ancient Hollows: Massive trees with hollow interiors large enough to shelter entire groups, their bark scarred with old carvings.
-  - Bark Library: Ancient carvings covering every surface inside a hollow tree
-  - Hollow Shelter: A tree interior fitted with crude beds and old supplies
-  - Woodcutter's Camp: Axes, saws, and stacked logs abandoned mid-work
-
+-**Blood Fern Valley**
+- Deer Path: A winding trail through the undergrowth marked by hoof prints and shed antlers
+- Fern Valley: A depression carpeted entirely in waist-high ferns
+- Blood Moss: Red-colored moss growing only on north-facing bark
+- Petrified Grove: Trees turned to stone mid-growth, frozen in time
 
 - **Forest Heart**
     - Elder Tree: An impossibly ancient tree at the forest's center, its trunk wider than most buildings.
@@ -82,13 +81,9 @@ Future location types could include: Water/River Locations, Deep Forest Location
 - Root Throne: Exposed roots forming a natural seat beneath an ancient tree
 - Singing Stones: Smooth river rocks stacked in a cairn that hums in the wind
 
--**@todo a**
-- Deer Path: A winding trail through the undergrowth marked by hoof prints and shed antlers
-- Fern Valley: A depression carpeted entirely in waist-high ferns
-- Blood Moss: Red-colored moss growing only on north-facing bark
-- Petrified Grove: Trees turned to stone mid-growth, frozen in time
 
 
+@todo add Modifier Mushroom circle
 
 
 ### Location Modifiers
