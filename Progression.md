@@ -279,6 +279,43 @@
   - ✅ Modifiers: Unstable (until blessed), Rootbound Hermits theme
   - ✅ Strategic location stabilization mechanics
 
+### **Phase 14: Blood Fern Valley - Sacred Hunting Grounds** *(Completed ✅)* *(November 16, 2025)*
+- ✅ **Blood Fern Predator** (Tier 2 Solo Adversary - Complete):
+  - ✅ Tier 2 Solo with Difficulty 15, Thresholds 13/25, HP 9, Stress 4
+  - ✅ Attack +3, Moss-Slick Bite (2d10+4 physical damage)
+  - ✅ Experience: Valley Hunter +3
+  - ✅ 5 Features:
+    - ✅ Relentless (2) - Can act twice per GM turn
+    - ✅ Fern Stalk (Action) - Teleport through fern cover with advantage attack
+    - ✅ Territorial Roar (Action, Uses: 1) - Fear effect preventing approach
+    - ✅ Moss-Covered Hide (Passive, Uses: 1) - Damage reduction until broken by Severe attack
+    - ✅ Valley's Bond (Passive) - Resurrects between sessions when players return to location
+  - ✅ Valley spirit collector theme (enforcer of ancient hunting pact)
+  - ✅ Natural/wildlife focus with blood moss aesthetic
+  - ✅ Created in adversaries/beasts/ directory
+- ✅ **Blood Fern Valley** (Tier 2 Exploration Location - Complete):
+  - ✅ Tier 2, Difficulty 14, Modifiers: Unstable
+  - ✅ Sacred hunting grounds theme with debt stone tradition
+  - ✅ 5 Complete Features:
+    - ✅ Debt Stones (Passive + Action) - Pay tribute by carving/hanging massive stones to gain predator protection
+    - ✅ Stalking Predator (Counter System) - 0-5 awareness counter with variable point triggers
+    - ✅ Sacred Hunting Grounds (Passive) - Abundant deer population
+    - ✅ Crimson Undergrowth (Passive) - Stealth advantage for all creatures
+    - ✅ Hunter's Shrine (Passive + Action) - Offering site grants 1 Hope per Path creation
+  - ✅ Interconnected mechanics: Pay debt → Predator becomes guardian instead of threat
+  - ✅ Ancient tradition lore: Yearly payments compressed into permanent debt by mist
+  - ✅ Zone of peace mechanics for honorable visitors
+  - ✅ Multiple suspended debt stones aesthetic (hanging like grapes from trees)
+  - ✅ Spring shrine with carved stone basin
+- ✅ **Design Methodology Documentation**:
+  - ✅ Iterative question-answer workflow established
+  - ✅ Theme-first, mechanics-second principle
+  - ✅ Adversary before location design order
+  - ✅ Incremental feature-by-feature construction
+  - ✅ Multiple-choice narrowing process
+  - ✅ Lore exploration through rejection (witch tears → debt stones)
+  - ✅ Collaborative worldbuilding integration
+
 ### **Phase 12: Mist Mechanics & Adversary Expansion** *(Completed ✅)* *(October 8, 2025)*
 - ✅ Comprehensive Mist Interaction Rules system (path-mechanics.md):
   - ✅ Mist token escalation mechanics (1-3 / 4-5 / 6-7 / 8+ character loss)
@@ -399,11 +436,12 @@
 
 ## **Repository Statistics**
 
-**Total Files Created**: 84+
+**Total Files Created**: 86+
 **Campaign Components Built**: 98%
 **Framework Completion**: 100%
 **Content Ready for Play**: 98%
-**Path Locations**: 17 complete (12 surface, 5 underground)
+**Path Locations**: 18 complete (13 surface, 5 underground)
+**Adversaries**: 16+ (5 Mist creatures, 5 Spider Queen's domain, 1 Blood Fern Predator, 5+ others)
 
 **Development Sessions**: 6
 **Major Restructures**: 1
