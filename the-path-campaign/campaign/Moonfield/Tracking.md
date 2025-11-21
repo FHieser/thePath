@@ -10,54 +10,60 @@
 #### Minor Arcana Cards
 
 Wands:
+
 - 2 of Wands: Windswept Grasslands
 - 6 of Wands: Forest Refuge
 
 Swords:
 
 Discs:
+
 - 2 of Discs: Sacred Underground
-- 5 of Discs: Geothermal Caverns
+- 5 of Discs: Mining complex
 - 6 of Discs: Geothermal Caverns
 
 Goblets:
+
 - Ace of Goblets: Trading Grounds
 - 4 of Goblets: Stone Works
 - 7 of Goblets: Highland Watch
 - 10 of Goblets: Ancient Crossing
 
 #### Major Arcana Cards
+
 - 10 The wheel of Fortune: Village in the Mist
-----------------------------------------------------------
+
+---
+
 ### Cards
 
 - Ancient Crossing
-    - Counter at 5
+  - Counter at 5
 - Forest Refuge
-    - Watcher NPC Moved in
+  - Watcher NPC Moved in
 
-----------------------------------------------------------
+---
+
 ### Village Project
 
 - Pazzo Oven
- -Counter at 3 -> Goes down every day
+  -Counter at 3 -> Goes down every day
 
+---
 
-
-----------------------------------------------------------
 ### NPCs
+
 - Watcher
-    - His hut in the Forest Refuge was freed from the factionless there
-    - He is friendly to the players if they visit him
+  - His hut in the Forest Refuge was freed from the factionless there
+  - He is friendly to the players if they visit him
 - Factionless
-    - Their leader survived
-    - "Schnappt sie euch"
-----------------------------------------------------------
+  - Their leader survived
+  - "Schnappt sie euch"
+
+---
+
 ### Distances
 
-| Location | **1** | **2** | **3** | **4** ||
-|----------|-------|-------|-------|-------|-------|
-| **A** |Village in the Mist | - | - | - |Sacred Mountain Pass|
-
-
-
+| Location | **1**               | **2** | **3** | **4** |                      |
+| -------- | ------------------- | ----- | ----- | ----- | -------------------- |
+| **A**    | Village in the Mist | -     | -     | -     | Sacred Mountain Pass |
