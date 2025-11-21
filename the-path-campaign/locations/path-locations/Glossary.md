@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 22** (15 Surface + 7 Underground)
+**Total Locations: 24** (15 Surface + 7 Underground + 2 Special)
 
 ---
 
@@ -42,14 +42,23 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
+## Special Locations (2 locations)
+
+| Assigned | Ready | Location                                                          | File                                     | Description                                                  |
+| -------- | ----- | ----------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
+| ☑        | ☑     | [Village in the Mist](./special-locations/village-in-the-mist.md) | special-locations/village-in-the-mist.md | Central safe haven protected by Sacred Flame                 |
+| ☑        | ☑     | [Vanishing Mist](./special-locations/vanishing-mist.md)           | special-locations/vanishing-mist.md      | Impenetrable mist that claims travelers between destinations |
+
+---
+
 ## Tarot Card Assignments
 
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)  
-**Assigned: 21** | **Unassigned: 57** (73.1% remaining)
+**Assigned: 23** | **Unassigned: 55** (70.5% remaining)
 
-### Major Arcana (5 of 22 assigned)
+### Major Arcana (7 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -66,7 +75,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | X Wheel of Fortune    | Village in the Mist  |
 | XI Justice            |                      |
 | XII The Hanged Man    |                      |
-| XIII Death            |                      |
+| XIII Death            | Vanishing Mist       |
 | XIV Temperance        |                      |
 | XV The Devil          |                      |
 | XVI The Tower         |                      |

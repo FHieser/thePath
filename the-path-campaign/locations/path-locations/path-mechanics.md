@@ -2,7 +2,7 @@
 
 **A Path** is a combination of locations that form a way through the mist together. Locations themselves are isolated environments that have their own unique theme and interactable stats. The goal of this document is to create a guide on how to create and use the mechanics of a path and its locations.
 
-Creating a path requires three essential elements: location cards to represent each environment,  a grid to organize the journey, and a placement method to populate the grid. The grid provides a coordinate system that maps both the current path and tracks stable locations between sessions. Location cards are the building blocks—each one represents a specific environment with its own mechanics and narrative hooks. The placement method determines how these cards get onto the grid. Together, these elements create a flexible system that supports both structured storytelling and emergent exploration.
+Creating a path requires three essential elements: location cards to represent each environment, a grid to organize the journey, and a placement method to populate the grid. The grid provides a coordinate system that maps both the current path and tracks stable locations between sessions. Location cards are the building blocks—each one represents a specific environment with its own mechanics and narrative hooks. The placement method determines how these cards get onto the grid. Together, these elements create a flexible system that supports both structured storytelling and emergent exploration.
 
 ## Path locations
 
@@ -37,8 +37,6 @@ When placing locations on the grid, all locations except previously-visited Stab
 
 **Recommendation for New Campaigns:** When starting out with this campaign frame, use the Deliberate Placement method. A good first session is a short Path with 4-6 surface locations that go from one Flame-Touched location to the next. In subsequent sessions, introduce Cave Mouth locations and underground areas, and allow for branching paths where players choose between multiple routes. When you feel comfortable with the system, switch over to Random Draw if you want to add more emergent surprises to your game.
 
-
-
 ## Example Path Creation
 
 Creating a Path involves several steps that you'll follow each session. Here's the process:
@@ -69,6 +67,7 @@ Check that the Path makes sense—can players reach their destination? Are there
 Players begin their first session with a straightforward linear Path:
 
 **Surface Grid:**
+
 ```
 | Location | 1 | 2 | 3 | 4 | 5 |
 |----------|---|---|---|---|---|
@@ -82,6 +81,7 @@ This simple Path introduces the core mechanics without overwhelming new players.
 Once players understand the basics, introduce branching paths and underground locations:
 
 **Surface Grid:**
+
 ```
 | Location | 1 | 2 | 3 | 4 | 5 |
 |----------|---|---|---|---|---|
@@ -90,6 +90,7 @@ Once players understand the basics, introduce branching paths and underground lo
 ```
 
 **Underground Grid:**
+
 ```
 | Location | 1 | 2 | 3 | 4 | 5 |
 |----------|---|---|---|---|---|
@@ -119,7 +120,7 @@ These modifiers create a two-layer world with surface and underground locations.
 
 **Underground:** The location exists on the separate underground grid below the surface. Underground locations can only connect to other Underground locations or to surface locations that have the Cave Mouth modifier. These locations represent caves, tunnels, underground rivers, and subterranean chambers. Players cannot access Underground locations without first finding a Cave Mouth entrance. Examples include Mining Complex, Geothermal Caverns, and Sacred Underground.
 
-*Note: This vertical layer system could theoretically extend to additional dimensions beyond surface and underground. You could add sky-level locations accessible via climbing or flight, deeper underground layers beyond the first subterranean level, or even parallel dimensions like the Upside Down from Stranger Things or the Otherworld from Silent Hill. Each would use its own grid with specific connection modifiers to link between layers.*
+_Note: This vertical layer system could theoretically extend to additional dimensions beyond surface and underground. You could add sky-level locations accessible via climbing or flight, deeper underground layers beyond the first subterranean level, or even parallel dimensions like the Upside Down from Stranger Things or the Otherworld from Silent Hill. Each would use its own grid with specific connection modifiers to link between layers._
 **Corruption & Protection Modifiers**
 
 These modifiers represent the eternal struggle between the Sacred Flames that hold back the mist and the corrupting influence of the mist itself. They fundamentally alter the danger level and resource availability of a location and have special interaction rules (see Mist Mechanics section).
@@ -136,12 +137,12 @@ These modifiers add specific features, inhabitants, or encounter types to a loca
 
 **Inhabited:** The location has NPCs present—travelers, refugees, traders, or other communities. This creates roleplay opportunities, introduces potential allies or enemies, and provides access to trade, information, or faction interactions. Inhabited locations might contain friendly settlements, hostile bandit camps, or neutral trading posts. The specific inhabitants should reflect the location's environment and position relative to the Path.
 
-
 **Special Placement Modifiers**
 
 These modifiers define unique grid placement behaviors and structural connections between locations. They control how locations must be positioned during Path generation and which other locations they depend on.
 
 **Routes(X):** This location must connect to exactly X adjacent locations on the grid. The number determines the location's role in the Path network:
+
 - **Routes(1)** - Dead-end location that connects to only 1 adjacent location. Perfect for side-branches, isolated outposts, or terminal destinations that don't lead onward. Example: Silken Spire appears as an optional detour visible from the main Path but leads nowhere beyond itself.
 - **Routes(2)** - Linear passage that connects to exactly 2 adjacent locations. The location sits between two other locations, creating a mandatory waypoint or bridge. Most standard Path locations don't specify Routes, meaning they can connect to any number of neighbors.
 - **Routes(3)** - Junction point that connects to exactly 3 adjacent locations, creating a fork where players choose between multiple routes.
@@ -158,6 +159,7 @@ During Path generation, when placing a location with Routes(X), ensure it connec
 The Path campaign creates persistent world state that evolves based on player actions. Between sessions, track several types of information to maintain continuity and ensure player choices have lasting consequences.
 
 **Location Cards:** Record which physical cards represent which locations in your campaign. This mapping stays consistent throughout the campaign—once you assign a card to a location, it always represents that location. Keep this reference accessible so you and your players can identify locations when cards are drawn or placed on the grid. See the Path Locations section above for card mapping examples. Example:
+
 - "10 of Goblets" = Ancient Crossing
 - "2 of Wands" = Windswept Grasslands
 
@@ -168,6 +170,7 @@ Between sessions, maintain your grid map showing all location coordinates for bo
 **Example - Session 3 Grid:**
 
 **Surface Grid:**
+
 ```
 | Location | 1 | 2 | 3 | 4 | 5 |
 |----------|---|---|---|---|---|
@@ -177,6 +180,7 @@ Between sessions, maintain your grid map showing all location coordinates for bo
 ```
 
 **Underground Grid:**
+
 ```
 | Location | 1 | 2 | 3 |
 |----------|---|---|---|
@@ -190,6 +194,7 @@ At the start of Session 3, these four Stable locations form your foundation.
 **Example - Session 4 Grid (After Players Stabilize Trading Grounds):**
 
 **Surface Grid:**
+
 ```
 | Location | -3 | -2 | -1 | 1 | 2 | 3 | 4 | 5 |
 |----------|----|----|-------|---|---|---|---|---|
@@ -199,6 +204,7 @@ At the start of Session 3, these four Stable locations form your foundation.
 ```
 
 **Underground Grid:**
+
 ```
 | Location | 1 | 2 | 3 |
 |----------|---|---|---|
@@ -210,10 +216,12 @@ At the start of Session 3, these four Stable locations form your foundation.
 During Session 3, players successfully stabilized Trading Grounds at coordinate A|-3. The grid expanded westward to accommodate this new permanent location. Notice how negative columns (-3, -2, -1) now appear—the grid grows organically as players explore and stabilize new areas. At the start of Session 4, you'll build the new Path using these five Stable locations as anchor points.
 
 **Location Counters:** Many location features use counters to track ongoing situations—a crumbling bridge deteriorating over time, a village project nearing completion, or accumulated disturbances in a dangerous area. Record the current value of each counter when the session ends. When players return to that location, the counter resumes from its last known state. The mechanics that introduce each counter explain how and when it advances—some progress automatically between sessions, others only change through player actions. Example:
+
 - Ancient Crossing - Crumbling Bridge counter: 5/7 (bridge halfway collapsed). The Crumbling Bridge feature advances when players cross the bridge or when heavy weight is placed on it.
 - Village in the Mist - Extend Cooking Station counter: 3 days remaining
 
 **NPC Positions:** Track where important NPCs are located and their current status. NPCs can move between locations based on player actions or story developments. Record their current location, their attitude toward the party, and any significant events involving them. Example:
+
 - The Watcher - Located in Forest Refuge (moved there after players cleared marauders from his dwelling). Friendly to the party.
 - Factionless Leader - Last seen at Trading Grounds. Hostile (survived combat encounter with party).
 
@@ -238,12 +246,14 @@ After players defeat encounters or perform cleansing rituals, the GM may remove 
 **Mist-Touched Location Rules (Quick Reference):**
 
 **How locations become Mist-Touched:**
+
 - GM spends Fear (see Fear Spending Options below)
 - Certain adversary abilities create temporary Mist-Touched zones
 - Locations may start Mist-Touched due to story circumstances
 - **All locations not on the current Path are Mist-Touched**
 
 **Effects:**
+
 - **Visibility**: Thick supernatural fog reduces visibility and creates atmosphere of dread
 - **Encounters**: GM may create mist adversary encounters appropriate to tier and situation
 - **Rest Penalties**:
@@ -260,6 +270,7 @@ When players leave the Path, shuffle all Unstable location cards and begin drawi
 As players move forward, remove the previous location card. It vanishes back into the mist, cutting off retreat. They can only press onward, drawing new locations and hoping to find salvation. If players draw a Stable location, they emerge from the mist at that location's grid coordinates—back on known ground.
 
 All off-Path locations are Mist-Touched, carrying all the dangers above—possible mist adversary encounters and harsh rest penalties. Additionally, the GM can spend Fear more cheaply to corrupt the party while off-Path (2 Fear instead of 3), representing the mist's stronger grip in uncharted areas. Off-Path travel is a last resort gamble.
+Note: If players draw the Vanishing Mist (Death XIII) while off-Path or on the surface, the visiting character is immediately marked **Lost in the Mist** and removed from the active roster; the player may create a new PC. The GM may elect to later restore the lost character through narrative recovery hooks (see `locations/path-locations/special-locations/vanishing-mist.md`).
 
 **Off-Path Travel Procedure (Quick Reference):**
 
@@ -284,6 +295,7 @@ This escalating pressure creates natural story arcs where characters must find w
 **Mist Tokens (Quick Reference):**
 
 **Gaining Mist Tokens:**
+
 - **Resting in Mist-Touched locations**: 2 tokens (short rest), 3 tokens (long rest)
 - **Adversary abilities**: Certain mist creatures inflict Mist tokens through attacks/abilities
 - **GM Fear spending**: 3 Fear → all party members gain 1 token (2 Fear when off-Path)
@@ -298,21 +310,18 @@ When you gain a Mist token, immediately suffer consequences based on your total:
 - **6-7 Tokens**: Suffer both tiers (choose one from each: Hope/Stress AND Fear/HP)
 - **8+ Tokens**: Your character is consumed by the mist and lost. Create a new character.
 
-
-
-
 **Mist Mechanics:**
+
 - **Spend 2 Fear (Session Start)** → Make one location on the Path Mist-Touched
 - **Spend 3 Fear (Mid-Session)** → Make currently Unstable location Mist-Touched
 - **Spend 3 Fear (When in Mist Touched Location)** → Every party member gains 1 Mist token
 - **Spend 2 Fear (when off-Path)** → Every party member gains 1 Mist token
 
 **Flame Mechanics:** @todo move to flame essence
+
 - **Gain 2 Fear** ← When players extract Flame Essence from Sacred Flame
 - **Gain 2 Fear** ← When players extract active flame into Flame Canister
 - **Gain 2 Fear** ← When village Flame Essence reserves drop below 1
-
-
 
 ## Flame Mechanics @todo read through and check wether can be taken fully or not
 
@@ -320,34 +329,33 @@ When you gain a Mist token, immediately suffer consequences based on your total:
 
 Flame Canisters
 
-  - Containers that can hold active flame
-  - Can hold flame for a day, after that it dissapates
+- Containers that can hold active flame
+- Can hold flame for a day, after that it dissapates
 
 Flame Essence Extraction
 
-  - Crystallized energy from Sacred Flames (amber to deep orange glow, stable during transport)
-  - Only found at Flame-Touched locations (active Sacred Flames)
-  - Extraction cost: GM gains 2 Fear (mist reacts to weakened flame)
-  - Uses: Sustain flames, establish new sanctuaries, general fuel
-
- 
+- Crystallized energy from Sacred Flames (amber to deep orange glow, stable during transport)
+- Only found at Flame-Touched locations (active Sacred Flames)
+- Extraction cost: GM gains 2 Fear (mist reacts to weakened flame)
+- Uses: Sustain flames, establish new sanctuaries, general fuel
 
 ### Cleansing Mist Corruption
 
 At Flame-Touched Locations (downtime move):
-  - Short Rest: Remove 1d4 + Tier Mist tokens
-  - Long Rest: Remove ALL Mist tokens
-  - Competes with other downtime moves
 
-
-
+- Short Rest: Remove 1d4 + Tier Mist tokens
+- Long Rest: Remove ALL Mist tokens
+- Competes with other downtime moves
 
 ## Fear Spending Options
 
 **Stress & Pressure:**
+
 - **Spend 2 Fear** → Give whole party 1 Stress
 - **Spend 1 Fear** → Give whole party 1 Stress (if situation particularly dire/thematic)
 - **Spend 1 Fear** → Give single PC 1 Stress during tense moment
+
 ---
-*This document will be updated as playtesting reveals how these systems function in actual play.*
+
+_This document will be updated as playtesting reveals how these systems function in actual play._
 @todo create quick guide
