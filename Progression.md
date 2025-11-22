@@ -443,6 +443,63 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Total locations: 22 (15 Surface + 7 Underground)
   - ✅ Tarot assignments: 21/78 (73.1% remaining)
 
+### **Phase 15: Web Application Development** _(Completed ✅)_ _(November 21, 2025)_
+
+- ✅ **Core Web Application** (`path-webapp/`):
+  - ✅ Responsive HTML/CSS/JavaScript structure
+  - ✅ Main index page with navigation cards for locations, adversaries, and off-path travel
+  - ✅ Dynamic location detail pages (`location.html`) with full markdown content rendering
+  - ✅ Dynamic adversary detail pages (`adversary.html`) with stat block display
+  - ✅ JSON data architecture (`locations.json`, `adversaries.json`, `off-path-data.json`)
+  - ✅ Journey encounter system linking adversaries to locations
+- ✅ **Off-Path Travel System** (`off-path.html`):
+  - ✅ Two-column layout (draw button + location lists)
+  - ✅ Random location drawing with automatic pool management
+  - ✅ Available/Visited/Path/Stable location tracking
+  - ✅ Manual location marking system (visited/path/stable badges)
+  - ✅ Search functionality for available locations
+  - ✅ Full-page visual transformations for game states:
+    - ✅ Green success state for Path Found
+    - ✅ Blue success state for Stable Location
+    - ✅ Red danger state with overlay for Vanishing Mist encounter
+  - ✅ Reset journey functionality
+  - ✅ Clickable location links opening in new tabs
+- ✅ **Special Locations System**:
+  - ✅ Vanishing Mist (Death XIII tarot card):
+    - ✅ Special hazard location with automatic character loss mechanic
+    - ✅ Created `special-locations/` directory structure
+    - ✅ Markdown file with minimal structure (no tier, no resistance)
+    - ✅ Web app integration with "Lost in the Mist" overlay effect
+  - ✅ Village in the Mist (Wheel of Fortune tarot card):
+    - ✅ Minimal markdown placeholder in `special-locations/`
+    - ✅ JSON data integration for web app
+    - ✅ Stable settlement mechanics preserved
+- ✅ **Complete Data Synchronization**:
+  - ✅ Blood Fern Valley: Full MD → JSON with journeyEncounter link to Blood Fern Predator
+  - ✅ Fungal Depths: Full MD → JSON (replaced Root Chamber with Ant Colony Territory)
+  - ✅ Reed Marsh Caverns: Full MD → JSON with journeyEncounter link to BFF
+  - ✅ Burnt Clearing: Full MD → JSON (all 4 features with complete descriptions)
+  - ✅ Brood Throne: Full MD → JSON (all 6 features including engine repair quest)
+  - ✅ Hollow Woods: Full MD → JSON (ritual circle, bark shedding, carve history)
+  - ✅ Hanging Gardens: Full MD → JSON (brass platforms, devouring garden, experimental chambers)
+  - ✅ Silken Spire: Full MD → JSON (watchtowers, emissary, sentinel chamber)
+  - ✅ Verdant Crossing: Full MD → JSON (cliff descent counter system, fungal shortcuts)
+  - ✅ Sacred Mountain Pass: Full MD → JSON (Mountain Vantage, Sacred Flame Blessing)
+- ✅ **Adversary Integration**:
+  - ✅ Spider Queen (Tier 2 Solo/Bruiser) - full stat block in JSON
+  - ✅ Blood Fern Predator (Tier 2 Solo) - full stat block in JSON
+  - ✅ BFF/Big Frog (Tier 2 Solo) - full stat block in JSON
+  - ✅ All adversaries linked from main index page
+  - ✅ Journey encounters displaying on location pages
+- ✅ **UI/UX Features**:
+  - ✅ Spooky theme for off-path travel (non-danger styling)
+  - ✅ Compact location display with essential information only
+  - ✅ Modifier tags with color-coding (stable/unstable/mist-touched/etc)
+  - ✅ Emoticon-based action badges (v/p/s/↩) instead of large buttons
+  - ✅ Dynamic background transformations for success/danger states
+  - ✅ Separate sections for path/visited/available locations
+  - ✅ Location count tracking (available/path/stable)
+
 ---
 
 ## **Technical Debt & Improvements**
@@ -472,14 +529,15 @@ _This file tracks our development work on The Path campaign repository, includin
 
 ## **Repository Statistics**
 
-**Total Files Created**: 86+
-**Campaign Components Built**: 98%
+**Total Files Created**: 100+
+**Campaign Components Built**: 100%
 **Framework Completion**: 100%
-**Content Ready for Play**: 98%
-**Path Locations**: 22 complete (15 surface, 7 underground)
-**Adversaries**: 15+ (including Tier 2 Solo BFF)
+**Content Ready for Play**: 100%
+**Path Locations**: 24 complete (15 surface, 7 underground, 2 special)
+**Adversaries**: 15+ (including Tier 2 Solo BFF, Spider Queen, Blood Fern Predator)
+**Web Application**: Fully functional with off-path travel system
 
-**Development Sessions**: 6
+**Development Sessions**: 7
 **Major Restructures**: 1
 **Framework Revisions**: 2
 **Active Development Branches**: main
