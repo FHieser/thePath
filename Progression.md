@@ -500,6 +500,56 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Separate sections for path/visited/available locations
   - ✅ Location count tracking (available/path/stable)
 
+### **Phase 16: Black Water Underground Network** _(Completed ✅)_ _(November 22, 2025)_
+
+- ✅ **Black Falls** (Tier 2 Exploration - Complete):
+  - ✅ Iterative feature-by-feature collaborative design process
+  - ✅ 5 complete features:
+    - ✅ The Shelf Road (treacherous traversal with fall consequences)
+    - ✅ Black Falls (environmental hazard with 3 Fear Mist corruption trigger)
+    - ✅ The Watching Gallery (reconnaissance + safe rest, 1 fewer Fear minimum 1)
+    - ✅ Multi-Tiered Descent (4-tier bidirectional counter system, 4→0 descending, 0→4 ascending)
+    - ✅ The Penitent Path (5 stone figures, spiritual journey, 2 Hope/Stress/Mist removal reward)
+  - ✅ Integrated pilgrimage theme (ancient carved monuments worn by black water)
+  - ✅ Mist corruption mechanic (falls run with supernatural mist, all PCs mark 1 Mist Token)
+  - ✅ Penalty system for incomplete spiritual journey (some prayers = 2 Stress, no prayers = 1 Stress)
+  - ✅ Modifiers: Unstable, Underground
+  - ✅ Connects to Black Beach below via multi-tiered descent
+- ✅ **Black Beach** (Tier 2 Exploration - Complete):
+  - ✅ Iterative feature-by-feature design with adversary integration
+  - ✅ 4 complete features:
+    - ✅ Black Shore (mandatory shallow water crossing, 3-4 feet deep, viscous black water)
+    - ✅ The Bleeding Altar (3 HP blood sacrifice raises bridge for safe passage)
+    - ✅ The Witch Lights (bioluminescent fungal islands, +1 attack from high ground, 1 Fear growth mechanic)
+    - ✅ The Blood Channels (memorial stones, Knowledge roll reveals Feature text from other locations)
+  - ✅ Ancient altar/pact theme (lake guardian respects blood tribute)
+  - ✅ Knowledge reward system (learn 1-2 Features from chosen Path locations)
+  - ✅ Tactical water combat terrain (disadvantage on Agility reposition, witch light high ground)
+  - ✅ Modifiers: Unstable, Underground
+  - ✅ Receives black water flow from Black Falls above
+- ✅ **Eeligator** (Tier 2 Solo Adversary - Complete):
+  - ✅ Electric eel/alligator hybrid guardian of Black Beach
+  - ✅ Tier 2 Solo stats: Difficulty 14, Thresholds 12/25, HP 7, Stress 5
+  - ✅ Attack +3 | Snapping Jaws (Very Close, 2d10 physical)
+  - ✅ Experience: No Escape +3
+  - ✅ 7 features following official Tier 2 Solo benchmarks:
+    - ✅ Relentless (2) - Can act twice per GM turn
+    - ✅ Move Through Mire (passive ignores water movement penalties)
+    - ✅ Healing Skin (mark Stress to heal 1 HP)
+    - ✅ Death Grip (Restrain with jaws, drag toward water, mark Stress per turn)
+    - ✅ Pull Under (1 Fear to make Restrained + Drowning)
+    - ✅ Volt Strike (2 Fear for 2d10 magical + Vulnerable)
+    - ✅ Ambushing Grab (3 Fear submerged ambush, free Death Grip + Pull Under)
+    - ✅ Momentum (gain Fear on successful PC attacks)
+  - ✅ Perfectly integrated with black water combat terrain
+  - ✅ Drowning mechanics create high-stakes encounters
+  - ✅ Created in `adversaries/underground/` directory
+- ✅ **Thematic Continuity**:
+  - ✅ Black water substance connects both locations (mineral-rich, viscous, pitch-black)
+  - ✅ Ancient civilization pilgrimage route (descend Black Falls → reach Black Beach altar)
+  - ✅ Spiritual/religious theme (penitent figures → memorial stones → bleeding altar)
+  - ✅ Connected underground network expanding Path geography
+
 ---
 
 ## **Technical Debt & Improvements**
@@ -533,8 +583,8 @@ _This file tracks our development work on The Path campaign repository, includin
 **Campaign Components Built**: 100%
 **Framework Completion**: 100%
 **Content Ready for Play**: 100%
-**Path Locations**: 24 complete (15 surface, 7 underground, 2 special)
-**Adversaries**: 15+ (including Tier 2 Solo BFF, Spider Queen, Blood Fern Predator)
+**Path Locations**: 26 complete (15 surface, 9 underground, 2 special)
+**Adversaries**: 16+ (including Tier 2 Solo: Eeligator, BFF, Spider Queen, Blood Fern Predator)
 **Web Application**: Fully functional with off-path travel system
 
 **Development Sessions**: 7

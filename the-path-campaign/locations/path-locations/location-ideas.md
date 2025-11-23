@@ -69,18 +69,6 @@ _(For reference - these are already fully developed)_
 
 ## NEW LOCATION IDEAS
 
-- **The Shelf Road** - Narrow ledge carved along cavern wall, drop to one side, rock face to other
-- **Rust Falls** - Iron-rich water cascade staining everything orange-red -> Black falls -what material?
-- **The Watching Gallery** - Natural balcony overlooking larger cavern, perfect vantage point -> Combination with another location -> see below
-- **The Cataract** - Multi-tiered waterfall creating permanent rainbows and deafening roar
-- **The Penitent Path** - Trail lined with kneeling stone figures worn smooth by centuries of rain, positioned as if begging forgiveness
-
-- **Black Sand Beach** - Underground shore of dark, fine sand meeting subterranean water
-- **Ship's Grave** - Beached wreck slowly being reclaimed by sand and sea
-- **The Black Water** - Section where water is thick and dark, hiding what swims within
-- **The Witch Lights** - Area where will-o'-wisps dance nightly, leading travelers
-- **The Bleeding Altar** - Sacrificial stone that never dries, its channels still flowing with fresh blood despite decades of abandonment -> Create path through black water
-
   **Deep Forest Locations:**
 
 - **Forest Heart**
