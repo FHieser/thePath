@@ -10,7 +10,7 @@
 **Thresholds:** 6/12
 **HP:** 6
 **Stress:** 3
-**ATK:** +1 **Draining Touch:** Melee — 1d8+3 phy/mag
+**ATK:** +1 **Mist Fire Throw:** Far Range — 1d8+3 mag 
 **Experience:** Heat Sense +2, Command +3
 
 ## Features
@@ -25,7 +25,7 @@ They are the hounds sent out by the mist to seek out flames and extinguish them.
 When this adversary makes a successful attack against a PC, you gain a Fear.
 
 ### Call to the Mist — Action
-Once per scene, **mark a Stress** to summon 1d4 Mist Walkers for each player who emerge from the surrounding mist at Far range. These reinforcements appear ready to act on the GM's next turn.
+Once per scene, **mark a Stress** to summon 1d4 Mist Stalkers who emerge next to the wraith Leader. These reinforcements appear ready to act on the GM's next turn.
 
 ---
 
