@@ -5,7 +5,7 @@
 **Impulses:** Maintain vigilance against mist incursions, provide elevated sanctuary, preserve anti-mist defenses
 
 > **Difficulty:** 11
-> **Modifiers:** Unstable
+> **Modifiers:** Unstable, Cave Mouth
 > **Potential Adversaries:** Mist Walkers, Highland Predators (Mist-touched variants), Corrupted Stone Guardians
 
 ## FEATURES
@@ -15,6 +15,10 @@
   *What ancient battles were fought from these positions? How did defenders coordinate their efforts across the rocky terrain? What marks or carvings did previous occupants leave in the stone?* 
 
 ***Watchtower Vantage - Passive:*** The ancient stone tower provides commanding views of the surrounding landscape. PCs who climb to the top can survey the area and gain a general description of one of the nearby environments currently connected to this location. With careful observation, they can identify modifications present in the surrounding environments (such as Mist-Touched, Resource-Rich, Inhabited, etc.). The elevated position reveals what ground-level travel cannot.
+
+***Watchtower Depths - Passive:*** This location has the Cave Mouth modifier - a hidden staircase descends from the watchtower's foundation into underground passages. The ancient defenders built these tunnels as escape routes and supply lines, connecting the highland fortifications to subterranean refuges below.
+
+  *How far do these defensive tunnels extend? What underground sanctuaries did the ancient watchers connect to? Do mist creatures use these passages now, or do the highland stones still ward them away?*
 
 ***Signal Fire Ward - Action:*** PCs can ignite the ancient highland braziers using 1 Flame Essence. The moment the sacred fires roar to life, all mist creatures within Close range immediately mark 3 hit points from the searing protective flames. Mist creatures at Very Far range or closer become Vulnerable as the blazing light reveals their incorporeal forms. The signal fires burn bright enough to be seen across the mist - the GM can spend 3 Fear to have powerful mist creatures (GM's choice) arrive at the highland position, drawn by the challenge to the mist's dominion. The flames burn until the end of the current scene.
 
