@@ -5,7 +5,7 @@
 **Impulses:** Challenge travelers with dangerous terrain, preserve ancient sacred traditions, guard the flame's mysteries
 
 > **Difficulty:** 11
-> **Modifiers:** Stable
+> **Modifiers:** Stable, Flame-Touched
 > **Potential Adversaries:** Mountain Beasts (Giant Eagle, Stone Bear), Flame Guardians, Mist-touched Pilgrims
 
 ## FEATURES
@@ -14,17 +14,26 @@
 
   *What makes this particular section so dangerous? Are there signs of previous accidents? How do experienced mountain travelers navigate safely?*
 
-***Sacred Flame Blessing - Passive:*** At the Flame Shrine, PCs can spend time in reverent contemplation of the flickering Sacred Flame. Make a Presence roll. On a success, clear 1 Stress. On a success with Hope, clear 2 Stress instead.
+***Sacred Flame Sanctuary - Passive:*** This location has the Flame-Touched modifier. The ancient Sacred Flame at the mountain shrine provides protection from mist corruption and cleansing power. This location cannot be made Mist-Touched by GM Fear spending. PCs who rest at this location can cleanse mist corruption: **Short Rest** removes 1d4+Tier Mist tokens from the resting PC. **Long Rest** removes ALL Mist tokens from the resting PC.
 
   *How does the Sacred Flame respond to each PC? What visions or feelings does the flame inspire? Why does this flame burn when others have been extinguished?*
 
-***Mountain Winds - Action:*** Fierce winds howl across the peak during ceremonies. All creatures on the mountain summit must succeed on a Strength Reaction Roll or be pushed Very Close range toward the cliff edge. Creatures already at the edge must make an additional Agility roll to avoid falling.
+***Flame Essence Extraction - Action:*** PCs can extract crystallized Flame Essence from the Sacred Flame for use in rituals, village projects, or establishing new sanctuaries. The players can extract up to 3 Flame Essences per visit. For each Flame Essence that is extracted, the GM gains 2 Fear as the mist reacts to the weakened flame and presses closer to the mountain sanctuary.
 
-  *From which direction do the winds come? Do they carry voices or other sounds? How did ancient ceremonies account for these dangerous winds?*
+  *What ritual gestures accompany the extraction? How does the flame diminish when essence is taken? Does the mountain itself react to the extraction?*
 
-***Mountain Vantage - Passive:*** Hidden near the Sacred Flame at the peak is an ancient viewing point where the mountain's height pierces through the mist. From this vantage, PCs can clearly survey the entire current Path configuration spread below. They can identify which locations (if any) are Mist-Touched by the telltale signs of corruption - writhing fog patterns, distorted boundaries, or unnatural darkness.
+***Mountain Vantage - Passive:*** Hidden near the Sacred Flame at the peak is an ancient viewing point where the mountain's height pierces through the mist. During the day, PCs can survey the entire current Path configuration spread below, identifying which locations are Mist-Touched by telltale corruption signs - writhing fog patterns, distorted boundaries, unnatural darkness. When PCs camp here overnight and the Path closes, the sea of mist rises to reclaim all Unstable locations, leaving only Stable locations visible like islands in an ocean of white. As the temporary locations vanish, the GM reveals which sanctuaries and anchors persist in the distance, holding firm against the mist's hunger.
 
-  *What ancient purpose did this viewing point serve for the flame keepers? How obvious is the corruption when viewed from above compared to ground level? Can PCs see beyond the current Path to locations not yet connected?*
+  *What ancient purpose did this viewing point serve for the flame keepers? How obvious is the corruption when viewed from above compared to ground level? How does the mist rising look from this high vantage point? What sounds accompany the Path's closing? Do the Stable locations glow differently when isolated?*
+
+***Star-Reading Summit - Passive:*** The mountain peak rises high enough that on clear nights, ancient star patterns become visible through the thinning mist. When PCs camp here overnight, they can study the celestial patterns from the Sacred Flame's warmth - a rare moment of peace where the stars shine through the eternal fog. Each PC gains 1 Hope as they connect with something eternal beyond the mist's reach. Like gazing at clouds and deriving shapes, the GM can offer rough hints through constellation patterns:
+ - **Undiscovered Treasure** (hidden caches or valuable resources)
+ - **Hidden Enemies** (lurking threats or ambush sites)
+ - **Strong History** (fragments of pre-mist civilization or lost knowledge)
+ - **Visit Friends** (where allies or helpful NPCs can be found)
+ - **A Path Forward** (the safest route or next destination).
+
+  *Do the stars appear different when viewed through Sacred Flame light? What stories do the constellations tell about the world before the mist?*
 
 ## FEATURE QUESTIONS
 
