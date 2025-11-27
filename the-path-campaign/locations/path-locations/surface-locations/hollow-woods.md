@@ -1,10 +1,10 @@
 # HOLLOW WOODS
 
-***Tier 1 Exploration***
+***Tier 2 Exploration***
 *Ancient trees with hollow interiors large enough to shelter entire groups, their bark scarred with old carvings and forgotten histories.*
 **Impulses:** Shelter weary travelers, preserve ancient knowledge, reveal traces of those who came before
 
-> **Difficulty:** 11
+> **Difficulty:** 14
 > **Modifiers:** Unstable
 > **Potential Adversaries:** Forest Beasts (Dire Wolf, Glass Snake), Rootbound Hermits
 

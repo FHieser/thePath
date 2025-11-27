@@ -1,10 +1,10 @@
 # BURNT CLEARING
 
-***Tier 1 Exploration***
+***Tier 2 Exploration***
 *A scorched forest sanctuary dying from a battle between Fire Born and Mist creatures, where ash drifts like snow and embers refuse to die.*
 **Impulses:** Echo with past violence, reveal the cost of faction warfare, offer the dying sanctuary's last gifts before it fades
 
-> **Difficulty:** 11
+> **Difficulty:** 14
 > **Modifiers:** Unstable
 > **Potential Adversaries:** The Lost (bandit crew), Mist creatures (encroaching), Desperate Refugees
 

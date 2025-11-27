@@ -1,10 +1,10 @@
 # HANGING GARDENS
 
-***Tier 1 Exploration***
+***Tier 2 Exploration***
 *An overgrown Brass Mechanicorum botanical research station rising on corroded stilts above a carpet of carnivorous plants, where experimental chambers dangle from chains and ancient automata tend their endless gardens.*
 **Impulses:** Preserve forbidden botanical knowledge, test visitors against nature's hunger, reward those who understand the balance between cultivation and chaos
 
-> **Difficulty:** 11
+> **Difficulty:** 14
 > **Modifiers:** Unstable
 > **Potential Adversaries:** Corrupted Plant Creatures, Aggressive Vines, Territorial Guardian Constructs (if awakened), Carnivorous Flora
 

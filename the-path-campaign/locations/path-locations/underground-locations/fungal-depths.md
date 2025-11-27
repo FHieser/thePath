@@ -1,10 +1,10 @@
 # FUNGAL DEPTHS
 
-***Tier 1 Exploration***
+***Tier 2 Exploration***
 *A vast underground ecosystem where giant fungi create their own luminescent world among bone-scattered chambers and root-pierced caverns.*
 **Impulses:** Sustain alien life cycles, decompose and recycle matter, challenge surface dwellers' understanding
 
-> **Difficulty:** 11
+> **Difficulty:** 14
 > **Modifiers:** Unstable, Underground, Wild Beasts
 > **Potential Adversaries:** Fungal Creatures (Spore Cloud, Mycelium Mass), Cave Predators, Decomposer Swarms
 

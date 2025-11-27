@@ -1,10 +1,10 @@
 # VERDANT CROSSING
 
-***Tier 1 Traversal***
+***Tier 2 Traversal***
 *A treacherous descent down a cliff face where massive shelf fungi form natural stairs and woven tree roots provide handholds, all illuminated by luminescent moss in the forest gloom.*
 **Impulses:** Guide travelers safely down the cliff descent, sustain the living growth through constant renewal, test the balance and caution of climbers
 
-> **Difficulty:** 11
+> **Difficulty:** 14
 > **Modifiers:** Unstable, Wild Beasts
 > **Potential Adversaries:** Forest Beasts (Dire Wolf, Glass Snake), Giant Insects (territorial swarms), Fungal Creatures (Spore Cloud, Mycelium Mass)
 

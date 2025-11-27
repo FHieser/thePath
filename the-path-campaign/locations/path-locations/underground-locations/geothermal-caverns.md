@@ -1,10 +1,10 @@
 # GEOTHERMAL CAVERNS
 
-***Tier 1 Exploration***
+***Tier 2 Exploration***
 *A network of heated underground chambers where ancient thermal machinery harnesses volcanic vents and molten rock has carved winding passages.*
 **Impulses:** Test endurance against extreme heat, power ancient mechanisms, reveal geological secrets
 
-> **Difficulty:** 11
+> **Difficulty:** 14
 > **Modifiers:** Unstable, Underground
 > **Potential Adversaries:** Fire Elementals, Heat-adapted Creatures, Malfunctioning Constructs
 

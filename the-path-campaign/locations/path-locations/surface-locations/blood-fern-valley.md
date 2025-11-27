@@ -32,7 +32,7 @@ _The stones remember. Pay your due, and the valley protects you. Take without gi
 
 **At 3-4:** Direct evidence - distant howls, glimpses of moss-covered form, circling behavior, killed deer with moss growing from wounds.
 
-**At 5:** The Blood Fern Predator attacks (encounter with Tier 2 Solo adversary).
+**At 5:** The Blood Fern Predator attacks (encounter with Tier 2 Solo adversary). When reaching this point the DM gets 2 Fear.
 
 Counter resets between visits to this location.
 
