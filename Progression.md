@@ -550,6 +550,33 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Spiritual/religious theme (penitent figures → memorial stones → bleeding altar)
   - ✅ Connected underground network expanding Path geography
 
+### **Phase 17: Sacred Mountain Pass Feature Refinement** _(Completed ✅)_ _(November 27, 2025)_
+
+- ✅ **Feature Consolidation & Enhancement**:
+  - ✅ Merged Mountain Vantage + Stable Location Survey into single dense feature
+  - ✅ Day function: Survey current Path configuration, identify Mist-Touched locations
+  - ✅ Night function: Witness Path closing, see Stable locations persist as "islands in ocean of white"
+  - ✅ Removed redundant feature, improved narrative flow
+- ✅ **Star-Reading Summit Revision**:
+  - ✅ Shortened feature from long descriptive version to concise wholesome experience
+  - ✅ Cloud-gazing metaphor: "Like gazing at clouds and deriving shapes"
+  - ✅ 1 Hope per PC for peaceful stargazing connection
+  - ✅ 5 Prophetic Hint Categories for GM storytelling flexibility:
+    - ✅ Undiscovered Treasure (hidden caches or valuable resources)
+    - ✅ Hidden Enemies (lurking threats or ambush sites)
+    - ✅ Strong History (fragments of pre-mist civilization or lost knowledge)
+    - ✅ Visit Friends (where allies or helpful NPCs can be found)
+    - ✅ A Path Forward (the safest route or next destination)
+  - ✅ Removed star chart backup mechanic for streamlined design
+  - ✅ Camping requirement reinforces night-only access (when Path is closed)
+- ✅ **Additional Refinements**:
+  - ✅ Highland Watch Cave Mouth modifier added with Watchtower Depths feature
+  - ✅ Blood Fern Valley Fear economy integrated (2 Fear at Stalking Predator counter 5)
+  - ✅ Burnt Clearing upgraded to Tier 2 (difficulty 14)
+  - ✅ Batch Tier 2 upgrades: Hanging Gardens, Hollow Woods, Verdant Crossing, Fungal Depths, Geothermal Caverns
+  - ✅ Flame Essence Extraction updated (up to 3 per visit, 2 Fear per extraction)
+  - ✅ Synchronized markdown and web app JSON data for all changes
+
 ---
 
 ## **Technical Debt & Improvements**
