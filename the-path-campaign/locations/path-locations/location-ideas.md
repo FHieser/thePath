@@ -265,3 +265,72 @@ _(For reference - these are already fully developed)_
 - **The Cistern of Echoes** - Stone-lined water storage that amplifies every sound to painful levels
 - **Phosphor Veins** - Glowing mineral seams running through cave walls like luminous blood vessels
 - **The Shard Field** - Floor covered in razor-sharp crystal fragments and broken formations
+
+**Mist & Maritime Corruption:**
+
+- **The Drowned Lighthouse** - Fog-choked beacon tower where mist pours from the shattered lantern room like smoke from a chimney
+- **Pressure Lock Chamber** - Ancient airlock mechanism from before the mist, bronze wheels and rubber seals still holding back corrupting fog
+- **Tidal Mist Pools** - Rocky shore where mist collects in tide pools like liquid, revealing crystallized creatures trapped beneath
+- **The Diving Bell** - Suspended brass sphere half-buried in mist like it sank through fog as if through water
+- **Barnacle Gardens** - Stone pillars encrusted with shell-like growths that breathe mist in rhythmic pulses
+- **The Decompression Chamber** - Sealed stone room with pressure gauges and medical equipment for treating mist exposure
+- **Fog Nets** - Massive fishing nets strung between dead trees, tangled with mist-preserved sea creatures
+- **The Drowned Harbor** - Dock and pier posts jutting from solid mist like water, ghostly ship hulls visible below
+- **Brass Reef** - Coral-like formations of corroded diving equipment fused together by mist corruption
+- **The Descent Bell Tower** - Bell tower whose tolling draws mist up from below like summoning depths
+- **Pearlescent Grotto** - Cave where mist has crystallized into nacreous formations that whisper of drowning
+- **The Submersible** - Rusted underwater vessel half-emerged from mist, portholes glowing with internal fog
+- **Tidebreak Ruins** - Stone walls showing mist "waterline" marks at different heights, like ancient flood levels
+- **The Breathing Chasm** - Deep crack that exhales mist on a tidal rhythm, inhales with a drowning gasp
+- **Crab Shell Cairns** - Massive crustacean exoskeletons stacked into monuments, still moving with mist corruption
+- **The Compression Point** - Where mist becomes so dense it's nearly solid, requiring "diving" to pass through
+- **Salvage Platform** - Wooden structure built for hauling corrupted items from the mist depths
+- **The Aquarium Ruins** - Shattered glass tanks now filled with mist instead of water, creatures swimming through fog
+- **Fog Siphon Station** - Pumping mechanism designed to drain mist, now backflowing with corrupted pressure
+- **The Drowned Garden** - Submerged greenhouse where plants grow in mist instead of water, disturbingly alive
+
+**Highland Spiritualism & Sacred Monasteries:**
+
+- **The Prayer Wheel Valley** - Ravine filled with massive spinning prayer wheels turned by wind, each rotation releasing whispered mantras
+- **Sky Burial Platform** - High stone terrace where the dead are offered to sacred birds, bones arranged in mandala patterns
+- **The Singing Bowl Temple** - Ruined monastery where enormous bronze bowls still hum with residual spiritual energy
+- **Incense Pine Grove** - Forest of ancient trees that naturally burn with fragrant smoke, creating sacred fog
+- **The Thousand Steps** - Mountainside pilgrimage path with carved prayers on every stone, leading to something above
+- **Mandala Stone Circle** - Intricate geometric pattern of colored stones spanning a hillside, still radiating blessing energy
+- **The Silent Hermitage** - Mountain cave complex where monks once meditated for years, their presence still lingering
+- **Bell Cliff** - Sheer rock face hung with hundreds of bells that ring with prophetic patterns in the wind
+- **Prostration Path** - Ancient pilgrimage route worn smooth by generations of devotional crawling
+- **The Thangka Gallery** - Open-air shrine with painted religious scrolls flapping in wind, depicting protective deities
+- **Spirit Rope Bridge** - Suspension bridge festooned with prayer flags, swaying over a sacred chasm
+- **The Butter Lamp Hall** - Temple chamber with thousands of small oil lamps, some still mysteriously burning
+- **Meditation Caves** - Honeycomb of small hermit caves cut into cliff face, each one's silence deeper than natural
+- **The Stupa Field** - Valley dotted with white burial monuments and reliquaries marking enlightened masters
+- **Chanting Grotto** - Cave system where echoes create layered harmonies from even the smallest sound
+- **The Oracle's Seat** - Windswept throne of stone where prophets once entered trance to commune with spirits
+- **Juniper Shrine** - Sacred grove where burning juniper branches produce visions in their twisting smoke
+- **The Dorje Gate** - Mountain pass marked by ritual objects and protective symbols carved into living rock
+- **Prayer Flag Peak** - Summit completely shrouded in thousands of colorful flags, their blessings carried on every breeze
+- **The Bone Trumpet Tower** - Watchtower where ritual horns made from human thighbones once called to deities
+
+**Corrupted Spiritualism & Dark Monasteries:**
+
+- **The Inverse Temple** - Monastery built upside-down into a chasm, where monks sought enlightenment through descent instead of ascent
+- **Shadow Prayer Wheels** - Valley where prayer wheels spin backwards, releasing whispered curses instead of blessings
+- **The Screaming Mandala** - Stone circle where geometric patterns create dissonant harmonies that cause profound unease
+- **Bone Rosary Path** - Pilgrimage route marked by ancient skulls strung on chains, their hollow eyes seeming to follow travelers
+- **The Weeping Icons** - Temple hall where sacred paintings perpetually drip dark liquid that pools in unsettling patterns
+- **Heretic's Stupa** - Black monument radiating wrongness and broken spiritual energy, built by monks who sought forbidden knowledge
+- **The Hungry Ghost Shrine** - Temple where offerings vanish overnight, and something unseen still waits for more
+- **Backwards Chant Chamber** - Cave where monks spoke prayers in reverse to commune with darker powers, the echoes still resonating wrong
+- **The Watcher's Hermitage** - Meditation caves where preserved mummies sit in eternal contemplation, but their positions slowly change
+- **The Silent Bell Tower** - Temple bell that absorbs sound instead of creating it, leaving unnatural dead zones of silence
+- **The Darkened Thangka Hall** - Gallery where sacred paintings depict deities with their faces turned away or obscured in shadow
+- **Ash Footprint Peak** - Summit where charred impressions lead to the edge and beyond, suggesting impossible journeys
+- **The Endless Chant Chamber** - Room where whispered mantras echo without source, layering into maddening complexity
+- **The Mirrored Prostration Path** - Pilgrimage route that reflects travelers upside-down, showing them walking on the sky
+- **The Oracle's Absence** - Suspended cage where nothing remains but the prophecies carved into its bars still come true
+- **The Shadowcast Hall** - Temple where butter lamps burn with normal flame but cast shadows that move independently
+- **The Fasting Monastery** - Abbey where monks sought power through denial, their empty robes still positioned in meditation
+- **Prayer Flags of Forgetting** - Mountain pass festooned with blank flags that steal memories carried on the wind
+- **The Void Meditation Caves** - Hermitages where monks stared into darkness until it stared back and took something vital
+- **Seven Hells Descent** - Series of seven chambers descending underground, each one colder and quieter than the last
