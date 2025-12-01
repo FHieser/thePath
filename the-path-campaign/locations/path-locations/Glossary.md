@@ -2,52 +2,54 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 24** (15 Surface + 7 Underground + 2 Special)
+**Total Locations: 26** (15 Surface + 9 Underground + 2 Special)
 
 ---
 
 ## Surface Locations (15 locations)
 
-| Assigned | Ready | Location                                                            | File                                      | Description                                                 |
-| -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------- |
-| ☑        | ☑     | [Ancient Crossing](./surface-locations/ancient-crossing.md)         | surface-locations/ancient-crossing.md     | Historic crossing point with significant narrative weight   |
-| ☑        | ☑     | [Blood Fern Valley](./surface-locations/blood-fern-valley.md)       | surface-locations/blood-fern-valley.md    | Verdant valley filled with unusual crimson vegetation       |
-| ☑        | ☑     | [Burnt Clearing](./surface-locations/burnt-clearing.md)             | surface-locations/burnt-clearing.md       | Scorched clearing recovering from past devastation          |
-| ☑        | ☑     | [Forest Refuge](./surface-locations/forest-refuge.md)               | surface-locations/forest-refuge.md        | Safe haven deep within the forest                           |
-| ☑        | ☑     | [Hanging Gardens](./surface-locations/hanging-gardens.md)           | surface-locations/hanging-gardens.md      | Suspended botanical sanctuary                               |
-| ☑        | ☑     | [Highland Watch](./surface-locations/highland-watch.md)             | surface-locations/highland-watch.md       | Elevated vantage point with panoramic views                 |
-| ☑        | ☑     | [Hollow Woods](./surface-locations/hollow-woods.md)                 | surface-locations/hollow-woods.md         | Forest with mysterious hollowed structures                  |
-| ☐        | ☐     | [Misty Waters](./surface-locations/misty-waters.md)                 | surface-locations/misty-waters.md         | Aquatic area perpetually shrouded in mist                   |
-| ☐        | ☐     | [Overgrown Temple](./surface-locations/overgrown-temple.md)         | surface-locations/overgrown-temple.md     | Ancient temple reclaimed by nature                          |
-| ☑        | ☑     | [Sacred Mountain Pass](./surface-locations/sacred-mountain-pass.md) | surface-locations/sacred-mountain-pass.md | Blessed passage through the mountains                       |
-| ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | surface-locations/silken-spire.md         | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
-| ☑        | ☑     | [Stone Works](./surface-locations/stone-works.md)                   | surface-locations/stone-works.md          | Ancient quarry or stonecraft site                           |
-| ☑        | ☑     | [Trading Grounds](./surface-locations/trading-grounds.md)           | surface-locations/trading-grounds.md      | Central hub for commerce and exchange                       |
-| ☑        | ☑     | [Verdant Crossing](./surface-locations/verdant-crossing.md)         | surface-locations/verdant-crossing.md     | Lush passage through abundant vegetation                    |
-| ☑        | ☑     | [Windswept Grasslands](./surface-locations/windswept-grasslands.md) | surface-locations/windswept-grasslands.md | Open plains swept by constant winds                         |
+| Assigned | Ready | Location                                                            | Description                                                 |
+| -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
+| ☑        | ☑     | [Ancient Crossing](./surface-locations/ancient-crossing.md)         | Historic crossing point with significant narrative weight   |
+| ☑        | ☑     | [Blood Fern Valley](./surface-locations/blood-fern-valley.md)       | Verdant valley filled with unusual crimson vegetation       |
+| ☑        | ☑     | [Burnt Clearing](./surface-locations/burnt-clearing.md)             | Scorched clearing recovering from past devastation          |
+| ☑        | ☑     | [Forest Refuge](./surface-locations/forest-refuge.md)               | Safe haven deep within the forest                           |
+| ☑        | ☑     | [Hanging Gardens](./surface-locations/hanging-gardens.md)           | Suspended botanical sanctuary                               |
+| ☑        | ☑     | [Highland Watch](./surface-locations/highland-watch.md)             | Elevated vantage point with panoramic views                 |
+| ☑        | ☑     | [Hollow Woods](./surface-locations/hollow-woods.md)                 | Forest with mysterious hollowed structures                  |
+| ☐        | ☐     | [Misty Waters](./surface-locations/misty-waters.md)                 | Aquatic area perpetually shrouded in mist                   |
+| ☐        | ☐     | [Overgrown Temple](./surface-locations/overgrown-temple.md)         | Ancient temple reclaimed by nature                          |
+| ☑        | ☑     | [Sacred Mountain Pass](./surface-locations/sacred-mountain-pass.md) | Blessed passage through the mountains                       |
+| ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
+| ☑        | ☑     | [Stone Works](./surface-locations/stone-works.md)                   | Ancient quarry or stonecraft site                           |
+| ☑        | ☑     | [Trading Grounds](./surface-locations/trading-grounds.md)           | Central hub for commerce and exchange                       |
+| ☑        | ☑     | [Verdant Crossing](./surface-locations/verdant-crossing.md)         | Lush passage through abundant vegetation                    |
+| ☑        | ☑     | [Windswept Grasslands](./surface-locations/windswept-grasslands.md) | Open plains swept by constant winds                         |
 
 ---
 
-## Underground Locations (7 locations)
+## Underground Locations (9 locations)
 
-| Assigned | Ready | Location                                                            | File                                        | Description                                                        |
-| -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------ |
-| ☑        | ☑     | [Brood Throne](./underground-locations/brood-throne.md)             | underground-locations/brood-throne.md       | Subterranean chamber of significant power (Linked to Silken Spire) |
-| ☐        | ☐     | [Flooded Network](./underground-locations/flooded-network.md)       | underground-locations/flooded-network.md    | Interconnected caverns filled with water                           |
-| ☑        | ☑     | [Fungal Depths](./underground-locations/fungal-depths.md)           | underground-locations/fungal-depths.md      | Caverns dominated by massive fungal growth                         |
-| ☑        | ☑     | [Geothermal Caverns](./underground-locations/geothermal-caverns.md) | underground-locations/geothermal-caverns.md | Hot springs and volcanic activity underground                      |
-| ☑        | ☑     | [Mining Complex](./underground-locations/mining-complex.md)         | underground-locations/mining-complex.md     | Extensive system of mines and extraction sites                     |
-| ☑        | ☑     | [Reed Marsh Caverns](./underground-locations/reed-marsh-caverns.md) | underground-locations/reed-marsh-caverns.md | Underground wetland with bioluminescent grotto and hermit dwelling |
-| ☑        | ☑     | [Sacred Underground](./underground-locations/sacred-underground.md) | underground-locations/sacred-underground.md | Hallowed sanctuary beneath the earth                               |
+| Assigned | Ready | Location                                                            | Description                                                        |
+| -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| ☑        | ☑     | [Black Beach](./underground-locations/black-beach.md)               | Underground shore with black sand, dark waters, and bleeding altar |
+| ☑        | ☑     | [Black Falls](./underground-locations/black-falls.md)               | Multi-tiered black water cascades along ancient pilgrim route      |
+| ☑        | ☑     | [Brood Throne](./underground-locations/brood-throne.md)             | Subterranean chamber of significant power (Linked to Silken Spire) |
+| ☐        | ☐     | [Flooded Network](./underground-locations/flooded-network.md)       | Interconnected caverns filled with water                           |
+| ☑        | ☑     | [Fungal Depths](./underground-locations/fungal-depths.md)           | Caverns dominated by massive fungal growth                         |
+| ☑        | ☑     | [Geothermal Caverns](./underground-locations/geothermal-caverns.md) | Hot springs and volcanic activity underground                      |
+| ☑        | ☑     | [Mining Complex](./underground-locations/mining-complex.md)         | Extensive system of mines and extraction sites                     |
+| ☑        | ☑     | [Reed Marsh Caverns](./underground-locations/reed-marsh-caverns.md) | Underground wetland with bioluminescent grotto and hermit dwelling |
+| ☑        | ☑     | [Sacred Underground](./underground-locations/sacred-underground.md) | Hallowed sanctuary beneath the earth                               |
 
 ---
 
 ## Special Locations (2 locations)
 
-| Assigned | Ready | Location                                                          | File                                     | Description                                                  |
-| -------- | ----- | ----------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
-| ☑        | ☑     | [Village in the Mist](./special-locations/village-in-the-mist.md) | special-locations/village-in-the-mist.md | Central safe haven protected by Sacred Flame                 |
-| ☑        | ☑     | [Vanishing Mist](./special-locations/vanishing-mist.md)           | special-locations/vanishing-mist.md      | Impenetrable mist that claims travelers between destinations |
+| Assigned | Ready | Location                                                          | Description                                                  |
+| -------- | ----- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
+| ☑        | ☑     | [Village in the Mist](./special-locations/village-in-the-mist.md) | Central safe haven protected by Sacred Flame                 |
+| ☑        | ☑     | [Vanishing Mist](./special-locations/vanishing-mist.md)           | Impenetrable mist that claims travelers between destinations |
 
 ---
 
@@ -55,8 +57,8 @@ _Complete reference for all locations in the Path Network system_
 
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
-**Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)  
-**Assigned: 23** | **Unassigned: 55** (70.5% remaining)
+**Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
+**Assigned: 25** | **Unassigned: 53** (67.9% remaining)
 
 ### Major Arcana (7 of 22 assigned)
 
@@ -123,20 +125,20 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Swords  |          |
 | King of Swords   |          |
 
-### Minor Arcana - Discs (Pentacles) (4 of 14 assigned)
+### Minor Arcana - Discs (Pentacles) (6 of 14 assigned)
 
 | Card            | Location           |
 | --------------- | ------------------ |
 | Ace of Discs    |                    |
 | 2 of Discs      | Sacred Underground |
-| 3 of Discs      |                    |
+| 3 of Discs      | Black Falls        |
 | 4 of Discs      |                    |
 | 5 of Discs      | Mining Complex     |
 | 6 of Discs      | Geothermal Caverns |
 | 7 of Discs      |                    |
 | 8 of Discs      |                    |
 | 9 of Discs      | Hanging Gardens    |
-| 10 of Discs     |                    |
+| 10 of Discs     | Black Beach        |
 | Page of Discs   |                    |
 | Knight of Discs |                    |
 | Queen of Discs  |                    |
