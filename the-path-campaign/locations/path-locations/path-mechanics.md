@@ -349,11 +349,15 @@ At Flame-Touched Locations (downtime move):
 
 ## Fear Spending Options
 
-**Stress & Pressure:**
+**Stress:**
 
 - **Spend 2 Fear** → Give whole party 1 Stress
 - **Spend 1 Fear** → Give whole party 1 Stress (if situation particularly dire/thematic)
 - **Spend 1 Fear** → Give single PC 1 Stress during tense moment
+
+**Location:**
+
+- **Spend 2 Fear** → Increase the Locations Difficulty by 2
 
 ---
 
