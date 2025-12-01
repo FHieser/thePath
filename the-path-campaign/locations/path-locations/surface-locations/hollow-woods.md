@@ -5,7 +5,7 @@
 **Impulses:** Shelter weary travelers, preserve ancient knowledge, reveal traces of those who came before
 
 > **Difficulty:** 14
-> **Modifiers:** Unstable
+> **Modifiers:** Unstable, Mushroom Circle
 > **Potential Adversaries:** Forest Beasts (Dire Wolf, Glass Snake), Rootbound Hermits
 
 ## FEATURES
@@ -32,6 +32,6 @@ Once discovered, PCs can perform blood sacrifice rituals at the circle:
 
   *Why do the trees shed so aggressively? Is this natural growth or a defensive response? What grows beneath the freshly shed bark? How long does shed bark remain before decomposing?*
 
-***Mushroom Ring Magic - Passive:*** When a PC steps into the fairy ring, they can choose to teleport to another mushroom ring on the current Path configuration (if one exists). The sudden displacement through fey magic is disorienting - the PC takes 2 Stress. If no other ring exists on the current Path, nothing happens and the magic lies dormant.
+***Mushroom Ring Magic - Passive:*** This location has the Mushroom Circle modifier.
 
   *Where does the ring connect to this session? What strange sensations accompany the teleportation? What fey entities might notice frequent use?*

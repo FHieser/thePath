@@ -5,7 +5,7 @@ _A vast underground wetland where tall reeds grow in shallow pools, warm mist ri
 **Impulses:** Conceal and disorient, shelter the reclusive, reveal strange beauty in darkness
 
 > **Difficulty:** 11
-> **Modifiers:** Underground, Unstable, Inhabited
+> **Modifiers:** Underground, Unstable, Inhabited, Mushroom Circle
 > **Potential Adversaries:** Cave Beasts (Giant Frog, Pale Salamander), Amphibious Predators, The Hermit (neutral/hostile), BFF - Big Frog (Tier 2 Solo)
 
 ## FEATURES
@@ -26,7 +26,7 @@ _What drove the Hermit to live alone in these caverns? What strange knowledge or
 
 _What triggers the smaller frogs to respond to BFF's presence? How do the different species of frogs create their layered chorus? What other creatures are drawn to or repelled by the croaking?_
 
-**_Mushroom Ring Magic - Passive:_** When a PC steps into the fairy ring, they can choose to teleport to another mushroom ring on the current Path configuration (if one exists). The sudden displacement through fey magic is disorienting - the PC takes 2 Stress. If no other ring exists on the current Path, nothing happens and the magic lies dormant.
+**_Mushroom Ring Magic - Passive:_** This location has the Mushroom Circle modifier.
 
 _Where does the ring connect to this session? What strange sensations accompany the teleportation? What fey entities might notice frequent use?_
 

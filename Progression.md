@@ -577,6 +577,31 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Flame Essence Extraction updated (up to 3 per visit, 2 Fear per extraction)
   - ✅ Synchronized markdown and web app JSON data for all changes
 
+### **Phase 18: Mushroom Circle Modifier System** _(Completed ✅)_ _(December 1, 2025)_
+
+- ✅ **Mushroom Circle Modifier Creation**:
+  - ✅ Added comprehensive Mushroom Circle modifier to path-mechanics.md "Other" section
+  - ✅ Fey-touched teleportation network connecting locations on current Path
+  - ✅ 1 Stress cost for teleportation (reduced from original 2 Stress implementations)
+  - ✅ Directional orientation requirement (no roll, player/character knowledge based)
+  - ✅ 1d10 consequence table for wrong direction: 1-5 harmless failure, 6-7 gain Stress, 8-10 random teleport
+  - ✅ Mist blocking mechanic (only connects to locations on current Path)
+  - ✅ Druid/ranger/nature-focused character guidance system
+  - ✅ "Being Lost" section for hidden placement during random teleportation
+- ✅ **Location Updates** (3 locations standardized):
+  - ✅ Forest Refuge: Added Mushroom Circle modifier, simplified feature to reference modifier
+  - ✅ Reed Marsh Caverns: Added Mushroom Circle modifier, simplified feature to reference modifier
+  - ✅ Hollow Woods: Added Mushroom Circle modifier, simplified feature to reference modifier
+- ✅ **Web Application Integration**:
+  - ✅ Updated locations.json with Mushroom Circle modifier for all three locations
+  - ✅ Modifier badges automatically display on front page via existing rendering system
+  - ✅ Synchronized markdown source files with JSON data
+- ✅ **Design Methodology**:
+  - ✅ Established pattern: complex mechanics defined once in path-mechanics.md, locations reference modifier
+  - ✅ Reduced duplication across multiple location files
+  - ✅ Created tactical depth through player knowledge vs character knowledge tension
+  - ✅ Transformed potential negative outcome (wrong direction) into discovery moment
+
 ---
 
 ## **Technical Debt & Improvements**
@@ -611,6 +636,7 @@ _This file tracks our development work on The Path campaign repository, includin
 **Framework Completion**: 100%
 **Content Ready for Play**: 100%
 **Path Locations**: 26 complete (15 surface, 9 underground, 2 special)
+**Location Modifiers**: 8 types (Stable/Unstable, Underground, Cave Mouth, Inhabited, Wild Beasts, Flame-Touched, Mist-Touched, Mushroom Circle)
 **Adversaries**: 16+ (including Tier 2 Solo: Eeligator, BFF, Spider Queen, Blood Fern Predator)
 **Web Application**: Fully functional with off-path travel system
 

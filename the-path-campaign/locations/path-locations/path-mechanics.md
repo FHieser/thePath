@@ -152,6 +152,18 @@ During Path generation, when placing a location with Routes(X), ensure it connec
 
 **Linked(Location Name):** This location always appears together with the specified location(s) when drawn during Path generation. Drawing either card brings both locations into play as a linked set. The specific connection rules and mechanical interactions between linked locations are defined in their Features sections—examine those features to understand how the locations relate (shared Stable/Unstable state, Cave Mouth connections, narrative ties, etc.). Example: Silken Spire has Linked(Brood Throne). The two locations share the same Unstable state, and a Cave Mouth descent shaft connects the surface fortress to the underground throne chamber below. Stabilizing one stabilizes both.
 
+**Other**
+
+**Mushroom Circle:** The location contains a fey-touched mushroom ring that creates magical connections to other Mushroom Circle locations on the current Path. These ancient fey pathways allow instant teleportation between linked sites, but the connections are fragile—blocked by the mist and requiring precise directional orientation to function safely. PCs must stand within the mushroom circle and face the direction of another Mushroom Circle location currently on the Path. The teleportation costs 1 Stress from the disorienting passage through fey magic.
+
+If the PC faces the correct direction, they instantly travel to the target Mushroom Circle location. If the PC faces the wrong direction, roll 1d10 to determine the consequence:
+- 1-5: nothing happens and the magic fails harmlessly
+- 6-7: the PC gains 1 Stress from fey mischief and disorientation
+- 8-10, the PC teleports to a random location on the current Path (GM's choice)
+When a PC teleports to a random location (8-10 on the wrong direction roll), do not immediately reveal where they went. Place them on an unopened location card from the current Path. The PC knows they have teleported but not where they are. Once the players deduce or discover their location through play, you can reveal which location on the Path they reached.
+
+If no other Mushroom Circle exists on the current Path, nothing happens—the magic lies dormant. Mushroom Circles only connect to other Mushroom Circle locations currently on the Path. The mist blocks connections to off-Path locations. Druids, rangers, and nature-focused characters can provide information about the general direction of other Mushroom Circles. Consulting with fey-touched NPCs or studying the mushroom patterns may reveal directional clues, helping PCs avoid the consequences of incorrect directional orientation.
+
 ---
 
 ## Session Tracking

@@ -5,7 +5,7 @@
 **Impulses:** Offer shelter and secrets, test visitors' intentions, preserve woodland mysteries
 
 > **Difficulty:** 11
-> **Modifiers:** Unstable, Inhabited
+> **Modifiers:** Unstable, Inhabited, Mushroom Circle
 > **Potential Adversaries:** Forest Beasts (Dire Wolf, Glass Snake), Woodland Spirits, Suspicious Hermit
 
 ## FEATURES
@@ -18,7 +18,7 @@
 
   *What creates these fairy lights? Do they respond to the PCs' presence? What happens if the lights are extinguished?* 
 
-***Mushroom Ring Magic - Passive:*** When a PC steps into the fairy ring, they can choose to teleport to another mushroom ring on the current Path configuration (if one exists). The sudden displacement through fey magic is disorienting - the PC takes 2 Stress. If no other ring exists on the current Path, nothing happens and the magic lies dormant.
+***Mushroom Ring Magic - Passive:*** This location has the Mushroom Circle modifier.
 
   *Where does the ring connect to this session? What strange sensations accompany the teleportation? What fey entities might notice frequent use?*
 
