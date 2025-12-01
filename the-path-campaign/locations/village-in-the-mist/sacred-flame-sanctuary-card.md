@@ -17,7 +17,7 @@
 
   *How does the village react to the dimming flame? What desperate measures do people consider?*
 
-***Creatures in the Mist - Action:*** Spend 3 Fear to have Mist creatures breach the village's protective barrier and attack directly. This creates a challenging encounter as the creatures threaten residents and sacred spaces.
+***Creatures in the Mist - Action:*** Spend 10 Fear to have Mist creatures breach the village's protective barrier and attack directly. Gain 6 Fear immediately afterwards.
 
   *What types of creatures emerge from the Mist? How do villagers react when their sanctuary is violated?*
 
