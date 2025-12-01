@@ -2,16 +2,10 @@
 
 Path:
 
-**Outbound:**
-Village in the Mist → Windswept Grasslands → Blood Fern Valley → Hollow Woods → Windswept Grasslands → Highland Watch → Sacred Mountain Pass
-
-**Return:**
-Sacred Mountain Pass → Highland Watch → Windswept Grasslands → Hollow Woods → Blood Fern Valley → Windswept Grasslands → Village in the Mist
-
 | Location | **1** | **2** | **3** | **4** |**5**|**6**|
 |----------|-------|-------|-------|-------|-------|-------|
-| **A** | - | - |  Hollow Woods (A3) | - | - | - | - |
-| **B** | Village in the Mist | Windswept Grasslands | Blood Fern Valley | Windswept Grasslands (B4) | Highland Watch | Sacred Mountain Pass |
+| **A** | - | - | Hollow Woods | - | - | - |
+| **B** | Village in the Mist | Windswept Grasslands | Verdant Crossing | Blood Fern Valley | Highland Watch | Sacred Mountain Pass |
 
 | Encounter | **1** | **2** | **3** | **4** |**5**|**6**|
 |----------|-------|-------|-------|-------|-------|-------|
