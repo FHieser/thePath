@@ -2,15 +2,16 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 26** (15 Surface + 9 Underground + 2 Special)
+**Total Locations: 27** (16 Surface + 9 Underground + 2 Special)
 
 ---
 
-## Surface Locations (15 locations)
+## Surface Locations (16 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
 | ☑        | ☑     | [Ancient Crossing](./surface-locations/ancient-crossing.md)         | Historic crossing point with significant narrative weight   |
+| ☑        | ☑     | [Barnacle Gardens](./surface-locations/barnacle-gardens.md)         | Corrupted area covered in mist-breathing barnacles          |
 | ☑        | ☑     | [Blood Fern Valley](./surface-locations/blood-fern-valley.md)       | Verdant valley filled with unusual crimson vegetation       |
 | ☑        | ☑     | [Burnt Clearing](./surface-locations/burnt-clearing.md)             | Scorched clearing recovering from past devastation          |
 | ☑        | ☑     | [Forest Refuge](./surface-locations/forest-refuge.md)               | Safe haven deep within the forest                           |
@@ -58,7 +59,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 25** | **Unassigned: 53** (67.9% remaining)
+**Assigned: 26** | **Unassigned: 52** (66.7% remaining)
 
 ### Major Arcana (7 of 22 assigned)
 
@@ -106,7 +107,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Wands  | Blood Fern Valley    |
 | King of Wands   |                      |
 
-### Minor Arcana - Swords (1 of 14 assigned)
+### Minor Arcana - Swords (2 of 14 assigned)
 
 | Card             | Location |
 | ---------------- | -------- |
@@ -118,9 +119,9 @@ _Physical card mappings for location representation during play. Select cards ba
 | 6 of Swords      |          |
 | 7 of Swords      |          |
 | 8 of Swords      |          |
-| 9 of Swords      |          |
-| 10 of Swords     |          |
-| Page of Swords   |          |
+| 9 of Swords      |                  |
+| 10 of Swords     | Barnacle Gardens |
+| Page of Swords   |                  |
 | Knight of Swords |          |
 | Queen of Swords  |          |
 | King of Swords   |          |

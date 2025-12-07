@@ -1,0 +1,40 @@
+# BARNACLE GARDENS
+
+***Tier 2 Combat***
+*A corrupted area where prayer flags flutter above a landscape entirely covered in mist-breathing barnacles, while a breathing chasm exhales corrupted fog in tidal rhythms.*
+**Impulses:** Corrupt those who linger with tidal mist pulses, protect the breathing chasm from interference, test combat prowess against mist-born guardians
+
+> **Difficulty:** 14
+> **Modifiers:** Unstable, Mist-Touched, Nothing(1)
+> **Potential Adversaries:** Mist Walkers, Mist Stalkers, Barnacle Husks
+
+## FEATURES
+
+***The Breathing Chasm - Counter System:*** This location has the Mist-Touched modifier. A massive fissure in the stone exhales corrupted mist in tidal rhythms. The chasm "breathes" with a countdown mechanism—when it reaches zero, it erupts with a devastating pulse of THE Nothing's influence. Start the Breathing Countdown at 10. Each time dice are thrown (any action roll), reduce countdown by 1. GM can spend 1 Fear to reduce countdown by 2. When countdown reaches 0: The chasm erupts, all PCs gain 2 Mist tokens, then countdown resets to 10.
+
+  *What do players see/hear as the countdown decreases? What happens physically during the eruption besides distributing tokens?*
+
+***Prayer Flag Peak - Action:*** This location has the Nothing(1) modifier. Corrupted prayer flags flutter above the area, each inscribed with meditation techniques for emptying the mind and embracing the void—written in the deep script of the Mist Born disciples. Their teachings seep THE Nothing's influence into those who linger. Players can destroy prayer flags (3 total) to remove the Nothing(1) modifier. Destroying flags definitely draws attention from mist adversaries. At the start of the next cycle, the mist resets the prayer flags and restores the Nothing(1) modifier.
+
+  *What happens when players burn a prayer flag? What kind of attention does burning flags draw?*
+
+***Tidebreak Ruins - Passive:*** Stone walls showing mist "waterline" marks at different heights, like ancient flood levels. The crumbling structures provide excellent cover for those who know how to use them. Players gain advantage on Agility rolls made to hide or move stealthily while among the ruins. The broken walls, collapsed archways, and scattered debris create natural concealment.
+
+  *What visual cues warn players before barnacles spray?*
+
+***Barnacle-Encrusted Surfaces - Action:*** GM can spend 1 Fear to have barnacle-encrusted surfaces spray corrupted mist at a character. Target gains 1 Mist token from the void-touched spray.
+
+  *What triggers the barnacles to spray? Can players anticipate it?*
+
+***Barnacle Gardens - Passive/Action:*** The entire area is covered in shell-like barnacles that pulse with mist in rhythmic breathing. These void-touched organisms hum and vibrate when mist adversaries approach, creating an eerie warning system across the corrupted landscape. The barnacles hum and vibrate when mist adversaries are nearby—players can determine direction and approximate distance of hidden enemies by listening. The hum intensifies as the Breathing Chasm countdown decreases, creating disorienting white noise at countdown 3 or below. Players can harvest barnacles with a Finesse roll. Effect: For their next roll, the player's Fear dice becomes d6+d8 (roll both and take total). Overconsumption: At the GM's discretion, eating too many barnacles can have consequences.
+
+  *How do the barnacles taste? What are the physical sensations of eating void-touched organisms? What happens to those who overconsume?*
+
+
+## FEATURE QUESTIONS
+
+- What ancient purpose did this area serve before the mist corrupted it?
+- Why does the Breathing Chasm exhale in tidal rhythms?
+- Who wrote the prayer flags, and what deeper truths do they contain?
+- How might the Nothing modifier be permanently removed from this location?
+- What happens to the Mist Born disciples who meditate here?
