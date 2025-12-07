@@ -129,6 +129,10 @@ These modifiers represent the eternal struggle between the Sacred Flames that ho
 
 **Mist-Touched:** The location has been corrupted by prolonged mist exposure and reality warps under the mist's influence. These locations always contain mist adversary encounters, can distribute Mist tokens to players who linger too long, and feature unstable terrain affected by reality distortions. The GM can spend Fear to make locations Mist-Touched during play (see Mist Mechanics section).
 
+**Nothing(X):** The location is touched by THE Nothing's influence, draining hope from those who enter. While at this location, all PCs' Hope dice are reduced in size by X steps (d12→d10→d8→d6→d4, minimum d4). This represents the void's crushing effect on optimism and possibility. Example: Nothing(1) reduces d12 to d10. Nothing(3) reduces d12 to d6. The Hope die returns to normal once PCs leave the location. *Counterplay:* At the GM's discretion, PCs may discover or craft protective items that reduce or negate the Nothing modifier's effect. Examples might include blessed talismans, Sacred Flame-infused artifacts, or ritual preparations that shield hope from the void's influence.
+
+**Everything(X):** The location is touched by overwhelming divine presence, burning away fear and consequence. While at this location, the GM's Fear dice are reduced in size by X steps (d12→d10→d8→d6→d4, minimum d4). This represents divine power's suppression of tension and danger. Example: Everything(1) reduces d12 to d10. Everything(3) reduces d12 to d6. The Fear die returns to normal once PCs leave the location. *Counterplay:* At the GM's discretion, adversaries or environmental effects may discover or create corrupting influences that reduce or negate the Everything modifier's effect.
+
 **Environmental & Encounter Modifiers**
 
 These modifiers add specific features, inhabitants, or encounter types to a location. They help define what players will find when they arrive and what challenges or opportunities await them.
