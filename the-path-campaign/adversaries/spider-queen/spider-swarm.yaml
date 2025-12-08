@@ -1,0 +1,31 @@
+name: Spider Swarm
+tier: 2
+category: Horde
+description: Hundreds of spiderlings surge across walls and ceiling like a living tide, their countless legs creating a chittering chorus as they defend the Queen's precious egg chambers.
+motives: Defend eggs, overwhelm intruders, protect Queen, swarm vulnerable targets
+difficulty: 13
+thresholds:
+  major: 12
+  severe: 18
+hp: 5
+stress: 3
+attack:
+  bonus: '+0'
+  name: Countless Bites
+  range: Very Close
+  damage: 2d8+4 phy
+experience:
+  - name: Climb
+    value: 2
+features:
+  - name: Horde (1d6+3)
+    type: Passive
+    description: When the Swarm has marked half or more of their Hit Points, their standard attack deals 1d6+3 damage instead.
+  - name: Web Cocoon
+    type: Action
+    cost: Mark a Stress
+    description: Have spiderlings spin silk around a target within Very Close range. Make an attack. On a success, the target becomes Restrained in sticky webbing until they break free with a successful Strength or Agility Roll. While Restrained, the target takes 1d4 physical damage at the start of each GM turn as spiderlings continue biting.
+  - name: Defensive Swarm
+    type: Reaction
+    description: When the Swarm attacks intruders within Very Close range of the Queen or egg chambers (Silk Vault feature), they deal an additional 1d4 physical damage as their protective instincts drive them into a frenzy.
+lore: These are the Queen's youngest offspring, too small to hunt alone but devastating in numbers. They instinctively protect the egg sacs that contain their unborn siblings, swarming anything that threatens the brood's future.
