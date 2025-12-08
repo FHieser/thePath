@@ -69,6 +69,25 @@ _(For reference - these are already fully developed)_
 
 ## NEW LOCATION IDEAS
 
+- **Prayer Flag Peak** - Summit completely shrouded in thousands of colorful flags, their blessings carried on every breeze
+- **Tidebreak Ruins** - Stone walls showing mist "waterline" marks at different heights, like ancient flood levels
+- **Barnacle Gardens** - Stone pillars encrusted with shell-like growths that breathe mist in rhythmic pulses
+- **The Breathing Chasm** - Deep crack that exhales mist on a tidal rhythm, inhales with a drowning gasp
+
+- **Salvage Platform** - Wooden structure built for hauling corrupted items from the mist depths
+- **The Diving Bell** - Suspended brass sphere half-buried in mist like it sank through fog as if through water
+
+
+- **Midnight Chapel** - Church that only appears in complete darkness, its bell tolling hours that don't exist
+- **The Drowned Aviary** - Collapsed glasshouse filled with brackish water and feathered shadows.
+
+- **The Grinding Mill** - Water mill that still turns despite no stream, its stones grinding something that produces screams instead of flour
+- **The Harvest Fields** - Farmland where scarecrows are made from actual bodies, preserved and positioned to tend crops that never grow
+- **The Sink** - Where a river disappears underground into a massive cave mouth
+- **The Needle Gate** - Twin stone pillars so tall and thin they sway in strong winds, creating unsettling grinding sounds
+- **Tended Orchard** - Rows of gnarled fruit trees still producing tart fruit, tended by unseen hands or stubborn roots.
+
+
   **Deep Forest Locations:**
 
 - **Forest Heart**
@@ -86,7 +105,7 @@ _(For reference - these are already fully developed)_
 
 **Dark Locations:**
 
-- **Midnight Chapel** - Church that only appears in complete darkness, its bell tolling hours that don't exist
+
 
 - **The Fever Dream** - Reality-warped clearing where time moves wrong and visitors see doubled shadows of things not yet happened
 
@@ -106,9 +125,9 @@ _(For reference - these are already fully developed)_
 - **Carrion Crown** - Hill topped with a throne made entirely of antlers and bone, where something once held court over the dead
 - **The Tally House** - Abandoned counting house where walls are covered in scratched tallies reaching impossible numbers, still being added to
 - **Lamplight Tombs** - Crypts that glow with sickly yellow light from within, illuminating the silhouettes of what moves inside
-- **The Harvest Fields** - Farmland where scarecrows are made from actual bodies, preserved and positioned to tend crops that never grow
+
 - **Communion Well** - Deep stone well that whispers up prayers in dozens of voices, promising divine answers for those who descend
-- **The Grinding Mill** - Water mill that still turns despite no stream, its stones grinding something that produces screams instead of flour
+
 - **Widow's Veil Falls** - Waterfall with water so dark it looks like flowing cloth, where shapes of drowning women can be seen just beneath the surface
 - **Pale Procession Road** - Ancient road where a line of white-clad figures walks endlessly in one direction, never reaching any destination
 
@@ -141,7 +160,7 @@ _(For reference - these are already fully developed)_
 - **Rapids Run** - Churning white water section requiring skill or courage to navigate
 - **The Confluence** - Where two rivers meet, creating dangerous currents and whirlpools
 - **Forgotten Dock** - Rotting pier jutting into deep water, boats long gone
-- **The Sink** - Where a river disappears underground into a massive cave mouth
+
 - **Delta Channels** - Branching waterways creating islands and shifting sandbars
 - **The Glass Lake** - Perfectly clear water revealing everything on the bottom, and what watches from below
 
@@ -177,7 +196,7 @@ _(For reference - these are already fully developed)_
 
 - **Homestead Ruins** - Stone foundations and collapsed roofs where a family once farmed; overgrown vegetable plots hint at hurried departure.
 - **Abandoned Barn** - A timber barn sagging under its own age, stalls filled with old tools and the ghosts of livestock.
-- **Tended Orchard** - Rows of gnarled fruit trees still producing tart fruit, tended by unseen hands or stubborn roots.
+
 - **Shepherd's Fold** - Low stone pens and a ruined shepherd's hut on a windswept knoll; watch stones mark grazing rights and old bargains.
 - **Fieldstone Cottage** - Small stone house with a thatched roof half-collapsed, a well nearby and a child's toy frozen in the yard.
 - **Old Roadside Inn** - Weather-beaten sign and a long-empty hearth; ale pots and maps remain, and the well still draws sweet water.
@@ -192,7 +211,6 @@ _(For reference - these are already fully developed)_
 - **Salted Keep** - Coastal stronghold half‑submerged; salt‑slick stones whisper old sieges.
 - **The Sundered Hall** - A manor split in two by some unseen force; chill wind carries faint music.
 - **Lanterned Ruin** - Stone market square with rusted lamp posts that glow on foggy nights.
-- **The Drowned Aviary** - Collapsed glasshouse filled with brackish water and feathered shadows.
 - **Mosswork Abbey** - Cloistered ruins carpeted in thick moss; chanting echoes without source.
 - **The Stone Nursery** - Cracked nursery walls ringed with statues whose eyes weep lichen.
 - **Ashen Mill** - Millstones frozen mid‑turn beneath a veil of perpetual steam and ash.
@@ -226,7 +244,6 @@ _(For reference - these are already fully developed)_
 - **Deadfall Maze** - Area where fallen trees create a labyrinth of rotting timber and new growth
 - **The Watcher's Tree** - Ancient oak with a hollow that always seems to be observing visitors
 - **The Drowning Grove** - Forest floor perpetually covered in ankle-deep water, roots breaking surface
-- **Spider's Parliament** - Grove where massive webs connect every tree, silvered in morning dew
 - **The Burned Heart** - Lightning-struck clearing where charred trunks stand like monuments
 - **Moss Gardens** - Area where every surface is covered in luminous moss that glows faintly at night
 - **The Howling Thicket** - Dense undergrowth that produces mournful sounds when wind passes through
@@ -271,8 +288,8 @@ _(For reference - these are already fully developed)_
 - **The Drowned Lighthouse** - Fog-choked beacon tower where mist pours from the shattered lantern room like smoke from a chimney
 - **Pressure Lock Chamber** - Ancient airlock mechanism from before the mist, bronze wheels and rubber seals still holding back corrupting fog
 - **Tidal Mist Pools** - Rocky shore where mist collects in tide pools like liquid, revealing crystallized creatures trapped beneath
-- **The Diving Bell** - Suspended brass sphere half-buried in mist like it sank through fog as if through water
-- **Barnacle Gardens** - Stone pillars encrusted with shell-like growths that breathe mist in rhythmic pulses
+
+
 - **The Decompression Chamber** - Sealed stone room with pressure gauges and medical equipment for treating mist exposure
 - **Fog Nets** - Massive fishing nets strung between dead trees, tangled with mist-preserved sea creatures
 - **The Drowned Harbor** - Dock and pier posts jutting from solid mist like water, ghostly ship hulls visible below
@@ -280,11 +297,10 @@ _(For reference - these are already fully developed)_
 - **The Descent Bell Tower** - Bell tower whose tolling draws mist up from below like summoning depths
 - **Pearlescent Grotto** - Cave where mist has crystallized into nacreous formations that whisper of drowning
 - **The Submersible** - Rusted underwater vessel half-emerged from mist, portholes glowing with internal fog
-- **Tidebreak Ruins** - Stone walls showing mist "waterline" marks at different heights, like ancient flood levels
-- **The Breathing Chasm** - Deep crack that exhales mist on a tidal rhythm, inhales with a drowning gasp
+
+
 - **Crab Shell Cairns** - Massive crustacean exoskeletons stacked into monuments, still moving with mist corruption
 - **The Compression Point** - Where mist becomes so dense it's nearly solid, requiring "diving" to pass through
-- **Salvage Platform** - Wooden structure built for hauling corrupted items from the mist depths
 - **The Aquarium Ruins** - Shattered glass tanks now filled with mist instead of water, creatures swimming through fog
 - **Fog Siphon Station** - Pumping mechanism designed to drain mist, now backflowing with corrupted pressure
 - **The Drowned Garden** - Submerged greenhouse where plants grow in mist instead of water, disturbingly alive
@@ -309,8 +325,30 @@ _(For reference - these are already fully developed)_
 - **The Oracle's Seat** - Windswept throne of stone where prophets once entered trance to commune with spirits
 - **Juniper Shrine** - Sacred grove where burning juniper branches produce visions in their twisting smoke
 - **The Dorje Gate** - Mountain pass marked by ritual objects and protective symbols carved into living rock
-- **Prayer Flag Peak** - Summit completely shrouded in thousands of colorful flags, their blessings carried on every breeze
+x
 - **The Bone Trumpet Tower** - Watchtower where ritual horns made from human thighbones once called to deities
+
+**Rock Formations (With a Twist):**
+
+- **The Balanced Stones** - Massive boulders stacked impossibly high, defying gravity and shifting positions when no one watches
+- **The Weeping Face** - Cliff wall carved by erosion into a human visage that constantly drips water from its eyes
+- **The Giant's Causeway** - Hexagonal basalt columns that hum different notes when struck, forming an instrument of stone
+- **The Hollow Throne** - Natural stone seat carved by wind into solid rock, radiating warmth despite being exposed to elements
+- **The Stone Forest** - Field of vertical stone spires weathered into shapes resembling petrified trees with reaching branches
+- **The Arch of Echoes** - Natural stone bridge that repeats sounds in reverse, speaking words backwards across the gap
+- **The Cracked Crown** - Ring of standing stones split down their centers, the gaps widening imperceptibly over time
+- **The Leaning Tower** - Impossibly angled stone spire that should have fallen centuries ago but remains suspended at wrong angle
+- **The Stone Bloom** - Rock formation resembling an opening flower, petals of stone slowly unfurling over generations
+- **The Witnessing Pillars** - Circle of carved stone columns whose weathered faces seem to track movement with hollow eyes
+- **The Knuckle Bones** - Series of rounded stones jutting from earth like fingers of a buried giant clawing upward
+- **The Frozen Wave** - Sweeping stone formation capturing the moment before a wave crashes, smooth and flowing despite being solid rock
+- **The Serpent's Spine** - Ridge of jagged rocks running across landscape like vertebrae of something massive and buried
+- **The Howling Caves** - Honeycomb rock formation where wind creates voices singing in harmonies no human could produce
+- **The Memory Stones** - Smooth river rocks that show reflections of past events when water is poured over them
+- **The Compass Rose** - Star-shaped formation of stone rays pointing in eight directions, each one magnetic in impossible ways
+- **The Falling Stars** - Meteoric rock fragments embedded in crater, still warm centuries later and glowing faintly at night
+- **The Clockwork Crag** - Layered sedimentary cliff whose strata slowly rotate like gears, grinding with geological patience
+- **The Threshold Dolmen** - Three standing stones forming a doorway that shows different landscapes depending on time of day
 
 **Corrupted Spiritualism & Dark Monasteries:**
 
@@ -334,3 +372,14 @@ _(For reference - these are already fully developed)_
 - **Prayer Flags of Forgetting** - Mountain pass festooned with blank flags that steal memories carried on the wind
 - **The Void Meditation Caves** - Hermitages where monks stared into darkness until it stared back and took something vital
 - **Seven Hells Descent** - Series of seven chambers descending underground, each one colder and quieter than the last
+
+**Corrupted Highland Shrine Elements:**
+
+- **Echoing Bell Tower** - A crumbling bell tower that still resonates with deep, mournful tones when rung to disorient mist adversaries
+- **Barnacle Nursery** - Section of ruins where new barnacles are budding from the stone, harvested for void-touched reagents
+- **Mist Condensers** - Ancient stone basins designed to collect condensed mist, cleansing corruption or overwhelming those who drink
+- **Void-Touched Statues** - Weathered statues depicting Ancient Guardians (crocodile, kraken, crab) that grant insights to those who seek their blessing
+- **Descent Murals** - Faded paintings showing the pilgrimage to THE Nothing, offering knowledge or spreading misinformation to viewers
+- **Broken Meditation Bells** - Suspended bells that no longer ring but hum with void resonance, vibrating intensely as danger approaches
+- **Barrow Entrance** - Sealed stone door covered in deep script warnings, leading down into darkness beneath the shrine
+
