@@ -1,0 +1,46 @@
+{
+  "name": "Spider Emissary",
+  "tier": "Tier 2",
+  "category": "Standard",
+  "description": "A uniquely marked giant spider with intricate silver patterns across its abdomen and mandibles that vibrate with eerie precision. This creature possesses the rare gift of speech—a blessing from the Spider Queen herself—and serves as her voice to the outside world.",
+  "motives": "Speak for the Queen, assess threats, negotiate, defend with venomous precision",
+  "difficulty": 14,
+  "thresholds": "10/18",
+  "hp": 5,
+  "stress": 3,
+  "attack": {
+    "bonus": "+2",
+    "name": "Mandible Strike",
+    "range": "Very Close",
+    "damage": "2d8+1 phy"
+  },
+  "experience": [
+    {
+      "name": "Diplomacy",
+      "value": 3
+    },
+    {
+      "name": "Insight",
+      "value": 2
+    }
+  ],
+  "features": [
+    {
+      "name": "Voice of the Queen",
+      "type": "Passive",
+      "description": "The Emissary can speak through rapid mandible vibrations that translate into audible words in any language. It understands all spoken languages and serves as the Queen's diplomatic representative. The Emissary can communicate the Queen's will, negotiate terms, and assess whether visitors pose a threat or opportunity to the colony."
+    },
+    {
+      "name": "Paralytic Venom",
+      "type": "Action",
+      "cost": "Mark a Stress",
+      "description": "Inject concentrated venom with a precise strike. Make an attack against a target within Very Close range. On a success, deal 2d6+4 physical damage and the target becomes Vulnerable as the venom weakens their muscles. The target remains Vulnerable until they succeed on a Strength Roll to shake off the toxin's effects."
+    },
+    {
+      "name": "Alarm Pheromones",
+      "type": "Reaction",
+      "description": "When the Emissary marks HP, they release a powerful chemical signal that alerts the entire fortress. You gain 1 Fear immediately, and on your next GM turn you can summon up to 2 Battle Points worth of spiders that emerge from nearby silk tunnels within Close range of the Emissary."
+    }
+  ],
+  "lore": "No one knows how the Spider Queen granted this creature the ability to speak. Some say she wove ancient magic into its silk sac; others believe it consumed a magic-user and absorbed their knowledge. Regardless, the Emissary speaks with the Queen's authority and judges visitors with her cunning intelligence."
+}

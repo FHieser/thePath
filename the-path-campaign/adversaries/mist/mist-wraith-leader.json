@@ -1,0 +1,53 @@
+{
+  "name": "Mist Wraith Leader",
+  "tier": "Tier 1",
+  "category": "Leader",
+  "description": "A more intelligent and commanding presence within the mist, this corrupted soul retains enough of its former self to direct other lost spirits. Its ethereal form flickers between corporeal and mist, and its hollow eyes burn with the same hunger for light as its servants.",
+  "motives": "Command the lost, extinguish sanctuaries, rally minions, spread the mist's influence",
+  "difficulty": 12,
+  "thresholds": "6/12",
+  "hp": 6,
+  "stress": 3,
+  "attack": {
+    "bonus": "+1",
+    "name": "Mist Fire Throw",
+    "range": "Far",
+    "damage": "1d8+3 mag"
+  },
+  "experience": [
+    {
+      "name": "Heat Sense",
+      "value": 2
+    },
+    {
+      "name": "Command",
+      "value": 3
+    }
+  ],
+  "features": [
+    {
+      "name": "Heat Seekers",
+      "type": "Passive",
+      "description": "They are the hounds sent out by the mist to seek out flames and extinguish them. The Wraith Leader prioritizes fire, light sources, and warm-blooded creatures when selecting targets."
+    },
+    {
+      "name": "Rally the Lost",
+      "type": "Action",
+      "cost": "Spend 2 Fear",
+      "description": "Spotlight the Wraith Leader and the number of players mist walkers within Far range. All spotlighted creatures can immediately take their turn."
+    },
+    {
+      "name": "Chilling Presence",
+      "type": "Reaction",
+      "description": "When this adversary makes a successful attack against a PC, you gain a Fear."
+    },
+    {
+      "name": "Call to the Mist",
+      "type": "Action",
+      "uses": 1,
+      "cost": "Mark a Stress",
+      "description": "Once per scene, summon 1d4 Mist Stalkers who emerge next to the Wraith Leader. These reinforcements appear ready to act on the GM's next turn."
+    }
+  ],
+  "lore": "Once a guide or leader who attempted to navigate The Path, this corrupted soul now serves the mist's will, using its knowledge of leadership to coordinate attacks against the living warmth it once protected."
+}
