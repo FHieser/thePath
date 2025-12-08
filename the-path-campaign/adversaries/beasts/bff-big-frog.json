@@ -1,11 +1,14 @@
 {
   "name": "BFF (BIG FUCKING FROG)",
-  "tier": "Tier 2",
+  "tier": 2,
   "category": "Solo",
   "description": "An enormous amphibian the size of a wagon, covered in mottled green and brown skin that glistens with toxic slime. Bioluminescent patterns pulse across its warty hide, mesmerizing and deadly.",
   "motives": "Lure prey with glowing patterns, dissolve armor with caustic secretions, spray acid at groups, devour intruders",
   "difficulty": 14,
-  "thresholds": "12/24",
+  "thresholds": {
+    "major": 12,
+    "severe": 24
+  },
   "hp": 8,
   "stress": 4,
   "attack": {

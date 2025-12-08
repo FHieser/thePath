@@ -1,11 +1,11 @@
 {
   "name": "Spider Minion",
-  "tier": "Tier 2",
+  "tier": 2,
   "category": "Minion",
   "description": "A dog-sized spider with sleek chitin plates and eight gleaming eyes, scuttling across surfaces with unsettling speed. These worker spiders patrol the silk fortress, maintaining webs and hunting for the Queen.",
   "motives": "Follow Queen's commands, patrol territory, swarm targets, hunt in packs",
   "difficulty": 13,
-  "thresholds": "None",
+  "thresholds": null,
   "hp": 1,
   "stress": 1,
   "attack": {

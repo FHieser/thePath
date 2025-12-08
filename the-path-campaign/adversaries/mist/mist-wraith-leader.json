@@ -1,11 +1,14 @@
 {
   "name": "Mist Wraith Leader",
-  "tier": "Tier 1",
+  "tier": 1,
   "category": "Leader",
   "description": "A more intelligent and commanding presence within the mist, this corrupted soul retains enough of its former self to direct other lost spirits. Its ethereal form flickers between corporeal and mist, and its hollow eyes burn with the same hunger for light as its servants.",
   "motives": "Command the lost, extinguish sanctuaries, rally minions, spread the mist's influence",
   "difficulty": 12,
-  "thresholds": "6/12",
+  "thresholds": {
+    "major": 6,
+    "severe": 12
+  },
   "hp": 6,
   "stress": 3,
   "attack": {

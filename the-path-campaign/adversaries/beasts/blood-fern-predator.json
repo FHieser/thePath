@@ -1,11 +1,14 @@
 {
   "name": "BLOOD FERN PREDATOR",
-  "tier": "Tier 2",
+  "tier": 2,
   "category": "Solo",
   "description": "A massive wolf whose fur has been overtaken by spreading crimson moss that grows like living blood, eyes gleaming with predatory intelligence.",
   "motives": "Stalk intruders through fern cover, ambush from elevated positions, drag prey into the valley depths, mark territory with killed deer",
   "difficulty": 15,
-  "thresholds": "13/25",
+  "thresholds": {
+    "major": 13,
+    "severe": 25
+  },
   "hp": 9,
   "stress": 4,
   "attack": {

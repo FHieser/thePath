@@ -1,11 +1,14 @@
 {
   "name": "Mist Thrower",
-  "tier": "Tier 1",
+  "tier": 1,
   "category": "Support",
   "description": "A hunched figure encased in a crude diving suit of salvaged metal and leather, its faceplate fogged with otherworldly mist. It carries a repurposed apparatus that spews corrupting fog, spreading the mist's influence wherever it stalks.",
   "motives": "Spread mist corruption, support other mist creatures, create zones of danger, avoid direct combat",
   "difficulty": 13,
-  "thresholds": "6/12",
+  "thresholds": {
+    "major": 6,
+    "severe": 12
+  },
   "hp": 4,
   "stress": 4,
   "attack": {

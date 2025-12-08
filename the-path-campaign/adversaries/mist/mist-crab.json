@@ -1,11 +1,14 @@
 {
   "name": "Mist Crab",
-  "tier": "Tier 1",
+  "tier": 1,
   "category": "Bruiser",
   "description": "A massive crustacean that has emerged from the depths of the mist, its shell covered in hardened crystalline formations of frozen otherworldly fog. Its oversized claws click and scrape as it prowls for warm-blooded prey to crush and drag into the darkness.",
   "motives": "Grab and crush prey, use shell for protection, serve as mobile platform for other mist creatures",
   "difficulty": 13,
-  "thresholds": "8/16",
+  "thresholds": {
+    "major": 8,
+    "severe": 16
+  },
   "hp": 5,
   "stress": 3,
   "attack": {

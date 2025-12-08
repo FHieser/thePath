@@ -1,11 +1,14 @@
 {
   "name": "Mist Stalker",
-  "tier": "Tier 1",
+  "tier": 1,
   "category": "Skulk",
   "description": "A more agile and cunning manifestation of the mist's hunger, this creature moves with predatory grace through the otherworldly fog. Its form shifts between solid and ethereal, allowing it to strike from unexpected angles before vanishing back into the mist.",
   "motives": "Ambush from mist, strike and fade, hunt light sources, isolate targets",
   "difficulty": 11,
-  "thresholds": "4/8",
+  "thresholds": {
+    "major": 4,
+    "severe": 8
+  },
   "hp": 3,
   "stress": 2,
   "attack": {

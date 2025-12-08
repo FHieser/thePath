@@ -1,11 +1,14 @@
 {
   "name": "Adversary Name",
-  "tier": "Tier 1",
+  "tier": 1,
   "category": "Solo",
   "description": "Atmospheric description of the adversary's appearance, behavior, and presence. This sets the tone for how the GM describes the creature during encounters.",
   "motives": "Primary goals and tactical approaches - how this adversary behaves in combat and what drives its actions",
   "difficulty": 11,
-  "thresholds": "4/8",
+  "thresholds": {
+    "major": 4,
+    "severe": 8
+  },
   "hp": 4,
   "stress": 2,
   "attack": {

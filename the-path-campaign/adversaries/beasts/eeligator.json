@@ -1,11 +1,14 @@
 {
   "name": "EELIGATOR",
-  "tier": "Tier 2",
+  "tier": 2,
   "category": "Solo",
   "description": "A massive predator combining the worst traits of electric eel and alligator - twelve feet of scaled muscle with webbed claws and a wickedly barbed tail. Its hide crackles with bio-electric energy, and its jaws lock with bone-crushing force.",
   "motives": "Ambush prey from submerged positions, drag victims underwater to drown, defend the black water lake from intruders",
   "difficulty": 14,
-  "thresholds": "12/25",
+  "thresholds": {
+    "major": 12,
+    "severe": 25
+  },
   "hp": 7,
   "stress": 5,
   "attack": {

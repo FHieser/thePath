@@ -1,11 +1,14 @@
 {
   "name": "Spider Swarm",
-  "tier": "Tier 2",
+  "tier": 2,
   "category": "Horde",
   "description": "Hundreds of spiderlings surge across walls and ceiling like a living tide, their countless legs creating a chittering chorus as they defend the Queen's precious egg chambers.",
   "motives": "Defend eggs, overwhelm intruders, protect Queen, swarm vulnerable targets",
   "difficulty": 13,
-  "thresholds": "12/18",
+  "thresholds": {
+    "major": 12,
+    "severe": 18
+  },
   "hp": 5,
   "stress": 3,
   "attack": {

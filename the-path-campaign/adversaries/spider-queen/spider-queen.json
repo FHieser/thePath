@@ -1,11 +1,14 @@
 {
   "name": "Spider Queen",
-  "tier": "Tier 2",
+  "tier": 2,
   "category": "Solo",
   "description": "An ancient arachnid the size of a small house, her midnight-black carapace adorned with silver webbing patterns that shimmer with otherworldly intelligence. Eight eyes gleam with cunning awareness as she surveys her domain from the silk throne, her presence commanding absolute obedience from every spider in the fortress.",
   "motives": "Protect the brood, test intruders' worth, negotiate from strength, summon reinforcements, rule the colony",
   "difficulty": 15,
-  "thresholds": "13/26",
+  "thresholds": {
+    "major": 13,
+    "severe": 26
+  },
   "hp": 9,
   "stress": 4,
   "attack": {

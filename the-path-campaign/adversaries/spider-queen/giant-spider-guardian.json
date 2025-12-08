@@ -1,11 +1,14 @@
 {
   "name": "Giant Spider Guardian",
-  "tier": "Tier 2",
+  "tier": 2,
   "category": "Bruiser",
   "description": "A horse-sized arachnid with glistening black chitin and legs thick as tree branches. These elite hunters serve as the Queen's personal guards, resting in the Sentinel Chamber between patrols and striking with terrifying coordination when threats arise.",
   "motives": "Protect the Queen, ambush from above, overwhelm prey, guard silk fortress",
   "difficulty": 15,
-  "thresholds": "12/26",
+  "thresholds": {
+    "major": 12,
+    "severe": 26
+  },
   "hp": 6,
   "stress": 5,
   "attack": {

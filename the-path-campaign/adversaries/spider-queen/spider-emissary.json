@@ -1,11 +1,14 @@
 {
   "name": "Spider Emissary",
-  "tier": "Tier 2",
+  "tier": 2,
   "category": "Standard",
   "description": "A uniquely marked giant spider with intricate silver patterns across its abdomen and mandibles that vibrate with eerie precision. This creature possesses the rare gift of speech—a blessing from the Spider Queen herself—and serves as her voice to the outside world.",
   "motives": "Speak for the Queen, assess threats, negotiate, defend with venomous precision",
   "difficulty": 14,
-  "thresholds": "10/18",
+  "thresholds": {
+    "major": 10,
+    "severe": 18
+  },
   "hp": 5,
   "stress": 3,
   "attack": {

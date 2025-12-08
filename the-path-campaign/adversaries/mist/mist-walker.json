@@ -1,11 +1,11 @@
 {
   "name": "Mist Walker",
-  "tier": "Tier 1",
+  "tier": 1,
   "category": "Minion",
   "description": "A shambling humanoid figure that emerges from the otherworldly mist, its form barely corporeal and eyes fixed on any source of light or warmth.",
   "motives": "Hunt flames, extinguish light, swarm targets, overwhelm",
   "difficulty": 11,
-  "thresholds": "None",
+  "thresholds": null,
   "hp": 1,
   "stress": 1,
   "attack": {
