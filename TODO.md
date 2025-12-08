@@ -3,10 +3,12 @@
 - Add reed marsh NPC
 - Add trader NPC
 - 1 Location of Flame
-- Add one underground location with flame
-- Location of mist small
-- Location that swaps with other location
 - Add Hunter Party from mist
+  - Add counter visible for players
+  - Count down each movement, when players say they wait something out
+- Upgrades to the village
+  - Town defenses (raising the amount of Fear needed to breach the walls)
+- Possible events
 
 - Location of mist big
 - Location of fight
@@ -15,6 +17,8 @@
 - Upgrade der App
   - counter that stay
   - added comment section
+- Location that swaps with other location
+
 
 # Plans
 
