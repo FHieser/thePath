@@ -1,12 +1,21 @@
 {
   "name": "Location Name",
-  "tier": "Tier 1 Exploration",
+  "tier": 1,
+  "category": "Exploration",
   "description": "A brief atmospheric description of the location that captures its essence and sets the tone for encounters here.",
   "impulses": "Primary thematic drives or motivations that guide this location's behavior and narrative",
   "difficulty": 11,
   "modifiers": [
-    "Stable",
-    "Cave Mouth"
+    {
+      "name": "Stable"
+    },
+    {
+      "name": "Cave Mouth"
+    },
+    {
+      "name": "Nothing",
+      "value": 1
+    }
   ],
   "potentialAdversaries": "Types of creatures or antagonists that might be encountered here",
   "features": [
