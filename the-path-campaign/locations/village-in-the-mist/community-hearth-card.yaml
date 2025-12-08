@@ -1,0 +1,27 @@
+name: Community Hearth
+tier: 1
+category: Social
+description: |
+  The social center of village life on the middle terrace, where residents gather to share meals, news, and stories.
+impulses: |
+  Foster community bonds, share vital information, maintain hope in dark times
+difficulty: 11
+potentialAdversaries: None (safe sanctuary)
+features:
+  - name: The Village Holds Together
+    type: Passive
+    description: |
+      Each evening, the community gathers at the hearth for a shared meal and storytelling. All PCs who participate gain 1 Hope as they strengthen bonds with residents through food, conversation, and shared experiences.
+    questions: |
+      What stories do residents tell during these gatherings? How do newcomers become included in the evening tradition?
+  - name: Morale Crisis
+    type: Reaction
+    description: |
+      When the community faces trauma (flame shortage, resident death, failed defense, external threats), morale plummets at day's end. The GM either gains 1 Fear or spends 1 Fear to give all PCs 1 Stress after their next long rest as the crisis weighs on everyone.
+    questions: |
+      What specific events shake the community's foundation? How do different residents cope with collective trauma and loss?
+featureQuestions:
+  - What rituals and traditions bind the community together around the hearth?
+  - How do residents support each other through individual and collective hardships?
+  - What does it mean to truly belong to this community of survivors?
+  - How do the evening gatherings change during times of crisis versus celebration?

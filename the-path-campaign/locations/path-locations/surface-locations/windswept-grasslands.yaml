@@ -1,0 +1,27 @@
+name: Windswept Grasslands
+tier: 1
+category: Exploration
+description: Open fields swept by endless winds where ancient shrines and windmill ruins dot the landscape.
+impulses: Test endurance against the elements, reveal forgotten offerings, echo with voices of the past
+difficulty: 11
+modifiers:
+  - name: Unstable
+potentialAdversaries: Beasts (Dire Wolf, Glass Snake), Wind Spirits, Lost Travelers
+features:
+  - name: Gusting Gale
+    type: Action
+    description: Powerful wind gusts sweep across the grasslands. All creatures that are not protected by the wind must succeed on a Strength Reaction Roll or be pushed Close range in the wind's direction and have disadvantage on their next action roll. Flying creatures have disadvantage on this roll.
+    questions: Which direction does the wind push creatures? What does the wind carry with it? How does the landscape change the wind's path?
+  - name: Windmill Warning
+    type: Reaction
+    description: When PCs approach the crumbling windmill ruins, its broken blades creak ominously. If triggered, the unstable structure partially collapses. All creatures within Close range must succeed on an Agility Reaction Roll or take 1d6+1 physical damage from falling debris.
+    questions: What was the windmill originally used for? What caused it to fall into ruin? What might still be hidden inside?
+  - name: Shrine Prayer
+    type: Passive
+    description: PCs can spend time formulating a prayer at the weathered shrine. They roll a d6. On a 5-6, they gain a Hope. On a 1, the GM gains a Fear as ancient spirits test the supplicant's worthiness.
+    questions: What prayer does the PC offer? How do the spirits respond? What signs indicate divine favor or displeasure?
+featureQuestions:
+  - What ancient power once protected these grasslands before the mist came?
+  - How do the constant winds affect travel and visibility in this area?
+  - What stories do the broken offerings at the shrine tell about past visitors?
+  - What valuable resources might be hidden within the dangerous windmill ruins?

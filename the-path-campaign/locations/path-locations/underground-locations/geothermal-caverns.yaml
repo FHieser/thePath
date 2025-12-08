@@ -1,0 +1,42 @@
+name: Geothermal Caverns
+tier: 2
+category: Exploration
+description: |
+  A network of heated underground chambers where ancient thermal machinery harnesses volcanic vents and molten rock has carved winding passages.
+impulses: |
+  Test endurance against extreme heat, power ancient mechanisms, reveal geological secrets
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Underground
+potentialAdversaries: Fire Elementals, Heat-adapted Creatures, Malfunctioning Constructs
+features:
+  - name: Heat Endurance Challenge
+    type: Counter System
+    description: |
+      The oppressive heat throughout the caverns drains strength and focus. Start a counter at 0. Each time PCs overcome heat-related obstacles (finding cooling areas, successfully navigating thermal vents, or operating heat engines), increment the counter by 1. When the counter reaches 3, the PCs have adapted to the environment and can explore freely without further heat penalties.
+    questions: |
+      Which areas provide relief from the intense heat? How do the thermal currents flow through different chambers? What signs indicate dangerous temperature spikes?
+  - name: Lava Tube Navigation
+    type: Passive
+    description: |
+      Ancient molten rock carved smooth tunnels throughout the caverns. These passages provide relatively safe travel but still radiate intense heat. When PCs traverse lava tubes, they must make Strength rolls to endure the heat. Success advances the heat endurance counter. Failure causes 1 Stress from heat exhaustion but doesn't prevent progress.
+    questions: |
+      How were these tubes originally formed? Do any still show signs of recent lava flow? What valuable minerals might be embedded in the cooled rock walls?
+  - name: Heat Engine Operation
+    type: Action
+    description: |
+      Massive bronze machinery harnesses the thermal vents to power unknown mechanisms throughout the caverns. When PCs attempt to operate the heat engines, make a Lore roll. On a success, activate beneficial systems (ventilation, lighting, or access to new areas) and advance the heat endurance counter. On a failure with Fear, trigger a dangerous steam eruption.
+    questions: |
+      What was this thermal machinery designed to power? How do the bronze components withstand such extreme temperatures? What happens when multiple engines operate simultaneously?
+  - name: Scalding Steam Vents
+    type: Reaction
+    description: |
+      When heat engines malfunction or natural vents become unstable, superheated steam erupts unpredictably. All creatures within Close range must succeed on an Agility Reaction Roll or take 1d8+3 fire damage from the scalding steam. The eruption also obscures vision temporarily and may damage delicate equipment.
+    questions: |
+      What triggers the steam vents to become violent? How long do the eruptions typically last? Are there warning signs before a dangerous eruption occurs?
+featureQuestions:
+  - What ancient civilization built thermal machinery sophisticated enough to harness volcanic heat?
+  - How do the heat engines connect to power systems in other underground locations?
+  - What valuable resources or rare materials could be found in these extreme conditions?
+  - Could the thermal energy be channeled to benefit surface communities?

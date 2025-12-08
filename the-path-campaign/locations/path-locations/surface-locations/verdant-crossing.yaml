@@ -1,0 +1,36 @@
+name: Verdant Crossing
+tier: 2
+category: Traversal
+description: A treacherous descent down a cliff face where massive shelf fungi form natural stairs and woven tree roots provide handholds, all illuminated by luminescent moss in the forest gloom.
+impulses: Guide travelers safely down the cliff descent, sustain the living growth through constant renewal, test the balance and caution of climbers
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Wild Beasts
+potentialAdversaries: Forest Beasts (Dire Wolf, Glass Snake), Giant Insects (territorial swarms), Fungal Creatures (Spore Cloud, Mycelium Mass)
+features:
+  - name: Cliff Descent Challenge
+    type: Counter System
+    description: |
+      The cliff face descent is treacherous but navigable using fungal shelves and root handholds. Start a Descent Progress counter. If descending from top to bottom, start at 4 and count down to 0. If ascending from bottom to top, start at 0 and count up to 4. Each time PCs navigate a section of the cliff, they make a group Agility roll. If at least half the group succeeds, advance the counter by 1 (down if descending, up if ascending). If the group check fails, all PCs mark 1 Stress from exhaustion and the counter does not advance. If the group check fails with Fear, all PCs mark 1 Stress, the counter does not advance, and one PC (players choose) loses their grip and falls to the next ledge, taking 1d8+3 physical damage. When the counter reaches the destination (0 if descending, 4 if ascending), the PCs have safely completed the crossing.
+    questions: How stable are the fungal shelves at different sections? Do some root handholds appear more reliable than others? What signs indicate which sections are most dangerous?
+  - name: Luminescent Moss
+    type: Reaction
+    description: |
+      When a PC falls and takes damage during the Cliff Descent Challenge, they crash through luminescent moss that releases sticky bioluminescent spores on impact. The falling PC becomes covered in glowing particles and has disadvantage on all rolls to hide or remain unseen. The spores cling stubbornly and can only be removed by thoroughly washing with water, which takes at least 5 minutes with abundant water. While covered in spores, the PC glows faintly in darkness, making stealth nearly impossible.
+    questions: Why do the spores stick so persistently? What purpose does this defense mechanism serve for the moss? Do some creatures specifically hunt spore-marked prey?
+  - name: Fungal Shelf Shortcut
+    type: Passive
+    description: |
+      Some of the largest fungal shelves extend far enough from the cliff face to offer risky shortcuts - jumping between shelves instead of climbing. PCs can attempt a shortcut to automatically advance the Descent Progress counter by 2. Each PC attempting the shortcut must individually make an Agility roll. On a success, they reach the next level safely. On a failure, they miss the landing and fall all the way to the bottom of the cliff, taking 1d8+3 physical damage multiplied by the current counter number (if descending from 4, falling at counter 3 means taking 3 × 1d8+3 damage). The falling PC also becomes covered in luminescent moss spores.
+    questions: How far apart are the shelf jumps? What makes some shelves sturdy enough for landing? Do the bones of failed climbers litter the bottom?
+  - name: Insect Paradise
+    type: Passive
+    description: |
+      The cliff face is teeming with giant insects attracted to the fungal shelves and luminescent moss - this location has the Wild Beasts modifier. Countless species nest in the hollow mushrooms, feed on the moss, and patrol their territories throughout the descent. The GM decides how aggressive the insects are based on PC actions: respectful climbers who avoid nests and move carefully may pass unmolested, while those who damage fungal shelves, harvest moss carelessly, or make excessive noise will provoke defensive swarms or territorial attacks.
+    questions: What types of giant insects dominate different sections of the cliff? Do they have a hierarchy or compete for territory? Can experienced climbers read insect behavior to predict aggression?
+featureQuestions:
+  - Why did this cliff face develop such a rich ecosystem of fungi and moss?
+  - What lies at the top versus the bottom of the descent?
+  - How do local creatures navigate the cliff safely without the risks PCs face?
+  - Could this natural infrastructure be preserved or is it slowly dying?

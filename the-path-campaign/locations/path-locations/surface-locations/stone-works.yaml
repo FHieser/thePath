@@ -1,0 +1,32 @@
+name: Stone Works
+tier: 1
+category: Exploration
+description: An abandoned quarry where exposed cliff faces reveal hidden caverns filled with resonant crystals.
+impulses: Echo with ancient industry, reveal hidden geological treasures, challenge with unstable terrain
+difficulty: 11
+modifiers:
+  - name: Unstable
+  - name: Cave Mouth
+potentialAdversaries: Stone Elementals, Crystal Guardians, Quarry Scavengers
+features:
+  - name: Exposed Quarry Faces
+    type: Passive
+    description: The excavated stone walls show clear tool marks and reveal valuable information about the area's geology. PCs who examine the quarry walls can make a Lore roll to identify useful stone types or mineral deposits. On a success, locate common stone worth 1d4 handfuls. On a success with Hope, locate quality materials worth 1d4+3 handfuls. Extraction requires proper tools.
+    questions: What types of stone were quarried here? Why was this operation abandoned? What tools and techniques did the quarry workers use?
+  - name: Precarious Ledges
+    type: Action
+    description: The cliff faces have narrow ledges and unstable footing. When PCs climb or traverse the quarry walls, spend a Fear to trigger a small rockslide. All creatures on the cliff face must succeed on an Agility Reaction Roll or take 1d6+1 physical damage from falling stones and lose their grip.
+    questions: Which sections of the quarry are most unstable? Are there signs warning of dangerous areas? What caused the extensive structural damage?
+  - name: Pulley System Network
+    type: Passive
+    description: The quarry workers installed an elaborate system of ropes, pulleys, and counterweights to move heavy stone blocks. The mechanisms are old but functional. PCs can make a Finesse roll to operate the hoists safely. On a success, transport heavy loads between quarry levels or create improvised bridges across gaps using suspended platforms. On a failure, the stressed ropes snap - any creatures on the platform must make an Agility Reaction Roll or fall, taking 1d10 physical damage.
+    questions: Which pulley routes are still operational? What loads remain suspended in mid-air? Could the system be restored to full function?
+  - name: Abandoned Mine Shafts
+    type: Action
+    description: The quarry workers dug exploratory tunnels deep into the cliff face, many now dangerously unstable. When PCs traverse these narrow passages, spend a Fear to trigger a partial collapse. All creatures in the shaft must succeed on an Agility Reaction Roll or take 1d8+1 physical damage from falling debris and become Restrained by rubble until freed (requires a successful Strength roll by them or an ally).
+    questions: What were the miners searching for in these shafts? Why were some tunnels abandoned halfway through? Are there unexplored branches deeper in the rock?
+featureQuestions:
+  - What ancient civilization or organization operated this extensive quarry?
+  - What valuable materials were the miners searching for in the deepest shafts?
+  - How much of the original pulley system remains functional after years of abandonment?
+  - Could the quarry operations be safely resumed with proper preparation?

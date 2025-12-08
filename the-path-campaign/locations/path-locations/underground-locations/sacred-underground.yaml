@@ -1,0 +1,43 @@
+name: Sacred Underground
+tier: 1
+category: Exploration
+description: |
+  A massive cathedral-like cavern where ancient stone pillars support the ceiling and a sacred altar rests in a natural bowl formation.
+impulses: |
+  Answer seekers' questions through ancient echoes, guard against those who would abuse sacred knowledge, preserve underground mysteries
+difficulty: 11
+modifiers:
+  - name: Unstable
+  - name: Underground
+  - name: Wild Beasts
+potentialAdversaries: Stone Guardians, Echo Wraiths, Deep Predators
+features:
+  - name: Temple of Echoing Questions
+    type: Passive
+    description: |
+      The enormous cavern's acoustics allow visitors to ask questions and receive cryptic answers through the returning echoes. PCs can speak a question aloud and make a Presence roll. On a success, the echoes return with useful but cryptic guidance about their inquiry. On a success with Hope, receive clear and specific advice. This feature can be used once per PC per visit to the cavern.
+    questions: |
+      What ancient power shapes the returning echoes into meaningful responses? How do the acoustics of the cavern create this supernatural effect? What types of questions receive the clearest answers?
+  - name: Stone Pillar Shelter
+    type: Passive
+    description: |
+      The massive columns provide natural shelter and resting spots throughout the vast cavern. PCs can rest safely among the pillars, using their bulk to hide from larger threats. The pillars also contain carved handholds that allow climbing to higher vantage points within the cavern.
+    questions: |
+      What purposes did these pillars serve besides structural support? Are there carved messages or warnings on the pillars? How high can the pillars be safely climbed?
+  - name: Sacred Altar Sanctuary
+    type: Passive
+    description: |
+      The natural bowl formation around the altar provides a place of spiritual refuge. PCs who rest respectfully at the altar can clear 1 Stress from the peaceful atmosphere. The altar also amplifies the echo effect, making questions asked from this location more likely to receive clear answers.
+    questions: |
+      What rituals were once performed at this underground altar? Why was this natural formation chosen as sacred space? What offerings might still be appropriate here?
+  - name: Unwelcome Attention
+    type: Reaction
+    description: |
+      When PCs make excessive noise, ask too many questions too quickly, or otherwise disturb the sacred silence, spend a Fear to have their calls attract dangerous attention. Something large and hungry in the deep passages hears the commotion and begins moving toward the cavern. The PCs hear ominous sounds echoing from the tunnels, giving them time to prepare or hide.
+    questions: |
+      What predators make their lair in the deeper passages? How quickly do they respond to noise in the sacred cavern? What signs warn of their approach through the echo system?
+featureQuestions:
+  - What ancient wisdom-seeking tradition created this underground temple of echoes?
+  - How do the cavern's acoustics distinguish between reverent questions and mere noise?
+  - What dangerous creatures are drawn to excessive noise in these sacred depths?
+  - Could the echo system be used to communicate with other underground locations?

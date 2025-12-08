@@ -1,0 +1,29 @@
+name: Forest Refuge
+tier: 1
+category: Exploration
+description: A dense woodland sanctuary where a mysterious dwelling shelters beneath ancient oaks and fairy rings bloom.
+impulses: Offer shelter and secrets, test visitors' intentions, preserve woodland mysteries
+difficulty: 11
+modifiers:
+  - name: Unstable
+  - name: Inhabited
+  - name: Mushroom Circle
+potentialAdversaries: Forest Beasts (Dire Wolf, Glass Snake), Woodland Spirits, Suspicious Hermit
+features:
+  - name: Mysterious Dwelling
+    type: Passive
+    description: The hut beneath the massive oak appears empty but shows recent signs of habitation. This dwelling grants the location the Inhabited modifier. PCs investigating can make an Instinct roll. On a success, they find useful supplies (healing herbs, travel rations, or basic equipment). On a success with Fear, the dwelling's inhabitant returns unexpectedly.
+    questions: Who lives in this remote dwelling? Why did they choose such an isolated location? What do their personal belongings reveal about them?
+  - name: Fairy Light Grove
+    type: Passive
+    description: The grove is illuminated by gentle, floating fairy lights that drift between the trees. These lights provide protection against mist corruption - it costs 2 additional Fear to make this location Mist-Touched.
+    questions: What creates these fairy lights? Do they respond to the PCs' presence? What happens if the lights are extinguished?
+  - name: Mushroom Ring Magic
+    type: Passive
+    description: This location has the Mushroom Circle modifier.
+    questions: Where does the ring connect to this session? What strange sensations accompany the teleportation? What fey entities might notice frequent use?
+featureQuestions:
+  - What drove the mysterious inhabitant to seek solitude in such a remote location?
+  - How do the woodland spirits judge the intentions of visitors to their domain?
+  - What ancient magic sustains the mushroom ring and keeps it perfectly formed?
+  - What secrets of the forest might the hermit be willing to share with respectful visitors?
