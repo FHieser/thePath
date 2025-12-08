@@ -1,0 +1,51 @@
+{
+  "name": "Adversary Name",
+  "tier": "Tier 1 Role",
+  "description": "Atmospheric description of the adversary's appearance, behavior, and presence. This sets the tone for how the GM describes the creature during encounters.",
+  "motives": "Primary goals and tactical approaches - how this adversary behaves in combat and what drives its actions",
+  "difficulty": 11,
+  "thresholds": "4/8",
+  "hp": 4,
+  "stress": 2,
+  "attack": {
+    "bonus": "+0",
+    "name": "Attack Name",
+    "range": "Melee",
+    "damage": "1d8+3 phy"
+  },
+  "experience": [
+    "Skill Name +2",
+    "Another Skill +3"
+  ],
+  "features": [
+    {
+      "name": "Passive Feature",
+      "type": "Passive",
+      "description": "Always-active ability that defines how this adversary behaves or interacts with the environment. No cost, no activation required."
+    },
+    {
+      "name": "Action Feature",
+      "type": "Action",
+      "cost": "Spend 2 Fear",
+      "description": "An ability that requires the GM to spend Fear and takes the adversary's action. Format: Spend X Fear to [trigger]. [Mechanical effect]. Include spotlight rules, damage values, conditions applied, or other tactical benefits."
+    },
+    {
+      "name": "Reaction Feature",
+      "type": "Reaction",
+      "description": "Triggered ability that responds to specific conditions. Format: When [trigger condition], [effect]. Common reactions gain Fear on successful attacks or apply conditions when hit."
+    },
+    {
+      "name": "Limited Use Feature",
+      "type": "Action",
+      "uses": 1,
+      "cost": "Mark a Stress",
+      "description": "Once per scene or limited-use ability. Mark a Stress to [trigger effect]. Include summons, area attacks, or powerful one-time abilities. Specify how many times this can be used (Uses: 1, Uses: 2, etc.)."
+    },
+    {
+      "name": "Minion Feature",
+      "type": "Passive",
+      "description": "Minion (X): This adversary is defeated when it takes any amount of damage. For every X damage dealt to a Minion adversary, defeat an additional Minion beyond the first. Minions typically have 1 HP and represent swarms or groups."
+    }
+  ],
+  "lore": "Additional background, origin story, or campaign-specific context that helps the GM understand this adversary's role in the world and narrative."
+}
