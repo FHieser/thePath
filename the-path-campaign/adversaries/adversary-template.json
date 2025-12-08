@@ -1,6 +1,7 @@
 {
   "name": "Adversary Name",
-  "tier": "Tier 1 Role",
+  "tier": "Tier 1",
+  "category": "Solo",
   "description": "Atmospheric description of the adversary's appearance, behavior, and presence. This sets the tone for how the GM describes the creature during encounters.",
   "motives": "Primary goals and tactical approaches - how this adversary behaves in combat and what drives its actions",
   "difficulty": 11,
@@ -14,8 +15,14 @@
     "damage": "1d8+3 phy"
   },
   "experience": [
-    "Skill Name +2",
-    "Another Skill +3"
+    {
+      "name": "Skill Name",
+      "value": 2
+    },
+    {
+      "name": "Another Skill",
+      "value": 3
+    }
   ],
   "features": [
     {
