@@ -109,110 +109,114 @@ modifiers:
   description: |
     Modifiers are properties that change how a location functions within the Path system. Some modifiers affect grid behavior (Stable, Underground) while others add environmental features, encounters, or hazards. Each location can have multiple modifiers that work together.
 
-  locationPersistence:
-    description: |
-      These modifiers control whether locations remain fixed on the grid or shift with the mist between sessions. This mechanic creates the dynamic, ever-changing world of the Path—most locations are temporary and may never appear in the same configuration twice, while a few stable anchor points provide continuity and allow players to build lasting connections to specific places.
+  types:
+    locationPersistence:
+      description: |
+        These modifiers control whether locations remain fixed on the grid or shift with the mist between sessions. This mechanic creates the dynamic, ever-changing world of the Path—most locations are temporary and may never appear in the same configuration twice, while a few stable anchor points provide continuity and allow players to build lasting connections to specific places.
+    verticalNavigation:
+      description: |
+        These modifiers create a two-layer world with surface and underground locations. They enable vertical exploration and allow players to choose between surface routes and subterranean paths.
+        This vertical layer system could theoretically extend to additional dimensions beyond surface and underground. You could add sky-level locations accessible via climbing or flight, deeper underground layers beyond the first subterranean level, or even parallel dimensions like the Upside Down from Stranger Things or the Otherworld from Silent Hill. Each would use its own grid with specific connection modifiers to link between layers.
+    corruptionAndProtection:
+      description: |
+        These modifiers represent the eternal struggle between the Sacred Flames that hold back the mist and the corrupting influence of the mist itself. They fundamentally alter the danger level and resource availability of a location and have special interaction rules (see Mist Mechanics section).
+    environmentalAndEncounter:
+      description: |
+        These modifiers add specific features, inhabitants, or encounter types to a location. They help define what players will find when they arrive and what challenges or opportunities await them.
+    specialPlacement:
+      description: |
+        These modifiers define unique grid placement behaviors and structural connections between locations. They control how locations must be positioned during Path generation and which other locations they depend on.
 
-    modifiers:
-      - name: Unstable
-        description: |
-          The location disappears into the mist between sessions and may reappear elsewhere on future Paths. Most new locations start as Unstable. When a session ends, remove Unstable location cards from the grid entirely—they only exist when part of the current Path. These locations represent areas where the mist's grip is strong and reality shifts constantly. Players can convert Unstable locations to Stable through campaign progression, such as placing a Sacred Flame or establishing a permanent outpost.
+  list:
+    - name: Unstable
+      type: locationPersistence
+      description: |
+        The location disappears into the mist between sessions and may reappear elsewhere on future Paths. Most new locations start as Unstable. When a session ends, remove Unstable location cards from the grid entirely—they only exist when part of the current Path. These locations represent areas where the mist's grip is strong and reality shifts constantly. Players can convert Unstable locations to Stable through campaign progression, such as placing a Sacred Flame or establishing a permanent outpost.
 
-      - name: Stable
-        description: |
-          The location maintains its relative grid position and connections between sessions and will not disappear into the mist. The location persists on the grid whether or not it appears on the current Path, allowing players to navigate back to known locations. Locations may be naturally Stable due to ancient magical anchors or Sacred Flame sanctuaries, or they can be stabilized by players through specific campaign achievements like establishing a new Sacred Flame or completing faction quests. Examples include Village in the Mist and Sacred Mountain Pass.
+    - name: Stable
+      type: locationPersistence
+      description: |
+        The location maintains its relative grid position and connections between sessions and will not disappear into the mist. The location persists on the grid whether or not it appears on the current Path, allowing players to navigate back to known locations. Locations may be naturally Stable due to ancient magical anchors or Sacred Flame sanctuaries, or they can be stabilized by players through specific campaign achievements like establishing a new Sacred Flame or completing faction quests. Examples include Village in the Mist and Sacred Mountain Pass.
 
-  verticalNavigation:
-    description: |
-      These modifiers create a two-layer world with surface and underground locations. They enable vertical exploration and allow players to choose between surface routes and subterranean paths.
+    - name: Cave Mouth
+      type: verticalNavigation
+      description: |
+        The location contains an entrance to underground areas—a natural cave opening, artificial mine shaft, or other descent point. This modifier connects the surface grid to the underground grid, allowing players to travel between layers. A surface location with Cave Mouth can link to any adjacent Underground location on the underground grid. Examples include Stone Works (mine entrance) and Silken Spire (silk-wrapped descent shaft).
 
-    modifiers:
-      - name: Cave Mouth
-        description: |
-          The location contains an entrance to underground areas—a natural cave opening, artificial mine shaft, or other descent point. This modifier connects the surface grid to the underground grid, allowing players to travel between layers. A surface location with Cave Mouth can link to any adjacent Underground location on the underground grid. Examples include Stone Works (mine entrance) and Silken Spire (silk-wrapped descent shaft).
+    - name: Underground
+      type: verticalNavigation
+      description: |
+        The location exists on the separate underground grid below the surface. Underground locations can only connect to other Underground locations or to surface locations that have the Cave Mouth modifier. These locations represent caves, tunnels, underground rivers, and subterranean chambers. Players cannot access Underground locations without first finding a Cave Mouth entrance. Examples include Mining Complex, Geothermal Caverns, and Sacred Underground.
 
-      - name: Underground
-        description: |
-          The location exists on the separate underground grid below the surface. Underground locations can only connect to other Underground locations or to surface locations that have the Cave Mouth modifier. These locations represent caves, tunnels, underground rivers, and subterranean chambers. Players cannot access Underground locations without first finding a Cave Mouth entrance. Examples include Mining Complex, Geothermal Caverns, and Sacred Underground.
+    - name: Flame-Touched
+      type: corruptionAndProtection
+      description: |
+        The location contains a Sacred Flame that provides protection from the mist. This modifier always comes paired with the Stable modifier—Sacred Flames cannot disappear into the mist and serve as permanent anchor points for navigation. Players can harvest Flame Essence from these locations to fuel village projects or establish new Sacred Flames at other locations. Flame-Touched locations are safe havens where the mist cannot corrupt players or spawn mist adversaries. Examples include Village in the Mist and Sacred Mountain Pass. Some locations can be converted to Flame-Touched through player actions, such as successfully establishing a new Sacred Flame through specific quests or rituals.
 
-    note: |
-      This vertical layer system could theoretically extend to additional dimensions beyond surface and underground. You could add sky-level locations accessible via climbing or flight, deeper underground layers beyond the first subterranean level, or even parallel dimensions like the Upside Down from Stranger Things or the Otherworld from Silent Hill. Each would use its own grid with specific connection modifiers to link between layers.
+    - name: Mist-Touched
+      type: corruptionAndProtection
+      description: |
+        The location has been corrupted by prolonged mist exposure and reality warps under the mist's influence. These locations always contain mist adversary encounters, can distribute Mist tokens to players who linger too long, and feature unstable terrain affected by reality distortions. The GM can spend Fear to make locations Mist-Touched during play (see Mist Mechanics section).
 
-  corruptionAndProtection:
-    description: |
-      These modifiers represent the eternal struggle between the Sacred Flames that hold back the mist and the corrupting influence of the mist itself. They fundamentally alter the danger level and resource availability of a location and have special interaction rules (see Mist Mechanics section).
+    - name: Nothing
+      type: corruptionAndProtection
+      valueRange: 1-3
+      description: |
+        The location is touched by THE Nothing's influence, draining hope from those who enter. While at this location, all PCs' Hope dice are reduced in size by X steps (d12→d10→d8→d6→d4, minimum d4). This represents the void's crushing effect on optimism and possibility. Example: Nothing(1) reduces d12 to d10. Nothing(3) reduces d12 to d6. The Hope die returns to normal once PCs leave the location.
+      counterplay: |
+        At the GM's discretion, PCs may discover or craft protective items that reduce or negate the Nothing modifier's effect. Examples might include blessed talismans, Sacred Flame-infused artifacts, or ritual preparations that shield hope from the void's influence.
 
-    modifiers:
-      - name: Flame-Touched
-        description: |
-          The location contains a Sacred Flame that provides protection from the mist. This modifier always comes paired with the Stable modifier—Sacred Flames cannot disappear into the mist and serve as permanent anchor points for navigation. Players can harvest Flame Essence from these locations to fuel village projects or establish new Sacred Flames at other locations. Flame-Touched locations are safe havens where the mist cannot corrupt players or spawn mist adversaries. Examples include Village in the Mist and Sacred Mountain Pass. Some locations can be converted to Flame-Touched through player actions, such as successfully establishing a new Sacred Flame through specific quests or rituals.
+    - name: Everything
+      type: corruptionAndProtection
+      valueRange: 1-3
+      description: |
+        The location is touched by overwhelming divine presence, burning away fear and consequence. While at this location, the GM's Fear dice are reduced in size by X steps (d12→d10→d8→d6→d4, minimum d4). This represents divine power's suppression of tension and danger. Example: Everything(1) reduces d12 to d10. Everything(3) reduces d12 to d6. The Fear die returns to normal once PCs leave the location.
+      counterplay: |
+        At the GM's discretion, adversaries or environmental effects may discover or create corrupting influences that reduce or negate the Everything modifier's effect.
 
-      - name: Mist-Touched
-        description: |
-          The location has been corrupted by prolonged mist exposure and reality warps under the mist's influence. These locations always contain mist adversary encounters, can distribute Mist tokens to players who linger too long, and feature unstable terrain affected by reality distortions. The GM can spend Fear to make locations Mist-Touched during play (see Mist Mechanics section).
+    - name: Wild Beasts
+      type: environmentalAndEncounter
+      description: |
+        The location always contains an encounter with wild beasts—predators, territorial creatures, or dangerous wildlife. These encounters reflect the local ecosystem and can range from wolves and bears on the surface to giant cave spiders or subterranean predators underground. Wild beast encounters provide hunting opportunities for resources, create navigation hazards that must be overcome or avoided, and add natural danger separate from the mist's corruption.
 
-      - name: Nothing
-        valueRange: 1-3
-        description: |
-          The location is touched by THE Nothing's influence, draining hope from those who enter. While at this location, all PCs' Hope dice are reduced in size by X steps (d12→d10→d8→d6→d4, minimum d4). This represents the void's crushing effect on optimism and possibility. Example: Nothing(1) reduces d12 to d10. Nothing(3) reduces d12 to d6. The Hope die returns to normal once PCs leave the location.
-        counterplay: |
-          At the GM's discretion, PCs may discover or craft protective items that reduce or negate the Nothing modifier's effect. Examples might include blessed talismans, Sacred Flame-infused artifacts, or ritual preparations that shield hope from the void's influence.
+    - name: Inhabited
+      type: environmentalAndEncounter
+      description: |
+        The location has NPCs present—travelers, refugees, traders, or other communities. This creates roleplay opportunities, introduces potential allies or enemies, and provides access to trade, information, or faction interactions. Inhabited locations might contain friendly settlements, hostile bandit camps, or neutral trading posts. The specific inhabitants should reflect the location's environment and position relative to the Path.
 
-      - name: Everything
-        valueRange: 1-3
-        description: |
-          The location is touched by overwhelming divine presence, burning away fear and consequence. While at this location, the GM's Fear dice are reduced in size by X steps (d12→d10→d8→d6→d4, minimum d4). This represents divine power's suppression of tension and danger. Example: Everything(1) reduces d12 to d10. Everything(3) reduces d12 to d6. The Fear die returns to normal once PCs leave the location.
-        counterplay: |
-          At the GM's discretion, adversaries or environmental effects may discover or create corrupting influences that reduce or negate the Everything modifier's effect.
+    - name: Mushroom Circle
+      type: environmentalAndEncounter
+      description: |
+        The location contains a fey-touched mushroom ring that creates magical connections to other Mushroom Circle locations on the current Path. These ancient fey pathways allow instant teleportation between linked sites, but the connections are fragile—blocked by the mist and requiring precise directional orientation to function safely. PCs must stand within the mushroom circle and face the direction of another Mushroom Circle location currently on the Path. The teleportation costs 1 Stress from the disorienting passage through fey magic.
 
-  environmentalAndEncounter:
-    description: |
-      These modifiers add specific features, inhabitants, or encounter types to a location. They help define what players will find when they arrive and what challenges or opportunities await them.
+        If the PC faces the correct direction, they instantly travel to the target Mushroom Circle location. If the PC faces the wrong direction, roll 1d10 to determine the consequence:
+        - 1-5: nothing happens and the magic fails harmlessly
+        - 6-7: the PC gains 1 Stress from fey mischief and disorientation
+        - 8-10, the PC teleports to a random location on the current Path (GM's choice)
+        When a PC teleports to a random location (8-10 on the wrong direction roll), do not immediately reveal where they went. Place them on an unopened location card from the current Path. The PC knows they have teleported but not where they are. Once the players deduce or discover their location through play, you can reveal which location on the Path they reached.
 
-    modifiers:
-      - name: Wild Beasts
-        description: |
-          The location always contains an encounter with wild beasts—predators, territorial creatures, or dangerous wildlife. These encounters reflect the local ecosystem and can range from wolves and bears on the surface to giant cave spiders or subterranean predators underground. Wild beast encounters provide hunting opportunities for resources, create navigation hazards that must be overcome or avoided, and add natural danger separate from the mist's corruption.
+        If no other Mushroom Circle exists on the current Path, nothing happens—the magic lies dormant. Mushroom Circles only connect to other Mushroom Circle locations currently on the Path. The mist blocks connections to off-Path locations. Druids, rangers, and nature-focused characters can provide information about the general direction of other Mushroom Circles. Consulting with fey-touched NPCs or studying the mushroom patterns may reveal directional clues, helping PCs avoid the consequences of incorrect directional orientation.
 
-      - name: Inhabited
-        description: |
-          The location has NPCs present—travelers, refugees, traders, or other communities. This creates roleplay opportunities, introduces potential allies or enemies, and provides access to trade, information, or faction interactions. Inhabited locations might contain friendly settlements, hostile bandit camps, or neutral trading posts. The specific inhabitants should reflect the location's environment and position relative to the Path.
+    - name: Routes
+      type: specialPlacement
+      valueRange: 1-4
+      description: |
+        This location must connect to exactly X adjacent locations on the grid. The number determines the location's role in the Path network:
 
-  specialPlacement:
-    description: |
-      These modifiers define unique grid placement behaviors and structural connections between locations. They control how locations must be positioned during Path generation and which other locations they depend on.
+        - Routes(1) - Dead-end location that connects to only 1 adjacent location. Perfect for side-branches, isolated outposts, or terminal destinations that don't lead onward. Example: Silken Spire appears as an optional detour visible from the main Path but leads nowhere beyond itself.
+        - Routes(2) - Linear passage that connects to exactly 2 adjacent locations. The location sits between two other locations, creating a mandatory waypoint or bridge. Most standard Path locations don't specify Routes, meaning they can connect to any number of neighbors.
+        - Routes(3) - Junction point that connects to exactly 3 adjacent locations, creating a fork where players choose between multiple routes.
+        - Routes(4) - Crossroads or hub that connects to exactly 4 adjacent locations, forming a central meeting point for multiple Path branches.
 
-    modifiers:
-      - name: Routes
-        valueRange: 1-4
-        description: |
-          This location must connect to exactly X adjacent locations on the grid. The number determines the location's role in the Path network:
+        During Path generation, when placing a location with Routes(X), ensure it connects to exactly X other locations. If using Random Draw placement, you may need to adjust the grid layout to satisfy these constraints.
 
-          - Routes(1) - Dead-end location that connects to only 1 adjacent location. Perfect for side-branches, isolated outposts, or terminal destinations that don't lead onward. Example: Silken Spire appears as an optional detour visible from the main Path but leads nowhere beyond itself.
-          - Routes(2) - Linear passage that connects to exactly 2 adjacent locations. The location sits between two other locations, creating a mandatory waypoint or bridge. Most standard Path locations don't specify Routes, meaning they can connect to any number of neighbors.
-          - Routes(3) - Junction point that connects to exactly 3 adjacent locations, creating a fork where players choose between multiple routes.
-          - Routes(4) - Crossroads or hub that connects to exactly 4 adjacent locations, forming a central meeting point for multiple Path branches.
+    - name: Linked
+      type: specialPlacement
+      requiresValue: true
+      description: |
+        This location always appears together with the specified location(s) when drawn during Path generation. Drawing either card brings both locations into play as a linked set. The specific connection rules and mechanical interactions between linked locations are defined in their Features sections—examine those features to understand how the locations relate (shared Stable/Unstable state, Cave Mouth connections, narrative ties, etc.). Example: Silken Spire has Linked(Brood Throne). The two locations share the same Unstable state, and a Cave Mouth descent shaft connects the surface fortress to the underground throne chamber below. Stabilizing one stabilizes both.
 
-          During Path generation, when placing a location with Routes(X), ensure it connects to exactly X other locations. If using Random Draw placement, you may need to adjust the grid layout to satisfy these constraints.
-
-      - name: Linked
-        requiresValue: true
-        description: |
-          This location always appears together with the specified location(s) when drawn during Path generation. Drawing either card brings both locations into play as a linked set. The specific connection rules and mechanical interactions between linked locations are defined in their Features sections—examine those features to understand how the locations relate (shared Stable/Unstable state, Cave Mouth connections, narrative ties, etc.). Example: Silken Spire has Linked(Brood Throne). The two locations share the same Unstable state, and a Cave Mouth descent shaft connects the surface fortress to the underground throne chamber below. Stabilizing one stabilizes both.
-
-  other:
-    modifiers:
-      - name: Mushroom Circle
-        description: |
-          The location contains a fey-touched mushroom ring that creates magical connections to other Mushroom Circle locations on the current Path. These ancient fey pathways allow instant teleportation between linked sites, but the connections are fragile—blocked by the mist and requiring precise directional orientation to function safely. PCs must stand within the mushroom circle and face the direction of another Mushroom Circle location currently on the Path. The teleportation costs 1 Stress from the disorienting passage through fey magic.
-
-          If the PC faces the correct direction, they instantly travel to the target Mushroom Circle location. If the PC faces the wrong direction, roll 1d10 to determine the consequence:
-          - 1-5: nothing happens and the magic fails harmlessly
-          - 6-7: the PC gains 1 Stress from fey mischief and disorientation
-          - 8-10, the PC teleports to a random location on the current Path (GM's choice)
-          When a PC teleports to a random location (8-10 on the wrong direction roll), do not immediately reveal where they went. Place them on an unopened location card from the current Path. The PC knows they have teleported but not where they are. Once the players deduce or discover their location through play, you can reveal which location on the Path they reached.
-
-          If no other Mushroom Circle exists on the current Path, nothing happens—the magic lies dormant. Mushroom Circles only connect to other Mushroom Circle locations currently on the Path. The mist blocks connections to off-Path locations. Druids, rangers, and nature-focused characters can provide information about the general direction of other Mushroom Circles. Consulting with fey-touched NPCs or studying the mushroom patterns may reveal directional clues, helping PCs avoid the consequences of incorrect directional orientation.
+      
 
 sessionTracking:
   description: |
