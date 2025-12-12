@@ -174,6 +174,28 @@ modifiers:
       counterplay: |
         At the GM's discretion, adversaries or environmental effects may discover or create corrupting influences that reduce or negate the Everything modifier's effect.
 
+    - name: Crystal-Plague
+      type: environmentalAndEncounter
+      description: |
+        The location is afflicted by The Starfall Kingdom's crystalline plague. Crystallized corpses lie dormant throughout the area, their chests glowing faintly with corrupted heavenly crystals. These plague victims remain inactive until an Awakening Counter reaches 4.
+
+        **Awakening Counter System:**
+        The location tracks an Awakening Counter (starts at 0, triggers at 4).
+
+        **How Counter Increases:**
+        - **Bringing Sacred Flame into the location**: Counter immediately jumps to 4. The corrupted heavenly crystals resonate with the imprisoned god's divine war energy, and all crystallized dead awaken instantly to fight. Sacred Flame acts as a rally call the dead cannot resist.
+        - **Harvesting crystals**: +3 to counter. Players attempting to extract glowing crystals from corpses dramatically increase awakening risk.
+        - **Physical disturbance**: +1 to counter (GM discretion). Moving bodies, attacking them, or violent interactions disturb the dormant dead.
+        - **GM spends 1 Fear**: Trigger environmental disturbance that increases counter by +1. Examples: wall collapse, loud noise, ground tremor, wind that moves bodies. This gives the GM a tool to ratchet tension.
+
+        **When Counter Reaches 4:**
+        - All crystallized undead in the location awaken and attack
+        - GM gains 2 Fear (reward for patient buildup)
+        - Counter resets to 0 after encounter resolved
+
+      incompatibleWith:
+        - Flame-Touched
+
     - name: Wild Beasts
       type: environmentalAndEncounter
       description: |
