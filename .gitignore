@@ -1,2 +1,7 @@
 # Web Application
 path-webapp/
+
+# Server startup scripts (project root)
+/serve.sh
+/serve.bat
+/index.html
