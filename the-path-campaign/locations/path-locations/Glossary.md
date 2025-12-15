@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 27** (16 Surface + 9 Underground + 2 Special)
+**Total Locations: 28** (17 Surface + 9 Underground + 2 Special)
 
 ---
 
-## Surface Locations (16 locations)
+## Surface Locations (17 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -17,6 +17,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Forest Refuge](./surface-locations/forest-refuge.md)               | Safe haven deep within the forest                           |
 | ☑        | ☑     | [Hanging Gardens](./surface-locations/hanging-gardens.md)           | Suspended botanical sanctuary                               |
 | ☑        | ☑     | [Highland Watch](./surface-locations/highland-watch.md)             | Elevated vantage point with panoramic views                 |
+| ☑        | ☑     | [The Giant Walls](./surface-locations/the-giant-walls.yaml)         | Border defense where plague was contained at terrible cost  |
 | ☑        | ☑     | [Hollow Woods](./surface-locations/hollow-woods.md)                 | Forest with mysterious hollowed structures                  |
 | ☐        | ☐     | [Misty Waters](./surface-locations/misty-waters.md)                 | Aquatic area perpetually shrouded in mist                   |
 | ☐        | ☐     | [Overgrown Temple](./surface-locations/overgrown-temple.md)         | Ancient temple reclaimed by nature                          |
@@ -59,9 +60,9 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 26** | **Unassigned: 52** (66.7% remaining)
+**Assigned: 27** | **Unassigned: 51** (66.7% remaining)
 
-### Major Arcana (7 of 22 assigned)
+### Major Arcana (8 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -70,7 +71,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | II The High Priestess |                      |
 | III The Empress       |                      |
 | IV The Emperor        |                      |
-| V The Hierophant      |                      |
+| V The Hierophant      | The Giant Walls      |
 | VI The Lovers         |                      |
 | VII The Chariot       |                      |
 | VIII Strength         |                      |

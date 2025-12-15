@@ -1,0 +1,37 @@
+name: The Giant Walls
+tier: 2
+category: Exploration
+description: Massive walls stretching into the mist where a desperate kingdom tried to contain the crystalline plague, now haunted by the frozen tragedy of those who waited and those who guarded.
+impulses: Guard what can no longer be protected, show the price of choosing safety over compassion, chronicle the kingdom's fall through scattered evidence
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Crystal-Plague
+potentialAdversaries: Crystallized Guards, Crystallized Refugees @todo need to be created
+features:
+  - name: Border Post
+    type: Action
+    description: |
+      High walls stretch into the mist on both sides. The guardhouse is heavily barricaded and looks like a battlefield from a desperate last stand. Built into the wall, it creates a narrow passage through the walls. Crystallized corpses scatter the area. Players can climb the wall instead (Strength Roll) to bypass the gate entirely, but risk falling on a fail with Fear. The GM can spend 2 Fear to slam the gate shut, blocking passage and cutting off escape routes. Forcing the gate open requires Strength check at the Locations Difficulty + 6.
+    questions: What sound does the gate make when it crashes shut? What do you find if you search the guardhouse?
+  - name: Message Tower
+    type: Passive
+    description: |
+      Accessible only through the guardhouse, this tower once housed messenger pigeons. Now ravens nest here, descending to pick at crystallized corpses below. The GM can increase Awakening Counter by +1 when ravens disturb the dead. Players can search the tower with a Knowledge check. Roll 1-4: Find old messages (kingdom's fall timeline, desperate pleas, warnings). Roll 5-6: Find useful item (courier's tools, sealed letter, signal equipment).
+    questions: What message do you find - a final warning, a letter never sent, or orders that came too late? What makes the ravens scatter?
+  - name: The Plague Ditch
+    type: Passive
+    description: |
+      A mass grave ditch runs alongside the wall where plague victims were thrown. A small drainage canal cuts under the wall here - low, narrow, surrounded by corpses. Players can crawl through if the dead remain dormant, but must move carefully to avoid disturbing bodies in the earth above and around the passage. Cramped space makes fighting difficult. If Awakening Counter reaches 4 at the Plague Ditch, the mass grave becomes an endless spawn point for crystallized enemies. @todo finalize this feature? Spawn somethign?
+    questions: What disturbing detail do you notice while crawling through - a hand reaching down, bodies shifting, or something else? What sounds come from deeper in the grave?
+  - name: Refugee's Hope
+    type: Passive
+    description: |
+      A tent camp where families waited for entry that never came. Tents still stand with crystallized refugees inside - parents holding children, huddled together. Their plague-crystallized chests glow faintly, creating lantern-like light through the tent fabric. The glowing camp is visible from distance, serving as a navigation landmark. Provides light without flame.
+    questions: Which tent draws your attention - three small forms around a larger one, or the tent with 'LET US IN' scratched on the posts? What belongings scatter the camp?
+featureQuestions:
+  - What were the final days like for those who manned The Giant Walls?
+  - Why didn't the guards let the refugees through the gate?
+  - How long did the families wait at Refugee's Hope before the plague took them?
+  - What lies deeper in the Plague Ditch that hasn't been disturbed yet?
+  - If you could read one message from the Message Tower, what would you want it to say?

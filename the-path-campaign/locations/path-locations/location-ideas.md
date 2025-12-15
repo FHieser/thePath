@@ -67,19 +67,22 @@ _(For reference - these are already fully developed)_
 
 ### CURRENT IDEAS
 
-## NEW LOCATION IDEAS
+# Starfall Kingdom
 
-- **Prayer Flag Peak** - Summit completely shrouded in thousands of colorful flags, their blessings carried on every breeze
-- **Tidebreak Ruins** - Stone walls showing mist "waterline" marks at different heights, like ancient flood levels
-- **Barnacle Gardens** - Stone pillars encrusted with shell-like growths that breathe mist in rhythmic pulses
-- **The Breathing Chasm** - Deep crack that exhales mist on a tidal rhythm, inhales with a drowning gasp
+- Location that has mist touched modifier as well as crystal plague
+
+## NEW LOCATION IDEAS
 
 - **Salvage Platform** - Wooden structure built for hauling corrupted items from the mist depths
 - **The Diving Bell** - Suspended brass sphere half-buried in mist like it sank through fog as if through water
 
-
-- **Midnight Chapel** - Church that only appears in complete darkness, its bell tolling hours that don't exist
+- **Lookout Tower Ruin** - A toppled Lookout tower that sometimes flashes with a lonely, intermittent light.
 - **The Drowned Aviary** - Collapsed glasshouse filled with brackish water and feathered shadows.
+- **Lost Foundry** - Cold furnaces and half-melted molds; something valuable was smelted here and never taken.
+
+- **Ruined Library** - Damp shelves of sodden books; some tomes retain fragments of forbidden knowledge between their swollen pages.
+- **The Cistern of Echoes** - Stone-lined water storage that amplifies every sound to painful levels
+- **Sepulchred Green** - Overgrown family crypt with toppled sarcophagi and a cold, breathing mist.
 
 - **The Grinding Mill** - Water mill that still turns despite no stream, its stones grinding something that produces screams instead of flour
 - **The Harvest Fields** - Farmland where scarecrows are made from actual bodies, preserved and positioned to tend crops that never grow
@@ -105,29 +108,20 @@ _(For reference - these are already fully developed)_
 
 **Dark Locations:**
 
-
-
 - **The Fever Dream** - Reality-warped clearing where time moves wrong and visitors see doubled shadows of things not yet happened
-
 - **Gallows Grove** - Ancient execution site where hanging cages still creak in the wind, each containing something best left forgotten
 - **The Whispering Cairns** - A field of burial mounds that murmur secrets to those who walk between them at dusk
 - **Bonefield Crossing** - A narrow pass through a valley floor paved entirely with bleached bones from an ancient massacre
 - **The Weeping Stones** - Standing stones that perpetually drip crimson liquid, forming pools that reflect things that aren't there
 - **The Silent Gallery** - Ruined hall lined with statues that change position when no one is looking
-
 - **Fleshroot Thicket** - Dense undergrowth where pale roots push up through soil, disturbingly warm and pulsing like veins
-
 - **Remembrance Wall** - Cliff face covered in thousands of carved names, which slowly add new names no one has carved
 - **Gallowglass Ruins** - Destroyed fortress where the stones remember the violence done here and replay shadows of ancient battles
-
 - **Marrow Fields** - Flatlands where hollow bones stick up from the ground and sing haunting tones when wind passes through them
-
 - **Carrion Crown** - Hill topped with a throne made entirely of antlers and bone, where something once held court over the dead
 - **The Tally House** - Abandoned counting house where walls are covered in scratched tallies reaching impossible numbers, still being added to
 - **Lamplight Tombs** - Crypts that glow with sickly yellow light from within, illuminating the silhouettes of what moves inside
-
 - **Communion Well** - Deep stone well that whispers up prayers in dozens of voices, promising divine answers for those who descend
-
 - **Widow's Veil Falls** - Waterfall with water so dark it looks like flowing cloth, where shapes of drowning women can be seen just beneath the surface
 - **Pale Procession Road** - Ancient road where a line of white-clad figures walks endlessly in one direction, never reaching any destination
 
@@ -168,7 +162,6 @@ _(For reference - these are already fully developed)_
 
 - **The Mire** - Deep mud capable of swallowing the unwary, marked by previous victims' belongings
 - **Corpse Willows** - Trees draped in hanging moss that looks disturbingly like hair and flesh
-- **The Bog Garden** - Area of beautiful but deadly carnivorous plants
 - **Gas Vents** - Pockets where marsh gas bubbles up, igniteable and hallucinogenic
 - **Stilt Village Ruins** - Collapsed structures built above the swamp, now half-submerged
 - **The Leech Pool** - Standing water thick with bloodsuckers of unusual size
@@ -186,11 +179,30 @@ _(For reference - these are already fully developed)_
 - **Collapsed Mill** - Broken waterwheel and shattered gears that still whisper with the grinding echoes of the past.
 - **Deserted Monastery** - Pillared halls choked with vines; the faint echo of prayer lingers and wards that once protected it have grown thin.
 - **Forgotten Market** - Rows of stalls frozen in time, wares preserved by strange conditions and guarded by territorial scavengers.
-- **Beacon Tower Ruin** - A toppled signal tower whose lantern sometimes flashes with a lonely, intermittent light.
+
 - **Overrun House** - Domestic rooms reclaimed by roots and moss, where familiar items sit in strange, half-living arrangements.
 - **Submerged Palace** - Ornate halls and collapsed domes now lie under dark water; mosaics and tapestries drift in the currents.
-- **Ruined Library** - Damp shelves of sodden books; some tomes retain fragments of forbidden knowledge between their swollen pages.
-- **Lost Foundry** - Cold furnaces and half-melted molds; something valuable was smelted here and never taken.
+- **Tilted Granary** - Stone silo leaning precariously, grain spilling from cracks and attracting both vermin and larger predators.
+- **Broken Creamery** - Dairy building with shattered churns and soured remnants; cold stone walls still smell of old milk and decay.
+- **Fallen Smokehouse** - Collapsed timber structure with hanging hooks still intact; preserved meats dangle in the shadows, unnaturally fresh.
+- **Sunken Root Cellar** - Underground storage chamber slowly flooding, shelves of preserves bobbing in murky water.
+- **Crumbled Dovecote** - Bird tower with empty nesting boxes; the cooing of phantom doves echoes at dawn and dusk.
+- **Charred Stable** - Fire-blackened horse stalls with scorched tack still hanging; hoof prints lead into the structure but not out.
+- **Rotted Hay Barn** - Collapsed loft with moldering hay bales creating treacherous footing and harboring burrowing creatures.
+- **Breached Silo** - Ruptured grain tower with contents spilling like an hourglass; strange fungi grows where the grain has fallen.
+- **Abandoned Dairy Barn** - Milking stanchions rusted in place, empty feed troughs, and a hand pump that still draws brackish water.
+- **Collapsed Chicken Coop** - Wire mesh and splintered wood housing nothing but feathers and the memory of frantic scratching.
+- **Waystation Ruins** - Roadside shelter with collapsed roof and empty stables; faded road markers point to destinations no longer reachable.
+- **Toll House Remnants** - Stone booth beside a crumbled bridge; the toll keeper's ledger still lists names of those who never crossed back.
+- **Caravan Stop** - Circle of broken wagons surrounding cold fire pits; goods scattered as if travelers fled in sudden panic.
+- **Pilgrim's Rest** - Small shrine-hostel with sleeping alcoves carved into walls; offerings left by the desperate still sit on altars.
+- **Coaching Inn Skeleton** - Three-story framework with no walls remaining; the sign still creaks above the door advertising beds and stables.
+- **Milepost Tower** - Slender watchtower marking road distances; spiral stairs lead to an observation platform overlooking mist-shrouded paths.
+- **Caravanserai Courtyard** - Walled compound with archways for merchant wagons; empty wells and feeding troughs surround a central meeting space.
+- **Ferry House Ruin** - Dock master's cottage beside a defunct cable ferry; the rope mechanism still spans the water, rusted and frozen.
+- **Road Shrine Chapel** - Small devotional building where travelers once gave thanks for safe passage; candles light themselves at nightfall.
+- **The Last Stables** - Merchant's waystation with pristine tack and saddles hanging as if ready for use, but no horses for decades.
+
 
 **Rural & Agricultural Examples:**
 
@@ -216,7 +228,7 @@ _(For reference - these are already fully developed)_
 - **Ashen Mill** - Millstones frozen mid‑turn beneath a veil of perpetual steam and ash.
 - **The Hollow Keep** - Gatehouse hollowed by rot; crossing its threshold makes time feel thinner.
 - **Wind‑scarred Pavilion** - Open pavilion on a hill that hums when the fog passes through its arches.
-- **Sepulchred Green** - Overgrown family crypt with toppled sarcophagi and a cold, breathing mist.
+
 - **The Broken Lighthouse** - Lantern-room shattered; a fogbell tolls once each night from inside.
 
 **Coastal & Shoreline Locations:**
@@ -279,7 +291,7 @@ _(For reference - these are already fully developed)_
 
 - **Crystal Chimes** - Hanging formations that ring melodiously when touched or when wind passes
 - **The Marrow Passage** - Tunnel walls lined with exposed bone-like mineral deposits
-- **The Cistern of Echoes** - Stone-lined water storage that amplifies every sound to painful levels
+
 - **Phosphor Veins** - Glowing mineral seams running through cave walls like luminous blood vessels
 - **The Shard Field** - Floor covered in razor-sharp crystal fragments and broken formations
 
@@ -376,7 +388,6 @@ x
 **Corrupted Highland Shrine Elements:**
 
 - **Echoing Bell Tower** - A crumbling bell tower that still resonates with deep, mournful tones when rung to disorient mist adversaries
-- **Barnacle Nursery** - Section of ruins where new barnacles are budding from the stone, harvested for void-touched reagents
 - **Mist Condensers** - Ancient stone basins designed to collect condensed mist, cleansing corruption or overwhelming those who drink
 - **Void-Touched Statues** - Weathered statues depicting Ancient Guardians (crocodile, kraken, crab) that grant insights to those who seek their blessing
 - **Descent Murals** - Faded paintings showing the pilgrimage to THE Nothing, offering knowledge or spreading misinformation to viewers

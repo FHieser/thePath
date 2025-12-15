@@ -602,6 +602,67 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Created tactical depth through player knowledge vs character knowledge tension
   - ✅ Transformed potential negative outcome (wrong direction) into discovery moment
 
+### **Phase 19: The Starfall Kingdom - Crystalline Plague Mist Island** _(Completed ✅)_ _(December 12, 2025)_
+
+- ✅ **The Starfall Kingdom Lore Document** (`lore/mist-islands/starfall-kingdom.md` - Complete):
+  - ✅ Comprehensive "mist island" concept: thematic cluster of plague-ravaged locations telling unified tragic story
+  - ✅ **The Devil's Bargains**:
+    - ✅ First Bargain (Lightning Plateau): King's wish for eternal riches → meteorite of corrupted heavenly material → crystalline plague
+    - ✅ Devil's phrase: *"Let our legacy be eternal, our riches never spent, our light never extinguished"*
+    - ✅ Second Bargain (Deepest Chamber): King pays ultimate price to stop plague spread → containment at borders + unintended flame-awakening consequence
+  - ✅ **The Crystalline Plague**:
+    - ✅ Victims' lungs crystallize into glowing shards (translucent, inner light, valuable gemstones)
+    - ✅ "Symphony of cracking glass" breathing sounds until suffocation
+    - ✅ Meteorite from devil's heavenly domain (NOT from THE Nothing)
+    - ✅ Corrupted celestial material with natural divine energy resonance
+  - ✅ **Divine Energy Interaction Mechanics** (emergent physics, not intentional trap):
+    - ✅ Sacred Flame (War/Action domain) = instant awakening (rally call to crystallized dead)
+    - ✅ Mist (Stillness/Unconsciousness domain) = maintains dormancy (cruel irony - mist is safety here)
+    - ✅ Inverted survival rules: flame = doom, mist = mercy
+  - ✅ **Complete Location Catalog** (15+ locations with evocative descriptions):
+    - ✅ The Giant Walls (border defense, refugees, message tower, plague ditch)
+    - ✅ Lost Villages (Plague Warren, Charnel Pit, Ashen Sepulcher)
+    - ✅ Sealed City District (quarantine zones, pest house, physician's folly, burning fields)
+    - ✅ Last Stand (Scaffold Square, Sanctuary Keep, Riot Market)
+    - ✅ The Old Castle (observatory, archive, last ball, armory, courthouse, oubliette, deepest chamber)
+    - ✅ Lightning Plateau (wish-granting site, first bargain location)
+    - ✅ Rootbound Refuge (nature's resistance sanctuary)
+  - ✅ **Faction Perspectives**: All 9 factions' views on The Starfall Kingdom (condensed format)
+  - ✅ **Plot Hooks**: 6 adventure seeds (Crystal Harvest, Sealed Archive, Rootbound's Request, King's Testament, Awakening Army, Plague Spreads)
+  - ✅ Timeline of lordship's fall from prosperity to mist-swallowed ruin
+  - ✅ Rumors and reputation section (treasure hunter warnings, "don't bring fire")
+- ✅ **Crystal-Plague Modifier** (path-mechanics.yaml - Complete):
+  - ✅ Type: `environmentalAndEncounter` (sits with Wild Beasts, Inhabited)
+  - ✅ **Awakening Counter System** (0→4 triggers mass awakening):
+    - ✅ **Sacred Flame presence**: Counter immediately jumps to 4 (instant awakening, divine war energy resonance)
+    - ✅ **Harvesting crystals**: +3 to counter (major disturbance)
+    - ✅ **Physical disturbance**: +1 to counter (GM discretion - moving/attacking bodies)
+    - ✅ **GM Fear spend (1 Fear)**: +1 to counter (environmental disturbance for tension)
+  - ✅ **Awakening Trigger**: All crystallized undead attack, GM gains 2 Fear, counter resets to 0
+  - ✅ **Safety Mechanics**: Divine mist reinforces dormancy, Mist-Touched Crystal-Plague locations are ironically safer
+  - ✅ **Harvesting Disadvantage**: Players caught harvesting have disadvantage on first action (tools in hand, not weapons)
+  - ✅ Incompatible with Flame-Touched, common pairings: Mist-Touched, Unstable
+- ✅ **The Giant Walls Location** (Tier 2 Exploration - Complete):
+  - ✅ First complete location from The Starfall Kingdom cluster
+  - ✅ Tier 2, Difficulty 14, Category: Exploration
+  - ✅ Modifiers: Unstable, Crystal-Plague
+  - ✅ **4 Complete Features**:
+    - ✅ **Border Post** (Action): Wall climb vs gate passage, GM can slam gate (2 Fear), Strength +6 to force open
+    - ✅ **Message Tower** (Passive): Ravens disturb dead (+1 counter), Knowledge check finds messages (1-4) or items (5-6)
+    - ✅ **The Plague Ditch** (Passive): Mass grave crawlspace escape route, endless spawn point if counter reaches 4 here
+    - ✅ **Refugee's Hope** (Passive): Glowing tent camp (navigation landmark), harvesting temptation zone
+  - ✅ Integrated Crystal-Plague mechanics throughout all features
+  - ✅ Potential Adversaries: Crystallized Guards, Crystallized Refugees (marked @todo for creation)
+  - ✅ Added to Glossary.md (total locations now 28: 17 surface + 9 underground + 2 special)
+  - ✅ Tarot card assignment: Pending user decision
+- ✅ **Design Achievements**:
+  - ✅ Created asymmetric danger zone where normal Path survival strategies become lethal
+  - ✅ Escalating tension system via visible counter (players track approach to disaster)
+  - ✅ Emergent physics approach (no deliberate trap design, just divine material properties)
+  - ✅ Thematic coherence across lore, mechanics, and location features
+  - ✅ Harvesting dilemma: wealth vs combat-while-unprepared risk
+  - ✅ Multiple tactical approaches: avoid disturbance, use mist as ally, flameless operation
+
 ---
 
 ## **Technical Debt & Improvements**
