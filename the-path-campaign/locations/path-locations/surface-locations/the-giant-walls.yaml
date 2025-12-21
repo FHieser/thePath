@@ -7,7 +7,7 @@ difficulty: 14
 modifiers:
   - name: Unstable
   - name: Crystal-Plague
-potentialAdversaries: Crystallized Guards, Crystallized Refugees @todo need to be created
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Crystalline Charger
 features:
   - name: Border Post
     type: Action
@@ -22,7 +22,7 @@ features:
   - name: The Plague Ditch
     type: Passive
     description: |
-      A mass grave ditch runs alongside the wall where plague victims were thrown. A small drainage canal cuts under the wall here - low, narrow, surrounded by corpses. Players can crawl through if the dead remain dormant, but must move carefully to avoid disturbing bodies in the earth above and around the passage. Cramped space makes fighting difficult. If Awakening Counter reaches 4 at the Plague Ditch, the mass grave becomes an endless spawn point for crystallized enemies. @todo finalize this feature? Spawn somethign?
+      A mass grave ditch runs alongside the wall where plague victims were thrown. A small drainage canal cuts under the wall here - low, narrow, surrounded by corpses. Players can crawl through if the dead remain dormant, but must move carefully to avoid disturbing bodies in the earth above and around the passage. Cramped space makes fighting difficult. If Awakening Counter reaches 4 at the Plague Ditch, the mass grave becomes an endless spawn point—at the start of each GM activation and each player activation, a Crystal Zombie claws its way up from the grave and joins the battle. The spawning continues until the Awakening Counter is reset or the party leaves the Plague Ditch area.
     questions: What disturbing detail do you notice while crawling through - a hand reaching down, bodies shifting, or something else? What sounds come from deeper in the grave?
   - name: Refugee's Hope
     type: Passive

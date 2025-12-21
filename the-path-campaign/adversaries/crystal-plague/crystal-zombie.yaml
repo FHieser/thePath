@@ -1,0 +1,31 @@
+name: Crystal Zombie
+tier: 2
+category: Minion
+description: A shambling corpse with crystallized lungs glowing through translucent skin, moving with the delicate symphony of cracking glass. These reanimated victims of the plague retain only the basest instincts—to move, to grasp, to spread the chorus of shattering crystal that announces their awakening.
+motives: Shamble toward warmth, grasp living targets, swarm in numbers, detonate when destroyed
+difficulty: 12
+hp: 1
+stress: 1
+attack:
+  bonus: '+0'
+  name: Crystalline Grasp
+  range: Melee
+  damage: 4 phy
+experience:
+  - name: Relentless
+    value: 2
+features:
+  - name: Minion (5)
+    type: Passive
+    description: The Crystal Zombie is defeated when they take any damage. For every 5 damage a PC deals to the Minion, defeat an additional Minion within range the attack would succeed against.
+  - name: Glass Symphony
+    type: Passive
+    description: When the Crystal Zombie moves, their crystallized body produces a tinkling crack of breaking glass with each step. This eerie sound reveals their position and creates an atmosphere of dread. The chorus of multiple zombies creates a horrifying symphony that announces the awakening.
+  - name: Group Attack
+    type: Action
+    cost: Spend a Fear
+    description: Choose a target and spotlight all Crystal Zombies within Close range of them. Those Minions move into Melee range of the target and make one shared attack roll. On a success, they deal 4 physical damage each. Combine this damage.
+  - name: Crystalline Detonation
+    type: Reaction
+    description: When the Crystal Zombie is defeated, their crystallized lungs shatter explosively. All creatures within Very Close range take 1 physical damage as crystal shards spray outward. The body collapses into glittering fragments that continue to glow faintly on the ground.
+lore: These are the most common victims of the crystalline plague—common folk who died slowly as their lungs transformed to glowing crystal. When they awaken, they rise with fragments of life but no true consciousness, their bodies fragile crystalline shells that shatter violently when destroyed. 

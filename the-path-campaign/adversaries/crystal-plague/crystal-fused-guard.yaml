@@ -1,0 +1,30 @@
+name: Crystal-Fused Guard
+tier: 2
+category: Standard
+description: A shambling warrior in rusted armor, crystalline growths prying their way through gaps in the metal plates and spreading across their body like a corrupted infection. These were the kingdom's elite soldiers, but undeath has twisted them—they move with jerky, unnatural motions, their combat training reduced to savage muscle memory. Sharp crystal shards protrude from joints and seams, glowing with inner light as the cracking symphony of their crystalline bodies punctuates each lurching strike.
+motives: Shamble toward living targets, strike with savage instinct, attack relentlessly, use fragmented combat training
+difficulty: 14
+thresholds:
+  major: 10
+  severe: 20
+hp: 5
+stress: 2
+attack:
+  bonus: '+2'
+  name: Corrupted Blade
+  range: Melee
+  damage: 2d8+2 phy
+experience:
+  - name: Weapon Mastery
+    value: 3
+  - name: Guard Tactics
+    value: 2
+features:
+  - name: Crystal Explosion
+    type: Reaction
+    cost: Spend 1 Fear
+    description: When the Crystal-Fused Guard makes a successful attack, spend 1 Fear to double the damage dealt. Sharp crystalline shards explode from the weapon on impact, shredding the target with corrupted heavenly fragments that embed themselves deep into flesh and armor.
+  - name: Crystal Plate
+    type: Passive
+    description: When the Crystal-Fused Guard would take magical damage, reduce the severity by one step (Severe becomes Major, Major becomes Minor, minimum of Minor). Their crystallized armor resonates strangely with magical energies, dispersing arcane attacks through the crystal lattice structure embedded in their plate mail.
+lore: The kingdom's guards were well-trained professional soldiers who defended the walls and maintained order. When the plague took them, they died at their posts—weapons in hand, duty unfulfilled. Their bodies are twisted by crystalline infection, their movements jerky and unnatural, but fragments of combat training persist as savage muscle memory that makes them far deadlier than common plague victims.

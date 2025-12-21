@@ -1,0 +1,31 @@
+name: Crystalline Charger
+tier: 2
+category: Bruiser
+description: A hulking undead warrior encased in rusted heavy armor, a massive crystalline shield growing directly from their left arm like a grotesque tumor of corrupted heavenly materials. These were the kingdom's shock troops, but the plague has transformed them into shambling juggernauts—the shield has fused with flesh and bone, becoming an inseparable part of their twisted body. They move with lurching, unstoppable momentum, each step accompanied by the grinding crunch of crystal against metal. When they charge, the ground shakes and the glass-cracking symphony becomes a thunderous crescendo of supernatural horror.
+motives: Lumber toward living targets, use fused shield-arm for protection and offense, charge with lurching momentum, crush anything in their path
+difficulty: 15
+thresholds:
+  major: 12
+  severe: 26
+hp: 7
+stress: 4
+attack:
+  bonus: '+3'
+  name: Shield Ram
+  range: Melee
+  damage: 2d10+4 phy
+experience:
+  - name: Unstoppable Force
+    value: 3
+  - name: Shield Combat
+    value: 2
+features:
+  - name: Devastating Charge
+    type: Action
+    cost: Spend 1 Fear
+    description: The Charger builds momentum and charges in a straight line up to Far range. Make a Shield Ram attack against all enemies in that line. On a success against each target, deal normal damage and push them Very Close range to the side (the target's player decides which direction—left or right of the charge line). The ground trembles as tons of crystallized armor and divine fury plow through everything in their path.
+  - name: Shield Brace
+    type: Action
+    cost: Mark a Stress
+    description: The Charger plants their massive shield and braces defensively. Until the next time this feature is activated, the Charger's Difficulty increases by +3 and they cannot be moved or knocked prone by any effect. An immovable crystalline bulwark that anchors the battlefield, the Charger becomes a fortress of corrupted heavenly materials that refuses to yield.
+lore: The kingdom's heavy shock infantry were trained to break sieges and shatter enemy formations. They wore the heaviest armor, wielded massive shields, and charged with unstoppable force. When the plague took them, the crystalline corruption grew through their shield arms, fusing metal and flesh and bone into a single grotesque mass of corrupted heavenly materials. Now awakened by Sacred Flame, they are shambling juggernauts—undead horrors with shields that have become part of their twisted bodies. The fused shield-arm doesn't reduce their aggression; it enables it, protecting them as they lumber forward with lurching, unstoppable momentum.
