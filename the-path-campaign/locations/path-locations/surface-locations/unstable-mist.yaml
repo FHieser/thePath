@@ -1,0 +1,32 @@
+name: Unstable Mist
+tier: 2
+category: Traversal
+description: Thick mist obscures shadow landmarks on minimal solid ground
+impulses: Obscure navigation with thick mist and vanishing shadow landmarks, disorient travelers with landmarks that flicker in and out of existence, transform into other locations through the temple's mysterious power
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Mist-Touched
+potentialAdversaries: Mist Walkers, Mist Stalkers
+features:
+  - name: Disorienting Mist
+    type: Action
+    description: |
+      Thick mist engulfs this location, reducing visibility to mere steps ahead. Shadow landmarks flicker in and out of existence—distant silhouettes that could be stone markers, trees, or phantom structures that vanish when approached. Multiple paths lead away into the obscurity, making it nearly impossible to maintain direction. This heavy mist corruption gives the location the **Mist-Touched** modifier. Each PC who enters this location immediately gains 1 Mist token from the oppressive corruption.
+
+      When the party attempts to leave this location, they make a group Instinct roll. On a success, they exit in their intended direction. On a failure, the GM decides which exit the party takes instead—the mist has turned them around.
+    questions: What do the false exits look like? Where do they lead when the group fails their navigation roll? Do the shadow landmarks correspond to real places, or are they pure mist illusions?
+  - name: The Shifting Temple
+    type: Passive + Action
+    description: |
+      A small stone temple stands at the center of this location, somehow always visible despite the thick mist that obscures everything else. Atop the temple sits a token—an object that represents a specific Path location. When this location was created, the temple was paired with a preset destination, its token reflecting that connection. PCs automatically find the temple when they enter the location, drawn by some inexplicable pull through the disorienting fog.
+
+      PCs can freely manipulate or replace the token with objects representing other locations they wish to reach. However, the transformation is not guaranteed—at the GM's discretion and timing, the Unstable Mist may transform into the location represented by the token, or the GM may choose a different location that better fits the current narrative or the nature of the placed token. The temple doesn't reject offerings; rather, it translates them through its own mysterious logic. What players intend and what the temple manifests may not always align.
+    questions: What token is currently on the temple? What preset location does it represent? When does the transformation occur—immediately, at session end, or at a dramatically appropriate moment? What logic governs how the temple interprets different tokens?
+featureQuestions:
+  - What entity or force created the shifting temple?
+  - What preset location is the temple currently paired with?
+  - When does the transformation typically occur—at session end, during specific conditions, or at dramatically appropriate moments?
+  - What logic governs how the temple interprets different tokens placed by travelers?
+  - Why is the mist particularly thick and disorienting at this threshold location?
+  - Can the temple's transformative power be used to stabilize locations permanently, or does it only enable temporary shifts?

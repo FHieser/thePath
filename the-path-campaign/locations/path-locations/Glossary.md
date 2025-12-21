@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 28** (17 Surface + 9 Underground + 2 Special)
+**Total Locations: 29** (18 Surface + 9 Underground + 2 Special)
 
 ---
 
-## Surface Locations (17 locations)
+## Surface Locations (18 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -25,6 +25,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
 | ☑        | ☑     | [Stone Works](./surface-locations/stone-works.md)                   | Ancient quarry or stonecraft site                           |
 | ☑        | ☑     | [Trading Grounds](./surface-locations/trading-grounds.md)           | Central hub for commerce and exchange                       |
+| ☑        | ☑     | [Unstable Mist](./surface-locations/unstable-mist.yaml)             | Threshold location with transformative temple and disorienting mist |
 | ☑        | ☑     | [Verdant Crossing](./surface-locations/verdant-crossing.md)         | Lush passage through abundant vegetation                    |
 | ☑        | ☑     | [Windswept Grasslands](./surface-locations/windswept-grasslands.md) | Open plains swept by constant winds                         |
 
@@ -60,13 +61,13 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 27** | **Unassigned: 51** (66.7% remaining)
+**Assigned: 28** | **Unassigned: 50** (64.1% remaining)
 
-### Major Arcana (8 of 22 assigned)
+### Major Arcana (9 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
-| 0 The Fool            |                      |
+| 0 The Fool            | Unstable Mist        |
 | I The Magician        |                      |
 | II The High Priestess |                      |
 | III The Empress       |                      |
