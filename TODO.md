@@ -1,7 +1,16 @@
 # Todo
 
-- Add reed marsh NPC
+-misty waters location
+- Work out the reward mechanism for the crystals 
 - Add trader NPC
+
+- Clam hermit Enemy
+  - Clam on the back
+  - Deploys Sea mines that become active after a round
+  - Drop a pearl, that emits mist rises, binds via mist to the ground and looks like a sea mine
+  - Breaks armor
+- Add reed marsh NPC
+
 - 1 Location of Flame
 - Add Hunter Party from mist
   - Add counter visible for players

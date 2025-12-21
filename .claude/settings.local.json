@@ -5,7 +5,10 @@
       "Bash(mv:*)",
       "Bash(cat:*)",
       "SlashCommand(/give-me-five:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(curl:*)",
+      "Skill(give-me-five)",
+      "Skill(give-me-five:*)"
     ],
     "deny": [],
     "ask": []

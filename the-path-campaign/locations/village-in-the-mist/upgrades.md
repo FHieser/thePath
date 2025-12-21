@@ -26,7 +26,7 @@ They are defined by:
 - **Better Path Reconnaissance:**:
   - Improvement: The Path Reader can now read the village's path more effectively. Improve the Die Size for the path reconnaissance roll by 1 Size.
   - Provider: Path Reader
-  - Time Period: 1 day
+  - Time Period: 3 days
   - Required Materials: A item linked deeply to the mist.
 
 - **Underground Access:**:

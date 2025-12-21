@@ -5,3 +5,6 @@ path-webapp/
 /serve.sh
 /serve.bat
 /index.html
+
+# Windows NUL device file bug
+nul
