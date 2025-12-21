@@ -602,7 +602,7 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Created tactical depth through player knowledge vs character knowledge tension
   - ✅ Transformed potential negative outcome (wrong direction) into discovery moment
 
-### **Phase 19: The Starfall Kingdom - Crystalline Plague Mist Island** _(Completed ✅)_ _(December 12, 2025)_
+### **Phase 19: The Starfall Kingdom - Crystalline Plague Mist Island** _(Completed ✅)_ _(December 12-20, 2025)_
 
 - ✅ **The Starfall Kingdom Lore Document** (`lore/mist-islands/starfall-kingdom.md` - Complete):
   - ✅ Comprehensive "mist island" concept: thematic cluster of plague-ravaged locations telling unified tragic story
@@ -649,12 +649,41 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ **4 Complete Features**:
     - ✅ **Border Post** (Action): Wall climb vs gate passage, GM can slam gate (2 Fear), Strength +6 to force open
     - ✅ **Message Tower** (Passive): Ravens disturb dead (+1 counter), Knowledge check finds messages (1-4) or items (5-6)
-    - ✅ **The Plague Ditch** (Passive): Mass grave crawlspace escape route, endless spawn point if counter reaches 4 here
+    - ✅ **The Plague Ditch** (Passive): Mass grave crawlspace escape route, endless Crystal Zombie spawn point (1 per GM/player activation at counter 4)
     - ✅ **Refugee's Hope** (Passive): Glowing tent camp (navigation landmark), harvesting temptation zone
   - ✅ Integrated Crystal-Plague mechanics throughout all features
-  - ✅ Potential Adversaries: Crystallized Guards, Crystallized Refugees (marked @todo for creation)
-  - ✅ Added to Glossary.md (total locations now 28: 17 surface + 9 underground + 2 special)
-  - ✅ Tarot card assignment: Pending user decision
+  - ✅ Potential Adversaries: Crystal Zombie, Crystal-Fused Guard, Crystalline Charger
+  - ✅ Tarot card assignment: V The Hierophant
+- ✅ **Crystal-Plague Adversary Suite** (Tier 2 - Complete):
+  - ✅ **Crystal Zombie** (Minion):
+    - ✅ HP 1, Stress 1, Difficulty 12, Attack +0 (4 phy)
+    - ✅ 4 features: Minion (5), Glass Symphony, Group Attack, Crystalline Detonation (1 phy explosion)
+    - ✅ Shambling glass-cracking horror with explosive death
+  - ✅ **Crystal-Fused Guard** (Standard):
+    - ✅ HP 5, Stress 2, Difficulty 14, Thresholds 10/20, Attack +2 (2d8+2 phy)
+    - ✅ 2 features: Crystal Explosion (double damage reaction), Crystal Plate (magic resistance)
+    - ✅ Undead body horror: crystals prying through rusted armor gaps
+    - ✅ Savage muscle memory replacing tactical precision
+  - ✅ **Crystalline Charger** (Bruiser):
+    - ✅ HP 7, Stress 4, Difficulty 15, Thresholds 12/26, Attack +3 (2d10+4 phy)
+    - ✅ 2 features: Devastating Charge (line attack + push), Shield Brace (defensive stance)
+    - ✅ Shield fused to arm like grotesque tumor
+    - ✅ Lurching juggernaut with unstoppable momentum
+  - ✅ All stats follow official Tier 2 benchmarks
+  - ✅ Collaborative /give-me-five design process for features
+  - ✅ Undead horror emphasis over martial skill
+- ✅ **Web Application Integration**:
+  - ✅ Added 'crystal-plague' to adversary folders in index-adversaries.js
+  - ✅ Updated fallback files with all three adversaries
+  - ✅ Added folder config with display name "Crystal-Plague"
+  - ✅ Adversaries now appear as fourth section in webapp
+- ✅ **Development Command System**:
+  - ✅ Created `/create-adversary` command (.claude/commands/create-adversary.md)
+  - ✅ 7-step collaborative workflow (Concept → Stats → Feature Planning → Development → Integration → Compilation → System Integration)
+  - ✅ Built-in /give-me-five methodology for feature iteration
+  - ✅ Official Tier 1-2 benchmark quick reference tables
+  - ✅ Real examples: Crystal-Plague adversaries, Blood Fern Predator, Giant Spider Guardian
+  - ✅ Complete session checklist for tracking progress
 - ✅ **Design Achievements**:
   - ✅ Created asymmetric danger zone where normal Path survival strategies become lethal
   - ✅ Escalating tension system via visible counter (players track approach to disaster)
@@ -662,6 +691,8 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Thematic coherence across lore, mechanics, and location features
   - ✅ Harvesting dilemma: wealth vs combat-while-unprepared risk
   - ✅ Multiple tactical approaches: avoid disturbance, use mist as ally, flameless operation
+  - ✅ Body horror aesthetic: crystals bursting through armor, fused shield-arm tumors, explosive shattering
+  - ✅ Endless spawn point mechanic for Plague Ditch creates evacuation pressure
 
 ---
 
