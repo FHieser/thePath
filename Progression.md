@@ -694,6 +694,48 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Body horror aesthetic: crystals bursting through armor, fused shield-arm tumors, explosive shattering
   - ✅ Endless spawn point mechanic for Plague Ditch creates evacuation pressure
 
+### **Phase 20: Misty Waters - Flooded Plague Village** _(Completed ✅)_ _(December 22, 2025)_
+
+- ✅ **Misty Waters Location** (Tier 2 Exploration - Complete):
+  - ✅ Complete redesign from incomplete fog-lake into flooded Crystal-Plague village
+  - ✅ Tier 2, Difficulty 14, Category: Exploration
+  - ✅ **Modifiers**: Unstable, Crystal-Plague, Cave Mouth (three-modifier location)
+  - ✅ Tragic backstory: Survivors barricaded creek exit, deliberately flooding village to trap infected
+  - ✅ **5 Complete Features**:
+    - ✅ **Flooded Valley** (Passive): Rooftop walkway traversal with counter system (0→4), group Finesse rolls, fall damage based on water state
+    - ✅ **The Dam** (Action): Survivor-built barricade, Strength roll to break, drains water between sessions, Fear results set Awakening Counter to 4
+    - ✅ **Crystal-Covered Village** (Passive): Full location illumination from crystals, GM can spawn Trap Crystal for 1 Fear
+    - ✅ **The Bound Spirit** (Passive): Raven imprisoned in enchanted coins encased in crystal, offers crystal purification + awakening updates
+    - ✅ **The Drain** (Action): Underground connection with water suction hazard (flooded) or crystal-cutting descent (drained)
+  - ✅ Potential Adversaries: Crystal Zombie, Crystal-Fused Guard, Crystalline Charger, Trap Crystal
+  - ✅ Tarot card assignment: VI The Lovers
+- ✅ **The Bound Raven NPC**:
+  - ✅ Nature spirit imprisoned before plague arrived
+  - ✅ Chronic thief bound into coins with square holes by warlock
+  - ✅ Prolonged submersion granted crystal purification ability
+  - ✅ Services: Crystal Purification (GM-decided cost), Awakening Counter updates (free)
+  - ✅ Purified crystals safe for weapons/armor crafting
+  - ✅ Future content hook: Meteor stonework tools can break crystal prison, making coins portable
+  - ✅ Long-term campaign potential: Relocate raven to Village in the Mist or other Stable locations
+- ✅ **Multi-Visit Mechanics**:
+  - ✅ Binary water state (Flooded/Drained) persists between visits
+  - ✅ Players must trigger drainage on first visit, returns drained on subsequent visits
+  - ✅ Awakening Counter resets each visit (standard Crystal-Plague behavior)
+  - ✅ Tactical walkway system provides elevation advantage against enemies
+  - ✅ Cave Mouth modifier enables surface ↔ underground Path connections
+- ✅ **Glossary Integration**:
+  - ✅ Location marked complete (☑) in Surface Locations table
+  - ✅ Description updated to reflect new content
+  - ✅ File extension corrected (.yaml)
+  - ✅ Total tarot assignments: 29/78
+- ✅ **Design Achievements**:
+  - ✅ Collaborative /create-location workflow with iterative feature development
+  - ✅ Multi-layered reward structure (rooftop walkways, raven services, underground access)
+  - ✅ Thematic coherence: tragedy + imprisonment + purification through water
+  - ✅ Strategic long-term NPC relationship (raven becomes portable ally)
+  - ✅ Environmental storytelling through crystallized villagers and flooded homes
+  - ✅ Greed-enabling-greed theme: thief helps treasure hunters profit from dangerous crystals
+
 ---
 
 ## **Technical Debt & Improvements**
@@ -727,9 +769,9 @@ _This file tracks our development work on The Path campaign repository, includin
 **Campaign Components Built**: 100%
 **Framework Completion**: 100%
 **Content Ready for Play**: 100%
-**Path Locations**: 26 complete (15 surface, 9 underground, 2 special)
-**Location Modifiers**: 8 types (Stable/Unstable, Underground, Cave Mouth, Inhabited, Wild Beasts, Flame-Touched, Mist-Touched, Mushroom Circle)
-**Adversaries**: 16+ (including Tier 2 Solo: Eeligator, BFF, Spider Queen, Blood Fern Predator)
+**Path Locations**: 27 complete (16 surface, 9 underground, 2 special)
+**Location Modifiers**: 9 types (Stable/Unstable, Underground, Cave Mouth, Inhabited, Wild Beasts, Flame-Touched, Mist-Touched, Mushroom Circle, Crystal-Plague)
+**Adversaries**: 17+ (including Tier 2 Solo: Eeligator, BFF, Spider Queen, Blood Fern Predator; Tier 2 Skulk: Trap Crystal)
 **Web Application**: Fully functional with off-path travel system
 
 **Development Sessions**: 7

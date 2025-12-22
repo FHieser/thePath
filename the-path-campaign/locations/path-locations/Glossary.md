@@ -19,7 +19,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Highland Watch](./surface-locations/highland-watch.md)             | Elevated vantage point with panoramic views                 |
 | ☑        | ☑     | [The Giant Walls](./surface-locations/the-giant-walls.yaml)         | Border defense where plague was contained at terrible cost  |
 | ☑        | ☑     | [Hollow Woods](./surface-locations/hollow-woods.md)                 | Forest with mysterious hollowed structures                  |
-| ☐        | ☐     | [Misty Waters](./surface-locations/misty-waters.md)                 | Aquatic area perpetually shrouded in mist                   |
+| ☑        | ☑     | [Misty Waters](./surface-locations/misty-waters.yaml)               | Flooded Crystal-Plague village with bound raven spirit      |
 | ☐        | ☐     | [Overgrown Temple](./surface-locations/overgrown-temple.md)         | Ancient temple reclaimed by nature                          |
 | ☑        | ☑     | [Sacred Mountain Pass](./surface-locations/sacred-mountain-pass.md) | Blessed passage through the mountains                       |
 | ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
@@ -61,9 +61,9 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 28** | **Unassigned: 50** (64.1% remaining)
+**Assigned: 29** | **Unassigned: 49** (62.8% remaining)
 
-### Major Arcana (9 of 22 assigned)
+### Major Arcana (10 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -73,7 +73,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | III The Empress       |                      |
 | IV The Emperor        |                      |
 | V The Hierophant      | The Giant Walls      |
-| VI The Lovers         |                      |
+| VI The Lovers         | Misty Waters         |
 | VII The Chariot       |                      |
 | VIII Strength         |                      |
 | IX The Hermit         |                      |

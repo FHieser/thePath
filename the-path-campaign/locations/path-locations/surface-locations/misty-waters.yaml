@@ -1,23 +1,54 @@
 name: Misty Waters
-tier: 1
+tier: 2
 category: Exploration
-description: A fog-shrouded lake where drowned ruins emerge from dark waters and abandoned structures decay along the shore.
-impulses: Conceal dangerous depths, preserve drowned memories, lure the unwary to watery graves
-difficulty: 11
+description: A village deliberately flooded by desperate survivors, now a submerged graveyard where crystallized corpses lie beneath dark waters and glowing crystal formations spread through the streets like veins of corrupted light.
+impulses: Conceal the drowned tragedy beneath still waters, tempt with crystalline beauty while threatening awakening, chronicle the village's desperate final choice
+difficulty: 14
 modifiers:
   - name: Unstable
-potentialAdversaries: Aquatic Beasts (Giant Pike, Bog Shambler), Drowned Spirits, Mist Phantoms
+  - name: Crystal-Plague
+  - name: Cave Mouth
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Crystalline Charger, Trap Crystal
 features:
-  - name: Missing Feature
+  - name: Flooded Valley
     type: Passive
-    description: '@todo add a temple/shrine into the middle of the lake. Interacting with the shrine makes the sunken village rise up from its grave and spawn undead/mist creatures??'
-    questions: ''
-  - name: Hypnotic Roots
+    description: |
+      The village sits in a flooded valley, dark water covering streets and lower buildings. Survivors built makeshift walkways across rooftops—planks, ropes, and salvaged doors lashed together. While flooded, these walkways are the only way to navigate without swimming through corpse-filled water. After drainage, the walkways remain but players can walk the streets below.
+
+      Players must cross the rooftop walkways using a counter system (0→4). The entire party makes a group Finesse roll. Success advances counter by 1. Failure with Fear: 2 party members (GM chooses) fall—while flooded they take 1 Stress, after drainage they take 1 Stress + 6 damage from the fall. Reaching 4 means the party has crossed to the other side of the village.
+    questions: What personal belongings scatter the walkways from those who fled? Do you look down into the dark water as you cross?
+  - name: The Dam
     type: Action
-    description: The glowing roots beneath the water pulse brighter, creating mesmerizing patterns. All creatures within Close range of the water's edge must succeed on a Presence Reaction Roll or be compelled to move closer to the water. Those who fail while already at the water's edge must make an additional Agility roll to avoid falling in. @todo good idea but this doesn't fit yet
-    questions: What causes the roots to glow beneath the water? Are they truly plant matter or something else? What happens to creatures that spend too long staring at the patterns?
+    description: |
+      Reachable via the Flooded Valley Walkways, a survivor-built barricade of stones, timbers, and desperation blocks the creek's natural exit. When the plague came, healthy villagers sealed this passage and flooded their own home to trap the infected beneath the water. The crystallized dead sank to the bottom.
+
+      Players can attempt to break the dam (Strength roll at location Difficulty). Success: water drains between sessions—next visit, the location is drained. Both "Success with Fear" and "Failure with Fear" set Awakening Counter to 4 immediately. Enemies have a hard time reaching players on the elevated walkways.
+    questions: What evidence of the survivors' final desperate work remains at the dam? Can you hear the water rushing through cracks in the barricade?
+  - name: Crystal-Covered Village
+    type: Passive
+    description: |
+      This location has the Crystal-Plague modifier. Crystal formations spread throughout the flooded village—jagged blue-white structures growing from every surface, erupting from streets and walls. The crystals illuminate the entire location with eerie inner light, turning the drowned village into a luminous graveyard. Most formations grew from crystallized corpses, but not all crystals are what they seem. The GM can spend 1 Fear to reveal that a nearby crystal formation is actually a Trap Crystal, perfectly camouflaged among the genuine plague crystals until it attacks.
+    questions: Which crystallized villager catches your eye? What does the crystal light reveal that should remain hidden?
+  - name: The Bound Spirit
+    type: Passive
+    description: |
+      In the old smith's home, a large crystal formation projects the silhouette of a raven onto its surface. At the crystal's core: a string of ancient coins with square holes, bound together. The raven spirit speaks telepathically, offering deals to those who approach.
+
+      A chronic thief imprisoned by a warlock, the raven has been submerged in flooded darkness for decades. This prolonged exposure to water has granted an unexpected ability—its proximity purifies plague crystals. Normally, crystals harvested from the dead carry plague resonance, making them dangerous to transport and store. The raven can strip away this corruption, rendering crystals inert and safe. Purified crystals can be used to create weapons and armor.
+
+      The raven offers two services: **Crystal Purification** (GM decides cost based on what players offer—HP, Stress, memories, items, secrets, or other payments) and **Awakening Updates** (freely tells players the current Awakening Counter state when asked—the raven can sense the dead stirring and has no desire to be trapped here when they fully awaken).
+    questions: What does the raven want most—freedom, or just someone to talk to after decades alone? What payment do you offer for purification? Can the raven be freed somehow—where would the tools be to free them?
+  - name: The Drain
+    type: Action
+    description: |
+      This location gains the **Cave Mouth** modifier—it connects to both surface and underground Path network locations. At the village's lowest point, a drainage tunnel leads underground. While flooded, dark water rushes down into the tunnel with dangerous force. Players who approach too close must make a Strength roll or be sucked into the flooded passage and dragged underwater (2 Stress from battering against stone, potential drowning). Underground locations cannot connect upward to this location while it remains flooded—the water flow is too strong.
+
+      After drainage, the tunnel mouth is exposed, revealing a passage carved through bedrock. Crystal formations have grown along its walls like luminous teeth. Players can descend, but navigating the crystal-lined passage requires an Agility roll. On failure, crystals cut the climber (1 Stress) and Awakening Counter increases by +1. On failure with Fear, the cuts are deeper (2 Stress) and Awakening Counter increases by +2. This passage now allows two-way travel between surface and underground Path networks.
+    questions: What do you hear echoing up from the tunnel? What crystallized creature clings to the tunnel walls waiting in the dark?
 featureQuestions:
-  - What ancient tragedy caused an entire village to vanish beneath these dark waters?
-  - How do the glowing roots connect to the drowned structures below?
-  - What valuable knowledge or treasures might be recovered from the sunken buildings?
-  - Why does the mist here seem thicker and more persistent than in other areas?
+  - What were the final moments like when the survivors destroyed the dam and flooded their own village?
+  - Who stayed behind in the village when the plague came—and why didn't they flee?
+  - How long did it take for the floodwaters to rise and claim everyone who remained?
+  - What do the crystallized faces of the dead tell you about how they spent their last moments?
+  - If you could speak to the survivors who caused the flood, what would you ask them—or tell them?
+  - What valuables or memories lie preserved in the crystal-lit homes, waiting for someone brave enough to claim them?
