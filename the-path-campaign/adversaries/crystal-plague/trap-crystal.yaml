@@ -1,0 +1,33 @@
+name: Trap Crystal
+tier: 2
+category: Skulk
+description: A cluster of translucent crystals jutting from floor or wall, glowing with soft inner light like captured starlight. The formation looks identical to the valuable plague crystals found in corpses - all geometric beauty and tempting radiance. But these crystals are alive. When touched, the glow intensifies. Sharp edges vibrate and resonate. Then the formation erupts outward in a burst of razor-sharp shards, each fragment seeking flesh to embed itself in.
+motives: Perfect camouflage, punish contact, stationary predator, shrapnel burst, crystal regrowth
+difficulty: 11
+hp: 4
+stress: 3
+attack:
+  bonus: '+3'
+  name: Crystal Spike
+  range: Far
+  damage: 2d8+2 phy
+experience:
+  - name: Ambush Tactics
+    value: 3
+  - name: Crystalline Resilience
+    value: 2
+features:
+  - name: Stationary Mimic
+    type: Passive
+    description: |
+      The Trap Crystal cannot move from its location. It appears identical to valuable plague crystal deposits found in crystallized corpses. A PC can attempt an Instinct check to identify the Trap Crystal as a living threat before it attacks. If the Trap Crystal has not been identified, it makes all attacks with advantage against targets who are unaware of its true nature.
+  - name: Hardening
+    type: Passive
+    description: |
+      When the Trap Crystal is Spotlighted, it heals 1 HP as crystalline fractures seal themselves with fresh growth.
+  - name: Shrapnel Burst
+    type: Action
+    cost: Mark a Stress
+    description: |
+      The Trap Crystal detonates outward in an explosion of razor-sharp fragments. Make an attack against all targets within Very Close range.
+lore: Trap Crystals are not crystallized plague victims but living crystal formations grown from the corrupted heavenly material itself. They evolve in areas saturated with plague energy, mimicking the appearance of harvestable crystals to ambush treasure-seekers. These predatory growths are patient hunters, capable of remaining dormant for years until vibration or touch triggers their violent response. In the Starfall Kingdom, they represent the plague's evolution beyond mere infection—the corruption has learned to hunt.
