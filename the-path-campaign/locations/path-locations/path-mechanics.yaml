@@ -372,7 +372,7 @@ mistMechanics:
 
       Characters gain Mist tokens from intentional triggers, keeping each gain dramatic and tied to meaningful choices. Resting in Mist-Touched locations is the most common source—2 tokens for a short rest, 3 for a long rest. Certain mist creatures inflict Mist tokens through attacks or special abilities. The GM can spend Fear to give every party member 1 Mist token (3 Fear normally, 2 Fear when off-Path). Notably, characters do not gain tokens simply from entering or traveling through Mist-Touched locations—the corruption requires sustained exposure or direct contact with mist creatures.
 
-      When a character gains a Mist token, they immediately suffer consequences based on their total accumulated. At 1-3 tokens, choose to either lose 1 Hope or mark 1 Stress. At 4-5 tokens, choose to either give the GM 1 Fear or lose 1 HP. At 6-7 tokens, the character suffers both tiers—choose one from Hope/Stress AND one from Fear/HP. At 8 or more tokens, the character is consumed by the mist and lost forever. The player must create a new character.
+      When a character gains a Mist token, they immediately suffer consequences based on their total accumulated. At 1-3 tokens, choose to either lose 1 Hope or mark 1 Stress. At 4-6 tokens, choose to either give the GM 1 Fear or lose 1 HP. At 7-9 tokens, the character suffers both tiers—choose one from Hope/Stress AND one from Fear/HP. At 10 or more tokens, the character is consumed by the mist and lost forever. The player must create a new character.
 
       This escalating pressure creates natural story arcs where characters must find ways to cleanse their corruption before it reaches fatal levels.
 
@@ -396,11 +396,11 @@ mistMechanics:
       tiers:
         - tokenRange: 1-3
           effect: "Choose one: Lose 1 Hope OR mark 1 Stress"
-        - tokenRange: 4-5
+        - tokenRange: 4-6
           effect: "Choose one: GM gains 1 Fear OR lose 1 HP"
-        - tokenRange: 6-7
+        - tokenRange: 7-9
           effect: "Suffer both tiers (choose one from each: Hope/Stress AND Fear/HP)"
-        - tokenRange: 8+
+        - tokenRange: 10+
           effect: Your character is consumed by the mist and lost. Create a new character.
 
 fearSpendingOptions:
