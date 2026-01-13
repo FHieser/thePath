@@ -119,3 +119,24 @@ Apply these modifiers to the base BP calculation:
 | **6 PCs** | 1 Lieutenant (3) + 1 Kneebreaker (4) + 1 Shadow (2) + 2 Bandits (4) + 3 Snipers (6) + 6 Lackeys (1) | 20 BP |
 
 **Tactics:** Lieutenant commands from advantageous position using Tactician and Coup de Grace. Kneebreaker engages frontline fighters with Hold Them Down. Snipers use Unseen Strike from cover targeting spellcasters. Bandits use Climber and From Above for vertical advantage. Shadow uses Backstab and Cloaked for assassination attempts. Lackeys swarm isolated targets.
+
+---
+
+### **Example 5: Crystalline Awakening**
+
+**Theme:** Shambling undead army with heavy shock troops
+
+**Crystal-Plague Forces (Tier 2):**
+- **Crystal Zombie** - Minion (1 BP for matching # of PCs) - Shambling corpses that detonate on death
+- **Crystal-Fused Guard** - Standard (2 BP) - Corrupted warriors with crystal armor
+- **Crystalline Charger** - Bruiser (4 BP) - Heavy shock troops with fused shields
+
+| Party | Composition | Total |
+|-------|-------------|-------|
+| **2 PCs** | 1 Charger (4) + 2 Guards (4) | 8 BP |
+| **3 PCs** | 1 Charger (4) + 3 Guards (6) + 3 Zombies (1) | 11 BP |
+| **4 PCs** | 2 Chargers (8) + 3 Guards (6) | 14 BP |
+| **5 PCs** | 2 Chargers (8) + 3 Guards (6) + 15 Zombies (3) | 17 BP |
+| **6 PCs** | 2 Chargers (8) + 5 Guards (10) + 6 Zombies (1) | 20 BP |
+
+**Tactics:** Chargers use Devastating Charge to break formations and Shield Brace to anchor positions. Guards exploit Crystal Plate against spellcasters and use Crystal Explosion on critical hits. Zombies shamble forward using Group Attack, creating deadly detonation zones when destroyed. The Glass Symphony of multiple crystalline bodies creates an eerie cacophony that announces their awakening.
