@@ -1,0 +1,29 @@
+name: Mist Walker
+tier: 2
+category: Minion
+description: A shambling humanoid figure that emerges from the otherworldly mist, its form barely corporeal and eyes fixed on any source of light or warmth.
+motives: Hunt flames, extinguish light, swarm targets, overwhelm
+difficulty: 13
+thresholds: null
+hp: 1
+stress: 1
+attack:
+  bonus: '+0'
+  name: Grasping Claws
+  range: Melee
+  damage: 3 phy
+experience:
+  - name: Heat Sense
+    value: 3
+features:
+  - name: Minion (6)
+    type: Passive
+    description: The Minion is defeated when they take any damage. For every 6 damage a PC deals to the Minion, defeat an additional Minion within range the attack would succeed against.
+  - name: Heat Seekers
+    type: Passive
+    description: They are the hounds sent out by the mist to seek out flames and extinguish them. Mist Walkers are drawn to fire, light sources, and warm-blooded creatures, prioritizing such targets when multiple options are available.
+  - name: Group Attack
+    type: Action
+    cost: Spend a Fear
+    description: Have all Mist Walkers within Close range coordinate their attacks. Each participating Mist Walker makes their standard attack against targets within range.
+lore: Former travelers who became lost in the mist and were consumed by its otherworldly influence, these creatures retain only their base drive to extinguish the very flames that could have saved them.
