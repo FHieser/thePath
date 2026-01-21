@@ -1,0 +1,68 @@
+name: Needle Tunnels
+tier: 2
+category: Traversal
+description: |
+  The stone presses close, the air runs thin, and something in the dark already knows you're coming.
+impulses: |
+  Squeeze the breath from those who dare pass through, Test resolve with every narrow turn, Hide secrets in forgotten alcoves
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Underground
+potentialAdversaries: Tunnel Crawlers, Lichen Feeders, Compressed Horrors
+features:
+  - name: The Squeeze
+    type: Counter System
+    description: |
+      The Needle Tunnels are divided into 3 suffocating sections. Between each section lies a brief widening where Hidden Alcoves may be discovered.
+
+      Each section requires a group check (Instinct or Finesse). One player leads, making the primary roll while others assist.
+
+      Critical Success: Progress 1 section. Gain advantage on the next Hidden Alcove roll.
+      Success with Hope: Progress 1 section.
+      Success with Fear: Progress 1 section. The leader distributes 1 Stress among the party (including themselves).
+      Failure with Hope: Progress 1 section. The leader distributes Stress equal to half the group size (rounded up) among the party.
+      Failure with Fear: No progress. Distribute Stress equal to the group size. A player gets stuck—describe their panic attack as the walls press in and the air grows thin.
+
+      Structure: Section 1 → Hidden Alcove opportunity → Section 2 → Hidden Alcove opportunity → Section 3 → Exit
+    questions: |
+      What old scratches and carvings line the tunnel walls—marks of those who came before?
+  - name: Hidden Alcoves
+    type: Passive
+    description: |
+      At each widening between sections, the tunnels reveal what they've been hiding. One player rolls a d10:
+
+      1-2: The Shrine of the Observer
+      3-7: Nothing—only bare stone and stale air
+      8-10: The Warm Nook
+
+      If the party has advantage (from a Critical Success on The Squeeze), roll 2d10 and choose which result to keep.
+
+      Each location can only be discovered once per traversal. If you roll a location you've already found, treat it as "Nothing."
+    questions: |
+      What faint air currents or strange echoes hint at hidden spaces beyond the tunnel walls?
+  - name: The Warm Nook
+    type: Passive
+    description: |
+      A warm alcove opens unexpectedly from the tunnel wall, its surfaces covered in softly glowing lichen. Fuzzy, palm-sized creatures nest here in clusters, chirping softly as they nibble on the luminescent growth. They show no fear of visitors, nuzzling against anyone who enters.
+
+      When the party discovers this alcove, each PC clears 1 Stress.
+      If the party takes a Short Rest here, each PC clears an additional 1 Stress.
+    questions: |
+      What do the critters remind you of from the world before the mist—and why does that memory hurt?
+  - name: The Shrine of the Observer
+    type: Action
+    description: |
+      Gravity inverts as you enter this small chamber—suddenly you stand on what was the ceiling, looking "up" at the floor. Flameless candles burn in fixed positions, their light illuminating runes carved into every surface. Ancient. Unknowable. Watching.
+
+      The altar bears a single massive rune, too complex to fully perceive. Looking at it directly reveals only fragments; your mind refuses to assemble the whole. You feel seen. Not watched—known. Something impossibly distant is now aware of your exact location in the universe.
+
+      Commune with the Observer - Action (1/day, party-wide): A PC may mark 3 Stress to stare into the rune until understanding floods their fractured mind. Ask the GM one question about anything—they must answer truthfully. The answer arrives as visions, riddles, or fragmented impressions; the truth is there, but interpretation falls to you.
+    questions: |
+      The Observer now knows where you are. What do you fear it will do with that knowledge?
+featureQuestions:
+  - How did the Observer find its way to this forgotten place beneath the earth?
+  - What happened to previous travelers who discovered the Shrine—and chose to commune?
+  - What do the scratches and carvings left by previous travelers say—warnings, prayers, or something else entirely?
+  - The creatures in the Warm Nook seem unafraid of the dark. What else lives in these tunnels that they've learned to ignore?
+  - Has anyone ever tried to bring a Sacred Flame into these tunnels? What would the Observer do if divine light reached its shrine?

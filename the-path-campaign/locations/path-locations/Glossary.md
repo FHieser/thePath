@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 29** (18 Surface + 9 Underground + 2 Special)
+**Total Locations: 30** (18 Surface + 10 Underground + 2 Special)
 
 ---
 
@@ -31,7 +31,7 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
-## Underground Locations (9 locations)
+## Underground Locations (10 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                        |
 | -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -42,6 +42,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Fungal Depths](./underground-locations/fungal-depths.md)           | Caverns dominated by massive fungal growth                         |
 | ☑        | ☑     | [Geothermal Caverns](./underground-locations/geothermal-caverns.md) | Hot springs and volcanic activity underground                      |
 | ☑        | ☑     | [Mining Complex](./underground-locations/mining-complex.md)         | Extensive system of mines and extraction sites                     |
+| ☑        | ☑     | [Needle Tunnels](./underground-locations/needle-tunnels.yaml)       | Claustrophobic passages hiding comfort and cosmic horror           |
 | ☑        | ☑     | [Reed Marsh Caverns](./underground-locations/reed-marsh-caverns.md) | Underground wetland with bioluminescent grotto and hermit dwelling |
 | ☑        | ☑     | [Sacred Underground](./underground-locations/sacred-underground.md) | Hallowed sanctuary beneath the earth                               |
 
@@ -61,7 +62,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 29** | **Unassigned: 49** (62.8% remaining)
+**Assigned: 30** | **Unassigned: 48** (61.5% remaining)
 
 ### Major Arcana (10 of 22 assigned)
 
@@ -109,7 +110,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Wands  | Blood Fern Valley    |
 | King of Wands   |                      |
 
-### Minor Arcana - Swords (2 of 14 assigned)
+### Minor Arcana - Swords (3 of 14 assigned)
 
 | Card             | Location |
 | ---------------- | -------- |
@@ -121,7 +122,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 6 of Swords      |          |
 | 7 of Swords      |          |
 | 8 of Swords      |          |
-| 9 of Swords      |                  |
+| 9 of Swords      | Needle Tunnels   |
 | 10 of Swords     | Barnacle Gardens |
 | Page of Swords   |                  |
 | Knight of Swords |          |
