@@ -49,6 +49,9 @@ Goblets:
 - Pazzo Oven
   -Counter at 3 -> Goes down every day
 
+- Start of Community Hall Upgrade
+  - 
+
 ---
 
 ### NPCs
