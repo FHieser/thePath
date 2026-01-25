@@ -8,7 +8,9 @@
       "Bash(tree:*)",
       "Bash(curl:*)",
       "Skill(give-me-five)",
-      "Skill(give-me-five:*)"
+      "Skill(give-me-five:*)",
+      "Skill(create-location)",
+      "Skill(create-location:*)"
     ],
     "deny": [],
     "ask": []
