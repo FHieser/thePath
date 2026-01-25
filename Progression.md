@@ -736,6 +736,47 @@ _This file tracks our development work on The Path campaign repository, includin
   - ✅ Environmental storytelling through crystallized villagers and flooded homes
   - ✅ Greed-enabling-greed theme: thief helps treasure hunters profit from dangerous crystals
 
+### **Phase 21: Flooded Network - Ancient Hydraulic Tunnels** _(Completed ✅)_ _(January 25, 2026)_
+
+- ✅ **Flooded Network Location** (Tier 2 Traversal - Complete):
+  - ✅ Complete redesign from incomplete skeleton into full hydraulic tunnel system
+  - ✅ Tier 2, Difficulty 14, Category: Traversal
+  - ✅ **Modifiers**: Unstable, Underground
+  - ✅ Ancient builders created one-way water trap (can descend, cannot ascend without machinery)
+  - ✅ **Network Traversal Counter System** (0→4):
+    - ✅ d6 Route Selection: 1=Machinery Ride, 2-4=Lake Crossing, 5-6=Submerged Passage
+    - ✅ d10 Sanctuary Discovery after each advancement: 1-2=Water Wheel Control, 3-6=Nothing, 7-10=Glowing Sanctuary
+  - ✅ **10 Complete Features**:
+    - ✅ **Network Traversal** (Counter System): Reach 4 to complete, structured loop with route and discovery rolls
+    - ✅ **Route Selection** (Passive): d6 determines available route each section
+    - ✅ **Machinery Ride** (Passive): Rare lucky find (16%), automatic +1 counter with no risk
+    - ✅ **Lake Crossing** (Action): Group roll (Strength/Instinct), failure = half party marks Stress, leader chooses who
+    - ✅ **Submerged Passage** (Action): Push through (1 Stress, +1 counter) or turn back (-1 counter)
+    - ✅ **Sanctuary Discovery** (Passive): d10 roll between sections for discoveries
+    - ✅ **Glowing Sanctuary** (Passive): Luminescent paint safety rooms with rough plans (reroll route d6) + Hope distribution
+    - ✅ **Ancient Water Wheel Control** (Action): Dual function - Drain Passage (+1 counter) or Open Surface Gate (permanent unlock)
+    - ✅ **The One-Way Trap** (Passive): Cave Mouth entry triggers automatic Hydraulic Surge, cannot ascend until Wheel succeeds
+    - ✅ **Hydraulic Surge** (Reaction): 2 Fear - all PCs mark 1 Stress + lose 1 counter
+  - ✅ Potential Adversaries: Aquatic Predators (Giant Pike, Tunnel Eel), Water Spirits, Mechanical Guardians
+  - ✅ Tarot card assignment: 8 of Goblets (thematically "no return" / walking away)
+- ✅ **Unique Mechanics**:
+  - ✅ Permanent campaign unlock system (Open Surface Gate creates two-way travel)
+  - ✅ One-way trap creates exploration stakes (trapped until machinery mastered)
+  - ✅ Luminescent paint safety rooms from ancient tunnel workers
+  - ✅ Knowledge rolls for machinery with Failure with Fear triggering Surge
+  - ✅ Group dynamics in Lake Crossing (leader chooses who takes Stress)
+- ✅ **Glossary Integration**:
+  - ✅ Location marked complete (☑) in Underground Locations table
+  - ✅ Description updated to reflect new content
+  - ✅ File extension corrected (.yaml)
+  - ✅ Total tarot assignments: 31/78 (5 of 14 Goblets assigned)
+- ✅ **Design Achievements**:
+  - ✅ Collaborative /create-location workflow with iterative feature development
+  - ✅ Multi-layered traversal system with route variety and discovery opportunities
+  - ✅ Ancient civilization worldbuilding (hydraulic engineers, safety protocols, luminescent paint)
+  - ✅ Risk/reward balance across all route options
+  - ✅ Permanent unlock reward for mastering the machinery
+
 ---
 
 ## **Technical Debt & Improvements**
@@ -769,7 +810,7 @@ _This file tracks our development work on The Path campaign repository, includin
 **Campaign Components Built**: 100%
 **Framework Completion**: 100%
 **Content Ready for Play**: 100%
-**Path Locations**: 27 complete (16 surface, 9 underground, 2 special)
+**Path Locations**: 28 complete (16 surface, 10 underground, 2 special)
 **Location Modifiers**: 9 types (Stable/Unstable, Underground, Cave Mouth, Inhabited, Wild Beasts, Flame-Touched, Mist-Touched, Mushroom Circle, Crystal-Plague)
 **Adversaries**: 17+ (including Tier 2 Solo: Eeligator, BFF, Spider Queen, Blood Fern Predator; Tier 2 Skulk: Trap Crystal)
 **Web Application**: Fully functional with off-path travel system
