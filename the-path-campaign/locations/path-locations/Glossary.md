@@ -38,7 +38,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Black Beach](./underground-locations/black-beach.md)               | Underground shore with black sand, dark waters, and bleeding altar |
 | ☑        | ☑     | [Black Falls](./underground-locations/black-falls.md)               | Multi-tiered black water cascades along ancient pilgrim route      |
 | ☑        | ☑     | [Brood Throne](./underground-locations/brood-throne.md)             | Subterranean chamber of significant power (Linked to Silken Spire) |
-| ☐        | ☐     | [Flooded Network](./underground-locations/flooded-network.md)       | Interconnected caverns filled with water                           |
+| ☑        | ☑     | [Flooded Network](./underground-locations/flooded-network.yaml)     | Ancient hydraulic tunnels with one-way water trap                  |
 | ☑        | ☑     | [Fungal Depths](./underground-locations/fungal-depths.md)           | Caverns dominated by massive fungal growth                         |
 | ☑        | ☑     | [Geothermal Caverns](./underground-locations/geothermal-caverns.md) | Hot springs and volcanic activity underground                      |
 | ☑        | ☑     | [Mining Complex](./underground-locations/mining-complex.md)         | Extensive system of mines and extraction sites                     |
@@ -62,7 +62,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 30** | **Unassigned: 48** (61.5% remaining)
+**Assigned: 31** | **Unassigned: 47** (60.3% remaining)
 
 ### Major Arcana (10 of 22 assigned)
 
@@ -129,7 +129,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Swords  |          |
 | King of Swords   |          |
 
-### Minor Arcana - Discs (Pentacles) (6 of 14 assigned)
+### Minor Arcana - Discs (Pentacles) (7 of 14 assigned)
 
 | Card            | Location           |
 | --------------- | ------------------ |
@@ -140,7 +140,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 5 of Discs      | Mining Complex     |
 | 6 of Discs      | Geothermal Caverns |
 | 7 of Discs      |                    |
-| 8 of Discs      |                    |
+| 8 of Discs      | Flooded Network    |
 | 9 of Discs      | Hanging Gardens    |
 | 10 of Discs     | Black Beach        |
 | Page of Discs   |                    |

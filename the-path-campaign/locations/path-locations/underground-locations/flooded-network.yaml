@@ -1,11 +1,11 @@
 name: Flooded Network
-tier: 1
+tier: 2
 category: Traversal
 description: |
-  A network of water-filled tunnels and chambers where underground springs feed dark lakes and ancient machinery still turns with the current.
+  A network of water-filled tunnels and chambers where underground springs feed dark lakes and ancient machinery still turns with the current. The hydraulic system was built to flow one way—down. Those who enter may find themselves trapped until they master the machinery that controls the waters.
 impulses: |
-  Channel water through hidden passages, power forgotten mechanisms, test endurance and navigation skills
-difficulty: 11
+  Channel water through hidden passages, trap the unwary in its depths, test endurance and navigation skills
+difficulty: 14
 modifiers:
   - name: Unstable
   - name: Underground
@@ -14,29 +14,130 @@ features:
   - name: Network Traversal
     type: Counter System
     description: |
-      Navigating through the flooded tunnels requires persistence and careful progress. Start a counter at 0. Each time PCs make progress through the network (successful navigation attempts, solving water puzzles, or finding shortcuts), increment the counter by 1. When the counter reaches 4, the PCs successfully traverse the entire network and emerge at their destination. @todo add the aproaches to solve this here
+      Navigating through the flooded tunnels requires persistence and careful progress. Start a counter at 0. When the counter reaches 4, the PCs successfully traverse the entire network and emerge at their destination.
+
+      Structure: For each section, roll a d6 to determine the available route, then resolve it. After each successful advancement (reaching 1, 2, or 3), roll a d10 for Sanctuary Discovery before the next section.
+
+      Section → Route (d6) → advance counter → Discovery (d10) → repeat until counter reaches 4 → EXIT
     questions: |
       Which routes through the tunnels are safest? How do water levels affect available passages? What landmarks help navigate in the dark waters?
-  - name: Underground Lake Crossing
+
+  - name: Route Selection
     type: Passive
     description: |
-      Dark bodies of water block key passages throughout the network. When PCs encounter a lake crossing, they must choose their approach: swim directly (Strength roll), find a way around (Instinct roll), or use the machinery. Success advances the traversal counter, while failure may trigger other features or require alternate routes.
+      Roll a d6 to determine what route is available for each section:
+
+      1: Machinery Ride
+      2-4: Lake Crossing
+      5-6: Submerged Passage
     questions: |
-      How deep are these underground lakes? What dangers lurk beneath the dark waters? Are there hidden stepping stones or platforms?
+      Why do the available routes shift? Is it the water levels, collapsed passages, or something else?
+
+  - name: Machinery Ride
+    type: Passive
+    description: |
+      Ancient brass gondolas and chain-linked platforms grind to life, carrying travelers through flooded channels. A rare gift from the machinery's builders.
+
+      Automatic +1 counter (no roll needed, no risk).
+    questions: |
+      Who built these gondolas, and what cargo were they designed to carry?
+
+  - name: Lake Crossing
+    type: Action
+    description: |
+      Dark bodies of water block the passage. The party must cross together.
+
+      Group roll — One PC leads, others assist. Choose approach:
+      - Swim directly: Strength (Difficulty 14)
+      - Find a way around: Instinct (Difficulty 14)
+
+      Success: +1 counter.
+      Failure: No progress. Half the party (rounded up) marks 1 Stress. The leader chooses who.
+    questions: |
+      How deep are these underground lakes? What dangers lurk beneath the dark waters?
+
+  - name: Submerged Passage
+    type: Action
+    description: |
+      The tunnel ahead is completely flooded—no air pockets, no way around. Commit or retreat.
+
+      Push through: Mark 1 Stress → automatic +1 counter.
+      Turn back: Lose 1 counter (minimum 0).
+    questions: |
+      How long can a traveler hold their breath through these passages? What do they glimpse in the darkness as they swim?
+
+  - name: Sanctuary Discovery
+    type: Passive
+    description: |
+      After each successful counter advancement (at 1, 2, and 3), roll a d10 to see what you discover before the next section:
+
+      1-2: Ancient Water Wheel Control
+      3-6: Nothing—only dark water and distant echoes
+      7-10: Glowing Sanctuary
+    questions: |
+      What signs hint that a sanctuary or control room lies nearby?
+
+  - name: Glowing Sanctuary
+    type: Passive
+    description: |
+      A chamber marked with luminescent paint—safety markings left by the tunnel's original builders. These were rest stops for workers navigating the hydraulic system, now long abandoned. Rough plans etched into the walls show the tunnel layout ahead.
+
+      Benefits:
+      - Rough Plans: On your next traversal section, you may reroll the d6 route selection (keep either result).
+      - Hope: Half the party (rounded up) gains 1 Hope. The party decides who receives it.
+    questions: |
+      What symbols mark these sanctuaries—guild signs, religious icons, or something more practical? Who carved these plans into the walls, and did they ever make it out?
+
   - name: Ancient Water Wheel Control
     type: Action
     description: |
-      Massive brass and iron machinery can be operated to change water levels and open new passages. When PCs attempt to use the water wheel, make a Lore roll. On a success, advance the traversal counter and choose to either drain a flooded passage or raise water to access higher tunnels. On a failure, trigger the Hydraulic Surge feature.
+      Massive brass and iron machinery—a control station for the hydraulic network. Two primary functions remain operational.
+
+      Drain Passage (Action):
+      Manipulate the wheels to drain a flooded section ahead.
+      Make a Knowledge roll (Difficulty 14).
+      - Success: +1 to traversal counter.
+      - Failure: No effect.
+      - Failure with Fear: Trigger Hydraulic Surge.
+
+      Open Surface Gate (Action - Permanent):
+      Override the one-way current that traps travelers underground.
+      Make a Knowledge roll (Difficulty 14).
+      - Success: Permanently disable the surge barrier—the Flooded Network now allows two-way travel to connected Cave Mouth locations.
+      - Failure: No effect, may try again.
+      - Failure with Fear: Trigger Hydraulic Surge.
     questions: |
-      What was this machinery originally designed to accomplish? How do different wheel positions affect the water flow? What happens if multiple wheels are operated simultaneously?
+      What civilization built this sophisticated system, and why did they abandon it? How do different wheel positions affect the water flow?
+
+  - name: The One-Way Trap
+    type: Passive
+    description: |
+      The Flooded Network pulls travelers down but won't let them back up.
+
+      Default State:
+      - Players entering via a Cave Mouth location who "take the waters" are swept down by Hydraulic Surge (automatic, no save).
+      - Travel UP from underground to surface is impossible until the Water Wheel Control's Open Surface Gate succeeds.
+      - Once opened, the route is permanently unlocked for this campaign.
+    questions: |
+      Was this one-way design intentional—meant to trap intruders, or simply to manage water flow? How many travelers have been trapped here before?
+
   - name: Hydraulic Surge
     type: Reaction
     description: |
-      When the ancient machinery malfunctions or PCs fail to navigate properly, water pressure builds dangerously. All PCs must succeed on a Strength Reaction Roll or be swept backwards (lose 1 from traversal counter, minimum 0) and mark 1 Stress from the turbulent waters. The surge also attracts aquatic predators to investigate the disturbance.
+      Water pressure builds dangerously as the ancient machinery malfunctions or currents shift violently.
+
+      Trigger: GM spends 2 Fear, OR triggered by Failure with Fear on Water Wheel Control, OR automatic when entering via Cave Mouth.
+
+      Effect:
+      - All PCs mark 1 Stress.
+      - Lose 1 from traversal counter (minimum 0).
     questions: |
-      What causes the water pressure to build so dramatically? How quickly does the surge travel through the tunnels? Are there safe alcoves to shelter during surges?
+      What causes the water pressure to build so dramatically? What lies in the direction the surge pushes you?
+
 featureQuestions:
   - What ancient civilization engineered this sophisticated underground water system?
-  - How do the water wheels connect to create a network-wide hydraulic system?
-  - What shortcuts or secret routes might experienced tunnel navigators know?
+  - Why was the one-way trap built—defense against invaders, or something more sinister?
+  - What happened to the workers who painted the sanctuary chambers and carved the rough plans?
   - Could mastering this system provide access to other underground locations?
+  - What secrets lie in the deepest chambers, where no sanctuary lights have ever reached?
+  - If the Sacred Flame's light reached these tunnels, would the machinery respond differently?
