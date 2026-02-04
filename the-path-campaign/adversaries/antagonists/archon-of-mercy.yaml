@@ -1,0 +1,73 @@
+name: The Archon of Mercy
+tier: 2
+category: Bruiser
+description: |
+  A gaunt figure in a red embroidered cloak, his blue skin stretched over
+  elongated fingers and pointed ears—self-inflicted modifications from years
+  of hemomantic experimentation. He moves with clinical precision, observing
+  everything as data to be catalogued.
+motives: Perfect his work, acquire knowledge, reclaim Aerion, avoid unnecessary combat
+difficulty: 15
+thresholds:
+  major: 3
+  severe: 6
+hp: 6
+stress: 4
+attack:
+  bonus: '+5'
+  name: Sanguine Strike
+  range: Very Close
+  damage: 2d8+4 phy
+experience:
+  - name: Hemomancy
+    value: 4
+  - name: Alchemy
+    value: 3
+  - name: Medicine
+    value: 3
+features:
+  - name: Relentless (2)
+    type: Passive
+    description: |
+      The Archon can be spotlighted up to 2 times per GM turn. Spend Fear
+      as usual to spotlight him.
+
+  - name: Blood Puppet
+    type: Action
+    cost: Spend 2 Fear
+    description: |
+      Make an attack (+5) against a creature (living or dead) within Far range.
+      On success, take control of the target—cause them to move to a location
+      within Close range of their position and/or make one attack against a
+      target within Melee range of them. The Archon makes the attack roll using
+      his bonus (+5), dealing the puppet's normal damage.
+
+  - name: Vitality Manipulation
+    type: Action
+    cost: Mark a Stress
+    description: |
+      Target a creature within Very Close range. Choose one effect:
+      • Drain: The target marks 2 Stress.
+      • Restore: An ally within Very Close range clears 2 Stress.
+
+  - name: Crimson Mending
+    type: Reaction
+    uses: 1
+    description: |
+      When the Archon or an ally within Close range would mark their last
+      Hit Point, the Archon clears 2 HP on that target instead.
+
+  - name: Smoke Vials
+    type: Action
+    uses: 1
+    description: |
+      The Archon throws alchemical vials that shatter and release obscuring
+      vapor. He cannot be targeted by ranged attacks until he makes an attack
+      or moves to Very Close range of a PC.
+
+lore: |
+  Once a legendary war healer who saved countless lives, the Archon turned to
+  hemomancy when conventional methods failed. Shunned for using the blood and
+  bodies of the fallen to save the living, he accepted the mocking title they
+  gave him. Now he seeks the Starfall Kingdom's crystalline plague—another
+  tool to perfect mortality itself.
