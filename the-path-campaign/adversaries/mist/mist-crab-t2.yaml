@@ -3,7 +3,7 @@ tier: 2
 category: Bruiser
 description: A massive crustacean that has emerged from the depths of the mist, its shell covered in hardened crystalline formations of frozen otherworldly fog. Its oversized claws click and scrape as it prowls for warm-blooded prey to crush and drag into the darkness.
 motives: Grab and crush prey, use shell for protection, serve as mobile platform for other mist creatures
-difficulty: 15
+difficulty: 14
 thresholds:
   major: 12
   severe: 24
@@ -21,7 +21,7 @@ features:
   - name: Crystallized Shell
     type: Reaction
     uses: 4
-    description: When the Mist Crab takes damage, reduce the number of Hit Points the Mist Crab should mark as the result of incoming damage by one. While this ability has no remaining uses, the Mist Crab is Vulnerable.
+    description: When the Mist Crab takes damage, reduce the number of Hit Points the Mist Crab should mark as the result of incoming damage by one. While this ability has no remaining uses, the Mist Crab is Vulnerable. The crab can use this ability 3 times.
   - name: Pincer Grasp
     type: Passive
     description: When the Mist Crab makes a successful attack against a PC, that target becomes Restrained by the crab's crushing claws in addition to taking damage. The crab can hold up to 2 creatures this way. A Restrained creature can use an action to make an Agility or Finesse roll against the crab's difficulty to escape. If the crab takes Severe damage, all grabbed creatures are immediately freed.
