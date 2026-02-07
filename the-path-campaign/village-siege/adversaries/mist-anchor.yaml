@@ -1,0 +1,42 @@
+name: Mist Anchor
+tier: 2
+category: Solo
+
+description: |
+  A pulsing mass of coral-void growth, planted by the Mist Tortoise to spread corruption into protected areas. The anchor breathes with the rhythm of the mist organism, tendrils of fog seeping from its form and spreading across the battlefield. Prayer inscriptions from long-dead divers can still be seen etched into its coral surface.
+
+motives: |
+  Spread mist corruption to adjacent zones, generate Fear for the GM, and enable enemy advancement into protected areas. Static objective - does not move or attack.
+
+difficulty: 8
+
+thresholds:
+  major: 12
+  severe: 24
+
+hp: 8
+stress: 4
+
+features:
+  - name: Mist Emanation
+    type: Passive
+    description: |
+      The anchor spreads mist to its zone and all adjacent zones. These zones become Mist-Touched while the anchor is active.
+
+  - name: Corrupting Presence
+    type: Action
+    description: |
+      When the anchor activates, it distributes 2 Mist tokens among players in its zone (GM's choice how to distribute).
+
+  - name: Fear Generation
+    type: Passive
+    description: |
+      At the start of the GM Siege activation, the GM gains +1 Fear while this anchor is active.
+
+  - name: On Destruction
+    type: Passive
+    description: |
+      Zones that became Mist-Touched from this anchor and are not Mist-Touched through another source are no longer Mist-Touched. Enemies in no longer Mist-Touched zones are destroyed.
+
+lore: |
+  Mist Anchors are extensions of the living mist organism, deployed by siege engines to breach the Sacred Flame's protective barrier. Each anchor is grown from the void-coral that encrusts the Mist Born, carrying fragments of consumed souls within its structure. Destroying an anchor doesn't just remove the mist - it severs a tendril of the organism itself, causing all creatures sustained by that connection to collapse.
