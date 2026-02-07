@@ -1,0 +1,88 @@
+title: NPC Defenders
+description: Village NPCs that can be deployed to counter enemy threats during a siege.
+
+deployment:
+  howToDeploy:
+    - Choose an NPC from the roster
+    - Choose a zone within their allowed range where enemies are present
+    - Pay the Hope cost collectively as a party
+    - "Resolve: The NPC neutralizes enemies with total BP equal to or less than their Battle Power"
+  timing: NPCs can be deployed during the Player Phase. Deployment is instant.
+  resolution: |
+    When deployed, the NPC clears enemies up to their Battle Power value from that zone.
+    Excess enemy BP remains.
+  example: |
+    Brenner (4 BP) deployed against 1 Leader (3 BP) + 1 Support (1 BP) = 4 BP total.
+    Brenner neutralizes all enemies.
+
+npcs:
+  - name: Donatello
+    battlePower: 5
+    startingHopeCost: 2
+    hopeIncrease: 1
+    zonePlacement:
+      - Mist Wall
+      - Outer
+      - Inner
+    specialRules:
+      - name: Veteran Efficiency
+        description: Hope cost never exceeds 4
+    description: |
+      The village's most experienced fighter. Can venture into the deepest mist
+      and still operates effectively even under desperate conditions.
+
+  - name: Brenner
+    battlePower: 4
+    startingHopeCost: 1
+    hopeIncrease: 2
+    zonePlacement:
+      - Inner
+    specialRules:
+      - name: Rallying Presence
+        description: NPCs deployed with him get +2 BP
+    description: |
+      A capable defender who holds the inner line. Gets exhausted quickly when
+      fighting on the frontlines, but inspires others around him.
+
+  - name: The 7 Gnomes
+    battlePower: 3
+    startingHopeCost: 2
+    hopeIncrease: 1
+    zonePlacement:
+      - Outer
+      - Inner
+    specialRules: []
+    description: |
+      A coordinated unit that fights as one. Straightforward and reliable.
+
+  - name: Nix
+    battlePower: 2
+    startingHopeCost: 3
+    hopeIncrease: 0
+    zonePlacement:
+      - Inner
+    specialRules: []
+    description: |
+      A diva, but efficient at what she does. Expensive to deploy but consistent.
+
+  - name: Villager Militia A
+    battlePower: 2
+    startingHopeCost: 1
+    hopeIncrease: 2
+    zonePlacement:
+      - Outer
+      - Inner
+    specialRules: []
+    description: Armed villagers willing to defend their home.
+
+  - name: Villager Militia B
+    battlePower: 2
+    startingHopeCost: 1
+    hopeIncrease: 2
+    zonePlacement:
+      - Outer
+      - Inner
+    specialRules: []
+    description: Armed villagers willing to defend their home.
+
+totalDefenderBP: 18
