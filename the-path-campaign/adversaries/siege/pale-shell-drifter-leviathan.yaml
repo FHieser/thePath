@@ -1,0 +1,221 @@
+name: Pale Shell Drifter Leviathan
+tier: 2
+category: Colossus
+
+description: |
+  A colossal sea turtle that drifts through the mist as though swimming through an otherworldly ocean. Its pale shell rises like a temple from the fog, encrusted with barnacles and trailing chains that scrape across the ground below. Prayer inscriptions from long-dead sailors cover its weathered surface. Mist seeps from vents along its flanks, and atop its shell, a shrine-like structure houses the corrupted navigators who guide this living siege engine toward sources of sacred flame.
+
+motives: |
+  Advance toward the Village Center, deploy Mist Anchors to spread corruption, protect its vital segments, overwhelm defenders with mist.
+
+size: 100 ft. tall, 180 ft. long
+
+segments:
+  - Head
+  - Torso
+  - Shell Temple
+  - Pilot Shrine
+  - Mist Vents
+
+thresholds: 16/25
+stress: 6
+
+experience:
+  - name: Drifter
+    value: 2
+  - name: Unstoppable
+    value: 2
+
+adjacency:
+  Head:
+    - Torso
+    - Pilot Shrine (one-way from Shrine via Mist Harness)
+  Torso:
+    - Head
+    - Shell Temple
+    - Mist Vents
+    - Pilot Shrine
+  Shell Temple:
+    - Torso
+    - Mist Vents
+  Mist Vents:
+    - Torso
+    - Shell Temple
+    - Pilot Shrine
+  Pilot Shrine:
+    - Torso
+    - Mist Vents
+    - Head (one-way to Head via Mist Harness)
+
+features:
+  - name: Fear Generation
+    type: Passive
+    description: |
+      At the start of GM Siege activation, gain +2 Fear while the Pale Shell Drifter Leviathan is active.
+
+  - name: Colossal Power
+    type: Reaction
+    description: |
+      When the Pale Shell Drifter Leviathan fails an attack, you gain a Fear.
+
+  - name: Mist Shell
+    type: Passive
+    description: |
+      Upper segments (Shell Temple, Mist Vents, Pilot Shrine) cannot be targeted by attacks from the ground. Creatures must climb onto the Leviathan to attack these segments.
+
+---
+
+name: Head
+segment_of: Pale Shell Drifter Leviathan
+adjacent_segments:
+  - Torso
+  - Pilot Shrine (one-way from Shrine)
+
+difficulty: 15
+hp: 4
+
+features:
+  - name: Fatal
+    type: Passive
+    description: |
+      When this segment is Destroyed, the Pale Shell Drifter Leviathan is defeated.
+
+  - name: Mist Harness Control
+    type: Passive
+    description: |
+      While the Pilot Shrine is active, this segment's Difficulty is increased by 5 (Difficulty 20).
+
+  - name: Gaping Maw
+    type: Action
+    description: |
+      Make a standard attack against a target within Melee range.
+attack:
+  bonus: '+0'
+  name: Gaping Maw
+  range: Melee
+  damage: 2d20+6 phy
+
+---
+
+name: Torso
+segment_of: Pale Shell Drifter Leviathan
+adjacent_segments:
+  - Head
+  - Shell Temple
+  - Mist Vents
+  - Pilot Shrine
+
+difficulty: 15
+hp: 8
+
+features:
+  - name: Fatal
+    type: Passive
+    description: |
+      When this segment is Destroyed, the Pale Shell Drifter Leviathan is defeated.
+
+  - name: Hanging Chains
+    type: Passive
+    description: |
+      The Torso is the only segment that can be climbed from the ground.
+
+  - name: Sweeping
+    type: Action
+    description: |
+      Make a standard attack against all targets on the ground within Close range of the Pale Shell Drifter Leviathan.
+attack:
+  bonus: '+3'
+  name: Sweeping
+  range: Close
+  damage: 2d8+4 phy
+
+  - name: Barnacled Hide
+    type: Reaction
+    uses: 4
+    description: |
+      When this segment takes damage, reduce the HP marked by 1. While this ability has no remaining uses, the Torso is Vulnerable.
+
+---
+
+name: Shell Temple
+segment_of: Pale Shell Drifter Leviathan
+adjacent_segments:
+  - Torso
+  - Mist Vents
+
+difficulty: 14
+hp: 4
+
+features:
+  - name: Anchor Deployment
+    type: Siege Activation
+    description: |
+      When the Pale Shell Drifter Leviathan activates, deploy a Mist Anchor to its current zone.
+
+  - name: Skeleton Crew
+    type: Action
+    description: |
+      Make up to 3 attacks (+1, 1d8+3 phy each) against targets on any segment of the Pale Shell Drifter Leviathan. Failed attacks from Skeleton Crew do not trigger Colossal Power.
+
+---
+
+name: Pilot Shrine
+segment_of: Pale Shell Drifter Leviathan
+adjacent_segments:
+  - Torso
+  - Mist Vents
+  - Head (one-way to Head)
+
+difficulty: 14
+hp: 3
+
+attack:
+  bonus: '+4'
+  name: Corrupted Beacon
+  range: Far
+  damage: 2d10+4 mag
+
+features:
+  - name: Command Bridge
+    type: Siege Activation
+    description: |
+      While this segment is active, the Pale Shell Drifter Leviathan advances 1 zone toward the Village Center at the end of each GM phase.
+
+  - name: Mist Harness
+    type: Passive
+    description: |
+      A creature on this segment can move to the Head without making an action roll.
+
+---
+
+name: Mist Vents
+segment_of: Pale Shell Drifter Leviathan
+adjacent_segments:
+  - Torso
+  - Shell Temple
+  - Pilot Shrine
+
+difficulty: 14
+hp: 3
+
+features:
+  - name: Mist Aura
+    type: Passive
+    description: |
+      As long as this segment is not Destroyed, the Pale Shell Drifter Leviathan treats all zones as Mist-Touched for the purpose of its own existence.
+
+  - name: Regeneration
+    type: Action
+    description: |
+      One segment that is not Destroyed clears 1 HP.
+
+  - name: Mist Breath
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      Distribute 2 Mist tokens among targets on any segment of the Pale Shell Drifter Leviathan.
+
+---
+
+lore: |
+  The Pale Shell Drifter Leviathan is the Mist Born's ultimate siege weapon - a living cathedral of corruption that drifts inexorably toward sources of sacred flame. Once a great sea turtle that swam the primordial waters before the mist consumed the world, it was claimed and transformed into a mobile temple. The corrupted navigators in the Pilot Shrine guide it through the fog, while crew members defend its shell and vents continuously birth new mist to spread across the land. When a village's Sacred Flame flares in desperation, the Leviathan answers, deploying anchors that extend the mist's reach into protected zones. To defeat it, defenders must either scale its chains to destroy its head or batter through the barnacled hide of its torso - all while enduring the relentless assault of its crew and the choking corruption of its breath.
