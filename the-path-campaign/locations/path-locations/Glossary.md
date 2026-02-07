@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 30** (18 Surface + 10 Underground + 2 Special)
+**Total Locations: 31** (19 Surface + 10 Underground + 2 Special)
 
 ---
 
-## Surface Locations (18 locations)
+## Surface Locations (19 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -14,6 +14,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Barnacle Gardens](./surface-locations/barnacle-gardens.md)         | Corrupted area covered in mist-breathing barnacles          |
 | ☑        | ☑     | [Blood Fern Valley](./surface-locations/blood-fern-valley.md)       | Verdant valley filled with unusual crimson vegetation       |
 | ☑        | ☑     | [Burnt Clearing](./surface-locations/burnt-clearing.md)             | Scorched clearing recovering from past devastation          |
+| ☑        | ☑     | [Devil's Rock](./surface-locations/devils-rock.md)                  | Precipice over the mist where devil's bargains are struck   |
 | ☑        | ☑     | [Forest Refuge](./surface-locations/forest-refuge.md)               | Safe haven deep within the forest                           |
 | ☑        | ☑     | [Hanging Gardens](./surface-locations/hanging-gardens.md)           | Suspended botanical sanctuary                               |
 | ☑        | ☑     | [Highland Watch](./surface-locations/highland-watch.md)             | Elevated vantage point with panoramic views                 |
@@ -62,9 +63,9 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 31** | **Unassigned: 47** (60.3% remaining)
+**Assigned: 32** | **Unassigned: 46** (59.0% remaining)
 
-### Major Arcana (10 of 22 assigned)
+### Major Arcana (11 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -83,7 +84,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | XII The Hanged Man    |                      |
 | XIII Death            | Vanishing Mist       |
 | XIV Temperance        |                      |
-| XV The Devil          |                      |
+| XV The Devil          | Devil's Rock         |
 | XVI The Tower         |                      |
 | XVII The Star         | Silken Spire         |
 | XVIII The Moon        | Sacred Mountain Pass |
