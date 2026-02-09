@@ -74,6 +74,12 @@ adjacent_segments:
 difficulty: 15
 hp: 4
 
+attack:
+  bonus: '+0'
+  name: Gaping Maw
+  range: Melee
+  damage: 2d20+6 phy
+
 features:
   - name: Fatal
     type: Passive
@@ -89,11 +95,6 @@ features:
     type: Action
     description: |
       Make a standard attack against a target within Melee range.
-attack:
-  bonus: '+0'
-  name: Gaping Maw
-  range: Melee
-  damage: 2d20+6 phy
 
 ---
 
@@ -107,6 +108,12 @@ adjacent_segments:
 
 difficulty: 15
 hp: 8
+
+attack:
+  bonus: '+3'
+  name: Sweeping
+  range: Close
+  damage: 2d8+4 phy
 
 features:
   - name: Fatal
@@ -123,11 +130,6 @@ features:
     type: Action
     description: |
       Make a standard attack against all targets on the ground within Close range of the Pale Shell Drifter Leviathan.
-attack:
-  bonus: '+3'
-  name: Sweeping
-  range: Close
-  damage: 2d8+4 phy
 
   - name: Barnacled Hide
     type: Reaction
