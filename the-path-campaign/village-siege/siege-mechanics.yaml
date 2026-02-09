@@ -1,0 +1,137 @@
+title: Village Siege Mechanics
+version: 1
+description: A framework for running siege encounters on the Village in the Mist.
+
+siegeTrigger:
+  description: |
+    The siege begins when the GM's Fear reaches a threshold (recommended: 10+ Fear). The Sacred Flame flares - a desperate pulse of divine energy that draws the mist's attention. The Mist Born respond with overwhelming force.
+
+zoneLayout:
+  description: The battlefield consists of three concentric rings surrounding the Village Center.
+  zones:
+    - name: Mist Wall Ring
+      position: Outermost
+      count: 4
+      directions: North, East, South, West
+      description: At the edge of the Sacred Flame's influence, deep in the mist. This is where siege engines stage and reinforcements spawn.
+      mistStatus: Always Mist-Touched
+
+    - name: Outer Ring
+      position: Middle
+      count: 4
+      directions: North, East, South, West
+      description: The first defensive perimeter.
+      mistStatus: Protected by the Sacred Flame unless an anchor is present
+
+    - name: Inner Ring
+      position: Innermost
+      count: 4
+      directions: North, East, South, West
+      description: The last line of defense before the village proper.
+      mistStatus: Protected by the Sacred Flame unless an anchor is present
+
+    - name: Village Center
+      position: Center
+      count: 1
+      description: The Sacred Flame and village infrastructure. Not a positioning zone for NPCs.
+      onEnemyReach: Each round, the Sacred Flame loses 1 Flame Essence and all PCs gain 1 Mist token. If all Essence is lost, the village falls.
+
+  connections:
+    - Each Mist Wall zone connects to its corresponding Outer zone
+    - Each Outer zone connects to its corresponding Inner zone
+    - Each ring's zones connect to adjacent zones in that ring (North - East - South - West)
+    - All Inner zones connect to Village Center
+    - Enemies must move through zones sequentially
+
+turnStructure:
+  description: Each round consists of two phases.
+  phases:
+    - name: GM Phase
+      order: 1
+      description: All enemies activate one at a time. Each enemy gets 1 action (usually move 1 zone).
+    - name: Player Phase
+      order: 2
+      description: All players act.
+  combatEngagement: If enemies share a zone with NPCs or players, they MUST use their activation to fight. They cannot move past defenders.
+
+startingForces:
+  description: The enemy budget is calculated based on party size.
+  formula: 9 x (number of PCs) + 6
+  examples:
+    - partySize: 2
+      totalBP: 24
+    - partySize: 3
+      totalBP: 33
+    - partySize: 4
+      totalBP: 42
+    - partySize: 5
+      totalBP: 51
+  siegeEngineCost: 10
+  siegeEngineNote: The GM distributes remaining BP as enemies across Mist-Touched zones.
+  placementConstraint: |
+    Enemies can ONLY exist in Mist-Touched zones:
+    - Mist Wall Ring: Always Mist-Touched
+    - Outer Ring: Only Mist-Touched if anchor present or Mist Thrower uses "Spread the Mist"
+    - Inner Ring: Only Mist-Touched if anchor present or Mist Thrower uses "Spread the Mist"
+
+fearEconomy:
+  generation:
+    description: Fear generated at the start of each round.
+    sources:
+      - name: Active Mist Anchor
+        fear: 1
+      - name: Active Siege Engine
+        fear: 2
+  spending:
+    description: Spend Fear to summon reinforcements. Reinforcements spawn in Mist Wall Ring only.
+    table:
+      - fearSpent: 2
+        bpGained: 2
+      - fearSpent: 3
+        bpGained: 4
+      - fearSpent: 4
+        bpGained: 6
+      - fearSpent: 5
+        bpGained: 9
+      - fearSpent: 6
+        bpGained: 12
+      - fearSpent: 7
+        bpGained: 15
+      - fearSpent: 8
+        bpGained: 20
+  endCondition: The siege ends when the GM has 0 Fear AND no active anchors AND no active siege engines.
+
+siegePhases:
+  - name: "Phase 1: Preparation"
+    trigger: Siege announced
+    ends: First enemy activation
+    description: Players position themselves and NPCs. NPC deployment is instant within their allowed zones.
+
+  - name: "Phase 2: Open Fields"
+    trigger: First enemy activation
+    ends: Siege Engine reaches Inner Ring
+    description: Combat in Mist Wall and Outer rings. Siege engine advances, deploys anchors.
+
+  - name: "Phase 3: Inner Siege"
+    trigger: Siege Engine reaches Inner Ring
+    ends: Victory or defeat
+    description: Desperate defense of the inner perimeter and Village Center.
+
+victoryConditions:
+  - name: Total Defense
+    requirements:
+      - Destroy all Mist Anchors
+      - Destroy all Siege Engines
+      - GM Fear reaches 0 with no generation remaining
+  - name: Tactical Retreat
+    requirements:
+      - Evacuate key NPCs and Sacred Flame essence
+      - Accept village may be lost
+
+lossConditions:
+  - name: Village Falls
+    trigger: Sacred Flame loses all Essence
+    effects:
+      - Protective barrier collapses
+      - All PCs gain 3 Mist tokens
+      - Village becomes Mist-Touched ruin
