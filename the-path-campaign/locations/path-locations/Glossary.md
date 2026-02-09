@@ -14,7 +14,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Barnacle Gardens](./surface-locations/barnacle-gardens.md)         | Corrupted area covered in mist-breathing barnacles          |
 | ☑        | ☑     | [Blood Fern Valley](./surface-locations/blood-fern-valley.md)       | Verdant valley filled with unusual crimson vegetation       |
 | ☑        | ☑     | [Burnt Clearing](./surface-locations/burnt-clearing.md)             | Scorched clearing recovering from past devastation          |
-| ☑        | ☑     | [Devil's Rock](./surface-locations/devils-rock.md)                  | Precipice over the mist where devil's bargains are struck   |
+| ☑        | ☑     | [Devil's Rock](./surface-locations/devils-rock.yaml)                | Precipice over the mist where devil's bargains are struck   |
 | ☑        | ☑     | [Forest Refuge](./surface-locations/forest-refuge.md)               | Safe haven deep within the forest                           |
 | ☑        | ☑     | [Hanging Gardens](./surface-locations/hanging-gardens.md)           | Suspended botanical sanctuary                               |
 | ☑        | ☑     | [Highland Watch](./surface-locations/highland-watch.md)             | Elevated vantage point with panoramic views                 |
