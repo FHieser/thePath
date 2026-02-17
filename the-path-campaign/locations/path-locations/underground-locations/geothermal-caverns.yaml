@@ -20,7 +20,7 @@ features:
   - name: Lava Tube Navigation
     type: Passive
     description: |
-      Ancient molten rock carved smooth tunnels throughout the caverns. These passages provide relatively safe travel but still radiate intense heat. When PCs traverse lava tubes, they must make Strength rolls to endure the heat. Success advances the heat endurance counter. Failure causes 1 Stress from heat exhaustion but doesn't prevent progress.
+      Ancient molten rock carved smooth tunnels throughout the caverns. These passages provide relatively safe travel but still radiate intense heat. When PCs traverse lava tubes, they must make Strength reaction rolls to endure the heat. Success advances the heat endurance counter. Failure causes 1 Stress from heat exhaustion but doesn't prevent progress.
     questions: |
       How were these tubes originally formed? Do any still show signs of recent lava flow? What valuable minerals might be embedded in the cooled rock walls?
   - name: Heat Engine Operation
