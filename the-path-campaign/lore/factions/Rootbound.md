@@ -80,6 +80,10 @@ The Rootbound are highly individualistic - every sanctuary and guardian is diffe
 - "I once saw one of those step between the trees and disappear. Not into the mist - just gone. Like the forest swallowed them."
 - "They say the natural sanctuaries are alive somehow. The Rootbound don't protect them - they ARE them."
 
+## Item Identity
+- **Theme:** Organic, grown or gathered items tied to natural sanctuaries. Effects tend toward **Restoration** and **Utility** - healing, sensing, navigating, and connecting to the natural world. Items feel living - wrapped in moss, carved from old wood, infused with sap. Each one is unique, reflecting the individual Rootbound who made it. They may respond to natural environments and go dormant in corrupted or artificial ones.
+- **Typical Cost:** Narrative costs - the item demands something in return for nature (plant a seed, leave an offering, spend time tending a sanctuary). Some may require being in a natural sanctuary to recharge.
+
 ## Plot Hooks
 - **The Mushroom Network Breaks**: Players discover mushroom circle teleportation between natural sanctuaries is failing. Rootbound are appearing confused in wrong locations, or not arriving at all. Something is severing their network - deliberate sabotage or natural decay?
 - **Recruitment Offer**: A dying Rootbound approaches the party. Their sanctuary will lose protection when they pass. They offer to teach one PC how to become the new guardian - but it means staying there, potentially forever. Who chooses? What do they sacrifice?

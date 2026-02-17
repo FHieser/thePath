@@ -100,6 +100,10 @@
 - "They say the mist makes its own soldiers. People who get lost become... something else. Part of it."
 - "Don't look into the deep waters beneath the mist. There are shapes down there. Big ones. They've been watching since before we were born."
 
+## Item Identity
+- **Theme:** Void-touched artifacts grown from the living mist-organism or salvaged from the depths. Effects tend toward **Disruption** and **Enhancement** - corrupting enemies or pushing the bearer beyond mortal limits through fusion with the void. Items feel alien and unsettling - cold, slightly damp, sometimes pulsing. Made of coral-void composite, deep-sea bone, or crystallized mist. They may require the bearer to accept a degree of corruption to use them.
+- **Typical Cost:** Gain Mist tokens. The mist gives, but it also claims. Using Mist Born items accelerates the user's fusion with the void - powerful but with an escalating personal price.
+
 ## Plot Hooks
 - **Monk to the Surface**: One of the First Disciples rises from the depths seeking something on the surface. They are not hostile to players and invite them to help. What does a disciple of the Ancient Guardians need from the world above?
 - **The Village Gets Attacked**: Movement in the mist. The Broken attack a flame sanctuary in numbers never seen before. What provoked this sudden aggression?

@@ -80,6 +80,10 @@
 ### Underground
 **Deep Dwellers**: [Relationship - Allied/Neutral/Hostile + brief description]
 
+## Item Identity
+- **Theme:** Precision-engineered devices built from brass, gears, and crystalline lenses. Effects tend toward **Utility** and **Protection** - measuring, analyzing, revealing hidden information, or shielding the bearer through mechanical means. Items feel clinical and exact - they click, whir, and calibrate. They work reliably regardless of mist or flame, but require maintenance and can break down.
+- **Typical Cost:** Mechanical degradation - items have limited uses before needing repair or recalibration. Alternatively, they may require specific components or materials to fuel.
+
 ## Rumors
 - [Rumor 1 - something people say about this faction]
 - [Rumor 2 - might be true, might be false]

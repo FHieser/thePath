@@ -96,6 +96,10 @@
 - "I heard a scholar tried to follow one of their carriers for weeks. When he returned, he couldn't speak our language anymore - only strange words that made the air shimmer."
 - "There's a flame sanctuary near the Highland Watch that's been burning for centuries. No one tends it. Maybe they abandoned it... or maybe they're watching from somewhere we can't see."
 
+## Item Identity
+- **Theme:** Ancient flame-forged artifacts that empower through proximity to Sacred Flame. Effects tend toward **Disruption** and **Protection** - burning back threats or shielding the bearer from corruption. Items feel archaic and alien - inscribed with symbols no mortal language can parse, warm to the touch, faintly glowing. They grow weaker or inert the further you get from flame.
+- **Typical Cost:** Requires proximity to Sacred Flame or consumes Flame Essence. Items may also generate Fear when used (the mist reacts to flame being weaponized).
+
 ## Plot Hooks
 - **Reignition Witness**: A flame sanctuary's brazier is extinguished by the mist. Days later, a Fire Born Paladin emerges from the mist itself to reignite it - the first Fire Born sighting in the region in living memory.
 - **The Walking City**: Traveling the Path, players witness a colossal temple-construct emerge from the mist - a city-sized carrier with towers and structures on its back, moving with impossible grace. It passes silently and vanishes back into the fog.

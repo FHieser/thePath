@@ -67,6 +67,10 @@
 
 **Brass Mechanicorum**: [Relationship - Allied/Neutral/Hostile + brief description]
 
+## Item Identity
+- **Theme:** [How do this faction's items reflect their identity? What effect categories do they favor? What do the items look, feel, and behave like?]
+- **Typical Cost:** [What is the faction-appropriate price of using their items?]
+
 ## Rumors
 - [Rumor 1 - something people say about this faction]
 - [Rumor 2 - might be true, might be false]
