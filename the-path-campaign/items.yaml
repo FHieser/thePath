@@ -1,0 +1,117 @@
+# The Path - Items
+# Sorted by type: General first, then faction items grouped by faction name
+
+# ============================================================
+# GENERAL ITEMS
+# ============================================================
+
+- name: Hope in a Bottle
+  type: General
+  usage: Consumable
+  flavor: "A small glass vial filled with warm golden light that sloshes like liquid sunshine."
+  effect:
+    category: Restoration
+    description: |
+      Drink the vial to gain 1 Hope. If you currently have no Hope, gain 2 Hope instead.
+
+- name: Circle Ash
+  type: General
+  usage: Consumable
+  flavor: "Fine grey ash that drifts against the wind when released near fey-touched ground."
+  effect:
+    category: Utility
+    description: |
+      Throw the ash into a Mushroom Circle. The particles swirl and drift toward the direction of linked Mushroom Circle locations, showing you which way to face before stepping in.
+
+- name: Archon's Reserves
+  type: General
+  usage: Reusable
+  flavor: "A dark glass vial etched with ancient channel-marks, always faintly warm to the touch."
+  effect:
+    category: Utility
+    description: |
+      Spend 1 HP at any time to fill the vial with your blood. The vial holds 1 HP of blood. Pour the filled vial at a location that requires a blood sacrifice to count as 1 HP of sacrifice. Multiple vials can be used together to meet higher sacrifice costs.
+
+- name: Deadnerve
+  type: General
+  usage: Consumable
+  flavor: "A bitter black paste that numbs the tongue and quiets the mind."
+  effect:
+    category: Restoration
+    description: |
+      Can only be consumed during an encounter. Clear 2 Stress.
+
+- name: Firepatch
+  type: General
+  usage: Consumable
+  flavor: "A rough bandage soaked in alchemical fire that sears wounds shut on contact."
+  effect:
+    category: Restoration
+    description: |
+      Can only be used during an encounter. Press it against an open wound to heal 2 HP. Mark 2 Stress - the burning is excruciating.
+
+- name: Rushpowder
+  type: General
+  usage: Consumable
+  flavor: "A pinch of sharp white powder that makes the air taste like lightning."
+  effect:
+    category: Enhancement
+    description: |
+      Can only be inhaled during an encounter. Gain advantage on all Agility rolls for the rest of the scene.
+
+# ============================================================
+# ROOTBOUND ITEMS
+# ============================================================
+
+- name: Dreaming Bark
+  type: Rootbound
+  usage: Consumable
+  flavor: "A strip of pale bark that tastes of soil and sleep. Chew it and the world behind your eyes opens."
+  effect:
+    category: Utility
+    description: |
+      Consume the bark to enter a brief trance. The GM reveals all face-down location cards adjacent to your current location on the Path grid. Mark 1 Stress for each card revealed - the visions come at a cost.
+
+- name: Lullroot
+  type: Rootbound
+  usage: Consumable
+  flavor: "A soft, fibrous root that smells of rain-soaked earth and quiet evenings."
+  effect:
+    category: Restoration
+    description: |
+      Can only be consumed during a rest. Clear 1 Stress and heal 1 HP.
+
+- name: Dewcleanse
+  type: Rootbound
+  usage: Consumable
+  flavor: "A pouch of dried herbs that blooms into fragrant tea when steeped in warm water. Quite some powerful stuff, but takes a while to get going. Tastes good too."
+  effect:
+    category: Restoration
+    description: |
+      Brew during a rest. Every player who is resting may drink and remove 2 Mist tokens. Preparing the tea takes time - it cannot be rushed or brewed during an encounter.
+
+# ============================================================
+# FIRE BORN ITEMS
+# ============================================================
+
+- name: Flashburn
+  type: Fire Born
+  usage: Consumable
+  flavor: "A compact torch that flares with blinding sacred light, pushing the shadows back - but they always return deeper."
+  effect:
+    category: Restoration
+    description: |
+      Light the Flashburn. Distribute 3 Hope among the players. The GM gains 2 Fear - the mist recoils from the flame but the shadows grow larger in answer.
+
+# ============================================================
+# BRASS MECHANICORUM ITEMS
+# ============================================================
+
+- name: Br4ss Filt3r
+  type: Brass Mechanicorum
+  usage: Reusable
+  flavor: "A small cylindrical device of polished brass and crystal mesh that hums faintly, drawing moisture from the air."
+  effect:
+    category: Protection
+    description: |
+      While carried, the Br4ss Filt3r absorbs Mist tokens before they reach you. It can absorb up to 3 Mist tokens total. Once full, it stops working and must be replaced or repaired by the Brass Mechanicorum.
