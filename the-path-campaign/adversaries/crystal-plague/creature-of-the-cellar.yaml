@@ -1,0 +1,66 @@
+name: Creature of the Cellar
+tier: 2
+category: Solo
+description: |
+  A towering gestalt of plague-era corpses stitched together by the Archon of Mercy and left to roam the Red Cellar. Torso-sized limbs drag across the stone floor, and fists as large as a grown halfling leave craters in the walls. It does not speak. It does not stop.
+motives: Absorb corpses, flail, hunger, terrify
+difficulty: 14
+thresholds:
+  major: 13
+  severe: 25
+hp: 14
+stress: 4
+attack:
+  bonus: '+5'
+  name: Too Many Arms
+  range: Very Close
+  damage: 2d12+4 phy
+experience:
+  - name: Intimidation
+    value: 3
+  - name: Tear Things Apart
+    value: 3
+features:
+  - name: Destructive
+    type: Passive
+    description: |
+      When the Hulk takes Major or greater damage, it marks an additional HP.
+
+  - name: Flailing Limbs
+    type: Passive
+    description: |
+      When the Hulk makes a standard attack, it can attack all targets within Very Close range.
+
+  - name: Tethered
+    type: Passive
+    description: |
+      The Hulk is bound to the blood-red crystal in the Laboratory. As long as the Tether remains intact, the Hulk cannot truly die.
+
+      - While in the Laboratory: Regenerate 2 HP at the start of each of its turns.
+      - All other sections: Regenerate 1 HP at the start of every other turn.
+
+      If the Tether is destroyed, regeneration stops permanently and the Hulk can be killed normally.
+
+  - name: Creature of the Cellar
+    type: Passive
+    description: |
+      The Hulk moves between sections freely and behaves differently depending on where it encounters the players.
+
+      - Storage: Hurls barrels and crates as weapons. Uses the environment destructively.
+      - Cages: Moves to block access to celled bodies. Protective, territorial.
+      - Garden: Absorbs fungal growth and organic matter. Grows larger, moves slower.
+      - Laboratory: Erratic and volatile. Knocking over vials coats its attacks in alchemical residue — attacks deal an additional 1d6 damage.
+
+  - name: Barrel Throw
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      Grab a barrel, crate, or heavy debris and hurl it at two targets within Close range of each other. Both targets take 2d8+3 physical damage.
+
+  - name: Canned Food
+    type: Action
+    description: |
+      When within Very Close range of a corpse, the Hulk tears it apart and absorbs the remains into its mass. Clear 2 HP and 2 Stress.
+
+lore: |
+  The Archon of Mercy stitched this creature together from plague-era dead found throughout the monastery above — field station patients, crystallized corpses, bodies he couldn't use for finer work. He left it in the Red Cellar as a side effect of the Tether experiment, animated and bound to the blood-red crystal above his workbench. It was never given a purpose. It simply remains.
