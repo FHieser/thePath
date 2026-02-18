@@ -1,0 +1,90 @@
+name: The Red Cellar
+tier: 2
+category: Exploration
+description: |
+  Beneath the monastery, aging vaults reek of iron instead of wine — someone has been working here recently, and not everything they made has stopped moving.
+impulses: |
+  Tempt with alchemical knowledge and useful equipment, confront with the Archon's twisted methods, trap those who linger too long with the experiment that still lives
+difficulty: 14
+modifiers:
+  - name: Underground
+  - name: Inhabited
+  - name: Linked
+    value: The Monastery
+potentialAdversaries: Creature of the Cellar (Tier 2 Solo)
+features:
+  - name: The Cellar is Huge
+    type: Passive
+    description: |
+      The Red Cellar sprawls beneath the entire monastery footprint. Players descend from the Cave Mouth directly into the Storage. From there the cellar branches — through the Garden or through the Cages — with both paths converging at the Laboratory at the far end. The Laboratory is always the last section reached.
+
+      Layout:
+        Storage (Entry) → Garden → Laboratory
+        Storage (Entry) → Cages → Laboratory
+    questions: |
+      What does the Archon's presence feel like in each section — clinical, hurried, obsessive? Does the cellar feel like it was built for this, or repurposed from something else?
+
+  - name: It Found Us
+    type: Counter System
+    description: |
+      The Hulk cannot see the players, but it hears them — the creak of old floorboards, the clink of glass, the echo of voices in the vaults. Track a counter starting at 0. When the counter reaches 8, the Hulk engages the players in whatever section they currently occupy.
+
+      Counter Triggers:
+      - Players move to a new section: +2
+      - Players disturb something: +1
+      - GM spends 2 Fear: +3
+    questions: |
+      Does the Hulk's behaviour change if it has fought and lost before? Does the counter reset after combat, or does it stay high so the Hulk finds them faster the second time?
+
+  - name: The Hidden Cache
+    type: Action
+    description: |
+      The Storage holds old winery barrels, crate stacks, and bottle racks. Tucked behind false barrel backs and under loose flagstones are supplies left from the winery's working days and the plague-era field station. Players can search and claim up to 3 items. For each item taken, the It Found Us counter increases by 1.
+
+      What do you find?
+    questions: |
+      Did the Archon leave in a hurry, or did he simply not need what was here?
+
+  - name: The Overgrowth
+    type: Passive
+    description: |
+      The Garden holds underground beds and trellises where the Archon cultivated reagent plants and fungi. Bioluminescent mushrooms cast green-blue light across cracked flagstones. The garden has grown wild since he left, and the paths between beds are now choked with roots and spreading growth.
+
+      Players who take a moment to navigate carefully (spending 1 Stress) can move freely. Those who push through recklessly add +1 to the It Found Us counter from the noise.
+
+      While in this location, all Agility rolls made to move are made with disadvantage.
+    questions: |
+      Has anything the Archon planted here grown into something that shouldn't exist?
+
+  - name: The Locked Cells
+    type: Action
+    description: |
+      The Cages hold iron-barred holding cells from the plague-era triage, repurposed by the Archon for test subjects. Dried blood on the floors. Scratch marks on the walls. Several cells are still locked. Players can force them open (Strength) or pick the lock (Finesse). Each forced door adds +1 to the It Found Us counter from the noise.
+
+      What's inside?
+    questions: |
+      Who or what was the Archon keeping here?
+
+  - name: The Alchemy Station
+    type: Action
+    description: |
+      Copper tubing coiled around old wine vats, glass vessels stained dark red, workbenches scarred with heat marks and chemical burns. The Archon's setup is crude but functional — built from what he found, not what he brought. Players can search the station and claim up to 3 consumables. For each item taken, the It Found Us counter increases by 1.
+
+      What do you find?
+    questions: |
+      What was the Archon working on when he left? What did he take with him, and what did he abandon?
+
+  - name: The Tether
+    type: Passive/Action
+    description: |
+      A blood-red crystal mounted above the main workbench in the Laboratory, pulsing with slow irregular light. Faint copper wire runs from it through cracks in the wall toward the rest of the cellar. Players who examine it can make a Lore roll to understand what it does — it is the source of the Hulk's animation, anchoring it to this place.
+
+      Destroying the crystal permanently kills the Hulk. However, the crystal shatters violently: the It Found Us counter immediately jumps to 8.
+    questions: |
+      Where did the Archon get this crystal, and what did it cost him? Is this the same kind of crystal used in the plague — or something else entirely?
+
+featureQuestions:
+  - What was here before the Archon found it — what traces of the field station and the winery remain in the cellar?
+  - The Hulk was stitched together from plague-era corpses. Whose bodies are they?
+  - The Archon moved on to the Meteorite Lab. What did he learn here that he couldn't learn anywhere else?
+  - Is the survivor in the Cages someone the players might recognise?
