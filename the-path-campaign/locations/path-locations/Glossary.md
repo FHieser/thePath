@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 31** (19 Surface + 10 Underground + 2 Special)
+**Total Locations: 33** (20 Surface + 11 Underground + 2 Special)
 
 ---
 
@@ -21,6 +21,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [The Giant Walls](./surface-locations/the-giant-walls.yaml)         | Border defense where plague was contained at terrible cost  |
 | ☑        | ☑     | [Hollow Woods](./surface-locations/hollow-woods.md)                 | Forest with mysterious hollowed structures                  |
 | ☑        | ☑     | [Misty Waters](./surface-locations/misty-waters.yaml)               | Flooded Crystal-Plague village with bound raven spirit      |
+| ☑        | ☑     | [The Monastery](./surface-locations/monastery.yaml)                 | Ruined abbey and winery repurposed as the Archon's field lab (Linked to The Red Cellar) |
 | ☐        | ☐     | [Overgrown Temple](./surface-locations/overgrown-temple.md)         | Ancient temple reclaimed by nature                          |
 | ☑        | ☑     | [Sacred Mountain Pass](./surface-locations/sacred-mountain-pass.md) | Blessed passage through the mountains                       |
 | ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
@@ -44,6 +45,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Geothermal Caverns](./underground-locations/geothermal-caverns.md) | Hot springs and volcanic activity underground                      |
 | ☑        | ☑     | [Mining Complex](./underground-locations/mining-complex.md)         | Extensive system of mines and extraction sites                     |
 | ☑        | ☑     | [Needle Tunnels](./underground-locations/needle-tunnels.yaml)       | Claustrophobic passages hiding comfort and cosmic horror           |
+| ☑        | ☑     | [The Red Cellar](./underground-locations/red-cellar.yaml)           | Winery vaults turned hemomancy lab, haunted by the Archon's experiment (Linked to The Monastery) |
 | ☑        | ☑     | [Reed Marsh Caverns](./underground-locations/reed-marsh-caverns.md) | Underground wetland with bioluminescent grotto and hermit dwelling |
 | ☑        | ☑     | [Sacred Underground](./underground-locations/sacred-underground.md) | Hallowed sanctuary beneath the earth                               |
 
@@ -63,7 +65,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 32** | **Unassigned: 46** (59.0% remaining)
+**Assigned: 34** | **Unassigned: 44** (56.4% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -81,7 +83,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | IX The Hermit         |                      |
 | X Wheel of Fortune    | Village in the Mist  |
 | XI Justice            |                      |
-| XII The Hanged Man    |                      |
+| XII The Hanged Man    | The Red Cellar       |
 | XIII Death            | Vanishing Mist       |
 | XIV Temperance        |                      |
 | XV The Devil          | Devil's Rock         |
@@ -154,7 +156,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Card              | Location         |
 | ----------------- | ---------------- |
 | Ace of Goblets    | Trading Grounds  |
-| 2 of Goblets      |                  |
+| 2 of Goblets      | The Monastery    |
 | 3 of Goblets      |                  |
 | 4 of Goblets      | Stone Works      |
 | 5 of Goblets      |                  |
