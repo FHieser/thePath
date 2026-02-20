@@ -1,6 +1,17 @@
 # Todo
 
 
+
+- redesign siege start at 12 Fear Trigger siege
+
+- mine cart rework
+
+- rework geothermal caverns
+
+- Do simple route for once 
+
+- Quest to research stuff
+
 - A plague that ran through the ruling land of a lordship
 
   - Lost villages with mass graves and undead roaming
@@ -35,10 +46,21 @@
 - Lost locations that are not as corrupted
   - Rootbound Location
 
+- Do meteor location
+
+- do location for the archon
+  - big lab
+    - make it control mist somehow
+    - is able to be linked to the meteor location
+
 - Add trader NPC
 
 - Work out the reward mechanism for the crystals 
 
+- Hidden locations
+  - Can only be found via Circle Ash consumable 
+  - Has to be unlocked via certain events
+  - Can be found via the unstable mist location, by bringing a certain trinket there
 
 - Clam hermit Enemy
   - Clam on the back
@@ -48,6 +70,14 @@
 
 
 - Work out the siege of the village -> 8 Fear in Moonfield
+- Siege jellifish ballon 
+  - A massive jellyfish-like organism that floats above the ground, trailing mist from its tendrils. Silent and alien. The anchors hang beneath it like eggs, dropped when it reaches position.
+  - Visual: Translucent bell pulsing with inner light, tentacles dragging through the air leaving mist trails
+  - Crew Position: Mist Born cling to the tentacles or ride inside the bell itself
+  - Thematic Fit: Connects to the "living mist organism" - this could literally be part of the mist given form
+
+- The lighthouse
+  - stable location at the sea of mist
 
 - 1 Location of Flame
 - Add Hunter Party from mist
@@ -69,9 +99,7 @@
 
 # Plans
 
-- Underground Locations
-  - 3 - 4 Underground locations
-  - Finalize flooded network
+
 - Lost Lordship
   - Update Lore
     - The Plague
