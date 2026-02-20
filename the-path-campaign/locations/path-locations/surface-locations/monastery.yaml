@@ -1,0 +1,85 @@
+name: The Monastery
+tier: 2
+category: Exploration
+description: |
+  A ruined abbey built into the base of a sheer cliff face, its vineyard terraces carved into the rock above and long since gone wild. Defensive walls still stand. Everything else is what time and the plague left behind.
+impulses: |
+  Lure explorers with the promise of shelter behind defensive walls, reveal traces of desperate plague-era medicine, punish carelessness with dormant crystal dead
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Crystal-Plague
+  - name: Cave Mouth
+  - name: Routes
+    value: 1
+  - name: Linked
+    value: The Red Cellar
+potentialAdversaries: Crystallized Dead (reduced numbers — the Archon cleared most)
+features:
+  - name: Island Terrace
+    type: Passive
+    description: |
+      The monastery sits at the base of a sheer cliff face, a massive rock formation rising at its back. The old vineyard terraces are carved into the lower cliff, now overtaken by wild vines. A weathered stone bridge spans a gap connecting the monastery grounds to the central building.
+
+      Players who fall from the cliff face, bridge, or upper terraces take 2d6+2 physical damage and must make a Strength roll to climb back up to where they fell from.
+    questions: |
+      What can players see from the top of the rock formation that they can't see from the ground?
+
+  - name: The Triage Ward
+    type: Passive/Action
+    description: |
+      The field station's triage area fills the central building — cots, cabinets, dividing screens arranged in rows, crystallized patients still in place between them. Large open spaces where the worst cases were treated. The Archon didn't touch this room.
+
+      Players have advantage on rolls to hide or take cover here — the furniture creates a natural maze. Moving between cover positions without disturbing a body requires an Agility roll. Failure: +1 Awakening Counter.
+
+      Players can search and claim up to 3 items. For each item taken, +1 Awakening Counter.
+
+      What do you find?
+    questions: |
+      What does the arrangement of the ward tell you about how the field station was run — who were they prioritising?
+
+  - name: The Blood Press
+    type: Action
+    description: |
+      Dark iron teeth line the press frame, stained so deep the rust and the blood have become the same thing. Ritual symbols are carved into every surface — the stone floor, the press beams, the collection basin — not painted, cut, like something that needed to be permanent. The channel from press to basin runs in a colour that hasn't dried despite how long ago it was used. Whatever the Archon pressed here, he pressed a lot of it.
+
+      The press requires blood. Crystal bodies are worthless here — no blood remains.
+
+      Offering value:
+      - Player HP (unrecoverable until long rest): 1 value per HP
+      - A blood corpse: up to 3 value
+      - A living being: up to 7 value, based on size
+
+      Results:
+      - 3 value: minor consumable
+      - 7 value: blood item
+
+      What comes out of the basin?
+
+      A wide sloped channel beside the press leads to a large cellar door — built for rolling wine barrels directly into the Red Cellar below. This is a second Cave Mouth into the Red Cellar, wide enough to walk through hunched.
+    questions: |
+      The press has been used recently. What does the residue tell you about what was put through it last?
+
+  - name: The High View
+    type: Action
+    description: |
+      The rock formation at the back of the vineyard is climbable. Players who attempt the climb make an Agility or Strength roll.
+
+      On a success, they gain a commanding view over the surrounding mist and can reveal face-down location cards on the current Path according to this pattern — with the Monastery as position 1:
+
+        · ▣ ▣
+        1 ▣ ▣
+        · ▣ ▣
+
+      Revealed locations are turned face-up immediately. Players do not travel to them — they simply know what lies ahead.
+
+      On a failure, they make the climb but the mist is too thick. No locations are revealed.
+    questions: |
+      What else can you see from up there that isn't on the Path?
+
+featureQuestions:
+  - Who was running the field station, and what decisions did they make when the plague became uncontrollable?
+  - The Archon cleared most of the crystallized dead. Which ones did he leave, and why?
+  - What was the monastery before it was a winery — and what was it before that?
+  - The blood press was used recently. Where did the Archon get what he put through it?
+  - What would it take to make this place safe enough to use as a permanent outpost?
