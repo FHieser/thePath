@@ -23,3 +23,4 @@ Tiers are based on total location count and overall path difficulty. Underground
 | [1-initial-path.md](1-initial-path.md) | 1 — Scout | 5 | ★ **Recommended for First Run.** Linear surface corridor. Village → Mountain Pass. |
 | [1-highland-run.md](1-highland-run.md) | 1 — Scout | 7 | Surface path with one branch location above the main corridor. Grasslands and highlands. |
 | [4-lake-crossing.md](4-lake-crossing.md) | 4 — Campaign | 14 | Full 3-row surface grid with coastal locations, plus a 4-location underground layer. |
+| [4-needle-descent.md](4-needle-descent.md) | 4 — Campaign | 15 | Branches extend upward from the main corridor. Heavy underground presence with 7 subterranean locations. |

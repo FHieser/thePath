@@ -1,0 +1,42 @@
+# 4 — Needle Descent
+
+## Planning Notes
+
+**Locations to include:**
+
+_Surface:_
+- Village in the Mist (A1, Stable)
+- The Giant Walls (A2)
+- Ancient Crossing (A3)
+- Sacred Mountain Pass (A6)
+- Unstable Mist (A'3) — branch above main path
+- Windswept Grasslands (A'4) — branch above main path
+- Highland Watch (A'6) — branch above main path
+- Silken Spire (B'3) — branch two rows above main path
+
+_Underground:_
+- Needle Tunnels (A3)
+- Black Beach (A4)
+- Black Falls (A5)
+- Geothermal Caverns (A6)
+- Flooded Network (A'3)
+- Mining Complex (A'6)
+- Brood Throne (B'3)
+
+---
+
+## Surface Path
+
+| Location | **1**               | **2**           | **3**          | **4**                | **5** | **6**          |
+|----------|---------------------|-----------------|----------------|----------------------|-------|----------------|
+| **B'**   | -                   | -               | Silken Spire   | -                    | -     | -              |
+| **A'**   | -                   | -               | Unstable Mist  | Windswept Grasslands | -     | Highland Watch |
+| **A**    | Village in the Mist | The Giant Walls | Ancient Crossing | -                  | -     | Sacred Mountain Pass |
+
+## Underground Path
+
+| Location | **1** | **2** | **3**           | **4**       | **5**       | **6**               |
+|----------|-------|-------|-----------------|-------------|-------------|---------------------|
+| **B'**   | -     | -     | Brood Throne    | -           | -           | -                   |
+| **A'**   | -     | -     | Flooded Network | -           | -           | Mining Complex      |
+| **A**    | -     | -     | Needle Tunnels  | Black Beach | Black Falls | Geothermal Caverns  |
