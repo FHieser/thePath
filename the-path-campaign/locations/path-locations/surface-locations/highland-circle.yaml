@@ -1,0 +1,39 @@
+name: Highland Circle
+tier: 1
+category: Traversal
+description: Ancient standing stones crown a windswept highland where a mushroom ring glows at the circle's heart, and the mist rolls back from a power older than memory.
+impulses: Draw weary travelers beneath the shelter of the stones, Open pathways between the old places for those who know how to ask, Give generously to those who tend the mushroom ring and honor the growth
+difficulty: 11
+modifiers:
+  - name: Unstable
+  - name: Mushroom Circle
+potentialAdversaries: Grazing Beasts
+features:
+  - name: Standing Stones
+    type: Passive
+    description: |
+      The great stones hold the mist at bay through an ancient, wordless compact. Resting within the circle — even if the location becomes Mist-Touched — grants no Mist tokens. It costs 2 additional Fear to make this location Mist-Touched. After resting here, the next time players travel off-Path they may draw 3 location cards and choose 1 to travel toward.
+    questions: What ancient power bound these stones against the mist's corruption? Do the stones remember the Rootbound who first raised them?
+
+  - name: Mushroom Ring Magic
+    type: Passive
+    description: This location has the Mushroom Circle modifier.
+    questions: Where does the ring connect to this session? What strange sensations accompany the teleportation? What fey entities might notice frequent use?
+
+  - name: Highland Harvest
+    type: Action
+    description: |
+      The circle's protection nurtures abundant natural growth within and around the stones. PCs may spend time foraging to harvest natural items at the GM's discretion — mushrooms, herbs, roots, or wildflowers preferred. Roll 1d3 to determine the quantity gathered.
+    questions: What grows here that cannot be found elsewhere on the Path? Does the harvest change depending on who tends the ring?
+
+  - name: Cairn Bindings
+    type: Counter
+    description: |
+      Each time PCs build a cairn at this location, mark progress on a counter (starts at 0). When the counter reaches 10, the accumulated stone markers anchor the location against the mist and Highland Circle gains the Stable modifier. If the counter ever drops below 10, the location reverts to Unstable.
+    questions: What ancient power flows through carefully stacked stone? What happens when travelers disturb or add to the sacred arrangements?
+
+featureQuestions:
+  - What is the origin of the standing stones — who raised them, and why here?
+  - Is there a Rootbound who considers this circle their domain, even if they are rarely present?
+  - What happens to the cairns between sessions when the location is Unstable — do they persist in the mist?
+  - How does the mushroom ring react when someone uses it without honoring the stones first?
