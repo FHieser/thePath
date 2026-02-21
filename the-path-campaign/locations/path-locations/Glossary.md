@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 33** (20 Surface + 11 Underground + 2 Special)
+**Total Locations: 34** (21 Surface + 11 Underground + 2 Special)
 
 ---
 
-## Surface Locations (19 locations)
+## Surface Locations (21 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -17,6 +17,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Devil's Rock](./surface-locations/devils-rock.yaml)                | Precipice over the mist where devil's bargains are struck   |
 | ☑        | ☑     | [Forest Refuge](./surface-locations/forest-refuge.md)               | Safe haven deep within the forest                           |
 | ☑        | ☑     | [Hanging Gardens](./surface-locations/hanging-gardens.md)           | Suspended botanical sanctuary                               |
+| ☑        | ☑     | [Highland Circle](./surface-locations/highland-circle.yaml)         | Ancient stone circle on highland grassland, Rootbound-connected sanctuary with mushroom ring |
 | ☑        | ☑     | [Highland Watch](./surface-locations/highland-watch.md)             | Elevated vantage point with panoramic views                 |
 | ☑        | ☑     | [The Giant Walls](./surface-locations/the-giant-walls.yaml)         | Border defense where plague was contained at terrible cost  |
 | ☑        | ☑     | [Hollow Woods](./surface-locations/hollow-woods.md)                 | Forest with mysterious hollowed structures                  |
@@ -65,7 +66,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 34** | **Unassigned: 44** (56.4% remaining)
+**Assigned: 35** | **Unassigned: 43** (55.1% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -101,7 +102,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Ace of Wands    |                      |
 | 2 of Wands      | Windswept Grasslands |
 | 3 of Wands      | Verdant Crossing     |
-| 4 of Wands      |                      |
+| 4 of Wands      | Highland Circle      |
 | 5 of Wands      |                      |
 | 6 of Wands      | Forest Refuge        |
 | 7 of Wands      | Hollow Woods         |
