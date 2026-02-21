@@ -8,6 +8,8 @@ modifiers:
   - name: Unstable
   - name: Wild Beasts
   - name: Cave Mouth
+  - name: Routes
+    value: 1
 potentialAdversaries: Giant Spiders (ambush hunters), Spider Swarms (defensive hordes), Silk-Wrapped Victims (zombified prey)
 features:
   - name: The Queen's Fortress
