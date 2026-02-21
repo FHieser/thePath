@@ -1,0 +1,33 @@
+# 1 — Initial Path
+
+## Planning Notes
+
+**Locations to include:**
+
+_Surface:_
+- Village in the Mist (A1, Stable)
+- Windswept Grasslands (A2)
+- Ancient Crossing (A3)
+- Forest Refuge (A4)
+- Sacred Mountain Pass (A5)
+
+_Underground:_
+- None
+
+---
+
+## Surface Path
+
+| Location  | **1**               | **2**                | **3**            | **4**         | **5**                | **6** |
+|-----------|---------------------|----------------------|------------------|---------------|----------------------|-------|
+| **A'**    | -                   | -                    | -                | -             | -                    | -     |
+| **A**     | Village in the Mist | Windswept Grasslands | Ancient Crossing | Forest Refuge | Sacred Mountain Pass | -     |
+| **B**     | -                   | -                    | -                | -             | -                    | -     |
+
+## Underground Path
+
+| Location  | **1** | **2** | **3** | **4** | **5** | **6** |
+|-----------|-------|-------|-------|-------|-------|-------|
+| **A'**    | -     | -     | -     | -     | -     | -     |
+| **A**     | -     | -     | -     | -     | -     | -     |
+| **B**     | -     | -     | -     | -     | -     | -     |
