@@ -1,12 +1,11 @@
 # Todo
 
 
+- Lost locations that are not as corrupted
+  - Rootbound Location
+
 
 - redesign siege start at 12 Fear Trigger siege
-
-- mine cart rework
-
-- rework geothermal caverns
 
 - Do simple route for once 
 
@@ -43,8 +42,11 @@
     - **Forgotten Oubliette** - Secret dungeon cells below the dungeon, prisoners who were left to starve in darkness
   - Hidden temple
 
-- Lost locations that are not as corrupted
-  - Rootbound Location
+  
+- mine cart rework
+
+- rework geothermal caverns
+
 
 - Do meteor location
 
