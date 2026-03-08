@@ -118,57 +118,51 @@ If something doesn't connect cleanly, adjust grid positions — not location cho
 
 ---
 
-## Step 7: Compile Path File
+## Step 7: Compile Path YAML
 
 Create the path file using this structure:
 
-```markdown
-# [Tier] — [Thematic Name]
+```yaml
+name: [Thematic Name]
+tier: [1–4]
+personal_ranking: [1–10, or omit if unplayed]
 
-## Planning Notes
+rowLabels:
+  "0": [label — depends on which rows are used]
+  "1": [label]
+  "2": [label]   # only if 3 rows
 
-**Locations to include:**
+gridSurface:
+  "col,row": location-id   # col = column index (col 1 = 0, col 2 = 1, ..., col 6 = 5)
+  # ... one entry per surface location
 
-_Surface:_
-- [Location Name] ([Cell], [Stable if applicable])
-- [Location Name] ([Cell]) — [brief note if branching or special]
-
-_Underground:_
-- [Location Name] ([Cell])
-
----
-
-## Surface Path
-
-| Location  | **1** | **2** | **3** | **4** | **5** | **6** |
-|-----------|-------|-------|-------|-------|-------|-------|
-| **[Row]** | -     | -     | -     | -     | -     | -     |
-| **[Row]** | -     | -     | -     | -     | -     | -     |
-| **[Row]** | -     | -     | -     | -     | -     | -     |
-
-## Underground Path
-
-| Location  | **1** | **2** | **3** | **4** | **5** | **6** |
-|-----------|-------|-------|-------|-------|-------|-------|
-| **[Row]** | -     | -     | -     | -     | -     | -     |
-| **[Row]** | -     | -     | -     | -     | -     | -     |
-| **[Row]** | -     | -     | -     | -     | -     | -     |
+gridUnderground:
+  "col,row": location-id
+  # ... one entry per underground location (omit section entirely if no underground)
 ```
 
-**Rules for the file:**
-- Only include rows that have at least one location in them.
-- Omit the Underground Path section entirely if there are no underground locations.
-- Do NOT include encounter grids or an Encounters section — the library stores topology only.
-- Planning Notes should list every location with its cell coordinate.
+**Coordinate mapping rule:**
+- Rows are 0-indexed from top to bottom. The topmost row used in the path = 0, next = 1, etc.
+- Columns: markdown col 1 = index 0, col 2 = index 1, ..., col 6 = index 5
+- rowLabels maps each integer row index to its named label (A', A, B, B', etc.)
+
+**YAML formatting rules:**
+- Keys containing commas (like `"1,0"`) must be double-quoted
+- rowLabel values with apostrophes (like `A'`) must be double-quoted
+- Plain location IDs (kebab-case, no special chars) do not need quoting
+
+**File location:** `path-webapp/data/path-library/[thematic-name].yaml`
 
 ---
 
-## Step 8: Update definitions.md
+## Step 8: Auto-Discovery (No Manual Index Needed)
 
-Add a row to the index table in `the-path-campaign/example-path/path-library/definitions.md`:
+The webapp auto-discovers YAML files from the `data/path-library/` folder by scanning directory listings. No manual index update is required — the file appearing in the folder is sufficient for it to show up in the Path Library, the index page cards, and the Path Creator's example dropdown.
+
+Optionally update `the-path-campaign/example-path/path-library/definitions.md` as a human-readable planning reference:
 
 ```markdown
-| [filename.md](filename.md) | [Tier] — [Tier Name] | [Count] | [One-line summary of terrain/feel and notable structure] |
+| [thematic-name.yaml](thematic-name.yaml) | [Tier] — [Tier Name] | [Count] | [One-line summary of terrain/feel and notable structure] |
 ```
 
 The summary should mention:
@@ -246,17 +240,18 @@ The summary should mention:
 - [ ] Daggerheart Tier confirmed (1–4)
 - [ ] Personal Ranking assigned or marked as `?`
 - [ ] Thematic name chosen (campaign-agnostic)
-- [ ] File name formatted as `[dh-tier].[personal]-[name].md`
+- [ ] File name formatted as `[thematic-name].yaml`
 
-**Step 7: Compile Path File**
-- [ ] File created in `the-path-campaign/example-path/path-library/`
-- [ ] Planning Notes list all locations with cell coordinates
+**Step 7: Compile Path YAML**
+- [ ] File created in `path-webapp/data/path-library/`
+- [ ] YAML format with rowLabels and gridSurface/gridUnderground
+- [ ] Keys with commas and apostrophes are double-quoted
 - [ ] No encounter data in the file
-- [ ] Only occupied rows included
+- [ ] Only occupied rows included in rowLabels
 
-**Step 8: Update definitions.md**
-- [ ] New row added to the index table
-- [ ] Summary captures terrain feel and structural highlights
+**Step 8: Auto-Discovery**
+- [ ] Auto-discovery handles indexing — no manual update required
+- [ ] definitions.md update is optional (human-readable planning reference only)
 
 ---
 
