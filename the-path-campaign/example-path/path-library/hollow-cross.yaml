@@ -1,0 +1,22 @@
+name: Hollow Cross
+tier: 2
+personal_ranking: 4
+rowLabels:
+  "0": "A'"
+  "1": A
+  "2": B
+gridSurface:
+  "1,0": devils-rock
+  "0,1": village-in-the-mist
+  "1,1": hollow-woods
+  "2,1": verdant-crossing
+  "3,1": highland-watch
+  "4,1": highland-circle
+  "5,1": sacred-mountain-pass
+  "1,2": silken-spire
+  "4,2": unstable-mist
+gridUnderground:
+  "1,1": fungal-depths
+  "2,1": reed-marsh-caverns
+  "3,1": sacred-underground
+  "1,2": brood-throne

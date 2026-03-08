@@ -1,0 +1,24 @@
+name: Needle Descent
+tier: 2
+personal_ranking: 7
+rowLabels:
+  "0": "B'"
+  "1": "A'"
+  "2": A
+gridSurface:
+  "2,0": silken-spire
+  "2,1": unstable-mist
+  "3,1": windswept-grasslands
+  "5,1": highland-watch
+  "0,2": village-in-the-mist
+  "1,2": the-giant-walls
+  "2,2": ancient-crossing
+  "5,2": sacred-mountain-pass
+gridUnderground:
+  "2,0": brood-throne
+  "2,1": flooded-network
+  "5,1": mining-complex
+  "2,2": needle-tunnels
+  "3,2": black-beach
+  "4,2": black-falls
+  "5,2": geothermal-caverns

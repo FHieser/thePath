@@ -1,0 +1,23 @@
+name: Lake Crossing
+tier: 2
+personal_ranking: 6
+rowLabels:
+  "0": "A'"
+  "1": A
+  "2": B
+gridSurface:
+  "2,0": forest-refuge
+  "3,0": hanging-gardens
+  "4,0": the-giant-walls
+  "0,1": village-in-the-mist
+  "1,1": blood-fern-valley
+  "2,1": misty-waters
+  "3,1": barnacle-gardens
+  "4,1": stone-works
+  "5,1": sacred-mountain-pass
+  "2,2": trading-grounds
+gridUnderground:
+  "2,1": sacred-underground
+  "3,1": reed-marsh-caverns
+  "4,1": fungal-depths
+  "2,2": geothermal-caverns

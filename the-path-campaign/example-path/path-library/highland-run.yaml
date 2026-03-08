@@ -1,0 +1,14 @@
+name: Highland Run
+tier: 1
+personal_ranking: 4
+rowLabels:
+  "0": A
+  "1": B
+gridSurface:
+  "2,0": hollow-woods
+  "0,1": village-in-the-mist
+  "1,1": windswept-grasslands
+  "2,1": verdant-crossing
+  "3,1": blood-fern-valley
+  "4,1": highland-watch
+  "5,1": sacred-mountain-pass

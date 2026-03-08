@@ -1,0 +1,11 @@
+name: Initial Path
+tier: 1
+personal_ranking: 1
+rowLabels:
+  "0": A
+gridSurface:
+  "0,0": village-in-the-mist
+  "1,0": windswept-grasslands
+  "2,0": ancient-crossing
+  "3,0": forest-refuge
+  "4,0": sacred-mountain-pass
