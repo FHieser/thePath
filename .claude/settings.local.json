@@ -10,7 +10,8 @@
       "Skill(give-me-five)",
       "Skill(give-me-five:*)",
       "Skill(create-location)",
-      "Skill(create-location:*)"
+      "Skill(create-location:*)",
+      "Bash(git mv:*)"
     ],
     "deny": [],
     "ask": []
