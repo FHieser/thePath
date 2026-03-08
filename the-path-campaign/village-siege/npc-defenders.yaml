@@ -10,7 +10,7 @@ deployment:
   timing: NPCs can be deployed during the Player Phase. Deployment is instant.
   resolution: |
     When deployed, the NPC clears enemies up to their Battle Power value from that zone.
-    Excess enemy BP remains.
+    The GM decides which enemies are destroyed. Excess enemy BP remains.
   example: |
     Brenner (4 BP) deployed against 1 Leader (3 BP) + 1 Support (1 BP) = 4 BP total.
     Brenner neutralizes all enemies.
@@ -18,7 +18,7 @@ deployment:
 npcs:
   - name: Donatello
     battlePower: 5
-    startingHopeCost: 2
+    startingHopeCost: 3
     hopeIncrease: 1
     zonePlacement:
       - Mist Wall
@@ -61,7 +61,9 @@ npcs:
     hopeIncrease: 0
     zonePlacement:
       - Inner
-    specialRules: []
+    specialRules:
+      - name: Hit them where it hurts
+        description: The players can choose which enemies Nix neutralizes.
     description: |
       A diva, but efficient at what she does. Expensive to deploy but consistent.
 
