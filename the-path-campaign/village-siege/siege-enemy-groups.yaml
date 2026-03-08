@@ -1,0 +1,76 @@
+title: Siege Enemy Groups
+description: |
+  Predefined enemy group compositions for populating Village Siege encounters.
+  Combine groups to fill the remaining BP budget after placing the Siege Engine (10 BP fixed).
+  Walker packs count as 1 BP in group totals regardless of exact count — minion scaling applies in play.
+
+bpReference:
+  - type: Mist Walker (pack)
+    bp: 1
+  - type: Mist Thrower
+    bp: 1
+  - type: Mist Stalker
+    bp: 2
+  - type: Wraith Leader
+    bp: 3
+  - type: Pale Shell Crab
+    bp: 4
+
+groups:
+  - name: Armored Spearhead
+    totalBP: 10
+    description: Heavy shock units with mist-spreading support. High breakthrough risk — each Crab reaching the Village generates 4 Fear.
+    units:
+      - type: Pale Shell Crab
+        count: 2
+        bp: 4
+      - type: Mist Thrower
+        count: 2
+        bp: 1
+    tactics: |
+      Both Crabs advance on the same zone. Throwers spread mist ahead of them, creating corridors for reinforcements. If defenders hold the line, Throwers peel to a flanking zone and repeat.
+
+  - name: Walker Wave
+    totalBP: 5
+    description: A coordinated swarm led by a Wraith Leader with a single Thrower for support. Low cost, constant pressure.
+    units:
+      - type: Wraith Leader
+        count: 1
+        bp: 3
+      - type: Mist Thrower
+        count: 1
+        bp: 1
+      - type: Mist Walker
+        count: 5
+        bp: 1
+    tactics: |
+      Wraith Leader uses Rally the Lost to push Walkers forward in bursts. Thrower spreads mist ahead to enable Walker movement into protected zones. Best used as a secondary threat to stretch defenders thin.
+
+  - name: Mounted Skirmish
+    totalBP: 6
+    description: A single Crab with a Thrower rider and Walker screen. Cheaper bruiser pressure that pairs well with other groups.
+    units:
+      - type: Pale Shell Crab
+        count: 1
+        bp: 4
+      - type: Mist Thrower
+        count: 1
+        bp: 1
+      - type: Mist Walker
+        count: 4
+        bp: 1
+    tactics: |
+      Thrower rides the Crab for +2 Evasion. Walkers screen the Crab from being flanked. Send down a secondary zone to force defenders to split their attention from the main Siege Engine advance.
+
+  - name: Command Strike
+    totalBP: 9
+    description: Pure tactical pressure — a Wraith Leader coordinating fast Stalkers. Lethal against any zone left unguarded.
+    units:
+      - type: Wraith Leader
+        count: 1
+        bp: 3
+      - type: Mist Stalker
+        count: 3
+        bp: 2
+    tactics: |
+      Wraith Leader activates first and uses Rally so Stalkers can act twice. Stalkers use Mist Step Strike for hit-and-run attacks. Target whichever zone players abandoned to chase the Siege Engine.
