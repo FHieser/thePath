@@ -1,0 +1,49 @@
+name: Void Pearl Monk
+tier: 2
+category: Support
+description: A mummified monk wrapped in burial linens bleached white by void exposure, a massive chain of pearls looped over one shoulder and coiled around the waist like a bandolier. Each pearl—smooth, milky-white, and fist-sized—trails a slow curl of mist as it draws from the surrounding fog. The monk moves in absolute stillness, placing pearls with ritualistic precision. Where they walk, mist thickens into drifting halos around each planted pearl. Beautiful, unhurried, and inevitable.
+motives: Deploy pearls to deny approach, reposition mines to cut off retreat, punish those who close in with Void Touch, drain enemy armor through attrition
+difficulty: 15
+thresholds:
+  major: 10
+  severe: 18
+hp: 4
+stress: 5
+attack:
+  bonus: '+2'
+  name: Void Touch
+  range: Melee
+  damage: 2d6+2 mag
+experience:
+  - name: Void Sensing
+    value: 3
+  - name: Pearl Weaving
+    value: 2
+features:
+  - name: Void Pearls
+    type: Passive
+    description: |
+      Void Pearls are smooth white pearls drawn from the monk's chain and placed on the battlefield as living sea mines. When placed, a pearl is Dormant—it sits quietly with a faint mist wisp curling from its surface. Dormant pearls can be targeted and destroyed (Difficulty 15, 1 HP).
+
+      When the Void Pearl Monk is next Spotlighted, all Dormant Void Pearls immediately become Active. An Active pearl is surrounded by a visible swirling mist cloud—it cannot be targeted or destroyed.
+
+      When a PC enters Close range of an Active Void Pearl, it detonates: the mist cloud bursts outward. All creatures within Close range take 2d6+2 magical damage and gain 1 Mist token. Remove the pearl after detonation.
+  - name: Void Attrition
+    type: Passive
+    description: |
+      When the Void Pearl Monk deals damage with any source—Pearl Throw or a Void Pearl detonation—the target must spend 1 Armor in addition to any they choose to spend to reduce that damage.
+  - name: Plant Void Pearl
+    type: Action
+    description: |
+      The Void Pearl Monk draws a single pearl from their chain and places it at any point within Far range. It immediately enters its Dormant state (see Void Pearls), a thin wisp of mist curling from its surface.
+  - name: Scatter
+    type: Action
+    cost: Spend 2 Fear
+    description: |
+      The monk spreads three Void Pearls to any points within Far range. All enter their Dormant state immediately (see Void Pearls).
+  - name: Reposition
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      The monk moves any number of existing Dormant Void Pearls to new positions within Far range. Repositioned pearls remain Dormant.
+lore: These are First Disciples who completed the deepest burial rite—interred alive while fused to a strand of void pearls, awakened as undying guardians of the descent routes. Their patience is absolute. They were taught by the Ancient Guardians that THE Nothing is already everywhere, and they are simply helping the surface world remember.
