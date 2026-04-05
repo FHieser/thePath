@@ -1,33 +1,21 @@
 # Todo
 
+- Fight with the spiders
 
-- Lost locations that are not as corrupted
-  - Rootbound Location
-
+- Add trader NPC
 
 - redesign siege start at 12 Fear Trigger siege
 
-- Do simple route for once 
+- Finish stargfall city
 
-- Quest to research stuff
+- do 2 underground locations leads to lighthouse
+  - 1 interesting with lore
+  - 1 traversal
 
-- A plague that ran through the ruling land of a lordship
+- The lighthouse
+  - stable location at the sea of mist
 
-  - Lost villages with mass graves and undead roaming
-    - **Plague Warren** - Abandoned quarantine village where doors are nailed shut from the outside and something still scratches from within
-    - **The Charnel Pit** - Mass grave that exhales cold breath and draws carrion birds that never land, only circle endlessly
-    - **Ashen Sepulcher** - Collapsed tomb half-buried in volcanic ash, with passages that lead far deeper than the structure should allow
-  - A city district that is barred
-
-    - **Sealed District** - City quarter barricaded from both sides, scratches on the inside of every door
-    - **Pest House** - Hospital where the dying were sent
-    - **Physician's Folly** - Doctor's manor filled with desperate experimental cures and preserved specimens
-    - **The Burning Fields** - Scorched land where they tried to burn the sickness away, ash still warm
-
-  - Last Stand
-    - **Scaffold Square** - Execution ground where justice became mob rule in the final days
-    - **Sanctuary Keep** - Barricaded temple where survivors made their last stand against plague and panic
-    - **Riot Market** - Trading plaza destroyed when order collapsed, stalls overturned and looted
+- Rootbound Location
 
 - And old castle
 
@@ -47,6 +35,12 @@
 
 - rework geothermal caverns
 
+- extend the planets of the celestial event structure
+
+- Fear Psending Option
+  - Extinguish Flame Essence
+  - Cost 6 Fear
+  - Think about better reason why its extinguished
 
 - Do meteor location
 
@@ -55,7 +49,6 @@
     - make it control mist somehow
     - is able to be linked to the meteor location
 
-- Add trader NPC
 
 - Work out the reward mechanism for the crystals 
 
@@ -78,8 +71,7 @@
   - Crew Position: Mist Born cling to the tentacles or ride inside the bell itself
   - Thematic Fit: Connects to the "living mist organism" - this could literally be part of the mist given form
 
-- The lighthouse
-  - stable location at the sea of mist
+
 
 - 1 Location of Flame
 - Add Hunter Party from mist
@@ -89,8 +81,6 @@
   - Town defenses (raising the amount of Fear needed to breach the walls)
 - Possible events
 
-- Location of mist big
-- Location of fight
 - Flame dies down
 - 1 Rootbound Location
 - Upgrade der App
