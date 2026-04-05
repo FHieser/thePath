@@ -59,6 +59,58 @@
     description: |
       Can only be inhaled during an encounter. Gain advantage on all Agility rolls for the rest of the scene.
 
+- name: Rapid Mutator
+  type: General
+  usage: Consumable
+  flavor: "A crude syringe of dark red compound that smells of iron and copper wire — the Archon's handwriting is on the label, neat as a death sentence."
+  effect:
+    category: Restoration
+    description: |
+      Inject during an encounter. Regain 5 HP. Gain 2 Stress. Mark your first unmarked Hit Point — this slot cannot be healed until you spend a Long Rest action to regenerate it.
+
+- name: Iron Nerve Paste
+  type: General
+  usage: Consumable
+  flavor: "A grey-black paste that smells faintly of copper and old stone. Applied to the temple, it doesn't numb the pain — it convinces you the pain was never worth feeling."
+  effect:
+    category: Restoration
+    description: |
+      When you would mark Stress from any source, you may apply a dose as a reaction to negate that Stress instead. The paste has 3 uses per Long Rest.
+
+      Each time you use a dose, the next time you would recover Stress (from any source), you recover 1 less Stress for each dose used since your last Long Rest. If this reduces your recovery to 0 or less, you recover no Stress from that source.
+
+- name: Red Eye
+  type: General
+  usage: Reusable
+  flavor: "A plague crystal fused with mist essence and blood — look into it and the dark coils move, and something inside looks back."
+  effect:
+    category: Restoration
+    description: |
+      Hold the Red Eye and focus. Regain 1 HP and clear 1 Stress. Gain Mist tokens equal to the number of times you have used the Red Eye since your last Long Rest.
+
+      First use: +1 Mist token. Second use: +2 Mist tokens. Third use: +3 Mist tokens.
+
+      The usage counter resets on a Long Rest.
+
+- name: Silkweaver
+  type: General
+  usage: Reusable
+  flavor: "She fits in a palm, weighs almost nothing, and the silk she produces is flawless — the Queen does not give gifts lightly."
+  effect:
+    category: Utility
+    description: |
+      Each Long Rest, the Silkweaver spins one silk item. Describe what you
+      weave; the GM assigns a minor utility effect appropriate to its form
+      (a length of rope, a wrapped bundle, a woven strip, a simple garment).
+
+      Each Short Rest, in plain sight, the spider spins a small open-weave
+      net and releases it to the wind. It drifts away on the breeze — visible
+      to anyone watching, gone within moments. The net carries encoded
+      information: scent-traces, the shape of where you have been, the faces
+      of those nearby. The Queen's drones intercept these nets. She
+      accumulates knowledge of your movements and will act on what she
+      learns when the time is right.
+
 # ============================================================
 # ROOTBOUND ITEMS
 # ============================================================
@@ -93,6 +145,30 @@
 # ============================================================
 # FIRE BORN ITEMS
 # ============================================================
+
+- name: Flame Bearer's Amulet
+  type: Fire Born
+  usage: Reusable
+  flavor: "A flat disc of alien metal, warm to the touch even in the deepest mist, inscribed with symbols no mortal language reads."
+  effect:
+    category: Protection
+    description: |
+      Once per Long Rest: when you would gain a Mist token, negate 1 token. The amulet grows cold after use and must be warmed again through rest near flame.
+
+- name: Flame Blade
+  type: Fire Born
+  usage: Reusable
+  flavor: "An ancient blade of alien metal that runs hot in the hand — the flame inside it does not care whose blood it burns."
+  effect:
+    category: Disruption
+    description: |
+      Two-handed. Attacks use Strength or Agility (wielder's choice).
+
+      When drawn, lose 3 HP and remove 2 Mist tokens from yourself. The blade's fire burns the mist corruption out of the wielder as it ignites.
+
+      While drawn: d10+7 damage — Powerful (on a successful attack, roll an additional d10 and discard the lowest result) — Burning (when you roll max damage on a damage die, the target must mark a Stress).
+
+      The blade goes dormant when sheathed and must be drawn again to use.
 
 - name: Flashburn
   type: Fire Born
