@@ -27,7 +27,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Sacred Mountain Pass](./surface-locations/sacred-mountain-pass.md) | Blessed passage through the mountains                       |
 | ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
 | ☑        | ☑     | [Stone Works](./surface-locations/stone-works.md)                   | Ancient quarry or stonecraft site                           |
-| ☑        | ☑     | [Trading Grounds](./surface-locations/trading-grounds.md)           | Central hub for commerce and exchange                       |
+| ☑        | ☑     | [Lost Flame](./surface-locations/lost-flame.yaml)                   | Mist Born-claimed mountain temple where a Fire Born flame was extinguished |
 | ☑        | ☑     | [Unstable Mist](./surface-locations/unstable-mist.yaml)             | Threshold location with transformative temple and disorienting mist |
 | ☑        | ☑     | [Verdant Crossing](./surface-locations/verdant-crossing.md)         | Lush passage through abundant vegetation                    |
 | ☑        | ☑     | [Windswept Grasslands](./surface-locations/windswept-grasslands.md) | Open plains swept by constant winds                         |
@@ -122,7 +122,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 2 of Swords      |          |
 | 3 of Swords      |          |
 | 4 of Swords      |          |
-| 5 of Swords      |          |
+| 5 of Swords      | Lost Flame       |
 | 6 of Swords      |          |
 | 7 of Swords      |          |
 | 8 of Swords      |          |
