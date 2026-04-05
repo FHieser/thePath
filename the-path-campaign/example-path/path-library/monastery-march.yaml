@@ -1,0 +1,33 @@
+name: Monastery March
+tier: 2
+personal_ranking: 8
+
+rowLabels:
+  "0": "B'"
+  "1": "A'"
+  "2": A
+  "3": B
+
+gridSurface:
+  "3,0": monastery
+  "3,1": barnacle-gardens
+  "4,1": unstable-mist
+  "5,1": hanging-gardens
+  "6,1": devils-rock
+  "0,2": village-in-the-mist
+  "1,2": windswept-grasslands
+  "2,2": the-giant-walls
+  "3,2": forest-refuge
+  "4,2": stone-works
+  "5,2": sacred-mountain-pass
+  "3,3": misty-waters
+  "5,3": blood-fern-valley
+
+gridUnderground:
+  "3,0": red-cellar
+  "3,1": flooded-network
+  "4,1": fungal-depths
+  "3,2": geothermal-caverns
+  "4,2": mining-complex
+  "3,3": black-falls
+  "4,3": black-beach

@@ -30,3 +30,5 @@ File names use the format `[dh-tier].[personal-ranking]-[name].md` (e.g., `2.4-h
 | [2.4-hollow-cross.md](2.4-hollow-cross.md) | 2 — Adventurer | 4 | 13 | Hollow Woods as a triple-fork hub with dead-ends above (Devil's Rock) and below (Silken Spire). Spider Queen lair in the underground. |
 | [2.6-lake-crossing.md](2.6-lake-crossing.md) | 2 — Adventurer | 6 | 14 | Full 3-row surface grid with coastal locations, plus a 4-location underground layer. |
 | [2.7-needle-descent.md](2.7-needle-descent.md) | 2 — Adventurer | 7 | 15 | Branches extend upward from the main corridor. Heavy underground presence with 7 subterranean locations. |
+| [monastery-march.yaml](monastery-march.yaml) | 2 — Adventurer | 8 | 20 | 4-row grid (B'→B) with Crystal-Plague thread through Giant Walls, Monastery, and Misty Waters. Full 7-location underground layer. |
+| [close-encounters.yaml](close-encounters.yaml) | 2 — Adventurer | 6 | 17 | Sparse main corridor forces routing through dense A' branch. Silken Spire and Lost Flame as isolated B' dead-ends. 6-location underground mirrors surface rows. |

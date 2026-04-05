@@ -1,0 +1,29 @@
+name: Close Encounters
+tier: 2
+personal_ranking: 6
+
+rowLabels:
+  "0": "B'"
+  "1": "A'"
+  "2": A
+
+gridSurface:
+  "1,0": silken-spire
+  "4,0": lost-flame
+  "0,1": verdant-crossing
+  "1,1": ancient-crossing
+  "2,1": hollow-woods
+  "3,1": highland-watch
+  "4,1": misty-waters
+  "5,1": highland-circle
+  "0,2": village-in-the-mist
+  "4,2": unstable-mist
+  "5,2": sacred-mountain-pass
+
+gridUnderground:
+  "1,0": brood-throne
+  "1,1": needle-tunnels
+  "2,1": fungal-depths
+  "3,1": black-beach
+  "4,1": flooded-network
+  "4,2": sacred-underground
