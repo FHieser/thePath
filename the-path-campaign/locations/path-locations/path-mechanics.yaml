@@ -219,6 +219,11 @@ modifiers:
 
         If no other Mushroom Circle exists on the current Path, nothing happens—the magic lies dormant. Mushroom Circles only connect to other Mushroom Circle locations currently on the Path. The mist blocks connections to off-Path locations. Druids, rangers, and nature-focused characters can provide information about the general direction of other Mushroom Circles. Consulting with fey-touched NPCs or studying the mushroom patterns may reveal directional clues, helping PCs avoid the consequences of incorrect directional orientation.
 
+        **Multiple Circles in a Line:**
+        When two or more Mushroom Circles lie in the same direction from the PC's position, the fey pathways overlap and the magic becomes unpredictable. The GM assigns a dice range to each circle based on distance—closer circles get a larger share of the range, reflecting their stronger pull—then chooses a die size that covers all ranges. Each PC who enters the circle rolls the die individually and exits at the circle corresponding to their result.
+
+        Example: Circle A is 2 locations away, Circle B is 4 locations away. The GM sets the range as 1–4 = A, 5–6 = B and calls for a d6. A PC rolling 3 emerges at A; a PC rolling 5 emerges at B. The GM decides both the die size and the range boundaries based on distance and narrative feel—there is no fixed formula.
+
     - name: Routes
       type: specialPlacement
       valueRange: 1-4
