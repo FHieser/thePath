@@ -19,10 +19,12 @@ features:
   - name: The Shifting Temple
     type: Passive + Action
     description: |
-      A small stone temple stands at the center of this location, somehow always visible despite the thick mist that obscures everything else. Atop the temple sits a token—an object that represents a specific Path location. When this location was created, the temple was paired with a preset destination, its token reflecting that connection. PCs automatically find the temple when they enter the location, drawn by some inexplicable pull through the disorienting fog.
+      A small stone temple stands at the center of this location, somehow always visible despite the thick mist that obscures everything else. Its altar is empty. PCs automatically find the temple when they enter the location, drawn by some inexplicable pull through the disorienting fog.
 
-      PCs can freely manipulate or replace the token with objects representing other locations they wish to reach. However, the transformation is not guaranteed—at the GM's discretion and timing, the Unstable Mist may transform into the location represented by the token, or the GM may choose a different location that better fits the current narrative or the nature of the placed token. The temple doesn't reject offerings; rather, it translates them through its own mysterious logic. What players intend and what the temple manifests may not always align.
-    questions: What token is currently on the temple? What preset location does it represent? When does the transformation occur—immediately, at session end, or at a dramatically appropriate moment? What logic governs how the temple interprets different tokens?
+      PCs may place a token representing any surface location onto the altar. When the party leaves this location, the Unstable Mist immediately vanishes from the Path—remove its card from the grid entirely.
+
+      The next time the party takes a short rest, the location represented by the token manifests on the Path. Place that location's card face-down at the grid coordinates where the Unstable Mist previously stood. If no token was placed before the party departed, nothing manifests.
+    questions: What object do the PCs use to represent their chosen location? What happens if they place a token for an Underground location? What if the destination location is already present on the current Path?
 featureQuestions:
   - What entity or force created the shifting temple?
   - What preset location is the temple currently paired with?

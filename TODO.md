@@ -36,11 +36,7 @@
 - rework geothermal caverns
 
 - extend the planets of the celestial event structure
-
-- Fear Psending Option
-  - Extinguish Flame Essence
-  - Cost 6 Fear
-  - Think about better reason why its extinguished
+  - Up down right left planet
 
 - Do meteor location
 
@@ -53,9 +49,21 @@
 - Work out the reward mechanism for the crystals 
 
 - Hidden locations
-  - Can only be found via Circle Ash consumable 
+  - Access via Mist traversal
+    - The lighthouse
+      - stable location at the sea of mist
+  - Can only be found via Circle Ash consumable
+    - Druid Location
+        - Connect to Tiki
+          - tiki Island
   - Has to be unlocked via certain events
+    - Jan unlock location
+      - poppy fields -> tower
   - Can be found via the unstable mist location, by bringing a certain trinket there
+    - Cat location
+      - Trinket
+
+
 
 - Clam hermit Enemy
   - Clam on the back

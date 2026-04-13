@@ -99,7 +99,7 @@
   effect:
     category: Utility
     description: |
-      Each Long Rest, the Silkweaver spins one silk item. Describe what you
+      Once per long Rest, the Silkweaver can spin one silk item. Describe what you
       weave; the GM assigns a minor utility effect appropriate to its form
       (a length of rope, a wrapped bundle, a woven strip, a simple garment).
 
