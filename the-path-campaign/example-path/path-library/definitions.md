@@ -32,3 +32,4 @@ File names use the format `[dh-tier].[personal-ranking]-[name].md` (e.g., `2.4-h
 | [2.7-needle-descent.md](2.7-needle-descent.md) | 2 — Adventurer | 7 | 15 | Branches extend upward from the main corridor. Heavy underground presence with 7 subterranean locations. |
 | [monastery-march.yaml](monastery-march.yaml) | 2 — Adventurer | 8 | 20 | 4-row grid (B'→B) with Crystal-Plague thread through Giant Walls, Monastery, and Misty Waters. Full 7-location underground layer. |
 | [close-encounters.yaml](close-encounters.yaml) | 2 — Adventurer | 6 | 17 | Sparse main corridor forces routing through dense A' branch. Silken Spire and Lost Flame as isolated B' dead-ends. 6-location underground mirrors surface rows. |
+| [plague-march.yaml](plague-march.yaml) | 2 — Adventurer | ? | 17 | Crystal-Plague thread through Monastery and Giant Walls. Bell's Edge and Unstable Mist as outer B' anchors. Full 5-location underground layer accessible from Monastery and Highland Watch. |

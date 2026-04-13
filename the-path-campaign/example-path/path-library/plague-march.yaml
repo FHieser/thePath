@@ -1,0 +1,28 @@
+name: Plague March
+tier: 2
+
+rowLabels:
+  "0": "B'"
+  "1": "A'"
+  "2": A
+
+gridSurface:
+  "-1,0": bells-edge
+  "0,0": monastery
+  "5,0": lost-flame
+  "2,1": the-giant-walls
+  "3,1": windswept-grasslands
+  "4,1": barnacle-gardens
+  "5,1": highland-circle
+  "-1,2": unstable-mist
+  "0,2": village-in-the-mist
+  "1,2": blood-fern-valley
+  "2,2": highland-watch
+  "5,2": sacred-mountain-pass
+
+gridUnderground:
+  "0,0": red-cellar
+  "1,0": needle-tunnels
+  "2,0": geothermal-caverns
+  "2,1": mining-complex
+  "2,2": sacred-underground
