@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 34** (21 Surface + 11 Underground + 2 Special)
+**Total Locations: 35** (22 Surface + 11 Underground + 2 Special)
 
 ---
 
@@ -27,6 +27,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Sacred Mountain Pass](./surface-locations/sacred-mountain-pass.md) | Blessed passage through the mountains                       |
 | ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
 | ☑        | ☑     | [Stone Works](./surface-locations/stone-works.md)                   | Ancient quarry or stonecraft site                           |
+| ☑        | ☑     | [Bell's Edge](./surface-locations/bells-edge.yaml)                  | Ancient sea-devoted cliff settlement where a god's bell still calls water mantarays from the deep |
 | ☑        | ☑     | [Lost Flame](./surface-locations/lost-flame.yaml)                   | Mist Born-claimed mountain temple where a Fire Born flame was extinguished |
 | ☑        | ☑     | [Unstable Mist](./surface-locations/unstable-mist.yaml)             | Threshold location with transformative temple and disorienting mist |
 | ☑        | ☑     | [Verdant Crossing](./surface-locations/verdant-crossing.md)         | Lush passage through abundant vegetation                    |
@@ -66,7 +67,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 35** | **Unassigned: 43** (55.1% remaining)
+**Assigned: 36** | **Unassigned: 42** (53.8% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -83,7 +84,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | VIII Strength         |                      |
 | IX The Hermit         |                      |
 | X Wheel of Fortune    | Village in the Mist  |
-| XI Justice            |                      |
+| XI Justice            | Bell's Edge          |
 | XII The Hanged Man    | The Red Cellar       |
 | XIII Death            | Vanishing Mist       |
 | XIV Temperance        |                      |

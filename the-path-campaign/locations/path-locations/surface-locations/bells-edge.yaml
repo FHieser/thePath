@@ -1,0 +1,123 @@
+name: Bell's Edge
+tier: 2
+category: Exploration
+description: |
+  At the edge where the sea became mist, a bell still rings and the god still listens.
+
+  An ancient settlement built into the cliff face above the sea of mist — stone houses terraced into the rock, most collapsed, all old. At the cliff's edge, a stone protrusion juts out over the sea. Stairs carved into it lead down to a temple interior. At the top, a brass bell hangs above a shrine. Below the temple, a crumbling staircase descends to a stone harbor — docks built for something that no longer surfaces. A vast field of white poppies, their stems blood-red, spreads across the cliff top to the very edge.
+impulses: |
+  To remember what the sea looked like before the mist had a name, to call those who carry grief to the edge and let them look down, to open the way for those willing to meet the sea on its own terms
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Mist-Touched
+    note: Special variant — players gain 1 Mist token on entering. No mist enemies can spawn at this location. The god forbids it.
+potentialAdversaries: None
+features:
+  - name: The Bell
+    type: Action
+    description: |
+      The bell can be rung once per visit. No roll required. The god always answers.
+
+      All present witness a vision of this place's past — one vision per visit, in order. Players choose which half of the party receives each reward.
+
+      **Vision 1 — The Finding**
+      A child is running along the cliff's edge, lost. The sea stretches out below — real water, grey-green, deep. She stops at the lip and sits down, face in her hands, crying.
+
+      A figure appears from the direction of the stone. Tall, wearing a long coat, face hidden behind a mask. The figure crouches beside her, says nothing, and extends one hand. From the palm, a mantaray rises — made of water, pulling itself into shape from nothing — and lifts into the air. It circles the child once, twice, then drifts inland. The child watches it. Then she stands and follows it.
+
+      The figure remains at the cliff's edge, watching her go. They do not move until she is gone.
+
+      *Reward: Half the party gains 1 Hope.*
+
+      **Vision 2 — The Ceremony**
+      A bell hangs on the stone platform at the cliff's edge. A shrine surrounds it. People stand in a ring — dressed in red, holding hands, facing the sea. Someone rings the bell.
+
+      The water below begins to move.
+
+      Mantarays rise from the sea — made of water, dozens, then hundreds — lifting above the cliff edge and gliding out over the crowd. People laugh. Children reach upward. The creatures move through the air like they own it.
+
+      The masked figure stands slightly apart from the ring, watching the people.
+
+      *Reward: Half the party removes 1 Stress.*
+
+      **Vision 3 — The City**
+      The settlement is full. Fishing boats return to the harbor below, nets heavy. People swim in the shallows near the docks. On the cliff above, others move between the houses in red clothes, harvesting poppies in great armfuls. Wind chimes sound from every rooftop.
+
+      The masked figure stands at the village entrance watching a stream of newcomers arrive — people from somewhere else, clothes torn, moving carefully. Hurt.
+
+      At the horizon, barely visible, the mist. And it is moving closer.
+
+      *Reward: The full party gains 1 Hope.*
+
+      **Vision 4 — The Last**
+      The poppy field. Mist creatures press from every direction. From the cliff face, water mantarays pour upward and meet them — driving them back, buying time. People run through the white flowers toward the cliff edge and down the stairs.
+
+      The masked figure is last. They hold the crystal — blue, something moving inside it. One arm raises. A final wave of water mantarays rises from the sea below, scattering what remains.
+
+      The figure steps backward off the temple edge.
+
+      The view follows them down. The sea splits — a passage opening beneath the surface, clean and deliberate. Then it closes. The water seals over it. And then the mist rolls in, covering the sea entirely, until there is nothing below but white.
+
+      *Reward: The full party gains 1 Hope and 2 Mist tokens. The blue crystal orb manifests beside the bell.*
+
+      After the fourth vision this feature completes. The bell no longer sounds.
+    questions: |
+      Who was the child in the first vision? Did she found this settlement, or was she already part of it? Does the god remember her?
+
+  - name: The Poppy Field
+    type: Passive + Action
+    description: |
+      White poppies spread across the cliff top to the very edge, their stems blood-red beneath the petals. The field carries a stillness that doesn't feel like silence — it feels like permission.
+
+      **Harvest (Action):** A PC can gather a bundle of poppy stems once per visit. The red dye is vivid and lasting — valuable for trade or craft. Each PC can harvest once per visit.
+
+      **God's Mercy (Passive):** If a PC marks their last Hit Point at this location and chooses Avoid Death, the poppies receive them. They skip the consequences entirely — no worsening of the scene, no scar roll. They still fall Unconscious and require revival normally.
+    questions: |
+      The poppies grow right to the cliff's lip. Did the god plant them, or did they grow on their own in this soil? Does their red dye carry any meaning to the people who once lived here?
+
+  - name: The Cliff Temple
+    type: Passive + Action
+    description: |
+      Stairs carved into the stone protrusion lead down into the rock. Inside, the air is still. The mist does not reach here — no Mist tokens can be gained while inside the temple. At the far end, a stone window opens directly over the sea of mist. Below the window sits a carved table with a single circular indentation, sized exactly for the blue crystal orb.
+
+      **The Window (Action):** Any PC may look out over the sea. Roll 1d20.
+
+      | Roll  | What you see                                                        | Effect                                         |
+      |-------|---------------------------------------------------------------------|------------------------------------------------|
+      | 1     | The temple — unmistakably visible below the surface                 | Players learn where to use the crystal         |
+      | 2     | A creature so large its movement shifts the mist like weather       | GM gains 3 Fear                                |
+      | 3–4   | Mantarays circling slowly, made of water, unhurried                 | Half the party gains 1 Hope                    |
+      | 5–7   | Schools of fish moving in formation below the surface               | The PC looking removes 1 Stress                |
+      | 8–9   | A coral reef — colour and life beneath the grey                     | The PC looking gains 1 Hope                    |
+      | 10–15 | Nothing. The mist is flat and white.                                | Each PC who looks gains 1 Stress               |
+      | 16–18 | People swimming — distant, deep, not drowning                       | Half the party removes 1 Stress                |
+      | 19–20 | A ship, hull intact, drifting without wind                          | Each PC who looked gains 1 Mist token          |
+
+      **The Crystal Slot (Action):** When the blue crystal orb has been obtained and a PC has stood at the harbor below, the orb can be placed into the carved indentation. It locks in place. A stairway opens in the harbor below, the sea of mist splits, and the path to the hidden sea temple becomes passable.
+    questions: |
+      The window has been polished smooth by many hands. How long did people stand here looking out? What were they watching for?
+
+  - name: The Ancient Village
+    type: Passive + Action
+    description: |
+      The settlement is built into the cliff face — stone houses terraced into the rock, most collapsed, all old. The culture was sophisticated and entirely devoted to the sea. Three things remain usable.
+
+      **The Dye Vats (Action):** Large stone basins permanently stained deep red stand near the village center. A PC who has harvested poppies can process them here into concentrated red dye — vivid, lasting, tradeable. Worth significantly more than raw flowers.
+
+      **The Masks (Action):** Every house contains at least one carved wooden mask — sea creatures, abstract shapes, the mantaray rendered a dozen different ways. Players can study them and make their own using materials found around the village. The masks do nothing. They look remarkable.
+
+      **The Harbor Below (Action):** A crumbling staircase leads down the cliff face to a stone harbor. Docks built for something that no longer surfaces. At the bottom, the sea of mist is close enough to touch. A PC must descend to the harbor and stand at the water's edge before the crystal slot in the temple will accept the orb — the god requires the step of meeting the sea before it opens the way.
+    questions: |
+      The dye vats are large enough to have served hundreds of people. Was the red dye purely cultural, or did it have a function — protection, identification, ritual significance?
+
+featureQuestions:
+  - The masked figure appears in all four visions but never speaks. Is the mask a ritual object, a protection, or something the god requires of itself?
+  - The newcomers in Vision 3 were hurt and came from outside. Where did they come from, and did they integrate into the settlement before the mist arrived?
+  - The crystal orb appears next to the bell after the fourth vision. Did the god leave it there deliberately, or does witnessing the memory summon it from somewhere deeper?
+  - The harbor docks were built for something. What came to shore here before the sea became mist?
+  - The bell no longer sounds after the fourth vision. Is this permanent, or does it reset when new people arrive who have never heard it?
+  - Could the god still be reached — not through the bell, but through the sea itself?
+
+loreConnection: |
+  Bell's Edge predates the mist. The settlement here was devoted to a sea god whose power manifested as water mantarays — creatures summoned from the sea itself, neither mist-born nor Sacred Flame-touched, something older than either. When the mist came, the god held the line and chose to go under, sealing the path to a hidden sea temple beneath the waves. The blue crystal orb they carried is what remains of that act. The mist-touched status of this location is not corruption — it is the sea and the mist occupying the same space, the god's domain and the prisoner's fog pressed against each other at the cliff's edge.
