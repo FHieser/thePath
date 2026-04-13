@@ -11,7 +11,8 @@
       "Skill(give-me-five:*)",
       "Skill(create-location)",
       "Skill(create-location:*)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(wc -l c:/Users/felix/Documents/GitHub/thePath/path-webapp/js/*.js)"
     ],
     "deny": [],
     "ask": []
