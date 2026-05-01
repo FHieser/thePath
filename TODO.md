@@ -8,12 +8,16 @@
 
 - Finish stargfall city
 
-- do 2 underground locations leads to lighthouse
+- do 3 underground locations 
   - 1 interesting with lore
   - 1 traversal
+  - Mist based
 
-- The lighthouse
-  - stable location at the sea of mist
+- optimise session tracking
+- rooms for the players
+
+- Define Resources
+  - 2 armor makes 1 resource
 
 - Rootbound Location
 
@@ -35,9 +39,6 @@
 
 - rework geothermal caverns
 
-- extend the planets of the celestial event structure
-  - Up down right left planet
-
 - Do meteor location
 
 - do location for the archon
@@ -50,29 +51,16 @@
 
 - Hidden locations
   - Access via Mist traversal
-    - The lighthouse
-      - stable location at the sea of mist
   - Can only be found via Circle Ash consumable
     - Druid Location
         - Connect to Tiki
           - tiki Island
-  - Has to be unlocked via certain events
-    - Jan unlock location
-      - poppy fields -> tower
   - Can be found via the unstable mist location, by bringing a certain trinket there
     - Cat location
       - Trinket
 
 
 
-- Clam hermit Enemy
-  - Clam on the back
-  - Deploys Sea mines that become active after a round
-  - Drop a pearl, that emits mist rises, binds via mist to the ground and looks like a sea mine
-  - Breaks armor
-
-
-- Work out the siege of the village -> 8 Fear in Moonfield
 - Siege jellifish ballon 
   - A massive jellyfish-like organism that floats above the ground, trailing mist from its tendrils. Silent and alien. The anchors hang beneath it like eggs, dropped when it reaches position.
   - Visual: Translucent bell pulsing with inner light, tentacles dragging through the air leaving mist trails
@@ -112,10 +100,8 @@
   - location of fight
 - Story elements
   - Flame dies down
-  - The silken spire
   - Flame paladin found
   - Trader location -> Trade stuff
-  - new village founded -> Burnt clearing
   - other village
   - upgrade mechanics village
   - Rootbound
