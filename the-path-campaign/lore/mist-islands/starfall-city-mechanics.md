@@ -84,8 +84,9 @@ Certain tools, rituals, or player actions may reduce Wake levels at GM discretio
 - **Lingers** — if players flee and the Warden loses them, it remains in the last district it occupied, permanently raising that district's Wake floor
 - A district the Warden has claimed never returns below Wake 2 while the Warden is present
 - **Path reset** sends the Warden back to dormancy with everything else
+- **Origin:** The Security Chief — transformed when he fell from the Council Hall tower (1,1). The Warden first emerges at the base of that tower.
 
-The Warden is not a boss to be defeated in a single encounter. It is a consequence that follows.
+The Warden is not a boss to be defeated in a single encounter. It is a consequence that follows. Players who complete the Security Chief's thread understand what they are truly fighting.
 
 ---
 

@@ -86,15 +86,19 @@ He faded. No monument. No grave. Forgotten.
 ---
 
 ### The Security Chief
-**Core:** Fear turned to control turned to nothing. Mirrors the mechanic.
+**Core:** Fear turned to control turned to nothing. Became the Warden.
 
-Where the mechanic let fear drive him to *create*, the security chief let fear drive him to *control*. Sealed districts. Executed the sick. Used authority as armor against the horror.
+Where the mechanic let fear drive him to *create*, the security chief let fear drive him to *control*. He couldn't even sign the first quarantine decree — the Noble took the quill from his hand. He read it publicly at Scaffold Square, got a stone to the head, came away bleeding. At the Riot Market a crystal zombie sprayed shards across his hands. He felt the dust on his skin and knew.
 
-Became a shut-in at the end. Sealed himself away as thoroughly as he had sealed others. Died alone in the silence he created, surrounded by walls he built to keep death out.
+He gave the order to burn the university. Pointed at the soldier. Pointed at the Sealed District. Two gestures that destroyed everything.
 
-Fear turned to nothing. No legacy. No purpose. Just a locked room.
+He climbed the Council Hall tower alone as the city burned below him — the university, the market, all of it. He breathed out and saw crystals in the air. Then he fell.
 
-*Details and specific location to be developed.*
+He didn't die from the fall. He transformed. Dozens of crystallized dead fused to him as he lay at the base of the tower. He rose as the Warden — a massive accumulated crystal entity, the Security Chief buried somewhere inside it.
+
+The Warden still haunts the Council Hall district. Players who complete his story thread understand what they are truly fighting.
+
+**Connection to gameplay:** The Warden is the city's roaming threat — the Wake system's ultimate consequence. Players who defeat him see The Warden's Last Memory: flashes of consciousness from the fall to the transformation to the moment he first saw the players coming.
 
 ---
 

@@ -63,10 +63,11 @@ Each thread is a chain of chimes (and in some cases physical evidence) that ends
 - *Reward:* items + access
 
 **The Security Chief**
-- Traces his fear becoming control becoming nothing
-- *Intersects with:* Love Story at 1,2
-- Ends at his sealed room in the inner districts
-- *Reward:* access
+- Traces his fear becoming control becoming nothing — ends as the Warden
+- *Intersects with:* Love Story + Noble at 1,1 (the decree), Love Story at 2,2 (the orders)
+- Ends at the top of the Council Hall tower (1,1) — The Fall chime
+- **The Warden's Last Memory** plays on death — released from his core, not a found chime
+- *Reward:* defeating the Warden grants access to wherever he was guarding
 
 ---
 
@@ -106,6 +107,9 @@ Each thread is a chain of chimes (and in some cases physical evidence) that ends
 **Location notes:**
 - Large council chamber with a table, many seats — council members, clerks
 - Window in the corridor outside overlooking Scaffold Square (1,2)
+- Has a tower — requires climbing to reach the top
+- The roof is entirely covered in crystal — where he fell, where he transformed
+- The Warden spawns at the base of the tower — this is where the Security Chief fell and transformed
 
 ---
 
@@ -128,6 +132,49 @@ Each thread is a chain of chimes (and in some cases physical evidence) that ends
 **Points toward:** 1,2 — Scaffold Square
 **Pointer:** His gaze through the window — the scaffold visible below
 **Placement:** Hanging above the council table
+
+---
+
+### The Fall
+**District:** 1,1 — Council Hall (tower)
+**Thread:** Security Chief (final)
+**Characters:** Security Chief
+**Camera:** POV — through his eyes, then black
+
+- Stairs. Each step slower than the last. His hand on the wall leaving glowing smears.
+- The top. Wind. The city burning below — the university, the market, all of it.
+- He breathes out. Crystals catch the light in the air.
+- The city tilts.
+- Black.
+
+**Points toward:** Nothing — end of his thread. Players look down from the tower and see where he landed.
+**Pointer:** None
+**Placement:** Top of the Council Hall tower — requires climbing
+
+---
+
+### The Warden's Last Memory
+**District:** 1,1 — Council Hall (released on death)
+**Thread:** Security Chief (end — plays when the Warden is defeated)
+**Characters:** Security Chief
+**Camera:** POV — flashes from black, each one brief
+
+- The roof. Close. Blood spreading across crystal.
+- Black.
+- His hands. Crystal crawling up from the wrists.
+- Black.
+- Other bodies. His arms pulling them in. They don't resist.
+- Black.
+- The streets. Larger now. Each step cracking stone.
+- Black.
+- Mist rolling in across the city. Everything going quiet.
+- Black.
+- The players. Looking up at him. Weapons raised.
+- Black.
+
+**Points toward:** Nothing — end of thread
+**Pointer:** None
+**Placement:** Released from the Warden's core on death — not a found chime
 
 ### 1,2 — Scaffold Square
 *Threads: Security Chief, Love Story (intersection — soldier receives orders)*
@@ -207,8 +254,32 @@ Each thread is a chain of chimes (and in some cases physical evidence) that ends
 > Chimes to be written
 
 ### 2,2 — Riot Market
-*Threads: Merchant (official front), Love Story (the city falling apart around them)*
-> Chimes to be written
+*Threads: Security Chief + Love Story (intersection — the orders), Merchant (official front)*
+
+**Location notes:**
+- Market completely destroyed — overturned stalls, broken glass
+- Open plaza visible from Scaffold Square (1,2)
+
+---
+
+### The Orders
+**District:** 2,2 — Riot Market
+**Thread:** Security Chief + Love Story intersection
+**Characters:** Security Chief, guards, the Soldier, crystallized dead
+**Camera:** POV — through his eyes
+
+- The market in ruins. Overturned stalls, broken glass, guards dragging people away.
+- He walks through it. Blood on his temple still drying.
+- Something moves between the stalls. A crystallized figure lurches upright — sprays shards as it swings.
+- The ground again. His hands shaking against the cobblestones.
+- He stands. Looks at his hands — crystal dust on both of them.
+- He points. Two guards toward the Sealed District. Go.
+- He turns. The soldier is there, watching him.
+- He points at the soldier. Then toward the university.
+
+**Points toward:** 1,3 — University/Burning Fields (soldier's thread), 3,3 — Sealed District (Security Chief's thread)
+**Pointer:** His pointing finger — two directions, two consequences
+**Placement:** Hanging from an overturned market stall frame
 
 ### 2,3 — Sanctuary Keep + Hospital
 *Threads: Nurse (end point), Noble (intersection — the noble's gift)*
