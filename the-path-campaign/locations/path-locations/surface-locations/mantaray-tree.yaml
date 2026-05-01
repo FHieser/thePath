@@ -1,0 +1,88 @@
+name: Mantaray Tree
+tier: 2
+category: Exploration
+description: |
+  From the sea of mist it looks like a lighthouse — a steady blue-white glow rising from the cliff top, visible long before the location itself. Up close it is something else: a giant coral tree, ancient and wide-branched, each branch holding a pool of water where water mantarays rest between flights. The swarm circles the crown constantly. Their collective glow is what travelers see from the mist and call a light.
+
+  At the top of the coral tree, reached by carved handholds worn smooth by generations of hands, sits a mantaray egg. That is why the creatures gather. That is why the mist does not enter. A god left it here before going under — a promise that something of this place would remain.
+
+  A stone path descends from the tree down the cliff face to an old dock at the mist's edge. Red cloth is knotted around each mooring post. The stonework is intact. The sea is quiet. It has been quiet for a long time.
+impulses: |
+  To keep the god's promise alive in the creatures that remain, to offer passage to those who know how to ask, to warn what arrives when the promise is broken
+difficulty: 14
+modifiers:
+  - name: Stable
+    note: Conditional — while the mantaray egg rests at the crown of the coral tree. If the egg is removed, the location becomes Unstable.
+  - name: mistProtection
+    note: No Mist tokens can be gained anywhere at this location while the egg is at the crown. If the egg is removed, this protection ends.
+potentialAdversaries: Mist Born
+features:
+  - name: The Swarm
+    type: Passive + Action
+    description: |
+      A giant congregation of water mantarays circles the coral tree constantly, resting in the branch pools between flights. Their collective glow is what travelers see from the mist. They are not tame.
+
+      **Ride (Action):** A PC wearing a mask carved at Bell's Edge may approach the swarm. A mantaray breaks away and allows them to mount. Roll 1d4 — the mantaray will travel up to that many locations along the Path. The player chooses which location within that range to be carried to. Each PC can ride once per visit.
+
+      PCs without masks are ignored entirely.
+    questions: |
+      The mantarays recognize the masks as belonging to their people. Do they remember specific individuals who wore similar masks — and if so, what do they do with that recognition?
+
+  - name: The Crown
+    type: Passive + Action
+    description: |
+      At the top of the coral tree sits a mantaray egg — translucent, faintly warm, something moving slowly inside it. This is what the god left here. The mantarays gather because of it. The mist does not enter because of it. The location holds its place in the world because of it.
+
+      **Take the Egg (Action):** A PC may take the egg. The moment it leaves the crown:
+      - GM gains 4 Fear immediately.
+      - The mantarays disperse into the mist. The Swarm feature no longer functions.
+      - The location loses its Stable status and mist protection.
+
+      **Place the Egg (Action):** The egg can be placed at another location, making it Stable and protected from the mist.
+
+      **Ongoing Cost:** For every session the egg is not resting at the crown of the coral tree, the GM gains 1 additional Fear at session start. This persists until the egg is returned.
+    questions: |
+      The egg is warm. Something moves inside it. How long has it been here — and what happens if it hatches?
+
+  - name: The Dock
+    type: Passive
+    description: |
+      A stone path descends from the coral tree down the cliff face to a wide stone dock at the mist's edge. Old mooring rings are set into the rock. Red cloth is knotted around each mooring post. The dock extends further out over the sea than seems necessary — built for something large to berth.
+
+      **Egg present:** The dock is quiet. The mist sits at the end of it, unmoving. The sea-people's stonework is intact and peaceful.
+
+      **Egg gone:** On the next visit, an anchor has been driven into the dock's end — dark iron, a metal chain descending into the sea of mist below. The location becomes Mist-Touched. Mist Born ascend via the chain, patient and indifferent.
+
+      **Battle Points:** Each time the GM spotlights an enemy at this location, they gain 1 Battle Point. Spend Battle Points to summon additional Mist Born climbing the chain from below.
+
+      **Remove the Anchor (Action):** A PC may attempt to drive the anchor back into the sea. Requires a Strength check of 25. On success, the anchor and chain return to the mist — Mist Born can no longer climb, Mist-Touched status lifts. The dock returns to its passive state until the egg remains absent long enough for a new anchor to appear.
+    questions: |
+      The anchor appeared overnight — the Mist Born were ready. How long had they been watching the egg, waiting for it to leave?
+
+  - name: The Coral Tree
+    type: Action + Passive
+    description: |
+      The tree rises above everything else — branches spreading wide, pools of water on each one catching light from the swarm above. Handholds and steps carved into the trunk by the sea-people, worn smooth over centuries. The climb is exposed. The coral is slick near the pools.
+
+      **Climb (Individual Action):** Each PC who wishes to reach the crown rolls Agility vs Difficulty 14 individually.
+      - **Success:** The PC reaches the crown.
+      - **Failure:** The PC slips. Mark 1 Stress and take 5 damage.
+
+      **The Keeper's Hut (Passive):** At the foot of the coral tree stands a small stone hut — the coral tree keeper's dwelling, long abandoned. Red cloth hangs in the doorway. Inside: a simple bed, tools for tending the pools, a carved mantaray above the hearth. During any rest taken at this location, each PC removes 1 additional Stress.
+    questions: |
+      The keeper's tools are still laid out as if they stepped away for a moment. Did the keeper go into the mist with the mantarays — or did something else happen to them?
+
+featureQuestions:
+  - The Mist Born anchor appeared the moment the egg was taken — they were ready. How long have they been watching this location, and what do they want with the egg?
+  - The egg is warm and something moves inside it. Is this the god's presence, a creature about to hatch, or something else entirely?
+  - The dock was built for something large. What came to shore here before the sea became mist — and could it come again?
+  - The mantarays only recognize Bell's Edge masks. Did the two settlements share this ritual, or did it originate at one and spread to the other?
+  - If the egg hatches, does a new mantaray emerge — or something larger?
+  - Can the egg be returned to the crown after being placed elsewhere? Does the location recover fully, or does something linger?
+
+tarotCard: XIV Temperance
+
+loreConnection: |
+  Mantaray Tree is a sister location to Bell's Edge — same culture, same god, different purpose. Bell's Edge was the seat of the god's power: the ceremony, the bell, the gate beneath the sea. The Mantaray Tree was the god's promise of continuity — that something of their world would survive what was coming. The mantarays nest here because the god asked them to stay. The egg is not a weapon or a key. It is a vow.
+
+  The Mist Born have known about the egg for longer than anyone alive. They built no structure here because they did not need to — they simply waited. The anchor was ready.

@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 35** (22 Surface + 11 Underground + 2 Special)
+**Total Locations: 36** (23 Surface + 11 Underground + 2 Special)
 
 ---
 
@@ -28,6 +28,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
 | ☑        | ☑     | [Stone Works](./surface-locations/stone-works.md)                   | Ancient quarry or stonecraft site                           |
 | ☑        | ☑     | [Bell's Edge](./surface-locations/bells-edge.yaml)                  | Ancient sea-devoted cliff settlement where a god's bell still calls water mantarays from the deep |
+| ☑        | ☑     | [Mantaray Tree](./surface-locations/mantaray-tree.yaml)             | Giant coral nesting tree where water mantarays gather around the god's egg — and the Mist Born wait below |
 | ☑        | ☑     | [Lost Flame](./surface-locations/lost-flame.yaml)                   | Mist Born-claimed mountain temple where a Fire Born flame was extinguished |
 | ☑        | ☑     | [Unstable Mist](./surface-locations/unstable-mist.yaml)             | Threshold location with transformative temple and disorienting mist |
 | ☑        | ☑     | [Verdant Crossing](./surface-locations/verdant-crossing.md)         | Lush passage through abundant vegetation                    |
@@ -67,7 +68,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 36** | **Unassigned: 42** (53.8% remaining)
+**Assigned: 37** | **Unassigned: 41** (52.6% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -87,7 +88,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | XI Justice            | Bell's Edge          |
 | XII The Hanged Man    | The Red Cellar       |
 | XIII Death            | Vanishing Mist       |
-| XIV Temperance        |                      |
+| XIV Temperance        | Mantaray Tree        |
 | XV The Devil          | Devil's Rock         |
 | XVI The Tower         |                      |
 | XVII The Star         | Silken Spire         |
