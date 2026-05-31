@@ -78,7 +78,7 @@ attack:
   bonus: '+0'
   name: Gaping Maw
   range: Melee
-  damage: 2d20+6 phy
+  damage: 3d20+6 phy
 
 features:
   - name: Fatal

@@ -2,6 +2,8 @@
 
 - Fight with the spiders
 
+- Create Blood Items and category
+
 - Add trader NPC
 
 - redesign siege start at 12 Fear Trigger siege
@@ -12,12 +14,13 @@
   - 1 interesting with lore
   - 1 traversal
   - Mist based
+    - Door into deeper levels
+    - Kraken Solo enemy 
+  - Caustic cavern
 
 - optimise session tracking
 - rooms for the players
 
-- Define Resources
-  - 2 armor makes 1 resource
 
 - Rootbound Location
 
@@ -58,15 +61,6 @@
   - Can be found via the unstable mist location, by bringing a certain trinket there
     - Cat location
       - Trinket
-
-
-
-- Siege jellifish ballon 
-  - A massive jellyfish-like organism that floats above the ground, trailing mist from its tendrils. Silent and alien. The anchors hang beneath it like eggs, dropped when it reaches position.
-  - Visual: Translucent bell pulsing with inner light, tentacles dragging through the air leaving mist trails
-  - Crew Position: Mist Born cling to the tentacles or ride inside the bell itself
-  - Thematic Fit: Connects to the "living mist organism" - this could literally be part of the mist given form
-
 
 
 - 1 Location of Flame

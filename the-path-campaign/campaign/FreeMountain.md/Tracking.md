@@ -1,6 +1,6 @@
 # Tracking
 
-## Lasst Updated
+## Last Updated
 
 - 11 D
 
@@ -31,7 +31,6 @@
 ## Current Development
 
 - Hund baut die Mine 2 D
-- Donatello: Eye Divination Station 1 D
 
 ## Completed
 
@@ -43,6 +42,8 @@
 - Nix: Base Grappling Hand
 - Nix: Grappling Hand
 - Brenner: Improve Flame Essence (3 to 5)
+
+- Player: 6 Deer
 
 ### Locations
 
@@ -61,6 +62,8 @@
 - Highland Watch: Cairn
   - Build 1
 
+- Lost Flame:
+  - Dontated 4 Fa´lame
 
 ## Char Progression
 
