@@ -1,0 +1,123 @@
+name: The Outer Mine Line
+tier: 2
+category: Traversal
+description: |
+  A copper-railed transit line built by the Copper Rust Clan to push their network deeper into unclaimed stone. The rails are inlaid with rune-work that draws ambient stone magic and feeds it into the carts — the Clan's solution to hauling ore across impossible distances. Survey stakes, half-finished side tunnels, and tools set down mid-shift mark the frontier they never finished mapping. The line passes through two natural caverns the Clan broke into during expansion. The carts still run.
+tagline: The line goes where the Clan was going. No one told it to stop.
+impulses: |
+  Drive travelers forward faster than they can govern, bridge the worked stone to the unmapped dark, hold the shape of what was being built when everything stopped
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Underground
+  - name: Connection 2
+potentialAdversaries: Spider Scouts, Fungal Creatures
+features:
+  - name: The Drift Carts
+    type: Passive
+    description: |
+      Copper carts inlaid with rune-work along their base. As a cart moves, it draws ambient stone magic from the tunnel walls through the rails and feeds it back into acceleration. A skilled handler bleeds off excess draw. Left unchecked, the cart accelerates beyond control. The rune-work requires worked stone to function — natural caverns break the circuit, and carts always stop at cavern thresholds.
+
+      Three ways to travel the line:
+
+      Controlled Ride: One PC makes an Instinct or Strength reaction (Difficulty 14). Roll d20 for the section encounter. On failure, the cart enters Fast Mode.
+
+      Deliberate Fast Mode: No throw required. The party chooses speed. Skip the current section and chain immediately to the next. Roll d20 with the Fast Mode table. Caverns always stop the cart.
+
+      Walking: No roll. Each section costs 1 Stress. Players may stop at caverns freely.
+    questions: |
+      How long have these carts been sitting idle? Do the runes warm up immediately, or do they need a moment? Can the rune-work be studied or repaired by someone outside the Clan?
+
+  - name: Rail Sections
+    type: Action
+    description: |
+      Three tunnel sections run between the line's entrance, the two cavern stops, and the exit. Each section is resolved with a d20 roll.
+
+      Structure: Entrance → Section 1 → Silk Cache → Section 2 → Spore Shelf → Section 3 → Exit
+
+      Controlled Ride (d20):
+      1: Dangerous — see Derailment
+      2-3: Tedious — see Track Work
+      4-18: Well maintained — smooth travel, automatic progress
+      19-20: Something Interesting — see Found on the Line
+
+      Fast Mode (d20):
+      1-3: Dangerous, escalated — see Derailment
+      4-20: Skip to next section. Roll d20 again and make another control reaction.
+
+      In Fast Mode, a 19-20 (interesting) blurs past — players glimpse it but cannot stop.
+    questions: |
+      Are the well-maintained sections a result of the Clan's construction quality, or has someone been working the rails since the raid?
+
+  - name: Derailment
+    type: Reaction
+    description: |
+      The cart hits damaged track or a tight corner and leaves the rails. All PCs take 1 HP damage from the impact.
+
+      After a derailment the party chooses:
+      - Re-rail the cart: resolve Track Work. In escalated Fast Mode, the resource cost is doubled.
+      - Continue on foot: walk the remaining sections (1 Stress per section).
+    questions: |
+      What does the damage look like — buckled stone, blast scarring, or track that was deliberately cut?
+
+  - name: Track Work
+    type: Action
+    description: |
+      A section of track is blocked, warped, or needs clearing before the cart can pass. The party spends resources equal to the number of players. Resources can be drawn freely from Hope, Stress, HP, or Armor — players distribute the cost however they choose.
+
+      Players who cannot or choose not to spend resources walk the remaining sections instead (1 Stress per section).
+    questions: |
+      What is blocking the track — rockfall, a cart from before the raid, or Mechanicorum debris?
+
+  - name: Found on the Line
+    type: Passive
+    description: |
+      On a 19-20 during a controlled ride section, the party finds something the Clan left behind. Roll a d4:
+
+      1 — Sure Rails: A pristine section of rune-work. The next control reaction is made at advantage.
+      2 — Clear Track: Ideal route ahead. Roll the next section's d20 twice and take either result.
+      3 — Maintenance Kit: A Clan tool satchel, still stocked. Can be spent to skip one Track Work result entirely.
+      4 — Copper Sculpture: A small carved figure in a wall niche. Half the party (rounded up) each gains 1 Hope. Players distribute as they choose.
+    questions: |
+      Who left the sculpture? Is the carving style familiar to anyone — the careful work of someone who carves the people they care about?
+
+  - name: The Silk Cache
+    type: Passive/Action
+    description: |
+      The cart slows as the rails enter a low-ceilinged cavern strung with silk bundles — dozens of them, packed tightly together. Three scouts idle on the walls, motionless. The bundles are organized by size. This is a larder, not a lair.
+
+      Players who ride through without stopping pass undisturbed. The scouts watch but do not move.
+
+      If players stop and interact with the bundles, make a Finesse roll (Difficulty 14):
+      - Success: Extract one bundle — wrapped prey and salvage. Counts as a food resource.
+      - Failure: The scouts drop from the walls and advance. GM gains 2 Fear.
+      - Failure with Fear: The scouts attack immediately.
+
+      The bundles are organized by freshness. The scouts are not guarding treasure — they are guarding the colony's next meal.
+    questions: |
+      Are any of the bundles still moving? Does the party notice before they reach for one?
+
+  - name: The Spore Shelf
+    type: Passive/Action
+    description: |
+      The tunnel opens into a shallow cavern where pale shelf fungi cover the walls floor-to-ceiling. Bioluminescence replaces all other light. The air is thick and sweet. The rail runs straight through the middle.
+
+      Cart riders: The cart's passage automatically disturbs the shelf fungi. All PCs roll a d6:
+      1-2: Mark 1 Stress — acrid spore cloud
+      3-5: Nothing — spores drift harmlessly
+      6: Gain 1 Hope — a bioluminescent bloom, brief and unexpectedly beautiful
+
+      If players stop to harvest (Instinct, Difficulty 14):
+      - Success: Gather fungal samples — food resource or alchemical ingredient.
+      - Failure: Release a larger cloud. All PCs mark 1 Stress.
+
+      Walkers move carefully and skip the d6 roll but can still choose to harvest.
+    questions: |
+      How far does this growth extend? Is this the edge of the Fungal Depths, or a colony that moved in after the Clan left?
+
+featureQuestions:
+  - What was the Clan planning to build at the far end of this line — a new sanctuary, a processing facility, or something else entirely?
+  - How much of the rune-work is still functional, and could someone with the right knowledge restore the full circuit?
+  - What has moved into the tunnel system since the Clan was driven out?
+  - If Hund returns here, what does he recognize — and what is different from how he left it?
+  - Does anything in the tunnels suggest the attackers knew the rail system existed before the raid?

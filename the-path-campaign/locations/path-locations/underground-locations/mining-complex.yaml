@@ -2,41 +2,111 @@ name: Mining Complex
 tier: 1
 category: Exploration
 description: |
-  An abandoned underground mining operation where old equipment remains scattered and mysterious sealed doors guard unknown secrets.
+  An ancient underground mining station that predates the Starfall Kingdom, its stone walls cut by hands that left no other history. The Copper Rust Clan found it during their expansion — followed their rail line down to a station already built by someone else, explored it, and sealed it behind a massive door. They didn't explain why. The old rails still work, in their way. They only go down.
+tagline: Someone was here first. The Clan decided that was enough of a reason to put a door in the way.
 impulses: |
-  Reveal industrial history, conceal dangerous mining hazards, guard whatever lies behind sealed barriers
+  Draw travelers deeper than they intended to go, guard what was sealed and left behind, let the old stone speak in a language no one remembers
 difficulty: 11
 modifiers:
   - name: Unstable
   - name: Underground
-potentialAdversaries: Mining Constructs, Tunnel Dwellers, Sealed Horrors
+potentialAdversaries: Mining Constructs, Crystal Remnants, Tunnel Creatures
 features:
-  - name: Central Hub Equipment
+  - name: The Old Rails
     type: Passive
     description: |
-      The main chamber contains abandoned mining gear, tools, and equipment scattered throughout the area. PCs who search carefully can make an Instinct roll. On a success, salvage useful equipment or mining tools. On a success with Hope, find valuable materials or gems overlooked during the evacuation. The equipment also provides clues about why the mining operation was abandoned.
+      The rail system here is older than the Copper Rust Clan's network — hand-carved channels in the stone, carts running on gravity and momentum rather than rune-work. The carts only go one direction: down. There is no mechanism to return them upward.
+
+      Two ways to move through the old rail sections:
+
+      Riding Down: Always in fast mode. No control throw required or possible — the carts go as fast as gravity takes them. Roll d20 for each section (see Old Rail Sections).
+
+      Walking: Going down costs nothing — no roll, no Stress, automatic progress. Walking up costs 1 Stress per section. Players may stop at the Intermediary Station freely either way.
     questions: |
-      What valuable materials were being extracted here? Why did the miners abandon their equipment so hastily? What tools might still be functional after all this time?
-  - name: Ancient Sealed Door
-    type: Passive
-    description: |
-      A massive reinforced barrier blocks access to deeper sections of the complex, clearly designed to keep something either in or out. The door bears warning symbols and multiple locking mechanisms. PCs can attempt to open it with a Strength roll (requires multiple successes) or try to bypass the locks with a Finesse roll. Success grants access but may release whatever was contained.
-    questions: |
-      What did the miners discover that required such extreme containment measures? Are the warnings about keeping something in or keeping explorers out? What lies beyond this formidable barrier?
-  - name: Mining Cart Rail System
+      How old is this rail system? What were they hauling up from the deep, and why did they stop?
+
+  - name: Old Rail Sections
     type: Action
     description: |
-      Old tracks snake throughout the complex, with some mining carts still resting on the rails. PCs can attempt to use the cart system for rapid transport through the tunnels by making an Agility roll. On a success, quickly traverse sections of the complex or access areas that would otherwise be difficult to reach. On a failure, the cart derails or crashes, potentially causing injury.
+      Two tunnel sections run between the entrance, the Intermediary Station, and the Giant Door. Each section is resolved with a d20 roll when riding.
+
+      Structure: Entrance → Section 1 → Intermediary Station → Section 2 → Giant Door
+
+      The old rails are always in fast mode. No controlled ride option exists. The old tracks offer no interesting discoveries — only momentum.
+
+      Old Rails (d20):
+      1-3: Dangerous — see Derailment
+      4-20: Nothing — gravity carries the cart forward
+
+      After a 4-20 result, the cart continues to the next stop automatically.
     questions: |
-      Where do the different rail lines lead within the complex? Are any sections of track damaged or blocked? What powered the original mining cart system?
-  - name: Structural Instability
+      What caused the damage to the sections that still carry danger — age and decay, or something that happened here before the Clan arrived?
+
+  - name: Derailment
     type: Reaction
     description: |
-      The abandoned mining has left the complex structurally compromised in places. When PCs cause vibrations through combat, explosions, or heavy equipment use, spend a Fear to trigger a partial collapse. All creatures in the affected area must succeed on an Agility Reaction Roll or take 1d8+3 physical damage from falling debris and become trapped until they can be dug out.
+      The cart hits a cracked channel or debris and leaves the rails. All PCs take 1 HP damage from the impact.
+
+      After a derailment the party chooses:
+      - Re-rail the cart: resolve Track Work.
+      - Continue on foot: walk the remaining sections. Going down costs no Stress. Going up costs 1 Stress per section.
     questions: |
-      Which areas of the complex show the most dangerous structural damage? What mining practices led to such instability? Are there ways to shore up dangerous sections for safer exploration?
+      What does the damage look like — age and decay, or something that struck the rails deliberately?
+
+  - name: Track Work
+    type: Action
+    description: |
+      A section of track is blocked or broken. The party spends resources equal to half the number of players (rounded up) to clear it and continue by cart. Resources can be drawn freely from Hope, Stress, HP, or Armor — players distribute the cost however they choose.
+
+      Players who cannot or choose not to spend resources walk the remaining sections instead.
+    questions: |
+      Is the blockage stone fall, an old cart wreck, or something that was deliberately placed across the track?
+
+  - name: The Intermediary Station
+    type: Passive/Action
+    description: |
+      A mid-point chamber cut into natural stone — larger than the tunnels warrant, clearly intended as a working hub. Old mining equipment lines the walls: hand-tools in styles the Copper Rust Clan doesn't use, hauling frames built for a different body type, measuring instruments with unfamiliar scales. The Clan left marks of their own passage — boot prints in old dust, a copper marker stake driven into the floor, a few words scratched in Clan script near the exit: checked and sealed.
+
+      PCs who search the station make an Instinct roll (Difficulty 11):
+      - Success: Salvage useful tools or raw materials.
+      - Success with Hope: Find materials or markings that suggest what this operation was extracting — something that predates the Starfall Kingdom's recorded history.
+
+      A Lore roll (Difficulty 11) on the wall engravings reveals partial extraction logs, depth measurements, and a recurring symbol that appears in early Starfall Kingdom architectural records — the same mark used before the kingdom adopted its later iconography.
+    questions: |
+      What were they mining here before the Starfall Kingdom existed? Does the extraction method suggest they knew what they were taking, or were they mining blind?
+
+  - name: The Seeding Crystal
+    type: Passive/Action
+    description: |
+      In a recessed alcove off the main station, a sealed stone box sits on a worked shelf — clearly placed deliberately, not left by accident. The lid is carved with the same symbol as the extraction logs on the wall. Inside: a cluster of pale crystalline nodes, cold to the touch, giving off no light.
+
+      The box and its contents are a containment measure. The miners sealed what they found here rather than carry it further. The crystals are a seeding agent — left in a location over time, they slowly taint it with crystal corruption.
+
+      If the box is opened and the crystals are left in a location for an extended period, that location gains the Crystal modifier. The corruption is slow — it takes multiple sessions to manifest — but once established, Sacred Flame interacts unpredictably with the location and crystalline effects begin to appear in the environment and its creatures.
+
+      The crystals can be moved, destroyed, or resealed. The box suppresses the effect while closed.
+
+      A Knowledge roll (Difficulty 11) before opening identifies the box as a containment vessel. On a failure, it looks like a storage box.
+    questions: |
+      Did the Clan know what was in the box when they sealed the door? Is there more than one of these in the old tunnels?
+
+  - name: The Giant Door
+    type: Passive/Action
+    description: |
+      At the far end of the second section, the old stone tunnels end at a wall of worked copper — massive, rune-marked, Copper Rust Clan construction. The door is not decorative. It is a seal. The runes along the frame are maintenance runes, not protective ones — designed to keep the door functional indefinitely.
+
+      The Clan built this after exploring the station. They decided the old side needed a boundary.
+
+      The door opens from either direction, but the mechanism is Clan-made:
+      - From the old side: Strength roll (Difficulty 11) to operate the unfamiliar mechanism, or a Knowledge roll to understand it first, then no roll required.
+      - From the Clan rail side: Opens normally, no roll required.
+
+    questions: |
+      What specifically did the Clan find that made them build this door? Did all members of the expedition agree on sealing it?
+
 featureQuestions:
-  - What valuable ore or materials justified such an extensive underground mining operation?
-  - What discovery caused the miners to seal certain areas and abandon the complex?
-  - Could the mining equipment and rail system be restored to working condition?
-  - What dangers might be released if the sealed barriers are breached?
+  - What civilization built this station, and what happened to them before the Starfall Kingdom rose in their place?
+  - The Clan's note says "checked and sealed" — checked for what, exactly?
+  - If the Seeding Crystal box were opened and left somewhere, what would the Crystal modifier do to that location's existing features?
+  - Does anything in the old tunnels connect to what the Starfall Kingdom later became?
+  - Could the old mining records here reveal the location of other pre-Starfall sites?

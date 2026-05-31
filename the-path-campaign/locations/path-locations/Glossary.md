@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 36** (23 Surface + 11 Underground + 2 Special)
+**Total Locations: 39** (24 Surface + 13 Underground + 2 Special)
 
 ---
 
-## Surface Locations (21 locations)
+## Surface Locations (22 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -33,10 +33,11 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Unstable Mist](./surface-locations/unstable-mist.yaml)             | Threshold location with transformative temple and disorienting mist |
 | ☑        | ☑     | [Verdant Crossing](./surface-locations/verdant-crossing.md)         | Lush passage through abundant vegetation                    |
 | ☑        | ☑     | [Windswept Grasslands](./surface-locations/windswept-grasslands.md) | Open plains swept by constant winds                         |
+| ☑        | ☑     | [Redcloth Pass](./surface-locations/redcloth-pass.yaml)             | Sea-people cliff road where waymarkers wait to be restored and the mist sits far below |
 
 ---
 
-## Underground Locations (10 locations)
+## Underground Locations (13 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                        |
 | -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -46,8 +47,10 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Flooded Network](./underground-locations/flooded-network.yaml)     | Ancient hydraulic tunnels with one-way water trap                  |
 | ☑        | ☑     | [Fungal Depths](./underground-locations/fungal-depths.md)           | Caverns dominated by massive fungal growth                         |
 | ☑        | ☑     | [Geothermal Caverns](./underground-locations/geothermal-caverns.md) | Hot springs and volcanic activity underground                      |
-| ☑        | ☑     | [Mining Complex](./underground-locations/mining-complex.md)         | Extensive system of mines and extraction sites                     |
+| ☑        | ☑     | [Mining Complex](./underground-locations/mining-complex.yaml)       | Pre-Starfall mining station sealed behind a Clan door, gravity rails, and a crystal taint box |
 | ☑        | ☑     | [Needle Tunnels](./underground-locations/needle-tunnels.yaml)       | Claustrophobic passages hiding comfort and cosmic horror           |
+| ☑        | ☑     | [Outer Mine Line](./underground-locations/outer-mine-line.yaml)     | Copper Rust Clan drift-cart railway through natural caverns, linking the rail network to the ancient mining station |
+| ☑        | ☑     | [Crystal Defense Line](./underground-locations/crystal-defense-line.yaml) | Tier 3 inner rail segment with Clan fortifications and a blocked meteorite shaft leaking crystal creatures |
 | ☑        | ☑     | [The Red Cellar](./underground-locations/red-cellar.yaml)           | Winery vaults turned hemomancy lab, haunted by the Archon's experiment (Linked to The Monastery) |
 | ☑        | ☑     | [Reed Marsh Caverns](./underground-locations/reed-marsh-caverns.md) | Underground wetland with bioluminescent grotto and hermit dwelling |
 | ☑        | ☑     | [Sacred Underground](./underground-locations/sacred-underground.md) | Hallowed sanctuary beneath the earth                               |
@@ -68,7 +71,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 37** | **Unassigned: 41** (52.6% remaining)
+**Assigned: 39** | **Unassigned: 39** (50.0% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -142,14 +145,14 @@ _Physical card mappings for location representation during play. Select cards ba
 | Ace of Discs    |                    |
 | 2 of Discs      | Sacred Underground |
 | 3 of Discs      | Black Falls        |
-| 4 of Discs      |                    |
+| 4 of Discs      | Outer Mine Line    |
 | 5 of Discs      | Mining Complex     |
 | 6 of Discs      | Geothermal Caverns |
 | 7 of Discs      |                    |
 | 8 of Discs      | Flooded Network    |
 | 9 of Discs      | Hanging Gardens    |
 | 10 of Discs     | Black Beach        |
-| Page of Discs   |                    |
+| Page of Discs   | Crystal Defense Line |
 | Knight of Discs |                    |
 | Queen of Discs  |                    |
 | King of Discs   |                    |
@@ -163,7 +166,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 3 of Goblets      |                  |
 | 4 of Goblets      | Stone Works      |
 | 5 of Goblets      |                  |
-| 6 of Goblets      |                  |
+| 6 of Goblets      | Redcloth Pass    |
 | 7 of Goblets      | Highland Watch   |
 | 8 of Goblets      |                  |
 | 9 of Goblets      |                  |
