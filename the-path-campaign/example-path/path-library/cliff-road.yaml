@@ -1,0 +1,28 @@
+name: Cliff Road
+tier: 2
+
+rowLabels:
+  "-1": "C'"
+  "0": "B'"
+  "1": "A'"
+  "2": A
+
+gridSurface:
+  "1,-1": mantaray-tree
+  "1,0": redcloth-pass
+  "2,0": bells-edge
+  "3,0": monastery
+  "5,1": devils-rock
+  "-1,2": lost-flame
+  "0,2": village-in-the-mist
+  "1,2": windswept-grasslands
+  "2,2": forest-refuge
+  "3,2": stone-works
+  "4,2": ancient-crossing
+  "5,2": sacred-mountain-pass
+
+gridUnderground:
+  "3,0": red-cellar
+  "3,1": flooded-network
+  "3,2": sacred-underground
+  "4,2": fungal-depths
