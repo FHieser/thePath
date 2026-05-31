@@ -1,0 +1,173 @@
+name: The Warden
+tier: 3
+category: Colossus
+
+description: |
+  A colossal mass of crystallized dead that haunts the Council Hall district. Dozens of bodies are fused into its bulk — arms reaching outward, faces frozen mid-scream, pressed into the creature like relief carvings into stone. Three distinct limbs extend from its core: a quill arm ending in a hand fused with a single massive crystallized feather; a cage arm of warped iron bars and crystal that slams down as a prison; and a baton arm of shattered guard equipment fused into a brutal mass. Somewhere inside, buried beneath it all, is what remains of the Security Chief. He is still screaming orders.
+
+motives: |
+  Contain intruders, enforce the old decrees, seal the district, destroy the living, maintain order.
+
+size: 18 ft. tall
+
+segments:
+  - Quill Arm
+  - Cage Arm
+  - Baton Arm
+  - Body
+
+thresholds: 25/48
+stress: 6
+
+experience:
+  - name: Warden
+    value: 3
+  - name: Enforcement
+    value: 2
+
+adjacency:
+  Quill Arm:
+    - Body
+  Cage Arm:
+    - Body
+  Baton Arm:
+    - Body
+  Body:
+    - Quill Arm
+    - Cage Arm
+    - Baton Arm
+
+features:
+
+  - name: Colossal Power
+    type: Reaction
+    description: |
+      When the Warden fails an attack, you gain a Fear.
+
+  - name: Identity Collapse
+    type: Passive
+    description: |
+      When all three arm segments (Quill Arm, Cage Arm, Baton Arm) are Destroyed, the Warden is defeated.
+
+---
+
+name: Quill Arm
+segment_of: The Warden
+adjacent_segments:
+  - Body
+
+description: |
+  An arm like the others, but the hand is gone — replaced by a single massive crystallized feather fused directly into the wrist. The barbs are razor-edged crystal. It drags across stone like chalk on a blackboard. Up close, you can see ink frozen inside the quill shaft, dark and still.
+
+difficulty: 14
+hp: 4
+
+features:
+  - name: IT HAS TO BE SIGNED
+    type: Action
+    description: |
+      The Warden rakes the quill arm across a zone within Close range. Crystal blooms across the marked area. Any creature that enters or moves through the zone takes 1d6+2 physical damage.
+
+---
+
+name: Cage Arm
+segment_of: The Warden
+adjacent_segments:
+  - Body
+
+description: |
+  Warped iron bars and crystal lattice grown together into the shape of a closing hand. The bars aren't uniform — they're pieces of the old city gates, bent and re-fused. Whatever is inside the cage when it closes doesn't get to decide when it opens.
+
+difficulty: 15
+hp: 6
+
+features:
+  - name: CONTAINED
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      The Warden slams the cage arm down over a target within Melee range. The target is Restrained until the cage takes Major or greater damage (Difficulty 14). While Restrained, the target must spend 1 Hope and mark 1 Stress at the start of each of their turns. If they cannot spend Hope, they take 1 physical damage instead. The cage arm instantly regenerates — the Warden may act freely with all segments. The placed cage persists on the battlefield until destroyed.
+
+---
+
+name: Baton Arm
+segment_of: The Warden
+adjacent_segments:
+  - Body
+
+description: |
+  Guard batons, shattered cobblestones, helmet pieces — all pressed together into a single blunt mass. It doesn't distinguish between a rioter and a bystander. It never did.
+
+difficulty: 16
+hp: 8
+
+attack:
+  bonus: '+3'
+  name: MAINTAINING ORDER
+  range: Close
+  damage: 3d10+6 phy
+
+features:
+  - name: MOVE THEM BACK
+    type: Action
+    description: |
+      A wall of crystal erupts between the Warden and all targets within Close range, forcing them to Far range. The wall blocks movement until the end of the round.
+
+  - name: MAINTAINING ORDER
+    type: Action
+    description: |
+      Make a standard attack against all targets within Close range. On a success, deal 3d10+6 physical damage.
+
+---
+
+name: Body
+segment_of: The Warden
+adjacent_segments:
+  - Quill Arm
+  - Cage Arm
+  - Baton Arm
+
+difficulty: 17
+hp: 15
+
+attack:
+  bonus: '+4'
+  name: TOO MUCH PRESSURE
+  range: Very Close
+  damage: 3d12+8 phy
+
+features:
+  - name: Fatal
+    type: Passive
+    description: |
+      When this segment is Destroyed, the Warden is defeated.
+
+  - name: IT HAS TAKEN OVER THE DISTRICT
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      The Warden throws its head back and screams. Place 2 Trap Crystals anywhere within Close range.
+
+  - name: TOO MUCH PRESSURE
+    type: Action
+    description: |
+      The Warden drives its own head into the ground. Make a standard attack against all targets within Very Close range. On a success, deal 3d12+8 physical damage. The Body marks 1 HP.
+
+  - name: GET ME AWAY FROM HERE
+    type: Reaction
+    description: |
+      When the Body takes Major or greater damage, the Warden leaps to any point within Far range. This movement cannot be interrupted.
+
+  - name: NOT LIKE THIS — I NEED MORE TIME
+    type: Passive
+    description: |
+      Outside combat: When the players take a Rest, the Warden regenerates 1 destroyed arm (GM's choice). All surviving segments fully restore their HP.
+
+---
+
+lore: |
+  The Security Chief was the man who couldn't sign his own name to the quarantine decree — the Noble took the quill from his hand. He read it at Scaffold Square, got a stone to the head, walked away bleeding. At the Riot Market a crystallized figure sprayed shards across his hands. He felt the dust settle on his skin and knew. He pointed at the soldier. Pointed at the university. Two gestures that destroyed everything.
+
+  He climbed the Council Hall tower alone as the city burned below him. He breathed out and saw crystals in the air. Then he fell.
+
+  He didn't die from the fall. He transformed. Dozens of crystallized dead fused to him as he lay at the base of the tower. He rose as the Warden — a massive accumulated crystal entity, the Security Chief buried somewhere inside it. He haunts the Council Hall district still. He is still issuing orders no one obeys.
