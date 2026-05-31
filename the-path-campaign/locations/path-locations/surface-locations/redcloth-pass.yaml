@@ -1,0 +1,122 @@
+name: Redcloth Pass
+tier: 2
+category: Traversal
+description: |
+  An ancient road along a cliff's lip, where the mist sits far below and the waymarkers have been waiting to be found.
+
+  The road is cut into the cliff face itself, wide enough for two to walk abreast, the stone worn smooth in the center by generations of feet. At intervals, carved stone posts mark the route — waymarkers, most toppled, all old, their faces carved with sea-people script. The red cloth that once flew from each one is long gone. The mist fills the valley below, flat and white, impossibly far down. The wind never stops. The path holds.
+
+impulses: |
+  To expose travelers to the height and the weight of what's below, to reward those willing to do the small work of restoration, to remember through crumbling stone what the sea-people built and left behind
+
+difficulty: 14
+
+modifiers:
+  - name: Unstable
+    note: Becomes Stable when the Waymarker counter reaches 3. Reverts to Unstable if the counter drops below 3.
+
+potentialAdversaries: Mist Born
+
+features:
+  - name: The Exposed Road
+    type: Counter System
+    description: |
+      The road traverses the cliff in five stages. Start a Road Progress counter at 0 and advance it at each stage to track the party's position.
+
+      **Stage 1 — Exposed Road:** Roll 1d6 on the Exposed Road table.
+      **Stage 2 — Waypoint: The Waystation**
+      **Stage 3 — Exposed Road:** Roll 1d6 on the Exposed Road table.
+      **Stage 4 — Waypoint: The Fog Vent**
+      **Stage 5 — Exposed Road:** Roll 1d6 on the Exposed Road table.
+
+      When the counter reaches 5, the party has crossed Redcloth Pass.
+
+      **Exposed Road Table**
+
+      | Roll | Encounter             |
+      |------|-----------------------|
+      | 1–2  | Wind Gust             |
+      | 3    | Cliffgold Spot        |
+      | 4    | Something in the Mist |
+      | 5–6  | Ancient Waymarker     |
+
+      ---
+
+      **Wind Gust**
+      Group Agility check vs Difficulty 14.
+      - Success — advance the counter
+      - Fail with Hope — the leader chooses 1 PC to mark 1 HP
+      - Fail with Fear — the leader chooses half the party (rounded up) to each mark 1 HP and 1 Stress
+
+      ---
+
+      **Cliffgold Spot**
+      A cluster of bright yellow flowers clings to the cliff face just below the path edge. Reachable — barely. Any PC may attempt: Strength or Agility vs 18.
+      - Success — gain 1 Cliffgold. No further attempts — only one cluster grows here.
+      - Fail — mark 2 HP and 1 Stress. May attempt again.
+
+      Multiple PCs can try, but only the first to succeed claims it.
+
+      ---
+
+      **Something in the Mist**
+      Any PC may look over the edge. Roll 1d6:
+
+      | Roll | What you see                                                                                                | Effect                          |
+      |------|-------------------------------------------------------------------------------------------------------------|---------------------------------|
+      | 1    | A mist creature far below, moving slowly, enormous — its shape wrong in a way that takes a moment to process | GM gains 2 Fear                 |
+      | 2    | The ruins of a road far below, continuing down the cliff into the mist — this path went somewhere deeper once | —                               |
+      | 3    | Water mantarays circling lazily far below the surface, made of mist rather than water                        | Half the party gains 1 Hope     |
+      | 4    | A cluster of Cliffgold growing impossibly far down the cliff face, unreachable, bright as a torch            | —                               |
+      | 5    | Ancient red cloth still tied to a mooring post far below — the road once had a lower level                   | —                               |
+      | 6    | Nothing. The mist is flat and white and still. It feels like it's looking back                               | Each PC gains 1 Mist token      |
+
+      ---
+
+      **Ancient Waymarker**
+      A carved stone post, toppled or crumbling, sea-people script worn into its face. The red cloth that once marked it is long gone. Any PC may spend an action to restore it — no roll required. Mark 1 progress on the Waymarker counter (starts at 0). When the counter reaches 3, Redcloth Pass gains the Stable modifier. If the counter drops below 3, the location reverts to Unstable. Restored waymarkers persist between sessions.
+
+    questions: |
+      How many waymarkers still stand along the full length of the road? Are there more than three — or exactly three?
+
+  - name: The Waystation
+    type: Action
+    description: |
+      A shallow stone shelter cut into the cliff face at the road's midpoint — low lintel, deep enough to block the wind. Inside, a carved stone mantaray sits in a niche, sea-people work, intact. Still warm to the touch.
+
+      Any PC may leave an offering. No roll required. Remove 1 Mist token. Once per Path.
+    questions: |
+      Does the god know someone is still tending this niche? Does it matter?
+
+  - name: The Fog Vent
+    type: Action
+    description: |
+      The path narrows to a ledge across a wide crack in the cliff face. Mist vents upward constantly — warm, not cold. Group Agility vs 14 to cross:
+      - Success with Hope — cross safely
+      - Success with Fear — leader chooses 1 PC to gain 1 Mist token
+      - Fail with Hope — leader chooses half the party (rounded up) to each gain 1 Mist token
+      - Fail with Fear — every PC gains 1 Mist token, then leader chooses half the party (rounded up) to gain 1 additional Mist token
+
+      **The Gamble:** Before the group rolls, any PC may attempt to jump the gap instead (individual Strength or Agility vs 18). Success: cross instantly, gain 1 Hope. Fail: mark 1 HP and 1 Stress — you didn't make it across.
+    questions: |
+      What does the mist smell like when it vents this close?
+
+tarotCard: 6 of Goblets
+
+featureQuestions:
+  - The waymarkers have been waiting to be restored for a long time. Who last walked this road with purpose — and why did they stop?
+  - The mist is warm at the Fog Vent. Is that the god's presence, or something else entirely?
+  - The Something in the Mist table describes a lower road continuing down the cliff into the mist. Where did it go?
+  - Restored waymarkers persist between sessions. If the party restores all three and the road goes Stable — does anyone else notice?
+  - The red cloth is gone but the mooring posts remain. Who took it, or did it simply rot? Is there red cloth anywhere else on the Path?
+  - The prayer niche is still warm. Has anyone left an offering here recently, before the party arrived?
+
+items:
+  - name: Cliffgold
+    type: General
+    usage: Consumable
+    flavor: "A bright yellow flower that clings to cliff faces where nothing else grows — ancient, stubborn, and worth the reach."
+    effect:
+      category: Restoration
+      description: |
+        Consume during a rest. Remove 3 Mist tokens.
