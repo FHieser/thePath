@@ -1,0 +1,50 @@
+name: Crystal Golem
+tier: 3
+category: Solo
+description: |
+  A hulking construct of accumulated plague crystal — not built, but grown. The size of a war machine, its frame is angular metal colonized entirely by pale crystalline formations that glow with the meteorite's inner light. Crystal vapor drifts from its joints with every movement. It advances with the terrible patience of something that has never been in a hurry, each step cracking stone beneath its weight.
+motives: Advance toward the living, crush whatever stands in the way, grow outward
+difficulty: 17
+thresholds:
+  major: 16
+  severe: 32
+hp: 13
+stress: 5
+attack:
+  bonus: '+5'
+  name: Crystal Fist
+  range: Melee
+  damage: 2d20+6 phy
+experience:
+  - name: Immovable
+    value: 3
+  - name: Crystal Resilience
+    value: 2
+features:
+  - name: Slow
+    type: Passive
+    description: |
+      When you spotlight the Golem and it doesn't have a token on its stat block, it can't act yet. Place a token on its stat block and describe what it's preparing to do. When you spotlight the Golem and it has a token, clear the token and it acts.
+  - name: Crushing Blows
+    type: Passive
+    description: |
+      When the Golem makes a successful attack, the target must mark an Armor Slot without receiving its benefits. If they can't mark an Armor Slot, they must mark an additional HP instead.
+  - name: Immovable Object
+    type: Passive
+    description: |
+      An attack that would move the Golem moves it two fewer ranges. When the Golem takes physical damage, reduce it by 5.
+  - name: Momentum
+    type: Reaction
+    description: |
+      When the Golem makes a successful attack against a PC, you gain a Fear.
+  - name: Crystal Spray
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      The Golem erupts shards of plague crystal in a wide arc. All targets within Close range must make an Agility Reaction Roll (Difficulty 17). On a failure, targets mark an Armor Slot without receiving its benefits and take 2d12+6 physical damage. Targets who cannot mark an Armor Slot mark an additional HP instead. On a success, targets take half damage only.
+  - name: Meteoric Detonation
+    type: Reaction
+    description: |
+      When the Golem is reduced to 3 HP or fewer, it may immediately detonate. Roll 2d12 for each HP remaining — all targets within Close range take that total as physical damage. The Golem is then destroyed.
+lore: |
+  The Crystal Golem is not a creature that was made. It is a consequence — plague crystal accreting around the concentrated corruption of the meteorite until critical mass was reached and motion began. No will inside it. No history. Just the accumulated weight of heavenly material twisted by a devil's bargain, pressing outward through whatever gap it can find.
