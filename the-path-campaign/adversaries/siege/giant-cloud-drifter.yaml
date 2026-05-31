@@ -1,0 +1,203 @@
+name: Giant Cloud Drifter
+tier: 2
+category: Colossus
+
+description: |
+  A massive jellyfish-like organism that drifts silently above the ground, its translucent bell pulsing with eerie inner light. Long thin tentacles trail below, dragging mist across the earth as it moves. Two baskets hang beneath the bell on chains — the lower housing the creature's anchor crew, the upper a mist forge operated by an alien entity. It makes no sound. It does not hurry. It simply arrives.
+
+motives: |
+  Drift toward the Village Center, deploy Mist Anchors from above, flood the zone with mist, protect the Bell Membrane.
+
+size: 120 ft. tall including tentacles, 60 ft. wide
+
+segments:
+  - Drift Tentacles
+  - Anchor Station
+  - Prayer Platform
+  - Bell Membrane
+  - Mist Core
+
+thresholds: 14/22
+stress: 5
+
+experience:
+  - name: Drifter
+    value: 2
+  - name: Silent
+    value: 2
+
+adjacency:
+  Drift Tentacles:
+    - Anchor Station
+  Anchor Station:
+    - Drift Tentacles
+    - Prayer Platform
+  Prayer Platform:
+    - Anchor Station
+    - Bell Membrane
+  Bell Membrane:
+    - Prayer Platform
+    - Mist Core
+  Mist Core:
+    - Bell Membrane
+
+features:
+  - name: Fear Generation
+    type: Passive
+    description: |
+      At the start of GM Siege activation, gain +2 Fear while the Giant Cloud Drifter is active.
+
+  - name: Colossal Power
+    type: Reaction
+    description: |
+      When the Giant Cloud Drifter fails an attack, you gain a Fear.
+
+  - name: Aerial Form
+    type: Passive
+    description: |
+      All segments except the Drift Tentacles cannot be targeted by attacks from the ground. Creatures must board the Giant Cloud Drifter via the Drift Tentacles to attack these segments.
+
+  - name: Cloud Drift
+    type: Siege Activation
+    description: |
+      The Giant Cloud Drifter may move 1 zone toward the Village Center.
+
+---
+
+name: Drift Tentacles
+segment_of: Giant Cloud Drifter
+adjacent_segments:
+  - Anchor Station
+
+difficulty: 12
+
+features:
+  - name: Immutable
+    type: Passive
+    description: |
+      The Drift Tentacles cannot be targeted or damaged. They are the only boarding point onto the Giant Cloud Drifter.
+
+  - name: Mist Wake
+    type: Passive
+    description: |
+      The tentacles drag mist across the ground as the Giant Cloud Drifter moves. The zone counts as Mist-Touched while the Giant Cloud Drifter is present.
+
+  - name: Living Mist
+    type: Passive
+    description: |
+      The tentacles are not fully solid. Boarding requires a PC to make an Agility roll. On a failure, they cannot board and gain 1 Mist token.
+
+---
+
+name: Anchor Station
+segment_of: Giant Cloud Drifter
+adjacent_segments:
+  - Drift Tentacles
+  - Prayer Platform
+
+difficulty: 14
+hp: 5
+
+features:
+  - name: Quick Deployment
+    type: Siege Activation
+    description: |
+      When the Giant Cloud Drifter moves to a new zone, immediately deploy a Mist Anchor.
+
+  - name: Prayer Flags
+    type: Passive
+    description: |
+      While this segment is not Destroyed, the Giant Cloud Drifter exerts a Nothing(1) effect — all PCs in its zone reduce their Hope die by one step.
+
+  - name: Skeleton Crew
+    type: Action
+    description: |
+      Make up to 3 attacks (+1, 1d8+3 phy each) against targets on any segment of the Giant Cloud Drifter. Failed attacks from Skeleton Crew do not trigger Colossal Power.
+
+---
+
+name: Prayer Platform
+segment_of: Giant Cloud Drifter
+adjacent_segments:
+  - Anchor Station
+  - Bell Membrane
+
+difficulty: 14
+hp: 4
+
+attack:
+  bonus: '+2'
+  name: Void Chant
+  range: Far
+  damage: 1d8+4 mag
+
+features:
+  - name: Mist Ball
+    type: Action
+    description: |
+      The entity shapes mist from the spinning prayer wheels into a dense sphere and hurls it. Make an attack against all targets within Close range of a chosen point. On a hit, each target takes damage. Distribute 2 Mist tokens among targets that fail their reaction roll.
+
+  - name: Downpour
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      The entity floods the zone directly below the platform with accumulated mist. Every target beneath the Giant Cloud Drifter gains 2 Mist tokens.
+
+---
+
+name: Bell Membrane
+segment_of: Giant Cloud Drifter
+adjacent_segments:
+  - Prayer Platform
+  - Mist Core
+
+difficulty: 16
+hp: 8
+
+features:
+  - name: Fatal
+    type: Passive
+    description: |
+      When this segment is Destroyed, the Giant Cloud Drifter is defeated — the balloon collapses and the creature plummets.
+
+  - name: Mist Shell
+    type: Passive
+    description: |
+      When this segment takes damage, reduce the HP marked by one threshold step — Severe becomes Major, Major becomes minor, minor deals no HP.
+
+  - name: Sealed
+    type: Passive
+    description: |
+      While this segment is not Destroyed, the Mist Core cannot be targeted from outside.
+
+---
+
+name: Mist Core
+segment_of: Giant Cloud Drifter
+adjacent_segments:
+  - Bell Membrane
+
+difficulty: 11
+hp: 5
+
+features:
+  - name: Fatal
+    type: Passive
+    description: |
+      When this segment is Destroyed, the Giant Cloud Drifter is defeated.
+
+  - name: Pulse
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      Every PC inside the Bell gains 1 Mist token.
+
+  - name: Last Breath
+    type: Reaction
+    description: |
+      When this segment is Destroyed, every PC inside the Bell gains 3 Mist tokens.
+
+---
+
+lore: |
+  The Giant Cloud Drifter is not a constructed weapon — it is the mist given body. Ancient and wordless, it drifts where the Mist Born direct it, carrying its crew in baskets beneath its bell as it moves silently through the fog. Prayer wheels mounted on the lower platform spin continuously, extruding raw mist that an entity within the bell shapes into weapons. Its tentacles leave trails of corruption wherever they drag, and anchors drop from beneath it like seeds — each one extending the mist's reach into ground that was once protected. To those watching from the village walls, it appears first as a glow in the fog. Then a shape. Then a silence that swallows everything else.
