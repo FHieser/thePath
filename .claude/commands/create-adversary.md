@@ -18,7 +18,7 @@ Work through adversary creation step-by-step, collaborating with the user on eac
 Ask the user for:
 - **Adversary name**
 - **Basic concept** (what is it? what role does it play?)
-- **Tier** (1 or 2)
+- **Tier range** (T1 only, T2 only, or T1–T2 both)
 - **Category** (Solo, Leader, Bruiser, Standard, Minion, Skulk, Support, Ranged, Horde, Social)
 - **Thematic family** (Mist creatures, Crystal-Plague, Beasts, Spider Queen's Brood, etc.)
 
@@ -29,18 +29,18 @@ Then discuss:
 
 ## Step 2: Core Statistics
 
-Reference official Tier 2 benchmarks from `lib/og-dhsrd/scripts/index.html`:
+Reference tier benchmarks from `lib/og-dhsrd/scripts/index.html`:
 
-Work with the user to determine:
+Work with the user to determine stats **per tier**:
 - **Difficulty** (within tier/category range)
 - **HP** (within tier/category range)
 - **Stress** (within tier/category range)
 - **Thresholds** (Major/Severe, if applicable)
 - **Attack bonus** (within tier/category range)
-- **Attack name** (thematic to the creature)
-- **Attack range** (Melee, Very Close, Close, Far)
-- **Attack damage** (dice + modifier, matching tier benchmarks)
-- **Experiences** (2-3 skills with +2 to +4 bonuses)
+- **Attack name** (thematic to the creature — shared across tiers)
+- **Attack range** (Melee, Very Close, Close, Far — shared across tiers)
+- **Attack damage** (dice + modifier, matching tier benchmarks — scales per tier)
+- **Experiences** (2-3 skills with +2 to +4 bonuses — values scale per tier)
 
 ## Step 3: Feature Planning
 
@@ -89,52 +89,73 @@ After all features are developed, verify:
 
 ## Step 6: Compile Final Adversary
 
-Create the complete YAML file using this template:
+Create the complete YAML file using this template. All adversaries use the multi-tier format — `name`, `category`, `description`, `motives`, and `lore` live at the root; per-tier stats go inside the `tiers` array. Use one `adversary-name.yaml` file (no `-t1`/`-t2` suffix).
 
 ```yaml
 name: [Adversary Name]
-tier: [1 or 2]
 category: [Solo/Leader/Bruiser/Standard/Minion/etc.]
 description: [2-3 sentences of vivid description emphasizing visual horror/wonder and movement quality]
 motives: [Comma-separated tactical priorities]
-difficulty: [Number]
-thresholds:  # Omit for Minions
-  major: [Number]
-  severe: [Number]
-hp: [Number]
-stress: [Number]
-attack:
-  bonus: '+X'
-  name: [Attack Name]
-  range: [Melee/Very Close/Close/Far]
-  damage: [XdY+Z phy/mag]
-experience:
-  - name: [Skill Name]
-    value: [2-4]
-  - name: [Skill Name]
-    value: [2-4]
-features:
-  - name: [Feature Name]
-    type: [Passive/Action/Reaction]
-    cost: [Spend X Fear / Mark a Stress]  # If applicable
-    uses: [Number]  # If limited uses
-    description: |
-      [Detailed mechanical description. Be specific about triggers, costs, effects, durations.]
-  - name: [Feature Name]
-    type: [Passive/Action/Reaction]
-    description: |
-      [Description]
 lore: [2-3 sentences connecting creature to campaign world, explaining origin or role in ecology/society]
+
+tiers:
+  - tier: 1
+    difficulty: [Number]
+    thresholds:  # Omit for Minions (set to null)
+      major: [Number]
+      severe: [Number]
+    hp: [Number]
+    stress: [Number]
+    attack:
+      bonus: '+X'
+      name: [Attack Name]
+      range: [Melee/Very Close/Close/Far]
+      damage: [XdY+Z phy/mag]
+    experience:
+      - name: [Skill Name]
+        value: [2-4]
+      - name: [Skill Name]
+        value: [2-4]
+    features:
+      - name: [Feature Name]
+        type: [Passive/Action/Reaction]
+        cost: [Spend X Fear / Mark a Stress]  # If applicable
+        uses: [Number]  # If limited uses
+        description: |
+          [Detailed mechanical description. Be specific about triggers, costs, effects, durations.]
+
+  - tier: 2
+    difficulty: [Number]
+    thresholds:
+      major: [Number]
+      severe: [Number]
+    hp: [Number]
+    stress: [Number]
+    attack:
+      bonus: '+X'
+      name: [Same Attack Name]
+      range: [Same Range]
+      damage: [Scaled XdY+Z phy/mag]
+    experience:
+      - name: [Skill Name]
+        value: [3-4]
+      - name: [Skill Name]
+        value: [3-4]
+    features:
+      - name: [Feature Name]
+        type: [Passive/Action/Reaction]
+        description: |
+          [Updated description if damage values or counts changed; otherwise identical to T1.]
 ```
+
+If creating a T2-only adversary (e.g., a late-game unique), use a single entry in the `tiers` array with `tier: 2`.
 
 ## Step 7: System Integration
 
 After creating the adversary:
 
-### Update webapp (`path-webapp/js/index-adversaries.js`):
-1. Add folder to `adversaryFolders` array if new creature type
-2. Add filename to `fallbackFiles` object
-3. Add to `folderConfig` with display name if new category
+### Update webapp (`path-webapp/js/utils.js`):
+1. Add folder to `ADVERSARY_FOLDERS` array in `utils.js` if new creature type — that's the single source of truth for folder discovery
 
 ### Update location references:
 - Add to `potentialAdversaries` field in relevant location YAML files
@@ -229,7 +250,7 @@ Ask throughout:
 **Step 1: Initial Concept**
 - [ ] Adversary name chosen
 - [ ] Basic concept defined
-- [ ] Tier selected (1 or 2)
+- [ ] Tier range selected (T1, T2, or T1–T2)
 - [ ] Category selected
 - [ ] Thematic family identified
 - [ ] Visual description drafted
@@ -266,8 +287,8 @@ Ask throughout:
 - [ ] Balance verified for tier/category
 
 **Step 6: Compile Final Adversary**
-- [ ] YAML file created in correct folder
-- [ ] All fields populated correctly
+- [ ] Single YAML file created in correct folder (no -t1/-t2 suffix)
+- [ ] All fields populated correctly (root: name/category/description/motives/lore; per-tier: all stats)
 - [ ] Description emphasizes visual/movement
 - [ ] Lore connects to campaign
 

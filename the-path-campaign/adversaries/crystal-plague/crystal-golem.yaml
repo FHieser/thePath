@@ -1,26 +1,29 @@
 name: Crystal Golem
-tier: 3
 category: Solo
 description: |
   A hulking construct of accumulated plague crystal — not built, but grown. The size of a war machine, its frame is angular metal colonized entirely by pale crystalline formations that glow with the meteorite's inner light. Crystal vapor drifts from its joints with every movement. It advances with the terrible patience of something that has never been in a hurry, each step cracking stone beneath its weight.
 motives: Advance toward the living, crush whatever stands in the way, grow outward
-difficulty: 17
-thresholds:
-  major: 16
-  severe: 32
-hp: 13
-stress: 5
-attack:
-  bonus: '+5'
-  name: Crystal Fist
-  range: Melee
-  damage: 2d20+6 phy
-experience:
+lore: |
+  The Crystal Golem is not a creature that was made. It is a consequence — plague crystal accreting around the concentrated corruption of the meteorite until critical mass was reached and motion began. No will inside it. No history. Just the accumulated weight of heavenly material twisted by a devil's bargain, pressing outward through whatever gap it can find.
+tiers:
+- tier: 3
+  difficulty: 17
+  thresholds:
+    major: 16
+    severe: 32
+  hp: 13
+  stress: 5
+  attack:
+    bonus: '+5'
+    name: Crystal Fist
+    range: Melee
+    damage: 2d20+6 phy
+  experience:
   - name: Immovable
     value: 3
   - name: Crystal Resilience
     value: 2
-features:
+  features:
   - name: Slow
     type: Passive
     description: |
@@ -46,5 +49,3 @@ features:
     type: Reaction
     description: |
       When the Golem is reduced to 3 HP or fewer, it may immediately detonate. Roll 2d12 for each HP remaining — all targets within Close range take that total as physical damage. The Golem is then destroyed.
-lore: |
-  The Crystal Golem is not a creature that was made. It is a consequence — plague crystal accreting around the concentrated corruption of the meteorite until critical mass was reached and motion began. No will inside it. No history. Just the accumulated weight of heavenly material twisted by a devil's bargain, pressing outward through whatever gap it can find.
