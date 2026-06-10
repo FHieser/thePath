@@ -1,0 +1,126 @@
+name: Deep Station
+tier: 3
+category: Exploration
+description: |
+  The convergence point of the Copper Rust Clan's entire rail network — three track lines meeting at a carved stone hub the size of a small town square. Platform edges are worn smooth from generations of boots. Cart cradles line one wall. The rune-lamps are dead. A massive switching junction sits misaligned at the track center, its mechanism frozen mid-turn. One line leads toward the outer mine. One leads toward the defense line. The third ends at an archway of Clan stonework carved with the God of the Deep's sigil — and beyond it, a wall of mist solid enough to lean against. At the center of the station floor, set into a ring of carved stone, an iron pipe rises from the ground. A hammer hangs on a bracket beside it.
+tagline: The rails stop here. So does everything else.
+impulses: |
+  Draw the players deeper underground, hold what the Clan left intact, resist what seeps through the mist wall
+difficulty: 17
+modifiers:
+  - name: Unstable
+  - name: Underground
+  - name: Linked (Copper Rust Sanctuary)
+potentialAdversaries: The Guardian, Mist Walkers, Mist Stalkers
+features:
+  - name: The Rail Junction
+    type: Passive/Action
+    description: |
+      Three rail lines converge at a mechanical switching hub — heavy iron levers, rune-inlaid channels, and directional plates built to redirect carts across all three routes. When the players arrive, the junction is misaligned. Carts entering the station cannot exit cleanly.
+
+      Arriving by Cart (Unrepaired): The cart strikes the misaligned junction. All PCs take 1 HP damage. The cart is stuck until the junction is fixed.
+
+      Stage 1 — Physical Repair: Each player spends 1 resource freely from Hope, Stress, HP, or Armor.
+
+      Stage 2 — Rune Recalibration: One PC moves to the Rune Station and recalibrates the rune-work — requires 2 successes using the Rune Station's enchantment system (Difficulty 17).
+
+      Once repaired, players arriving or departing by cart navigate the junction freely toward any of the three lines.
+    questions: |
+      Was the junction damaged intentionally — someone buying time on the way out — or did it fail on its own as the station was abandoned?
+
+  - name: The Mist Archway
+    type: Passive/Action
+    description: |
+      The Sanctuary rail line ends at a grand carved archway — double-height Clan stonework, the God of the Deep's sigil set into the keystone. Beyond it: a solid wall of mist, pale and unmoving, pressed against the far side of the arch as if held there by the stone itself. The rune channels in the arch base are designed to carry Sacred Flame.
+
+      Opening the Archway: Pour Flame Essence into the carved channels at the arch base. The channels track how much has been given — players may pour in multiple actions or across multiple visits within the same Path. When 3 Flame Essence has been poured, the mist pulls back and the passage to the Copper Rust Sanctuary is open permanently.
+
+      At the start of a new Path, any Essence already poured resets. The opening does not.
+
+      The Guardian: When the Archway opens for the first time, something emerges from the retreating mist. It was placed here to hold this passage. It does not pursue beyond the Archway threshold while the mist wall is solid behind it.
+
+      After the Guardian is defeated, subsequent openings are uncontested. The GM may spend 3 Fear to have something else come through on later visits.
+    questions: |
+      Did the Clan seal this passage themselves — or did the mist claim it after the Sanctuary fell?
+
+  - name: The Rune Station
+    type: Action
+    description: |
+      A stone workbench carved from the platform edge, rune channels running across its surface and connecting via inlaid lines to the rail network beneath the floor. Clan engineers used it to tune carts, repair rune-work, and shape ambient stone magic into whatever a crafted object could hold. The channels still carry current.
+
+      Rune Enchantment: A PC at the station selects a mundane item and agrees with the GM on an effect and its complexity. Progress persists between sessions.
+
+      Complexity / Successes Required:
+      Simple (minor effect, single property): 1
+      Moderate: 2–4
+      Complex (significant property, multi-stage): 5
+
+      Each session at the station, make a Finesse or Knowledge reaction (Difficulty 17):
+      - Critical Success: The channels run clean and bright. +2 progress.
+      - Success: The rune-work takes, imperfectly but firmly. +1 progress.
+      - Fail with Hope: The circuit snaps back — a sharp discharge zaps through the PC's hands. No progress, mark 1 Stress.
+      - Fail with Fear: The magic surges and throws back. The PC is knocked from the bench. Progress −1, mark 1 HP and 1 Stress.
+
+      Known Effects (players and GM may define others):
+      Lamp (Simple): Radiates steady light without fuel.
+      Magic Marker (Simple): Writes on any surface in faintly glowing script.
+      Heat Stone (Simple): Radiates warmth for hours — enough to dry gear or fight off deep cold.
+      Chill Stone (Simple): Keeps a container cold — food stays fresh for days.
+      Recorder (Moderate): Captures and plays back a short spoken message when touched.
+      Weight Charm (Moderate): Enchants a container to feel lighter than it is — eases encumbered travel.
+
+      More complex items may require specific materials — GM discretion on what's needed before work can begin.
+    questions: |
+      What was the last thing enchanted at this station before the Clan abandoned it? Is the work still sitting in the channels, unfinished?
+
+  - name: The Defensive Position
+    type: Passive/Action
+    description: |
+      Stone platforms on either side of the rail junction are elevated two meters above the track floor, with low walls facing the Mist Archway. Two ballista mounts face the Archway side. One ballista is destroyed — the frame collapsed, the mechanism beyond salvage. The other is damaged but intact.
+
+      Any PC occupying an elevated platform has cover against attacks from the Archway direction.
+
+      Damaged Ballista: The surviving ballista requires repair before use. The party spends resources equal to the number of players, drawn freely from Hope, Stress, HP, or Armor.
+      - Attack with Finesse. On a hit, deal 3 HP damage.
+      - Each ballista holds 1 bolt. Reloading takes 1 action.
+
+      Destroyed Ballista: If the players have brought a replacement ballista, it can be mounted in 2 actions. Once mounted, it functions identically to the repaired one.
+
+      Players who repair or mount a ballista before opening the Archway can fire from cover before the guardian reaches the junction.
+    questions: |
+      Why is one ballista destroyed — was it used in a last stand, or did something come through and wreck it before the Clan could fire?
+
+  - name: The Goods Elevator
+    type: Passive
+    description: |
+      A square shaft in the station floor, three meters across, edged in worked stone and iron railings. Heavy chains hang from a ceiling-mounted counterweight system above it. The platform — a reinforced iron slab built to carry ore loads — is somewhere below. Currently, the shaft is filled with mist from the bottom up, as solid and still as the wall in the Archway.
+
+      Players who look into the shaft see nothing but white.
+
+      Once the Copper Rust Sanctuary's Sacred Flame is restored, the mist in the shaft clears within a session. The platform is visible below — intact, suspended on its chains. Operating the counterweight takes 2 actions to lower and 2 actions to raise.
+
+      The shaft leads to a lower level.
+    questions: |
+      What was being sent down when the station fell?
+
+  - name: The Deep Shrine
+    type: Passive/Action
+    description: |
+      At the center of the station floor, set into a ring of carved stone, a thick iron pipe rises knee-height from the ground. A heavy hammer hangs beside it on a bracket. The pipe's crown is dented and darkened from repeated use — someone struck this many times, over many years. The stone ring around it is engraved with depth-marks and names worn smooth by hands resting on them.
+
+      This is a shrine to the God of the Deep.
+
+      Striking the Pipe: When a player takes the hammer and strikes the pipe, a low drum tone rolls out through the hall — felt in the chest and in the stone underfoot as much as heard. It carries through the rock in every direction.
+
+      The GM secretly marks a Deep Ore vein in one underground location the players have not recently visited. When the players next arrive at that location, the vein is discoverable (Instinct reaction, Difficulty 14). One Deep Ore may be harvested from it. The vein does not persist between sessions.
+
+      The shrine may be struck once per session.
+    questions: |
+      Whose name appears most often in the depth-marks carved into the stone ring?
+
+featureQuestions:
+  - If the junction is repaired, who benefits most from being able to direct carts freely between all three lines?
+  - How much Flame Essence does the party have, and is 3 Essence a cost they can sustain in a single visit?
+  - What did the Clan expect to come through the Archway? The defensive position suggests they had a specific answer in mind.
+  - What is at the bottom of the Goods Elevator shaft, and how does it connect to where the Clan went after the station fell?
+  - Is the God of the Deep the same entity whose bell stands at Bell's Edge — or a different one?
