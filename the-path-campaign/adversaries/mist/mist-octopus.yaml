@@ -1,0 +1,44 @@
+name: Mist Octopus
+category: Solo
+description: |
+  Eight limbs that trail into fog at their tips, the body almost solid until it moves. Eyes — more than two, distributed across its mantle — open and close in patterns that follow no biological logic. At the base of each arm, a ring of pearl and crude metal sits like a cuff worn over many years. Where it passes, mist lingers in its wake like spilled ink. It circles before it strikes. It watches. It seems almost curious about what it intends to drag back through the gate.
+motives: Circle and separate targets before committing, test what stands before striking, drag the isolated back through the Archway, fill retreating space with mist, play
+lore: |
+  The Mist Octopus was not born. It was stationed. Wrathful guardians are placed at thresholds — not to destroy what approaches, but to test it. The rings of pearl and crude metal at the base of each arm are not decorative; they are marks of office, hammered on by hands that expected this post to hold. Whether it was the Clan that placed it, or something older that moved in when the Sanctuary fell, is a question the creature itself does not answer.
+tiers:
+  - tier: 3
+    difficulty: 17
+    thresholds:
+      major: 20
+      severe: 36
+    hp: 11
+    stress: 6
+    attack:
+      bonus: '+5'
+      name: Tentacle Lash
+      range: Close
+      damage: 3d12+6 phy
+    experience:
+      - name: Mist Movement
+        value: 3
+      - name: Predator's Patience
+        value: 2
+    features:
+      - name: Relentless (2)
+        type: Passive
+        description: |
+          The Mist Octopus can be spotlighted up to 2 times per GM turn. Spend Fear as usual to spotlight them.
+      - name: Samādhi
+        type: Action
+        description: |
+          The Octopus goes still and dissolves into the surrounding mist. GM gains 3 Fear. All PCs take 1 action freely, in any order the players choose. When the Octopus emerges, it may appear at any point within Far range. Its first attack this turn is made at advantage.
+      - name: Vanishing Mist
+        type: Action
+        cost: Spend 1 Fear
+        description: |
+          The Octopus lunges forward and moves up to Far range. Every creature within Close range of its starting position marks 2 Mist tokens as it tears through the mist on its way out.
+      - name: Eight-Fold Grasp
+        type: Action
+        cost: Spend 1 Fear
+        description: |
+          The Octopus lashes out with three tentacles at up to 3 different targets within Close range. Make a separate attack roll against each target. On a hit, the target takes 1d12+4 physical damage, is Restrained, and becomes Vulnerable — attacks against them are made at advantage. A Restrained target may spend their action on a Strength reaction (Difficulty 17) to break free. When the Octopus uses Vanishing Mist or Samādhi, all Restrained targets are immediately released.
