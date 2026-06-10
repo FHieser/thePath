@@ -1,0 +1,28 @@
+name: Clan Extension
+tier: 2
+
+rowLabels:
+  "-1": "C'"
+  "0": "B'"
+  "1": "A'"
+  "2": A
+
+gridSurface:
+  "1,-1": bells-edge
+  "2,-1": mantaray-tree
+  "1,0": highland-watch
+  "0,1": misty-waters
+  "0,2": village-in-the-mist
+  "1,2": stone-works
+  "4,2": silken-spire
+  "5,2": sacred-mountain-pass
+  "6,2": unstable-mist
+
+gridUnderground:
+  "1,0": reed-marsh-caverns
+  "0,1": crystal-defense-line
+  "1,1": geothermal-caverns
+  "1,2": mining-complex
+  "2,2": outer-mine-line
+  "3,2": fungal-depths
+  "4,2": brood-throne
