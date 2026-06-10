@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 39** (24 Surface + 13 Underground + 2 Special)
+**Total Locations: 40** (24 Surface + 14 Underground + 2 Special)
 
 ---
 
@@ -37,7 +37,7 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
-## Underground Locations (13 locations)
+## Underground Locations (14 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                        |
 | -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -51,6 +51,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Needle Tunnels](./underground-locations/needle-tunnels.yaml)       | Claustrophobic passages hiding comfort and cosmic horror           |
 | ☑        | ☑     | [Outer Mine Line](./underground-locations/outer-mine-line.yaml)     | Copper Rust Clan drift-cart railway through natural caverns, linking the rail network to the ancient mining station |
 | ☑        | ☑     | [Crystal Defense Line](./underground-locations/crystal-defense-line.yaml) | Tier 3 inner rail segment with Clan fortifications and a blocked meteorite shaft leaking crystal creatures |
+| ☑        | ☑     | [Deep Station](./underground-locations/deep-station.yaml)                 | Central hub of the Copper Rust Clan rail network — three converging lines, a mist-sealed Archway, and a shrine to the God of the Deep |
 | ☑        | ☑     | [The Red Cellar](./underground-locations/red-cellar.yaml)           | Winery vaults turned hemomancy lab, haunted by the Archon's experiment (Linked to The Monastery) |
 | ☑        | ☑     | [Reed Marsh Caverns](./underground-locations/reed-marsh-caverns.md) | Underground wetland with bioluminescent grotto and hermit dwelling |
 | ☑        | ☑     | [Sacred Underground](./underground-locations/sacred-underground.md) | Hallowed sanctuary beneath the earth                               |
@@ -71,7 +72,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 39** | **Unassigned: 39** (50.0% remaining)
+**Assigned: 40** | **Unassigned: 38** (48.7% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -142,7 +143,7 @@ _Physical card mappings for location representation during play. Select cards ba
 
 | Card            | Location           |
 | --------------- | ------------------ |
-| Ace of Discs    |                    |
+| Ace of Discs    | Deep Station       |
 | 2 of Discs      | Sacred Underground |
 | 3 of Discs      | Black Falls        |
 | 4 of Discs      | Outer Mine Line    |
