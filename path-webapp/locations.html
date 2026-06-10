@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Locations - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .filter-controls {
+            margin: 1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .filter-tag {
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.15s;
+            border: 0.15rem solid transparent;
+            user-select: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-light);
+            opacity: 0.6;
+        }
+
+        .filter-tag:hover {
+            opacity: 0.85;
+        }
+
+        .filter-tag.include {
+            background: rgba(74, 107, 82, 0.6);
+            border-color: var(--success-green);
+            opacity: 1;
+        }
+
+        .filter-tag.exclude {
+            background: rgba(196, 69, 54, 0.5);
+            border-color: #c44536;
+            opacity: 1;
+            text-decoration: line-through;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .location-overview-card {
+            background: rgba(0, 0, 0, 0.2);
+            border: 0.15rem solid var(--border-color);
+            border-radius: 0.2rem;
+            padding: 1rem;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .location-overview-card:hover {
+            background: rgba(0, 0, 0, 0.35);
+            border-color: var(--accent-amber);
+            transform: translateY(-2px);
+        }
+
+        .location-overview-card h3 {
+            color: var(--accent-amber);
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .location-tier {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .location-overview-desc {
+            font-size: 0.9rem;
+            font-style: italic;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+            flex-grow: 1;
+        }
+
+        .location-modifiers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modifier-tag {
+            background: var(--success-green);
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.15rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .modifier-tag.stable {
+            background: #4a6b52;
+        }
+
+        .modifier-tag.unstable {
+            background: #c44536;
+        }
+
+        .modifier-tag.underground {
+            background: #5c4033;
+        }
+
+        .modifier-tag.cave-mouth {
+            background: #7a6b5c;
+        }
+
+        .modifier-tag.inhabited {
+            background: #d4a574;
+            color: #1a2530;
+        }
+
+        .modifier-tag.wild-beasts {
+            background: #8b4513;
+        }
+
+        .location-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            margin-top: auto;
+            padding-top: 0.5rem;
+            border-top: 0.1rem solid rgba(17, 68, 102, 0.3);
+        }
+
+        .location-stats span {
+            color: var(--accent-amber);
+            font-weight: 600;
+        }
+
+        .section-divider {
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 0.2rem solid var(--primary-blue);
+        }
+
+        .section-divider h2 {
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+
+        .stats-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2rem;
+        }
+
+        .stat-summary-item {
+            text-align: center;
+        }
+
+        .stat-summary-item .number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-amber);
+        }
+
+        .stat-summary-item .label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="index.html">← Back to Path</a>
+            </nav>
+            <h1>All Locations</h1>
+            <p class="subtitle">Complete location overview for The Path</p>
+        </header>
+
+        <main>
+            <div class="stats-summary" id="stats-summary">
+                <div class="stat-summary-item">
+                    <span class="number">14</span>
+                    <span class="label">Total Locations</span>
+                </div>
+                <div class="stat-summary-item">
+                    <span class="number" id="surface-count">9</span>
+                    <span class="label">Surface</span>
+                </div>
+                <div class="stat-summary-item">
+                    <span class="number" id="underground-count">5</span>
+                    <span class="label">Underground</span>
+                </div>
+                <div class="stat-summary-item">
+                    <span class="number" id="stable-count">1</span>
+                    <span class="label">Stable</span>
+                </div>
+                <div class="stat-summary-item">
+                    <span class="number" id="unstable-count">13</span>
+                    <span class="label">Unstable</span>
+                </div>
+            </div>
+
+            <section class="filter-controls" id="filter-tags">
+                <!-- Modifier filter tags populated dynamically -->
+            </section>
+
+            <div id="locations-container">
+                <div class="loading">Loading locations...</div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/locations.js"></script>
+</body>
+</html>

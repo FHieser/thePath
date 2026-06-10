@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Off-Path Travel - The Path</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      body {
+        transition: background 0.8s ease;
+      }
+
+      body.path-success {
+        background: linear-gradient(
+          135deg,
+          #1a2530 0%,
+          #2a3b2c 50%,
+          #1a2530 100%
+        );
+        background-size: 200% 200%;
+        animation: gradient-shift 10s ease infinite;
+      }
+
+      @keyframes gradient-shift {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      body.path-success .container {
+        box-shadow: 0 0 60px rgba(74, 107, 82, 0.3);
+      }
+
+      body.stable-success {
+        background: linear-gradient(
+          135deg,
+          #1a2530 0%,
+          #1f3540 50%,
+          #1a2530 100%
+        );
+        background-size: 200% 200%;
+        animation: gradient-shift 10s ease infinite;
+      }
+
+      body.stable-success .container {
+        box-shadow: 0 0 60px rgba(17, 68, 102, 0.3);
+      }
+
+      body.vanishing-mist {
+        background: linear-gradient(
+          135deg,
+          #1a2530 0%,
+          #3d1f1f 50%,
+          #1a2530 100%
+        );
+        background-size: 200% 200%;
+        animation: gradient-shift 5s ease infinite;
+      }
+
+      body.vanishing-mist .container {
+        box-shadow: 0 0 60px rgba(196, 69, 54, 0.5);
+      }
+
+      .off-path-container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .off-path-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Left Column - Draw Area */
+      .draw-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        transition: all 0.5s;
+      }
+
+      .draw-column.path-success {
+        background: linear-gradient(
+          135deg,
+          rgba(74, 107, 82, 0.1) 0%,
+          transparent 100%
+        );
+        border-radius: 0.2rem;
+        padding: 1rem;
+        margin: -1rem;
+      }
+
+      .warning-box {
+        background: rgba(61, 43, 82, 0.4);
+        border: 0.15rem solid #6a4c93;
+        border-radius: 0.2rem;
+        padding: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      .warning-box h3 {
+        color: #b794f6;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+
+      .draw-button-container {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(42, 31, 61, 0.6);
+        border-radius: 0.2rem;
+        border: 0.2rem solid #6a4c93;
+        box-shadow: 0 0 20px rgba(106, 76, 147, 0.3);
+        transition: all 0.5s;
+      }
+
+      .draw-button-container.path-success {
+        background: linear-gradient(
+          135deg,
+          rgba(74, 107, 82, 0.6) 0%,
+          rgba(42, 31, 61, 0.6) 100%
+        );
+        border-color: var(--success-green);
+        box-shadow: 0 0 30px rgba(74, 107, 82, 0.6);
+      }
+
+      .draw-button {
+        background: linear-gradient(135deg, #6a4c93 0%, #4a2c73 100%);
+        border: 0.2rem solid #b794f6;
+        color: var(--text-light);
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 4px 15px rgba(106, 76, 147, 0.4);
+      }
+
+      .draw-button:hover:not(:disabled) {
+        background: linear-gradient(135deg, #8a6cb3 0%, #6a4c93 100%);
+        border-color: #d4b4ff;
+        box-shadow: 0 6px 20px rgba(106, 76, 147, 0.6);
+        transform: translateY(-2px);
+      }
+
+      .draw-button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .draw-button.path-success {
+        background: linear-gradient(
+          135deg,
+          var(--success-green) 0%,
+          #3a5b42 100%
+        );
+        border-color: var(--accent-amber);
+        box-shadow: 0 6px 25px rgba(74, 107, 82, 0.8);
+        animation: pulse-success 2s ease-in-out infinite;
+      }
+
+      .draw-button.path-success:hover:not(:disabled) {
+        background: linear-gradient(
+          135deg,
+          #5a7b62 0%,
+          var(--success-green) 100%
+        );
+      }
+
+      .draw-button.stable-success {
+        background: linear-gradient(
+          135deg,
+          var(--primary-blue) 0%,
+          #0d3451 100%
+        );
+        border-color: var(--accent-amber);
+        box-shadow: 0 6px 25px rgba(17, 68, 102, 0.8);
+        animation: pulse-stable 2s ease-in-out infinite;
+      }
+
+      .draw-button.stable-success:hover:not(:disabled) {
+        background: linear-gradient(
+          135deg,
+          #1a5780 0%,
+          var(--primary-blue) 100%
+        );
+      }
+
+      .draw-button.vanishing-mist {
+        background: linear-gradient(135deg, var(--danger-red) 0%, #8b2020 100%);
+        border-color: #ff6b6b;
+        box-shadow: 0 6px 25px rgba(196, 69, 54, 0.8);
+        animation: pulse-danger 1.5s ease-in-out infinite;
+      }
+
+      @keyframes pulse-success {
+        0%,
+        100% {
+          box-shadow: 0 6px 25px rgba(74, 107, 82, 0.8);
+        }
+        50% {
+          box-shadow: 0 6px 35px rgba(74, 107, 82, 1);
+        }
+      }
+
+      @keyframes pulse-stable {
+        0%,
+        100% {
+          box-shadow: 0 6px 25px rgba(17, 68, 102, 0.8);
+        }
+        50% {
+          box-shadow: 0 6px 35px rgba(17, 68, 102, 1);
+        }
+      }
+
+      @keyframes pulse-danger {
+        0%,
+        100% {
+          box-shadow: 0 6px 25px rgba(196, 69, 54, 0.8);
+        }
+        50% {
+          box-shadow: 0 6px 35px rgba(196, 69, 54, 1);
+        }
+      }
+
+      .draw-button-container.stable-success {
+        background: linear-gradient(
+          135deg,
+          rgba(17, 68, 102, 0.6) 0%,
+          rgba(42, 31, 61, 0.6) 100%
+        );
+        border-color: var(--primary-blue);
+        box-shadow: 0 0 30px rgba(17, 68, 102, 0.6);
+      }
+
+      .draw-button-container.vanishing-mist {
+        background: linear-gradient(
+          135deg,
+          rgba(196, 69, 54, 0.6) 0%,
+          rgba(42, 31, 61, 0.6) 100%
+        );
+        border-color: var(--danger-red);
+        box-shadow: 0 0 30px rgba(196, 69, 54, 0.6);
+      }
+
+      .draw-column.stable-success {
+        background: linear-gradient(
+          135deg,
+          rgba(17, 68, 102, 0.1) 0%,
+          transparent 100%
+        );
+        border-radius: 0.2rem;
+        padding: 1rem;
+        margin: -1rem;
+      }
+
+      .draw-column.vanishing-mist {
+        background: linear-gradient(
+          135deg,
+          rgba(196, 69, 54, 0.15) 0%,
+          transparent 100%
+        );
+        border-radius: 0.2rem;
+        padding: 1rem;
+        margin: -1rem;
+      }
+
+      .reset-button {
+        background: rgba(74, 107, 82, 0.3);
+        border: 0.15rem solid var(--success-green);
+        color: var(--text-light);
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .reset-button:hover {
+        background: rgba(74, 107, 82, 0.5);
+      }
+
+      .current-location {
+        background: rgba(0, 0, 0, 0.3);
+        border: 0.15rem solid #6a4c93;
+        border-radius: 0.2rem;
+        padding: 1rem;
+        min-height: 150px;
+      }
+
+      .current-location.empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.4);
+        font-style: italic;
+      }
+
+      .location-display {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 0.75rem;
+        border-radius: 0.3rem;
+        background: rgba(42, 31, 61, 0.5);
+      }
+
+      .location-display:hover {
+        background: rgba(42, 31, 61, 0.7);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(122, 110, 170, 0.3);
+      }
+
+      .location-display h2 {
+        color: #b794f6;
+        margin-bottom: 0.4rem;
+        font-size: 1.3rem;
+      }
+
+      .location-display .tier {
+        color: var(--primary-blue);
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+      }
+
+      .location-display .description {
+        font-style: italic;
+        margin: 0.4rem 0;
+        opacity: 0.9;
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+
+      .location-display .modifiers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+        margin: 0.4rem 0;
+      }
+
+      .location-display .modifier-tag {
+        background: #6a4c93;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.15rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .location-display .modifier-tag.stable {
+        background: var(--success-green);
+        box-shadow: 0 0 10px rgba(74, 107, 82, 0.6);
+      }
+
+      /* Right Column - Location Lists */
+      .locations-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .location-section {
+        background: rgba(0, 0, 0, 0.3);
+        border: 0.15rem solid #6a4c93;
+        border-radius: 0.2rem;
+        padding: 1rem;
+      }
+
+      .location-section h3 {
+        color: #b794f6;
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .location-section h3:hover {
+        color: #d4b4ff;
+      }
+
+      .location-section h3::before {
+        content: "▼ ";
+        font-size: 0.7rem;
+        display: inline-block;
+        transition: transform 0.2s;
+      }
+
+      .location-section.collapsed h3::before {
+        transform: rotate(-90deg);
+      }
+
+      .location-search {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        border: 0.1rem solid rgba(106, 76, 147, 0.4);
+        border-radius: 0.15rem;
+        padding: 0.5rem;
+        color: var(--text-light);
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+        transition: all 0.2s;
+      }
+
+      .location-search:focus {
+        outline: none;
+        border-color: #b794f6;
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 5px rgba(106, 76, 147, 0.3);
+      }
+
+      .location-search::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      .location-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        max-height: 500px;
+        overflow-y: auto;
+      }
+
+      .location-section.collapsed .location-list {
+        display: none;
+      }
+
+      .location-item {
+        background: rgba(255, 255, 255, 0.05);
+        border: 0.1rem solid rgba(106, 76, 147, 0.3);
+        border-radius: 0.15rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.2s;
+      }
+
+      .location-item:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(106, 76, 147, 0.5);
+      }
+
+      .location-item .name {
+        font-weight: 600;
+        color: var(--accent-amber);
+        font-size: 0.85rem;
+        flex: 1;
+      }
+
+      .location-item .actions {
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+      }
+
+      .location-item .action-badge {
+        font-size: 0.65rem;
+        font-weight: 700;
+        padding: 0.15rem 0.35rem;
+        border-radius: 0.15rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        user-select: none;
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+
+      .location-item .action-badge:hover {
+        opacity: 1;
+      }
+
+      .location-item .action-badge.visited-badge {
+        background: rgba(106, 76, 147, 0.3);
+        border: 0.1rem solid rgba(106, 76, 147, 0.5);
+        color: #b794f6;
+      }
+
+      .location-item .action-badge.visited-badge:hover {
+        background: rgba(106, 76, 147, 0.5);
+        border-color: #b794f6;
+      }
+
+      .location-item .action-badge.path-badge {
+        background: rgba(74, 107, 82, 0.3);
+        border: 0.1rem solid rgba(74, 107, 82, 0.5);
+        color: var(--success-green);
+      }
+
+      .location-item .action-badge.path-badge:hover {
+        background: rgba(74, 107, 82, 0.5);
+        border-color: var(--success-green);
+      }
+
+      .location-item .action-badge.path-badge.active {
+        opacity: 1;
+        background: rgba(74, 107, 82, 0.6);
+        border-color: var(--success-green);
+        box-shadow: 0 0 5px rgba(74, 107, 82, 0.6);
+      }
+
+      .location-item .action-badge.stable-badge {
+        background: rgba(17, 68, 102, 0.3);
+        border: 0.1rem solid rgba(17, 68, 102, 0.5);
+        color: var(--primary-blue);
+      }
+
+      .location-item .action-badge.stable-badge:hover {
+        background: rgba(17, 68, 102, 0.5);
+        border-color: var(--primary-blue);
+      }
+
+      .location-item .action-badge.stable-badge.active {
+        opacity: 1;
+        background: rgba(17, 68, 102, 0.6);
+        border-color: var(--primary-blue);
+        box-shadow: 0 0 5px rgba(17, 68, 102, 0.6);
+      }
+
+      .location-item.path-marked {
+        background: rgba(74, 107, 82, 0.15);
+        border-color: rgba(74, 107, 82, 0.5);
+      }
+
+      .location-item.path-marked:hover {
+        background: rgba(74, 107, 82, 0.25);
+        border-color: var(--success-green);
+      }
+
+      .location-item.path-marked .name {
+        color: var(--success-green);
+      }
+
+      .location-item.stable-marked {
+        background: rgba(17, 68, 102, 0.15);
+        border-color: rgba(17, 68, 102, 0.5);
+      }
+
+      .location-item.stable-marked:hover {
+        background: rgba(17, 68, 102, 0.25);
+        border-color: var(--primary-blue);
+      }
+
+      .location-item.stable-marked .name {
+        color: var(--primary-blue);
+      }
+
+      .visited-item,
+      .path-item {
+        background: rgba(255, 255, 255, 0.03);
+        border: 0.1rem solid rgba(106, 76, 147, 0.2);
+        border-radius: 0.15rem;
+        padding: 0.5rem;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .path-item {
+        border-color: rgba(74, 107, 82, 0.4);
+        background: rgba(74, 107, 82, 0.1);
+        color: var(--success-green);
+        font-weight: 600;
+      }
+
+      .location-section.hidden {
+        display: none;
+      }
+
+      /* Success Screens */
+      .success-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .success-overlay.active {
+        display: flex;
+      }
+
+      .success-content {
+        background: linear-gradient(
+          135deg,
+          rgba(74, 107, 82, 0.9) 0%,
+          rgba(42, 31, 61, 0.9) 100%
+        );
+        border: 0.3rem solid var(--success-green);
+        border-radius: 0.3rem;
+        padding: 3rem;
+        text-align: center;
+        max-width: 500px;
+        box-shadow: 0 0 40px rgba(74, 107, 82, 0.8);
+      }
+
+      .success-content h2 {
+        color: var(--success-green);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 0 0 20px rgba(74, 107, 82, 0.8);
+      }
+
+      .success-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+
+      .success-content button {
+        background: var(--success-green);
+        border: 0.15rem solid var(--accent-amber);
+        color: var(--text-light);
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .success-content button:hover {
+        background: #5a7b62;
+        box-shadow: 0 0 20px rgba(74, 107, 82, 0.6);
+      }
+
+      .danger-overlay {
+        background: rgba(0, 0, 0, 0.95);
+      }
+
+      .danger-content {
+        background: linear-gradient(
+          135deg,
+          rgba(196, 69, 54, 0.9) 0%,
+          rgba(42, 31, 61, 0.9) 100%
+        );
+        border-color: var(--danger-red);
+        box-shadow: 0 0 40px rgba(196, 69, 54, 0.8);
+      }
+
+      .danger-content h2 {
+        color: var(--danger-red);
+      }
+
+      .danger-content button {
+        background: var(--danger-red);
+      }
+
+      .danger-content button:hover {
+        background: #d64536;
+        box-shadow: 0 0 20px rgba(196, 69, 54, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="breadcrumb">
+          <a href="index.html">← Back to Path</a>
+        </nav>
+        <h1>Off-Path Travel</h1>
+        <p class="subtitle">
+          Venture into the uncharted mist at your own peril
+        </p>
+      </header>
+
+      <main>
+        <div class="off-path-container">
+          <!-- Left Column - Draw Area -->
+          <div class="draw-column">
+            <div class="warning-box">
+              <h3>⚠️ Danger: Uncharted Territory</h3>
+              <p>
+                You have left the established Path and now drift through
+                corrupted mist where reality shifts. All locations here are
+                Mist-Touched, carrying harsh rest penalties and possible mist
+                adversary encounters.
+              </p>
+              <p>
+                <strong>Escape Conditions:</strong> Draw a Stable location to
+                emerge at its grid coordinates, or find your way back to a known
+                Path location.
+              </p>
+            </div>
+
+            <div class="draw-button-container">
+              <button id="draw-button" class="draw-button">
+                Draw Location
+              </button>
+            </div>
+
+            <div style="text-align: center">
+              <button
+                id="reset-button"
+                class="reset-button"
+                style="display: none"
+              >
+                Reset Journey
+              </button>
+            </div>
+
+            <div id="current-location" class="current-location empty">
+              <p>
+                No location drawn yet. Press the button above to begin your
+                journey through the mist.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column - Location Lists -->
+          <div class="locations-column">
+            <div class="location-section" id="available-section">
+              <h3>
+                Available Locations (<span id="available-count">0</span>) •
+                Path: <span id="path-count">0</span> • Stable:
+                <span id="stable-count">0</span>
+              </h3>
+              <input
+                type="text"
+                id="location-search"
+                class="location-search"
+                placeholder="Search locations..."
+              />
+              <div id="available-list" class="location-list">
+                <!-- Populated by JavaScript -->
+              </div>
+            </div>
+
+            <div class="location-section collapsed hidden" id="visited-section">
+              <h3>Visited (<span id="visited-count">0</span>)</h3>
+              <div id="visited-list" class="location-list">
+                <!-- Populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>The Path - Daggerheart Campaign Frame</p>
+      </footer>
+    </div>
+
+    <!-- Success Overlays -->
+    <div id="path-success" class="success-overlay">
+      <div class="success-content">
+        <h2>Path Found!</h2>
+        <p>
+          Through determination and fortune, you have found your way back to the
+          established Path. The corrupted mist loses its grip as you return to
+          safer ground.
+        </p>
+        <button onclick="clearPathSuccess()">Continue</button>
+      </div>
+    </div>
+
+    <div id="vanishing-mist-overlay" class="success-overlay danger-overlay">
+      <div class="success-content danger-content">
+        <h2>Lost in the Mist</h2>
+        <p>
+          The character who was leading vanishes into endless gray, their form
+          dissolving into swirling tendrils of mist. The remaining party members
+          witness their companion fade away, unable to follow or intervene.
+        </p>
+        <p style="color: var(--danger-red); font-weight: 700; margin-top: 1rem">
+          The player must create a new character to continue play.
+        </p>
+        <button onclick="clearVanishingMist()">Acknowledge</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/off-path.js"></script>
+  </body>
+</html>

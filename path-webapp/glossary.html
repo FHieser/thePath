@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Glossary - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Two-column sticky-sidebar layout (matches path-mechanics.html) */
+        .glossary-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .glossary-sidebar {
+            position: sticky;
+            top: 1.5rem;
+            height: fit-content;
+        }
+
+        .glossary-sidebar h2 {
+            color: var(--accent-amber);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 0 0 0.6rem 0;
+            opacity: 0.7;
+        }
+
+        .glossary-sidebar .toc-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .glossary-sidebar .toc-entry {
+            font-size: 0.82rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .glossary-sidebar .toc-entry-sub {
+            font-size: 0.75rem;
+            padding: 0.35rem 0.75rem 0.35rem 1.25rem;
+            opacity: 0.8;
+        }
+
+        /* Rendered Markdown styles */
+        #glossary-content h2 {
+            color: var(--accent-amber);
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 0.1rem solid var(--primary-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        #glossary-content h3 {
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        #glossary-content p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            opacity: 0.85;
+        }
+
+        #glossary-content strong {
+            color: var(--text-light);
+            opacity: 1;
+        }
+
+        #glossary-content hr {
+            border: none;
+            border-top: 0.1rem solid var(--border-color);
+            margin: 1.5rem 0;
+        }
+
+        /* Tables */
+        #glossary-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.85rem;
+        }
+
+        #glossary-content thead tr {
+            background: rgba(17, 68, 102, 0.4);
+        }
+
+        #glossary-content th {
+            color: var(--accent-amber);
+            text-align: left;
+            padding: 0.5rem 0.75rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 0.15rem solid var(--primary-blue);
+        }
+
+        #glossary-content td {
+            padding: 0.45rem 0.75rem;
+            border-bottom: 0.05rem solid var(--border-color);
+            vertical-align: middle;
+            color: var(--text-light);
+        }
+
+        #glossary-content tbody tr:hover {
+            background: rgba(17, 68, 102, 0.25);
+        }
+
+        /* Links inside the table */
+        #glossary-content td a {
+            color: var(--accent-amber);
+            text-decoration: none;
+        }
+
+        #glossary-content td a:hover {
+            color: var(--text-light);
+            text-decoration: underline;
+        }
+
+        /* Checkmark columns */
+        #glossary-content td:first-child,
+        #glossary-content td:nth-child(2) {
+            text-align: center;
+            width: 2rem;
+            color: #7ecf8e;
+        }
+
+        @media (max-width: 700px) {
+            .glossary-layout {
+                grid-template-columns: 1fr;
+            }
+            .glossary-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="index.html">← Back to Path</a>
+            </nav>
+            <h1>Location Glossary</h1>
+            <p class="subtitle">Complete reference for all locations in the Path Network</p>
+        </header>
+
+        <main>
+            <div class="glossary-layout">
+                <!-- Sticky sidebar -->
+                <aside class="glossary-sidebar">
+                    <h2>Contents</h2>
+                    <div class="toc-grid">
+                        <a href="#surface-locations" class="toc-entry">🌄 Surface Locations</a>
+                        <a href="#underground-locations" class="toc-entry">🪨 Underground Locations</a>
+                        <a href="#special-locations" class="toc-entry">✦ Special Locations</a>
+                        <a href="#tarot-card-assignments" class="toc-entry">🃏 Tarot Assignments</a>
+                        <a href="#major-arcana" class="toc-entry toc-entry-sub">Major Arcana</a>
+                        <a href="#minor-arcana-wands" class="toc-entry toc-entry-sub">Wands</a>
+                        <a href="#minor-arcana-swords" class="toc-entry toc-entry-sub">Swords</a>
+                        <a href="#minor-arcana-discs" class="toc-entry toc-entry-sub">Discs</a>
+                        <a href="#minor-arcana-goblets" class="toc-entry toc-entry-sub">Goblets</a>
+                    </div>
+                </aside>
+
+                <!-- Rendered Markdown -->
+                <div id="glossary-content">
+                    <div class="loading">Loading glossary…</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+    (async function () {
+        const contentEl = document.getElementById('glossary-content');
+
+        try {
+            const res = await fetch('../the-path-campaign/locations/path-locations/Glossary.md');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            let md = await res.text();
+
+            // Transform internal location links to webapp URLs:
+            //   ./surface-locations/name.md   → location.html?id=name
+            //   ./underground-locations/name.yaml → location.html?id=name
+            //   ./special-locations/name.md   → location.html?id=name
+            md = md.replace(
+                /\(\.\/(?:surface|underground|special)-locations\/([^)]+?)(?:\.md|\.yaml)\)/g,
+                (_, name) => `(location.html?id=${name})`
+            );
+
+            // Strip the H1 title (it's already in the <header>)
+            md = md.replace(/^#\s+.*\n/, '');
+            // Strip the italic subtitle line
+            md = md.replace(/^_.*_\n\n/, '');
+
+            // Add anchor IDs to headings so sidebar links work.
+            // marked does this by default via the 'headerIds' option (enabled by default).
+            contentEl.innerHTML = marked.parse(md);
+
+            // Assign clean anchor IDs to headings after rendering.
+            // marked v5+ no longer generates IDs by default, and the raw
+            // heading text contains counts like "(21 locations)" that would
+            // produce ugly IDs — so we normalise manually.
+            contentEl.querySelectorAll('h2, h3').forEach(el => {
+                const id = el.textContent
+                    .toLowerCase()
+                    .replace(/\(.*?\)/g, '')   // strip parentheticals
+                    .trim()
+                    .replace(/[^a-z0-9\s-]/g, '')
+                    .replace(/\s+/g, '-')
+                    .replace(/-+/g, '-')
+                    .replace(/^-|-$/g, '');
+                el.id = id;
+            });
+
+        } catch (err) {
+            contentEl.innerHTML = `<p class="error">Failed to load glossary: ${err.message}</p>`;
+            console.error(err);
+        }
+    })();
+    </script>
+</body>
+</html>

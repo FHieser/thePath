@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Path — The Path</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="path-title">Loading…</h1>
+        <p id="path-subtitle" class="subtitle"></p>
+      </header>
+      <main>
+        <div class="breadcrumb">
+          <a href="paths.html">← Path Library</a>
+        </div>
+        <div id="path-content"></div>
+      </main>
+      <footer>
+        <p>The Path — Daggerheart Campaign Frame | Built with the Darrington Press Community Gaming License</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script>
+      (async function () {
+        const id = new URLSearchParams(window.location.search).get("id");
+        const titleEl = document.getElementById("path-title");
+        const subtitleEl = document.getElementById("path-subtitle");
+        const contentEl = document.getElementById("path-content");
+
+        if (!id) { titleEl.textContent = "Path not found"; return; }
+
+        try {
+          const res = await fetch(`/the-path-campaign/example-path/path-library/${id}.yaml`);
+          if (!res.ok) throw new Error("Not found");
+          const ex = jsyaml.load(await res.text());
+          ex._id = id;
+
+          document.title = `${ex.name} — The Path`;
+          titleEl.textContent = ex.name;
+          const meta = [ex.tier ? `Tier ${ex.tier}` : null, ex.personal_ranking ? `Difficulty ${ex.personal_ranking}` : null].filter(Boolean).join(" · ");
+          subtitleEl.textContent = meta;
+          contentEl.innerHTML = buildPathHTML(ex);
+        } catch (e) {
+          titleEl.textContent = "Path not found";
+          contentEl.innerHTML = '<p style="opacity:0.7">Could not load path data.</p>';
+        }
+
+        function idToName(id) {
+          return id.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+        }
+
+        function getRange(grid) {
+          const rows = new Set(), cols = new Set();
+          Object.keys(grid).forEach((key) => { const [c, r] = key.split(",").map(Number); cols.add(c); rows.add(r); });
+          return { rows: [...rows].sort((a, b) => a - b), cols: [...cols].sort((a, b) => a - b) };
+        }
+
+        function buildTable(grid, rowLabels, isUnderground, globalMinCol, globalMaxCol, globalMinRow, globalMaxRow) {
+          if (!grid || Object.keys(grid).length === 0) return "";
+          const { rows, cols } = getRange(grid);
+          const minCol = globalMinCol !== undefined ? globalMinCol : Math.min(...cols);
+          const maxCol = globalMaxCol !== undefined ? globalMaxCol : Math.max(...cols);
+          const minRow = globalMinRow !== undefined ? globalMinRow : Math.min(...rows);
+          const maxRow = globalMaxRow !== undefined ? globalMaxRow : Math.max(...rows);
+          const allCols = Array.from({ length: maxCol - minCol + 1 }, (_, i) => i + minCol);
+          const allRows = Array.from({ length: maxRow - minRow + 1 }, (_, i) => i + minRow);
+          let html = '<div style="overflow-x:auto"><table class="path-grid-table"><thead><tr><th></th>';
+          allCols.forEach((c) => { html += `<th>${c + 1}</th>`; });
+          html += "</tr></thead><tbody>";
+          allRows.forEach((r) => {
+            const label = (rowLabels || {})[String(r)] || `R${r + 1}`;
+            html += `<tr><th>${label}</th>`;
+            allCols.forEach((c) => {
+              const key = `${c},${r}`;
+              const locId = grid[key];
+              if (locId) {
+                const isHub = locId === "village-in-the-mist";
+                const cls = isHub ? "path-cell hub" : isUnderground ? "path-cell underground" : "path-cell";
+                html += `<td><a href="location.html?id=${locId}" class="${cls}">${idToName(locId)}</a></td>`;
+              } else {
+                html += `<td><span class="path-cell empty">—</span></td>`;
+              }
+            });
+            html += "</tr>";
+          });
+          html += "</tbody></table></div>";
+          return html;
+        }
+
+        function buildPathHTML(ex) {
+          const sc = Object.keys(ex.gridSurface || {}).length;
+          const uc = Object.keys(ex.gridUnderground || {}).length;
+          const meta = [`${sc + uc} locations`, sc > 0 ? `${sc} surface` : null, uc > 0 ? `${uc} underground` : null].filter(Boolean).join(" · ");
+          let html = `<p class="path-modal-meta">${meta}</p>`;
+
+          // Compute shared column and row ranges so both grids align visually
+          let globalMinCol, globalMaxCol, globalMinRow, globalMaxRow;
+          if (sc > 0 && uc > 0) {
+            const allKeys = [...Object.keys(ex.gridSurface || {}), ...Object.keys(ex.gridUnderground || {})];
+            const allCols = allKeys.map((k) => Number(k.split(",")[0]));
+            const allRows = allKeys.map((k) => Number(k.split(",")[1]));
+            globalMinCol = Math.min(...allCols);
+            globalMaxCol = Math.max(...allCols);
+            globalMinRow = Math.min(...allRows);
+            globalMaxRow = Math.max(...allRows);
+          }
+
+          if (sc > 0) {
+            html += `<h3 style="margin:0.75rem 0 0.4rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--accent-amber);font-weight:700">Surface</h3>`;
+            html += buildTable(ex.gridSurface, ex.rowLabels, false, globalMinCol, globalMaxCol, globalMinRow, globalMaxRow);
+          }
+          if (uc > 0) {
+            html += `<h3 style="margin:1rem 0 0.4rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--accent-amber);font-weight:700">Underground</h3>`;
+            html += buildTable(ex.gridUnderground, ex.rowLabels, true, globalMinCol, globalMaxCol, globalMinRow, globalMaxRow);
+          }
+          html += `<div style="margin-top:1rem"><a href="path-creator.html?load=${encodeURIComponent(ex._id)}" class="btn btn-primary">Load into Creator</a></div>`;
+          return html;
+        }
+      })();
+    </script>
+  </body>
+</html>

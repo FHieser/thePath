@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Path Creator — The Path</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      /* Minimal overrides for path creator */
+      .path-creator {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        align-items: start;
+      }
+      .layer {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 1rem;
+        align-items: start;
+      }
+      .palette {
+        max-height: 80vh;
+        overflow: auto;
+      }
+      .palette .search {
+        width: 100%;
+        padding: 0.4rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.15rem;
+        border: 1px solid rgba(255,255,255,0.06);
+        background: rgba(255,255,255,0.02);
+        color: inherit;
+      }
+      .palette .location-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.4rem;
+        margin-bottom: 0.35rem;
+        cursor: grab;
+      }
+      .creator-toolbar {
+        margin-bottom: 0.75rem;
+        display:flex;
+        gap:0.5rem;
+        flex-wrap:wrap;
+      }
+      .creator-footer {
+        margin-top: 0.75rem;
+        text-align: center;
+      }
+      .creator-footer .reset-button {
+        margin: 0 0.35rem;
+      }
+      .grid-container {
+        background: rgba(255,255,255,0.02);
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+      }
+      .pc-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 0.4rem;
+      }
+      /* Fixed heights for each layer so palettes can align */
+      #pc-grid-surface,
+      #pc-grid-underground {
+        min-height: 320px;
+        max-height: 480px;
+        overflow: auto;
+      }
+      .pc-cell {
+        min-height: 70px;
+        background: rgba(0,0,0,0.25);
+        border: 0.1rem solid rgba(255,255,255,0.04);
+        border-radius: 0.15rem;
+        padding: 0.35rem;
+        font-size: 0.85rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+      }
+      .pc-cell.filled {
+        background: rgba(255,255,255,0.03);
+      }
+      .pc-cell .cell-name {
+        font-weight:700;
+        font-size:0.9rem;
+      }
+      .pc-cell .cell-actions {
+        margin-top:0.25rem;
+        font-size:0.75rem;
+      }
+      .pc-cell.cave-mouth {
+        border-color: rgba(217,115,54,0.9);
+        box-shadow: 0 4px 12px rgba(217,115,54,0.08);
+      }
+
+      /* Palette lists (separate scrollbars per layer) */
+      #palette-list-surface,
+      #palette-list-underground {
+        max-height: 320px;
+        overflow: auto;
+        padding-right: 0.5rem;
+      }
+
+      /* Custom scrollbars */
+      #palette-list-surface::-webkit-scrollbar {
+        width: 10px;
+      }
+      #palette-list-surface::-webkit-scrollbar-thumb {
+        background: rgba(74,107,82,0.5);
+        border-radius: 6px;
+      }
+      #palette-list-underground::-webkit-scrollbar {
+        width: 10px;
+      }
+      #palette-list-underground::-webkit-scrollbar-thumb {
+        background: rgba(90,74,138,0.6);
+        border-radius: 6px;
+      }
+      /* Firefox scrollbar colors */
+      #palette-list-surface {
+        scrollbar-color: rgba(74,107,82,0.5) transparent;
+      }
+      #palette-list-underground {
+        scrollbar-color: rgba(90,74,138,0.6) transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Path Creator</h1>
+        <p class="subtitle">Place locations on an 8×4 grid — drag a location into a cell to place it.</p>
+      </header>
+
+      <main>
+        <div class="path-creator">
+          <!-- Surface Layer -->
+          <div class="layer" id="surface-layer">
+            <aside class="palette">
+              <h4 style="margin:0 0 0.5rem 0">Surface locations</h4>
+              <div id="palette-list-surface" class="palette-list"></div>
+              <input id="palette-search-surface" class="search" placeholder="Search surface..." style="margin-top:0.75rem" />
+            </aside>
+            <section class="grid-container">
+              <h3>Surface Layer (top)</h3>
+              <div id="pc-grid-surface" class="pc-grid" role="grid" aria-label="Surface grid"></div>
+            </section>
+          </div>
+
+          <!-- Underground Layer -->
+          <div class="layer" id="underground-layer">
+            <aside class="palette">
+              <h4 style="margin:0 0 0.5rem 0">Underground locations</h4>
+              <div id="palette-list-underground" class="palette-list"></div>
+              <input id="palette-search-underground" class="search" placeholder="Search underground..." style="margin-top:0.75rem" />
+            </aside>
+            <section class="grid-container">
+              <h3>Underground Layer (below)</h3>
+              <div id="pc-grid-underground" class="pc-grid" role="grid" aria-label="Underground grid"></div>
+            </section>
+          </div>
+          </div>
+          <div class="creator-footer">
+            <select id="load-example-select" class="reset-button" style="cursor:pointer">
+              <option value="">Load example…</option>
+            </select>
+            <button id="load-example-btn" class="reset-button">Load</button>
+            <button id="save-btn" class="reset-button">Save (autosaves)</button>
+            <button id="export-btn" class="reset-button">Export JSON</button>
+            <input id="import-file" type="file" accept="application/json" />
+            <button id="clear-btn" class="reset-button">Clear Grid</button>
+            <button id="lock-toggle" type="button" class="reset-button">Lock positions</button>
+          </div>
+        
+      </main>
+      <footer>
+        <p>Path Creator — uses localStorage autosaves (latest 10). Export/import supported.</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/paths.js"></script>
+    <script src="js/path-creator.js"></script>
+  </body>
+</html>
+
+

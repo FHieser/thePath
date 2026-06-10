@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Path Library — The Path</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Path Library</h1>
+        <p class="subtitle">Reusable path configurations — add a YAML file to the-path-campaign/example-path/path-library/ to include a new route</p>
+      </header>
+
+      <main>
+        <div class="breadcrumb">
+          <a href="index.html">← Back to Campaign</a>
+        </div>
+
+        <div id="paths-container">
+          <p style="opacity: 0.7; margin-top: 1rem;">Loading paths…</p>
+        </div>
+      </main>
+
+      <footer>
+        <p>The Path — Daggerheart Campaign Frame | Built with the Darrington Press Community Gaming License</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+      (async function () {
+        const container = document.getElementById('paths-container');
+        const examples = await loadPathLibrary();
+
+        if (examples.length === 0) {
+          container.innerHTML = '<p style="opacity:0.7">No paths found in the-path-campaign/example-path/path-library/.</p>';
+          return;
+        }
+
+        container.innerHTML = '';
+        let currentTier = null;
+
+        examples.forEach((ex) => {
+          const surfaceCount = Object.keys(ex.gridSurface || {}).length;
+          const undergroundCount = Object.keys(ex.gridUnderground || {}).length;
+
+          if (ex.tier !== currentTier) {
+            currentTier = ex.tier;
+            const header = document.createElement('h4');
+            header.textContent = ex.tier ? `Tier ${ex.tier}` : 'Unclassified';
+            header.style.cssText = 'width:100%;margin:1.5rem 0 0.5rem;color:var(--secondary-teal);font-size:1rem;grid-column:1/-1;';
+            container.appendChild(header);
+          }
+
+          const meta = [
+            `${surfaceCount + undergroundCount} locations`,
+            surfaceCount > 0 ? `${surfaceCount} surface` : null,
+            undergroundCount > 0 ? `${undergroundCount} underground` : null,
+            ex.personal_ranking ? `Difficulty ${ex.personal_ranking}` : null,
+          ].filter(Boolean).join(' · ');
+
+          const card = document.createElement('a');
+          card.className = 'nav-card path-card';
+          card.href = `path.html?id=${encodeURIComponent(ex.id)}`;
+          card.innerHTML = `
+            <h3>${ex.name}</h3>
+            <p class="card-desc">${surfaceCount + undergroundCount} locations</p>
+            <p class="card-detail">${meta}</p>
+          `;
+          container.appendChild(card);
+        });
+      })();
+    </script>
+  </body>
+</html>

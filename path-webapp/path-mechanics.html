@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Mechanics - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .mechanics-section {
+            background: rgba(0, 0, 0, 0.2);
+            border: 0.15rem solid var(--border-color);
+            border-radius: 0.2rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mechanics-section h2 {
+            color: var(--accent-amber);
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: 0.1rem solid var(--primary-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .mechanics-section h3 {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .mechanics-section h4 {
+            color: var(--success-green);
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mechanics-description {
+            line-height: 1.6;
+            white-space: pre-wrap;
+            margin-bottom: 1rem;
+        }
+
+        .modifier-list {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .modifier-item {
+            background: rgba(17, 68, 102, 0.2);
+            border-left: 0.3rem solid var(--success-green);
+            padding: 1rem;
+            border-radius: 0.2rem;
+        }
+
+        .modifier-item h4 {
+            margin-top: 0;
+            color: var(--accent-amber);
+        }
+
+        .modifier-value-range {
+            display: inline-block;
+            background: rgba(74, 107, 82, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.15rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .fear-cost-table {
+            background: rgba(196, 69, 54, 0.1);
+            border: 0.15rem solid var(--danger-red);
+            border-radius: 0.2rem;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .fear-cost-item {
+            padding: 0.75rem;
+            border-bottom: 0.1rem solid rgba(196, 69, 54, 0.2);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            align-items: start;
+        }
+
+        .fear-cost-item:last-child {
+            border-bottom: none;
+        }
+
+        .fear-cost {
+            background: var(--danger-red);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.2rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .fear-effect {
+            color: var(--text-light);
+        }
+
+        .fear-condition {
+            font-style: italic;
+            opacity: 0.8;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .corruption-tier {
+            background: rgba(196, 69, 54, 0.1);
+            border-left: 0.3rem solid var(--danger-red);
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border-radius: 0.2rem;
+        }
+
+        .corruption-tier-range {
+            color: var(--danger-red);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .step-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .step-list li {
+            background: rgba(17, 68, 102, 0.2);
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            border-left: 0.3rem solid var(--primary-blue);
+            border-radius: 0.2rem;
+        }
+
+        .step-number {
+            color: var(--accent-amber);
+            font-weight: 700;
+            margin-right: 0.5rem;
+        }
+
+        .quick-reference {
+            background: rgba(74, 107, 82, 0.15);
+            border: 0.15rem solid var(--success-green);
+            border-radius: 0.2rem;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .quick-reference h4 {
+            color: var(--success-green);
+            margin-top: 0;
+        }
+
+        .quick-reference ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .example-grid {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 0.2rem;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+        }
+
+        .flame-gain {
+            background: rgba(212, 165, 116, 0.1);
+            border-left: 0.3rem solid var(--accent-amber);
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border-radius: 0.2rem;
+        }
+
+        /* Two-column layout: sidebar + content */
+        .mechanics-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .mechanics-sidebar {
+            position: sticky;
+            top: 1.5rem;
+            height: fit-content;
+        }
+
+        .mechanics-sidebar .toc-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .mechanics-sidebar .toc-entry {
+            font-size: 0.82rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .mechanics-sidebar h2 {
+            color: var(--accent-amber);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 0 0 0.6rem 0;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 700px) {
+            .mechanics-layout {
+                grid-template-columns: 1fr;
+            }
+            .mechanics-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="index.html">← Back to Path</a>
+            </nav>
+            <h1>Path Network Mechanics</h1>
+            <p class="subtitle" id="version-subtitle">Loading...</p>
+        </header>
+
+        <main>
+            <div class="mechanics-layout">
+                <!-- Sticky sidebar TOC -->
+                <aside class="mechanics-sidebar">
+                    <h2>Contents</h2>
+                    <div class="toc-grid">
+                        <a href="#introduction" class="toc-entry">📜 Introduction</a>
+                        <a href="#path-locations" class="toc-entry">📍 Path Locations</a>
+                        <a href="#grid-system" class="toc-entry">🔲 Grid System</a>
+                        <a href="#placement-method" class="toc-entry">🃏 Placement Method</a>
+                        <a href="#example-path-creation" class="toc-entry">🗺️ Example Path Creation</a>
+                        <a href="#modifiers" class="toc-entry">✦ Modifiers</a>
+                        <a href="#modifiers-location-persistence" class="toc-entry toc-entry-sub">Location Persistence</a>
+                        <a href="#modifiers-vertical-navigation" class="toc-entry toc-entry-sub">Vertical Navigation</a>
+                        <a href="#modifiers-corruption-and-protection" class="toc-entry toc-entry-sub">Corruption & Protection</a>
+                        <a href="#modifiers-environmental-and-encounter" class="toc-entry toc-entry-sub">Environmental & Encounter</a>
+                        <a href="#modifiers-special-placement" class="toc-entry toc-entry-sub">Special Placement</a>
+                        <a href="#session-tracking" class="toc-entry">📋 Session Tracking</a>
+                        <a href="#mist-mechanics" class="toc-entry">🌫️ Mist Mechanics</a>
+                        <a href="#fear-spending" class="toc-entry">💀 Fear Spending Options</a>
+                        <a href="#flame-mechanics" class="toc-entry">🔥 Flame Mechanics</a>
+                    </div>
+                </aside>
+
+                <!-- Main content -->
+                <div id="mechanics-content">
+                    <div class="loading">Loading mechanics...</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/path-mechanics.js"></script>
+</body>
+</html>

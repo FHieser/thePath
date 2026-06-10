@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Search + filter bar */
+        .items-filters {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .items-search {
+            width: 100%;
+            background: rgba(10, 20, 40, 0.8);
+            border: 0.1rem solid var(--border-color);
+            border-radius: 0.4rem;
+            padding: 0.55rem 0.9rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .items-search:focus {
+            border-color: var(--accent-amber);
+        }
+
+        .items-search::placeholder {
+            color: var(--text-muted);
+            opacity: 0.6;
+        }
+
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--text-muted);
+            opacity: 0.6;
+            margin-right: 0.2rem;
+        }
+
+        .filter-btn {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.65rem;
+            border-radius: 0.25rem;
+            border: 0.05rem solid var(--border-color);
+            background: rgba(10, 20, 40, 0.6);
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: border-color 0.15s, color 0.15s, background 0.15s;
+            font-family: inherit;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--accent-amber);
+            color: var(--text-light);
+        }
+
+        .filter-btn.active {
+            background: rgba(180, 140, 40, 0.2);
+            border-color: var(--accent-amber);
+            color: var(--accent-amber);
+            font-weight: 600;
+        }
+
+        .filter-btn.usage-consumable.active {
+            background: rgba(180, 60, 60, 0.2);
+            border-color: #e07070;
+            color: #e07070;
+        }
+
+        .filter-btn.usage-reusable.active {
+            background: rgba(17, 68, 102, 0.4);
+            border-color: #7ab8d4;
+            color: #7ab8d4;
+        }
+
+        /* Two-column sticky-sidebar layout */
+        .items-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .items-sidebar {
+            position: sticky;
+            top: 1.5rem;
+            height: fit-content;
+        }
+
+        .items-sidebar h2 {
+            color: var(--accent-amber);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 0 0 0.6rem 0;
+            opacity: 0.7;
+        }
+
+        .items-sidebar .toc-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .items-sidebar .toc-entry {
+            font-size: 0.82rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        /* Item group heading */
+        .items-content h2 {
+            color: var(--accent-amber);
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 0.1rem solid var(--primary-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .items-content h2:first-child {
+            margin-top: 0;
+        }
+
+        /* Item card */
+        .item-card {
+            background: rgba(10, 20, 40, 0.6);
+            border: 0.1rem solid var(--border-color);
+            border-left-width: 0.25rem;
+            border-radius: 0.4rem;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .item-card.type-general            { border-left-color: var(--accent-amber); }
+        .item-card.type-rootbound          { border-left-color: #5fa85f; }
+        .item-card.type-fire-born          { border-left-color: #d4603a; }
+        .item-card.type-brass-mechanicorum { border-left-color: #c9a840; }
+
+        .item-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .item-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .item-badges {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 0.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .badge-consumable { background: rgba(180, 60, 60, 0.25); color: #e07070; border: 0.05rem solid rgba(180,60,60,0.4); }
+        .badge-reusable   { background: rgba(17, 68, 102, 0.4);  color: #7ab8d4; border: 0.05rem solid rgba(17,68,102,0.6); }
+        .badge-category   { background: rgba(180, 140, 40, 0.2); color: var(--accent-amber); border: 0.05rem solid rgba(180,140,40,0.4); }
+
+        .item-flavor {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            margin: 0.4rem 0 0.75rem 0;
+            opacity: 0.8;
+            border-left: 0.15rem solid var(--border-color);
+            padding-left: 0.75rem;
+        }
+
+        .item-effect {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            line-height: 1.55;
+            white-space: pre-line;
+            opacity: 0.9;
+        }
+
+        .no-results {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            opacity: 0.7;
+            padding: 1.5rem 0;
+        }
+
+        @media (max-width: 700px) {
+            .items-layout {
+                grid-template-columns: 1fr;
+            }
+            .items-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="index.html">← Back to Path</a>
+            </nav>
+            <h1>Items</h1>
+            <p class="subtitle">Equipment and consumables found along The Path</p>
+        </header>
+
+        <main>
+            <!-- Search + filters (full width, above the grid) -->
+            <div class="items-filters">
+                <input id="items-search" class="items-search" type="search" placeholder="Search items by name, effect, or flavor…" autocomplete="off">
+
+                <div class="filter-row" data-row="faction">
+                    <span class="filter-label">Faction</span>
+                    <button class="filter-btn active" data-faction="">All</button>
+                    <!-- Faction buttons populated dynamically from YAML -->
+                </div>
+
+                <div class="filter-row">
+                    <span class="filter-label">Usage</span>
+                    <button class="filter-btn active" data-usage="">All</button>
+                    <button class="filter-btn usage-consumable" data-usage="Consumable">Consumable</button>
+                    <button class="filter-btn usage-reusable"   data-usage="Reusable">Reusable</button>
+                </div>
+            </div>
+
+            <div class="items-layout">
+                <!-- Sticky sidebar -->
+                <aside class="items-sidebar">
+                    <h2>Contents</h2>
+                    <div id="items-toc" class="toc-grid">
+                        <span style="opacity:0.5;font-size:0.8rem;">Loading…</span>
+                    </div>
+                </aside>
+
+                <!-- Item groups -->
+                <div id="items-content" class="items-content">
+                    <div class="loading">Loading items…</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script>
+    (async function () {
+        const contentEl = document.getElementById('items-content');
+        const tocEl     = document.getElementById('items-toc');
+        const searchEl  = document.getElementById('items-search');
+
+        // Static metadata per known faction — new types fall back to defaults automatically
+        const FACTION_META = {
+            'General':            { emoji: '🎒', cls: 'general' },
+            'Rootbound':          { emoji: '🌿', cls: 'rootbound' },
+            'Fire Born':          { emoji: '🔥', cls: 'fire-born' },
+            'Brass Mechanicorum': { emoji: '⚙️', cls: 'brass-mechanicorum' },
+        };
+
+        // FACTIONS is built from the data, not hardcoded — derived after YAML load
+        let FACTIONS = [];
+
+        function slugify(str) {
+            return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        }
+
+        function itemCardHTML(item, cls) {
+            const usageCls = item.usage === 'Reusable' ? 'badge-reusable' : 'badge-consumable';
+            const catBadge = item.effect?.category
+                ? `<span class="badge badge-category">${item.effect.category}</span>` : '';
+            const flavor   = item.flavor
+                ? `<p class="item-flavor">${item.flavor}</p>` : '';
+            const effect   = item.effect?.description
+                ? `<div class="item-effect">${item.effect.description.trim()}</div>` : '';
+            return `
+            <div class="item-card type-${cls}">
+                <div class="item-header">
+                    <h3 class="item-name">${item.name}</h3>
+                    <div class="item-badges">
+                        <span class="badge ${usageCls}">${item.usage || 'Consumable'}</span>
+                        ${catBadge}
+                    </div>
+                </div>
+                ${flavor}
+                ${effect}
+            </div>`;
+        }
+
+        // Filter state
+        const state = { query: '', faction: '', usage: '' };
+
+        let allItems = [];
+
+        function render() {
+            const q = state.query.toLowerCase();
+
+            const filtered = allItems.filter(item => {
+                if (state.faction && item.type !== state.faction) return false;
+                if (state.usage  && item.usage !== state.usage)   return false;
+                if (q) {
+                    const haystack = [
+                        item.name,
+                        item.flavor,
+                        item.effect?.description,
+                        item.effect?.category,
+                        item.type,
+                    ].filter(Boolean).join(' ').toLowerCase();
+                    if (!haystack.includes(q)) return false;
+                }
+                return true;
+            });
+
+            // Group by faction in canonical order
+            let html = '';
+            let tocHtml = '';
+            let totalShown = 0;
+
+            for (const { key, label, emoji, cls } of FACTIONS) {
+                const list = filtered.filter(i => (i.type || 'General') === key);
+                if (list.length === 0) continue;
+
+                const sectionId = slugify(key);
+                tocHtml += `<a href="#${sectionId}" class="toc-entry">${emoji} ${label}</a>`;
+                html += `<h2 id="${sectionId}">${emoji} ${label}</h2>`;
+                html += list.map(item => itemCardHTML(item, cls)).join('');
+                totalShown += list.length;
+            }
+
+            if (totalShown === 0) {
+                html = `<p class="no-results">No items match your search.</p>`;
+                tocHtml = '';
+            }
+
+            contentEl.innerHTML = html;
+            tocEl.innerHTML = tocHtml || '<span style="opacity:0.4;font-size:0.8rem;">—</span>';
+        }
+
+        // Usage filter buttons (static — usage values don't change)
+        document.querySelectorAll('[data-usage]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('[data-usage]').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                state.usage = btn.dataset.usage;
+                render();
+            });
+        });
+
+        searchEl.addEventListener('input', () => {
+            state.query = searchEl.value.trim();
+            render();
+        });
+
+        // Load YAML
+        try {
+            const res = await fetch('../the-path-campaign/items.yaml');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            allItems = jsyaml.load(await res.text());
+
+            // Derive faction list from the data, preserving first-seen order
+            const seenKeys = [];
+            for (const item of allItems) {
+                const key = item.type || 'General';
+                if (!seenKeys.includes(key)) seenKeys.push(key);
+            }
+
+            FACTIONS = seenKeys.map(key => {
+                const meta = FACTION_META[key] || { emoji: '📦', cls: slugify(key) };
+                return { key, label: `${key} Items`, emoji: meta.emoji, cls: meta.cls };
+            });
+
+            // Rebuild faction filter buttons from derived list
+            const factionRow = document.querySelector('.filter-row[data-row="faction"]');
+            factionRow.innerHTML = `<span class="filter-label">Faction</span>
+                <button class="filter-btn active" data-faction="">All</button>
+                ${FACTIONS.map(f =>
+                    `<button class="filter-btn" data-faction="${f.key}">${f.emoji} ${f.key}</button>`
+                ).join('')}`;
+
+            // Re-attach faction button listeners
+            factionRow.querySelectorAll('[data-faction]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    factionRow.querySelectorAll('[data-faction]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    state.faction = btn.dataset.faction;
+                    render();
+                });
+            });
+
+            render();
+        } catch (err) {
+            contentEl.innerHTML = `<p class="error">Failed to load items: ${err.message}</p>`;
+            tocEl.innerHTML = '';
+            console.error(err);
+        }
+    })();
+    </script>
+</body>
+</html>

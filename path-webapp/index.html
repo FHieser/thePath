@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Path - Campaign Reference</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>The Path</h1>
+        <p class="subtitle">A Daggerheart Campaign Frame</p>
+      </header>
+
+      <main>
+        <!-- Campaign Overview -->
+        <section id="campaign-overview" class="campaign-intro">
+          <h2>Campaign Overview</h2>
+          <div class="description-block">
+            A mist-shrouded world where players traverse shifting interconnected
+            locations between sessions. Sacred Flames keep the mist at bay while
+            the party explores The Path - a dynamic network of locations that
+            changes with each journey.
+          </div>
+        </section>
+
+        <div class="index-layout">
+          <!-- Sticky sidebar -->
+          <aside class="index-sidebar">
+            <h2>Contents</h2>
+            <div class="toc-grid">
+              <a href="#path-mechanics" class="toc-entry">📖 Path Network Mechanics</a>
+              <a href="#path-library" class="toc-entry">🗃️ Path Library</a>
+              <a href="#locations" class="toc-entry">🗺️ Locations</a>
+              <a href="#surface-locations" class="toc-entry">🌄 Surface Locations</a>
+              <a href="#underground-locations" class="toc-entry">🪨 Underground Locations</a>
+              <a href="#village" class="toc-entry">🏘️ Village in the Mist</a>
+              <a href="#special-locations" class="toc-entry">✦ Special Locations</a>
+              <a href="#glossary" class="toc-entry">📚 Glossary</a>
+              <a href="#items" class="toc-entry">🎒 Items</a>
+              <a href="adversaries.html" class="toc-entry">👾 Adversaries</a>
+              <a href="#siege" class="toc-entry">⚔️ Village Siege</a>
+              <a href="#quick-reference" class="toc-entry">📋 Quick Reference</a>
+            </div>
+          </aside>
+
+          <!-- Main content -->
+          <div class="index-content">
+
+        <!-- Path Network Mechanics (featured) -->
+        <section id="path-mechanics" class="nav-section">
+          <h2>Path Network Mechanics</h2>
+          <div class="nav-cards">
+            <a href="path-mechanics.html" class="nav-card featured-mechanic">
+              <h3>📖 Path Network Mechanics</h3>
+              <p class="card-desc">Complete mechanics reference</p>
+              <p class="card-detail">
+                Grid system • Modifiers • Mist mechanics • Fear spending • Flame rules
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Path Library -->
+        <section id="path-library" class="nav-section">
+          <h2>Path Library</h2>
+          <div id="path-library-cards" class="nav-cards">
+            <p style="opacity: 0.7;">Loading paths...</p>
+          </div>
+        </section>
+
+        <!-- Locations -->
+        <section id="locations" class="nav-section">
+          <h2>Locations</h2>
+          <div class="nav-cards">
+            <a href="village.html" class="nav-card village">
+              <h3>🏘️ Village in the Mist</h3>
+              <p class="card-desc">Central Hub</p>
+              <p class="card-detail">
+                Sacred Flame Sanctuary, Forge, Community Hearth, Flame
+                Gatherer's Lodge, Supply Cache
+              </p>
+            </a>
+            <a href="locations.html" class="nav-card locations">
+              <h3>📍 All Path Locations</h3>
+              <p class="card-desc">29 Total Locations</p>
+              <p class="card-detail">
+                18 Surface + 9 Underground + 2 Special Locations
+              </p>
+            </a>
+            <a href="off-path.html" class="nav-card off-path">
+              <h3>🌫️ Off-Path Travel</h3>
+              <p class="card-desc">Venture into the Uncharted Mist</p>
+              <p class="card-detail">
+                Random location draws • Mist-Touched dangers • Find your way
+                back
+              </p>
+            </a>
+            <a href="path-creator.html" class="nav-card off-path">
+              <h3>🗺️ Path Creator</h3>
+              <p class="card-desc">Design session grids</p>
+              <p class="card-detail">
+                Drag &amp; drop locations onto an 8×4 grid; save/load examples
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Surface Locations -->
+        <section id="surface-locations" class="nav-section">
+          <h2>Surface Locations</h2>
+          <div id="surface-location-cards" class="location-cards">
+            <p style="opacity: 0.7;">Loading surface locations...</p>
+          </div>
+        </section>
+
+        <!-- Underground Locations -->
+        <section id="underground-locations" class="nav-section">
+          <h2>Underground Locations</h2>
+          <div id="underground-location-cards" class="location-cards">
+            <p style="opacity: 0.7;">Loading underground locations...</p>
+          </div>
+        </section>
+
+        <!-- Village Locations -->
+        <section id="village" class="nav-section">
+          <h2>Village in the Mist</h2>
+          <div id="village-location-cards" class="location-cards">
+            <p style="opacity: 0.7;">Loading village locations...</p>
+          </div>
+        </section>
+
+        <!-- Special Locations -->
+        <section id="special-locations" class="nav-section">
+          <h2>Special Locations</h2>
+          <div class="location-cards">
+            <a
+              href="location.html?id=village-in-the-mist"
+              class="location-card"
+              data-location-id="village-in-the-mist"
+              style="border-color: var(--success-green)"
+            >
+              <h3>Village in the Mist</h3>
+              <p class="location-type">Stable Settlement</p>
+              <p class="location-desc">
+                A fortified village protected by a Sacred Flame, serving as the
+                primary safe haven for travelers.
+              </p>
+            </a>
+            <a
+              href="location.html?id=vanishing-mist"
+              class="location-card"
+              data-location-id="vanishing-mist"
+              style="border-color: var(--danger-red)"
+            >
+              <h3>Vanishing Mist</h3>
+              <p class="location-type">Special Hazard Location</p>
+              <p class="location-desc">
+                An impenetrable wall of swirling mist that appears between
+                destinations, claiming the lost.
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Glossary -->
+        <section id="glossary" class="nav-section">
+          <h2>Glossary</h2>
+          <div class="nav-cards">
+            <a href="glossary.html" class="nav-card locations">
+              <h3>📚 Location Glossary</h3>
+              <p class="card-desc">All 34 locations at a glance</p>
+              <p class="card-detail">
+                Surface • Underground • Special • Tarot card assignments
+              </p>
+            </a>
+            <a href="stars.html" class="nav-card featured-mechanic">
+              <h3>✦ Wandering Stars</h3>
+              <p class="card-desc">Open Skies reading tool</p>
+              <p class="card-detail">
+                10 planets • Toggle active sky • Instinct roll mechanic
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Items -->
+        <section id="items" class="nav-section">
+          <h2>Items</h2>
+          <div class="nav-cards">
+            <a href="items.html" class="nav-card locations">
+              <h3>🎒 Items</h3>
+              <p class="card-desc">Equipment &amp; consumables</p>
+              <p class="card-detail">
+                General • Rootbound • Fire Born • Brass Mechanicorum
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Adversaries -->
+        <section id="adversaries" class="nav-section">
+          <h2>Adversaries</h2>
+          <div class="nav-cards">
+            <a href="adversaries.html" class="nav-card adversary">
+              <h3>👾 All Adversaries</h3>
+              <p class="card-desc">Full adversary roster</p>
+              <p class="card-detail">
+                Mist Creatures · Beasts · Spider Queen · Crystal-Plague · Antagonists · Siege
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Village Siege -->
+        <section id="siege" class="nav-section">
+          <h2>Village Siege</h2>
+          <div class="nav-cards">
+            <a href="siege.html" class="nav-card adversary">
+              <h3>⚔️ Village Siege</h3>
+              <p class="card-desc">Siege encounter framework</p>
+              <p class="card-detail">
+                Zone layout • Fear economy • NPC defenders • Siege adversaries • Colossus
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section id="quick-reference" class="nav-section">
+          <h2>Quick Reference</h2>
+          <div class="feature-card">
+            <h3>Core Mechanics</h3>
+            <ul>
+              <li>
+                <strong>Sacred Flame Resource:</strong> Village consumes 1 Flame
+                Essence per day
+              </li>
+              <li>
+                <strong>Path Generation:</strong> Tarot-based card drawing
+                system
+              </li>
+              <li>
+                <strong>Location Stability:</strong> Stable (persistent) or
+                Unstable (disappear between sessions)
+              </li>
+              <li>
+                <strong>Underground Rules:</strong> Underground locations
+                connect only to other Underground or Cave Mouth locations
+              </li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h3>Location Modifiers</h3>
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-top: 0.5rem;
+              "
+            >
+              <span class="tag mod-stable">Stable</span>
+              <span class="tag mod-unstable">Unstable</span>
+              <span class="tag mod-underground">Underground</span>
+              <span class="tag mod-cave-mouth">Cave Mouth</span>
+              <span class="tag mod-inhabited">Inhabited</span>
+              <span class="tag mod-wild-beasts">Wild Beasts</span>
+              <span class="tag mod-mist-touched">Mist-Touched</span>
+            </div>
+          </div>
+        </section>
+
+          </div><!-- /.index-content -->
+        </div><!-- /.index-layout -->
+      </main>
+
+      <footer>
+        <p>
+          The Path - Daggerheart Campaign Frame | Built with the Darrington
+          Press Community Gaming License
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/path-library.js"></script>
+    <script>
+      (async function renderLocationCards() {
+        const allLocations = {};
+
+        for (const { path: folderPath, type } of LOCATION_FOLDERS) {
+          const filenames = await discoverYamlFiles(folderPath);
+          for (const filename of filenames) {
+            if (filename.includes('template') || filename.includes('mechanics')) continue;
+            const id = filename.replace('.yaml', '').replace('-card', '');
+            try {
+              const r = await fetch(`${folderPath}${filename}`);
+              if (r.ok) {
+                const data = jsyaml.load(await r.text());
+                data._sourceType = type;
+                allLocations[id] = data;
+              }
+            } catch (e) {
+              console.warn(`Failed to load ${filename}:`, e);
+            }
+          }
+        }
+
+        function hasUnderground(loc) {
+          return loc.modifiers && loc.modifiers.some(m => getModifierName(m).toLowerCase() === 'underground');
+        }
+
+        function createCardHTML(id, loc, isUnderground = false) {
+          const modifiers = (loc.modifiers || []).map(m => {
+            const name = getModifierName(m);
+            return `<span class="tag modifier mod-${name.toLowerCase().replace(/\s+/g, '-')}">${name}</span>`;
+          }).join('');
+          const tierText = loc.category ? `Tier ${loc.tier} ${loc.category}` : `Tier ${loc.tier}`;
+          return `
+            <a href="location.html?id=${id}" class="location-card${isUnderground ? ' underground' : ''}" data-location-id="${id}">
+              <h3>${loc.name}</h3>
+              <p class="location-type">${tierText}${isUnderground ? ' • Underground' : ''}</p>
+              <p class="location-desc">${loc.description || ''}</p>
+              ${modifiers ? `<div class="location-modifiers">${modifiers}</div>` : ''}
+            </a>
+          `;
+        }
+
+        const village  = document.getElementById('village-location-cards');
+        const surface  = document.getElementById('surface-location-cards');
+        const underground = document.getElementById('underground-location-cards');
+
+        const entries = Object.entries(allLocations).sort((a, b) => a[1].name.localeCompare(b[1].name));
+
+        if (village) village.innerHTML = entries
+          .filter(([, loc]) => loc._sourceType === 'village')
+          .map(([id, loc]) => createCardHTML(id, loc)).join('') || '<p style="opacity:0.7">No village locations found.</p>';
+
+        if (surface) surface.innerHTML = entries
+          .filter(([, loc]) => !hasUnderground(loc) && loc._sourceType !== 'village')
+          .map(([id, loc]) => createCardHTML(id, loc)).join('') || '<p style="opacity:0.7">No surface locations found.</p>';
+
+        if (underground) underground.innerHTML = entries
+          .filter(([, loc]) => hasUnderground(loc))
+          .map(([id, loc]) => createCardHTML(id, loc, true)).join('') || '<p style="opacity:0.7">No underground locations found.</p>';
+      })();
+    </script>
+  </body>
+</html>

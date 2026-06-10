@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Siege - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .mechanics-section {
+            background: rgba(0, 0, 0, 0.2);
+            border: 0.15rem solid var(--border-color);
+            border-radius: 0.2rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mechanics-section h2 {
+            color: var(--accent-amber);
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: 0.1rem solid var(--primary-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .mechanics-section h3 {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .mechanics-section h4 {
+            color: var(--success-green);
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mechanics-description {
+            line-height: 1.6;
+            white-space: pre-wrap;
+            margin-bottom: 1rem;
+        }
+
+        .zone-card {
+            background: rgba(17, 68, 102, 0.2);
+            border-left: 0.3rem solid var(--primary-blue);
+            padding: 1rem;
+            border-radius: 0.2rem;
+            margin: 0.75rem 0;
+        }
+
+        .zone-card h4 {
+            margin-top: 0;
+            color: var(--accent-amber);
+        }
+
+        .zone-card .zone-status {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.15rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .zone-status.mist-touched {
+            background: rgba(196, 69, 54, 0.3);
+            color: var(--danger-red);
+        }
+
+        .zone-status.protected {
+            background: rgba(74, 107, 82, 0.3);
+            color: var(--success-green);
+        }
+
+        .fear-cost-table {
+            background: rgba(196, 69, 54, 0.1);
+            border: 0.15rem solid var(--danger-red);
+            border-radius: 0.2rem;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .fear-cost-item {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 0.1rem solid rgba(196, 69, 54, 0.2);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .fear-cost-item:last-child {
+            border-bottom: none;
+        }
+
+        .fear-cost {
+            background: var(--danger-red);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.2rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .bp-value {
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.2rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .phase-card {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 0.3rem solid var(--accent-amber);
+            padding: 1rem;
+            margin: 0.75rem 0;
+            border-radius: 0.2rem;
+        }
+
+        .phase-card h4 {
+            margin-top: 0;
+            color: var(--accent-amber);
+        }
+
+        .phase-trigger {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        .condition-card {
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            border-radius: 0.2rem;
+        }
+
+        .condition-card.victory {
+            background: rgba(74, 107, 82, 0.2);
+            border-left: 0.3rem solid var(--success-green);
+        }
+
+        .condition-card.loss {
+            background: rgba(196, 69, 54, 0.15);
+            border-left: 0.3rem solid var(--danger-red);
+        }
+
+        .toc {
+            background: rgba(17, 68, 102, 0.2);
+            border: 0.15rem solid var(--primary-blue);
+            border-radius: 0.2rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--accent-amber);
+            border: none;
+            padding: 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc li {
+            margin: 0.5rem 0;
+        }
+
+        .toc a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-amber);
+        }
+
+        /* NPC Defender Cards */
+        .npc-card {
+            background: rgba(74, 107, 82, 0.15);
+            border: 0.15rem solid var(--success-green);
+            border-radius: 0.2rem;
+            padding: 1rem;
+            margin: 0.75rem 0;
+        }
+
+        .npc-card h4 {
+            margin-top: 0;
+            color: var(--accent-amber);
+        }
+
+        .npc-stat-line {
+            font-size: 0.9rem;
+            margin: 0.25rem 0;
+        }
+
+        .npc-stat-line strong {
+            color: var(--primary-blue);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Adversary Stat Blocks */
+        .siege-adversary {
+            margin-bottom: 1.5rem;
+        }
+
+        .segment-card {
+            background: rgba(196, 69, 54, 0.08);
+            border: 0.15rem solid rgba(196, 69, 54, 0.4);
+            border-radius: 0.2rem;
+            padding: 1rem;
+            margin: 0.75rem 0;
+        }
+
+        .segment-card h4 {
+            color: var(--danger-red);
+            margin-top: 0;
+        }
+
+        .bp-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.75rem 0;
+        }
+
+        .bp-table th, .bp-table td {
+            padding: 0.4rem 0.75rem;
+            text-align: center;
+            border-bottom: 0.1rem solid rgba(17, 68, 102, 0.3);
+            font-size: 0.9rem;
+        }
+
+        .bp-table th {
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .phase-subsection {
+            background: rgba(0, 0, 0, 0.15);
+            border-left: 0.2rem solid var(--primary-blue);
+            border-radius: 0.2rem;
+            padding: 1rem 1.25rem;
+            margin-top: 1.25rem;
+        }
+
+        .phase-subsection h3 {
+            margin-top: 0;
+        }
+
+        .adjacency-map {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 0.2rem;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 0.85rem;
+            white-space: pre;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="index.html">&larr; Back to Path</a>
+            </nav>
+            <h1>Village Siege Mechanics</h1>
+            <p class="subtitle" id="version-subtitle">Loading...</p>
+        </header>
+
+        <main>
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#siege-trigger">Siege Trigger</a></li>
+                    <li><a href="#victory-loss">Victory &amp; Loss Conditions</a></li>
+                    <li><a href="#phase-1">Phase 1: Preparation</a></li>
+                    <li><a href="#phase-2">Phase 2: Open Fields</a></li>
+                    <li><a href="#phase-3">Phase 3: Inner Siege</a></li>
+                    <li><a href="#npc-defenders">NPC Defenders</a></li>
+                    <li><a href="#siege-adversaries">Siege Adversaries</a></li>
+                </ul>
+            </div>
+
+            <div id="siege-content">
+                <div class="loading">Loading siege mechanics...</div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/siege.js"></script>
+</body>
+</html>

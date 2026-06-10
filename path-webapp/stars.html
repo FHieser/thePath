@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wandering Stars — The Path</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .sky-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto 1rem auto;
+        border-radius: 0.3rem;
+        overflow: hidden;
+        border: 0.15rem solid var(--primary-blue);
+        background: #030810;
+      }
+
+      #sky-canvas {
+        display: block;
+        width: 100%;
+      }
+
+      .sky-label {
+        position: absolute;
+        top: 0.6rem;
+        left: 0.75rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent-amber);
+        opacity: 0.7;
+        pointer-events: none;
+      }
+
+      .sky-hint {
+        position: absolute;
+        bottom: 0.6rem;
+        right: 0.75rem;
+        font-size: 0.65rem;
+        opacity: 0.35;
+        pointer-events: none;
+        font-style: italic;
+      }
+
+      .planet-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .planet-btn {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.65rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 0.15rem solid rgba(255, 255, 255, 0.08);
+        border-radius: 0.3rem;
+        padding: 0.6rem 0.75rem;
+        cursor: pointer;
+        color: var(--text-light);
+        text-align: left;
+        transition: border-color 0.15s, background 0.15s;
+        width: 100%;
+      }
+
+      .planet-btn:hover {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .planet-btn.active {
+        border-color: var(--accent-amber);
+        background: rgba(212, 165, 116, 0.09);
+      }
+
+      .planet-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 0.25rem;
+        box-shadow: 0 0 6px currentColor;
+      }
+
+      .planet-dot-wrap {
+        display: flex;
+        gap: 3px;
+        flex-shrink: 0;
+        margin-top: 0.25rem;
+        align-items: center;
+      }
+
+      .planet-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+      }
+
+      .planet-name {
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--text-light);
+        letter-spacing: 0.03em;
+      }
+
+      .planet-domain {
+        font-size: 0.72rem;
+        color: var(--accent-amber);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.85;
+      }
+
+      .planet-desc {
+        font-size: 0.72rem;
+        opacity: 0.5;
+        font-style: italic;
+        line-height: 1.4;
+        margin-top: 0.2rem;
+      }
+
+      .stars-controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .stars-controls h2 {
+        margin: 0;
+        border: none;
+        padding: 0;
+        flex: 1;
+      }
+
+      .ctrl-btn {
+        background: transparent;
+        border: 0.15rem solid rgba(255, 255, 255, 0.15);
+        color: var(--text-light);
+        border-radius: 0.25rem;
+        padding: 0.3rem 0.65rem;
+        font-size: 0.7rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.6;
+        transition: opacity 0.15s, border-color 0.15s;
+        white-space: nowrap;
+      }
+      .ctrl-btn:hover:not(:disabled) { opacity: 1; border-color: rgba(255,255,255,0.35); }
+      .ctrl-btn:disabled { opacity: 0.3; cursor: default; }
+      #export-btn { color: var(--accent-amber); border-color: rgba(212,165,116,0.3); }
+      #export-btn:hover:not(:disabled) { border-color: var(--accent-amber); opacity: 1; }
+
+      .mechanic-note {
+        font-size: 0.8rem;
+        opacity: 0.6;
+        font-style: italic;
+        margin-bottom: 1.25rem;
+        padding-left: 0.5rem;
+        border-left: 0.15rem solid var(--primary-blue);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>The Path</h1>
+        <p class="subtitle">A Daggerheart Campaign Frame</p>
+      </header>
+
+      <main>
+        <div class="breadcrumb">
+          <a href="index.html">← Home</a>
+        </div>
+
+        <div class="sky-wrapper">
+          <canvas id="sky-canvas"></canvas>
+          <span class="sky-label">Open Skies Reading</span>
+          <span class="sky-hint">Toggle planets below</span>
+        </div>
+
+        <p class="mechanic-note">
+          Available at locations with the <strong>Open Skies</strong> modifier. Once per rest, a player may attempt an
+          <strong>Instinct</strong> roll (or argue another stat) to read tonight's sky. The GM sets which planet is
+          prominent — its domain determines what kind of question the stars can answer.
+        </p>
+
+        <div class="stars-controls">
+          <h2>The Wandering Stars</h2>
+          <button id="copy-btn" class="ctrl-btn">Copy Frame</button>
+          <button id="export-btn" class="ctrl-btn">Export GIF</button>
+          <button id="clear-btn" class="ctrl-btn">Clear</button>
+        </div>
+
+        <div id="planet-grid" class="planet-grid"></div>
+
+        <img id="gif-preview" alt="Generated GIF" title="Right-click to copy or drag into Telegram"
+          style="display:none; max-width:560px; width:100%; margin:0.75rem auto 0; border-radius:0.3rem; border:0.15rem solid var(--primary-blue); cursor:grab;" />
+      </main>
+
+      <footer>
+        <p>The Path - Daggerheart Campaign Frame | Built with the Darrington Press Community Gaming License</p>
+      </footer>
+    </div>
+
+    <script src="js/stars.js"></script>
+  </body>
+</html>

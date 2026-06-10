@@ -1,0 +1,1268 @@
+/* The Path - Compact Campaign Reference (OG-DHSRD Inspired) */
+
+:root {
+  --primary-blue: #146;
+  --accent-amber: #d4a574;
+  --text-light: #e8f0f5;
+  --bg-dark: #1a2530;
+  --border-color: #146;
+  --danger-red: #c44536;
+  --success-green: #4a6b52;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.5;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header - Minimal */
+header {
+  text-align: center;
+  padding: 0.75rem 0;
+  border-bottom: 0.25rem solid var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--accent-amber);
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Navigation */
+.breadcrumb {
+  margin-bottom: 0.75rem;
+}
+
+.breadcrumb a {
+  color: var(--accent-amber);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content - Compact */
+main {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: var(--accent-amber);
+  margin: 1.5rem 0 0.5rem 0;
+  border-bottom: 0.15rem solid var(--primary-blue);
+  padding-bottom: 0.25rem;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+}
+
+/* Stat Block / Card - Ultra Compact */
+.stat-block,
+.feature-card {
+  border: 0.15rem solid var(--border-color);
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.stat-block {
+  border-color: var(--danger-red);
+}
+
+/* Inline stats */
+.stat-line {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.stat-line strong {
+  color: var(--accent-amber);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+/* Location Header - Single Line */
+.location-header h1,
+.adversary-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-amber);
+  margin-bottom: 0.1rem;
+}
+
+.location-type {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.adversary-header h1 {
+  color: var(--danger-red);
+}
+
+/* Description - Compact */
+.description-block {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  padding-left: 0.5rem;
+  border-left: 0.15rem solid var(--primary-blue);
+  opacity: 0.9;
+}
+
+/* Meta items - Inline */
+.meta-inline {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.meta-inline strong {
+  color: var(--accent-amber);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--success-green);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.15rem;
+  font-size: 0.75rem;
+  margin: 0 0.15rem;
+}
+
+/* Feature Cards - Minimal */
+.feature-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+.feature-type {
+  color: white;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.15rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+.feature-type.action {
+  background: #c44536;
+}
+
+.feature-type.reaction {
+  background: #d4a574;
+  color: #1a2530;
+}
+
+.feature-type.passive {
+  background: #4a6b52;
+}
+
+.feature-type.siege-activation {
+  background: #6a4c93;
+}
+
+.feature-type.passive-action {
+  background: linear-gradient(to right, #4a6b52 50%, #c44536 50%);
+}
+
+.feature-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.feature-questions {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 0.15rem solid var(--primary-blue);
+  font-style: italic;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* Individual location feature box */
+.location-feature {
+  border: 0.1rem solid var(--border-color);
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  background: rgba(17, 68, 102, 0.15);
+}
+
+/* Grid for stats - 4 columns */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.stat-item {
+  font-size: 0.85rem;
+}
+
+.stat-item strong {
+  display: block;
+  color: var(--primary-blue);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.stat-item span {
+  color: var(--accent-amber);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Attack info box */
+.attack-box {
+  background: rgba(196, 69, 54, 0.15);
+  border: 0.1rem solid var(--danger-red);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.15rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.attack-box strong {
+  color: var(--danger-red);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Lists - Compact */
+ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+li {
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  color: var(--accent-amber);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lore block */
+.lore-block {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-left: 0.15rem solid var(--accent-amber);
+  font-style: italic;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* Footer - Minimal */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 0.15rem solid var(--primary-blue);
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  opacity: 0.7;
+}
+
+/* Route Map (Index Page) */
+.route-section {
+  margin-bottom: 1.5rem;
+}
+
+.path-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.location-node {
+  background: var(--success-green);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.location-node:hover {
+  background: var(--accent-amber);
+  color: var(--bg-dark);
+}
+
+.location-node.hub {
+  background: var(--accent-amber);
+  color: var(--bg-dark);
+}
+
+.location-node.encounter {
+  background: var(--danger-red);
+}
+
+.location-node.empty {
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.15rem dashed var(--primary-blue);
+  color: var(--primary-blue);
+  cursor: default;
+}
+
+.encounter-tag {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.9;
+}
+
+.arrow {
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+/* Encounter cards on homepage */
+.encounter-card {
+  background: rgba(196, 69, 54, 0.1);
+  border-left: 0.2rem solid var(--danger-red);
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+}
+
+.encounter-card h3 {
+  color: var(--danger-red);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.adversary-list,
+.npc-features {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0;
+}
+
+.adversary-list li,
+.npc-features li {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.encounter-note {
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 0.85rem;
+}
+
+/* Location cards grid */
+.location-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.location-card {
+  background: rgba(74, 107, 82, 0.2);
+  border: 0.15rem solid var(--success-green);
+  border-radius: 0.2rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: var(--text-light);
+  transition: all 0.2s;
+}
+
+.location-card:hover {
+  background: rgba(74, 107, 82, 0.4);
+  border-color: var(--accent-amber);
+}
+
+.location-card h3 {
+  color: var(--accent-amber);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.location-card .location-type {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.location-card .location-desc {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Adversary Grid - Side by Side */
+.adversary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Navigation Cards (Front Page) */
+.nav-section {
+  margin-top: 2rem;
+}
+
+.nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-card {
+  background: rgba(74, 107, 82, 0.2);
+  border: 0.2rem solid var(--success-green);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text-light);
+  transition: all 0.2s;
+  display: block;
+}
+
+.nav-card:hover {
+  background: rgba(74, 107, 82, 0.4);
+  border-color: var(--accent-amber);
+  transform: translateY(-2px);
+}
+
+.nav-card h3 {
+  color: var(--accent-amber);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.card-detail {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* Card Type Variants */
+.nav-card.session {
+  border-color: var(--primary-blue);
+  background: rgba(17, 68, 102, 0.2);
+}
+
+.nav-card.session:hover {
+  background: rgba(17, 68, 102, 0.4);
+}
+
+.nav-card.village {
+  border-color: var(--accent-amber);
+  background: rgba(212, 165, 116, 0.15);
+}
+
+.nav-card.village:hover {
+  background: rgba(212, 165, 116, 0.3);
+}
+
+.nav-card.locations {
+  border-color: var(--success-green);
+}
+
+.nav-card.adversary {
+  border-color: var(--danger-red);
+  background: rgba(196, 69, 54, 0.15);
+}
+
+.nav-card.adversary:hover {
+  background: rgba(196, 69, 54, 0.3);
+}
+
+.nav-card.off-path {
+  border-color: #6a4c93;
+  background: rgba(61, 43, 82, 0.3);
+  box-shadow: 0 0 10px rgba(106, 76, 147, 0.2);
+}
+
+.nav-card.off-path:hover {
+  background: rgba(61, 43, 82, 0.5);
+  box-shadow: 0 0 15px rgba(106, 76, 147, 0.4);
+}
+
+/* Table of Contents */
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.toc-entry {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.25rem;
+  padding: 0.6rem 0.9rem;
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  transition: all 0.15s;
+}
+
+.toc-entry:hover {
+  background: rgba(212, 165, 116, 0.15);
+  border-color: var(--accent-amber);
+  color: var(--accent-amber);
+}
+
+.toc-entry-sub {
+  margin-left: 0.75rem;
+  font-size: 0.78rem;
+  opacity: 0.75;
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0;
+  padding-left: 0.6rem;
+}
+
+.toc-entry-sub:hover {
+  opacity: 1;
+  border-left-color: var(--accent-amber);
+}
+
+/* Front-page sidebar layout */
+.index-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.index-sidebar {
+  position: sticky;
+  top: 1.5rem;
+  height: fit-content;
+}
+
+.index-sidebar h2 {
+  color: var(--accent-amber);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.6rem 0;
+  opacity: 0.7;
+}
+
+.index-sidebar .toc-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.index-sidebar .toc-entry {
+  font-size: 0.82rem;
+  padding: 0.5rem 0.75rem;
+}
+
+@media (max-width: 700px) {
+  .index-layout {
+    grid-template-columns: 1fr;
+  }
+  .index-sidebar {
+    display: none;
+  }
+}
+
+/* Featured mechanic card */
+.nav-card.featured-mechanic {
+  border-color: var(--accent-amber);
+  background: rgba(212, 165, 116, 0.12);
+  box-shadow: 0 0 18px rgba(212, 165, 116, 0.2);
+  font-size: 1.05em;
+}
+
+.nav-card.featured-mechanic:hover {
+  background: rgba(212, 165, 116, 0.25);
+  box-shadow: 0 0 28px rgba(212, 165, 116, 0.35);
+}
+
+/* Underground Location Cards */
+.location-card.underground {
+  border-color: #5a4a8a;
+  background: rgba(90, 74, 138, 0.2);
+}
+
+.location-card.underground:hover {
+  background: rgba(90, 74, 138, 0.4);
+}
+
+/* Campaign Intro */
+.campaign-intro {
+  margin-bottom: 1.5rem;
+}
+
+/* 2D Path Grid */
+.path-grid-2d {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-cell {
+  position: relative;
+  aspect-ratio: 1.4 / 1;
+  min-height: 120px;
+}
+
+.cell-label {
+  position: absolute;
+  top: -0.5rem;
+  left: 0.5rem;
+  background: var(--bg-dark);
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.15rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  z-index: 2;
+}
+
+.grid-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.75rem 0.5rem;
+  border: 0.2rem solid var(--success-green);
+  border-radius: 0.25rem;
+  background: rgba(74, 107, 82, 0.2);
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-light);
+  transition: all 0.2s;
+  position: relative;
+}
+
+.grid-location:hover {
+  background: rgba(74, 107, 82, 0.4);
+  border-color: var(--accent-amber);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.grid-location.empty {
+  background: rgba(255, 255, 255, 0.05);
+  border: 0.15rem dashed var(--primary-blue);
+  color: var(--primary-blue);
+  opacity: 0.5;
+  cursor: default;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+.grid-location.empty:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--primary-blue);
+}
+
+.grid-location.encounter {
+  border-color: var(--danger-red);
+  background: rgba(196, 69, 54, 0.2);
+}
+
+.grid-location.encounter:hover {
+  background: rgba(196, 69, 54, 0.4);
+}
+
+.location-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  color: var(--text-light);
+}
+
+.location-encounter {
+  font-size: 0.7rem;
+  color: var(--danger-red);
+  background: rgba(196, 69, 54, 0.3);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.15rem;
+  margin-top: 0.25rem;
+  font-weight: 600;
+}
+
+.location-modifier {
+  font-size: 0.65rem;
+  color: var(--accent-amber);
+  margin-top: 0.25rem;
+  opacity: 0.9;
+}
+
+/* Compact modifiers for main page location cards (new container) */
+.location-modifiers {
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+.location-modifiers .modifier {
+  font-size: 0.65rem;
+  color: var(--accent-amber);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.15rem;
+  margin-right: 0.25rem;
+  display: inline-block;
+}
+
+/* Modifier specific colors */
+.location-modifiers .mod-stable {
+  background: rgba(74, 107, 82, 0.85);
+  color: #fff;
+}
+.location-modifiers .mod-unstable {
+  background: rgba(106, 76, 147, 0.95); /* purple */
+  color: #fff;
+}
+.location-modifiers .mod-underground {
+  background: rgba(90, 74, 138, 0.9);
+  color: #fff;
+}
+.location-modifiers .mod-cave-mouth {
+  background: rgba(17, 68, 102, 0.9);
+  color: #fff;
+}
+.location-modifiers .mod-inhabited {
+  background: rgba(212, 165, 116, 0.95);
+  color: #1a2530;
+}
+.location-modifiers .mod-wild-beasts {
+  background: rgba(135, 55, 44, 0.9);
+  color: #fff;
+}
+.location-modifiers .mod-mist-touched {
+  background: rgba(64, 153, 166, 0.95);
+  color: #072027;
+}
+.location-modifiers .mod-flame-touched {
+  background: rgba(217, 115, 54, 0.95);
+  color: #1a2530;
+}
+.location-modifiers .mod-default {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--accent-amber);
+}
+
+/* Grid Legend */
+.grid-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0.25rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.legend-box {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.15rem;
+  display: inline-block;
+}
+
+.legend-box.empty {
+  background: rgba(255, 255, 255, 0.05);
+  border: 0.15rem dashed var(--primary-blue);
+}
+
+.legend-box.location {
+  background: rgba(74, 107, 82, 0.2);
+  border: 0.2rem solid var(--success-green);
+}
+
+.legend-box.encounter {
+  background: rgba(196, 69, 54, 0.2);
+  border: 0.2rem solid var(--danger-red);
+}
+
+.legend-box.cave {
+  background: rgba(90, 74, 138, 0.2);
+  border: 0.2rem solid #5a4a8a;
+}
+
+/* Underground location styling for path-flow */
+.location-node.underground {
+  background: rgba(90, 74, 138, 0.3);
+  border: 0.15rem solid #5a4a8a;
+}
+
+/* Underground grid cells */
+.grid-location.underground {
+  border-color: #5a4a8a;
+  background: rgba(90, 74, 138, 0.2);
+}
+
+.grid-location.underground:hover {
+  background: rgba(90, 74, 138, 0.4);
+}
+
+.grid-location.underground.empty {
+  background: rgba(90, 74, 138, 0.1);
+  border-color: #5a4a8a;
+  opacity: 0.5;
+}
+
+/* Hub location styling */
+.grid-location.hub {
+  border-color: var(--accent-amber);
+  background: rgba(212, 165, 116, 0.2);
+  font-weight: 700;
+}
+
+.grid-location.hub:hover {
+  background: rgba(212, 165, 116, 0.4);
+}
+
+/* Grid Connection Lines - Visual indicators between cells */
+.grid-cell::after,
+.grid-cell::before {
+  content: "";
+  position: absolute;
+  background: var(--primary-blue);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* Horizontal connections (right arrow) */
+.grid-cell:not([data-col="6"])::after {
+  right: -0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.75rem;
+  height: 0.15rem;
+}
+
+/* Vertical connections (down arrow) for Row A */
+.grid-cell[data-row="A"]::before {
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.15rem;
+  height: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .path-grid-2d {
+    gap: 0.5rem;
+  }
+
+  .grid-cell {
+    min-height: 100px;
+  }
+
+  .location-name {
+    font-size: 0.75rem;
+  }
+
+  .grid-cell::after {
+    right: -0.5rem;
+    width: 0.5rem;
+  }
+
+  .grid-cell[data-row="A"]::before {
+    bottom: -0.5rem;
+    height: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .path-flow {
+    flex-direction: column;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+
+  .location-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .adversary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .path-grid-2d {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .grid-cell {
+    min-height: 90px;
+  }
+
+  .location-name {
+    font-size: 0.7rem;
+  }
+
+  .location-encounter {
+    font-size: 0.6rem;
+  }
+
+  .grid-legend {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Hide connection lines on mobile for cleaner look */
+  .grid-cell::after,
+  .grid-cell[data-row="A"]::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .path-grid-2d {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Path Library Cards */
+.path-card {
+  border-color: var(--primary-blue);
+  background: rgba(17, 68, 102, 0.2);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-family: inherit;
+}
+
+.path-card:hover {
+  background: rgba(17, 68, 102, 0.4);
+  border-color: var(--accent-amber);
+  transform: translateY(-2px);
+}
+
+/* Path Modal */
+#path-modal {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  border: 0.15rem solid var(--primary-blue);
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+  max-width: 860px;
+  width: 95vw;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+#path-modal::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.path-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 0.15rem solid var(--primary-blue);
+  padding-bottom: 0.5rem;
+}
+
+.path-modal-header h3 {
+  color: var(--accent-amber);
+  font-size: 1.2rem;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.1rem 0.5rem;
+  opacity: 0.6;
+  line-height: 1;
+}
+
+.modal-close:hover { opacity: 1; }
+
+.path-modal-meta {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 0.75rem;
+}
+
+.path-modal-layer-title {
+  color: var(--accent-amber);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 1rem 0 0.4rem;
+  letter-spacing: 0.05em;
+}
+
+.modal-footer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 0.15rem solid var(--primary-blue);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+/* Generic button */
+.btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid var(--primary-blue);
+  background: rgba(17, 68, 102, 0.3);
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+
+.btn:hover { background: rgba(17, 68, 102, 0.6); }
+
+.btn-primary {
+  border-color: var(--accent-amber);
+  background: rgba(212, 165, 116, 0.2);
+  color: var(--accent-amber);
+}
+
+.btn-primary:hover { background: rgba(212, 165, 116, 0.4); }
+
+/* Tier selector on adversary detail page */
+.tier-selector {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tier-btn {
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid var(--primary-blue);
+  background: rgba(17, 68, 102, 0.3);
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.tier-btn:hover { background: rgba(17, 68, 102, 0.6); }
+
+.tier-btn.active {
+  border-color: var(--danger-red);
+  background: rgba(196, 69, 54, 0.2);
+  color: var(--danger-red);
+}
+
+/* Path grid table inside modal */
+.path-grid-table {
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin-bottom: 0.25rem;
+}
+
+.path-grid-table th {
+  color: var(--accent-amber);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  padding: 0.25rem 0.4rem;
+  text-align: center;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.path-grid-table td {
+  padding: 0.2rem 0.25rem;
+  text-align: center;
+  min-width: 90px;
+}
+
+.path-cell {
+  display: block;
+  padding: 0.35rem 0.45rem;
+  border-radius: 0.15rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(74, 107, 82, 0.25);
+  border: 0.1rem solid var(--success-green);
+  color: var(--text-light);
+  transition: background 0.15s;
+}
+
+.path-cell:hover { background: rgba(74, 107, 82, 0.5); text-decoration: none; }
+
+.path-cell.hub {
+  background: rgba(212, 165, 116, 0.25);
+  border-color: var(--accent-amber);
+  color: var(--accent-amber);
+}
+
+.path-cell.underground {
+  background: rgba(90, 74, 138, 0.25);
+  border-color: #5a4a8a;
+}
+
+.path-cell.empty {
+  background: transparent;
+  border-color: transparent;
+  color: rgba(255,255,255,0.15);
+  font-size: 0.7rem;
+  cursor: default;
+}
+
+/* Modifier Tooltips */
+.modifier-tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.modifier-tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 37, 48, 0.98);
+  color: var(--text-light);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  max-width: 450px;
+  width: max-content;
+  border: 1px solid var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+  z-index: 1000;
+  text-align: left;
+  font-weight: 300;
+}
+
+.modifier-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-bottom-color: var(--primary-blue);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  z-index: 1001;
+}
+
+.modifier-tooltip:hover::before,
+.modifier-tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}

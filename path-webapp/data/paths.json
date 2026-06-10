@@ -1,0 +1,47 @@
+{
+  "examples": [
+    {
+      "id": "starter-route",
+      "name": "Starter Route",
+      "rows": 4,
+      "cols": 8,
+      "rowLabels": { "0": "A" },
+      "gridSurface": {
+        "0,0": "windswept-grasslands",
+        "1,0": "ancient-crossing",
+        "2,0": "forest-refuge",
+        "3,0": "stone-works",
+        "4,0": "trading-grounds"
+      },
+      "gridUnderground": {
+        "2,1": "flooded-network"
+      }
+    },
+    {
+      "id": "hollow-cross",
+      "name": "Hollow Cross",
+      "tier": 2,
+      "personal_ranking": 4,
+      "rows": 4,
+      "cols": 8,
+      "rowLabels": { "0": "A'", "1": "A", "2": "B" },
+      "gridSurface": {
+        "1,0": "devils-rock",
+        "0,1": "village-in-the-mist",
+        "1,1": "hollow-woods",
+        "2,1": "verdant-crossing",
+        "3,1": "highland-watch",
+        "4,1": "highland-circle",
+        "5,1": "sacred-mountain-pass",
+        "1,2": "silken-spire",
+        "4,2": "unstable-mist"
+      },
+      "gridUnderground": {
+        "1,1": "fungal-depths",
+        "2,1": "reed-marsh-caverns",
+        "3,1": "sacred-underground",
+        "1,2": "brood-throne"
+      }
+    }
+  ]
+}
