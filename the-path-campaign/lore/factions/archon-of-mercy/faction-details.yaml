@@ -1,0 +1,280 @@
+name: The Archon of Mercy
+id: archon-of-mercy
+alignment: Neutral
+tier: Emerging
+
+identity:
+  description: |
+    A single brilliant, dangerous mind pursuing knowledge at any cost. The Archon is not a
+    faction in the conventional sense — no army, no followers, no ideology to spread. He has
+    experiments, findings, and questions nobody else is asking. The mist lands have given him
+    what no laboratory ever could: unknown materials, living mutations, transformations beyond
+    conventional medicine.
+  themes:
+    - Knowledge pursued past the point of ethics
+    - The line between healing and harm
+    - Fascination as a form of predation
+    - What it means to be "improved" by something that should have killed you
+    - The difference between a subject and a patient
+
+history:
+  origin: |
+    Once a legendary war healer. When conventional methods failed he turned to hemomancy —
+    using the blood and bodies of the fallen to save the living. Shunned for it, he was given
+    the title "Archon of Mercy" as a mockery. He accepted it. Years of self-experimentation
+    have given him blue skin, elongated fingers, pointed ears, and a clinical detachment from
+    the moral weight of what he does.
+  events:
+    - name: The Red Cellar
+      description: |
+        The Archon established a laboratory beneath the Monastery, repurposing old winery vaults
+        for hemomantic research. His primary subject: crystalline material from the mist lands —
+        the Starfall plague specifically. His work produced the Creature of the Cellar, a Hulk
+        stitched from plague-era corpses, still animated by a blood-red tether crystal. He has
+        since moved on. He left the Hulk running.
+    - name: The Letter
+      description: |
+        Having encountered Aerion von Moosgrund — a traveler with a living mutation that adapted
+        instead of killing — the Archon sent a letter to the Monastery. Aerion is the model
+        organism he cannot synthesize: a living integrated system, already running. He considers
+        this the most interesting thing on the Path. The letter is an invitation to his real
+        laboratory near the meteorite impact site.
+
+goals:
+  primary: Perfect his understanding of organic transformation and crystalline integration
+  secondary:
+    - Study Aerion von Moosgrund's living mutation — the system he cannot replicate
+    - Investigate the meteorite impact material
+    - Document transformations unique to the mist lands that no outside institution knows exist
+  long_term: |
+    Achieve a synthesis of the organic and crystalline that produces something genuinely new —
+    not a disease, not a weapon, but a next stage of what mortality can be
+
+territory:
+  type: Hidden
+  description: |
+    The Archon operates from temporary laboratories and leaves experiments behind when he moves.
+    His last known base was the Red Cellar beneath the Monastery. He has since relocated to the
+    Meteorite Lab — a hidden site near the crystal impact point referenced in his letter.
+  locations:
+    - The Red Cellar
+    - The Monastery
+    - Meteorite Lab (location TBD — near the Crystal Defense Line meteorite shaft)
+
+mist_protection:
+  type: Adapted
+  description: |
+    The Archon has experimented on himself extensively. His physical modifications appear to
+    include mist tolerance as a side effect — he can move through low-mist areas that would
+    distress ordinary travelers. Whether this was intentional is unclear even to him. He
+    observes the effect with interest.
+
+subgroups:
+  - name: The Archon
+    role: Sole operator
+    description: |
+      There is only him. His previous experiments — the Hulk, other subjects from the Red Cellar —
+      are not allies. They are work. He does not consider them subordinate; he considers them
+      incomplete. The distinction matters to him.
+
+relationships:
+  - faction: brass-mechanicorum
+    stance: curious
+    description: |
+      Mechanicorum construction principles overlap with his interest in inorganic subjects. He
+      would like access to their knowledge but has no mechanism to approach them safely.
+  - faction: mist-born
+    stance: wary
+    description: |
+      The mist organism produces transformations he finds fascinating. He observes it at distance
+      and will not allow himself to be consumed. He considers it the most sophisticated biological
+      process on the Path.
+  - faction: copper-rust-clan
+    stance: unknown
+    description: |
+      The Meteorite Lab sits near terrain the Clan's rail network passes through. He is likely
+      aware of their infrastructure without having made contact.
+  - faction: spider-colony
+    stance: indifferent
+    description: |
+      He has noted the Spider Queen's intelligence. He considers it an interesting case study
+      but not a current priority.
+  - faction: fire-born
+    stance: indifferent
+    description: |
+      Sacred flames are useful landmarks. He uses them for navigation. Nothing more.
+  - faction: rootbound
+    stance: indifferent
+    description: |
+      Natural sanctuary resistance is interesting data but not his current focus.
+
+item_identity:
+  theme: |
+    Hemomantic tools and alchemical compounds. Effects tend toward Drain and Enhancement —
+    taking from one target to give to another, or pushing a subject past their normal limits.
+    Items feel clinical: copper tubing, glass vessels, precise measurements, faint iron smell.
+    They function on the living and the recently dead with equal facility.
+  cost: |
+    Hemomantic items require blood — the user's or a willing or unwilling subject's. Some
+    require sustained proximity to the subject. A few carry residual effects that don't fully
+    resolve.
+
+rumors:
+  - >
+    "There was a healer once who saved a whole battalion using the bodies of the ones who
+    didn't make it. They gave him a title for it. He kept it."
+  - >
+    "Something is still moving in those cellar vaults under the monastery. Something big.
+    Whatever left it there is long gone."
+  - >
+    "He's not dangerous because he's cruel. He's dangerous because he's interested. There's
+    a difference, and it's the worse one."
+  - >
+    "I heard he sent a letter to someone. An invitation. Whoever got it hasn't been seen
+    since they went looking."
+
+plot_hooks:
+  - id: the-hulk-escapes
+    name: The Hulk Escapes
+    description: |
+      The tether crystal in the Red Cellar is damaged — by players, decay, or something external.
+      The Hulk is no longer anchored. It has left the cellar and is moving through the underground
+      network. The Archon is not nearby. It is not hunting — it is looking for something to return to.
+  - id: aerion-connection
+    name: The Aerion Connection
+    description: |
+      A PC is Aerion von Moosgrund, or knows them. The letter from the Red Cellar is addressed to
+      them personally. Following it means walking into the Archon's active laboratory at the
+      meteorite impact site. He will be genuinely pleased to see them arrive.
+  - id: the-other-subjects
+    name: The Other Subjects
+    description: |
+      Players find evidence of experiments before the Hulk. Notes, residue, containment failures.
+      Something the Archon created is still in the underground network — and it adapted without him.
+
+storylines:
+  - id: the-research-trail
+    name: The Research Trail
+    summary: |
+      The Archon's work leaves a trail through the underground: the Red Cellar, the letter, and
+      somewhere beyond — his real laboratory. Players who follow the evidence will eventually find
+      him, and have to decide what they do when they do.
+    status: active
+    phases:
+      - id: red-cellar-discovery
+        type: entry
+        name: The Red Cellar
+        description: |
+          Players explore the vaults beneath the Monastery. Evidence of hemomantic experiments.
+          The Hulk — animated or inert depending on whether they triggered it. Abandoned equipment.
+          The Archon has not been here for some time, but the work has not stopped running.
+        triggers:
+          - Players enter The Red Cellar location
+        branches:
+          - label: Find the letter
+            next: letter-found
+          - label: Leave without searching thoroughly
+            next: null
+
+      - id: letter-found
+        type: milestone
+        name: The Letter to Aerion
+        description: |
+          Hidden among the equipment — a letter addressed to Aerion von Moosgrund. Precise hand,
+          folded paper, wax seal pressed with a medical instrument.
+
+          ---
+          *To Aerion von Moosgrund*
+
+          If you found this, you have already seen my work in the cellar. Good. That saves me
+          an explanation.
+
+          What is down there represents months of progress — crystalline material from these lands
+          of the mist, shaped into something that moves, that responds, that *functions*. It is the
+          furthest I have gotten with inorganic subjects. I am not dissatisfied with it.
+
+          But it is not what you are.
+
+          You carry something I cannot synthesize — a living system, already integrated, already
+          running. The mutation in you did not kill you. It adapted. That distinction is everything,
+          and it is the question I have been working toward since we spoke on the bridge.
+
+          The cellar was a starting point. My real laboratory is further in — near where the meteorite
+          made landfall. That is where the work that matters is happening, and that is where I would
+          like to continue our conversation.
+
+          These lands of the mist hold more than anyone could have imagined. Hidden structures,
+          unknown materials, transformations no one has thought to study. I have no interest in
+          exploring that alone when there is someone worth exploring it with.
+
+          Come find me at the impact site.
+
+          *— The Archon*
+          ---
+        branches:
+          - label: Follow the trail to the impact site
+            next: meteorite-approach
+          - label: Ignore the invitation
+            next: null
+
+      - id: meteorite-approach
+        type: active
+        name: Finding the Meteorite Lab
+        description: |
+          The letter points to the meteorite impact site — which connects to the blocked shaft
+          at the top of the Crystal Defense Line. Players must navigate the Copper Rust Clan's
+          underground rail network and find a way through or above the sealed meteorite shaft
+          to reach the Archon's real laboratory.
+        branches:
+          - label: Reach the impact site
+            next: first-meeting
+
+      - id: first-meeting
+        type: climax
+        name: First Meeting
+        description: |
+          The Archon is here. He is genuinely pleased. He does not perform warmth — he simply
+          proceeds as if continuing a conversation that was interrupted. He treats the players
+          as data, interesting data, but data. What happens next depends entirely on them.
+        branches:
+          - label: Collaborate with his research
+            next: research-alliance
+          - label: Shut down his operation
+            next: confrontation
+          - label: Take what you need and leave
+            next: uneasy-knowledge
+
+      - id: research-alliance
+        type: resolution
+        name: Research Alliance
+        description: |
+          The Archon becomes an irregular contact. Not an ally, but someone who trades information
+          and compounds for access to interesting subjects and mist phenomena. He keeps his distance.
+          He remembers everything useful. He will occasionally send notes.
+        branches: []
+
+      - id: confrontation
+        type: resolution
+        name: Confrontation
+        description: |
+          Stopping the Archon means dealing with whatever he has built at the impact site, and
+          choosing what to do with his notes. Burning them destroys knowledge that might matter
+          elsewhere. Keeping them means carrying it.
+        branches: []
+
+      - id: uneasy-knowledge
+        type: resolution
+        name: Uneasy Knowledge
+        description: |
+          Players leave with information and the uncomfortable certainty that the Archon is still
+          working. He does not pursue. He waits. He has other subjects in mind.
+        branches: []
+
+npcs:
+  - id: archon-of-mercy
+    file: npcs/archon-of-mercy.yaml
+    role: Researcher / Antagonist
+
+adversaries:
+  - id: archon-of-mercy
+    ref: ../../../adversaries/antagonists/archon-of-mercy.yaml

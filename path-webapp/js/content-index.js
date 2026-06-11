@@ -102,6 +102,18 @@ const CONTENT_INDEX = {
     "plague-march.yaml"
   ],
   "__factions__": {
+    "archon-of-mercy": {
+      "details": "faction-details.yaml",
+      "npcs": [
+        "archon-of-mercy.yaml"
+      ]
+    },
+    "copper-rust-clan": {
+      "details": "faction-details.yaml",
+      "npcs": [
+        "hund.yaml"
+      ]
+    },
     "spider-colony": {
       "details": "faction-details.yaml",
       "npcs": [

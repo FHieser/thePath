@@ -1,0 +1,296 @@
+name: Copper Rust Clan
+id: copper-rust-clan
+alignment: Underground
+tier: Survivor
+
+identity:
+  description: |
+    A mining clan whose underground sanctuary was destroyed in a Brass Mechanicorum raid. Their
+    rail network still runs. Their tools are still set down mid-shift. One survivor reached the
+    Village in the Mist. The sanctuary is sealed behind a mist wall at the end of their deepest
+    rail line. Whether anyone else made it out is unknown.
+  themes:
+    - Grief held in suspension — functioning without resolving
+    - What it means to return to a place you left as a survivor
+    - Community as the accumulation of small acts — carvings in wall niches, names in stone
+    - The question of whether to build here or go back
+
+history:
+  origin: |
+    The Copper Rust Clan built their lives underground, pushing rune-carved rail lines deeper into
+    unclaimed stone. They worshipped the God of the Deep — marking walls with depth-prayers in
+    copper, striking the shrine pipe at Deep Station before each shift. Their sanctuary was a
+    working, living community that existed entirely below the surface, untouched by mist and
+    surface politics alike.
+  events:
+    - name: The Brass Mechanicorum Raid
+      description: |
+        The Brass Mechanicorum came for the Ancient Foundation Engine built beneath the sanctuary.
+        The Clan didn't know they had one — they had built over it without understanding what it was.
+        The raid was efficient and thorough. Hund escaped during the chaos. He does not know who
+        else did.
+    - name: The Sealed Sanctuary
+      description: |
+        After the raid, the passage to the Copper Rust Sanctuary filled with mist. The Mist Archway
+        at Deep Station now stands blocked — its carved channels designed to carry Sacred Flame, a
+        solid mist wall pressed against the carved stone arch. Opening it requires 3 Flame Essence
+        poured into the channels. What is on the other side has been there, unobserved, for years.
+
+goals:
+  primary: Find out what happened to the sanctuary and who survived
+  secondary:
+    - Determine whether the Copper Rust Sanctuary can be restored
+    - Understand why the Brass Mechanicorum targeted them specifically
+    - Return to something — the old community or a new one built from the same values
+  long_term: Restore an underground community worthy of the God of the Deep
+
+territory:
+  type: Fixed Underground
+  description: |
+    The Clan's rail network spans three connected locations. The Outer Mine Line is the frontier
+    expansion track, running through natural caverns the Clan broke into during expansion. The
+    Crystal Defense Line is the fortified inner track, built after the meteorite shaft was
+    discovered and sealed. Deep Station is the convergence hub — three lines meeting at a carved
+    stone hall the size of a small town square. The Sanctuary lies beyond the Mist Archway at
+    Deep Station, currently inaccessible.
+  locations:
+    - Outer Mine Line
+    - Crystal Defense Line
+    - Deep Station
+    - Copper Rust Sanctuary (sealed — beyond the Mist Archway)
+
+mist_protection:
+  type: Engineered
+  description: |
+    The Clan's tunnels run through worked stone built to exclude the mist. The sanctuary was
+    protected by a Sacred Flame — now either extinguished or unreachable. The Mist Archway at
+    Deep Station uses carved rune conduits specifically designed to channel Flame Essence and
+    hold the mist at bay. Hund knows this mechanism exists. He does not have the Flame Essence
+    to use it.
+
+subgroups:
+  - name: The Survivors
+    role: Unknown
+    description: |
+      Whether anyone beyond Hund escaped is unknown. The sanctuary may contain survivors who
+      have been living behind the mist wall since it sealed. It may be empty. Something may
+      have moved in. Hund does not know, and the uncertainty is what he lives with.
+  - name: The Rune Engineers
+    role: Builders and maintainers (status unknown)
+    description: |
+      The Clan's technical class — those who maintained the rune-work in the drift carts, the
+      rail channels, the Deep Station's switching hub. Their tools are still at the workbenches.
+      Their maintenance logs are still in the station. Whether any survived the raid is unknown.
+
+relationships:
+  - faction: brass-mechanicorum
+    stance: hostile
+    description: |
+      The Brass Mechanicorum destroyed the Copper Rust Sanctuary. Hund has not forgotten this
+      and does not distinguish between individual units — they are the thing that came and took
+      everything. Whether the Mechanicorum consider the matter concluded is an open question.
+  - faction: spider-colony
+    stance: wary
+    description: |
+      The Outer Mine Line passes through territory that overlaps with the Spider Colony's hunting
+      range. The Silk Cache on the line is the Colony's larder. The Clan knew about it and
+      left them food sometimes. The arrangement was unofficial but functional.
+  - faction: mist-born
+    stance: hostile
+    description: |
+      The mist wall at Deep Station represents Mist Born presence, ongoing and permanent. The
+      mist pushed the Clan's frontier expansion back before the raid. Mist Born are not the
+      primary threat — but they are a constant one.
+  - faction: fire-born
+    stance: unknown
+    description: |
+      The sanctuary relied on Sacred Flame. Whether the Clan ever had contact with the Fire Born
+      who may have supplied or established that flame is lost with the sanctuary's history.
+  - faction: rootbound
+    stance: neutral
+    description: |
+      Underground communities tend to stay clear of surface conflicts. No animosity. No contact.
+  - faction: archon-of-mercy
+    stance: unknown
+    description: |
+      The Archon's Meteorite Lab sits in terrain near the Crystal Defense Line's sealed meteorite
+      shaft. He is likely aware of the rail network. The Clan is not aware of him.
+
+item_identity:
+  theme: |
+    Rune-carved copper and worked stone. Effects tend toward Utility and Protection — tools that
+    function reliably underground, structural reinforcement, navigation in the dark. Items feel
+    solid and maintained: dented, repaired multiple times, built to outlast whoever holds them.
+    Clan rune-work hums faintly when in contact with worked stone.
+  cost: |
+    Clan rune-work requires worked stone to activate — items go inert in natural caverns and
+    on the surface. Some items need periodic re-inscription to maintain charge. Deep Station's
+    Rune Station can provide this, if players gain access to it.
+
+rumors:
+  - >
+    "There's a dwarf at the village who never talks about where he came from. But sometimes at
+    night you can hear him in the mine — not working. Just sitting."
+  - >
+    "Those tunnels still have carts that run. Nobody's driving them. They just go on their own
+    schedule, back and forth, like they're waiting for someone to come back."
+  - >
+    "The Mechanicorum don't destroy things without reason. Whatever they were after down there,
+    they got it. Or tried to."
+  - >
+    "Someone carved little statues all along that rail line. Dozens of them, in niches in the walls.
+    Same face, over and over. Must've taken years."
+
+plot_hooks:
+  - id: hunts-return
+    name: Hund's Return
+    description: |
+      Hund asks the players to lead him back to the destroyed sanctuary. He needs to know if
+      Bryn survived. The route runs through the Outer Mine Line, the Crystal Defense Line, and
+      Deep Station. The Mist Archway requires 3 Flame Essence the players may or may not have.
+  - id: something-survived
+    name: Something Survived
+    description: |
+      The players open the Mist Archway and find the sanctuary — not empty. Either survivors
+      are still there, living in the sealed dark, or something else has moved in during the years
+      since the raid.
+  - id: what-they-wanted
+    name: What They Wanted
+    description: |
+      The Brass Mechanicorum destroyed the sanctuary for an Ancient Foundation Engine buried
+      beneath it. Hund knows this from fragments of what he saw during the raid. Players who
+      realize the same Engine type appears at the Brood Throne — and possibly elsewhere on the
+      Path — start to understand that something larger is being assembled.
+  - id: god-of-the-deep
+    name: The God of the Deep
+    description: |
+      The Deep Shrine at the station responds when the hammer strikes the pipe — a tone that
+      carries through stone in every direction, marking a Deep Ore vein somewhere underground.
+      Someone has been striking it recently. The station should be empty.
+
+storylines:
+  - id: hunts-return
+    name: Hund's Return
+    summary: |
+      Hund survived the raid. His partner Bryn did not escape with him — or did, and he doesn't
+      know it. The Mist Archway at Deep Station is the only route back. Opening it requires 3
+      Flame Essence. Whatever is on the other side has been there, sealed, for years. Hund will
+      wait as long as it takes. He is very good at waiting.
+    status: active
+    phases:
+      - id: first-ask
+        type: entry
+        name: The Ask
+        description: |
+          After several sessions — after the players have seen Hund work, fix things without
+          being asked, carve quietly in corners — he trusts them enough to say it directly:
+          "I need to go back. Will you take me?"
+          He knows the route. He knows what he is asking for.
+        triggers:
+          - Hund has been at the village for multiple sessions
+          - Players have earned his trust through shared work or danger
+        branches:
+          - label: Agree to take him
+            next: rail-journey
+          - label: Not yet — need Flame Essence first
+            next: preparation
+          - label: Refuse
+            next: null
+
+      - id: preparation
+        type: branch
+        name: Preparation
+        description: |
+          Opening the Mist Archway requires 3 Flame Essence. Hund does not press for a timeline.
+          He goes back to work. He will be ready whenever they are.
+        branches:
+          - label: 3 Flame Essence gathered
+            next: rail-journey
+
+      - id: rail-journey
+        type: active
+        name: The Rail Journey
+        description: |
+          The route runs through the Outer Mine Line, the Crystal Defense Line, and Deep Station.
+          Hund rides in the cart without speaking much. He recognizes things — a section of track
+          he helped lay, a tool left on a shelf, a wall carving in a style he knows.
+          At the Silk Cache on the Outer Mine Line, the scouts watch and don't move.
+          Hund says: "We always knew about them. We left them food sometimes."
+        progress:
+          required: 3
+          current: 0
+          locations:
+            - id: outer-mine-line
+              name: Outer Mine Line
+              status: available
+            - id: crystal-defense-line
+              name: Crystal Defense Line
+              status: available
+            - id: deep-station
+              name: Deep Station
+              status: available
+        branches:
+          - label: All three locations traversed
+            next: archway-approach
+
+      - id: archway-approach
+        type: milestone
+        name: The Mist Archway
+        description: |
+          Deep Station. The grand carved archway. The God of the Deep's sigil in the keystone.
+          The mist wall, pale and unmoving. Hund stands at the arch for a long time before saying
+          anything. Then: "Pour it."
+          When the third Flame Essence channels through, the mist pulls back. The Guardian emerges.
+          After it is dealt with, the passage is open and will not close again.
+        branches:
+          - label: Open the Archway (3 Flame Essence)
+            next: inside
+          - label: Insufficient Flame Essence
+            next: preparation
+
+      - id: inside
+        type: climax
+        name: The Sanctuary
+        description: |
+          The passage is open. What is on the other side has been sealed for years without
+          outside contact. The GM determines the state: ruins and evidence, surviving members
+          of the Clan, something that moved in, or some combination. Hund will find out about
+          Bryn here, one way or another.
+        branches:
+          - label: Survivors found
+            next: reunion
+          - label: Empty — evidence of what happened
+            next: closure
+          - label: Something moved in
+            next: reclamation
+
+      - id: reunion
+        type: resolution
+        name: Reunion
+        description: |
+          Survivors are here — some of them. Whether Bryn is among them is the GM's call.
+          Either way, Hund knows. The grief lifts or it changes shape. The Clan is not gone.
+        branches: []
+
+      - id: closure
+        type: resolution
+        name: Closure
+        description: |
+          Empty. Evidence of what happened — of the raid, of those who didn't make it, of the
+          days after. Hund spends time in here alone. He takes one thing. He does not say what.
+          When he comes back out, he looks like someone who has finished a very long job.
+        branches: []
+
+      - id: reclamation
+        type: resolution
+        name: Reclamation
+        description: |
+          Something moved in. The sanctuary is occupied. Taking it back would be a project that
+          spans multiple sessions. Whether Hund decides to try, and whether the players help him,
+          begins a new arc. He will not ask again. He will start planning.
+        branches: []
+
+npcs:
+  - id: hund
+    file: npcs/hund.yaml
+    role: Survivor

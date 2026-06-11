@@ -1,0 +1,65 @@
+name: Hund of the Copper Rust Clan
+id: hund
+faction: copper-rust-clan
+role: Survivor / Craftsman
+location: Village in the Mist (origin — destroyed Copper Rust Sanctuary, underground)
+
+appearance:
+  - Broad-shouldered dwarf built for low tunnels, visibly uncomfortable in open air
+  - Clan armor of oxidized copper — green-patinated plates over worn leather, dented but maintained
+  - A web of old burn scars across his left forearm from the raid
+  - Carries his mining pick at all times — the only thing he didn't lose
+  - Watches exits. Does not make eye contact easily.
+
+the_twist: |
+  Hund's partner, Bryn, was at the sanctuary when the Brass Mechanicorum attacked. He escaped
+  during the chaos and doesn't know if Bryn made it out. He won't say this to anyone for a
+  long time. He just works. When he trusts the players enough, he will ask directly if they'll
+  take him back.
+
+  The carvings tell it — small stone figures left in corners of the mine, never displayed. Early
+  ones are anonymous. Later ones are the same person, clearly, in increasingly private poses:
+  reclining, at rest, unhurried. He never brings it up. He notices if they move one.
+
+theme: |
+  Certainty vs. Hope. Hund is living in suspension — functioning, contributing, building —
+  but won't fully grieve until he knows. The players have the power to resolve that, in either
+  direction. His question mirrors the village's own: is there something worth going back to,
+  or do you build here and accept the old world is gone?
+
+wants:
+  - To find out what happened to Bryn — the grief won't lift until he knows
+  - To be treated as a contributor, not a rescue
+  - For the players to lead him back to the destroyed sanctuary, when he trusts them enough
+
+offers:
+  - Mining and structural expertise — reinforcing underground locations, reading tunnel layouts
+  - Can manufacture explosives — useful for clearing paths, combat, or demolition
+  - Knowledge of the Copper Rust sanctuary layout and the Brass Mechanicorum's approach patterns
+
+interaction_beats:
+  - moment: First contact (Brood Throne)
+    description: |
+      First word — before he's fully conscious — is "Bryn?" When he realizes it's strangers,
+      he shuts down. If pressed: "Took you long enough." Immediately assesses exits.
+  - moment: Village arrival
+    description: |
+      No fanfare. One day the players notice he's started digging.
+      "You need a mine."
+  - moment: Opening up
+    description: |
+      After several sessions, starts talking carefully, practically, about where he came from.
+      When he trusts the players, he asks directly: "I need to go back. Will you take me?"
+  - moment: Ongoing
+    description: |
+      Fixes things without being asked. Practical before grateful in every interaction.
+
+gm_notes:
+  - Play him as useful first, grieving second — the grief is always present but never performed
+  - Don't rush the opening-up arc. Let him be a quiet presence for several sessions before the ask comes
+  - When he finally asks about Bryn, it should feel earned — players have seen him work, seen him
+    watch exits, seen the unguarded moment where he thought no one was looking
+  - If players explore the mine uninvited and find the carvings, he'll never mention it himself —
+    but he'll notice if they moved one
+  - The Mechanicorum hunting him is an optional threat the GM can activate — or leave as background dread
+  - First word in any rescue scenario is always "Bryn?" — write this into any encounter he appears in
