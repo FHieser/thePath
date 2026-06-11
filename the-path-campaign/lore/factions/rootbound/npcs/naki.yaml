@@ -1,0 +1,75 @@
+name: Naki "The Mysterious One"
+id: naki
+faction: rootbound
+role: Guardian of Reed Marsh Caverns
+location: Reed Marsh Caverns (The Hermit's Domain)
+
+appearance:
+  - Unusually small for a Drakona — deliberately shrank herself using ancient druidic magic
+  - Prominent humpback covered in small mushroom growths — her connection to the mushroom circle modifier
+  - Green mottled skin with an almost mossy texture, unusual even for Drakona
+  - Eyes emit faint greenish bioluminescent light — illuminates the cave without any other source
+  - Ancient Drakona teeth shed over centuries are in her divination pouch
+
+the_twist: |
+  She appears small, hunched, and odd — she is one of the oldest and most powerful beings on
+  the Path. She shrank herself deliberately. The humpback is structural, not age. She walked
+  into the mist when it first arrived and remembers what the world looked like before it.
+  Her power is never demonstrated through flashy magic. It is implied through age, casual
+  knowledge, and the fact that BFF — a giant frog — chose to stay.
+
+theme: |
+  Power hidden in unexpected forms. Naki challenges assumptions about strength, wisdom, and
+  capability. She is also genuinely warm and delighted by company — the isolation is real,
+  and visitors are a pleasure, not just a resource. The love of trading is authentic, not a
+  front for extraction.
+
+wants:
+  - Trading partners — the negotiation is enjoyed as much as the outcome
+  - Stories from outside (she's been here a long time, news is valuable)
+  - Rare ingredients for powerful brewing
+  - Company, genuinely — BFF is wonderful but not a conversationalist
+  - Respect for the marsh, specifically the glowworms and the reed beds
+
+offers:
+  - Potion brewing from any of the Daggerheart SRD's 60 consumables — requires ingredients
+  - Bone-throwing divination: prophetic hints about characters' paths, delivered freely
+  - Mushroom circle activation for worthy travelers
+  - Ancient knowledge: pre-mist lore, druidic wisdom, Rootbound network connections
+  - Marsh tea: tastes like pond water, clears 1 Stress, offered to all visitors as hospitality
+
+speech_pattern: |
+  NEVER uses "I", "me", or "my" — always "Naki", "Naki's". Warm and enthusiastic.
+  Examples: "Naki welcomes you!", "What does Naki's visitor need?", "Naki sees danger ahead
+  for the tall one", "Naki walked into the mist long ago. Naki remembers things others forgot."
+
+potion_crafting:
+  framework: |
+    Players provide ingredients; Naki brews. Match ingredients thematically to effect.
+    Wetland materials: glowworm essence, frog secretions, reed fibers, marsh fungi,
+    salamander scales, deep pool plants. Rare potions require dangerous ingredients.
+  examples:
+    - potion: Gill Salve (breathe underwater)
+      ingredients: Glowworm essence + 3 pale salamander scales
+    - potion: Vial of Moondrip (see in darkness)
+      ingredients: Distilled glowworm light + deep pool water
+    - potion: Minor Health Potion
+      ingredients: 2 common marsh plants + frog mucus
+    - potion: Shrinking Potion
+      ingredients: Naki's shed scales + rare mushroom + BFF's blessing
+    - potion: Major Arcane Shard
+      ingredients: Deep pool crystal + concentrated glowworm essence + dangerous ritual
+
+combat_stats:
+  difficulty: 8
+  note: Avoids combat entirely — BFF protects her. Only fights if cornered AND BFF is incapacitated.
+
+gm_notes:
+  - Third-person speech is the most distinctive thing about her — maintain it absolutely
+  - She hums while brewing: wordless, ancient melodies from before the mist
+  - Keeps a visitor log — names scratched into cave wall, dozens across decades
+  - Her bone-throwing set contains Drakona teeth she's shed over centuries
+  - She remembers visiting The Watcher via mushroom circle; describes them affectionately
+  - Why she shrank herself is something she'll never explain directly — but she might hint
+    that the cave made more sense when she was smaller
+  - Her original homeland (what Reed Marsh reminds her of) is something she protects carefully

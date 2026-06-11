@@ -1,0 +1,262 @@
+name: Mist Born
+id: mist-born
+alignment: Mist
+tier: Ancient
+
+identity:
+  description: |
+    Guardians of THE Nothing — three primordial void-spheres at the lowest depths of the mist
+    that chain the sleeping god of War and Expansion in unconscious sleep. The Mist Born descend
+    into gigantic underwater caverns beneath the sea of mist, tended by Ancient Guardians (divine
+    constructs in the forms of a crocodile, a kraken, and a crab) who watch over the void. They
+    are mortals broken by the void and remade in it — wearing diving suits inscribed with prayers,
+    building coral-void monasteries, fusing progressively with the living mist-organism until they
+    are no longer distinguishable from it.
+  themes:
+    - Enlightenment through descent and fusion, not ascent and separation
+    - The mist is not the threat — it is the cost of preventing a catastrophic divine war
+    - The expansion crisis: THE Nothing expands unbalanced without the god of Expansion to oppose it
+    - Broken mortals remade into something that no longer reads as human
+    - Sea and Tibet aesthetics — diving suits with prayers, underwater monasteries, coral-void fusion
+
+history:
+  origin: |
+    When the imprisoning gods chained the god of War and Expansion in unconscious sleep, they
+    used primordial void as the binding material, anchored in three void-spheres at the lowest
+    depths. They built Ancient Guardians — massive divine constructs — to watch over the spheres
+    and ensure the chains held. Then they departed. The first mortals who wandered into the mist
+    and descended far enough to find THE Nothing were broken by it. The Ancient Guardians took
+    them in and taught them. The god must sleep. The chains must hold. The void must be guarded.
+    The mist is the price of that vigilance.
+  events:
+    - name: The First Breaking
+      description: |
+        Mortals who gazed upon THE Nothing were shattered — not destroyed, but fundamentally
+        rearranged. The Ancient Guardians, following their mandate to maintain the imprisonment,
+        taught these broken minds a new purpose. The first underwater monasteries were built around
+        the descent routes to the void-spheres.
+    - name: The Expansion Crisis
+      description: |
+        THE Nothing expands continuously — the god of Expansion sleeping means the void operates
+        unopposed. The mist consuming the mortal realm is not deliberate cruelty. It is mechanical
+        consequence. The Mist Born know this and guard against the greater catastrophe that
+        waking the god would produce. Nobody else believes them.
+
+goals:
+  primary: Maintain eternal watch over THE Nothing's three void-spheres
+  secondary:
+    - Prevent the Fire Born from reaching the depths and destroying the chains
+    - Guard against the god's awakening — divine war would end what the mist merely threatens
+    - Extinguish Fire Born flames that enable navigation toward the chains
+    - Descend deeper into fusion with the mist-organism (spiritual progression)
+  long_term: |
+    Hold the chains until the imprisoning gods return to address the expansion crisis.
+    The Mist Born believe this will happen. They have no timeline.
+
+territory:
+  type: Deep Underwater
+  description: |
+    Gigantic underwater caverns beneath the sea of mist, descending to THE Nothing's three
+    void-spheres. The spheres shift position due to the divine realm's nature — the Mist Born
+    track them continuously. Underwater monasteries cluster along descent routes at various
+    depths. Surface presence is temporary occupation only — corrupted ruins, mist-thick zones
+    where The Broken have come up.
+  locations:
+    - The Three Void-Sphere Sites (locations shift)
+    - Underwater monasteries along descent routes
+    - Ancient Guardian alcoves (the divine constructs' resting places)
+    - Mist-Touched surface locations (temporary occupation)
+
+mist_protection:
+  type: Fusion
+  description: |
+    They are the mist — fused with the organism, no protection needed. Early-stage mortals still
+    wear diving suits inscribed with prayers. Progressive fusion grants immunity as coral-void
+    growths spread through the body. Advanced fusion stages require mist presence to sustain
+    themselves. Removing an advanced Mist Born from the mist is a death sentence they accept
+    without resistance.
+
+subgroups:
+  - name: Ancient Guardians
+    role: Eternal watchers of the void-spheres
+    description: |
+      Giant divine constructs — the crocodile, the kraken, and the crab. Built by the imprisoning
+      gods to watch over THE Nothing. Uncorrupted and eternal. They teach mortals who descend
+      deep enough. They do not come to the surface.
+  - name: First Disciples
+    role: Monastery keepers and doctrinal preservers
+    description: |
+      Original mortals taught directly by the Ancient Guardians. Maintain the underwater
+      monasteries. Preserve the Guardian teachings in purest form. Most knowledgeable about
+      cosmological balance — and the only ones who fully understand why the mist expanding
+      is still preferable to waking the god.
+  - name: The Broken
+    role: Void-fused surface agents
+    description: |
+      Lost souls consumed by the mist, then shaped. Losing themselves to the void. Take on
+      forms built to combat the fires of the Fire Born. They do not grieve what they were.
+      They are not capable of it anymore.
+
+relationships:
+  - faction: fire-born
+    stance: hostile
+    description: |
+      Attack on sight. Not hatred — indifferent elimination. The Fire Born are trying to
+      destroy the chains and wake the god. The Mist Born are preventing that. There is no
+      diplomatic version of this.
+  - faction: flame-seekers
+    stance: hostile
+    description: |
+      They carry flame. Flames enable navigation toward the void-spheres. They are a vector.
+  - faction: ember-traders
+    stance: hostile
+    description: |
+      They transport flames between sanctuaries and map the Path, aiding Fire Born navigation.
+      Priority targets.
+  - faction: mist-clergy
+    stance: allied
+    description: |
+      The Clergy believes the imprisonment must be maintained. The Mist Born enforce through
+      violence; the Clergy through persuasion and politics. Complementary approaches to the
+      same goal — though the Mist Born do not fully trust anything that uses words.
+  - faction: rootbound
+    stance: hostile-if-threatened
+    description: |
+      Natural sanctuaries resist the mist without explanation — beings outside Mist Born
+      understanding. They attack if Rootbound interfere with the mist's spread.
+  - faction: factionless
+    stance: indifferent
+    description: Only relevant if they carry flame or threaten the depths.
+  - faction: deep-dwellers
+    stance: indifferent
+    description: Underground communities where the mist doesn't reach. Separate realms, no conflict.
+  - faction: brass-mechanicorum
+    stance: indifferent
+    description: Ancient machines with unclear purpose. Not relevant to guarding the void unless they interfere.
+  - faction: copper-rust-clan
+    stance: hostile
+    description: |
+      The mist wall at Deep Station is Mist Born presence — permanent and advancing.
+      The Clan's collapse is consequence, not target.
+
+item_identity:
+  theme: |
+    Void-touched artifacts grown from the living mist-organism or salvaged from the depths.
+    Effects tend toward Disruption and Enhancement — corrupting enemies or pushing the bearer
+    beyond mortal limits through fusion with the void. Items feel alien and unsettling: cold,
+    slightly damp, sometimes pulsing. Made of coral-void composite, deep-sea bone, crystallized
+    mist. They may require the bearer to accept a degree of corruption to use.
+  cost: |
+    Gain Mist tokens. The mist gives, but it also claims. Using Mist Born items accelerates
+    the user's fusion with the void — powerful, with an escalating personal price.
+
+rumors:
+  - >
+    "Stay away from the deep caverns beneath the mist. Things down there that aren't human
+    anymore. Coral growing through their skin."
+  - >
+    "Saw one once, crawling out of the fog. Didn't walk right. Didn't breathe right. Just stared.
+    When I ran, it didn't follow. Like I wasn't worth the effort."
+  - >
+    "They say the mist makes its own soldiers. People who get lost become something else. Part of it."
+  - >
+    "Don't look into the deep waters beneath the mist. There are shapes down there. Big ones.
+    They've been watching since before we were born."
+
+plot_hooks:
+  - id: monk-to-the-surface
+    name: Monk to the Surface
+    description: |
+      One of the First Disciples rises from the depths seeking something on the surface. They are
+      not hostile to players and invite them to help. What does a disciple of the Ancient Guardians
+      need from the world above?
+  - id: the-village-gets-attacked
+    name: The Village Gets Attacked
+    description: |
+      Movement in the mist. The Broken attack a flame sanctuary in numbers never seen before.
+      What provoked this sudden aggression?
+  - id: finding-a-void-sphere
+    name: Finding a Void Sphere
+    description: |
+      Players discover a massive tunnel descending into the true depths beneath the sea of mist.
+      Something vast lurks there — an Ancient Guardian, or worse. What do they do with this knowledge?
+  - id: the-mist-parts
+    name: The Mist Parts
+    description: |
+      The mist suddenly recedes, revealing a completely new area with unfamiliar locations and
+      aesthetics. Are there rules governing the mist's movements? What does this reveal about
+      the divine field's nature?
+
+storylines:
+  - id: the-surface-call
+    name: The Surface Call
+    summary: |
+      A First Disciple has risen from the depths — the first in living memory. They move through
+      surface locations with the fluid absence of purpose that makes The Broken terrifying, except
+      they are clearly not The Broken. They are watching something. They are looking for someone.
+      They are not attacking. This is more alarming than if they were.
+    status: available
+    phases:
+      - id: sighting
+        type: entry
+        name: The Sighting
+        description: |
+          A figure in an old diving suit, prayers inscribed across every surface, moving through
+          a Path location where it has no business being. Coral growths across the shoulders and
+          hands. Breathing in a rhythm that doesn't match the surrounding air. It sees the players.
+          It does not flee. It does not attack. It gestures, once, and then waits.
+        triggers:
+          - Players encounter evidence of deep mist activity in a surface location
+        branches:
+          - label: Approach the Disciple
+            next: first-communion
+          - label: Flee or attack
+            next: null
+
+      - id: first-communion
+        type: active
+        name: First Communion
+        description: |
+          The Disciple communicates in fragments — the Guardian's teachings were not designed for
+          mortal mouths on the surface. What they want is partially legible: something here, above,
+          is pulling at one of the void-spheres. The chain is fraying. They cannot go back down
+          until they understand why.
+        branches:
+          - label: Help the Disciple investigate
+            next: source-of-pull
+          - label: Refuse
+            next: null
+
+      - id: source-of-pull
+        type: milestone
+        name: The Source of Pull
+        description: |
+          Something on the Path network is disturbing the imprisonment — a piece of the chain
+          infrastructure that exists above ground, where the Mist Born can't safely operate.
+          Fire Born? The Brass Mechanicorum's Foundation Engine project? Something the players
+          themselves triggered? The Disciple does not know. That is why they came up.
+        branches:
+          - label: Neutralize the disruption
+            next: descent
+          - label: Cannot address it
+            next: consequence
+
+      - id: descent
+        type: resolution
+        name: The Descent
+        description: |
+          The Disciple thanks the players in the only way a First Disciple knows how: a gesture
+          from the Guardian's teaching, specific and old. Then they descend. Players are left with
+          the knowledge that there is something beneath the mist, vast and patient, that is aware
+          of them now.
+        branches: []
+
+      - id: consequence
+        type: resolution
+        name: Consequence
+        description: |
+          The disruption continues. The Disciple descends anyway — they cannot stay on the surface
+          indefinitely. What they told the Ancient Guardians, and what the Guardians decide to do
+          in response, arrives at the surface weeks later in the form of accelerated Mist Born
+          activity. Something below is reacting.
+        branches: []

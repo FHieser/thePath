@@ -1,0 +1,248 @@
+name: Fire Born
+id: fire-born
+alignment: Flame
+tier: Ancient
+
+identity:
+  description: |
+    Ancient servants of the imprisoned god, transformed by millennia of isolation into something
+    alien and incomprehensible. They travel the Path on enormous brazier-bearing constructs —
+    from single paladins on personal carriers to entire temple-cities the size of mountains.
+    They maintain Sacred Flames, but not for mortal benefit. The flames are waypoints on their
+    pilgrimage to free the god they refused to abandon.
+  themes:
+    - Ancient servants transformed by the imprisonment they refused to escape
+    - Sustained by the very god they're trying to free — a living paradox
+    - Millennia of mortal indifference have made them incomprehensible
+    - They are the last believers in a cause the rest of the world considers concluded
+    - Elusive as legends — most mortals live and die without seeing one
+
+history:
+  origin: |
+    Before the god's imprisonment, they were servants — strange constructs even then, built to
+    attend and carry out a divine will. When the other gods moved to imprison the god of War and
+    Expansion, the Fire Born refused to abandon their charge. The imprisoning gods could not
+    destroy them, but could not tolerate them either. They were transformed — forced into
+    flame-dependency mirroring the Mist Born's mist-dependency, bound to the sacred fires as
+    irrevocably as their enemies are bound to the void. Millennia of this existence have made
+    them increasingly alien. They no longer fully parse mortal language or motivation.
+  events:
+    - name: The Transformation
+      description: |
+        Once free-moving servants, they were bound to their brazier carriers and the flame within.
+        Cannot leave their fires without weakening and eventually dying. The carriers became their
+        homes, their weapons, and their life support simultaneously.
+    - name: The Village Flame
+      description: |
+        Centuries ago, one carrier stopped moving and was never retrieved. The settlement that grew
+        around it called it the Village in the Mist. The Fire Born who lived on it either died or
+        departed. The flame remained. Whether any Fire Born know what the Village actually is
+        remains unknown.
+
+goals:
+  primary: Free the imprisoned god by locating and destroying his chains
+  secondary:
+    - Maintain sacred flames as navigation markers on their pilgrimage routes
+    - Seek ancient sites and knowledge related to the imprisonment
+    - Keep to themselves — millennia of mortal indifference bred something past mistrust
+  long_term: |
+    Return their god to full wakefulness. They do not think beyond this. The question of
+    what happens when a god of War and Expansion wakes is not one they have asked.
+
+territory:
+  type: Mobile
+  description: |
+    No fixed territory. Fire Born travel the Path on their carriers, temporarily claiming areas
+    by anchoring temple-constructs. Their routes follow suspected chain locations — places where
+    the imprisonment anchors to the mortal realm. Some carriers have been stationary so long
+    they have been mistaken for ruins or permanent structures.
+  locations:
+    - Active pilgrimage routes across the Path network
+    - Ancient ritual sites near suspected chain locations
+    - Abandoned carriers that became permanent sanctuaries (including the Village flame)
+
+mist_protection:
+  type: Intrinsic
+  description: |
+    Sacred flames provide complete immunity to mist within their aura. Fire Born cannot leave
+    their braziers without weakening — and cannot pursue enemies into deep mist without dying.
+    This makes them extraordinarily powerful at fixed points and tactically constrained everywhere
+    else. They project protective auras for anything near their flames, which is why their
+    carriers serve as mobile sanctuaries.
+
+subgroups:
+  - name: Bearers
+    role: Support and logistics
+    description: |
+      Maintain and transport the brazier carriers. Fuel tenders, engineers, navigators — they
+      keep the flames alive and the constructs moving. Without them, every Fire Born dies.
+  - name: Paladins
+    role: Advance scouts and chain hunters
+    description: |
+      Warriors who venture beyond the carrier on personal braziers, pushing into mist and ruin
+      to seek chain locations and ancient sites. The most dangerous role. Elite fighters with
+      flame weapons who accept the tactical vulnerability of small personal flames in hostile territory.
+  - name: Guardians
+    role: Defense
+    description: |
+      Stationary protectors of the massive temple-constructs. Train perimeter security, organize
+      defenses against Mist Born attacks. They hold the carrier while Paladins range.
+
+relationships:
+  - faction: mist-born
+    stance: hostile
+    description: |
+      Active combat on contact. Mutual hatred with an unwanted kinship underneath —
+      both are bound to their elements by the same transformation. Neither acknowledges this.
+  - faction: mist-clergy
+    stance: hostile
+    description: |
+      Ideological enemies, though Fire Born may not fully comprehend the Clergy's arguments.
+      Two ancient perspectives that cannot both be right about what the god's imprisonment means.
+  - faction: flame-seekers
+    stance: indifferent
+    description: |
+      Mortals benefit from Fire Born navigation flames incidentally. Fire Born do not protect
+      them and do not particularly care about their survival — they are just not enemies.
+  - faction: ember-traders
+    stance: transactional
+    description: |
+      Fire Born trade for fuel and supplies. Purely practical. No warmth.
+  - faction: rootbound
+    stance: wary
+    description: |
+      Ancient beings recognize each other across the ages. Seldom cooperate. Mutual respect for
+      age and power, mutual suspicion about intention.
+  - faction: brass-mechanicorum
+    stance: curious
+    description: |
+      Ancient mechanoids might remember the pre-imprisonment era. Potential sources of knowledge
+      about where the chains anchor. Fire Born approach cautiously when they approach at all.
+  - faction: factionless
+    stance: ignored
+    description: Unless they interfere with Fire Born routes or goals, beneath notice.
+  - faction: deep-dwellers
+    stance: indifferent
+    description: Underground retreat is irrelevant to the ancient mission.
+
+item_identity:
+  theme: |
+    Ancient flame-forged artifacts inscribed with symbols no mortal language can parse. Effects
+    tend toward Disruption and Protection — burning back threats or shielding the bearer from
+    corruption. Items feel archaic and alien: warm to the touch, faintly glowing, heavy with
+    age. They weaken or go inert far from Sacred Flame.
+  cost: |
+    Requires proximity to Sacred Flame or consumes Flame Essence. Some items generate Fear
+    when used — the mist reacts to flame being weaponized.
+
+rumors:
+  - >
+    "My grandfather claimed he saw one once, seventy years ago. A massive carrier moving through
+    the mist like a walking temple. Never saw it again."
+  - >
+    "The ancient flames that mark the Path? Some say those are Fire Born routes, not sanctuaries
+    for us. We're just incidental."
+  - >
+    "I heard a scholar tried to follow one of their carriers for weeks. When he returned, he
+    couldn't speak our language anymore — only strange words that made the air shimmer."
+  - >
+    "There's a flame sanctuary near the Highland Watch that's been burning for centuries. No one
+    tends it. Maybe they abandoned it. Or maybe they're watching from somewhere we can't see."
+
+plot_hooks:
+  - id: reignition-witness
+    name: Reignition Witness
+    description: |
+      A flame sanctuary's brazier is extinguished by the mist. Days later, a Fire Born Paladin
+      emerges from the mist itself to reignite it — the first Fire Born sighting in the region
+      in living memory.
+  - id: the-walking-city
+    name: The Walking City
+    description: |
+      Traveling the Path, players witness a colossal temple-construct emerge from the mist — a
+      city-sized carrier with towers and structures on its back, moving with impossible grace.
+      It passes silently and vanishes back into the fog.
+  - id: dying-flame
+    name: Dying Flame
+    description: |
+      Players discover a Fire Born Paladin desperately fighting Mist Born, badly wounded. Their
+      personal brazier carrier's flame is guttering, nearly extinguished. Do they help?
+      Can they even communicate?
+  - id: the-village-secret
+    name: The Village Secret
+    description: |
+      Research or exploration reveals the eternal flame at the heart of the Village in the Mist
+      isn't just a brazier — it's an ancient Fire Born temple-construct that was parked there
+      centuries ago and never moved again.
+
+storylines:
+  - id: the-dying-paladin
+    name: The Dying Paladin
+    summary: |
+      A Fire Born Paladin's carrier flame is nearly extinguished. They cannot retreat — cannot
+      reach their temple-construct in time. Players find them mid-combat, outmatched, and have
+      to decide whether to intervene in a conflict they don't fully understand, on behalf of a
+      being who cannot explain itself in any mortal tongue.
+    status: available
+    phases:
+      - id: discovery
+        type: entry
+        name: The Signal
+        description: |
+          Something burning in the mist. Wrong color — too bright, too steady, not a bonfire.
+          And sounds of combat. A Fire Born Paladin fights three Mist Born on a personal
+          brazier carrier. The flame is barely holding. The Paladin is losing.
+        triggers:
+          - Players encounter a dying Sacred Flame in the mist
+        branches:
+          - label: Intervene
+            next: intervention
+          - label: Watch from distance
+            next: aftermath
+
+      - id: intervention
+        type: active
+        name: Intervention
+        description: |
+          Combat alongside a being that communicates only through ancient gestures and the
+          behavior of its flame — brightening toward allies, dimming toward threat. The Paladin
+          fights without coordinating in any recognizable way. It does not ask for help.
+          It accepts it.
+        branches:
+          - label: Flame saved — Paladin survives
+            next: first-contact
+          - label: Flame extinguished — Paladin dies
+            next: aftermath
+
+      - id: aftermath
+        type: branch
+        name: Aftermath
+        description: |
+          The carrier is dark. The Paladin is gone — not a body, just absence. But whatever
+          they were carrying or searching for is still there. A clue about what the Paladin
+          was looking for when they died here.
+        branches: []
+
+      - id: first-contact
+        type: milestone
+        name: First Contact
+        description: |
+          The Paladin gestures thanks in ancient, alien ways. A brightening of the flame. A
+          particular positioning of the carrier. No words. Then it pauses — and gestures again,
+          pointing toward something specific on the Path network. Invitation? Warning? Direction?
+          The players must decide what it means.
+        branches:
+          - label: Follow where the Paladin points
+            next: chain-trail
+          - label: Part ways
+            next: null
+
+      - id: chain-trail
+        type: climax
+        name: The Chain Trail
+        description: |
+          The Paladin leads players toward something ancient buried in the Path — a site the
+          Fire Born have been circling for decades. Whether it's a chain location, an ancient
+          ruin, or something else is for the GM to determine. What the players do when they
+          find it begins another arc.
+        branches: []

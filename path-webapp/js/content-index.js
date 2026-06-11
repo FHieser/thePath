@@ -108,10 +108,31 @@ const CONTENT_INDEX = {
         "archon-of-mercy.yaml"
       ]
     },
+    "brass-mechanicorum": {
+      "details": "faction-details.yaml",
+      "npcs": [
+        "copass.yaml"
+      ]
+    },
     "copper-rust-clan": {
       "details": "faction-details.yaml",
       "npcs": [
         "hund.yaml"
+      ]
+    },
+    "fire-born": {
+      "details": "faction-details.yaml",
+      "npcs": []
+    },
+    "mist-born": {
+      "details": "faction-details.yaml",
+      "npcs": []
+    },
+    "rootbound": {
+      "details": "faction-details.yaml",
+      "npcs": [
+        "naki.yaml",
+        "the-watcher.yaml"
       ]
     },
     "spider-colony": {

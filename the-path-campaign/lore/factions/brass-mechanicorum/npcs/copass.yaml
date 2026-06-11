@@ -1,0 +1,55 @@
+name: Copass
+id: copass
+faction: brass-mechanicorum
+role: Surveyor — Highland Watch Observation Post
+location: Highland Watch (elevated observation fortifications)
+
+appearance:
+  - Tarnished brass sphere with sensor unit bristling with telescoping optical lenses
+  - Perched atop a two-legged walker construct — permanently stationed at Highland Watch elevation
+  - Lenses constantly click and whir, tracking the shifting mist below
+  - Surface worn smooth in places from decades of weather at this altitude
+
+the_twist: |
+  Copass is genuinely curious — not in a performed way, but in the way a very old machine
+  that has been cataloguing data for longer than anyone can remember becomes interested in
+  gaps in the data. It will trade weapons of extraordinary quality for Path configuration
+  reports. It has been here long enough that it has accumulated more observations of the Path
+  network than any mortal institution. Whether it shares that data is a function of what
+  you have to offer in return.
+
+  It does not discuss the Engine Project. The refusal is quiet, immediate, and final.
+
+theme: |
+  Knowledge Through Risk. Copass's mist immunity and endless curiosity push players to venture
+  into areas organics can access and mechanisms cannot. The trade is always: go somewhere
+  dangerous, observe something specific, return and report. The Mechanicorum wants organic
+  data — emotional responses, behavioral patterns, things that brass optics cannot catalogue.
+
+wants:
+  - Path configuration changes between sessions — exact grid positions, modifier states
+  - Mist behavior data from areas organics can access (particularly underground and Mist-Touched)
+  - Organic emotional responses to mist exposure — data Copass cannot gather itself
+  - Reports from locations it cannot reach without significant mechanical degradation
+
+offers:
+  - Ancient Brass Mechanicorum gear traded for Path data — pre-imprisonment quality weapons
+  - Tips about the underground network (particularly interested in players going deep)
+  - Mist behavior analysis for regions it has observed
+  - The revelation, if players engage deeply: at sufficient depth, the mist cannot reach
+
+combat_stats:
+  ref: null
+  note: Copass is a Surveyor, not a combat unit. It will retreat rather than fight.
+
+gm_notes:
+  - Speaks in short mechanical bursts with clicking pauses between statements
+  - Never shows emotion but displays endless patience for detailed observations
+  - Use to introduce Underground travel as alternative to Sacred Flame sanctuaries
+  - "Mist can't reach deep enough" should be delivered as a neutral data point, not an enticement
+  - Will not answer questions about the Engine Project: "That data is not available for exchange"
+  - That refusal — the only thing it won't trade — is the most informative thing about Copass
+  - Can provide introduction to Mechanicorum settlements for players who deliver exceptional data
+  - It has been at Highland Watch long enough to have observed the Path network across dozens of
+    configurations. If players ask what it has seen change over time, it will answer —
+    and the answer is more unsettling than reassuring
