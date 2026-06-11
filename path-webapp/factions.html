@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factions - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin: 1rem 0 1.5rem;
+        }
+
+        .align-filter {
+            padding: 0.3rem 0.8rem;
+            border-radius: 0.2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: 0.15rem solid transparent;
+            opacity: 0.5;
+            transition: all 0.15s;
+            user-select: none;
+        }
+        .align-filter:hover { opacity: 0.8; }
+        .align-filter.active { opacity: 1; border-color: currentColor; }
+
+        .align-filter.flame  { background: rgba(200, 121, 65, 0.25); color: #c87941; }
+        .align-filter.mist   { background: rgba(74, 123, 157, 0.25); color: #6ea8c8; }
+        .align-filter.neutral{ background: rgba(107, 123, 92, 0.25); color: #9ab08a; }
+        .align-filter.underground { background: rgba(122, 92, 63, 0.25); color: #b8977a; }
+
+        .factions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+        }
+
+        .faction-card {
+            background: rgba(0,0,0,0.2);
+            border: 0.15rem solid var(--border-color);
+            border-radius: 0.2rem;
+            padding: 1rem;
+            text-decoration: none;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.2s;
+        }
+        .faction-card:hover {
+            background: rgba(0,0,0,0.35);
+            transform: translateY(-2px);
+        }
+        .faction-card.flame      { border-left: 0.3rem solid #c87941; }
+        .faction-card.flame:hover{ border-color: #c87941; }
+        .faction-card.mist       { border-left: 0.3rem solid #4a7b9d; }
+        .faction-card.mist:hover { border-color: #4a7b9d; }
+        .faction-card.neutral    { border-left: 0.3rem solid #6b7b5c; }
+        .faction-card.neutral:hover { border-color: #6b7b5c; }
+        .faction-card.underground { border-left: 0.3rem solid #7a5c3f; }
+        .faction-card.underground:hover { border-color: #7a5c3f; }
+
+        .faction-card h3 {
+            color: var(--accent-amber);
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .faction-meta {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.15rem 0.5rem;
+            border-radius: 0.15rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .badge.flame       { background: rgba(200, 121, 65, 0.3); color: #c87941; }
+        .badge.mist        { background: rgba(74, 123, 157, 0.3); color: #6ea8c8; }
+        .badge.neutral     { background: rgba(107, 123, 92, 0.3); color: #9ab08a; }
+        .badge.underground { background: rgba(122, 92, 63, 0.3); color: #b8977a; }
+        .badge.tier        { background: rgba(255,255,255,0.08); color: var(--text-light); }
+
+        .faction-desc {
+            font-size: 0.88rem;
+            font-style: italic;
+            opacity: 0.85;
+            margin-bottom: 0.75rem;
+            flex-grow: 1;
+            line-height: 1.5;
+        }
+
+        .faction-themes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            margin-bottom: 0.6rem;
+        }
+        .theme-tag {
+            background: rgba(255,255,255,0.06);
+            padding: 0.1rem 0.4rem;
+            border-radius: 0.15rem;
+            font-size: 0.7rem;
+            opacity: 0.8;
+        }
+
+        .faction-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.78rem;
+            opacity: 0.7;
+            padding-top: 0.5rem;
+            border-top: 0.1rem solid rgba(17,68,102,0.3);
+            margin-top: auto;
+        }
+        .faction-footer span { color: var(--accent-amber); font-weight: 600; }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            opacity: 0.6;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb"><a href="index.html">← Back to Path</a></nav>
+            <h1>Factions</h1>
+            <p class="subtitle">The powers that shape The Path</p>
+        </header>
+
+        <main>
+            <div class="filter-bar" id="filter-bar">
+                <span class="align-filter flame active"   data-align="Flame">🔥 Flame</span>
+                <span class="align-filter mist active"    data-align="Mist">🌫️ Mist</span>
+                <span class="align-filter neutral active" data-align="Neutral">⚖️ Neutral</span>
+                <span class="align-filter underground active" data-align="Underground">⛏️ Underground</span>
+            </div>
+
+            <div class="factions-grid" id="factions-grid">
+                <div class="empty-state">Loading factions...</div>
+            </div>
+        </main>
+
+        <footer><p>The Path - Daggerheart Campaign Frame</p></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/factions.js"></script>
+</body>
+</html>

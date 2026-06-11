@@ -1,4 +1,5 @@
 Read through the following information pieces:
+- CLAUDE.md
 - the-path-campaign/locations/path-locations/path-mechanics.yaml
 - the-path-campaign/locations/path-locations/Glossary.md
 

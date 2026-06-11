@@ -253,6 +253,10 @@ Each thread is a chain of chimes (and in some cases physical evidence) that ends
 *Threads: Merchant (distribution layer)*
 > Chimes to be written
 
+**Location notes:**
+- Likely the original outbreak point — craftsmen handled meteorite crystal fragments first, working them into goods before anyone understood what they were
+- The plague spread outward from here into the rest of the city
+
 ### 2,2 — Riot Market
 *Threads: Security Chief + Love Story (intersection — the orders), Merchant (official front)*
 
@@ -288,6 +292,11 @@ Each thread is a chain of chimes (and in some cases physical evidence) that ends
 ### 3,1 — Mechanic's Workshop
 *Threads: Mechanic (end point)*
 > Chimes to be written
+
+**Location notes:**
+- District contains three separate locations: Lumber Yard, Charcoal Quarter, Watermill & Workshop
+- Charcoal Quarter has a mushroom circle hidden inside one of the old kilns — accessed by following Ember Beetles to a crack in a chimney
+- @todo Lumber Yard: hidden flooded basin visible from surface — players clear a log jam to drain it and retrieve a weapon at the bottom (the Last Axe or similar). Clearing the jam adds to Awakening Counter.
 
 ### 3,2 — Old Gate
 *Threads: Love Story (the soldier leaving), Security Chief (border control)*

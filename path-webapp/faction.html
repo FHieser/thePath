@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faction - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* ── Alignment colour tokens ── */
+        :root {
+            --align-flame:       #c87941;
+            --align-mist:        #4a7b9d;
+            --align-neutral:     #6b7b5c;
+            --align-underground: #7a5c3f;
+        }
+
+        /* ── Header badge ── */
+        .faction-header-meta { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.4rem; }
+        .align-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.2rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .align-badge.flame       { background: rgba(200,121,65,0.25); color: var(--align-flame); }
+        .align-badge.mist        { background: rgba(74,123,157,0.25); color: var(--align-mist); }
+        .align-badge.neutral     { background: rgba(107,123,92,0.25); color: #9ab08a; }
+        .align-badge.underground { background: rgba(122,92,63,0.25);  color: #b8977a; }
+        .tier-badge { background: rgba(255,255,255,0.08); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 0.2rem; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; }
+
+        /* ── Tab nav ── */
+        .tab-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            border-bottom: 0.15rem solid var(--border-color);
+            margin-bottom: 1.5rem;
+        }
+        .tab-btn {
+            padding: 0.5rem 1rem;
+            background: none;
+            border: none;
+            border-bottom: 0.2rem solid transparent;
+            color: var(--text-light);
+            opacity: 0.5;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.15s;
+            margin-bottom: -0.15rem;
+        }
+        .tab-btn:hover { opacity: 0.8; }
+        .tab-btn.active { opacity: 1; border-bottom-color: var(--accent-amber); color: var(--accent-amber); }
+
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+
+        /* ── Two-column layout ── */
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+        @media (max-width: 680px) { .two-col { grid-template-columns: 1fr; } }
+
+        /* ── Section blocks ── */
+        .section-block {
+            background: rgba(0,0,0,0.15);
+            border: 0.1rem solid rgba(17,68,102,0.4);
+            border-radius: 0.2rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .section-block h3 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--accent-amber);
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.05em;
+        }
+        .section-block p, .section-block li { font-size: 0.9rem; line-height: 1.6; opacity: 0.9; }
+        .section-block ul { padding-left: 1.2rem; }
+        .section-block ul li { margin-bottom: 0.2rem; }
+
+        /* ── Themes ── */
+        .themes-list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        .theme-tag { background: rgba(255,255,255,0.06); padding: 0.2rem 0.5rem; border-radius: 0.15rem; font-size: 0.8rem; }
+
+        /* ── Relationships grid ── */
+        .rel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.5rem; }
+        .rel-card {
+            background: rgba(0,0,0,0.2);
+            border-radius: 0.2rem;
+            padding: 0.6rem;
+            border-left: 0.2rem solid transparent;
+        }
+        .rel-card.allied     { border-color: var(--success-green); }
+        .rel-card.friendly   { border-color: #7ab87a; }
+        .rel-card.indifferent{ border-color: rgba(255,255,255,0.2); }
+        .rel-card.wary       { border-color: #c8a041; }
+        .rel-card.hostile    { border-color: var(--danger-red); }
+        .rel-card.complex    { border-color: #7a4b9d; }
+        .rel-card.unknown    { border-color: rgba(255,255,255,0.15); }
+        .rel-card.competitive{ border-color: #9d7a4b; }
+        .rel-card.predatory  { border-color: var(--danger-red); }
+        .rel-card.transactional { border-color: #7ab8b8; }
+        .rel-name  { font-size: 0.8rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.15rem; }
+        .rel-stance { font-size: 0.7rem; text-transform: uppercase; opacity: 0.6; margin-bottom: 0.3rem; }
+        .rel-desc  { font-size: 0.8rem; opacity: 0.85; line-height: 1.4; }
+
+        /* ── Rumors ── */
+        .rumor-list { list-style: none; padding: 0; }
+        .rumor-list li {
+            padding: 0.5rem 0.75rem;
+            margin-bottom: 0.4rem;
+            background: rgba(0,0,0,0.15);
+            border-left: 0.2rem solid rgba(212,165,116,0.3);
+            font-style: italic;
+            font-size: 0.88rem;
+            opacity: 0.9;
+            border-radius: 0 0.15rem 0.15rem 0;
+        }
+
+        /* ── Plot hooks ── */
+        .hook-card {
+            background: rgba(0,0,0,0.15);
+            border: 0.1rem solid rgba(17,68,102,0.4);
+            border-radius: 0.2rem;
+            padding: 0.75rem;
+            margin-bottom: 0.6rem;
+        }
+        .hook-name { font-size: 0.9rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.3rem; }
+        .hook-desc { font-size: 0.88rem; line-height: 1.5; opacity: 0.9; }
+
+        /* ── Subgroups ── */
+        .subgroup-card {
+            background: rgba(0,0,0,0.15);
+            border: 0.1rem solid rgba(17,68,102,0.35);
+            border-radius: 0.2rem;
+            padding: 0.75rem;
+            margin-bottom: 0.6rem;
+        }
+        .subgroup-name { font-size: 0.9rem; font-weight: 700; color: var(--accent-amber); }
+        .subgroup-role { font-size: 0.75rem; text-transform: uppercase; opacity: 0.6; margin: 0.1rem 0 0.4rem; }
+
+        /* ── Storyline flowchart ── */
+        .storyline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .storyline-header h3 { font-size: 1rem; color: var(--accent-amber); margin: 0; }
+        .status-badge {
+            padding: 0.15rem 0.5rem;
+            border-radius: 0.15rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .status-badge.active   { background: rgba(74,107,82,0.5); color: #7ab87a; }
+        .status-badge.dormant  { background: rgba(255,255,255,0.08); }
+        .status-badge.resolved { background: rgba(17,68,102,0.4); color: #6ea8c8; }
+
+        .phase-flow { position: relative; }
+
+        .phase-node {
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .phase-node::before {
+            content: '';
+            position: absolute;
+            left: 1.15rem;
+            top: -0.5rem;
+            width: 0.1rem;
+            height: 0.5rem;
+            background: rgba(255,255,255,0.15);
+        }
+        .phase-node:first-child::before { display: none; }
+
+        .phase-card {
+            border-radius: 0.2rem;
+            padding: 0.75rem 1rem;
+            border-left: 0.3rem solid transparent;
+        }
+        .phase-card.entry        { background: rgba(17,68,102,0.45); border-color: #2a7ab8; }
+        .phase-card.milestone    { background: rgba(122,107,63,0.35); border-color: #c8a041; }
+        .phase-card.active       { background: rgba(63,107,92,0.35); border-color: #5ab890; }
+        .phase-card.branch       { background: rgba(80,80,80,0.3); border-color: #888; }
+        .phase-card.climax       { background: rgba(139,59,42,0.45); border-color: var(--danger-red); }
+        .phase-card.resolution   { background: rgba(74,107,82,0.4); border-color: var(--success-green); }
+        .phase-card.dead-end     { background: rgba(40,40,40,0.5); border-color: #555; }
+        .phase-card.setback      { background: rgba(122,92,42,0.35); border-color: #b87a2a; }
+
+        .phase-top { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem; }
+        .phase-type-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            opacity: 0.6;
+            white-space: nowrap;
+        }
+        .phase-name { font-size: 0.9rem; font-weight: 700; color: var(--text-light); }
+        .phase-desc { font-size: 0.85rem; opacity: 0.85; line-height: 1.5; margin-bottom: 0.5rem; }
+
+        .phase-progress {
+            font-size: 0.8rem;
+            opacity: 0.75;
+            margin-bottom: 0.4rem;
+            font-style: italic;
+        }
+        .progress-locations { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; }
+        .progress-loc {
+            font-size: 0.72rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 0.15rem;
+            background: rgba(255,255,255,0.07);
+        }
+        .progress-loc.pending { opacity: 0.45; }
+
+        .phase-branches { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+        .branch-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.15rem;
+            font-size: 0.78rem;
+            background: rgba(255,255,255,0.07);
+            color: var(--text-light);
+            text-decoration: none;
+            border: 0.1rem solid rgba(255,255,255,0.12);
+            transition: all 0.15s;
+        }
+        .branch-link:hover { background: rgba(255,255,255,0.13); border-color: var(--accent-amber); color: var(--accent-amber); }
+        .branch-link.dead-end { opacity: 0.4; cursor: default; }
+        .branch-arrow { opacity: 0.5; }
+
+        /* ── NPC cards ── */
+        .npc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem; }
+        .npc-card {
+            background: rgba(0,0,0,0.2);
+            border: 0.1rem solid rgba(17,68,102,0.4);
+            border-radius: 0.2rem;
+            padding: 0.85rem;
+        }
+        .npc-name { font-size: 0.95rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.15rem; }
+        .npc-role { font-size: 0.75rem; text-transform: uppercase; opacity: 0.55; margin-bottom: 0.5rem; }
+        .npc-location { font-size: 0.8rem; opacity: 0.7; margin-bottom: 0.5rem; }
+        .npc-section-label { font-size: 0.72rem; text-transform: uppercase; color: var(--accent-amber); opacity: 0.7; margin: 0.5rem 0 0.2rem; }
+        .npc-appearance li { font-size: 0.83rem; opacity: 0.85; margin-bottom: 0.15rem; }
+        .npc-twist { font-size: 0.83rem; font-style: italic; opacity: 0.85; line-height: 1.5; margin-bottom: 0.4rem; }
+        .npc-gm { font-size: 0.8rem; opacity: 0.75; line-height: 1.5; }
+        .npc-gm li { margin-bottom: 0.2rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb"><a href="factions.html">← All Factions</a></nav>
+            <h1 id="faction-name">Loading…</h1>
+            <div class="faction-header-meta" id="faction-header-meta"></div>
+        </header>
+
+        <main>
+            <nav class="tab-nav" id="tab-nav">
+                <button class="tab-btn active" data-tab="overview">Overview</button>
+                <button class="tab-btn" data-tab="world">World</button>
+                <button class="tab-btn" data-tab="storylines">Storylines</button>
+                <button class="tab-btn" data-tab="npcs">NPCs</button>
+            </nav>
+
+            <div id="tab-overview" class="tab-panel active">
+                <div id="overview-content"><p class="loading">Loading…</p></div>
+            </div>
+            <div id="tab-world" class="tab-panel">
+                <div id="world-content"></div>
+            </div>
+            <div id="tab-storylines" class="tab-panel">
+                <div id="storylines-content"></div>
+            </div>
+            <div id="tab-npcs" class="tab-panel">
+                <div id="npcs-content"></div>
+            </div>
+        </main>
+
+        <footer><p>The Path - Daggerheart Campaign Frame</p></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/faction.js"></script>
+</body>
+</html>

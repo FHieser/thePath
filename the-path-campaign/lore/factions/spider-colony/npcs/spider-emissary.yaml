@@ -1,0 +1,47 @@
+name: The Spider Emissary
+id: spider-emissary
+faction: spider-colony
+role: Diplomatic Representative
+location: Silken Spire (entrance), Brood Throne (escort)
+
+appearance:
+  - Smaller than the Queen but still imposing — abdomen marked with intricate silver patterns that mirror the Queen's own
+  - Mandibles vibrate constantly, even in silence, as if parsing language it hasn't spoken yet
+  - Moves with deliberate slowness in diplomatic contexts — an affectation of patience learned from watching mortals
+  - Always positions itself slightly lower than the party's eyeline when negotiating
+
+the_twist: |
+  The Emissary is not an independent mind — it is an extension of the Queen's will, capable of
+  improvisation within defined parameters but incapable of true deviation. When it speaks, it is not
+  translating the Queen. It is the Queen, operating at a distance.
+
+  This creates an unsettling dynamic: the Emissary can be killed without ending negotiations (the
+  Queen creates a new one within days), but attacking it is still an act of war — she was watching
+  through every strand of silk in the room.
+
+theme: |
+  Proxy and Presence. The Emissary forces players to confront what it means to negotiate with
+  something that has no agenda of its own. It will never lie because it has no reason to. It will
+  never promise what the Queen won't deliver. It is, in a strange way, the most honest NPC on the
+  Path — and that honesty makes it more unsettling, not less.
+
+wants:
+  - To accurately convey the Queen's will and assess the party's nature
+  - To determine whether the party represents an opportunity, a threat, or food
+
+offers:
+  - An audience with the Spider Queen (the real negotiation)
+  - Preliminary information about the Queen's terms and the engine repair quest
+  - A warning if the party has already made enemies of the colony
+
+combat_stats:
+  ref: adversaries/spider-queen/spider-emissary.yaml
+  tier: 2
+  type: Standard
+  difficulty: 14
+
+gm_notes:
+  - The Emissary opens with the Queen's words verbatim — it does not improvise the first statement.
+  - Use it to deliver exposition about the colony without making the Queen seem eager. The Queen does not come to the players. She sends.
+  - If players ask the Emissary a question it can't answer, it pauses, then says "I will ask." It genuinely retrieves the answer — there is a brief wait before it speaks again.
+  - The Emissary does not defend itself unless attacked. It will state plainly "Harming me will not change the Queen's terms." If killed, it simply stops mid-sentence.

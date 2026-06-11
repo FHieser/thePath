@@ -86,8 +86,9 @@ Locations are organized in `the-path-campaign/locations/` with detailed descript
 - **Underground locations**: Place in `the-path-campaign/locations/path-locations/underground-locations/`
 - **Village locations**: Place location cards in `the-path-campaign/locations/village-in-the-mist/`
 - **Adversaries**: Organize by type in `the-path-campaign/adversaries/[type]/` (e.g., mist/, flame/, etc.)
-- **Factions**: Place in `the-path-campaign/lore/factions/` using ExampleFaction.md template
-- **NPCs**: Organize by affiliation in `the-path-campaign/npcs/[faction]/`
+- **Factions**: Each faction lives in `the-path-campaign/lore/factions/[faction-id]/faction-details.yaml` — auto-discovered by `generate-index.js`
+- **Faction NPCs**: Place in `the-path-campaign/lore/factions/[faction-id]/npcs/[npc-id].yaml`
+- **Legacy NPCs**: `the-path-campaign/npcs/` (being migrated into faction folders)
 - **Campaign sessions**: Track in `the-path-campaign/campaign/[campaign-name]/`
 
 ### File Organization
@@ -97,8 +98,8 @@ Locations are organized in `the-path-campaign/locations/` with detailed descript
 - **Underground locations**: Use single-file format in `underground-locations/[location-name].md`
 - **Village locations**: Use `[feature]-card.md` format (e.g., `forge-card.md`, `community-hearth-card.md`)
 - **Adversaries**: Use `[adversary-name].md` format
-- **Factions**: Use capitalized names (e.g., `FireBorn.md`, `Rootbound.md`)
-- **NPCs**: Use lowercase-with-dashes (e.g., `the-watcher.md`)
+- **Factions**: Use kebab-case folder names (e.g., `fire-born/`, `brass-mechanicorum/`) with `faction-details.yaml` inside
+- **Faction NPCs**: Use lowercase-with-dashes (e.g., `spider-queen.yaml`) inside the faction's `npcs/` subfolder
 - Use descriptive filenames that match the content purpose
 - **Style Guide**: Follow `STYLE-GUIDE.md` for consistent modifier terminology and formatting
 

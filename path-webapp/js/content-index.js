@@ -100,5 +100,14 @@ const CONTENT_INDEX = {
     "monastery-march.yaml",
     "needle-descent.yaml",
     "plague-march.yaml"
-  ]
+  ],
+  "__factions__": {
+    "spider-colony": {
+      "details": "faction-details.yaml",
+      "npcs": [
+        "spider-emissary.yaml",
+        "spider-queen.yaml"
+      ]
+    }
+  }
 };
