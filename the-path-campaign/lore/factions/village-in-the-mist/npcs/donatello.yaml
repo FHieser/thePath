@@ -1,0 +1,51 @@
+name: Donatello
+id: donatello
+faction: village-in-the-mist
+role: Senior Flame Gatherer
+location: Flame Gatherer's Lodge
+ancestry: Galapa
+
+appearance:
+  - Galapa with weathered, scarred shell
+  - Shell carved with tallies — one for every gatherer lost; the marks cover most of the upper shell
+  - Covered in talismans and charms collected from the Path, layered over years of expeditions
+  - Carries expedition gear at all times, even in the village
+  - Moves surprisingly fast despite appearances
+
+the_twist: |
+  One of his talismans grants mist immunity. He has been lost in the mist multiple times and
+  walked back out unharmed with no memory of how. He attributes it to luck and proper rituals.
+  He does not know which talisman it is. He does not know it exists as a distinct object with
+  a specific function. He has never been in a situation where it didn't work.
+
+  If the talisman is lost or stolen, the next time he enters deep mist, he does not come back.
+  Or he does — changed.
+
+theme: |
+  Preparation vs. Recklessness. Donatello's rituals look like superstition and function like
+  survival. The mud blessing he insists on, the croaking ceremony, the cairn-building — all
+  of these have practical layers under the ritual form. He forces players to respect preparation
+  before they discover that one piece of his preparation works for reasons he doesn't understand.
+
+wants:
+  - New talismans from the Path — always looking, always evaluating
+  - Players to follow the rituals before expeditions (genuinely upset if they refuse the mud blessing)
+  - Information about Path dangers brought back by anyone who survives one
+  - Help building cairns at new locations — navigation and memory combined
+
+offers:
+  - Path condition reports and expedition planning
+  - The ritual: croaking ceremony and mud blessing before expeditions
+  - Navigation via cairn network (knows which locations have been visited)
+  - Veteran survival advice, specific and useful
+  - Will lead dangerous expeditions personally if needed
+
+gm_notes:
+  - Rituals before everything — no exception. "You think you're ready? Fine. But you're getting the mud."
+  - Gruff but caring; tells stories of lost gatherers while carving new tallies, matter-of-factly
+  - Can divine the current Path configuration through ritual (croaking and talisman reading) —
+    use to give players Path information without a map
+  - Mock-fights players to test readiness — combat tutorial disguised as character moment
+  - The talisman mystery is the major long-term hook: theft, loss, or discovery of which one it is
+  - If players study his talisman collection carefully (and he trusts them enough to let them),
+    they might be able to identify which one radiates something different

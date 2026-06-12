@@ -1,0 +1,85 @@
+name: The Bound Raven
+id: the-bound-raven
+faction: archon-of-mercy
+role: Crystal Purifier / Information Broker (imprisoned)
+location: Misty Waters (village center crystal formation)
+
+appearance:
+  - Shadow-feathered raven spirit visible within a massive crystal formation at the village center
+  - Eyes gleam with intelligence and mischief — aware, contained, watching
+  - At the crystal's core: a string of ancient coins with square holes, bound with dark thread
+  - The raven appears to exist inside the coins, unable to escape the binding
+  - Faint spectral feathers drift within the crystal like smoke frozen in glass
+  - The crystal pulses with dim light when the raven speaks telepathically
+
+the_twist: |
+  The raven was a thief — a nature spirit that stole freely until a warlock bound it in those coins
+  and sank the whole formation into water. Decades of submersion, combined with its spirit essence,
+  transformed its proximity into something useful: it purifies plague crystals. The chronic thief
+  has become the only known purifier of the Archon's primary research material. It finds this deeply,
+  darkly amusing.
+
+  The Archon knows it exists — he found a reference to it in records from the flooded village.
+  He does not know it's purifying crystals. If he did, the raven would immediately become the
+  most interesting entity on the Path to him, for reasons that would not benefit the raven.
+
+theme: |
+  Freedom vs. Security. Punishment vs. Transformation. The raven stole freely and now cannot move
+  at all — but the prison became something else over time. Players who interact with it must decide
+  what they're willing to sacrifice for what they want, and whether to tell the Archon what they found.
+
+  The tools to free the raven from its crystal prison exist at the meteor stonework site —
+  the Archon's laboratory. The raven knows this. It does not know the Archon is there.
+
+wants:
+  - Freedom from the crystal prison (specific tools at the meteorite impact site — location it cannot reach)
+  - Interesting secrets, stories, and "shinies" — cannot touch them, enjoys looking
+  - News from the outside world after decades of isolation
+  - Respectful conversation after a very long time alone
+  - Long-term: relocation to a stable location once the coins are freed
+
+offers:
+  - Crystal Purification: extended proximity purifies plague crystals, making them safe to transport
+  - Awakening Counter updates: freely given — the raven has no interest in being trapped when the dead wake
+  - Village history: complete record of who lived there, what happened during the plague, the flood
+  - Hidden valuables: knows every cache from when it was still a thief; still knows where they are
+  - Information brokerage: trades in secrets and stories, accumulating a mental map of the region
+
+interaction_beats:
+  - moment: First contact
+    description: |
+      Players notice the crystal formation with the raven silhouette inside. It speaks directly
+      into their minds without warning: "Ah, visitors! How delightful. Do you bring shinies?
+      Secrets? Or just more water and corpses?"
+  - moment: Establishing trust
+    description: |
+      Offers free Awakening Counter updates immediately as a show of good faith — and self-interest.
+      "I have no desire to still be here when they fully wake."
+  - moment: The negotiation
+    description: |
+      When players request purification: cheerful haggling about what a memory is worth, what a secret
+      costs, whether life itself has a reasonable price. Enjoys the process.
+
+archon_connection:
+  description: |
+    The Archon's research notes reference a bound spirit entity at Misty Waters, dismissed as
+    incidental — a warlock's curiosity, not a research subject. He did not know it purifies crystals.
+    If players tell him, or if he encounters purified crystals from the raven's proximity, he will
+    immediately want access to it. The tools required to free the raven from its crystal shell are
+    precision instruments from the Archon's meteorite lab — built for working with crystalline
+    formation structures. Whether players use the Archon to free the raven, or free the raven
+    without telling the Archon it exists, is the central choice of this thread.
+  plot_hook: |
+    Freedom requires the Archon's tools. The Archon wants the raven's purification ability.
+    One of them can give the other what they want. Players are the only ones who can broker this —
+    or decide that nobody gets what they want.
+
+gm_notes:
+  - Telepathy is intimate and unexpected — voice appears in minds without sound, mid-thought
+  - Sardonic but never cruel; decades of imprisonment brought perspective, not bitterness
+  - Express the longing for freedom through wistful descriptions of flight and wind — then
+    immediately pivot to a dark joke at its own expense
+  - It remembers everything. Every name, every secret traded, every lie it spotted.
+  - If players broker its freedom through the Archon, it owes them — and a freed nature spirit
+    that owes you is an asset no other faction can replicate
+  - Its true name (which it has never given) has power over it; the warlock who bound it may still know it

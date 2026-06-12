@@ -274,6 +274,9 @@ npcs:
   - id: archon-of-mercy
     file: npcs/archon-of-mercy.yaml
     role: Researcher / Antagonist
+  - id: the-bound-raven
+    file: npcs/the-bound-raven.yaml
+    role: Crystal Purifier (imprisoned, Misty Waters)
 
 adversaries:
   - id: archon-of-mercy

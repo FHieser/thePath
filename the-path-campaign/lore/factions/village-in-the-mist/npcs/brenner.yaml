@@ -1,0 +1,67 @@
+name: Brenner
+id: brenner
+faction: village-in-the-mist
+role: Flame Keeper / Master Smith
+location: Sacred Flame Sanctuary / The Forge
+ancestry: Giant
+
+appearance:
+  - Massive Giant — has to duck through most village doorways
+  - Faintly glowing flame-like lines reaching from hands to elbows, both arms
+  - Heavy leather work clothes and apron, well-worn from decades of use
+  - Calloused, scarred hands; tools always on the belt
+  - Dismissive when asked about the lines: "Just forge burn scars that caught the light"
+
+the_twist: |
+  The flame lines are not burn scars. They are the first stage of Fire Born bonding —
+  a transformation that happens once every few centuries, when a mortal spends enough
+  time in proximity to a dormant carrier that they begin to merge with it.
+
+  Beneath the Sacred Flame Sanctuary, a Fire Born temple-construct has been parked and
+  dormant since before anyone alive was born. Brenner has been bonding with it for years
+  without knowing it exists. When the transformation completes, he will wake the carrier
+  and become its Keeper. He dismisses every sign of this as occupational hazard.
+
+theme: |
+  Duty vs. Destiny. Brenner chose to serve the community that accepted him.
+  He will be called to something older and larger than that choice, and he will have to
+  decide whether to follow the call or fight it. His transformation mirrors the village's
+  own: something vast is waking beneath what they thought was theirs.
+
+wants:
+  - The village to survive and be safe — his primary concern, always
+  - Flame Essence (means, not end — the flame exists for the people, not the other way around)
+  - Players to contribute to the village, not just extract from it
+
+offers:
+  - Sacred Rest (clear Mist Marks)
+  - Equipment repair and crafting
+  - Flame Canister production
+  - Custom weapons and armor using Sacred Flame heat
+  - Flame Essence reserve status reports (never exact numbers, always "we're fine" until they aren't)
+
+transformation_counter:
+  note: Increment by 1 each time players return from an expedition
+  stages:
+    - range: 1-7
+      description: Lines spread; faint glow near the flame. Dismisses questions.
+    - range: 8-14
+      description: Pulled toward the Sanctuary; harder to leave the forge/sanctuary complex. Still functional.
+    - range: 15-19
+      description: Clearly transforming. Bound to the brazier. Glowing openly. Village notices.
+    - range: 20
+      description: Transformation completes. Carrier wakes.
+  mist_born_response:
+    10: Scouts at perimeter — distant, watching
+    15: Organized patrols circle the village openly
+    18: Mist thickens; creatures mass
+    20: Multi-wave assault as the carrier begins to wake
+
+gm_notes:
+  - Works while talking — never stops moving, always multitasking, always checking on equipment
+  - Gentle and soft-spoken despite massive size; practical and direct
+  - Tracks Flame Essence reserves obsessively; Donatello and Nix know he knows, but not the numbers
+  - He does not ask for help for himself. If a player offers help with the marks, he deflects.
+    He will accept help for the village without hesitation.
+  - When the transformation is far enough along that denial becomes impossible: he asks the
+    players what they know. He already suspects. He just needed someone else to say it first.

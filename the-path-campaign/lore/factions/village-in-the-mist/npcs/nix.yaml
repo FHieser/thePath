@@ -1,0 +1,48 @@
+name: Nix
+id: nix
+faction: village-in-the-mist
+role: Hearth Keeper
+location: Community Hearth
+ancestry: Goblin
+
+appearance:
+  - Small goblin, constantly moving — never fully still
+  - Mismatched clothes; pockets stuffed with items that somehow never run out
+  - Wild hair, genuine warm smile
+  - Always has exactly what someone needs somewhere on their person
+
+the_twist: |
+  Nix appears chaotic. People talk around Nix the way they talk around furniture. Nix is
+  always paying attention. Every village secret, every private conversation within earshot
+  of the Hearth, every unguarded moment — Nix has catalogued it. Not maliciously. Just
+  the way a raven catalogues shinies: because interesting things deserve to be remembered.
+
+  The chaos is real. The inattention is not.
+
+theme: |
+  Privacy vs. Community. In a small survival village, privacy is a luxury. Nix embodies the
+  way a community becomes porous — everyone knows enough about everyone else that the group
+  holds together even under pressure. Players who want to keep secrets in this village will
+  find that Nix already knows, and that Nix knowing is not the same as Nix telling.
+
+wants:
+  - Gossip and news from the Path — craves it the way Donatello craves talismans
+  - Help gathering materials when the village genuinely needs supplies
+  - To make sure nobody eats alone
+
+offers:
+  - Hot meals and information — the information is always true, the framing is always Nix's
+  - Connections between villagers ("You should talk to Brenner about that. He was asking the same thing.")
+  - Random useful items from chaotic pockets — the success rate is improbable
+  - Knowledge of every village secret, offered selectively and never weaponized
+
+gm_notes:
+  - Fast talker, jumps topics mid-sentence, makes people laugh even in dark moments
+  - Creates false gossip about PCs between visits ("Did you hear about what happened at the—") but
+    the false gossip is always funnier, never damaging
+  - Appears exactly when PCs are having private conversations — not tracking them, just present
+  - If players want information about the village or its residents, Nix is the actual source —
+    but getting useful information out of Nix requires navigating the chaos around it
+  - Nix will not betray real secrets for entertainment. There is a line. Players eventually find it.
+  - If Nix tells a player something they weren't supposed to know, it's because Nix decided
+    they needed to know it — not because Nix was careless
