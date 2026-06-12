@@ -19,7 +19,9 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
     - `mist/` - Mist creatures (Walkers, Stalkers, Wraith Leaders)
   - `lore/` - Campaign lore and worldbuilding
     - `factions/` - Faction documentation and templates
-  - `npcs/` - Non-player characters organized by affiliation
+  - `mechanics/` - Core mechanics files
+    - `path-mechanics.yaml` - Path network mechanics reference
+    - `village-siege/` - Village siege encounter framework
   - `campaign/` - Active campaign tracking (e.g., Moonfield campaign)
   - `example-path/` - Example Path configurations
 - `lib/daggerheart-srd/` - Git submodule containing official Daggerheart SRD with complete rules and content
@@ -88,12 +90,14 @@ Locations are organized in `the-path-campaign/locations/` with detailed descript
 - **Adversaries**: Organize by type in `the-path-campaign/adversaries/[type]/` (e.g., mist/, flame/, etc.)
 - **Factions**: Each faction lives in `the-path-campaign/lore/factions/[faction-id]/faction-details.yaml` — auto-discovered by `generate-index.js`
 - **Faction NPCs**: Place in `the-path-campaign/lore/factions/[faction-id]/npcs/[npc-id].yaml`
-- **Legacy NPCs**: `the-path-campaign/npcs/` (being migrated into faction folders)
+- **Path mechanics**: `the-path-campaign/mechanics/path-mechanics.yaml`
+- **Village siege**: `the-path-campaign/mechanics/village-siege/`
 - **Campaign sessions**: Track in `the-path-campaign/campaign/[campaign-name]/`
 
 ### File Organization
 - **Framework files**: Place in `the-path-campaign/framework/` (campaign-overview.md, etc.)
-- **Path mechanics**: Document in `the-path-campaign/locations/path-locations/path-mechanics.md`
+- **Path mechanics**: Document in `the-path-campaign/mechanics/path-mechanics.yaml`
+- **Village siege**: Files in `the-path-campaign/mechanics/village-siege/`
 - **Surface locations**: Use single-file format in `surface-locations/[location-name].md`
 - **Underground locations**: Use single-file format in `underground-locations/[location-name].md`
 - **Village locations**: Use `[feature]-card.md` format (e.g., `forge-card.md`, `community-hearth-card.md`)

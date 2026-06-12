@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Fetch the YAML file
         // Use absolute path from server root (starting with /)
-        const response = await fetch('../the-path-campaign/locations/path-locations/path-mechanics.yaml');
+        const response = await fetch('../the-path-campaign/mechanics/path-mechanics.yaml');
         const yamlText = await response.text();
 
         // Parse YAML

@@ -39,7 +39,7 @@ const CONTENT_INDEX = {
     "mist-anchor.yaml",
     "pale-shell-drifter-leviathan.yaml"
   ],
-  "../the-path-campaign/village-siege/adversaries/": [],
+  "../the-path-campaign/mechanics/village-siege/adversaries/": [],
   "../the-path-campaign/locations/path-locations/surface-locations/": [
     "ancient-crossing.yaml",
     "barnacle-gardens.yaml",
@@ -105,7 +105,8 @@ const CONTENT_INDEX = {
     "archon-of-mercy": {
       "details": "faction-details.yaml",
       "npcs": [
-        "archon-of-mercy.yaml"
+        "archon-of-mercy.yaml",
+        "the-bound-raven.yaml"
       ]
     },
     "brass-mechanicorum": {
@@ -140,6 +141,14 @@ const CONTENT_INDEX = {
       "npcs": [
         "spider-emissary.yaml",
         "spider-queen.yaml"
+      ]
+    },
+    "village-in-the-mist": {
+      "details": "faction-details.yaml",
+      "npcs": [
+        "brenner.yaml",
+        "donatello.yaml",
+        "nix.yaml"
       ]
     }
   }

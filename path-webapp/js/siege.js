@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Load all data sources in parallel
         const [mechanicsResponse, npcResponse] = await Promise.all([
-            fetch('../the-path-campaign/village-siege/siege-mechanics.yaml'),
-            fetch('../the-path-campaign/village-siege/npc-defenders.yaml')
+            fetch('../the-path-campaign/mechanics/village-siege/siege-mechanics.yaml'),
+            fetch('../the-path-campaign/mechanics/village-siege/npc-defenders.yaml')
         ]);
 
         const mechanicsYaml = await mechanicsResponse.text();
@@ -33,7 +33,7 @@ async function loadSiegeAdversaries() {
     const adversaries = [];
 
     // Try to discover files from the siege adversaries folder
-    const siegeAdversaryPath = '../the-path-campaign/village-siege/adversaries/';
+    const siegeAdversaryPath = '../the-path-campaign/mechanics/village-siege/adversaries/';
 
     const filenames = await discoverYamlFiles(siegeAdversaryPath);
     const loadPromises = filenames.map(async filename => {

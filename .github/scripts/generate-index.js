@@ -17,7 +17,7 @@ const FOLDERS = [
   'the-path-campaign/adversaries/spider-queen',
   'the-path-campaign/adversaries/crystal-plague',
   'the-path-campaign/adversaries/siege',
-  'the-path-campaign/village-siege/adversaries',
+  'the-path-campaign/mechanics/village-siege/adversaries',
   'the-path-campaign/locations/path-locations/surface-locations',
   'the-path-campaign/locations/path-locations/underground-locations',
   'the-path-campaign/locations/village-in-the-mist',

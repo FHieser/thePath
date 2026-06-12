@@ -12,7 +12,7 @@ const ADVERSARY_FOLDERS = [
   { key: 'spider-queen',   name: "Spider Queen's Brood", path: '../the-path-campaign/adversaries/spider-queen/' },
   { key: 'crystal-plague', name: 'Crystal-Plague',       path: '../the-path-campaign/adversaries/crystal-plague/' },
   { key: 'siege',          name: 'Siege',                path: '../the-path-campaign/adversaries/siege/' },
-  { key: 'village-siege',  name: 'Village Siege',        path: '../the-path-campaign/village-siege/adversaries/' },
+  { key: 'village-siege',  name: 'Village Siege',        path: '../the-path-campaign/mechanics/village-siege/adversaries/' },
 ];
 
 // Location folder registry — surface, underground, village.
@@ -99,7 +99,7 @@ async function discoverYamlFiles(folderUrl) {
 async function loadModifierDescriptions() {
   const descriptions = {};
   try {
-    const response = await fetch('../the-path-campaign/locations/path-locations/path-mechanics.yaml');
+    const response = await fetch('../the-path-campaign/mechanics/path-mechanics.yaml');
     if (!response.ok) return descriptions;
     const mechanics = jsyaml.load(await response.text());
     if (mechanics.modifiers && mechanics.modifiers.list) {
