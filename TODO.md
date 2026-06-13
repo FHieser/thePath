@@ -16,11 +16,10 @@
 - Create Blood Items and category
 
 
-     - 
 
 - redesign siege start at 12 Fear Trigger siege
 
-- Finish stargfall city
+- Finish starfall city
 
 - do underground locations 
   - Create Clan Hub
@@ -41,8 +40,6 @@
     - **Forgotten Oubliette** - Secret dungeon cells below the dungeon, prisoners who were left to starve in darkness
   - Hidden temple
 
-  
-- mine cart rework
 
 - rework geothermal caverns
 
@@ -53,8 +50,6 @@
     - make it control mist somehow
     - is able to be linked to the meteor location
 
-
-- Work out the reward mechanism for the crystals 
 
 - Hidden locations
   - Access via Mist traversal
