@@ -150,6 +150,8 @@
         .item-card.type-rootbound          { border-left-color: #5fa85f; }
         .item-card.type-fire-born          { border-left-color: #d4603a; }
         .item-card.type-brass-mechanicorum { border-left-color: #c9a840; }
+        .item-card.type-blood              { border-left-color: #b84040; }
+        .item-card.type-mist-born          { border-left-color: #7090b0; }
 
         .item-header {
             display: flex;
@@ -280,9 +282,11 @@
         // Static metadata per known faction — new types fall back to defaults automatically
         const FACTION_META = {
             'General':            { emoji: '🎒', cls: 'general' },
+            'Blood':              { emoji: '🩸', cls: 'blood' },
             'Rootbound':          { emoji: '🌿', cls: 'rootbound' },
             'Fire Born':          { emoji: '🔥', cls: 'fire-born' },
             'Brass Mechanicorum': { emoji: '⚙️', cls: 'brass-mechanicorum' },
+            'Mist Born':          { emoji: '🌫️', cls: 'mist-born' },
         };
 
         // FACTIONS is built from the data, not hardcoded — derived after YAML load
