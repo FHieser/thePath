@@ -1,28 +1,32 @@
 # Todo
 
 - Fight with the spiders
+  -> Spider Queen wants to get Parts for the Machine in the Base
+  -> Players havent figured out what they want from the queen for an exchange
+  -> Mini spider from Players knows they found a source in the geothermal caverns
+
+- Add trader village
+  - Swamp Frogs (trader)
+     - Players gave 200ft rope
+     - Players placed a note on the highland Tower location
+     - Rootbound Location 
+       - NPC Doesnt like the rest of the rootbounds
+- 
 
 - Create Blood Items and category
 
-- Add trader NPC
+
+     - 
 
 - redesign siege start at 12 Fear Trigger siege
 
 - Finish stargfall city
 
-- do 3 underground locations 
-  - 1 interesting with lore
-  - 1 traversal
-  - Mist based
-    - Door into deeper levels
-    - Kraken Solo enemy 
-  - Caustic cavern
-
-- optimise session tracking
-- rooms for the players
+- do underground locations 
+  - Create Clan Hub
+  - Do Deeper Levels
 
 
-- Rootbound Location
 
 - And old castle
 
