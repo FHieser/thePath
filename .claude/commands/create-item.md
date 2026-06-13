@@ -76,7 +76,7 @@ For faction items, the mechanic MUST reinforce the faction's identity. Reference
 
 ## Step 4: Compile Final Item
 
-Add the completed item to the items file: `the-path-campaign/items.yaml`
+Add the completed item to the items file: `the-path-campaign/items/items.yaml`
 
 Items are sorted by type in this file: General items first, then faction items grouped by faction name.
 
@@ -138,7 +138,7 @@ Items are sorted by type in this file: General items first, then faction items g
 
 ## Reference Files
 
-- **Items file:** `the-path-campaign/items.yaml` (where items are stored)
+- **Items file:** `the-path-campaign/items/items.yaml` (where items are stored)
 - **Faction files:** `the-path-campaign/lore/factions/` (Item Identity sections for faction themes)
 - **Path mechanics:** `the-path-campaign/locations/path-locations/path-mechanics.yaml` (mist, flame, and Path systems)
 - **Glossary:** `the-path-campaign/locations/path-locations/Glossary.md` (location reference)
@@ -166,7 +166,7 @@ Items are sorted by type in this file: General items first, then faction items g
 - [ ] Faction identity confirmed (if faction item)
 
 **Step 4: Compile**
-- [ ] Item added to `the-path-campaign/items.yaml`
+- [ ] Item added to `the-path-campaign/items/items.yaml`
 - [ ] Sorted correctly by type
 
 ---

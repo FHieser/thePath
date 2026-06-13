@@ -229,7 +229,7 @@
                 <a href="index.html">← Back to Path</a>
             </nav>
             <h1>Items</h1>
-            <p class="subtitle">Equipment and consumables found along The Path</p>
+            <p class="subtitle">Equipment and consumables found along The Path &nbsp;·&nbsp; <a href="starfall-crystals.html" style="color:var(--accent-amber);opacity:0.8;">Starfall Crystal System →</a></p>
         </header>
 
         <main>
@@ -384,7 +384,7 @@
 
         // Load YAML
         try {
-            const res = await fetch('../the-path-campaign/items.yaml');
+            const res = await fetch('../the-path-campaign/items/items.yaml');
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             allItems = jsyaml.load(await res.text());
 

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starfall Crystals - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root {
+            --crystal-blue: #8ec8e8;
+        }
+
+        .crystal-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .crystal-sidebar {
+            position: sticky;
+            top: 1.5rem;
+            height: fit-content;
+        }
+
+        .crystal-sidebar h2 {
+            color: var(--accent-amber);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 0 0 0.6rem 0;
+            opacity: 0.7;
+        }
+
+        .crystal-sidebar .toc-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .crystal-sidebar .toc-entry {
+            font-size: 0.82rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .crystal-content h2 {
+            color: var(--crystal-blue);
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 0.1rem solid var(--primary-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .crystal-content h2:first-child {
+            margin-top: 0;
+        }
+
+        /* Acquisition */
+        .acquisition-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .acquisition-item {
+            background: rgba(10, 20, 40, 0.6);
+            border: 0.1rem solid var(--border-color);
+            border-left: 0.25rem solid var(--crystal-blue);
+            border-radius: 0.4rem;
+            padding: 0.55rem 1rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .acquisition-item strong {
+            color: var(--crystal-blue);
+        }
+
+        /* Cost table */
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+        }
+
+        .cost-table th {
+            background: rgba(10, 20, 40, 0.8);
+            color: var(--accent-amber);
+            text-align: left;
+            padding: 0.5rem 0.9rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            border-bottom: 0.1rem solid var(--border-color);
+        }
+
+        .cost-table td {
+            padding: 0.5rem 0.9rem;
+            border-bottom: 0.05rem solid rgba(255,255,255,0.05);
+            color: var(--text-light);
+        }
+
+        .cost-table tr:last-child td { border-bottom: none; }
+        .cost-table tr:hover td { background: rgba(142, 200, 232, 0.05); }
+
+        /* Crystal item cards */
+        .crystal-card {
+            background: rgba(10, 20, 40, 0.6);
+            border: 0.1rem solid var(--border-color);
+            border-left: 0.25rem solid var(--crystal-blue);
+            border-radius: 0.4rem;
+            padding: 1rem 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .crystal-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin: 0 0 0.4rem 0;
+        }
+
+        .crystal-card p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.55;
+            opacity: 0.9;
+            white-space: pre-line;
+        }
+
+        /* Weapon / armor feature tables */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .features-group h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-amber);
+            margin: 0 0 0.6rem 0;
+            opacity: 0.8;
+        }
+
+        .feature-item {
+            background: rgba(10, 20, 40, 0.6);
+            border: 0.1rem solid var(--border-color);
+            border-radius: 0.3rem;
+            padding: 0.5rem 0.75rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.82rem;
+        }
+
+        .feature-item strong {
+            color: var(--crystal-blue);
+            display: block;
+            margin-bottom: 0.1rem;
+        }
+
+        .feature-item span {
+            color: var(--text-muted);
+            opacity: 0.85;
+        }
+
+        .forge-note {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            opacity: 0.8;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 700px) {
+            .crystal-layout { grid-template-columns: 1fr; }
+            .crystal-sidebar { display: none; }
+            .features-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="items.html">← Back to Items</a>
+            </nav>
+            <h1>Starfall Crystal System</h1>
+            <p class="subtitle">Crystal economy from the Starfall Kingdom — acquisition, costs, and items</p>
+        </header>
+
+        <main>
+            <div class="crystal-layout">
+                <aside class="crystal-sidebar">
+                    <h2>Contents</h2>
+                    <div id="crystal-toc" class="toc-grid">
+                        <span style="opacity:0.5;font-size:0.8rem;">Loading…</span>
+                    </div>
+                </aside>
+
+                <div id="crystal-content" class="crystal-content">
+                    <div class="loading">Loading crystal data…</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script>
+    (async function () {
+        const contentEl = document.getElementById('crystal-content');
+        const tocEl     = document.getElementById('crystal-toc');
+
+        function slugify(str) {
+            return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        }
+
+        try {
+            const res = await fetch('../the-path-campaign/items/starfall-crystals.yaml');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = jsyaml.load(await res.text());
+
+            let html = '';
+            let tocHtml = '';
+
+            // Acquisition
+            if (data.acquisition?.length) {
+                tocHtml += `<a href="#acquisition" class="toc-entry">Acquisition</a>`;
+                html += `<h2 id="acquisition">Acquisition Guidelines</h2><div class="acquisition-list">`;
+                for (const entry of data.acquisition) {
+                    html += `<div class="acquisition-item"><strong>${entry.name}:</strong> ${entry.description}</div>`;
+                }
+                html += `</div>`;
+            }
+
+            // Category costs
+            if (data.categories?.length) {
+                tocHtml += `<a href="#costs" class="toc-entry">Category Costs</a>`;
+                html += `<h2 id="costs">Category Costs</h2>`;
+                html += `<table class="cost-table"><thead><tr><th>Category</th><th>Cost Range</th></tr></thead><tbody>`;
+                for (const cat of data.categories) {
+                    html += `<tr><td>${cat.name}</td><td>${cat.cost}</td></tr>`;
+                }
+                html += `</tbody></table>`;
+            }
+
+            // Items grouped by category
+            const categories = [...new Set((data.items || []).map(i => i.category))];
+            for (const cat of categories) {
+                const catItems = data.items.filter(i => i.category === cat);
+                const id = slugify(cat);
+                tocHtml += `<a href="#${id}" class="toc-entry">${cat}s</a>`;
+                html += `<h2 id="${id}">${cat}s</h2>`;
+                for (const item of catItems) {
+                    html += `<div class="crystal-card">
+                        <h3>${item.name}</h3>
+                        <p>${(item.description || '').trim()}</p>
+                    </div>`;
+                }
+            }
+
+            // Weapons & Armor features
+            if (data.weapon_features?.length || data.armor_features?.length) {
+                tocHtml += `<a href="#weapons-armor" class="toc-entry">Weapons & Armor</a>`;
+                html += `<h2 id="weapons-armor">Weapons & Armor</h2>`;
+                html += `<p class="forge-note">Crystals can forge tier-appropriate weapons and armor with added features. Cost: 5–10 Crystals.</p>`;
+                html += `<div class="features-grid">`;
+                if (data.weapon_features?.length) {
+                    html += `<div class="features-group"><h3>Weapon Features</h3>`;
+                    for (const f of data.weapon_features) {
+                        html += `<div class="feature-item"><strong>${f.name}</strong><span>${f.description}</span></div>`;
+                    }
+                    html += `</div>`;
+                }
+                if (data.armor_features?.length) {
+                    html += `<div class="features-group"><h3>Armor Features</h3>`;
+                    for (const f of data.armor_features) {
+                        html += `<div class="feature-item"><strong>${f.name}</strong><span>${f.description}</span></div>`;
+                    }
+                    html += `</div>`;
+                }
+                html += `</div>`;
+            }
+
+            contentEl.innerHTML = html;
+            tocEl.innerHTML = tocHtml || '<span style="opacity:0.4;font-size:0.8rem;">—</span>';
+
+        } catch (err) {
+            contentEl.innerHTML = `<p class="error">Failed to load crystal data: ${err.message}</p>`;
+            tocEl.innerHTML = '';
+            console.error(err);
+        }
+    })();
+    </script>
+</body>
+</html>

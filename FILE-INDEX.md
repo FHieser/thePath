@@ -78,7 +78,8 @@ Auto-generated index of all tracked, non-gitignored files. Organized by director
 
 | File | Description |
 |------|-------------|
-| [the-path-campaign/items.yaml](the-path-campaign/items.yaml) | Campaign item definitions |
+| [the-path-campaign/items/items.yaml](the-path-campaign/items/items.yaml) | Campaign item definitions |
+| [the-path-campaign/items/starfall-crystals.yaml](the-path-campaign/items/starfall-crystals.yaml) | Starfall Crystal economy system |
 
 ### the-path-campaign/adversaries/ — Custom adversaries organized by type
 

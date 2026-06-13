@@ -1,0 +1,133 @@
+title: Starfall Crystal System
+
+acquisition:
+  - name: Standard Encounters
+    description: Minor crystal loot as part of rewards
+  - name: Going Out of Their Way
+    description: Extra crystals for taking risks, exploring dormant areas
+  - name: Temptation Rewards
+    description: Visible crystals in dangerous or morally weighted situations
+  - name: Special Enemies
+    description: Crystallized champions and leaders carry more
+  - name: Harvesting
+    description: Describe the action, reward engagement — no special rolls needed
+
+categories:
+  - name: Consumables
+    cost: "1–3 Crystals"
+  - name: Enchantments / Runes
+    cost: "3–5 Crystals"
+  - name: Weapons & Armor
+    cost: "5–10 Crystals"
+  - name: Magic Items
+    cost: "8–15 Crystals"
+  - name: Village Upgrades
+    cost: "10–20 Crystals"
+
+items:
+  - name: Crystal of Might
+    category: Consumable
+    description: |
+      Press against a weapon before combat. For the scene, reroll up to 3 damage dice per attack. Repeated use risks cracking the weapon.
+
+  - name: Crystal Arrows
+    category: Consumable
+    description: |
+      Arrowheads, bolts, or sling stones carved from crystals. +d6 magic damage on hit, target glows and loses concealment. Shatters on impact.
+
+  - name: Ember Dust
+    category: Consumable
+    description: |
+      Crystal ground with Sacred Flame ash. Scatter over a weapon to choose physical or magic damage for the scene.
+
+  - name: Starfall Grenade
+    category: Consumable
+    description: |
+      Brittle shell packed with crystal shards. On impact, all creatures in Very Close range mark 1 Stress.
+
+  - name: Dormancy Paste
+    category: Consumable
+    description: |
+      Thick paste applied to flame canisters. Prevents crystallized dead from awakening for your stay in a location — even with Sacred Flame present.
+
+  - name: Shard Inlay
+    category: Enchantment
+    description: |
+      Embed crystals into a weapon's edge. When you roll max on a damage die, the target marks 1 Stress.
+
+  - name: Glassbone Plating
+    category: Enchantment
+    description: |
+      Crystal shards fused to armor joints. Once per rest, reduce severity of a hit by one threshold (Severe → Major → Minor).
+
+  - name: Plague Whisper
+    category: Enchantment
+    description: |
+      Crystal dust worked into weapon bindings. Gain advantage when searching for crystallized creatures or structures.
+
+  - name: Dormancy Rune
+    category: Enchantment
+    description: |
+      Carved crystal sigil worn on the body. Once per session, force a crystallized creature to select a different target instead of you.
+
+  - name: Resonance Lantern
+    category: Magic Item
+    description: |
+      Lantern with a crystal core instead of flame. Sheds cold light that doesn't awaken crystallized dead.
+
+  - name: The Last King's Ring
+    category: Magic Item
+    description: |
+      Band set with a meteorite sliver. Once per session, reroll any roll — but you hear distant thunder.
+
+  - name: Starfall Compass
+    category: Magic Item
+    description: |
+      A crystal shard suspended in liquid. Always points toward the nearest concentration of crystals.
+
+  - name: Crystal Charm
+    category: Magic Item
+    description: |
+      Tiny crystal on a chain. Once per rest, reduce incoming magic damage by half.
+
+  - name: Crystal Greenhouse
+    category: Village Upgrade
+    description: |
+      Growing structure lined with crystals. Plants grow faster — players heal 1 HP automatically when resting at the village.
+
+  - name: Starfall Forge
+    category: Village Upgrade
+    description: |
+      Specialized forge capable of working crystal into weapons and armor.
+
+  - name: Pathfinder's Shrine
+    category: Village Upgrade
+    description: |
+      Map table with embedded crystal markers. Makes predictions more reliable. Dice size halves, but add half the dice size to automatically discovered locations (d6 → d3 + 3 predictions).
+
+  - name: Crystal Farm
+    category: Village Upgrade
+    description: |
+      Cultivated crystal growths tended by villagers. Produces 1d3 shards every day.
+
+weapon_features:
+  - name: Reliable
+    description: "+1 to attack rolls"
+  - name: Returning
+    description: When thrown within range, appears in your hand immediately after the attack
+  - name: Versatile
+    description: Weapon can also be used with alternate statistics
+  - name: Massive
+    description: "−1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest"
+  - name: Scary
+    description: On a successful attack, the target marks 1 Stress
+
+armor_features:
+  - name: Reinforced
+    description: When you mark your last Armor Slot, increase your damage thresholds by +2 until you clear at least 1 Armor Slot
+  - name: Quiet
+    description: "+2 to rolls to move silently"
+  - name: Gilded
+    description: "+1 to Presence"
+  - name: Flexible
+    description: "+1 to Evasion"
