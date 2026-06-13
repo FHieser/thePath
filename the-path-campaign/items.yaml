@@ -5,6 +5,15 @@
 # GENERAL ITEMS
 # ============================================================
 
+- name: Mist Protection Charm
+  type: General
+  usage: Consumable
+  flavor: "A small wooden bead carved with a simple ward-mark, strung on rough cord. Travelers going into the mist tie a handful to their wrists and come back with fewer than they left with."
+  effect:
+    category: Protection
+    description: |
+      When you would gain a Mist token, you may destroy this charm to negate that token.
+
 - name: Cliffgold
   type: General
   usage: Consumable
@@ -31,15 +40,6 @@
     category: Utility
     description: |
       Throw the ash into a Mushroom Circle. The particles swirl and drift toward the direction of linked Mushroom Circle locations, showing you which way to face before stepping in.
-
-- name: Archon's Reserves
-  type: General
-  usage: Reusable
-  flavor: "A dark glass vial etched with ancient channel-marks, always faintly warm to the touch."
-  effect:
-    category: Utility
-    description: |
-      Spend 1 HP at any time to fill the vial with your blood. The vial holds 1 HP of blood. Pour the filled vial at a location that requires a blood sacrifice to count as 1 HP of sacrifice. Multiple vials can be used together to meet higher sacrifice costs.
 
 - name: Deadnerve
   type: General
@@ -68,15 +68,6 @@
     description: |
       Can only be inhaled during an encounter. Gain advantage on all Agility rolls for the rest of the scene.
 
-- name: Rapid Mutator
-  type: General
-  usage: Consumable
-  flavor: "A crude syringe of dark red compound that smells of iron and copper wire — the Archon's handwriting is on the label, neat as a death sentence."
-  effect:
-    category: Restoration
-    description: |
-      Inject during an encounter. Regain 5 HP. Gain 2 Stress. Mark your first unmarked Hit Point — this slot cannot be healed until you spend a Long Rest action to regenerate it.
-
 - name: Iron Nerve Paste
   type: General
   usage: Consumable
@@ -87,19 +78,6 @@
       When you would mark Stress from any source, you may apply a dose as a reaction to negate that Stress instead. The paste has 3 uses per Long Rest.
 
       Each time you use a dose, the next time you would recover Stress (from any source), you recover 1 less Stress for each dose used since your last Long Rest. If this reduces your recovery to 0 or less, you recover no Stress from that source.
-
-- name: Red Eye
-  type: General
-  usage: Reusable
-  flavor: "A plague crystal fused with mist essence and blood — look into it and the dark coils move, and something inside looks back."
-  effect:
-    category: Restoration
-    description: |
-      Hold the Red Eye and focus. Regain 1 HP and clear 1 Stress. Gain Mist tokens equal to the number of times you have used the Red Eye since your last Long Rest.
-
-      First use: +1 Mist token. Second use: +2 Mist tokens. Third use: +3 Mist tokens.
-
-      The usage counter resets on a Long Rest.
 
 - name: Silkweaver
   type: General
@@ -119,6 +97,52 @@
       of those nearby. The Queen's drones intercept these nets. She
       accumulates knowledge of your movements and will act on what she
       learns when the time is right.
+
+# ============================================================
+# BLOOD ITEMS
+# ============================================================
+
+- name: Archon's Reserves
+  type: Blood
+  usage: Reusable
+  flavor: "A dark glass vial etched with ancient channel-marks, always faintly warm to the touch."
+  effect:
+    category: Utility
+    description: |
+      Spend 1 HP at any time to fill the vial with your blood. The vial holds 1 HP of blood. Pour the filled vial at a location that requires a blood sacrifice to count as 1 HP of sacrifice. Multiple vials can be used together to meet higher sacrifice costs.
+
+- name: Rapid Mutator
+  type: Blood
+  usage: Consumable
+  flavor: "A crude syringe of dark red compound that smells of iron and copper wire — the Archon's handwriting is on the label, neat as a death sentence."
+  effect:
+    category: Restoration
+    description: |
+      Inject during an encounter. Regain 5 HP. Gain 2 Stress. Mark your first unmarked Hit Point — this slot cannot be healed until you spend a Long Rest action to regenerate it.
+
+- name: Red Eye
+  type: Blood
+  usage: Reusable
+  flavor: "A plague crystal fused with mist essence and blood — look into it and the dark coils move, and something inside looks back."
+  effect:
+    category: Restoration
+    description: |
+      Hold the Red Eye and focus. Regain 1 HP and clear 1 Stress. Gain Mist tokens equal to the number of times you have used the Red Eye since your last Long Rest.
+
+      First use: +1 Mist token. Second use: +2 Mist tokens. Third use: +3 Mist tokens.
+
+      The usage counter resets on a Long Rest.
+
+- name: Sanguine Cage
+  type: Blood
+  usage: Reusable
+  flavor: "Interlocked bones sealed with hardened blood — crafted through hemomancy, worn by those who know the body is a resource to be spent wisely."
+  effect:
+    category: Protection
+    description: |
+      Tier 2 armor. Thresholds: 9 / 20.
+
+      Blood Chamber: At any time, spend HP to fill the chamber (up to 3 HP maximum). At any time, draw 1 HP from the chamber to restore it to yourself. HP stored in the chamber persists until spent.
 
 # ============================================================
 # ROOTBOUND ITEMS
