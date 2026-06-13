@@ -180,96 +180,124 @@ function renderStorylines(f) {
         return;
     }
 
-    let html = '';
-    storylines.forEach(story => {
-        html += buildStorylineBlock(story);
-    });
-    el.innerHTML = html;
+    el.innerHTML = storylines.map(buildStorylineBlock).join('');
 }
 
 function buildStorylineBlock(story) {
     const phases = story.phases || [];
     const statusClass = (story.status || 'dormant').toLowerCase();
 
-    let html = `<div style="margin-bottom:2rem">
+    let html = `<div class="storyline-block">
         <div class="storyline-header">
             <h3>${escapeHtml(story.name || story.id || '')}</h3>
             <span class="status-badge ${statusClass}">${escapeHtml(story.status || 'dormant')}</span>
         </div>`;
 
     if (story.summary) {
-        html += `<p style="margin-bottom:1rem;opacity:0.85;font-style:italic">${formatDescription(story.summary)}</p>`;
+        html += `<p style="margin-bottom:1.25rem;opacity:0.85;font-style:italic">${formatDescription(story.summary)}</p>`;
     }
 
     if (phases.length) {
-        html += `<div class="phase-flow">`;
-        phases.forEach(phase => {
-            html += buildPhaseNode(phase, phases);
+        const phaseMap = Object.fromEntries(phases.map(p => [p.id, p]));
+
+        // Build children map: phase id → [{label, id}] from branches
+        const childrenMap = Object.fromEntries(phases.map(p => [p.id, []]));
+        phases.forEach(p => {
+            (p.branches || []).forEach(b => {
+                if (b.next && phaseMap[b.next]) {
+                    childrenMap[p.id].push({ label: b.label, id: b.next });
+                }
+            });
         });
-        html += `</div>`;
+
+        // Root nodes: phases not pointed to by any branch
+        const allTargets = new Set(
+            phases.flatMap(p => (p.branches || []).map(b => b.next).filter(Boolean))
+        );
+        const roots = phases.filter(p => !allTargets.has(p.id));
+
+        html += `<div class="phase-tree-scroll"><div class="phase-tree">`;
+        roots.forEach(root => {
+            html += renderPhaseTree(root.id, phaseMap, childrenMap, null, new Set());
+        });
+        html += `</div></div>`;
     }
 
     html += `</div>`;
     return html;
 }
 
-function buildPhaseNode(phase, allPhases) {
-    const typeClass = (phase.type || 'milestone').toLowerCase().replace(/\s+/g, '-');
-    const branches = phase.branches || [];
+function renderPhaseTree(phaseId, phaseMap, childrenMap, branchLabel, visited) {
+    if (visited.has(phaseId)) {
+        return `<div class="tree-back-ref">↩ ${escapeHtml(phaseId)}</div>`;
+    }
+    const phase = phaseMap[phaseId];
+    if (!phase) return '';
 
-    let html = `<div class="phase-node" id="phase-${phase.id}">
-        <div class="phase-card ${typeClass}">
-            <div class="phase-top">
-                <span class="phase-type-label">${escapeHtml(phase.type || '')}</span>
-                <span class="phase-name">${escapeHtml(phase.name || phase.id || '')}</span>
-            </div>`;
+    const newVisited = new Set(visited);
+    newVisited.add(phaseId);
+
+    const children = childrenMap[phaseId] || [];
+    const typeClass = (phase.type || 'milestone').toLowerCase().replace(/\s+/g, '-');
+
+    let html = `<div class="tree-node">`;
+
+    if (branchLabel) {
+        html += `<div class="tree-branch-label">${escapeHtml(branchLabel)}</div>`;
+    }
+
+    html += `<div class="phase-card ${typeClass}" id="phase-${phase.id}">
+        <div class="phase-top">
+            <span class="phase-type-label">${escapeHtml(phase.type || '')}</span>
+            <span class="phase-name">${escapeHtml(phase.name || phase.id || '')}</span>
+        </div>`;
 
     if (phase.description) {
         html += `<p class="phase-desc">${formatDescription(phase.description)}</p>`;
     }
 
-    // Progress tracker for active phases
     if (phase.progress) {
         const p = phase.progress;
         html += `<div class="phase-progress">Progress: ${p.current || 0} / ${p.required || '?'}</div>`;
         if (p.locations && p.locations.length) {
             html += `<ul class="progress-locations">`;
             p.locations.forEach(loc => {
-                const locName = typeof loc === 'object' ? loc.name : loc;
-                const locStatus = typeof loc === 'object' ? loc.status : 'available';
-                html += `<li class="progress-loc ${locStatus === 'pending' ? 'pending' : ''}">${escapeHtml(locName)}</li>`;
+                const name = typeof loc === 'object' ? loc.name : loc;
+                const status = typeof loc === 'object' ? loc.status : 'available';
+                html += `<li class="progress-loc${status === 'pending' ? ' pending' : ''}">${escapeHtml(name)}</li>`;
             });
             html += `</ul>`;
         }
     }
 
-    // Triggers (entry phases)
     if (phase.triggers && phase.triggers.length) {
-        html += `<div style="font-size:0.75rem;opacity:0.6;margin-bottom:0.4rem">
-            Triggered by: ${phase.triggers.map(t => escapeHtml(t)).join(' · ')}
-        </div>`;
+        html += `<div class="phase-triggers">Triggered by: ${phase.triggers.map(t => escapeHtml(t)).join(' · ')}</div>`;
     }
 
-    // Branch links
-    if (branches.length) {
-        html += `<div class="phase-branches">`;
-        branches.forEach(branch => {
-            if (!branch.next) {
-                html += `<span class="branch-link dead-end">
-                    <span>${escapeHtml(branch.label || '—')}</span>
-                    <span class="branch-arrow">∎</span>
-                </span>`;
-            } else {
-                html += `<a href="#phase-${branch.next}" class="branch-link">
-                    <span>${escapeHtml(branch.label || branch.next)}</span>
-                    <span class="branch-arrow">↓</span>
-                </a>`;
-            }
+    // Dead-end branches (null next) rendered as pills at the card bottom
+    const deadEnds = (phase.branches || []).filter(b => !b.next);
+    if (deadEnds.length) {
+        html += `<div class="phase-dead-ends">${
+            deadEnds.map(b => `<span class="dead-end-pill">∎ ${escapeHtml(b.label || '—')}</span>`).join('')
+        }</div>`;
+    }
+
+    html += `</div>`; // .phase-card
+
+    if (children.length) {
+        const multi = children.length > 1;
+        html += `<div class="tree-stem"></div>
+        <div class="tree-children ${multi ? 'multi' : 'single'}">`;
+        children.forEach(child => {
+            html += `<div class="tree-col">
+                <div class="tree-drop"></div>
+                ${renderPhaseTree(child.id, phaseMap, childrenMap, child.label, newVisited)}
+            </div>`;
         });
         html += `</div>`;
     }
 
-    html += `</div></div>`;
+    html += `</div>`; // .tree-node
     return html;
 }
 
