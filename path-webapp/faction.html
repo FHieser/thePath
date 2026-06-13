@@ -140,7 +140,7 @@
         .subgroup-name { font-size: 0.9rem; font-weight: 700; color: var(--accent-amber); }
         .subgroup-role { font-size: 0.75rem; text-transform: uppercase; opacity: 0.6; margin: 0.1rem 0 0.4rem; }
 
-        /* ── Storyline tree ── */
+        /* ── Storyline flowchart ── */
         .storyline-block { margin-bottom: 2.5rem; }
 
         .storyline-header {
@@ -161,107 +161,42 @@
         .status-badge.dormant  { background: rgba(255,255,255,0.08); }
         .status-badge.resolved { background: rgba(17,68,102,0.4); color: #6ea8c8; }
 
-        /* Scroll wrapper for wide trees */
-        .phase-tree-scroll { overflow-x: auto; padding: 0.25rem 0 1rem; }
+        /* Scroll wrapper for wide flowcharts */
+        .phase-flowchart-wrap { overflow-x: auto; padding: 0.5rem 0 0.5rem; }
 
-        /* Root container — centres the tree */
-        .phase-tree {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: max-content;
-            padding: 0 1rem;
-        }
-
-        /* Each node: card + optional children below */
-        .tree-node {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Vertical stem from card bottom to children row */
-        .tree-stem {
-            width: 2px;
-            height: 1.25rem;
-            background: rgba(255,255,255,0.18);
-            flex-shrink: 0;
-        }
-
-        /* Row that holds all child columns */
-        .tree-children {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 0;
-        }
-
-        /* One column per branch child */
-        .tree-col {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0 0.75rem;
+        /* Positioned container — SVG overlay anchors to this */
+        .phase-flowchart {
             position: relative;
-            min-width: 0;
+            min-width: max-content;
+            padding: 0.5rem 2rem 0.5rem;
         }
 
-        /* Horizontal connecting bar across siblings (multi only) */
-        .tree-children.multi .tree-col::before {
-            content: '';
+        /* SVG connector overlay — drawn by JS after layout */
+        .flowchart-svg {
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            height: 2px;
-            background: rgba(255,255,255,0.18);
-        }
-        /* Trim bar: first child from centre rightward */
-        .tree-children.multi .tree-col:first-child::before { left: 50%; }
-        /* Trim bar: last child from left to centre */
-        .tree-children.multi .tree-col:last-child::before  { right: 50%; }
-
-        /* Vertical drop inside each column */
-        .tree-drop {
-            width: 2px;
-            height: 1.25rem;
-            background: rgba(255,255,255,0.18);
-            flex-shrink: 0;
+            pointer-events: none;
+            overflow: visible;
         }
 
-        /* Label for branch choice, shown above each child card */
-        .tree-branch-label {
-            font-size: 0.68rem;
-            opacity: 0.55;
-            padding: 0.1rem 0.45rem;
-            background: rgba(255,255,255,0.05);
-            border: 0.05rem solid rgba(255,255,255,0.1);
-            border-radius: 0.15rem;
-            margin-bottom: 0.4rem;
-            white-space: nowrap;
-            max-width: 200px;
-            text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        /* One horizontal row per depth layer */
+        .flow-layer {
+            display: flex;
+            justify-content: center;
+            gap: 1.25rem;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 1;
         }
+        .flow-layer:last-child { margin-bottom: 0; }
 
-        /* Cycle / back-reference indicator */
-        .tree-back-ref {
-            font-size: 0.75rem;
-            opacity: 0.35;
-            padding: 0.3rem 0.6rem;
-            background: rgba(255,255,255,0.04);
-            border-radius: 0.15rem;
-        }
-
-        /* Phase cards */
+        /* Phase cards — fixed width so the SVG beziers land correctly */
         .phase-card {
             border-radius: 0.2rem;
             padding: 0.75rem 1rem;
             border-left: 0.3rem solid transparent;
-            min-width: 200px;
-            max-width: 260px;
-            width: 240px;
+            width: 200px;
         }
         .phase-card.entry        { background: rgba(17,68,102,0.45); border-color: #2a7ab8; }
         .phase-card.milestone    { background: rgba(122,107,63,0.35); border-color: #c8a041; }
@@ -305,7 +240,7 @@
             margin-bottom: 0.15rem;
         }
 
-        /* Dead-end outcome pills at card bottom */
+        /* Terminal outcome pills (dead-ends + back-references) */
         .phase-dead-ends {
             display: flex;
             flex-wrap: wrap;
@@ -322,6 +257,7 @@
             border-radius: 0.15rem;
             opacity: 0.5;
         }
+        .dead-end-pill.back-ref { border-color: rgba(200,160,65,0.25); opacity: 0.6; }
 
         /* ── NPC cards ── */
         .npc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem; }
