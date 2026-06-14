@@ -34,7 +34,7 @@
         if (!id) { titleEl.textContent = "Path not found"; return; }
 
         try {
-          const res = await fetch(`/the-path-campaign/example-path/path-library/${id}.yaml`);
+          const res = await fetch(`../the-path-campaign/example-path/path-library/${id}.yaml`);
           if (!res.ok) throw new Error("Not found");
           const ex = jsyaml.load(await res.text());
           ex._id = id;
