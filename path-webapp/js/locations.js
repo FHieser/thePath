@@ -21,7 +21,7 @@ async function loadLocations() {
         modifierDescriptions = await loadModifierDescriptions();
 
         allLocations = {};
-        for (const { path: folderPath } of LOCATION_FOLDERS) {
+        for (const { path: folderPath, type: folderType } of LOCATION_FOLDERS) {
             const filenames = await discoverYamlFiles(folderPath);
             for (const filename of filenames) {
                 if (filename.includes('template') || filename.includes('mechanics')) continue;
@@ -29,7 +29,9 @@ async function loadLocations() {
                 try {
                     const response = await fetch(`${folderPath}${filename}`);
                     if (response.ok) {
-                        allLocations[id] = jsyaml.load(await response.text());
+                        const data = jsyaml.load(await response.text());
+                        data._folderType = folderType;
+                        allLocations[id] = data;
                     }
                 } catch (error) {
                     console.warn(`Failed to load ${filename}:`, error);
@@ -40,7 +42,6 @@ async function loadLocations() {
         collectModifiers();
         renderFilterTags();
         renderLocations();
-        updateStats();
     } catch (error) {
         console.error('Error loading locations:', error);
         document.getElementById('locations-container').innerHTML = '<p class="error">Error loading locations data.</p>';
@@ -57,9 +58,10 @@ function renderLocations() {
         return;
     }
 
-    // Group locations by type
-    const surfaceLocations = filteredLocations.filter(([id, loc]) => !hasModifier(loc, 'Underground'));
-    const undergroundLocations = filteredLocations.filter(([id, loc]) => hasModifier(loc, 'Underground'));
+    // Group locations by folder type / modifier
+    const starfallLocations = filteredLocations.filter(([id, loc]) => loc._folderType === 'starfall-city');
+    const surfaceLocations = filteredLocations.filter(([id, loc]) => loc._folderType !== 'starfall-city' && !hasModifier(loc, 'Underground'));
+    const undergroundLocations = filteredLocations.filter(([id, loc]) => loc._folderType !== 'starfall-city' && hasModifier(loc, 'Underground'));
 
     let html = '';
 
@@ -76,6 +78,15 @@ function renderLocations() {
         html += '<div class="section-divider"><h2>Underground Locations</h2></div>';
         html += '<div class="locations-grid">';
         undergroundLocations.forEach(([id, location]) => {
+            html += createLocationCard(id, location);
+        });
+        html += '</div>';
+    }
+
+    if (starfallLocations.length > 0) {
+        html += '<div class="section-divider"><h2>Starfall City</h2></div>';
+        html += '<div class="locations-grid">';
+        starfallLocations.forEach(([id, location]) => {
             html += createLocationCard(id, location);
         });
         html += '</div>';
@@ -140,20 +151,6 @@ function createLocationCard(id, location) {
             </div>
         </a>
     `;
-}
-
-// Update statistics
-function updateStats() {
-    const entries = Object.entries(allLocations);
-    const surfaceCount = entries.filter(([id, loc]) => !hasModifier(loc, 'Underground')).length;
-    const undergroundCount = entries.filter(([id, loc]) => hasModifier(loc, 'Underground')).length;
-    const stableCount = entries.filter(([id, loc]) => hasModifier(loc, 'Stable')).length;
-    const unstableCount = entries.filter(([id, loc]) => hasModifier(loc, 'Unstable')).length;
-
-    document.getElementById('surface-count').textContent = surfaceCount;
-    document.getElementById('underground-count').textContent = undergroundCount;
-    document.getElementById('stable-count').textContent = stableCount;
-    document.getElementById('unstable-count').textContent = unstableCount;
 }
 
 // Render the modifier filter tags into the filter bar

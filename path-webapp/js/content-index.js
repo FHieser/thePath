@@ -82,6 +82,17 @@ const CONTENT_INDEX = {
     "reed-marsh-caverns.yaml",
     "sacred-underground.yaml"
   ],
+  "../the-path-campaign/locations/path-locations/starfall-city/": [
+    "council-hall.yaml",
+    "craftsmens-ward.yaml",
+    "mechanics-workshop.yaml",
+    "old-gate.yaml",
+    "riot-market.yaml",
+    "sanctuary-keep.yaml",
+    "scaffold-square.yaml",
+    "sealed-district.yaml",
+    "university-burning-fields.yaml"
+  ],
   "../the-path-campaign/locations/village-in-the-mist/": [
     "community-hearth-card.yaml",
     "flame-gatherers-lodge-card.yaml",

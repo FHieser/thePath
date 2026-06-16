@@ -160,33 +160,6 @@
             padding: 0;
         }
 
-        .stats-summary {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 0.75rem;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 0.2rem;
-        }
-
-        .stat-summary-item {
-            text-align: center;
-        }
-
-        .stat-summary-item .number {
-            display: block;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--accent-amber);
-        }
-
-        .stat-summary-item .label {
-            display: block;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            opacity: 0.8;
-        }
     </style>
 </head>
 <body>
@@ -200,29 +173,6 @@
         </header>
 
         <main>
-            <div class="stats-summary" id="stats-summary">
-                <div class="stat-summary-item">
-                    <span class="number">14</span>
-                    <span class="label">Total Locations</span>
-                </div>
-                <div class="stat-summary-item">
-                    <span class="number" id="surface-count">9</span>
-                    <span class="label">Surface</span>
-                </div>
-                <div class="stat-summary-item">
-                    <span class="number" id="underground-count">5</span>
-                    <span class="label">Underground</span>
-                </div>
-                <div class="stat-summary-item">
-                    <span class="number" id="stable-count">1</span>
-                    <span class="label">Stable</span>
-                </div>
-                <div class="stat-summary-item">
-                    <span class="number" id="unstable-count">13</span>
-                    <span class="label">Unstable</span>
-                </div>
-            </div>
-
             <section class="filter-controls" id="filter-tags">
                 <!-- Modifier filter tags populated dynamically -->
             </section>

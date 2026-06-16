@@ -15,10 +15,11 @@ const ADVERSARY_FOLDERS = [
   { key: 'village-siege',  name: 'Village Siege',        path: '../the-path-campaign/mechanics/village-siege/adversaries/' },
 ];
 
-// Location folder registry — surface, underground, village.
+// Location folder registry — surface, underground, starfall city, village.
 const LOCATION_FOLDERS = [
   { path: '../the-path-campaign/locations/path-locations/surface-locations/',    type: 'surface' },
   { path: '../the-path-campaign/locations/path-locations/underground-locations/', type: 'underground' },
+  { path: '../the-path-campaign/locations/path-locations/starfall-city/',         type: 'starfall-city' },
   { path: '../the-path-campaign/locations/village-in-the-mist/',                  type: 'village' },
 ];
 

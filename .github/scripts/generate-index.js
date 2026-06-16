@@ -20,6 +20,7 @@ const FOLDERS = [
   'the-path-campaign/mechanics/village-siege/adversaries',
   'the-path-campaign/locations/path-locations/surface-locations',
   'the-path-campaign/locations/path-locations/underground-locations',
+  'the-path-campaign/locations/path-locations/starfall-city',
   'the-path-campaign/locations/village-in-the-mist',
   'the-path-campaign/example-path/path-library',
 ];
