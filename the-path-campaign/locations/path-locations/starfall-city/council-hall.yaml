@@ -1,0 +1,86 @@
+name: Council Hall
+tier: 3
+category: Exploration
+district: 1,1
+
+todo:
+  - Noble thread chimes — intersection with Security Chief at the decree
+  - Full district mechanics — what players can do in the council chamber
+  - Wake system integration — Warden spawn behavior and escalation triggers
+
+connections:
+  - Scaffold Square
+  - Craftsmen's Ward
+  - Lord's Castle (sealed — inaccessible until drill obtained)
+
+description: |
+  The seat of the city's power, now a crystal tomb. The council chamber is intact — table, chairs, the council members still seated and crystallized mid-meeting. A corridor runs along the outside, a window at one end overlooking Scaffold Square below. At the far end, a tower rises above the building. The roof has been replaced entirely by crystal growth that spread from where the Security Chief fell.
+
+impulses: Preserve the silence, close off the tower, let the crystal spread
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: The Crystal Rooftop
+    type: Passive
+    description: |
+      The roof of the Council Hall is entirely encrusted in crystal — the densest growth in the city. This is where the Security Chief's body lay after falling from the tower. The crystal spread from that point and never stopped.
+
+      The Warden spawns at the base of the tower, on the crystal-covered ground where the Security Chief landed. Players who reach this district at Wake 3 find the Warden here first.
+    questions: How far has the crystal spread beyond the roofline? Does it glow differently here than elsewhere in the city?
+
+  - name: The Tower
+    type: Action
+    description: |
+      A narrow stone staircase climbs to the top of the Council Hall tower. The stairs are intact but coated in crystal smears — handprints left by the Security Chief on his final climb.
+
+      Reaching the top requires time and care. From the tower, players can see the full city grid — Wake levels visible by the intensity of crystal glow in each district.
+
+      The Fall chime is placed at the top of the tower.
+    questions: Can players see the Warden from the tower? What does the city look like from this height — how much is still standing?
+
+  - name: The Decree
+    type: Chime
+    description: |
+      Placement — hanging above the council table.
+
+      A crowded chamber. Faces around the table, all looking at him. A decree on the table in front of him. Quarantine orders. His name at the bottom line. He picks up the quill. Sets it down. The Noble reaches across from his seat. Takes the quill. Signs without reading it. Slides it to the next council member. Already talking, already moving to the next order. The Security Chief watches his own unsigned name get passed around the table. He stands. Steps out into the corridor. A window. The scaffold in the square below, empty and waiting. He stares at it.
+
+      Thread — Security Chief + Noble intersection
+      Camera — POV through the Security Chief's eyes
+      Points toward — Scaffold Square (his gaze through the window)
+
+  - name: The Fall
+    type: Chime
+    description: |
+      Placement — top of the Council Hall tower. Requires climbing to reach.
+
+      Stairs. Each step slower than the last. His hand on the wall leaving glowing smears. The top. Wind. The city burning below — the university, the market, all of it. He breathes out. Crystals catch the light in the air. The city tilts. Black.
+
+      Thread — Security Chief (final)
+      Camera — POV through his eyes, then black
+      Points toward — nothing. Players look down from the tower and see where he landed.
+
+  - name: The Warden's Last Memory
+    type: Chime
+    description: |
+      Not a placed chime — released from the Warden's core when he is defeated.
+
+      The roof. Close. Blood spreading across crystal. Black. His hands. Crystal crawling up from the wrists. Black. Other bodies. His arms pulling them in. They don't resist. Black. The streets. Larger now. Each step cracking stone. Black. Mist rolling in across the city. Everything going quiet. Black. The players. Looking up at him. Weapons raised. Black.
+
+      Thread — Security Chief (end)
+      Camera — POV flashes from black, each one brief
+      Points toward — nothing. End of thread.
+
+featureQuestions:
+  - Are any council members still recognizably themselves, or has the crystal obscured them entirely?
+  - What decree was being discussed when the plague reached this room?
+  - Does the corridor window still look down on the scaffold, or has crystal blocked it?
+  - What is above the castle — can the Lord's Castle be seen from the tower?

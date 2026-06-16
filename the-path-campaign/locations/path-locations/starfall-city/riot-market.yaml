@@ -1,0 +1,62 @@
+name: Riot Market
+tier: 3
+category: Exploration
+district: 2,2
+
+todo:
+  - Merchant thread chimes — this was his official front
+  - Additional Love Story chimes — soldier at the market
+  - Full district mechanics
+
+connections:
+  - Scaffold Square
+  - Craftsmen's Ward
+  - Sanctuary Keep + Hospital
+  - Old Gate
+
+description: |
+  A large open market plaza, completely destroyed. Stalls overturned, goods scattered and crystallized across the cobblestones, glass broken. The riot that happened here is frozen in progress — bodies mid-fall, hands still reaching, stalls half-collapsed. From the north end of the plaza, Scaffold Square (1,2) is visible above. The destruction here is not from the plague alone — this was also a riot. People fought each other before they crystallized.
+
+impulses: Keep the chaos frozen, reveal what people fought over, prevent anyone from leaving
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: The Ruined Market
+    type: Passive
+    description: |
+      Overturned stalls create irregular cover and difficult terrain throughout the plaza. Players can use the debris for cover during combat.
+
+      The crystallized bodies here are mid-motion — many in aggressive postures. When the Awakening Counter triggers in this district, the dead who awaken are immediately hostile and skip the normal moment of disorientation.
+    questions: What was being sold at the stalls? Is there evidence of price gouging — medicine, food, water at crisis rates?
+
+  - name: Sightline to Scaffold Square
+    type: Passive
+    description: |
+      The north end of the market opens onto a clear sightline to Scaffold Square (1,2) above. Players in the market can see the scaffold from here.
+
+      If the scaffold's Awakening Counter has been triggered, sounds carry down to the market.
+    questions: What did people in the market see happening on the scaffold just before the riot started?
+
+  - name: The Orders
+    type: Chime
+    description: |
+      Placement — hanging from an overturned market stall frame.
+
+      The market in ruins. Overturned stalls, broken glass, guards dragging people away. He walks through it. Blood on his temple still drying. Something moves between the stalls. A crystallized figure lurches upright — sprays shards as it swings. The ground again. His hands shaking against the cobblestones. He stands. Looks at his hands — crystal dust on both of them. He points. Two guards toward the Sealed District. Go. He turns. The soldier is there, watching him. He points at the soldier. Then toward the university.
+
+      Thread — Security Chief + Love Story intersection
+      Camera — POV through his eyes
+      Points toward — University/Burning Fields (soldier's thread), Sealed District (Security Chief's thread)
+
+featureQuestions:
+  - What triggered the riot — the decree, the plague, or something the Merchant did?
+  - Are there bodies showing signs of violence rather than crystallization — people who died fighting before the plague took them?
+  - What was the Merchant's stall here? Is there evidence of his operation?

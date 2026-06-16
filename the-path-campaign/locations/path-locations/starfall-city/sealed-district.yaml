@@ -1,0 +1,70 @@
+name: Sealed District
+tier: 3
+category: Exploration
+district: 3,3
+
+todo:
+  - Security Chief thread chimes — his worst decision (ordering this district sealed)
+  - District mechanics — what sealed means here, what players find in the streets
+  - Additional Love Story chimes beyond the opening pair
+
+connections:
+  - Sanctuary Keep + Hospital
+  - Old Gate
+
+description: |
+  A residential district that was sealed by the Security Chief's order — barricaded from the outside, residents unable to leave. The streets are narrow and winding. At the center, a large pub stands, door still open. This is where the love story begins — the nurse and soldier met here, in this pub, before everything. The crystallized dead here died confused. They knew they were trapped.
+
+impulses: Keep the doors sealed, maintain the quiet, let the barricades hold
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: The Barricaded Streets
+    type: Passive
+    description: |
+      The district's outer entrances are barricaded — furniture, carts, beams stacked against doorways and alleys from the outside. Players entering the district must find a way through or over. Once inside, movement between streets is easy. Getting back out requires the same effort.
+
+      The barricades were built by guards following the Security Chief's order. The people inside could not leave. Some of the crystallized dead are positioned at the barricades from inside — still pushing against them.
+    questions: Who built these barricades? Are any of the guards who built them still here, crystallized on the outside?
+
+  - name: The Pub
+    type: Passive
+    description: |
+      The largest building in the district — central, obvious, easy to find. The door is open. Inside — a long bar, tables, a cleared space that was used for dancing. The pub is where the nurse and soldier met. The two chimes here are the earliest memories of the love story — before the plague, before the orders, before everything.
+    questions: Is the barman still here? What was the pub called?
+
+  - name: Sneaking In
+    type: Chime
+    description: |
+      Placement — hanging in the doorframe of the pub entrance.
+
+      A street at night. The university towers over the far end, lit from within. A group of young women hurry past, laughing. She's last, slightly apart. They reach a pub door. The friends spill inside. She looks back once at the university. Then follows them in.
+
+      Thread — The Love Story (Nurse, opening)
+      Camera — Medium shot, friends in foreground, she's behind them
+      Points toward — players remember the university tower. At 1,3 it's gone.
+
+  - name: The Dance
+    type: Chime
+    description: |
+      Placement — hanging above the bar inside the pub.
+
+      A crowded pub. A soldier at the bar, watching. He watches the nurse across the room — not the crowd, her. He crosses. Says something. She laughs. They dance. He's bad at it. Push-in lands on his face. Young. Certain.
+
+      Thread — The Love Story (Soldier, opening)
+      Camera — Wide establishing, slow push-in toward his face
+      Points toward — nothing. Establishes the couple.
+
+featureQuestions:
+  - Were people already infected when the district was sealed, or did they catch it after?
+  - Is there evidence of how long people survived inside after the sealing?
+  - What is this district's real name — Sealed District is what it became, not what it was called?
+  - Did the Security Chief ever come here after giving the order?

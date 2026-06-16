@@ -1,0 +1,54 @@
+name: Sanctuary Keep + Hospital
+tier: 3
+category: Exploration
+district: 2,3
+
+todo:
+  - All features — nurse end point, Noble intersection (the Noble's gift)
+  - All chimes — nurse thread ends here
+  - District mechanics — what makes this distinct from other districts
+  - The Cleaner robot leads here — what has it built in this space over decades
+  - What the Noble gave here — resources, presence, or himself
+
+connections:
+  - University / Burning Fields
+  - Riot Market
+  - Sealed District
+
+description: |
+  @todo — Where the nurse worked and died. A keep repurposed as a hospital during the plague. The end point of her thread. The Noble gave something here. The Cleaner robot has been bringing bodies here for decades, building something careful and intentional out of the dead.
+
+impulses: '@todo'
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: '@todo — Nurse End Point'
+    type: Passive
+    description: |
+      @todo — This is where the nurse died, surrounded by the people she had saved. The emotional payoff of her thread. Design pending.
+    questions: Is there a chime here that shows her last moments? What does the ward look like — packed, or quiet by the end?
+
+  - name: '@todo — The Cleaner''s Arrangement'
+    type: Passive
+    description: |
+      The Cleaner robot (d6 result 5 in the Robot Network) leads to Sanctuary Keep — it has been bringing the dead here for decades. What has it built? What principle guides the arrangement?
+    questions: Has the Cleaner organized them by some principle — chronology, location found, something else? How many are here?
+
+  - name: '@todo — The Noble''s Gift'
+    type: Passive
+    description: |
+      @todo — The Noble passed through here. He gave something. What he gave is the evidence of his dissolution.
+    questions: Did the nurse know the Noble was helping? Did they ever meet here?
+
+featureQuestions:
+  - What was this building before it became a hospital?
+  - Did the nurse know the Noble was helping her?
+  - Is there a record here of everyone the nurse saved?

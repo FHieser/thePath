@@ -1,0 +1,105 @@
+name: Mechanic's Workshop
+tier: 3
+category: Exploration
+district: 3,1
+
+todo:
+  - The Workbench — full mechanics for the body, brass bird, and letter
+  - Osa personal beat — mechanic's notes about his robots, the mirror moment
+  - Robot interactions specific to this location
+  - All chimes for the mechanic thread
+  - The Last Axe — weapon in the Drowned Basin (design pending)
+  - Additional Lumber Yard and Charcoal Quarter features beyond what is written
+
+connections:
+  - Craftsmen's Ward
+  - Old Gate
+  - City Gates (entry point from outside)
+
+description: |
+  The outer district known informally as the Millward — three distinct areas sharing the same waterway: the old lumber yard to the east, the charcoal quarter to the west, and the mechanic's hidden workshop at the center. The whole district has been left to its own devices. Overgrowth has taken everything. The waterway still runs. The mill wheel still turns. It is the only district in the city where nature has reclaimed something — and the only district where something is still actively working.
+
+impulses: Conceal, regrow, left to its own devices
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+  - name: Mushroom Circle
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: The Green Waterways
+    type: Passive
+    description: |
+      Decades of unchecked growth have turned this district into a tangle of root, moss, and slow water. Channels cut the ground into uneven islands — dark water where cobblestones used to be, banks thick with reeds and fern. Vines pull at doorframes. Waterways shift the layout without warning, ending paths mid-step at the water's edge.
+
+      While in this district, Agility checks have disadvantage. Players moving carefully can treat this as normal terrain — but careful movement means slow movement.
+
+      When a fight breaks out here, set the combat area as disrupted by waterways — channels divide the space, forcing movement around them. Players and enemies cannot move freely across the district without crossing water.
+    questions: What grows here that doesn't grow anywhere else in the city? Does anything live in the water?
+
+  - name: The Broken Bridge
+    type: Passive + Action
+    description: |
+      A waterway separates the Millward from adjacent districts. The banks are thick with brush — nearly impassable without a crossing point. What remains of the bridge is buried under decades of growth: broken stone, collapsed planking, and thick branches woven together into something that barely holds shape. It doesn't look like a bridge anymore.
+
+      Finding it — Players must succeed on an Instinct roll to locate the crossing through the overgrowth. On a failure, the bank stretches with no obvious way through. A robot crossing it reveals the path automatically — no roll required.
+
+      Crossing it — Once found, crossing requires an Agility roll. On a failure, the player slips into the waterway below.
+
+      Forcing through — Players can push through the thick brush on the bank instead of finding the bridge. Each player who does must spend 3 resources — distributed freely across Hope, Armor Slots, Stress, or HP.
+    questions: Is there anything on the other side of the brush that makes forcing through worse than it looks?
+
+  - name: The Charcoal Chimneys
+    type: Action
+    description: |
+      A dozen stone chimneys rise above the charcoal quarter — remnants of the old kilns, scattered at irregular intervals. From a distance they all look identical.
+
+      Ember Beetles move through the district in slow, glowing clusters — jet-black with orange abdomens lit like cooling coals. Players who watch them long enough see they all travel in the same direction and disappear through a small crack near the base of one chimney.
+
+      The crack is too narrow to enter. Players can widen it by clearing loose stone until the opening is large enough to squeeze through. Inside — a sealed ecosystem of moss, fungi, and roots. A mushroom ring covers the floor.
+
+      This location gains the Mushroom Circle modifier.
+    questions: How did the fey ring form inside a sealed chimney? Is there something else living in here with the beetles?
+
+  - name: The Drowned Basin
+    type: Action
+    description: |
+      The lowest section of the lumber yard is flooded — a dark, still basin where the old loading dock sank. Through the murk, something catches the light at the bottom. A weapon, clearly old, clearly untouched.
+
+      The basin is too deep to enter at current water levels. The waterway feeding it is choked with rotted timber — a log jam that has been building for decades.
+
+      Clearing the jam — Requires sustained effort. Each player who spends an action clearing adds to progress, but each action also adds +1 to the Awakening Counter as the timber stacks are disturbed. When the jam is cleared, the basin drains to walkable depth.
+
+      @todo — design the weapon. Working title: The Last Axe.
+    questions: How did the weapon end up at the bottom? Was someone trying to hide it, or did it sink with the dock?
+
+  - name: The Watermill
+    type: Passive
+    description: |
+      The mill wheel turns. It has turned for decades without anyone asking it to. The mechanism inside clicks with ancient regularity — the only mechanical sound in the city. The mill powers the workshop and, through a network of brass gears, the robots throughout the district.
+
+      The mill is not disturbing to look at. It is disturbing that it has not stopped.
+    questions: Could the mill be stopped? What would happen to the robots if it did?
+
+  - name: The Workbench
+    type: Passive
+    description: |
+      @todo — Full mechanics pending.
+
+      Known elements — The mechanic's body is at the workbench, hunched forward. He died mid-task. A brass mechanical bird stands on the workbench, wings open, ready to fly. Beside it, a small box containing a letter: "I understand. I forgive you. Come back when it's done." — the nurse's note to the soldier, found by one of his robots while cleaning the city.
+
+      The mechanic built the bird to carry the letter. He died before programming its destination. The bird is a retrievable item. Its destination is unknown until players piece together the love story.
+
+      For Osa (robot PC) — The mechanic's notes contain observations about his robots — not schematics, watching. One entry reads: "The mill robot has been cleaning the same corner for fourteen days. I haven't told it to stop. I think it found something." He was beginning to ask the question Osa carries. He died before he got an answer.
+    questions: Did the mechanic know he was dying when he built the bird? Is there anything else on the workbench — other unfinished projects, other notes?
+
+featureQuestions:
+  - How did the mechanic keep the workshop hidden while the city was still alive?
+  - Do the robots behave differently here than in other districts — do they interact with their creator's body?
+  - Is there any sign the mechanic left deliberately — anything addressed to whoever found this place?
+  - What was the district called before the plague? Did anyone know the mechanic lived here?

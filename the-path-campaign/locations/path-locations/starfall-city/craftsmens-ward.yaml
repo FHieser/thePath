@@ -1,0 +1,43 @@
+name: Craftsmen's Ward
+tier: 3
+category: Exploration
+district: 2,1
+
+todo:
+  - All chimes — Merchant distribution layer thread
+  - Full district features — workshops, tools, goods
+  - District mechanics — what made this the outbreak origin, what players can find here
+
+connections:
+  - Council Hall
+  - Riot Market
+  - Mechanic's Workshop
+
+description: |
+  The original outbreak district. Craftsmen here were the first to handle the meteorite crystal fragments — cutting them, polishing them, setting them into goods — before anyone understood what they were working with. The workshops are intact, tools still on the benches, crystal dust still on every surface. The dead here are the earliest victims. Their plague is the oldest, most settled, most deeply embedded in the stone.
+
+impulses: Hold what was made here, spread outward, resist disturbance
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: Ground Zero
+    type: Passive
+    description: |
+      The crystal plague began here. The dead in this district are the oldest infected — their crystallization is the most complete, the most advanced. Crystal growth covers every surface in layers rather than the thin coating seen elsewhere.
+
+      The Awakening Counter starts at 1 in this district instead of 0. Players who examine the workshops find the evidence: half-finished jewelry with crystal inlays, a craftsman's journal documenting the material's properties before the illness began, meteorite fragment shavings still on the workbench.
+    questions: What were the craftsmen making with the crystal? Were there orders from the castle — goods commissioned by the king?
+
+featureQuestions:
+  - Who first noticed something was wrong? Did they warn anyone?
+  - Are there records here of where the crystal fragments came from — who brought them into the city?
+  - What goods were made here and sold into the rest of the city, spreading contact before the plague was understood?
+  - Is the Merchant's operation visible here — ledgers, orders, evidence of bulk purchasing?

@@ -1,0 +1,48 @@
+name: Old Gate
+tier: 3
+category: Exploration
+district: 3,2
+
+todo:
+  - All features — soldier leaving thread, Security Chief border control thread
+  - All chimes
+  - District mechanics — what does a sealed city gate look like
+  - The soldier's last moment before fighting toward the castle
+
+connections:
+  - Riot Market
+  - Mechanic's Workshop
+  - Sealed District
+  - City Gates (entry point from outside)
+
+description: |
+  @todo — The gate through which the soldier left. The point where the city sealed itself. The Security Chief ordered it sealed. This is where departure and containment meet — the last place people could choose to leave, before that choice was taken away.
+
+impulses: '@todo'
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: '@todo — The Gate'
+    type: Passive
+    description: |
+      @todo — The city gate. Sealed on the Security Chief's order. Someone is crystallized here in the act of sealing it — or refusing to.
+    questions: Who sealed the gate? Did anyone try to leave after it was sealed?
+
+  - name: '@todo — The Soldier''s Departure'
+    type: Passive
+    description: |
+      @todo — The soldier left through this gate. His last moment with the city before fighting toward the castle. A chime here.
+    questions: Did anyone try to stop him? Did he look back?
+
+featureQuestions:
+  - Is the gate still sealed? Can players open it?
+  - What is on the other side — does the city wall still stand?
+  - Were people trying to get in or get out when it was sealed?

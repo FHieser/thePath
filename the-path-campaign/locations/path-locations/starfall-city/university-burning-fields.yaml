@@ -1,0 +1,73 @@
+name: University / Burning Fields
+tier: 3
+category: Exploration
+district: 1,3
+
+todo:
+  - The Burning chime — soldier lighting the fire, Noble watching from opposite sides
+  - Additional nurse thread chimes (her parents, the work she inherited)
+  - Noble thread chimes — his dissolution begins here
+  - Full district mechanics — what is findable in the ash
+
+connections:
+  - Scaffold Square
+  - Sanctuary Keep + Hospital
+
+description: |
+  The university is gone. Where it stood is an expanse of ash and warm crystal fragments — the only district in the city where a building has been entirely destroyed. The crystal in the ash still glows faintly with residual heat from a fire that ended decades ago. Remnants of wall foundations outline where the corridors and ward rooms were. A bell that once marked the end of the academic day still hangs from a surviving stone arch — the only structure standing.
+
+impulses: Let the ash settle, hold the memory of what burned, resist being excavated
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: Ash Fields
+    type: Passive
+    description: |
+      The ground is ash over crystal fragments — warm underfoot in places where the fire burned longest. Moving through it silently is nearly impossible. Every step produces a soft crunch.
+
+      Players moving through the ash add +1 to the Awakening Counter for every action that disturbs the ground significantly (digging, running, combat). The ash conceals crystal shards and partially buried crystallized remains.
+    questions: What objects survived the fire? Are there fragments of records, equipment, or personal effects preserved in the ash?
+
+  - name: The Bell
+    type: Passive
+    description: |
+      A stone arch still stands at the edge of the site — the university's main entrance gate, surviving because it was built from solid stone. The bell hangs from it, intact. It sounds when wind moves through this district — a low, resonant tone that carries across the surrounding streets.
+
+      The bell's sound appears in both chimes set in this district. Players who have heard the chimes will recognize it.
+    questions: Does the bell ring at any other time? Can players make it ring deliberately — and what would that wake?
+
+  - name: The Introduction
+    type: Chime
+    description: |
+      Placement — hanging in the stone arch that marked the main entrance corridor.
+
+      A wide stone corridor, tall windows, afternoon light across the floors. Her parents stand together in a doorway — white coats, unhurried, at home here. The soldier fills the corridor awkwardly. Too much uniform, not enough books. Her father extends a hand. The soldier takes it carefully, like something breakable. A bell rings somewhere above. The corridor fills with movement — the day ending. She catches his eye over her father's shoulder.
+
+      Thread — The Love Story (Nurse)
+      Camera — Medium shot, parents in the foreground, she watches from behind
+      Points toward — next Love Story chime
+
+  - name: The Blue Light
+    type: Chime
+    description: |
+      Placement — hanging near where the ward entrance was, same arch as The Introduction.
+
+      A ward room. The parents stand either side of a bed, curtain half-drawn. They gesture toward something behind the curtain. A blue shimmer leaks through the fabric. The Noble steps closer. Looks. Steps back. The parents watch him calmly. This is already their normal. A crystal-encrusted hand reaches through the curtain and draws it closed. The bell rings.
+
+      Thread — The Noble + Nurse intersection
+      Camera — Slow pull-back, he fills the frame at first, gradually gets smaller
+      Points toward — Noble's thread, his dissolution begins here
+
+featureQuestions:
+  - Are the nurse's parents recognizable anywhere in the ash, or were they claimed by the fire entirely?
+  - What was the university's specialty — medicine, governance, natural philosophy?
+  - Is there any section of the building that did not burn?
+  - Did anyone survive the fire? Is there evidence of escape attempts?

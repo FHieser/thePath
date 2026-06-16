@@ -1,0 +1,61 @@
+name: Scaffold Square
+tier: 3
+category: Exploration
+district: 1,2
+
+todo:
+  - Love Story intersection chime — soldier receives orders here
+  - Full district mechanics
+  - Additional Security Chief chimes
+
+connections:
+  - Council Hall
+  - University / Burning Fields
+  - Riot Market
+
+description: |
+  A large open plaza dominated by a raised scaffold with wide stone steps. Public executions, public announcements, public humiliations — everything official happened here. The scaffold is intact, the steps cracked but solid. From the top, the Riot Market is visible below to the south. The crowd is still here, frozen in the moment the Security Chief read the decree — crystallized faces turned upward, some mid-throw, some mid-flee.
+
+impulses: Hold the crowd in place, amplify what happens here, offer the view
+
+difficulty: 16
+
+modifiers:
+  - name: Crystal-Plague
+  - name: Mist-Touched
+  - name: Unstable
+
+potentialAdversaries: Crystal Zombie, Crystal-Fused Guard, Trap Crystal
+
+features:
+  - name: The Scaffold
+    type: Passive
+    description: |
+      The scaffold stands at the center of the square — raised platform on stone supports, wide enough for a crowd to watch. The decree podium is still there, papers crystallized in place.
+
+      The square's crystallized crowd creates difficult terrain throughout — bodies frozen mid-motion at irregular angles. Players moving quickly through the crowd make Agility checks with disadvantage.
+    questions: What was the last execution before the plague? Are any of the frozen crowd in positions of violence — mid-attack, mid-flee?
+
+  - name: Sightline to Riot Market
+    type: Passive
+    description: |
+      From the top of the scaffold, the Riot Market (2,2) is clearly visible to the south. Players standing here can see the scale of the market's destruction before entering.
+
+      If the Riot Market's Wake level is 2+, the glow from that district is visible from here.
+    questions: What else is visible from this height? Can players see the Council Hall tower from the scaffold?
+
+  - name: The Reading
+    type: Chime
+    description: |
+      Placement — hanging on the scaffold post.
+
+      The scaffold steps. A crowd below, packed tight. He reads from the decree. His voice steady. The crowd is not. Something connects with his head. He stops reading. His hand goes up. Comes away wet with blood. Guards rushing in from the sides, batons raised. Beyond them, through the chaos — the market. Stalls overturning. Already spreading.
+
+      Thread — Security Chief
+      Camera — POV through his eyes
+      Points toward — Riot Market (the market visible through the chaos)
+
+featureQuestions:
+  - Who was on the scaffold when the plague reached this square?
+  - Is there evidence of what the crowd was protesting before the decree?
+  - Does the scaffold creak when weight is placed on it?
