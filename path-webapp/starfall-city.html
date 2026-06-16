@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starfall City - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* ── City Map Grid ──────────────────────────────────────────────────── */
+
+        .city-map {
+            display: grid;
+            grid-template-columns: 4.5rem repeat(3, 1fr);
+            gap: 0.6rem;
+            align-items: start;
+            margin-top: 1rem;
+        }
+
+        .map-row-label {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 0.6rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary-blue);
+            opacity: 0.9;
+            min-height: 2rem;
+        }
+
+        .map-anchor {
+            grid-column: 2 / 5;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.4rem 1rem;
+            border-radius: 0.15rem;
+            letter-spacing: 0.04em;
+        }
+
+        .map-anchor.sealed {
+            border: 0.1rem dashed rgba(220, 100, 100, 0.5);
+            color: rgba(240, 192, 128, 0.8);
+        }
+
+        .map-anchor.gates {
+            border: 0.1rem dashed rgba(100, 160, 100, 0.5);
+            color: rgba(100, 180, 100, 0.8);
+        }
+
+        .district-cell {
+            background: rgba(0, 0, 0, 0.2);
+            border: 0.15rem solid var(--border-color);
+            border-radius: 0.2rem;
+            padding: 0.75rem;
+            text-decoration: none;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            min-height: 11rem;
+            transition: all 0.2s;
+        }
+
+        .district-cell:hover {
+            background: rgba(0, 0, 0, 0.4);
+            border-color: var(--accent-amber);
+            transform: translateY(-2px);
+        }
+
+        .district-cell.has-todo {
+            border-style: dashed;
+            opacity: 0.85;
+        }
+
+        .district-cell.empty {
+            opacity: 0.25;
+            border-style: dashed;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+
+        .district-coord {
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            letter-spacing: 0.06em;
+            margin-bottom: 0.2rem;
+        }
+
+        .district-name {
+            color: var(--accent-amber);
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            line-height: 1.25;
+        }
+
+        .district-desc {
+            font-size: 0.8rem;
+            font-style: italic;
+            opacity: 0.8;
+            flex-grow: 1;
+            margin-bottom: 0.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .district-modifiers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .district-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.72rem;
+            opacity: 0.65;
+            border-top: 0.1rem solid rgba(255, 255, 255, 0.07);
+            padding-top: 0.3rem;
+            margin-top: auto;
+        }
+
+        .wip-badge {
+            background: rgba(196, 69, 54, 0.5);
+            color: var(--accent-amber);
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.1rem;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* modifier tag colours for city-specific modifiers */
+        .modifier-tag.crystal-plague { background: #6b2d5c; }
+        .modifier-tag.mist-touched   { background: #3d4a5c; }
+        .modifier-tag.mushroom-circle { background: #4a3d5c; }
+
+        /* ── Section Divider ─────────────────────────────────────────────────── */
+
+        .section-divider {
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 0.2rem solid var(--primary-blue);
+        }
+
+        .section-divider h2 {
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+
+        /* ── Mechanics ───────────────────────────────────────────────────────── */
+
+        .mechanics-block {
+            background: rgba(0, 0, 0, 0.2);
+            border: 0.15rem solid var(--border-color);
+            border-radius: 0.2rem;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .mechanics-title {
+            color: var(--accent-amber);
+            font-size: 1.05rem;
+            margin: 0 0 0.5rem;
+        }
+
+        .mechanics-subtitle {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 1rem 0 0.4rem;
+            opacity: 0.8;
+        }
+
+        .mechanics-intro {
+            font-size: 0.88rem;
+            font-style: italic;
+            opacity: 0.85;
+            margin-bottom: 0.75rem;
+        }
+
+        .mechanics-note {
+            font-size: 0.8rem;
+            opacity: 0.65;
+            margin-top: 0.75rem;
+            font-style: italic;
+        }
+
+        .mechanics-rules {
+            margin: 0.25rem 0 0 1.25rem;
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        .mechanics-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+
+        .mechanics-table th {
+            text-align: left;
+            padding: 0.3rem 0.6rem;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--primary-blue);
+            border-bottom: 0.1rem solid rgba(17, 68, 102, 0.5);
+        }
+
+        .mechanics-table td {
+            padding: 0.4rem 0.6rem;
+            vertical-align: top;
+            border-bottom: 0.1rem solid rgba(255, 255, 255, 0.05);
+            line-height: 1.45;
+        }
+
+        .wake-level {
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+            width: 3rem;
+        }
+
+        .wake-0 { color: rgba(180, 220, 180, 0.8); }
+        .wake-1 { color: rgba(240, 210, 120, 0.9); }
+        .wake-2 { color: rgba(230, 140, 80, 0.95); }
+        .wake-3 { color: rgba(220, 80, 80, 1); }
+
+        .wake-state {
+            font-weight: 600;
+            width: 8rem;
+        }
+
+        .trigger-name {
+            font-weight: 600;
+            width: 40%;
+        }
+
+        .trigger-note {
+            font-weight: 400;
+            opacity: 0.65;
+            font-size: 0.8rem;
+        }
+
+        .trigger-effect {
+            opacity: 0.85;
+        }
+
+        .rev-state { font-weight: 600; width: 8rem; }
+        .rev-possible { font-weight: 700; width: 5rem; }
+        .rev-possible.yes { color: var(--success-green); }
+        .rev-possible.no  { color: var(--danger-red); }
+
+        .robot-roll {
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+            width: 2.5rem;
+            color: var(--accent-amber);
+        }
+
+        .robot-name { font-weight: 600; width: 8rem; }
+        .robot-desc { opacity: 0.8; font-style: italic; }
+        .robot-mechanic { font-size: 0.82rem; opacity: 0.85; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="index.html">← Back to The Path</a>
+            </nav>
+            <h1>Starfall City</h1>
+            <p class="subtitle">The fallen capital — 9 districts, 6 stories, one crystal plague</p>
+        </header>
+
+        <main>
+            <div class="section-divider"><h2>City Districts</h2></div>
+            <div id="city-grid">
+                <div class="loading">Loading districts...</div>
+            </div>
+
+            <div class="section-divider" style="margin-top: 2.5rem;"><h2>Mechanics</h2></div>
+            <div id="mechanics-container">
+                <div class="loading">Loading mechanics...</div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/starfall-city.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+title: The Starfall City — Mechanics
+subtitle: >
+  The capital of the Starfall Kingdom is unlike any other location on The Path.
+  The rules that keep players alive elsewhere will kill them here. The mist that
+  corrupts everywhere else is the only thing holding the city together.
+
+city_grid:
+  row_labels:
+    - id: inner
+      label: Inner
+      description: Power, judgment, knowledge. Where decisions were made that destroyed everything.
+    - id: civic
+      label: Civic
+      description: Labor, trade, faith. Where ordinary people lived and died.
+    - id: outer
+      label: Outer
+      description: Entry, transition, containment. Where the city met the world — and sealed itself off from it.
+
+wake_system:
+  intro: >
+    Each district tracks its own Wake level — how disturbed the crystallized dead are.
+    Wake is per district, not city-wide.
+  levels:
+    - level: 0
+      state: Dormant
+      description: Crystallized dead sleep. Mist holds. Safe to move through.
+    - level: 1
+      state: Stirring
+      description: A few wake nearby. Avoidable — but combat escalates.
+    - level: 2
+      state: District Active
+      description: All dead in the district animate. The whole district is hostile.
+    - level: 3
+      state: The Warden
+      description: A massive accumulated crystal entity has arrived.
+  escalation:
+    wake_0_to_1:
+      label: "Wake 0 → Wake 1 triggered by:"
+      triggers:
+        - name: Sacred Flame brought into the district
+          effect: Immediately Wake 1. Subsequent disturbances escalate at double speed.
+        - name: Harvesting crystals from a corpse
+          effect: +3 to counter
+        - name: Physical disturbance
+          note: Moving bodies, violent interaction
+          effect: +1 to counter (GM discretion)
+        - name: GM spends 1 Fear
+          note: Wall collapse, loud noise, ground tremor
+          effect: +1 to counter
+    subsequent:
+      - label: "Wake 1 → Wake 2"
+        trigger: Combat at Wake 1
+        effect: All dead in the district activate simultaneously.
+      - label: "Wake 2 → Wake 3"
+        trigger: Combat at Wake 2
+        effect: The Warden arrives.
+  reversibility:
+    - state: "Wake 1 → Wake 0"
+      possible: true
+      note: Mist application, special items, or GM-approved pacification.
+    - state: Wake 2
+      possible: false
+      note: Permanent for this Path configuration. Cannot go lower.
+    - state: Wake 3
+      possible: false
+      note: The Warden is present. When it leaves or is driven off, the district returns to Wake 2.
+    - state: Path reset
+      possible: true
+      note: When the Path changes between sessions, all districts reset to Wake 0.
+
+warden:
+  description: >
+    A mass of crystallized dead, fused together into something that should not move.
+    Dozens of bodies compressed into one terrible entity, still glowing, still cracking, still coming.
+  rules:
+    - Arrives when a district reaches Wake 3.
+    - Crosses district lines in pursuit of players — it is not contained by boundaries.
+    - "Lingers — if players flee and the Warden loses them, it remains in the last district it occupied, permanently raising that district's Wake floor."
+    - Path reset sends the Warden back to dormancy with everything else.
+    - A district the Warden has claimed never returns below Wake 2 while the Warden is present.
+  origin: >
+    The Security Chief — transformed when he fell from the Council Hall tower (1,1).
+    The Warden first emerges at the base of that tower.
+  note: >
+    The Warden is not a boss to be defeated in a single encounter. It is a consequence that follows.
+    Players who complete the Security Chief's thread understand what they are truly fighting.
+
+robots:
+  intro: >
+    When players enter a district, roll a d10. On an 8, 9, or 10 — a robot is present.
+    Roll a d6 to determine which type.
+  note: >
+    All robots are neutral. They do not attack. They do not engage in combat.
+    They do not trigger the Wake counter. Robots avoid Wake 2+ districts when possible.
+    A robot changing course mid-route is an early warning.
+  types:
+    - roll: 1
+      name: Broken
+      description: Slumped against a wall or dragging a malfunctioning limb. Still trying.
+      mechanic: Can be carried to the Workshop (3,1) and repaired. Returns as a random functional type — reroll d6, reroll 1s.
+    - roll: 2
+      name: The Tracker
+      description: Moves with quiet purpose, always facing one direction.
+      mechanic: Walks toward the Warden's current district. If the Warden is in this district — stops and rotates slowly in place. Follow it to find the Warden. Watch it to avoid one.
+    - roll: 3
+      name: The Carrier
+      description: Wide flat chassis, built to haul. Moves slowly but never stops.
+      mechanic: Players can load it with items. Carries them safely back to the Workshop. Can be redirected to any district instead. Cannot carry living creatures.
+    - roll: 4
+      name: The Medic
+      description: Gentle movements. Reaches toward the injured out of old habit.
+      mechanic: "Once per encounter: remove 1 Stress OR restore 1 HP from one player. Not both."
+    - roll: 5
+      name: The Cleaner
+      description: Moves bodies with careful, practiced hands. Has been doing this for decades.
+      mechanic: Cosmetic only. Follow it — it leads to the Sanctuary Keep (2,3) and the pile of dead it has been building since the city fell.
+    - roll: 6
+      name: The Builder
+      description: Carries tools. Assesses structures with slow mechanical attention.
+      mechanic: "Players can direct it once: seal a doorway, reinforce a barricade, or collapse a passage. The change persists for this Path configuration."
+
+chimes:
+  description: >
+    The plague crystal absorbs everything — flesh, air, memory. Significant moments leave impressions
+    that condense over decades into crystal wind chimes, growing naturally in doorways and passages.
+  rules:
+    - GM triggers a chime when players should learn something — a tone drifts through the district.
+    - Players find the source and touch it to play the memory.
+    - Chimes are not fragile. Can be returned to and replayed.
+    - Not tied to specific characters — any emotionally significant moment can leave one.
+  note: The primary way players learn the stories of the city.
+
+todo:
+  - The inverted flame/mist rules — how Sacred Flame awakens vs. mist protects, player implications
+  - The Brass Bird — investigation thread, how players follow it through the city
+  - The Merchant's Trail — treasure hunt chain across districts
+  - City-wide tone and emotional notes
+  - Individual district mechanics — developed per location
