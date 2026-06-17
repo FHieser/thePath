@@ -6,6 +6,12 @@ introduction: |
 
   Creating a path requires three essential elements: location cards to represent each environment, a grid to organize the journey, and a placement method to populate the grid. The grid provides a coordinate system that maps both the current path and tracks stable locations between sessions. Location cards are the building blocks—each one represents a specific environment with its own mechanics and narrative hooks. The placement method determines how these cards get onto the grid. Together, these elements create a flexible system that supports both structured storytelling and emergent exploration.
 
+resources:
+  description: |
+    A resource is any one of the following: a point of Hope, a slot of Stress, a slot of Armor, or a point of HP. When a mechanic asks players to "spend X resources," each player marks one of these slots to contribute — any combination counts as 1 resource per slot marked.
+
+    Resources are personal — each player chooses what they spend from their own character sheet. A group asked to collectively spend 5 resources distributes that cost however the players agree.
+
 pathLocations:
   description: |
     Each location in a Path is represented by a card. These cards can be physical tarot cards, simple pieces of paper, or any token system that works for your table. It's recommended to keep the symbols on these cards abstract, as players shouldn't immediately know which location they represent. This mystery encourages players to track their discoveries themselves, increasing engagement and maintaining the campaign's sense of exploration.

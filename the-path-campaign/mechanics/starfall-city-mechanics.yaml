@@ -87,8 +87,11 @@ warden:
 
 robots:
   intro: >
-    When players enter a district, roll a d10. On an 8, 9, or 10 — a robot is present.
+    When players enter a district, roll a d10. On a 10 — a robot is present.
     Roll a d6 to determine which type.
+  upgrade_note: >
+    The Watermill in the Mechanic's Workshop (3,1) can be upgraded to increase this chance.
+    First upgrade: robot present on 9 or 10. Second upgrade: robot present on 8, 9, or 10.
   note: >
     All robots are neutral. They do not attack. They do not engage in combat.
     They do not trigger the Wake counter. Robots avoid Wake 2+ districts when possible.

@@ -18,17 +18,19 @@ She never knew why he really left.
 ---
 
 ### The Mechanic
-**Core:** Fear as creation. Helped from a distance. Died mid-task.
+**Core:** Fear as creation. Helped from a distance. Made peace with it.
 
 Always a loner — the plague didn't make him one, it just confirmed it. Too scared to face the horror directly, he built brass clockwork robots and sent them out to do what he couldn't. The people of the city knew *someone* was making them. They didn't know who.
 
-He finished a watermill to power the robots indefinitely — his greatest work. The robots are still running. Still cleaning the streets of a dead city, still carrying out their last instructions. Players who follow one will be led back to his workshop.
+When he felt the crystals beginning to take him, he didn't run. He finished the watermill — his greatest work, the thing that would keep the robots running indefinitely after he was gone. Then he sat down at the workbench, wrote a letter, and waited.
 
-He died hunched over his workbench. Mid-task. Quietly.
+The robots are still running. Still cleaning the streets of a dead city, still carrying out their last instructions. Players who follow one will be led back to his workshop.
 
-**What's on the workbench:** A brass mechanical bird, wings open, ready to fly. Beside it, a half-written letter in a small box — found by one of his robots while cleaning the city. Something in the letter touched him deeply. He built the bird to carry it to its destination. He died before he could program where it should go.
+He is still at the bench. Crystallized, but upright. He chose not to leave.
 
-*The letter, the bird, and its unknown destination are a thread players can follow through the city.*
+**What's on the workbench:** His own farewell letter — an Abschiedsbrief. And beside it, in a small box found by one of his robots while cleaning the city, someone else's letter. Something in it touched him deeply. He built a brass mechanical bird to carry it to its destination. He died not knowing where that destination was.
+
+*The two letters, the bird, and what connects them are the thread.*
 
 ---
 

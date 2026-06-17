@@ -3,14 +3,6 @@ tier: 3
 category: Exploration
 district: 3,1
 
-todo:
-  - The Workbench — full mechanics for the body, brass bird, and letter
-  - Osa personal beat — mechanic's notes about his robots, the mirror moment
-  - Robot interactions specific to this location
-  - All chimes for the mechanic thread
-  - The Last Axe — weapon in the Drowned Basin (design pending)
-  - Additional Lumber Yard and Charcoal Quarter features beyond what is written
-
 connections:
   - Craftsmen's Ward
   - Old Gate
@@ -61,42 +53,47 @@ features:
 
       Ember Beetles move through the district in slow, glowing clusters — jet-black with orange abdomens lit like cooling coals. Players who watch them long enough see they all travel in the same direction and disappear through a small crack near the base of one chimney.
 
-      The crack is too narrow to enter. Players can widen it by clearing loose stone until the opening is large enough to squeeze through. Inside — a sealed ecosystem of moss, fungi, and roots. A mushroom ring covers the floor.
+      The crack is too narrow to enter. Players can widen it by spending 5 resources to clear loose stone until the opening is large enough to squeeze through. Inside — a sealed ecosystem of moss, fungi, and roots. A mushroom ring covers the floor.
 
       This location gains the Mushroom Circle modifier.
     questions: How did the fey ring form inside a sealed chimney? Is there something else living in here with the beetles?
 
-  - name: The Drowned Basin
+  - name: The Watermill
+    type: Passive + Action
+    description: |
+      The mill wheel turns — barely. One slow, creaking rotation every several minutes. The mechanism inside clicks with ancient regularity — the only mechanical sound in the city. The mill powers the workshop and, through a network of brass gears, every robot still running in the city. The mill is not disturbing to look at. It is disturbing that it has not stopped.
+
+      The watermill is visible from the workshop, but the path between them is blocked by decades of collapsed lumber — planks, beams, and rotted timber from the yard. At the lowest point, the blockage has dammed the waterway entirely. The lumber yard behind it is flooded — a still, dark basin where the old loading dock went under. Something catches the light at the bottom. Clearly old. Clearly untouched.
+
+      Clearing the Blockage — Requires sustained effort. Players spend resources to clear timber and redirect the waterway.
+
+      First upgrade (5 resources) — Enough cleared to redirect the waterway. The mill speeds up. The basin drains as the dam breaks. Something is visible at the bottom — old, untouched, catching the light. Robot encounter chance increases: present on a 9 or 10.
+
+      Second upgrade (7 more resources) — Full path to the mill cleared. The wheel turns properly for the first time in decades. Robot encounter chance increases again: present on an 8, 9, or 10.
+
+      Resources are distributed freely across the group — each player marks whichever combination of Hope, Armor Slots, Stress, or HP they choose.
+    questions: Could the mill be stopped entirely? What would happen to the robots if it did? What is at the bottom of the basin — did it sink with the dock, or was it placed there?
+
+  - name: The Workshop
     type: Action
     description: |
-      The lowest section of the lumber yard is flooded — a dark, still basin where the old loading dock sank. Through the murk, something catches the light at the bottom. A weapon, clearly old, clearly untouched.
+      Before the door: ticking. The watermill's mechanism feeds in here — the sounds of it fill the room.
 
-      The basin is too deep to enter at current water levels. The waterway feeding it is choked with rotted timber — a log jam that has been building for decades.
+      The room is clean.
 
-      Clearing the jam — Requires sustained effort. Each player who spends an action clearing adds to progress, but each action also adds +1 to the Awakening Counter as the timber stacks are disturbed. When the jam is cleared, the basin drains to walkable depth.
+      A large table holds the skeleton of a robot. Against one wall, a mechanism fitted with a mounting in the rough shape of a humanoid — a finished robot stands inside it. Several robots are lined at the wall, waiting their turn. From time to time one steps in to recharge.
 
-      @todo — design the weapon. Working title: The Last Axe.
-    questions: How did the weapon end up at the bottom? Was someone trying to hide it, or did it sink with the dock?
+      In the corner near the door, a built robot stands still. Touch it — it springs to life and begins cleaning.
 
-  - name: The Watermill
-    type: Passive
-    description: |
-      The mill wheel turns. It has turned for decades without anyone asking it to. The mechanism inside clicks with ancient regularity — the only mechanical sound in the city. The mill powers the workshop and, through a network of brass gears, the robots throughout the district.
+      Players can find a notebook with schematics for building a robot.
 
-      The mill is not disturbing to look at. It is disturbing that it has not stopped.
-    questions: Could the mill be stopped? What would happen to the robots if it did?
+      In the far corner, a workbench. He is here. Vial in hand, looks like sleeping — young face encased in crystal. A blanket across his back, as if someone wanted to let him sleep.
 
-  - name: The Workbench
-    type: Passive
-    description: |
-      @todo — Full mechanics pending.
+      On the table in front of him, a letter:
 
-      Known elements — The mechanic's body is at the workbench, hunched forward. He died mid-task. A brass mechanical bird stands on the workbench, wings open, ready to fly. Beside it, a small box containing a letter: "I understand. I forgive you. Come back when it's done." — the nurse's note to the soldier, found by one of his robots while cleaning the city.
-
-      The mechanic built the bird to carry the letter. He died before programming its destination. The bird is a retrievable item. Its destination is unknown until players piece together the love story.
-
-      For Osa (robot PC) — The mechanic's notes contain observations about his robots — not schematics, watching. One entry reads: "The mill robot has been cleaning the same corner for fourteen days. I haven't told it to stop. I think it found something." He was beginning to ask the question Osa carries. He died before he got an answer.
-    questions: Did the mechanic know he was dying when he built the bird? Is there anything else on the workbench — other unfinished projects, other notes?
+      "I am letting the bots run via the Watermill mechanism in hopes they can still help people after I am gone. I am sorry for not being able to help in another way, but I want to think that this was useful in its own way."
+    todo:
+      - Something buildable here using the robot schematics — city-related utility item or tool
 
 featureQuestions:
   - How did the mechanic keep the workshop hidden while the city was still alive?
