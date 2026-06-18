@@ -26,7 +26,7 @@
 | **Nurse** | Medium shot, someone always in the foreground |
 | **Mechanic** | Through a narrow aperture — keyhole, crack, window |
 | **Noble** | Slow pull-back — gets smaller in frame each time |
-| **Merchant** | Shadow only — interactions visible, never fully seen |
+| **Merchant** | Dark paper cutout puppet show — silhouette against a lit backdrop. Tophat, beard. Gestures larger than life. |
 | **Security Chief** | POV — through his eyes |
 
 ---
@@ -251,11 +251,11 @@ Each thread is a chain of chimes (and in some cases physical evidence) that ends
 
 ### 2,1 — Craftsmen's Ward
 *Threads: Merchant (distribution layer)*
-> Chimes to be written
 
 **Location notes:**
 - Likely the original outbreak point — craftsmen handled meteorite crystal fragments first, working them into goods before anyone understood what they were
 - The plague spread outward from here into the rest of the city
+- Contains the Merchant's original shop — collapsed, but identifiable by the counter inside. Players arrive here from the Riot Market sign.
 
 ### 2,2 — Riot Market
 *Threads: Security Chief + Love Story (intersection — the orders), Merchant (official front)*
@@ -263,6 +263,25 @@ Each thread is a chain of chimes (and in some cases physical evidence) that ends
 **Location notes:**
 - Market completely destroyed — overturned stalls, broken glass
 - Open plaza visible from Scaffold Square (1,2)
+- A large shield mounted to a stall frame — painted "Gems, Gems, Gems" with "Supplies, Supplies, Supplies" graffitied over the top. The original text still legible underneath. Points toward Craftsmen's Ward (2,1).
+
+---
+
+### The First Find
+**District:** 2,2 — Riot Market
+**Thread:** The Merchant (opening)
+**Characters:** The Merchant
+**Camera:** Dark paper cutout puppet show — silhouette against a lit backdrop. Tophat, beard. Gestures larger than life.
+
+- A figure with a tophat and beard behind the counter. Slumped. No customers.
+- A streak of light tears across the backdrop. Crash. The figure jolts upright.
+- He walks to the edge of the frame. Stops. Looks down.
+- He reaches. Returns with something cupped in both hands — it glows from within.
+- Back at the shop. Customers crowding the counter. Glow all over. He is happy.
+
+**Points toward:** Craftsmen's Ward (2,1) — the original shop
+**Pointer:** The sign — "Gems, Gems, Gems" painted, "Supplies, Supplies, Supplies" graffitied over. The arrow on the sign points toward Craftsmen's Ward.
+**Placement:** Hanging from the stall frame, beside the sign
 
 ---
 

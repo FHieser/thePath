@@ -56,11 +56,21 @@ He never went back to find her. His injuries were too severe. He died not knowin
 ### The Merchant
 **Core:** Took everything. Died alone on a mountain of gold.
 
-Where the nurse gave herself entirely to others, the merchant took entirely from them. Sold medicine, food, passage — anything people needed, at any price the desperate would pay. Not cruel in the cartoonish sense. Practical. Transactional. Told himself he was providing a service.
+He moved fast. When the meteorite fell, he understood before anyone else that the crystals were valuable — not as medicine or material, but as novelty, as beauty, as proof you had been close to something extraordinary. His gang harvested and sold them before the plague connection was understood. First money. Clean money, or so he told himself.
 
-Died alone surrounded by everything he'd accumulated. No one came. No one mourned him.
+When the crystal trade was banned, he didn't miss a step. He had the networks. He changed the product. Medicine, food, passage out of the city — anything desperate people needed at any price the desperate would pay. Not cruel in the cartoonish sense. Practical. Transactional. He told himself he was providing a service.
 
-*Details to be developed.*
+When the quarantine decree threatened to close his operation, he didn't argue with authority. He sent a man to the scaffold square and had him throw a stone. One stone. The crowd did the rest. The riot destroyed official order, the market filled the vacuum, and the Merchant operated freely in the chaos he had manufactured.
+
+As the plague worsened and resources thinned, the gang became a liability. He began removing loose ends. Members disappeared across the city — one district, then another. Each one knew something. None of them got to tell it.
+
+He died alone, surrounded by everything he had accumulated. No one came. No one mourned him.
+
+**Connection to the Mechanic:** The workshop sits adjacent to Craftsmen's Ward — the gang's distribution hub. The Mechanic watched the operation from his workshop windows, through cracks and keyholes. He saw the stone thrown. He saw the bodies disappear. He sent his robots into those streets to clean. He never intervened. He never told anyone. He just watched, and built, and sent the robots out again.
+
+**Thread structure:** A scavenger hunt through the city — meeting places, evidence of the gang's work, then the bodies where the Merchant cleaned house. The vault is at the end. It can only be found by players who have seen everything.
+
+**What's in the vault:** *@todo — to be designed.*
 
 ---
 

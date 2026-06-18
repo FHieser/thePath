@@ -4,6 +4,34 @@ subtitle: >
   The rules that keep players alive elsewhere will kill them here. The mist that
   corrupts everywhere else is the only thing holding the city together.
 
+path_anchor:
+  intro: >
+    Every other location swallowed by the mist drifts — Unstable, here one session and gone the
+    next. Starfall City does not. It has wedged itself into the Path as a permanent fixture and
+    will not leave, and for as long as it stays it drains the Sacred Flames of the locations near
+    it on the grid — reaching, eventually, the Village itself.
+  the_urgency:
+    description: >
+      This is the players' reason to go in and their clock to get out. The city is bleeding the
+      network dry. Left alone, it starves the Village's flame.
+    effects:
+      - The city is Stable and cannot be cleared by a normal Path reset.
+      - Each session it remains, flame-bearing locations on the current Path lose Flame Essence to it (GM sets the rate to the campaign's pace).
+      - The drain reaches the Village last and worst — the finale's stakes are home, not abstract.
+  the_cause:
+    description: >
+      The why the players must uncover. The king's second bargain still runs in the Deepest
+      Chamber beneath the castle — a failing containment that anchors the dead kingdom to the
+      living world and feeds on nearby flame to hold itself together. The city is stuck because
+      the king is still paying, and the price is now being charged to everyone around him.
+    discovery: >
+      Pieced together from the Lord's Final Log and what waits behind the castle door. Learning
+      the cause is the same investigation as learning how to get in — both end at the Deepest Chamber.
+  resolution: >
+    Reaching the Deepest Chamber lets players confront the anchor itself — end the king's
+    containment, reinforce it, or strike a new bargain. Whatever they choose resolves the city's
+    grip on the Path, and decides what the drain finally costs the Village.
+
 city_grid:
   row_labels:
     - id: inner
@@ -122,6 +150,64 @@ robots:
       description: Carries tools. Assesses structures with slow mechanical attention.
       mechanic: "Players can direct it once: seal a doorway, reinforce a barricade, or collapse a passage. The change persists for this Path configuration."
 
+castle_access:
+  intro: >
+    The Lord's Castle sits above the grid, sealed. The crystallized Soldier is fused across
+    the door he barred with his own body — "Do not open this door again. This shall be his end."
+    There is no lock to pick and no wall to climb. The only way through is to cut the Soldier's
+    crystal seal away, and the only tool that can do that quietly must be built from the work
+    the dead left behind.
+  the_drill:
+    description: >
+      Players assemble a breaching drill from three components, each the unfinished last labor
+      of one of the city's dead. None alone is enough. Together they cut through crystal without
+      shattering it — and without waking the entire castle.
+    components:
+      - name: The Last Engine
+        role: Power
+        source: Mechanic's Workshop (3,1)
+        thread: mechanic
+        description: >
+          The Mechanic's final build — a compact self-winding clockwork core meant to replace
+          the watermill's heart, left unfinished on his bench. The only power source left in the
+          kingdom that still turns.
+      - name: The Cutting Head
+        role: Bit
+        source: The Merchant's trail (early — original shop, Craftsmen's Ward 2,1)
+        thread: merchant
+        description: >
+          A diamond-hard harvest head from the Merchant's gang, built to cut clean crystal from
+          corpses without shattering it. Shattered crystal is worthless — and wakes the dead.
+          Found partway down the Merchant's trail; it does not require finishing it.
+      - name: The Sleeping Tone
+        role: Dampener
+        source: University / Burning Fields (1,3)
+        thread: university
+        description: >
+          A tuning device and the doctors' notes — the nurse's parents among them. They never
+          cured the plague, but they found a resonant tone that lulls the crystal deeper. Fitted
+          to the drill, it keeps the Wake from spiking while players cut. This is the in-fiction
+          reason breaching the castle does not instantly wake everything.
+  the_soldier_door:
+    description: >
+      Drilling through the seal still leaves the Soldier himself — a boss fight in front of the
+      king's door. How that fight goes depends on whether players completed the Love Story.
+    states:
+      - condition: Love Story incomplete
+        outcome: The Soldier animates and fights at full strength. A hard boss guarding the door.
+      - condition: The Forgiveness delivered (the Nurse's note, carried to the door by the players)
+        outcome: >
+          His penance breaks. He stands down — or, at the GM's option, turns and fights beside
+          the players against the king. The note is the key that softens, skips, or flips the fight.
+  principle:
+    title: Go the distance, get more
+    description: >
+      Building the drill is the floor — the minimum to breach the door and face the Soldier and
+      king the hard way. Completing the full story threads is the ceiling: a party that finishes
+      the threads walks in with a robot ally, the Village already saved, despair held at bay, the
+      Soldier beside them, and the king's own armory at their backs. Same door, radically different
+      finale.
+
 chimes:
   description: >
     The plague crystal absorbs everything — flesh, air, memory. Significant moments leave impressions
@@ -133,9 +219,78 @@ chimes:
     - Not tied to specific characters — any emotionally significant moment can leave one.
   note: The primary way players learn the stories of the city.
 
+story_threads:
+  description: >
+    Six citizens, six threads running through the districts. Each thread has two tiers: a baseline
+    find that helps players progress (often a drill component), and a full reward for those who
+    follow the thread to its end. Chimes are the primary way the stories are told (see chimes, above).
+  principle: >
+    The drill is the floor; the threads are the ceiling. A party can breach the door on the three
+    drill components alone. A party that finishes the threads earns the advantages that change the
+    king fight and save the Village.
+  threads:
+    - id: mechanic
+      character: The Mechanic
+      end_location: Mechanic's Workshop (3,1)
+      baseline:
+        name: The Last Engine
+        reward: Drill component (Power)
+      full_reward:
+        name: A robot that still listens
+        reward: >
+          A functioning robot won over (or commanded with the Noble's authority) becomes a companion
+          for the finale — carries the drill, hauls a PC, scouts a district's Wake, or takes a blow
+          meant for someone fragile. The Mechanic's machine finishes the helping he never could in person.
+    - id: merchant
+      character: The Merchant
+      end_location: The Vault
+      baseline:
+        name: The Cutting Head
+        reward: Drill component (Bit) — found early on the trail, does not require finishing it
+      full_reward:
+        name: The Vault hoard
+        reward: >
+          A mountain of pre-cut, sellable crystal and valuables. Useless to the dead — and exactly
+          what keeps the living Village's Sacred Flame fed. The man who took everything finally gives.
+    - id: university
+      character: The Noble + the Doctors
+      end_location: University / Burning Fields (1,3)
+      baseline:
+        name: The Sleeping Tone
+        reward: Drill component (Dampener)
+      full_reward:
+        name: The Noble's Gift
+        reward: >
+          A Hope / anti-despair boon for the king fight — the man who gave everything away leaves
+          behind the means for others to keep hope when he could not.
+    - id: love_story
+      character: The Nurse + The Soldier
+      end_location: Sanctuary Keep (2,3, Nurse's end) / the castle door (delivery)
+      baseline:
+        name: —
+        reward: None — this thread pays off only at completion
+      full_reward:
+        name: The Forgiveness
+        reward: >
+          The Nurse's note of forgiveness, found on her thread and carried by the players to the
+          crystallized Soldier at the door. Softens, skips, or flips the Soldier fight.
+    - id: security_chief
+      character: The Security Chief / The Warden
+      end_location: Council Hall tower (1,1)
+      baseline:
+        name: —
+        reward: The Warden is the obstacle, not an optional thread
+      full_reward:
+        name: The Warden's Seal
+        reward: >
+          Released on the Warden's defeat. The master seal unlocks the Royal Armory inside the
+          castle — the one cache the looting mob never breached — arming the party for the king.
+          (Alt: opens a gallery above the Deepest Chamber, or a mechanism that turns the king's
+          containment against him.)
+
 todo:
   - The inverted flame/mist rules — how Sacred Flame awakens vs. mist protects, player implications
-  - The Brass Bird — investigation thread, how players follow it through the city
-  - The Merchant's Trail — treasure hunt chain across districts
+  - The Merchant's Trail — treasure hunt chain across districts (baseline Cutting Head → Vault hoard)
+  - The Deepest Chamber — resolution outcomes (end / reinforce / re-bargain the king's containment)
   - City-wide tone and emotional notes
   - Individual district mechanics — developed per location
