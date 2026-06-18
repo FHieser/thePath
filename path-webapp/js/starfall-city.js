@@ -98,33 +98,80 @@ async function loadMechanics() {
 }
 
 function renderMechanics(data) {
+    const parts = [];
+    if (data.path_anchor)    parts.push(renderPathAnchor(data.path_anchor));
+    if (data.wake_system)    parts.push(renderWakeSystem(data.wake_system));
+    if (data.warden)         parts.push(renderWarden(data.warden));
+    if (data.castle_access)  parts.push(renderCastleAccess(data.castle_access));
+    if (data.story_threads)  parts.push(renderStoryThreads(data.story_threads));
+    if (data.robots)         parts.push(renderRobots(data.robots));
+    if (data.chimes)         parts.push(renderChimes(data.chimes));
+    return parts.join('');
+}
+
+// ── Section renderers ─────────────────────────────────────────────────────────
+
+function renderPathAnchor(pa) {
+    const effects = (pa.the_urgency?.effects || []).map(e => `<li>${escapeHtml(e)}</li>`).join('');
+
     return `
-        ${renderWakeSystem(data.wake_system)}
-        ${renderRobots(data.robots)}
-        ${renderChimes(data.chimes)}
-    `;
+        <div class="mechanics-block">
+            <h3 class="mechanics-title">The City's Grip on the Path</h3>
+            <p class="mechanics-intro">${escapeHtml(pa.intro)}</p>
+
+            ${pa.the_urgency ? `
+                <h4 class="mechanics-subtitle">The Urgency</h4>
+                <p style="font-size:0.88rem; margin-bottom:0.5rem;">${escapeHtml(pa.the_urgency.description)}</p>
+                <ul class="mechanics-rules">${effects}</ul>
+            ` : ''}
+
+            ${pa.the_cause ? `
+                <h4 class="mechanics-subtitle">The Cause</h4>
+                <p style="font-size:0.88rem; margin-bottom:0.35rem;">${escapeHtml(pa.the_cause.description)}</p>
+                <p class="mechanics-note">${escapeHtml(pa.the_cause.discovery)}</p>
+            ` : ''}
+
+            ${pa.resolution ? `<div class="principle-block">${escapeHtml(pa.resolution)}</div>` : ''}
+        </div>`;
 }
 
 function renderWakeSystem(ws) {
-    const levelRows = ws.levels.map(l => `
+    const levelRows = (ws.levels || []).map(l => `
         <tr>
             <td class="wake-level wake-${l.level}">${l.level}</td>
-            <td class="wake-state">${l.state}</td>
+            <td class="wake-state">${escapeHtml(l.state)}</td>
             <td>${escapeHtml(l.description)}</td>
         </tr>`).join('');
 
-    const triggerRows = ws.escalation.wake_0_to_1.triggers.map(t => `
-        <tr>
-            <td class="trigger-name">${escapeHtml(t.name)}${t.note ? `<span class="trigger-note"> (${escapeHtml(t.note)})</span>` : ''}</td>
-            <td class="trigger-effect">${escapeHtml(t.effect)}</td>
-        </tr>`).join('');
+    const transitionSections = (ws.transitions || []).map(t => {
+        const triggerRows = (t.triggers || []).map(tr => `
+            <tr>
+                <td class="trigger-name">${escapeHtml(tr.trigger)}</td>
+                <td class="trigger-effect">${escapeHtml(tr.effect)}</td>
+            </tr>`).join('');
+        return `
+            <h4 class="mechanics-subtitle">${escapeHtml(t.step)} — ${escapeHtml(t.name)} (0–${t.counter})</h4>
+            ${t.note ? `<p style="font-size:0.82rem; opacity:0.7; margin-bottom:0.4rem; font-style:italic;">${escapeHtml(t.note)}</p>` : ''}
+            <table class="mechanics-table">
+                <thead><tr><th>Trigger</th><th>Effect</th></tr></thead>
+                <tbody>${triggerRows}</tbody>
+            </table>`;
+    }).join('');
 
-    const reversibilityRows = ws.reversibility.map(r => `
-        <tr>
-            <td class="rev-state">${escapeHtml(r.state)}</td>
-            <td class="rev-possible ${r.possible ? 'yes' : 'no'}">${r.possible ? 'Yes' : 'No'}</td>
-            <td>${escapeHtml(r.note)}</td>
-        </tr>`).join('');
+    let overseerHtml = '';
+    if (ws.overseer) {
+        const ov = ws.overseer;
+        overseerHtml = `
+            <div class="overseer-block">
+                <h4 class="overseer-title">The Overseer</h4>
+                <p style="font-size:0.85rem; margin-bottom:0.5rem;">${escapeHtml(ov.description)}</p>
+                ${ov.action ? `<p style="font-size:0.85rem; margin-bottom:0.35rem;"><strong>${escapeHtml(ov.action.name)}:</strong> ${escapeHtml(ov.action.effect)}</p>` : ''}
+                ${ov.when_destroyed ? `<p style="font-size:0.82rem; opacity:0.75; font-style:italic;">${escapeHtml(ov.when_destroyed)}</p>` : ''}
+                ${ov.stat_block ? `<p class="mechanics-note">Stat block: ${escapeHtml(ov.stat_block)}</p>` : ''}
+            </div>`;
+    }
+
+    const loweringItems = (ws.lowering_wake || []).map(r => `<li>${escapeHtml(r)}</li>`).join('');
 
     return `
         <div class="mechanics-block">
@@ -132,26 +179,114 @@ function renderWakeSystem(ws) {
             <p class="mechanics-intro">${escapeHtml(ws.intro)}</p>
 
             <table class="mechanics-table">
-                <thead>
-                    <tr><th>Wake</th><th>State</th><th>Description</th></tr>
-                </thead>
+                <thead><tr><th>Wake</th><th>State</th><th>Description</th></tr></thead>
                 <tbody>${levelRows}</tbody>
             </table>
 
-            <h4 class="mechanics-subtitle">${escapeHtml(ws.escalation.wake_0_to_1.label)}</h4>
-            <table class="mechanics-table">
-                <thead>
-                    <tr><th>Trigger</th><th>Effect</th></tr>
-                </thead>
-                <tbody>${triggerRows}</tbody>
-            </table>
+            ${transitionSections}
+            ${overseerHtml}
 
-            <h4 class="mechanics-subtitle">Reversibility</h4>
+            <h4 class="mechanics-subtitle">Lowering Wake</h4>
+            <ul class="mechanics-rules">${loweringItems}</ul>
+        </div>`;
+}
+
+function renderWarden(warden) {
+    const rules = (warden.rules || []).map(r => `<li>${escapeHtml(r)}</li>`).join('');
+    return `
+        <div class="mechanics-block">
+            <h3 class="mechanics-title">The Warden</h3>
+            <p class="mechanics-intro">${escapeHtml(warden.description)}</p>
+            <ul class="mechanics-rules">${rules}</ul>
+            ${warden.origin ? `<p style="font-size:0.85rem; margin-top:0.6rem;"><strong>Origin:</strong> ${escapeHtml(warden.origin)}</p>` : ''}
+            ${warden.note ? `<p class="mechanics-note">${escapeHtml(warden.note)}</p>` : ''}
+        </div>`;
+}
+
+function renderCastleAccess(ca) {
+    const compRows = (ca.the_drill?.components || []).map(c => `
+        <tr>
+            <td style="font-weight:600; color:var(--accent-amber);">${escapeHtml(c.name)}</td>
+            <td style="opacity:0.7; font-size:0.82rem; width:5rem;">${escapeHtml(c.role)}</td>
+            <td style="font-size:0.82rem;">${escapeHtml(c.source)}</td>
+            <td style="font-size:0.82rem;">${escapeHtml(c.description)}</td>
+        </tr>`).join('');
+
+    const stateRows = (ca.the_soldier_door?.states || []).map(s => `
+        <tr>
+            <td style="font-weight:600; width:35%;">${escapeHtml(s.condition)}</td>
+            <td style="font-size:0.85rem;">${escapeHtml(s.outcome)}</td>
+        </tr>`).join('');
+
+    return `
+        <div class="mechanics-block">
+            <h3 class="mechanics-title">Getting Into the Castle</h3>
+            <p class="mechanics-intro">${escapeHtml(ca.intro)}</p>
+
+            ${ca.the_drill ? `
+                <h4 class="mechanics-subtitle">The Drill — Three Components</h4>
+                <p style="font-size:0.85rem; margin-bottom:0.5rem;">${escapeHtml(ca.the_drill.description)}</p>
+                <table class="mechanics-table">
+                    <thead><tr><th>Component</th><th>Role</th><th>Found At</th><th>Description</th></tr></thead>
+                    <tbody>${compRows}</tbody>
+                </table>
+            ` : ''}
+
+            ${ca.the_soldier_door ? `
+                <h4 class="mechanics-subtitle">The Soldier at the Door</h4>
+                <p style="font-size:0.85rem; margin-bottom:0.5rem;">${escapeHtml(ca.the_soldier_door.description)}</p>
+                <table class="mechanics-table">
+                    <thead><tr><th>Condition</th><th>Outcome</th></tr></thead>
+                    <tbody>${stateRows}</tbody>
+                </table>
+            ` : ''}
+
+            ${ca.principle ? `
+                <div class="principle-block">
+                    <strong>${escapeHtml(ca.principle.title)}</strong><br>
+                    ${escapeHtml(ca.principle.description)}
+                </div>
+            ` : ''}
+        </div>`;
+}
+
+function renderStoryThreads(st) {
+    const threadRows = (st.threads || []).map(t => {
+        const baselineName = t.baseline?.name || '';
+        const baselineReward = t.baseline?.reward || '';
+        const hasBaseline = baselineName && baselineName !== '—';
+        return `
+            <tr>
+                <td>
+                    <strong>${escapeHtml(t.character)}</strong><br>
+                    <span style="font-size:0.78rem; opacity:0.6;">${escapeHtml(t.end_location)}</span>
+                </td>
+                <td style="font-size:0.82rem;">
+                    ${hasBaseline
+                        ? `<strong>${escapeHtml(baselineName)}</strong><br><span style="opacity:0.75;">${escapeHtml(baselineReward)}</span>`
+                        : `<em style="opacity:0.5;">—</em>`}
+                </td>
+                <td style="font-size:0.82rem;">
+                    <strong style="color:var(--accent-amber);">${escapeHtml(t.full_reward?.name || '')}</strong><br>
+                    <span style="opacity:0.85;">${escapeHtml(t.full_reward?.reward || '')}</span>
+                </td>
+            </tr>`;
+    }).join('');
+
+    return `
+        <div class="mechanics-block">
+            <h3 class="mechanics-title">Story Threads</h3>
+            <p class="mechanics-intro">${escapeHtml(st.description)}</p>
+            <div class="principle-block" style="margin-bottom:0.75rem;">${escapeHtml(st.principle)}</div>
             <table class="mechanics-table">
                 <thead>
-                    <tr><th>State</th><th>Reversible</th><th>Notes</th></tr>
+                    <tr>
+                        <th style="width:20%;">Thread</th>
+                        <th style="width:35%;">Baseline — Floor</th>
+                        <th style="width:45%;">Go the Distance — Ceiling</th>
+                    </tr>
                 </thead>
-                <tbody>${reversibilityRows}</tbody>
+                <tbody>${threadRows}</tbody>
             </table>
         </div>`;
 }

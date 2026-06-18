@@ -8,29 +8,33 @@ path_anchor:
   intro: >
     Every other location swallowed by the mist drifts — Unstable, here one session and gone the
     next. Starfall City does not. It has wedged itself into the Path as a permanent fixture and
-    will not leave, and for as long as it stays it drains the Sacred Flames of the locations near
-    it on the grid — reaching, eventually, the Village itself.
+    will not leave, and for as long as it stays it bleeds the Path's Sacred Flames toward itself —
+    and the Village feels it directly.
   the_urgency:
     description: >
       This is the players' reason to go in and their clock to get out. The city is bleeding the
-      network dry. Left alone, it starves the Village's flame.
+      network dry, and it cannot be waited out from a distance.
     effects:
       - The city is Stable and cannot be cleared by a normal Path reset.
-      - Each session it remains, flame-bearing locations on the current Path lose Flame Essence to it (GM sets the rate to the campaign's pace).
-      - The drain reaches the Village last and worst — the finale's stakes are home, not abstract.
+      - While the city is anchored, the Village consumes 2 Flame Essence per day instead of 1.
+      - Sacred Flame — the party's safest tool everywhere else — wakes the dead here. Carrying flame into a district is catastrophic (see wake_system). The city strips away the players' usual safety net.
   the_cause:
     description: >
-      The why the players must uncover. The king's second bargain still runs in the Deepest
-      Chamber beneath the castle — a failing containment that anchors the dead kingdom to the
-      living world and feeds on nearby flame to hold itself together. The city is stuck because
-      the king is still paying, and the price is now being charged to everyone around him.
+      The why the players must uncover. It is the nature of the devil's crystal that locks the city
+      in place: the corrupted heavenly material is drawn to flame, because flame is what awakens it,
+      and so the dead kingdom reaches out and pulls the Path's Sacred Flames toward itself. At the
+      heart of it is the king. The bargain is engraved into him; he is the start and the end of the
+      devil's crystal, the source from which its hunger for energy radiates. The city is stuck
+      because the king still carries the devil's gift, and the gift is still hungry.
     discovery: >
       Pieced together from the Lord's Final Log and what waits behind the castle door. Learning
       the cause is the same investigation as learning how to get in — both end at the Deepest Chamber.
   resolution: >
-    Reaching the Deepest Chamber lets players confront the anchor itself — end the king's
-    containment, reinforce it, or strike a new bargain. Whatever they choose resolves the city's
-    grip on the Path, and decides what the drain finally costs the Village.
+    The king is not a hard fight — he is the anchor, not a guardian. Destroy him and the devil's
+    energy that makes the crystal seek and devour flame leaves it: the crystal goes inert, the city
+    stops draining the Path, and its grip releases, letting the dead kingdom drift back into the
+    mist at last. What that costs — the city lost, the dead finally still, the Village spared — is
+    the players' to weigh.
 
 city_grid:
   row_labels:
@@ -46,55 +50,77 @@ city_grid:
 
 wake_system:
   intro: >
-    Each district tracks its own Wake level — how disturbed the crystallized dead are.
-    Wake is per district, not city-wide.
+    Each district tracks its own Wake level (0–3) — how disturbed its crystallized dead are.
+    Wake is per district. Each step up the ladder takes its own 4-point counter; when a counter
+    fills, the district rises one level and a fresh counter begins. Same engine at every step —
+    only the triggers change.
   levels:
     - level: 0
       state: Dormant
       description: Crystallized dead sleep. Mist holds. Safe to move through.
     - level: 1
       state: Stirring
-      description: A few wake nearby. Avoidable — but combat escalates.
+      description: A few wake nearby. Avoidable — but conflict escalates.
     - level: 2
       state: District Active
-      description: All dead in the district animate. The whole district is hostile.
+      description: All dead in the district animate. The whole district is hostile, and an Overseer arrives.
     - level: 3
       state: The Warden
       description: A massive accumulated crystal entity has arrived.
-  escalation:
-    wake_0_to_1:
-      label: "Wake 0 → Wake 1 triggered by:"
+  transitions:
+    - step: "Wake 0 → 1"
+      name: Accumulation
+      counter: 4
+      note: The quiet phase — small disturbances slowly stir the district.
       triggers:
-        - name: Sacred Flame brought into the district
+        - trigger: Sacred Flame brought into the district
           effect: Immediately Wake 1. Subsequent disturbances escalate at double speed.
-        - name: Harvesting crystals from a corpse
-          effect: +3 to counter
-        - name: Physical disturbance
-          note: Moving bodies, violent interaction
-          effect: +1 to counter (GM discretion)
-        - name: GM spends 1 Fear
-          note: Wall collapse, loud noise, ground tremor
-          effect: +1 to counter
-    subsequent:
-      - label: "Wake 1 → Wake 2"
-        trigger: Combat at Wake 1
-        effect: All dead in the district activate simultaneously.
-      - label: "Wake 2 → Wake 3"
-        trigger: Combat at Wake 2
-        effect: The Warden arrives.
-  reversibility:
-    - state: "Wake 1 → Wake 0"
-      possible: true
-      note: Mist application, special items, or GM-approved pacification.
-    - state: Wake 2
-      possible: false
-      note: Permanent for this Path configuration. Cannot go lower.
-    - state: Wake 3
-      possible: false
-      note: The Warden is present. When it leaves or is driven off, the district returns to Wake 2.
-    - state: Path reset
-      possible: true
-      note: When the Path changes between sessions, all districts reset to Wake 0.
+        - trigger: Harvesting crystals from a corpse
+          effect: "+3"
+        - trigger: Physical disturbance (moving bodies, violent interaction)
+          effect: "+1 (GM discretion)"
+        - trigger: GM spends 1 Fear (wall collapse, loud noise, ground tremor)
+          effect: "+1"
+    - step: "Wake 1 → 2"
+      name: Open Conflict
+      counter: 4
+      note: A few dead are already up; now noise is what spreads it. Finesse can still walk it back.
+      triggers:
+        - trigger: Silent takedown
+          effect: "-1"
+        - trigger: A full round of open combat (once every combatant has acted)
+          effect: "+2"
+        - trigger: Killing a corpse loudly
+          effect: "+1"
+        - trigger: GM spends 1 Fear
+          effect: "+1"
+    - step: "Wake 2 → 3"
+      name: The Warden's Approach
+      counter: 4
+      note: >
+        The district is fully hostile and an Overseer has arrived (see overseer, below). The Warden
+        is coming — the Overseer is the one calling it.
+      triggers:
+        - trigger: An Overseer uses Call the Warden
+          effect: "+1, and one player becomes Vulnerable"
+  overseer:
+    description: >
+      An elite crystallized enforcer that arrives the instant a district reaches Wake 2 — the
+      Security Chief's control made permanent, the herald of the Warden he became.
+    action:
+      name: Call the Warden
+      effect: Advances the Wake 2 → 3 counter by 1 and makes one player Vulnerable.
+    when_destroyed: >
+      Killing the Overseer stalls the Warden's Approach — the 2 → 3 counter stops advancing (it
+      holds, it does not reset) until a new Overseer arrives, roughly 1–2 rounds later (the GM may
+      bring the next one sooner by spending 1 Fear). Players can buy time by cutting them down, but
+      they keep coming while the district stays at Wake 2. The Overseer is the only thing that
+      advances this counter — no fighting, harvesting, or Fear spend touches it.
+    stat_block: TBD — build with the adversary-builder for the city's tier.
+  lowering_wake:
+    - Wake 1 can be walked back toward 0 — silent takedowns reduce the 1 → 2 counter, and a Stirring district settles to Dormant once the players leave and the mist reclaims the quiet.
+    - Wake 2 and above does not settle on its own — it holds for the rest of this Path configuration.
+    - A Path reset returns every district to Wake 0 (and the Warden to dormancy).
 
 warden:
   description: >
@@ -291,6 +317,7 @@ story_threads:
 todo:
   - The inverted flame/mist rules — how Sacred Flame awakens vs. mist protects, player implications
   - The Merchant's Trail — treasure hunt chain across districts (baseline Cutting Head → Vault hoard)
-  - The Deepest Chamber — resolution outcomes (end / reinforce / re-bargain the king's containment)
+  - The Deepest Chamber — the king encounter (the engraved bargain, why he is "easy," and the moment the crystal goes inert when he dies)
+  - The Overseer — full adversary stat block (adversary-builder, city's tier)
   - City-wide tone and emotional notes
   - Individual district mechanics — developed per location
