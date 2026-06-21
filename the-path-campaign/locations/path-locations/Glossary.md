@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 40** (24 Surface + 14 Underground + 2 Special)
+**Total Locations: 42** (24 Surface + 15 Underground + 3 Special)
 
 ---
 
@@ -37,7 +37,7 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
-## Underground Locations (14 locations)
+## Underground Locations (15 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                        |
 | -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -52,6 +52,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Outer Mine Line](./underground-locations/outer-mine-line.yaml)     | Copper Rust Clan drift-cart railway through natural caverns, linking the rail network to the ancient mining station |
 | ☑        | ☑     | [Crystal Defense Line](./underground-locations/crystal-defense-line.yaml) | Tier 3 inner rail segment with Clan fortifications and a blocked meteorite shaft leaking crystal creatures |
 | ☑        | ☑     | [Deep Station](./underground-locations/deep-station.yaml)                 | Central hub of the Copper Rust Clan rail network — three converging lines, a mist-sealed Archway, and a shrine to the God of the Deep |
+| ☑        | ☑     | [Sanctum Line](./underground-locations/sanctum-line.yaml)                 | Tier 2 Clan rail traversal with an ancient goddess shrine that clears Mist tokens and a resonant quartz cavern |
 | ☑        | ☑     | [The Red Cellar](./underground-locations/red-cellar.yaml)           | Winery vaults turned hemomancy lab, haunted by the Archon's experiment (Linked to The Monastery) |
 | ☑        | ☑     | [Reed Marsh Caverns](./underground-locations/reed-marsh-caverns.md) | Underground wetland with bioluminescent grotto and hermit dwelling |
 | ☑        | ☑     | [Sacred Underground](./underground-locations/sacred-underground.md) | Hallowed sanctuary beneath the earth                               |
@@ -64,6 +65,7 @@ _Complete reference for all locations in the Path Network system_
 | -------- | ----- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
 | ☑        | ☑     | [Village in the Mist](./special-locations/village-in-the-mist.md) | Central safe haven protected by Sacred Flame                 |
 | ☑        | ☑     | [Vanishing Mist](./special-locations/vanishing-mist.md)           | Impenetrable mist that claims travelers between destinations |
+| ☑        | ☑     | [Underground Access](../village-in-the-mist/underground-access-card.yaml) | Village shaft connecting directly to the Copper Rust Clan rail network |
 
 ---
 
@@ -72,7 +74,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 40** | **Unassigned: 38** (48.7% remaining)
+**Assigned: 42** | **Unassigned: 36** (46.2% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -85,7 +87,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | IV The Emperor        |                      |
 | V The Hierophant      | The Giant Walls      |
 | VI The Lovers         | Misty Waters         |
-| VII The Chariot       |                      |
+| VII The Chariot       | Underground Access   |
 | VIII Strength         |                      |
 | IX The Hermit         |                      |
 | X Wheel of Fortune    | Village in the Mist  |
@@ -109,7 +111,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 2 of Wands      | Windswept Grasslands |
 | 3 of Wands      | Verdant Crossing     |
 | 4 of Wands      | Highland Circle      |
-| 5 of Wands      |                      |
+| 5 of Wands      | Sanctum Line         |
 | 6 of Wands      | Forest Refuge        |
 | 7 of Wands      | Hollow Woods         |
 | 8 of Wands      |                      |
@@ -143,7 +145,7 @@ _Physical card mappings for location representation during play. Select cards ba
 
 | Card            | Location           |
 | --------------- | ------------------ |
-| Ace of Discs    | Deep Station       |
+| Ace of Discs    |                    |
 | 2 of Discs      | Sacred Underground |
 | 3 of Discs      | Black Falls        |
 | 4 of Discs      | Outer Mine Line    |
@@ -154,7 +156,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 9 of Discs      | Hanging Gardens    |
 | 10 of Discs     | Black Beach        |
 | Page of Discs   | Crystal Defense Line |
-| Knight of Discs |                    |
+| Knight of Discs | Deep Station       |
 | Queen of Discs  |                    |
 | King of Discs   |                    |
 

@@ -1,0 +1,28 @@
+name: Underground Access
+tier: 1
+category: Social
+description: |
+  A reinforced shaft at the village edge, descending into the dark below. At the bottom, a short tunnel opens into the underground network. The passage was finished in the players' time here. The village now has a way down.
+impulses: |
+  Move between surface and underground freely, hold the connection open, remember that the way down is also a way up
+difficulty: 11
+potentialAdversaries: None (safe sanctuary)
+features:
+  - name: The Descent
+    type: Passive
+    description: |
+      Players may descend from the village into the underground network without spending a Path card. Players who begin a session at the village may choose to start underground instead, emerging at any underground location they have previously visited.
+    questions: |
+      Who in the village knows how to use the passage safely? What does the shaft look like from above — does it blend in, or is it clearly marked?
+
+  - name: The Way Back Up
+    type: Passive
+    description: |
+      Players who are in the underground network may return to the village through the access point at any time, provided they can reach it. No Path card is required for the return journey.
+    questions: |
+      Has anyone used the passage without the players knowing — going down, or coming back up?
+
+featureQuestions:
+  - Does the village council know the full extent of what the underground connects to?
+  - What would it take to seal the shaft, and who would make that call?
+  - What drifts up from below when the passage is left open — air, sound, smell?
