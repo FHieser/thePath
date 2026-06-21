@@ -1,0 +1,113 @@
+name: Sanctum Line
+tier: 2
+category: Traversal
+description: |
+  A rail line that feels different from the others — the Clan's rune-work runs cleaner here, the tunnel walls dressed more carefully than the outer network. Two natural caverns break the worked stone: one where something far older than the Clan made its home, and one the Clan was still cutting when the raid came. Both have something to offer. The tracks know where to go. The stone remembers why.
+tagline: The line runs quiet here. That's either a comfort or a warning.
+impulses: |
+  Offer rest to those who have earned it, draw travelers deeper toward what the Clan didn't finish mapping, let the resonance reveal what moves through the stone
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Underground
+  - name: Connection 2
+potentialAdversaries: Mist Walkers, Mist Stalkers, Cave Beasts
+features:
+  - name: The Drift Carts
+    type: Passive
+    description: |
+      Copper carts inlaid with rune-work along their base. As a cart moves, it draws ambient stone magic from the tunnel walls through the rails and feeds it back into acceleration. A skilled handler bleeds off excess draw. Left unchecked, the cart accelerates beyond control. The rune-work requires worked stone to function — natural caverns break the circuit, and carts always stop at cavern thresholds.
+
+      Three ways to travel the line:
+
+      Controlled Ride: One PC makes an Instinct or Strength reaction (Difficulty 14). Roll d20 for the section encounter. On failure, the cart enters Fast Mode.
+
+      Deliberate Fast Mode: No throw required. The party chooses speed. Skip the current section and chain immediately to the next. Roll d20 with the Fast Mode table. Caverns always stop the cart.
+
+      Walking: No roll. Each section costs 1 Stress. Players may stop at caverns freely.
+    questions: |
+      The rune-work here feels more deliberate than the outer line — did the Clan spend extra care on these tunnels, or were they built later when the network was better understood?
+
+  - name: Rail Sections
+    type: Action
+    description: |
+      Three tunnel sections run between the line's entrance, the two cavern stops, and the exit. Each section is resolved with a d20 roll.
+
+      Structure: Entrance → Section 1 → Ancient Cave → Section 2 → Quartz Cavern → Section 3 → Exit
+
+      Controlled Ride (d20):
+      1: Dangerous — see Derailment
+      2-3: Tedious — see Track Work
+      4-18: Well maintained — smooth travel, automatic progress
+      19-20: Something Interesting — see Found on the Line
+
+      Fast Mode (d20):
+      1-3: Dangerous, escalated — see Derailment
+      4-20: Skip to next section. Roll d20 again and make another control reaction.
+
+      In Fast Mode, a 19-20 (interesting) blurs past — players glimpse it but cannot stop.
+    questions: |
+      The tunnel walls here show less tool damage than the outer line — was this section surveyed before the cutting started, or was it just easier going?
+
+  - name: Derailment
+    type: Reaction
+    description: |
+      The cart hits damaged track or a tight corner and leaves the rails. All PCs take 1 HP damage from the impact.
+
+      After a derailment the party chooses:
+      - Re-rail the cart: resolve Track Work. In escalated Fast Mode, the resource cost is doubled.
+      - Continue on foot: walk the remaining sections (1 Stress per section).
+    questions: |
+      What caused this section's damage — a cart that came through too fast, or something that moved through the tunnel after the Clan left?
+
+  - name: Track Work
+    type: Action
+    description: |
+      A section of track is blocked, warped, or needs clearing before the cart can pass. The party spends resources equal to the number of players. Resources can be drawn freely from Hope, Stress, HP, or Armor — players distribute the cost however they choose.
+
+      Players who cannot or choose not to spend resources walk the remaining sections instead (1 Stress per section).
+    questions: |
+      Is the blockage recent — something that moved here after the Clan left — or old damage that was never repaired?
+
+  - name: Found on the Line
+    type: Passive
+    description: |
+      On a 19-20 during a controlled ride section, the party finds something the Clan left behind. Roll a d4:
+
+      1 — Sure Rails: A pristine section of rune-work. The next control reaction is made at advantage.
+      2 — Clear Track: Ideal route ahead. Roll the next section's d20 twice and take either result.
+      3 — Maintenance Kit: A Clan tool satchel, still stocked. Can be spent to skip one Track Work result entirely.
+      4 — Copper Sculpture: A small carved figure in a wall niche. Half the party (rounded up) each gains 1 Hope. Players distribute as they choose.
+    questions: |
+      The tunnel here has more wall carvings than the other lines — did the Clan spend time here, or did they find something already carved when they arrived?
+
+  - name: The Ancient Cave
+    type: Passive/Action
+    description: |
+      A natural cavern the rail line cuts through rather than around — the tracks run straight through the middle, but no one who stops here is in a hurry to leave. Bioluminescent growth covers the ceiling in pale green and gold. A small spring surfaces along the far wall and runs in a thin channel toward the deeper tunnels. Near the ceiling, a crack of natural light filters down — a surface connection, too narrow to climb but enough to smell open air. At the cave's back, set into the stone and surrounded by old offerings, a small shrine to a nature goddess watches over what grows here.
+
+      Herb Harvest: The cave's moisture and light sustain an unusual variety of plant life along its walls. A PC who spends time foraging may gather natural materials — herbs, mosses, fungi, small flowering things. Roll 1d3 to determine the quantity gathered. The GM determines what grows here this visit.
+
+      The Shrine: Resting in the cave removes 1 Mist token from each PC. The goddess asks nothing in return. The shrine is old enough that no one remembers who built it.
+    questions: |
+      Does the shrine predate the Clan's arrival — or did the Clan find it and route the tracks to avoid disturbing it?
+
+  - name: The Quartz Cavern
+    type: Passive/Action
+    description: |
+      A cavern where the Clan was actively cutting when everything stopped. Half-drilled bore holes line the walls. A hand-cart of rough crystal sits on a side spur, never emptied. The formations the Clan left untouched cover the ceiling — pale quartz that catches any light and multiplies it. When someone moves here, the crystals respond. A low, clear tone fills the space. It changes pitch with direction. It never stops.
+
+      Abandoned Site: The Clan's equipment is still here. Players who spend time salvaging may roll 1d3 — the result is the number of usable Maintenance Kits recovered from the site. Players may also harvest quartz from the uncollected cart or the walls by hand, with no roll required.
+
+      Resonance: The quartz registers every movement in the cavern as a shift in tone. No creature — player or enemy — can be surprised while inside. Combat here always begins with mutual awareness.
+
+      Feedback Loop: The GM may spend 1 Fear to drive the resonance into feedback. A sharp, overwhelming tone floods the space. Every PC marks 1 Stress.
+    questions: |
+      What was the Clan cutting toward — was there something in the stone they were trying to reach, or was this purely a material extraction site?
+
+featureQuestions:
+  - Who tends the shrine in the Ancient Cave now that the Clan is gone — or has it been untended since the raid?
+  - Does the resonance in the Quartz Cavern respond differently to mist creatures than to living ones?
+  - What do the herbs in the Ancient Cave do beyond basic use — is there something here the Clan harvested deliberately?
+  - What is the surface connection above the Ancient Cave — is it accessible from above, and does anyone know it exists?
+  - Could the quartz cart be brought to the Rune Station, and what would it be worth there?
