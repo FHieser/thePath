@@ -1,0 +1,26 @@
+name: Deep Station Access
+tier: 2
+
+rowLabels:
+  "-1": "C'"
+  "0": "B'"
+  "1": "A'"
+  "2": A
+
+gridSurface:
+  "2,-1": mantaray-tree
+  "3,0": the-giant-walls
+  "4,0": lost-flame
+  "3,1": misty-waters
+  "0,2": village-in-the-mist
+  "4,2": ancient-crossing
+  "5,2": sacred-mountain-pass
+
+gridUnderground:
+  "0,2": underground-access-card
+  "1,2": sanctum-line
+  "2,2": deep-station
+  "3,2": outer-mine-line
+  "4,2": needle-tunnels
+  "2,1": crystal-defense-line
+  "3,1": flooded-network
