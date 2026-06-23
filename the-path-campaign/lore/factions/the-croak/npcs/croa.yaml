@@ -1,0 +1,116 @@
+name: Croa
+id: croa
+faction: the-croak
+role: Leader of The Croak, former Rootbound guardian, keeper of two secrets
+location: The Great Mangrove, The Croak swamp
+
+appearance:
+  - Full-sized Drakona — notably larger than Naki, which would be immediately apparent
+    to anyone who has met both sisters
+  - Coloration shifted by decades in the swamp: murky green-grey scales with darker
+    patches where sediment has permanently settled into the texture
+  - Moves through the upper mangrove structure with practiced ease — climbing,
+    balancing, descending — a body that has spent years adapting to living in a tree
+  - Fingertips faintly dark-stained from pressing blood into carved stone every
+    morning for decades; it does not wash out
+
+the_twist: |
+  She did the unforgivable thing as a child, out of innocent curiosity and pride, and
+  was punished before she had the vocabulary to understand why. The resentment calcified
+  into pragmatism. She is not a villain who made a choice — she's someone whose formative
+  wound happened before she could process it, and she has been building on top of that
+  wound ever since. The community she made is genuinely good. She made it from something
+  that couldn't consent. It's thriving. She resolved the moral question a long time ago
+  and does not revisit it. She is also expanding her power, steadily, and the two things
+  are not in conflict in her mind.
+
+theme: |
+  Croa forces players to ask whether the morality of an act depends on its origin or
+  its outcome. The frog people are real, alive, and content. She made them from animals
+  that couldn't consent. They don't know. They're building a life. If players fix any
+  of this — expose the origin, sever the siphon, tell the truth — are they helping or
+  destroying something that works? Croa doesn't ask this question herself. She'll let
+  players ask it and wait to see what they do. She also mirrors the party's position
+  as outsiders carrying knowledge the community doesn't have — the difference is she
+  chose to carry it alone, and has been turning that choice into leverage ever since.
+
+wants:
+  - The swamp standing and her position within it uncontested
+  - Expansion — what she knows, what she controls, what she can do; the hemomancy
+    she did as a child was a beginning, not an endpoint
+  - Information players carry from outside the swamp — she trades fair but she keeps
+    what she learns
+  - Leverage; not used immediately, accumulated carefully
+
+offers:
+  - Mist protection at fair price — standard trade, no ceremony
+  - Safe rest inside the swamp and access to the community's resources
+  - Rootbound knowledge and decades of Path observation; she knows things no current
+    Rootbound would tell an outsider
+  - Her time and attention, which deepens in value the longer the relationship holds
+
+exchange_dynamic: |
+  She doesn't need players. She's managed alone for years. She engages with people who
+  are useful and disengages cleanly when they aren't — no grudges, no sentiment, no
+  explanation. The relationship deepens only as players demonstrate they can carry a
+  secret; she tests this before she offers anything real. First visit: transactional,
+  pleasant, closed. Return visits: she remembers everything, offers slightly more each
+  time. Crisis point: she tells them something true. She will not initiate the crisis.
+
+interaction_beats:
+  - moment: First meeting
+    description: |
+      She comes to them. She always meets visitors herself — a habit, not a protocol.
+      She is pleasant, asks reasonable questions, answers reasonable questions, and gives
+      nothing away. Players who try to read her find a surface that has been maintained
+      for a long time. She will offer fair trade and a tour of what she wants them to see.
+  - moment: Trust threshold
+    description: |
+      Players demonstrate they can carry a secret — not by promising to, but by doing it.
+      She notices when something she told them doesn't travel. The next conversation is
+      slightly more open. The one after that, more still.
+  - moment: Breaking point
+    description: |
+      Threatening the community directly. She has survived exile, mist, and decades of
+      isolation. She does not respond to threats the way people who haven't survived those
+      things do. She also stops engaging with players who have become a cost rather than
+      an asset — cleanly, without announcement, with the same pleasantness she started with.
+
+secrets:
+  - secret: The frog people were created through hemomancy
+    condition: |
+      Only if forced, cornered, or in extremis. She will not volunteer this.
+      If revealed, she doesn't defend it — she asks what players intend to do with the
+      information and waits.
+  - secret: The siphon — she draws from the Rootbound network through the blood stone
+    condition: |
+      If players find the stone, she confirms without elaborating. She will not lie
+      about it once it is found, but she will not explain more than asked.
+  - secret: The blood stone's symbol is older than her and she doesn't know its origin
+    condition: |
+      She will say this herself, unprompted, if asked directly about the stone. It is
+      the one thing she admits uncertainty about. She has chosen not to investigate further.
+      She is aware this is a choice.
+  - secret: The Croakers' chorus draws from the same source as her blood ritual
+    condition: |
+      She will not say this. It is the one decision she has not finished making. Telling
+      them would give them independence from her. Not telling them keeps the community
+      dependent. She knows which one is pragmatic. She has not done it yet.
+
+gm_notes:
+  - She is always pleasant. Pleasantness is a tool, not a signal of warmth — players
+    should learn to read the difference between her being pleased and her being useful.
+  - She never raises her voice. Intensity in her registers as stillness, not volume.
+  - She remembers everything players tell her across sessions. Reference details from
+    previous conversations — it signals that she has been thinking about them, which
+    she has, because they are potentially useful.
+  - When players ask about Naki, she answers briefly and changes the subject. Not
+    defensively — efficiently. It costs her something and she doesn't spend it freely.
+  - The blood stone ritual happens every morning before anyone is awake. If players are
+    staying in the swamp across a night, they may notice she is always already present
+    when the settlement wakes. They may not know what this means yet.
+  - She does not thank people. She remembers them. There is a difference and players
+    who understand it will find it more meaningful.
+  - Long-term: if the network degrades enough that the siphon becomes insufficient,
+    she will begin approaching players with more specific requests. The pleasantness
+    will become slightly more deliberate. Players who pay attention will notice.

@@ -80,7 +80,8 @@ const CONTENT_INDEX = {
     "outer-mine-line.yaml",
     "red-cellar.yaml",
     "reed-marsh-caverns.yaml",
-    "sacred-underground.yaml"
+    "sacred-underground.yaml",
+    "sanctum-line.yaml"
   ],
   "../the-path-campaign/locations/path-locations/starfall-city/": [
     "council-hall.yaml",
@@ -98,12 +99,14 @@ const CONTENT_INDEX = {
     "flame-gatherers-lodge-card.yaml",
     "forge-card.yaml",
     "sacred-flame-sanctuary-card.yaml",
-    "supply-cache-card.yaml"
+    "supply-cache-card.yaml",
+    "underground-access-card.yaml"
   ],
   "../the-path-campaign/example-path/path-library/": [
     "clan-extension.yaml",
     "cliff-road.yaml",
     "close-encounters.yaml",
+    "deep-station-access.yaml",
     "highland-run.yaml",
     "hollow-cross.yaml",
     "initial-path.yaml",
@@ -152,6 +155,12 @@ const CONTENT_INDEX = {
       "npcs": [
         "spider-emissary.yaml",
         "spider-queen.yaml"
+      ]
+    },
+    "the-croak": {
+      "details": "faction-details.yaml",
+      "npcs": [
+        "croa.yaml"
       ]
     },
     "village-in-the-mist": {

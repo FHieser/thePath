@@ -254,3 +254,60 @@
       "What are your goals?" — "We extinguish the flame. Keep him in the nothing."
       "What is the flame?" — "Rouses of him trying to wake."
       "Is there a way to end this?" — "Yes. Extinguish every flame. Let him sleep undisturbed."
+
+# ============================================================
+# THE CROAK ITEMS
+# ============================================================
+
+- name: Reed Candle
+  type: The Croak
+  usage: Consumable
+  flavor: "A thick candle pressed from reed wax and dried marsh grass. It burns slow and smells like still water after rain."
+  effect:
+    category: Restoration
+    description: |
+      Light during a rest. All players taking that rest clear 1 Stress.
+      The candle burns for the duration of the rest and cannot be extinguished and relit.
+
+- name: Bubble Croaker
+  type: The Croak
+  usage: Consumable
+  flavor: "A thumb-sized frog that sits perfectly still until it doesn't. Then it fills its throat sac until the bubble is taller than a person and keeps going."
+  effect:
+    category: Utility
+    description: |
+      Release the frog. It inflates a bubble large enough to hold up to 3 creatures, then
+      the bubble lifts free and the frog is gone.
+
+      The bubble floats steadily upward by default. Passengers can push off nearby surfaces
+      or use tools to steer, but the bubble's natural direction is up.
+
+      The bubble persists until it contacts a sharp surface, takes damage from a weapon or
+      attack, or the scene ends. Creatures inside cannot take actions that would puncture
+      the bubble without destroying it.
+
+- name: Blood Frog Totem
+  type: The Croak
+  usage: Consumable
+  flavor: "A squat clay frog packed with something that isn't clay. It squats where you leave it and watches the mist come in."
+  effect:
+    category: Protection
+    description: |
+      Place the totem at any location within reach. It stays there.
+
+      While within Close range of the totem, whenever you would gain 1 Mist token, any
+      player in Close range may instead take 1 damage. The totem marks 1 charge.
+
+      After 5 charges the totem croaks once — loud, final — and splatters. It is destroyed.
+
+- name: Stress Leeches
+  type: The Croak
+  usage: Consumable
+  flavor: "A damp pouch of swamp leeches, kept alive. The Croak sells them with the same expression they sell everything else."
+  effect:
+    category: Restoration
+    description: |
+      Apply during a rest. Before applying, choose how many leeches to use (1 to 3).
+      Clear that many Stress. Lose 1 HP for each Stress cleared.
+
+      The exchange is fixed — you choose the amount before the leeches are applied.
