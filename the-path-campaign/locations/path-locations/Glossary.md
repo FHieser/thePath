@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 42** (24 Surface + 15 Underground + 3 Special)
+**Total Locations: 43** (25 Surface + 15 Underground + 3 Special)
 
 ---
 
-## Surface Locations (22 locations)
+## Surface Locations (25 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -34,6 +34,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Verdant Crossing](./surface-locations/verdant-crossing.md)         | Lush passage through abundant vegetation                    |
 | ☑        | ☑     | [Windswept Grasslands](./surface-locations/windswept-grasslands.md) | Open plains swept by constant winds                         |
 | ☑        | ☑     | [Redcloth Pass](./surface-locations/redcloth-pass.yaml)             | Sea-people cliff road where waymarkers wait to be restored and the mist sits far below |
+| ☑        | ☑     | [The Reeds](./surface-locations/the-reeds.yaml)                     | Frog people swamp settlement built on wooden islands — safe without a flame, concealed at cost |
 
 ---
 
@@ -74,7 +75,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 42** | **Unassigned: 36** (46.2% remaining)
+**Assigned: 43** | **Unassigned: 35** (44.9% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -82,7 +83,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | --------------------- | -------------------- |
 | 0 The Fool            | Unstable Mist        |
 | I The Magician        |                      |
-| II The High Priestess |                      |
+| II The High Priestess | The Reeds            |
 | III The Empress       |                      |
 | IV The Emperor        |                      |
 | V The Hierophant      | The Giant Walls      |
