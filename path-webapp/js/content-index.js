@@ -40,6 +40,11 @@ const CONTENT_INDEX = {
     "pale-shell-drifter-leviathan.yaml"
   ],
   "../the-path-campaign/mechanics/village-siege/adversaries/": [],
+  "../the-path-campaign/adversaries/the-croak/": [
+    "croak-jumper.yaml",
+    "croak-salamander.yaml",
+    "croak-swimmer.yaml"
+  ],
   "../the-path-campaign/locations/path-locations/surface-locations/": [
     "ancient-crossing.yaml",
     "barnacle-gardens.yaml",

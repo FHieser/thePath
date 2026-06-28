@@ -13,6 +13,7 @@ const ADVERSARY_FOLDERS = [
   { key: 'crystal-plague', name: 'Crystal-Plague',       path: '../the-path-campaign/adversaries/crystal-plague/' },
   { key: 'siege',          name: 'Siege',                path: '../the-path-campaign/adversaries/siege/' },
   { key: 'village-siege',  name: 'Village Siege',        path: '../the-path-campaign/mechanics/village-siege/adversaries/' },
+  { key: 'the-croak',     name: 'The Croak',            path: '../the-path-campaign/adversaries/the-croak/' },
 ];
 
 // Location folder registry — surface, underground, starfall city, village.

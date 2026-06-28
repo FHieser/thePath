@@ -1,0 +1,66 @@
+name: Croak Jumper
+category: Skulk
+description: A compact frog person warrior who fights almost entirely in the vertical
+  dimension. Carries paired short blades or a spear and wears no armor — movement
+  is the defense. In the Nests above The Reeds they are nearly invisible; in combat
+  they are impossibly fast, always repositioning before players can respond.
+motives: Strike from elevation, immediately reposition after every attack, maintain
+  high ground, never be cornered
+lore: Jumpers live in the Nests above The Reeds and descend when the settlement
+  is threatened. They train by crossing rope bridges at speed and practicing drops
+  from height. An encounter with Jumpers on their home territory is deeply disorienting
+  for anyone trained to fight in straight lines — they are never where you last
+  looked.
+
+tiers:
+  - tier: 3
+    difficulty: 17
+    thresholds:
+      major: 17
+      severe: 30
+    hp: 5
+    stress: 5
+    attack:
+      bonus: '+4'
+      name: Platform Strike
+      range: Melee
+      damage: 3d8+2 physical
+    experience:
+      - name: Swamp Navigation
+        value: 3
+      - name: High Ground Combat
+        value: 3
+    features:
+      - name: Drop Strike
+        type: Reaction
+        description: |
+          When the Jumper attacks from a position higher than their target — dropping
+          from a Nest, leaping from a bridge above, or striking downward from elevated
+          ground — they deal an additional 1d6 damage and the target is Vulnerable
+          until the end of their next turn.
+
+      - name: Fluid Retreat
+        type: Passive
+        description: |
+          After making any attack, hit or miss, the Jumper may immediately move to
+          any position within Close range. This movement does not trigger reactions.
+
+      - name: "Ge' o'er 'ere"
+        type: Action
+        cost: Spend a Fear
+        description: |
+          The Jumper's tongue shoots out at a target within Close range. The target
+          gains 1 Stress and must make a Strength Reaction Roll (Difficulty 17).
+          On failure, the target is pulled to Melee range and becomes Restrained —
+          they cannot move voluntarily while Restrained.
+
+          While Restrained, the target may use their action to attempt a Strength
+          or Agility roll (Difficulty 17) to break free. The Restrain ends
+          immediately if the Jumper moves out of Close range.
+
+      - name: Poison Dart
+        type: Action
+        cost: Spend a Fear
+        description: |
+          Ranged attack against a target within Far range. The target gains 1 Stress
+          and has disadvantage on their next action roll.

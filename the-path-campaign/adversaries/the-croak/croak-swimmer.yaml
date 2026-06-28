@@ -1,0 +1,51 @@
+name: Croak Swimmer
+category: Ranged
+description: A frog person farmer who fights from the water channels, surfacing just
+  long enough to throw a bola before disappearing beneath the surface again. Deceptively
+  dangerous for someone who tends fish pools between battles — bolas wrap around
+  legs with practiced accuracy, and the channel is always right there.
+motives: Stay in the water, target anyone who is already slowed or Restrained, surface
+  only to throw, submerge before being hit
+lore: Swimmers are the agricultural backbone of The Reeds and its most frustrating
+  ranged combatants. They know every channel in the swamp by feel. An outsider
+  cannot easily tell which patch of dark water has a Swimmer beneath it. The bolas
+  they use for fish-herding work just as well on anything with legs.
+
+tiers:
+  - tier: 2
+    difficulty: 14
+    thresholds:
+      major: 9
+      severe: 17
+    hp: 4
+    stress: 4
+    attack:
+      bonus: '+2'
+      name: Bola Throw
+      range: Far
+      damage: 2d6+3 physical
+    experience:
+      - name: Swamp Concealment
+        value: 3
+    features:
+      - name: Tangling Bolas
+        type: Passive
+        description: |
+          When Bola Throw hits, the target must make a Strength Reaction Roll
+          (Difficulty 14). On failure, they become Restrained — the bola has
+          wrapped around their legs. While Restrained, they may use their action
+          to attempt a Strength or Agility roll (Difficulty 14) to break free.
+
+      - name: Submerge
+        type: Action
+        description: |
+          The Swimmer slips beneath the surface of a water channel. While
+          submerged they cannot be targeted. Before making their next attack,
+          they may surface at any point along the connected channel within
+          Far range.
+
+      - name: Surface Strike
+        type: Reaction
+        description: |
+          When the Swimmer surfaces from Submerge and makes an attack in the
+          same spotlight, they have advantage on that attack roll.
