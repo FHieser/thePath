@@ -203,6 +203,15 @@
 
       The blade goes dormant when sheathed and must be drawn again to use.
 
+- name: Ember Weave
+  type: Fire Born
+  usage: Reusable
+  flavor: "A shred of the old pilgrimage, warm where everything else is cold. Hold it up and something remembers what it meant to believe in fire."
+  effect:
+    category: Enhancement
+    description: |
+      Hold the Ember Weave aloft and spend 1 Flame Essence. The flame-thread ignites briefly, casting gold light across everyone nearby. Each player present gains 1 Hope and removes 1 Mist token. The weave dims after use until fed flame again.
+
 - name: Flashburn
   type: Fire Born
   usage: Consumable
@@ -254,6 +263,25 @@
       "What are your goals?" — "We extinguish the flame. Keep him in the nothing."
       "What is the flame?" — "Rouses of him trying to wake."
       "Is there a way to end this?" — "Yes. Extinguish every flame. Let him sleep undisturbed."
+
+- name: Tidepole Marker
+  type: Mist Born
+  usage: Reusable
+  flavor: "Something in the deep end of the mist recognizes this shape. It doesn't know the signal is wrong."
+  effect:
+    category: Disruption
+    description: |
+      Requires Strength +1 or higher to carry — the pole is dense iron, heavy with age and residual void energy.
+
+      Can only be used in Mist-Touched locations.
+
+      Drive the pole into the ground and channel mist through its broken scan network. Gain Mist tokens without suffering their immediate consequence — in exchange, the GM removes 1 Fear. The amount you feed depends on how deep you already are:
+
+      - 0–2 Mist tokens: Gain 3 Mist tokens
+      - 3–5 Mist tokens: Gain 2 Mist tokens
+      - 6–9 Mist tokens: Gain 1 Mist token
+
+      The pole hums while grounded, broadcasting to a network that no longer receives.
 
 # ============================================================
 # THE CROAK ITEMS
