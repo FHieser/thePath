@@ -1,0 +1,81 @@
+name: Coldspire Keep
+tier: 2
+category: Combat
+description: An abandoned lord's house sealed in mist-preserved winter — a Fire Born brazier still burns in the hall, the stump of a destroyed Mist Born Tide Marker still exhales in the courtyard, and something the mist built from the memory of lordship roams the halls.
+tagline: A dead lord's house, still cold, still watched — the flame burns alone in the hall, and something resents it.
+impulses: Reward the placing of flames, haunt those who linger, press the cold into everything
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Mist-Touched
+  - name: Cave Mouth
+potentialAdversaries: Mist Ghost, Mist Spirit, Fallen Lord
+features:
+  - name: Cold Way Towards the Keep
+    type: Passive
+    description: |
+      A long path through snow-heavy forest, the trees stripped bare and sealed in frost. The keep rises ahead through grey air — tall, dark, motionless. The cold here is not carried by wind. It is settled, deep, the kind that works into the joints and stays. The mist has preserved it perfectly.
+
+      When approaching or leaving the keep via the Cold Way, each player makes a Strength reaction roll. On a failure, mark 1 Stress.
+    questions: How long has this path been unwatched — and why does the snow feel wrong underfoot in places?
+
+  - name: Inner Courtyard
+    type: Passive
+    description: |
+      A raised stone platform at the center of the courtyard holds what remains of the Tide Marker — a waist-high iron stump worked with marine symbols: tide lines, depth gauges, ocean script in no mortal language. The pole was split cleanly in two. Behind it, a sword cut runs a full forearm's length into the stone wall. Old Mist Born prayer flags hang from the surrounding battlements — some collapsed, some still snagged on ironwork, all frozen in place by the mist. The stump breathes mist slowly outward, a broken exhale that never stops.
+
+      Every player who enters the Inner Courtyard gains 1 Mist token.
+
+      What Remains: The top half of the Tide Marker lies where it fell. Any player with Strength +1 or higher may take it — this is the Tidepole Marker item.
+
+      A Closer Look (Knowledge roll): On a success, the player notices burned footprints pressed into the flagstones — the Paladin's boot marks, seared there at the moment of the strike. Among the frost near the sword cut, something glitters: the Ember Weave, a fragment of flame-thread cloak preserved in the ice.
+    questions: What was the Paladin looking for here before they struck — and did destroying the marker answer it?
+
+  - name: Haunted Halls
+    type: Passive
+    description: |
+      Long corridors of cold stone connect noble rooms stripped of their inhabitants but not their contents. The hallways are narrow enough that two people cannot pass without turning sideways. Doorways are low and dark. The mist has preserved everything exactly as it was left — chairs at odd angles, a letter half-written on a desk, curtains that haven't moved in decades. The Mist Ghosts drift through all of it without acknowledging any of it.
+
+      While within the Haunted Halls, adversaries with the Mist-Ghost feature do not need to Mark a Stress to move through solid objects.
+
+      The Haunted Cry (Once per visit): At any moment the GM chooses, a sound without a source rolls through the manor — not a scream, not a word, something older. The GM gains 2 Fear.
+    questions: What did the lord leave half-written on that desk?
+
+  - name: The Fireplace Room
+    type: Action
+    description: |
+      A cold stone room built around a large fireplace, a small Fire Born brazier sitting beneath it — still faintly warm from a hand that set it here and moved on. The room holds the memory of comfort. The mist has not touched it.
+
+      A player may place a flame here by spending 1 Flame Essence. For each flame placed, every player present may remove up to 3 Mist tokens. Once the brazier is lit this way, the Fireplace Room becomes a safe place to rest, and Mist Ghosts and Mist Spirits cannot enter. The flame dies when the Path resets.
+    questions: Who was the Paladin that left this brazier — and did they intend to come back for it?
+
+  - name: Winter Garden
+    type: Passive/Action
+    description: |
+      Behind the Haunted Halls, through a low stone arch barely visible in the dark, a different kind of space waits. The keep's east foundation opens into a cave-like chamber — walls covered in moss and small flowering things, the air carrying wet earth and green. A shrine to a nature goddess sits at the back, half-wrapped in vine, surrounded by old offerings that time has not touched. The cold does not reach here. The mist does not settle. Something older than either holds this room.
+
+      Accessible only through the Haunted Halls.
+
+      Herb Harvest: A PC who spends time foraging may gather herbs from the garden's walls. Roll 1d3 to determine the quantity gathered. The GM determines what grows here this visit.
+
+      The Shrine: Players who stop to pray at the shrine gain 1 Hope. Cold effects — from the Cold Way, the Haunted Halls, or the keep itself — do not follow players inside.
+    questions: What goddess is this, and why does her presence hold in a place the mist should have long since claimed?
+
+  - name: The Tower
+    type: Cave Mouth/Action
+    description: |
+      The tower rises from the keep's center, accessible only through the Haunted Halls. A ruin — whole enough to climb, open enough to make you regret it. Sections of the stairwell wall have collapsed entirely, exposing the interior to the wind. Higher up, where the structure narrows, handholds become necessary. It goes both ways: up above the mist line, and down through a passage in its base into the underground below.
+
+      Interior Climb (through the Haunted Halls): Before rolling, each player attempting the summit commits one resource — 1 Stress, 1 HP, or 1 Hope. Make a Strength or Agility roll. Hope result: reach the summit, reclaim the committed resource. Success: reach the summit, resource spent. Failure: fall to the last landing — committed resource gone, mark 1 HP from the impact.
+
+      Exterior Climb: The tower's outer face is exposed to harsher winds. First make a Cold Way check at difficulty +3 (2 Stress on failure). Then commit one resource and make the climbing roll. On any success: reach the summit and gain 1 Hope.
+
+      The Summit: Players at the summit are above the mist line. A magic is worked into the watchtower's stone — its origin unknown — that makes the Path legible from height. Players at the summit may reveal the name and modifiers of all face-down locations currently on the Path.
+    questions: What was the lord watching for from this tower — and who baked this magic into the stone?
+
+featureQuestions:
+  - What goddess has her shrine in the Winter Garden, and why does her protection persist in a place the mist should have claimed?
+  - Where is the Fire Born Paladin now — and do they know what they left behind at Coldspire Keep?
+  - What does the Fallen Lord protect here, if anything — or is it simply what the void built from this place's memory?
+  - Why did the Mist Born choose this specific abandoned castle for their surface waypoint?
+  - Can the Tide Marker stump in the Inner Courtyard be fully silenced — and what would happen to the Mist Ghosts if it were?
