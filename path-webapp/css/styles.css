@@ -52,6 +52,33 @@ header h1 {
   opacity: 0.8;
 }
 
+/* Home button — fixed top-left on all sub-pages */
+.home-btn {
+  position: fixed;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  background: rgba(26, 37, 48, 0.9);
+  border: 1px solid var(--primary-blue);
+  border-radius: 0.2rem;
+  color: var(--accent-amber);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  backdrop-filter: blur(4px);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.home-btn:hover {
+  background: rgba(20, 70, 100, 0.7);
+  border-color: var(--accent-amber);
+}
+
 /* Navigation */
 .breadcrumb {
   margin-bottom: 0.75rem;
