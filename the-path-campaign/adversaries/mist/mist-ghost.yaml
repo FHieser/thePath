@@ -1,0 +1,30 @@
+name: Mist Ghost
+category: Standard
+description: A slow-drifting humanoid shape of cold gray mist, moving in deliberate arcs — not pursuing, not reacting, just routing. Marine symbols from a destroyed Tide Marker pulse faintly across its surface, the old scan-script still running on a broken form. No face. No expression. When disturbed it shivers and reforms, but never breaks its pattern — until warmth crosses its path. Then it turns, and turns, and converges.
+motives: Follow the old scan route, lock onto warmth and flame, drain heat from targets, ignore non-warm targets
+lore: These are not spirits of the dead. When a Fire Born Paladin destroyed the Mist Born's Tide Marker at Coldspire Keep, the artifact's scan function fractured rather than ceased — producing these echo-forms that reach out, measure, and try to report back to a network that no longer receives. They are mindless. No anger, no grief. Just purposeless iteration.
+
+tiers:
+  - tier: 2
+    difficulty: 15
+    thresholds:
+      major: 8
+      severe: 16
+    hp: 4
+    stress: 4
+    attack:
+      bonus: '+1'
+      name: Cold Reach
+      range: Very Close
+      damage: 2d8+1 phy
+    experience:
+      - name: Ancient Signal
+        value: 2
+    features:
+      - name: Mist-Ghost
+        type: Passive
+        description: This adversary has resistance to physical damage. While within Very Close range of a Sacred Flame, it loses this resistance. Mark a Stress to move up to Close range through solid objects.
+      - name: Cold Embrace
+        type: Action
+        cost: Spend a Fear
+        description: The target gains 1 Stress as the scan locks on. At the start of each of that player's spotlights, they must succeed on a Strength or Agility reaction roll. On a failure, they are Restrained until the start of their next spotlight. This effect repeats until the Mist Ghost is defeated or the player succeeds on the roll.

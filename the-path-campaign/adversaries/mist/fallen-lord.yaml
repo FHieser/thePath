@@ -1,0 +1,44 @@
+name: Fallen Lord
+category: Solo
+description: A colossal figure in a dark robe, broad blade held low, stepping through solid walls as though they were fog. Where its face should be, cold mist pours outward in silence — not a disguise, but an absence. It moves with the patience of something that has been here a long time and does not intend to leave.
+motives: Stalk before striking, emerge from walls to overwhelm, exhale the void, sweep all within reach
+lore: The mist preserves what it swallows — including the idea of lordship over an abandoned place. The Fallen Lord is not the castle's original inhabitant, who was gone before the mist arrived. It is what the void built from the memory of authority: a shape coalesced from the residue of power that once moved through these halls. It does not know this. It does not know anything.
+
+tiers:
+  - tier: 2
+    difficulty: 15
+    thresholds:
+      major: 13
+      severe: 26
+    hp: 9
+    stress: 5
+    attack:
+      bonus: '+3'
+      name: Lord's Sweep
+      range: Melee
+      damage: 2d10+4 phy
+    experience:
+      - name: Overwhelming Presence
+        value: 3
+    features:
+      - name: Mist-Ghost
+        type: Passive
+        description: This adversary has resistance to physical damage. While within Very Close range of a Sacred Flame, it loses this resistance. Mark a Stress to move up to Close range through solid objects.
+      - name: Stalking the Halls
+        type: Passive
+        description: Before the Fallen Lord joins the fight, he roams and withdraws. Up to three times, the GM reveals the Fallen Lord to one player of their choice — that player loses 1 Hope. The Fallen Lord will not engage before the third sighting. After the third sighting, he may use Emergence to join the fight.
+      - name: Relentless (2)
+        type: Passive
+        description: The Fallen Lord may be spotlighted up to 2 times per GM turn. Spend Fear as normal.
+      - name: Momentum
+        type: Reaction
+        description: When the Fallen Lord makes a successful attack against a PC, you gain a Fear.
+      - name: Emergence
+        type: Action
+        uses: 1
+        cost: Mark a Stress
+        description: Once per scene, the Fallen Lord steps through any solid surface within Far range and immediately makes an attack roll against all creatures within Melee range.
+      - name: Mist Exhale
+        type: Action
+        cost: Mark a Stress
+        description: The Fallen Lord breathes outward in a Very Close cone. All targets in the cone immediately gain 1 Mist token. At the start of each affected target's spotlight, they must succeed on a Strength or Agility reaction roll. On a failure, they are Restrained until the start of their next spotlight. This effect repeats for each target until they succeed on the roll.

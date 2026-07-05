@@ -1,0 +1,31 @@
+name: Mist Spirit
+category: Minion
+description: A dim, barely-defined wisp of cold gray mist — less coherent than a Mist Ghost, barely holding a shape at all. Drifts in loose clusters near where the scan residue is densest. No marine symbols, no pattern. Just cold, ambient presence coalescing where the echo is strongest.
+motives: Drift near warmth, press toward flame, swarm triggered targets, cluster around scan residue
+lore: Smaller fragments of the same fractured energy that produced the Mist Ghosts — too weak to sustain a full scan pattern, too dispersed to hold a form for long. They are not lesser creatures. They are lesser echoes. Where Mist Ghosts route, Mist Spirits accumulate.
+
+tiers:
+  - tier: 2
+    difficulty: 13
+    thresholds: null
+    hp: 1
+    stress: 1
+    attack:
+      bonus: '+0'
+      name: Chill Pass
+      range: Melee
+      damage: 3 phy
+    experience:
+      - name: Void Resonance
+        value: 2
+    features:
+      - name: Mist-Ghost
+        type: Passive
+        description: This adversary has resistance to physical damage. While within Very Close range of a Sacred Flame, it loses this resistance. Mark a Stress to move up to Close range through solid objects.
+      - name: Minion (6)
+        type: Passive
+        description: The Mist Spirit is defeated when they take any damage. For every 6 damage a PC deals to the Minion, defeat an additional Mist Spirit within range the attack would succeed against.
+      - name: Group Attack
+        type: Action
+        cost: Spend a Fear
+        description: Choose a target and spotlight all Mist Spirits within Close range of them. They move into Melee range and make one shared attack roll. On a success, they deal 3 physical damage each. Combine this damage.
