@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 43** (25 Surface + 15 Underground + 3 Special)
+**Total Locations: 44** (26 Surface + 15 Underground + 3 Special)
 
 ---
 
@@ -14,6 +14,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Barnacle Gardens](./surface-locations/barnacle-gardens.md)         | Corrupted area covered in mist-breathing barnacles          |
 | ☑        | ☑     | [Blood Fern Valley](./surface-locations/blood-fern-valley.md)       | Verdant valley filled with unusual crimson vegetation       |
 | ☑        | ☑     | [Burnt Clearing](./surface-locations/burnt-clearing.md)             | Scorched clearing recovering from past devastation          |
+| ☑        | ☑     | [Coldspire Keep](./surface-locations/coldspire-keep.yaml)           | Mist-preserved haunted castle — broken Tide Marker, Fire Born brazier, Fallen Lord in the halls |
 | ☑        | ☑     | [Devil's Rock](./surface-locations/devils-rock.yaml)                | Precipice over the mist where devil's bargains are struck   |
 | ☑        | ☑     | [Forest Refuge](./surface-locations/forest-refuge.md)               | Safe haven deep within the forest                           |
 | ☑        | ☑     | [Hanging Gardens](./surface-locations/hanging-gardens.md)           | Suspended botanical sanctuary                               |
@@ -75,7 +76,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 43** | **Unassigned: 35** (44.9% remaining)
+**Assigned: 44** | **Unassigned: 34** (43.6% remaining)
 
 ### Major Arcana (11 of 22 assigned)
 
@@ -123,7 +124,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Wands  | Blood Fern Valley    |
 | King of Wands   |                      |
 
-### Minor Arcana - Swords (3 of 14 assigned)
+### Minor Arcana - Swords (4 of 14 assigned)
 
 | Card             | Location |
 | ---------------- | -------- |
@@ -139,7 +140,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 10 of Swords     | Barnacle Gardens |
 | Page of Swords   |                  |
 | Knight of Swords |          |
-| Queen of Swords  |          |
+| Queen of Swords  | Coldspire Keep   |
 | King of Swords   |          |
 
 ### Minor Arcana - Discs (Pentacles) (7 of 14 assigned)

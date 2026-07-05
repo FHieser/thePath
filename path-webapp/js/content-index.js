@@ -10,8 +10,11 @@ const CONTENT_INDEX = {
     "eeligator.yaml"
   ],
   "../the-path-campaign/adversaries/mist/": [
+    "fallen-lord.yaml",
     "mist-crab.yaml",
+    "mist-ghost.yaml",
     "mist-octopus.yaml",
+    "mist-spirit.yaml",
     "mist-stalker.yaml",
     "mist-thrower.yaml",
     "mist-walker.yaml",
@@ -51,6 +54,7 @@ const CONTENT_INDEX = {
     "bells-edge.yaml",
     "blood-fern-valley.yaml",
     "burnt-clearing.yaml",
+    "coldspire-keep.yaml",
     "devils-rock.yaml",
     "forest-refuge.yaml",
     "hanging-gardens.yaml",
