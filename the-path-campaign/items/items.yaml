@@ -99,7 +99,7 @@
 # ============================================================
 # Mundane goods available at the Village's Trading Grounds / Supply Cache —
 # standard Daggerheart consumables, unmodified from the SRD, priced as the
-# baseline reference point for the Trade Points system (see trading-mechanics.yaml).
+# baseline reference point for the Trade Points system (see crafting-and-trading-mechanics.yaml).
 
 - name: Hope in a Bottle
   type: Village

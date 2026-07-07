@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Mechanics - The Path</title>
+    <title>Crafting & Trading Mechanics - The Path</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
         .trade-layout {
@@ -133,8 +133,8 @@
             <nav class="breadcrumb">
                 <a href="items.html">← Back to Items</a>
             </nav>
-            <h1>Trading Mechanics</h1>
-            <p class="subtitle">Trade Points — a lightweight, adaptable currency for exchanges along The Path</p>
+            <h1>Crafting & Trading Mechanics</h1>
+            <p class="subtitle">Trade Points and downtime crafting — a lightweight, adaptable economy for exchanges along The Path</p>
             <a href="items.html" class="btn btn-primary" style="display:inline-block;margin-top:0.75rem;text-decoration:none;">🎒 Item Catalogue →</a>
         </header>
 
@@ -148,7 +148,7 @@
                 </aside>
 
                 <div id="trade-content" class="trade-content">
-                    <div class="loading">Loading trading mechanics…</div>
+                    <div class="loading">Loading crafting &amp; trading mechanics…</div>
                 </div>
             </div>
         </main>
@@ -175,10 +175,10 @@
 
         try {
             const [mechRes, itemsRes] = await Promise.all([
-                fetch('../the-path-campaign/mechanics/trading-mechanics.yaml'),
+                fetch('../the-path-campaign/mechanics/crafting-and-trading-mechanics.yaml'),
                 fetch('../the-path-campaign/items/items.yaml'),
             ]);
-            if (!mechRes.ok) throw new Error(`HTTP ${mechRes.status} loading trading-mechanics.yaml`);
+            if (!mechRes.ok) throw new Error(`HTTP ${mechRes.status} loading crafting-and-trading-mechanics.yaml`);
             if (!itemsRes.ok) throw new Error(`HTTP ${itemsRes.status} loading items.yaml`);
 
             const data  = jsyaml.load(await mechRes.text());
@@ -226,8 +226,14 @@
                     body += `<tr><td>${row.rest}</td><td>×${row.multiplier}</td><td>${row.note || ''}</td></tr>`;
                 }
                 body += `</tbody></table>`;
+                if (cr.roundingRule) {
+                    body += `<div class="note-block"><strong>Rounding:</strong> ${cr.roundingRule.trim()}</div>`;
+                }
                 if (cr.maxCraftValue != null) {
                     body += `<div class="note-block"><strong>Max crafted value per action:</strong> ${cr.maxCraftValue} points. ${(cr.maxCraftValueNote || '').trim()}</div>`;
+                }
+                if (cr.leftoverMaterials) {
+                    body += `<div class="note-block"><strong>Leftover:</strong> ${cr.leftoverMaterials.trim()}</div>`;
                 }
                 if (cr.factionGatingInteraction) {
                     body += `<div class="note-block">${cr.factionGatingInteraction.trim()}</div>`;
@@ -298,7 +304,7 @@
             tocEl.innerHTML = toc.join('') || '<span style="opacity:0.4;font-size:0.8rem;">—</span>';
 
         } catch (err) {
-            contentEl.innerHTML = `<p class="error">Failed to load trading mechanics: ${err.message}</p>`;
+            contentEl.innerHTML = `<p class="error">Failed to load crafting &amp; trading mechanics: ${err.message}</p>`;
             tocEl.innerHTML = '';
             console.error(err);
         }

@@ -1,5 +1,5 @@
-title: Trading & Trade Points
-version: 1
+title: Crafting & Trading Mechanics
+version: 2
 
 introduction: |
   Trade Points (TP) are a lightweight currency for handling exchanges at Inhabited locations,
@@ -53,21 +53,25 @@ pointSources:
 
   crafting:
     description: |
-      A downtime move that lets a player convert Raw Materials into a finished item (or combination of items) themselves, instead of trading them to an NPC. Combine the point value of any Raw Materials being spent, apply the rest multiplier below, then spend the result immediately on item(s) whose fictional materials plausibly match what was spent (nature ingredients craft Rootbound-flavored effects, blood reagents craft Blood-flavored effects, etc. — GM's call). The crafting budget must be spent in the same rest it was generated; it cannot be banked for later.
+      A downtime move that lets a player convert Raw Materials into a finished item (or combination of items) themselves, instead of trading them to an NPC. Combine the point value of any Raw Materials being spent, apply the rest multiplier below, then spend the result immediately on item(s) whose fictional materials plausibly match what was spent (nature ingredients craft Rootbound-flavored effects, blood reagents craft Blood-flavored effects, etc. — GM's call).
     restMultipliers:
       - rest: Short Rest
-        multiplier: 1
-        note: Enough time to assemble what you're carrying, but no efficiency gain over just trading it in.
+        multiplier: 1.25
+        note: Enough time for quick field-crafting, at a modest efficiency gain over just trading materials in.
       - rest: Long Rest
         multiplier: 2
         note: Enough time and care to refine raw materials well beyond their trade-in worth.
+    roundingRule: |
+      Multiply the combined material value by the rest multiplier, then round the result down to the nearest 0.25. This keeps every crafting budget aligned to the same 0.25 granularity Raw Materials are already priced in.
     maxCraftValue: 2
     maxCraftValueNote: |
-      Regardless of multiplier, a single crafting action can never produce item(s) totaling more than 2 points — the same ceiling as the Consumables band. This keeps crafting a way to turn scavenged scraps into a handy potion, not a shortcut to Tier-3+ gear.
+      Regardless of multiplier, a single crafting action can never produce item(s) totaling more than 2 points by default — the same ceiling as the Consumables band. This keeps crafting a way to turn scavenged scraps into a handy potion, not a shortcut to Tier-3+ gear. This cap is itself a default: a Village Project (e.g. an upgraded forge, in the spirit of the existing Advanced Forge Expansion project) can raise it as the party's Tier increases.
+    leftoverMaterials: |
+      If a crafting budget doesn't divide evenly into the item(s) chosen, the remainder isn't lost — it carries forward as a Raw Material of that leftover value, usable in a future crafting action. Two safeguards keep this from being exploitable: a crafting action can never be performed using leftover alone, it always needs at least one newly-gathered Raw Material added alongside it, and a crafting action must always produce at least one complete item — you can't spend a rest just banking value forward without crafting anything. Together, these mean leftover can only ever supplement real, newly-found materials; it can't compound on its own.
     factionGatingInteraction: |
       Crafting doesn't automatically bypass Faction Gating — raw materials and a rest don't teach you a faction's secrets by themselves. At the GM's discretion, this can be waived once a player has established a narrative reason to know how: they've learned the recipe, or have used/encountered that faction's item type often enough to reverse-engineer it.
     example: |
-      A player carrying nature ingredients worth 0.75 points combined can, on a Long Rest, craft an item or combination of items worth up to 1.5 points (0.75 x 2) that fits nature/Rootbound theming — comfortably under the 2-point ceiling.
+      A player carrying nature ingredients worth 0.75 points combined can, on a Long Rest, craft an item or combination of items worth up to 1.5 points (0.75 x 2) that fits nature/Rootbound theming — comfortably under the 2-point ceiling. If they only spend 1.25 of it, the remaining 0.25 carries forward as a Raw Material for their next crafting action, provided that action also includes a newly-gathered material and produces a complete item.
 
   consumables:
     description: |
@@ -87,7 +91,8 @@ pointSources:
     exceedingTheBand: |
       Legendary-tier one-shots that dramatically swing a whole session (near full-party
       resets, guaranteed criticals, session-ending nukes) can exceed 2 points at GM
-      discretion — the band is a default, not a ceiling. See the worked SRD examples below.
+      discretion — the band is a default, not a ceiling. See the Village items in the
+      catalogue for the baseline this band was calibrated against.
 
   reusables:
     description: |
