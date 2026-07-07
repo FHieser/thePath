@@ -216,6 +216,54 @@
             padding: 1.5rem 0;
         }
 
+        /* All-values reference table, full width below the main grid */
+        .all-values-section {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 0.15rem solid var(--primary-blue);
+        }
+
+        .all-values-section h2 {
+            color: var(--accent-amber);
+            font-size: 1.3rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .all-values-note {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        .value-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        .value-table th {
+            background: rgba(10, 20, 40, 0.8);
+            color: var(--accent-amber);
+            text-align: left;
+            padding: 0.5rem 0.9rem;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            border-bottom: 0.1rem solid var(--border-color);
+        }
+
+        .value-table td {
+            padding: 0.45rem 0.9rem;
+            border-bottom: 0.05rem solid rgba(255,255,255,0.05);
+            color: var(--text-light);
+        }
+
+        .value-table tr:last-child td { border-bottom: none; }
+        .value-table tr:hover td { background: rgba(212, 165, 116, 0.05); }
+        .value-table a { color: var(--accent-amber); text-decoration: none; }
+        .value-table a:hover { text-decoration: underline; }
+
         @media (max-width: 700px) {
             .items-layout {
                 grid-template-columns: 1fr;
@@ -267,6 +315,9 @@
                     <div id="items-toc" class="toc-grid">
                         <span style="opacity:0.5;font-size:0.8rem;">Loading…</span>
                     </div>
+                    <div class="toc-grid" style="margin-top:0.75rem;padding-top:0.75rem;border-top:0.05rem solid var(--border-color);">
+                        <a href="#all-values" class="toc-entry">📋 All Values</a>
+                    </div>
                 </aside>
 
                 <!-- Item groups -->
@@ -274,6 +325,15 @@
                     <div class="loading">Loading items…</div>
                 </div>
             </div>
+
+            <!-- Auto-generated full reference table, unaffected by search/filter -->
+            <section id="all-values" class="all-values-section">
+                <h2>📋 All Values</h2>
+                <p class="all-values-note">Every item's Tier and Trade Value at a glance — see <a href="crafting-and-trading-mechanics.html" style="color:var(--accent-amber);">Crafting &amp; Trading Mechanics</a> for how these are priced.</p>
+                <div id="all-values-content">
+                    <div class="loading">Loading…</div>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -334,6 +394,24 @@
                 ${flavor}
                 ${effect}
             </div>`;
+        }
+
+        function renderAllValues() {
+            const el = document.getElementById('all-values-content');
+            let body = `<table class="value-table"><thead><tr><th>Name</th><th>Type</th><th>Tier</th><th>Usage</th><th>Trade Value</th></tr></thead><tbody>`;
+            for (const item of allItems) {
+                const typeSlug = slugify(item.type || 'General');
+                const tv = typeof item.tradeValue === 'number' ? `${item.tradeValue} TP` : (item.tradeValue || '—');
+                body += `<tr>
+                    <td>${item.name}</td>
+                    <td><a href="#${typeSlug}">${item.type || 'General'}</a></td>
+                    <td>${item.tier ?? '—'}</td>
+                    <td>${item.usage || '—'}</td>
+                    <td>${tv}</td>
+                </tr>`;
+            }
+            body += `</tbody></table>`;
+            el.innerHTML = body;
         }
 
         // Filter state
@@ -437,9 +515,11 @@
             });
 
             render();
+            renderAllValues();
         } catch (err) {
             contentEl.innerHTML = `<p class="error">Failed to load items: ${err.message}</p>`;
             tocEl.innerHTML = '';
+            document.getElementById('all-values-content').innerHTML = '';
             console.error(err);
         }
     })();

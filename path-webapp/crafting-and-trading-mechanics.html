@@ -164,25 +164,16 @@
         const contentEl = document.getElementById('trade-content');
         const tocEl     = document.getElementById('trade-toc');
 
-        function slugify(str) {
-            return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-        }
-
         function section(id, label, bodyHtml, tocArr, htmlArr) {
             tocArr.push(`<a href="#${id}" class="toc-entry">${label}</a>`);
             htmlArr.push(`<h2 id="${id}">${label}</h2>${bodyHtml}`);
         }
 
         try {
-            const [mechRes, itemsRes] = await Promise.all([
-                fetch('../the-path-campaign/mechanics/crafting-and-trading-mechanics.yaml'),
-                fetch('../the-path-campaign/items/items.yaml'),
-            ]);
+            const mechRes = await fetch('../the-path-campaign/mechanics/crafting-and-trading-mechanics.yaml');
             if (!mechRes.ok) throw new Error(`HTTP ${mechRes.status} loading crafting-and-trading-mechanics.yaml`);
-            if (!itemsRes.ok) throw new Error(`HTTP ${itemsRes.status} loading items.yaml`);
 
-            const data  = jsyaml.load(await mechRes.text());
-            const items = jsyaml.load(await itemsRes.text());
+            const data = jsyaml.load(await mechRes.text());
 
             const toc = [];
             const html = [];
@@ -215,33 +206,6 @@
                 }
                 body += `</tbody></table>`;
                 section('raw-materials', 'Raw Materials (by Readiness)', body, toc, html);
-            }
-
-            // Crafting
-            const cr = data.pointSources?.crafting;
-            if (cr) {
-                let body = `<div class="prose">${(cr.description || '').trim()}</div>`;
-                body += `<table class="cost-table"><thead><tr><th>Rest</th><th>Multiplier</th><th>Note</th></tr></thead><tbody>`;
-                for (const row of cr.restMultipliers || []) {
-                    body += `<tr><td>${row.rest}</td><td>×${row.multiplier}</td><td>${row.note || ''}</td></tr>`;
-                }
-                body += `</tbody></table>`;
-                if (cr.roundingRule) {
-                    body += `<div class="note-block"><strong>Rounding:</strong> ${cr.roundingRule.trim()}</div>`;
-                }
-                if (cr.maxCraftValue != null) {
-                    body += `<div class="note-block"><strong>Max crafted value per action:</strong> ${cr.maxCraftValue} points. ${(cr.maxCraftValueNote || '').trim()}</div>`;
-                }
-                if (cr.leftoverMaterials) {
-                    body += `<div class="note-block"><strong>Leftover:</strong> ${cr.leftoverMaterials.trim()}</div>`;
-                }
-                if (cr.factionGatingInteraction) {
-                    body += `<div class="note-block">${cr.factionGatingInteraction.trim()}</div>`;
-                }
-                if (cr.example) {
-                    body += `<div class="prose"><em>${cr.example.trim()}</em></div>`;
-                }
-                section('crafting', 'Crafting', body, toc, html);
             }
 
             // Point sources: consumables
@@ -282,22 +246,31 @@
                     toc, html);
             }
 
-            // Current item values, live from items.yaml
-            if (items?.length) {
-                let body = `<div class="prose">Live values currently assigned in the item catalogue — see the full write-ups on the <a href="items.html" style="color:var(--accent-amber);">Items page</a>.</div>`;
-                body += `<table class="cost-table"><thead><tr><th>Name</th><th>Type</th><th>Tier</th><th>Usage</th><th>Trade Value</th></tr></thead><tbody>`;
-                for (const item of items) {
-                    const typeSlug = slugify(item.type || 'general');
-                    body += `<tr>
-                        <td>${item.name}</td>
-                        <td><a href="items.html#${typeSlug}">${item.type || 'General'}</a></td>
-                        <td>${item.tier ?? '—'}</td>
-                        <td>${item.usage || '—'}</td>
-                        <td>${item.tradeValue ?? '—'}</td>
-                    </tr>`;
+            // Crafting
+            const cr = data.crafting;
+            if (cr) {
+                let body = `<div class="prose">${(cr.description || '').trim()}</div>`;
+                body += `<table class="cost-table"><thead><tr><th>Rest</th><th>Multiplier</th><th>Note</th></tr></thead><tbody>`;
+                for (const row of cr.restMultipliers || []) {
+                    body += `<tr><td>${row.rest}</td><td>×${row.multiplier}</td><td>${row.note || ''}</td></tr>`;
                 }
                 body += `</tbody></table>`;
-                section('current-values', 'Current Item Values', body, toc, html);
+                if (cr.roundingRule) {
+                    body += `<div class="note-block"><strong>Rounding:</strong> ${cr.roundingRule.trim()}</div>`;
+                }
+                if (cr.maxCraftValue != null) {
+                    body += `<div class="note-block"><strong>Max crafted value per action:</strong> ${cr.maxCraftValue} points. ${(cr.maxCraftValueNote || '').trim()}</div>`;
+                }
+                if (cr.leftoverMaterials) {
+                    body += `<div class="note-block"><strong>Leftover:</strong> ${cr.leftoverMaterials.trim()}</div>`;
+                }
+                if (cr.factionGatingInteraction) {
+                    body += `<div class="note-block">${cr.factionGatingInteraction.trim()}</div>`;
+                }
+                if (cr.example) {
+                    body += `<div class="prose"><em>${cr.example.trim()}</em></div>`;
+                }
+                section('crafting', 'Crafting', body, toc, html);
             }
 
             contentEl.innerHTML = html.join('');
