@@ -1,5 +1,5 @@
 # The Path - Items
-# Sorted by type: General first, then faction items grouped by faction name
+# Sorted by type: General first, then Village market goods, then faction items grouped by faction name
 
 # ============================================================
 # GENERAL ITEMS
@@ -26,17 +26,6 @@
     category: Restoration
     description: |
       Consume during a rest. Remove 3 Mist tokens.
-
-- name: Hope in a Bottle
-  type: General
-  usage: Consumable
-  tier: 1
-  tradeValue: 0.5
-  flavor: "A small glass vial filled with warm golden light that sloshes like liquid sunshine."
-  effect:
-    category: Restoration
-    description: |
-      Drink the vial to gain 1 Hope. If you currently have no Hope, gain 2 Hope instead.
 
 - name: Deadnerve
   type: General
@@ -104,6 +93,134 @@
       of those nearby. The Queen's drones intercept these nets. She
       accumulates knowledge of your movements and will act on what she
       learns when the time is right.
+
+# ============================================================
+# VILLAGE ITEMS
+# ============================================================
+# Mundane goods available at the Village's Trading Grounds / Supply Cache —
+# standard Daggerheart consumables, unmodified from the SRD, priced as the
+# baseline reference point for the Trade Points system (see trading-mechanics.yaml).
+
+- name: Hope in a Bottle
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "A small glass vial filled with warm golden light that sloshes like liquid sunshine."
+  effect:
+    category: Restoration
+    description: |
+      Drink the vial to gain 1 Hope. If you currently have no Hope, gain 2 Hope instead.
+
+- name: Stride Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "A thin, fizzing draught that makes your feet feel lighter before it's even swallowed."
+  effect:
+    category: Enhancement
+    description: |
+      You gain a +1 bonus to your next Agility Roll.
+
+- name: Bolster Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "Thick and bitter, it settles into the muscle like liquid iron."
+  effect:
+    category: Enhancement
+    description: |
+      You gain a +1 bonus to your next Strength Roll.
+
+- name: Control Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "A cool, silver-tinged tonic that steadies trembling hands."
+  effect:
+    category: Enhancement
+    description: |
+      You gain a +1 bonus to your next Finesse Roll.
+
+- name: Attune Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "Tastes of static — drink it and the world's edges sharpen for a moment."
+  effect:
+    category: Enhancement
+    description: |
+      You gain a +1 bonus to your next Instinct Roll.
+
+- name: Charm Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "Sweet as syrup, it loosens the tongue and softens the face."
+  effect:
+    category: Enhancement
+    description: |
+      You gain a +1 bonus to your next Presence Roll.
+
+- name: Enlighten Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "Bitter root tea that leaves your thoughts unusually clear."
+  effect:
+    category: Enhancement
+    description: |
+      You gain a +1 bonus to your next Knowledge Roll.
+
+- name: Minor Health Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 1
+  flavor: "A small vial of common healing draught, watered down but reliable."
+  effect:
+    category: Restoration
+    description: |
+      Clear 1d4 Hit Points.
+
+- name: Minor Stamina Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 1
+  flavor: "A weak restorative brew, the kind every village apothecary keeps in bulk."
+  effect:
+    category: Restoration
+    description: |
+      Clear 1d4 Stress.
+
+- name: Health Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 1.5
+  flavor: "A standard healing draught, red as a fresh wound and twice as common."
+  effect:
+    category: Restoration
+    description: |
+      Clear 1d4+1 Hit Points.
+
+- name: Stamina Potion
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 1.5
+  flavor: "A standard restorative tonic, brewed in batches for travelers passing through."
+  effect:
+    category: Restoration
+    description: |
+      Clear 1d4+1 Stress.
 
 # ============================================================
 # BLOOD ITEMS

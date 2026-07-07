@@ -65,7 +65,6 @@
             color: var(--text-light);
             line-height: 1.6;
             opacity: 0.9;
-            white-space: pre-line;
             margin-bottom: 0.75rem;
         }
 
@@ -120,21 +119,6 @@
             font-size: 0.85rem;
             color: var(--text-light);
         }
-
-        .todo-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 1rem 0;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        .todo-list li {
-            padding: 0.35rem 0;
-            border-bottom: 0.05rem solid rgba(255,255,255,0.05);
-        }
-
-        .todo-list li:last-child { border-bottom: none; }
 
         @media (max-width: 700px) {
             .trade-layout { grid-template-columns: 1fr; }
@@ -270,26 +254,6 @@
                     toc, html);
             }
 
-            // Adaptability
-            if (data.adaptability) {
-                section('adaptability', 'Adaptability',
-                    `<div class="prose">${data.adaptability.trim()}</div>`,
-                    toc, html);
-            }
-
-            // Worked SRD examples
-            const srd = data.workedExampleSrdConsumables;
-            if (srd?.items?.length) {
-                let body = `<div class="prose">${(srd.description || '').trim()}</div>`;
-                body += `<table class="cost-table"><thead><tr><th>Name</th><th>Rarity</th><th>Effect</th><th>Trade Value</th></tr></thead><tbody>`;
-                for (const item of srd.items) {
-                    const note = item.note ? `<br><span style="opacity:0.6;font-size:0.8em;">${item.note}</span>` : '';
-                    body += `<tr><td>${item.name}</td><td>${item.rarity}</td><td>${item.effect}</td><td>${item.tradeValue}${note}</td></tr>`;
-                }
-                body += `</tbody></table>`;
-                section('srd-examples', 'Worked SRD Examples', body, toc, html);
-            }
-
             // Current item values, live from items.yaml
             if (items?.length) {
                 let body = `<div class="prose">Live values currently assigned in the item catalogue — see the full write-ups on the <a href="items.html" style="color:var(--accent-amber);">Items page</a>.</div>`;
@@ -306,12 +270,6 @@
                 }
                 body += `</tbody></table>`;
                 section('current-values', 'Current Item Values', body, toc, html);
-            }
-
-            // Notes
-            if (data.notes?.length) {
-                const body = `<ul class="todo-list">${data.notes.map(n => `<li>${n}</li>`).join('')}</ul>`;
-                section('notes', 'Notes', body, toc, html);
             }
 
             contentEl.innerHTML = html.join('');
