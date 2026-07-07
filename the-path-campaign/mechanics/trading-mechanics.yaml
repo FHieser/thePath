@@ -51,6 +51,24 @@ pointSources:
         points: 1
         example: A finished dose, a ready-to-mount trophy, a stable reagent
 
+  crafting:
+    description: |
+      A downtime move that lets a player convert Raw Materials into a finished item (or combination of items) themselves, instead of trading them to an NPC. Combine the point value of any Raw Materials being spent, apply the rest multiplier below, then spend the result immediately on item(s) whose fictional materials plausibly match what was spent (nature ingredients craft Rootbound-flavored effects, blood reagents craft Blood-flavored effects, etc. — GM's call). The crafting budget must be spent in the same rest it was generated; it cannot be banked for later.
+    restMultipliers:
+      - rest: Short Rest
+        multiplier: 1
+        note: Enough time to assemble what you're carrying, but no efficiency gain over just trading it in.
+      - rest: Long Rest
+        multiplier: 2
+        note: Enough time and care to refine raw materials well beyond their trade-in worth.
+    maxCraftValue: 2
+    maxCraftValueNote: |
+      Regardless of multiplier, a single crafting action can never produce item(s) totaling more than 2 points — the same ceiling as the Consumables band. This keeps crafting a way to turn scavenged scraps into a handy potion, not a shortcut to Tier-3+ gear.
+    factionGatingInteraction: |
+      Crafting doesn't automatically bypass Faction Gating — raw materials and a rest don't teach you a faction's secrets by themselves. At the GM's discretion, this can be waived once a player has established a narrative reason to know how: they've learned the recipe, or have used/encountered that faction's item type often enough to reverse-engineer it.
+    example: |
+      A player carrying nature ingredients worth 0.75 points combined can, on a Long Rest, craft an item or combination of items worth up to 1.5 points (0.75 x 2) that fits nature/Rootbound theming — comfortably under the 2-point ceiling.
+
   consumables:
     description: |
       Consumables are priced independently of Tier — a one-shot effect shouldn't cost as
