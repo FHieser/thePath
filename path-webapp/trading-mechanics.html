@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Mechanics - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .trade-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .trade-sidebar {
+            position: sticky;
+            top: 1.5rem;
+            height: fit-content;
+        }
+
+        .trade-sidebar h2 {
+            color: var(--accent-amber);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 0 0 0.6rem 0;
+            opacity: 0.7;
+        }
+
+        .trade-sidebar .toc-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .trade-sidebar .toc-entry {
+            font-size: 0.82rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .trade-content h2 {
+            color: var(--accent-amber);
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 0.1rem solid var(--primary-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .trade-content h2:first-child { margin-top: 0; }
+
+        .trade-content h3 {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-light);
+            opacity: 0.85;
+            margin: 1.25rem 0 0.6rem 0;
+        }
+
+        .prose {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            opacity: 0.9;
+            white-space: pre-line;
+            margin-bottom: 0.75rem;
+        }
+
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.25rem;
+            font-size: 0.875rem;
+        }
+
+        .cost-table th {
+            background: rgba(10, 20, 40, 0.8);
+            color: var(--accent-amber);
+            text-align: left;
+            padding: 0.5rem 0.9rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            border-bottom: 0.1rem solid var(--border-color);
+        }
+
+        .cost-table td {
+            padding: 0.5rem 0.9rem;
+            border-bottom: 0.05rem solid rgba(255,255,255,0.05);
+            color: var(--text-light);
+        }
+
+        .cost-table tr:last-child td { border-bottom: none; }
+        .cost-table tr:hover td { background: rgba(212, 165, 116, 0.05); }
+        .cost-table a { color: var(--accent-amber); text-decoration: none; }
+        .cost-table a:hover { text-decoration: underline; }
+
+        .note-block {
+            background: rgba(10, 20, 40, 0.6);
+            border: 0.1rem solid var(--border-color);
+            border-left: 0.25rem solid var(--accent-amber);
+            border-radius: 0.4rem;
+            padding: 0.6rem 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            opacity: 0.9;
+        }
+
+        .special-block {
+            background: rgba(10, 20, 40, 0.6);
+            border: 0.1rem solid var(--border-color);
+            border-left: 0.25rem solid #b84040;
+            border-radius: 0.4rem;
+            padding: 0.6rem 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .todo-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1rem 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .todo-list li {
+            padding: 0.35rem 0;
+            border-bottom: 0.05rem solid rgba(255,255,255,0.05);
+        }
+
+        .todo-list li:last-child { border-bottom: none; }
+
+        @media (max-width: 700px) {
+            .trade-layout { grid-template-columns: 1fr; }
+            .trade-sidebar { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <a class="home-btn" href="index.html">&#8962; Home</a>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="items.html">← Back to Items</a>
+            </nav>
+            <h1>Trading Mechanics</h1>
+            <p class="subtitle">Trade Points — a lightweight, adaptable currency for exchanges along The Path &nbsp;·&nbsp; <a href="items.html" style="color:var(--accent-amber);opacity:0.8;">Item Catalogue →</a></p>
+        </header>
+
+        <main>
+            <div class="trade-layout">
+                <aside class="trade-sidebar">
+                    <h2>Contents</h2>
+                    <div id="trade-toc" class="toc-grid">
+                        <span style="opacity:0.5;font-size:0.8rem;">Loading…</span>
+                    </div>
+                </aside>
+
+                <div id="trade-content" class="trade-content">
+                    <div class="loading">Loading trading mechanics…</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script>
+    (async function () {
+        const contentEl = document.getElementById('trade-content');
+        const tocEl     = document.getElementById('trade-toc');
+
+        function slugify(str) {
+            return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        }
+
+        function section(id, label, bodyHtml, tocArr, htmlArr) {
+            tocArr.push(`<a href="#${id}" class="toc-entry">${label}</a>`);
+            htmlArr.push(`<h2 id="${id}">${label}</h2>${bodyHtml}`);
+        }
+
+        try {
+            const [mechRes, itemsRes] = await Promise.all([
+                fetch('../the-path-campaign/mechanics/trading-mechanics.yaml'),
+                fetch('../the-path-campaign/items/items.yaml'),
+            ]);
+            if (!mechRes.ok) throw new Error(`HTTP ${mechRes.status} loading trading-mechanics.yaml`);
+            if (!itemsRes.ok) throw new Error(`HTTP ${itemsRes.status} loading items.yaml`);
+
+            const data  = jsyaml.load(await mechRes.text());
+            const items = jsyaml.load(await itemsRes.text());
+
+            const toc = [];
+            const html = [];
+
+            // Core principle
+            section('core-principle', 'Core Principle',
+                `<div class="prose">${(data.introduction || '').trim()}</div>
+                 <div class="prose">${(data.corePrinciple || '').trim()}</div>`,
+                toc, html);
+
+            // Point sources: finished items
+            const fi = data.pointSources?.finishedItems;
+            if (fi) {
+                let body = `<div class="prose">${(fi.description || '').trim()}</div>`;
+                body += `<table class="cost-table"><thead><tr><th>Tier</th><th>Points</th></tr></thead><tbody>`;
+                for (const row of fi.table || []) {
+                    body += `<tr><td>Tier ${row.tier}</td><td>${row.points}</td></tr>`;
+                }
+                body += `</tbody></table>`;
+                section('finished-items', 'Finished Items (by Tier)', body, toc, html);
+            }
+
+            // Point sources: raw materials
+            const rm = data.pointSources?.rawMaterials;
+            if (rm) {
+                let body = `<div class="prose">${(rm.description || '').trim()}</div>`;
+                body += `<table class="cost-table"><thead><tr><th>Readiness</th><th>Points</th><th>Example</th></tr></thead><tbody>`;
+                for (const row of rm.table || []) {
+                    body += `<tr><td>${row.readiness}</td><td>${row.points}</td><td>${row.example || ''}</td></tr>`;
+                }
+                body += `</tbody></table>`;
+                section('raw-materials', 'Raw Materials (by Readiness)', body, toc, html);
+            }
+
+            // Point sources: consumables
+            const cs = data.pointSources?.consumables;
+            if (cs) {
+                let body = `<div class="prose">${(cs.description || '').trim()}</div>`;
+                body += `<div class="note-block"><strong>Range:</strong> ${cs.range}</div>`;
+                body += `<table class="cost-table"><thead><tr><th>Cost</th><th>Guidance</th></tr></thead><tbody>`;
+                for (const row of cs.guidance || []) {
+                    body += `<tr><td>${row.cost}</td><td>${row.description}</td></tr>`;
+                }
+                body += `</tbody></table>`;
+                if (cs.exceedingTheBand) {
+                    body += `<div class="note-block">${cs.exceedingTheBand.trim()}</div>`;
+                }
+                section('consumables', 'Consumables', body, toc, html);
+            }
+
+            // Point sources: reusables
+            const ru = data.pointSources?.reusables;
+            if (ru) {
+                const body = `<div class="prose">${(ru.description || '').trim()}</div>
+                              <div class="note-block">${(ru.guidance || '').trim()}</div>`;
+                section('reusables', 'Reusables', body, toc, html);
+            }
+
+            // Faction gating
+            if (data.factionGating) {
+                section('faction-gating', 'Faction Gating',
+                    `<div class="prose">${(data.factionGating.description || '').trim()}</div>`,
+                    toc, html);
+            }
+
+            // Special cases
+            if (data.specialCases) {
+                section('special-cases', 'Special Cases',
+                    `<div class="special-block">${(data.specialCases.description || '').trim()}</div>`,
+                    toc, html);
+            }
+
+            // Adaptability
+            if (data.adaptability) {
+                section('adaptability', 'Adaptability',
+                    `<div class="prose">${data.adaptability.trim()}</div>`,
+                    toc, html);
+            }
+
+            // Worked SRD examples
+            const srd = data.workedExampleSrdConsumables;
+            if (srd?.items?.length) {
+                let body = `<div class="prose">${(srd.description || '').trim()}</div>`;
+                body += `<table class="cost-table"><thead><tr><th>Name</th><th>Rarity</th><th>Effect</th><th>Trade Value</th></tr></thead><tbody>`;
+                for (const item of srd.items) {
+                    const note = item.note ? `<br><span style="opacity:0.6;font-size:0.8em;">${item.note}</span>` : '';
+                    body += `<tr><td>${item.name}</td><td>${item.rarity}</td><td>${item.effect}</td><td>${item.tradeValue}${note}</td></tr>`;
+                }
+                body += `</tbody></table>`;
+                section('srd-examples', 'Worked SRD Examples', body, toc, html);
+            }
+
+            // Current item values, live from items.yaml
+            if (items?.length) {
+                let body = `<div class="prose">Live values currently assigned in the item catalogue — see the full write-ups on the <a href="items.html" style="color:var(--accent-amber);">Items page</a>.</div>`;
+                body += `<table class="cost-table"><thead><tr><th>Name</th><th>Type</th><th>Tier</th><th>Usage</th><th>Trade Value</th></tr></thead><tbody>`;
+                for (const item of items) {
+                    const typeSlug = slugify(item.type || 'general');
+                    body += `<tr>
+                        <td>${item.name}</td>
+                        <td><a href="items.html#${typeSlug}">${item.type || 'General'}</a></td>
+                        <td>${item.tier ?? '—'}</td>
+                        <td>${item.usage || '—'}</td>
+                        <td>${item.tradeValue ?? '—'}</td>
+                    </tr>`;
+                }
+                body += `</tbody></table>`;
+                section('current-values', 'Current Item Values', body, toc, html);
+            }
+
+            // Notes
+            if (data.notes?.length) {
+                const body = `<ul class="todo-list">${data.notes.map(n => `<li>${n}</li>`).join('')}</ul>`;
+                section('notes', 'Notes', body, toc, html);
+            }
+
+            contentEl.innerHTML = html.join('');
+            tocEl.innerHTML = toc.join('') || '<span style="opacity:0.4;font-size:0.8rem;">—</span>';
+
+        } catch (err) {
+            contentEl.innerHTML = `<p class="error">Failed to load trading mechanics: ${err.message}</p>`;
+            tocEl.innerHTML = '';
+            console.error(err);
+        }
+    })();
+    </script>
+</body>
+</html>

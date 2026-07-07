@@ -187,6 +187,8 @@
         .badge-consumable { background: rgba(180, 60, 60, 0.25); color: #e07070; border: 0.05rem solid rgba(180,60,60,0.4); }
         .badge-reusable   { background: rgba(17, 68, 102, 0.4);  color: #7ab8d4; border: 0.05rem solid rgba(17,68,102,0.6); }
         .badge-category   { background: rgba(180, 140, 40, 0.2); color: var(--accent-amber); border: 0.05rem solid rgba(180,140,40,0.4); }
+        .badge-tier       { background: rgba(255, 255, 255, 0.08); color: var(--text-muted); border: 0.05rem solid rgba(255,255,255,0.15); }
+        .badge-trade      { background: rgba(212, 165, 116, 0.15); color: var(--accent-amber); border: 0.05rem solid rgba(212,165,116,0.35); }
 
         .item-flavor {
             font-style: italic;
@@ -231,7 +233,7 @@
                 <a href="index.html">← Back to Path</a>
             </nav>
             <h1>Items</h1>
-            <p class="subtitle">Equipment and consumables found along The Path &nbsp;·&nbsp; <a href="starfall-crystals.html" style="color:var(--accent-amber);opacity:0.8;">Starfall Crystal System →</a></p>
+            <p class="subtitle">Equipment and consumables found along The Path &nbsp;·&nbsp; <a href="trading-mechanics.html" style="color:var(--accent-amber);opacity:0.8;">Trading Mechanics →</a> &nbsp;·&nbsp; <a href="starfall-crystals.html" style="color:var(--accent-amber);opacity:0.8;">Starfall Crystal System →</a></p>
         </header>
 
         <main>
@@ -303,6 +305,11 @@
             const usageCls = item.usage === 'Reusable' ? 'badge-reusable' : 'badge-consumable';
             const catBadge = item.effect?.category
                 ? `<span class="badge badge-category">${item.effect.category}</span>` : '';
+            const tierBadge = item.tier != null
+                ? `<span class="badge badge-tier">Tier ${item.tier}</span>` : '';
+            const tvIsNumber = typeof item.tradeValue === 'number';
+            const tradeBadge = item.tradeValue != null
+                ? `<span class="badge badge-trade" title="${tvIsNumber ? 'See Trading Mechanics for how this is priced' : item.tradeValue}">${tvIsNumber ? item.tradeValue + ' TP' : 'Not Tradeable'}</span>` : '';
             const flavor   = item.flavor
                 ? `<p class="item-flavor">${item.flavor}</p>` : '';
             const effect   = item.effect?.description
@@ -314,6 +321,8 @@
                     <div class="item-badges">
                         <span class="badge ${usageCls}">${item.usage || 'Consumable'}</span>
                         ${catBadge}
+                        ${tierBadge}
+                        ${tradeBadge}
                     </div>
                 </div>
                 ${flavor}

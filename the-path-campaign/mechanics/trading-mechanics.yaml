@@ -1,0 +1,148 @@
+title: Trading & Trade Points
+version: 1
+
+introduction: |
+  Trade Points (TP) are a lightweight currency for handling exchanges at Inhabited locations,
+  Trading Grounds, and faction outposts. They exist to replace vague "sure, that seems fair"
+  haggling with a shared reference point — but every value in this system is a default, not
+  a law. A tradeValue on any item can be hand-overridden at any time without breaking the
+  rest of the table. Start by pricing items as they come up in play; you don't need to value
+  everything at once.
+
+corePrinciple: |
+  A single tradeValue field on each item serves as both its buy cost and its sell value,
+  keeping the system simple to run at the table. If a specific trade feels wrong in the
+  fiction (a desperate NPC overpaying, a hostile trader gouging newcomers), adjust that one
+  exchange — don't rewrite the table over it.
+
+pointSources:
+  description: How items and materials translate into Trade Points.
+
+  finishedItems:
+    description: |
+      Complete, ready-to-use items (the kind catalogued in items.yaml) are valued by Tier.
+      This is the primary axis for Reusable gear and anything substantial enough to carry
+      a Tier rating — Tier tracks the campaign's existing scale (1 = level 1, 2 = levels
+      2-4, 3 = levels 5-7, 4 = levels 8-10).
+    table:
+      - tier: 1
+        points: 1
+      - tier: 2
+        points: 2
+      - tier: 3
+        points: 3
+      - tier: 4
+        points: 4
+
+  rawMaterials:
+    description: |
+      Found materials and crafting components (ore, herbs, monster parts, mist-touched
+      curiosities) don't carry a Tier — they're valued by how ready they are to use as-is.
+      This rewards players for bringing in things a trader can put to immediate use over
+      things that need work first.
+    table:
+      - readiness: Needs heavy refinement
+        points: 0.25
+        example: A raw crystal shard, an unprocessed pelt, a vein of ore
+      - readiness: Needs light processing
+        points: 0.5
+        example: Cleaned herbs, a partially-worked hide, a stabilized reagent
+      - readiness: Immediately usable
+        points: 1
+        example: A finished dose, a ready-to-mount trophy, a stable reagent
+
+  consumables:
+    description: |
+      Consumables are priced independently of Tier — a one-shot effect shouldn't cost as
+      much as a permanent Tier-matched item, even if it's found at a high-Tier location.
+      Price within this band based on how much the effect swings a scene.
+    range: 0.5 - 2 points
+    guidance:
+      - cost: 0.5
+        description: Minor, situational, or narrow-condition effects (small single resource, niche utility)
+      - cost: 1
+        description: Standard single-resource recovery or a solid one-scene buff
+      - cost: 1.5
+        description: Strong scene-defining effects, multi-resource recovery, or party-wide reach
+      - cost: 2
+        description: Powerful, rare, or heavily party-wide effects
+    exceedingTheBand: |
+      Legendary-tier one-shots that dramatically swing a whole session (near full-party
+      resets, guaranteed criticals, session-ending nukes) can exceed 2 points at GM
+      discretion — the band is a default, not a ceiling. See the worked SRD examples below.
+
+  reusables:
+    description: |
+      Reusable items cost more than a Consumable of comparable power, since they pay off
+      repeatedly instead of once. There is no fixed multiplier — price these case by case
+      against the finished-item Tier table above, then adjust for how often the effect can
+      be used (once per Long Rest vs. always-on) and whether it carries built-in costs or
+      limitations that already balance it.
+    guidance: |
+      Gut check: if you'd be happy seeing this item at the table every session for the
+      rest of the campaign, it's priced high enough.
+
+factionGating:
+  description: |
+    Faction items (Blood, Rootbound, Fire Born, Brass Mechanicorum, Mist Born, The Croak)
+    carry a tradeValue like anything else, but Trade Points alone don't unlock them — the
+    player also needs standing or access with that faction. This keeps faction gear tied to
+    relationships and questlines rather than becoming a shopping list anyone can walk up to.
+
+    There is no formal reputation-tracking mechanic yet. Until one exists, use each
+    faction's faction-details.yaml and current narrative standing as the gate, and treat
+    tradeValue as what a member or ally of that faction would charge one of their own.
+
+specialCases:
+  description: |
+    Some items resist a clean tradeValue because they're narrative gifts, living
+    companions, or otherwise not meant to be sold at a stall. Mark these explicitly rather
+    than forcing a number — e.g. Silkweaver (a gift from the Spider Queen, not merchandise).
+
+adaptability: |
+  Everything above is a default:
+  - A tradeValue on any item overrides the formula for that item specifically.
+  - The bands themselves (0.5-2 for Consumables, 1-4 for Tiered items) can be widened or
+    narrowed per-campaign without touching individual item entries.
+  - Buy price and sell value are unified into one number for simplicity. If that ever feels
+    wrong at the table (traders should pay less than they charge), split tradeValue into
+    buyValue / sellValue later — nothing else in this document depends on them being equal.
+
+workedExampleSrdConsumables:
+  description: |
+    Calibration pass against official Daggerheart consumables (see
+    lib/daggerheart-srd/contents/Consumables.md), spanning Common to Legendary rarity.
+    Useful as a reference point when a player finds generic SRD loot instead of a
+    campaign-specific item.
+  items:
+    - name: Minor Health Potion
+      rarity: Common
+      effect: Clear 1d4 HP
+      tradeValue: 0.5
+    - name: Health Potion
+      rarity: Common
+      effect: Clear 1d4+1 HP
+      tradeValue: 1
+    - name: Major Health Potion
+      rarity: Rare
+      effect: Clear 1d4+2 HP
+      tradeValue: 1.5
+    - name: Sleeping Sap
+      rarity: Legendary
+      effect: Full night's rest, clear all Stress on waking
+      tradeValue: 2
+    - name: Feast of Xurla
+      rarity: Legendary
+      effect: Clear all HP and Stress, gain 1d4 Hope
+      tradeValue: 2.5
+      note: Exceeds the standard band — a full-party-tier reset effect.
+    - name: Stardrop
+      rarity: Legendary
+      effect: 8d20 physical damage to all targets within Very Far range
+      tradeValue: 3
+      note: Exceeds the standard band — campaign-defining, session-ending nuke.
+
+notes:
+  - This document will be updated as playtesting reveals how these bands hold up in actual play.
+  - TODO: Decide whether buyValue/sellValue should split once trading sessions reveal a need for it.
+  - TODO: Once a faction reputation mechanic exists, replace the narrative-standing gate above with its mechanical equivalent.

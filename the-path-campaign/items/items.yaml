@@ -8,6 +8,8 @@
 - name: Mist Protection Charm
   type: General
   usage: Consumable
+  tier: 1
+  tradeValue: 0.5
   flavor: "A small wooden bead carved with a simple ward-mark, strung on rough cord. Travelers going into the mist tie a handful to their wrists and come back with fewer than they left with."
   effect:
     category: Protection
@@ -17,6 +19,8 @@
 - name: Cliffgold
   type: General
   usage: Consumable
+  tier: 2
+  tradeValue: 1.5
   flavor: "A bright yellow flower that clings to cliff faces where nothing else grows — ancient, stubborn, and worth the reach."
   effect:
     category: Restoration
@@ -26,24 +30,19 @@
 - name: Hope in a Bottle
   type: General
   usage: Consumable
+  tier: 1
+  tradeValue: 0.5
   flavor: "A small glass vial filled with warm golden light that sloshes like liquid sunshine."
   effect:
     category: Restoration
     description: |
       Drink the vial to gain 1 Hope. If you currently have no Hope, gain 2 Hope instead.
 
-- name: Circle Ash
-  type: General
-  usage: Consumable
-  flavor: "Fine grey ash that drifts against the wind when released near fey-touched ground."
-  effect:
-    category: Utility
-    description: |
-      Throw the ash into a Mushroom Circle. The particles swirl and drift toward the direction of linked Mushroom Circle locations, showing you which way to face before stepping in.
-
 - name: Deadnerve
   type: General
   usage: Consumable
+  tier: 1
+  tradeValue: 1
   flavor: "A bitter black paste that numbs the tongue and quiets the mind."
   effect:
     category: Restoration
@@ -53,6 +52,8 @@
 - name: Firepatch
   type: General
   usage: Consumable
+  tier: 1
+  tradeValue: 1
   flavor: "A rough bandage soaked in alchemical fire that sears wounds shut on contact."
   effect:
     category: Restoration
@@ -62,6 +63,8 @@
 - name: Rushpowder
   type: General
   usage: Consumable
+  tier: 1
+  tradeValue: 1.5
   flavor: "A pinch of sharp white powder that makes the air taste like lightning."
   effect:
     category: Enhancement
@@ -71,6 +74,8 @@
 - name: Iron Nerve Paste
   type: General
   usage: Consumable
+  tier: 2
+  tradeValue: 1.5
   flavor: "A grey-black paste that smells faintly of copper and old stone. Applied to the temple, it doesn't numb the pain — it convinces you the pain was never worth feeling."
   effect:
     category: Restoration
@@ -82,6 +87,8 @@
 - name: Silkweaver
   type: General
   usage: Reusable
+  tier: 2
+  tradeValue: not tradeable — a living gift from the Spider Queen, not merchandise
   flavor: "She fits in a palm, weighs almost nothing, and the silk she produces is flawless — the Queen does not give gifts lightly."
   effect:
     category: Utility
@@ -105,6 +112,8 @@
 - name: Archon's Reserves
   type: Blood
   usage: Reusable
+  tier: 1
+  tradeValue: 1
   flavor: "A dark glass vial etched with ancient channel-marks, always faintly warm to the touch."
   effect:
     category: Utility
@@ -114,6 +123,8 @@
 - name: Rapid Mutator
   type: Blood
   usage: Consumable
+  tier: 2
+  tradeValue: 1.5
   flavor: "A crude syringe of dark red compound that smells of iron and copper wire — the Archon's handwriting is on the label, neat as a death sentence."
   effect:
     category: Restoration
@@ -123,6 +134,8 @@
 - name: Red Eye
   type: Blood
   usage: Reusable
+  tier: 2
+  tradeValue: 2.5
   flavor: "A plague crystal fused with mist essence and blood — look into it and the dark coils move, and something inside looks back."
   effect:
     category: Restoration
@@ -136,6 +149,8 @@
 - name: Sanguine Cage
   type: Blood
   usage: Reusable
+  tier: 2
+  tradeValue: 3
   flavor: "Interlocked bones sealed with hardened blood — crafted through hemomancy, worn by those who know the body is a resource to be spent wisely."
   effect:
     category: Protection
@@ -151,6 +166,8 @@
 - name: Dreaming Bark
   type: Rootbound
   usage: Consumable
+  tier: 1
+  tradeValue: 1
   flavor: "A strip of pale bark that tastes of soil and sleep. Chew it and the world behind your eyes opens."
   effect:
     category: Utility
@@ -160,6 +177,8 @@
 - name: Lullroot
   type: Rootbound
   usage: Consumable
+  tier: 1
+  tradeValue: 1
   flavor: "A soft, fibrous root that smells of rain-soaked earth and quiet evenings."
   effect:
     category: Restoration
@@ -169,11 +188,24 @@
 - name: Dewcleanse
   type: Rootbound
   usage: Consumable
+  tier: 1
+  tradeValue: 1.5
   flavor: "A pouch of dried herbs that blooms into fragrant tea when steeped in warm water. Quite some powerful stuff, but takes a while to get going. Tastes good too."
   effect:
     category: Restoration
     description: |
       Brew during a rest. Every player who is resting may drink and remove 2 Mist tokens. Preparing the tea takes time - it cannot be rushed or brewed during an encounter.
+
+- name: Circle Ash
+  type: Rootbound
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "Fine grey ash that drifts against the wind when released near fey-touched ground."
+  effect:
+    category: Utility
+    description: |
+      Throw the ash into a Mushroom Circle. The particles swirl and drift toward the direction of linked Mushroom Circle locations, showing you which way to face before stepping in.
 
 # ============================================================
 # FIRE BORN ITEMS
@@ -182,6 +214,8 @@
 - name: Flame Bearer's Amulet
   type: Fire Born
   usage: Reusable
+  tier: 1
+  tradeValue: 1.5
   flavor: "A flat disc of alien metal, warm to the touch even in the deepest mist, inscribed with symbols no mortal language reads."
   effect:
     category: Protection
@@ -191,6 +225,8 @@
 - name: Flame Blade
   type: Fire Born
   usage: Reusable
+  tier: 2
+  tradeValue: 4
   flavor: "An ancient blade of alien metal that runs hot in the hand — the flame inside it does not care whose blood it burns."
   effect:
     category: Disruption
@@ -206,6 +242,8 @@
 - name: Ember Weave
   type: Fire Born
   usage: Reusable
+  tier: 2
+  tradeValue: 2
   flavor: "A shred of the old pilgrimage, warm where everything else is cold. Hold it up and something remembers what it meant to believe in fire."
   effect:
     category: Enhancement
@@ -215,6 +253,8 @@
 - name: Flashburn
   type: Fire Born
   usage: Consumable
+  tier: 2
+  tradeValue: 1.5
   flavor: "A compact torch that flares with blinding sacred light, pushing the shadows back - but they always return deeper."
   effect:
     category: Restoration
@@ -228,6 +268,8 @@
 - name: Br4ss Filt3r
   type: Brass Mechanicorum
   usage: Reusable
+  tier: 2
+  tradeValue: 2
   flavor: "A small cylindrical device of polished brass and crystal mesh that hums faintly, drawing moisture from the air."
   effect:
     category: Protection
@@ -241,6 +283,8 @@
 - name: The Claiming Conch
   type: Mist Born
   usage: Reusable
+  tier: 3
+  tradeValue: 4
   flavor: "Split when it died, but the depths still broadcast through the crack. Something below is still listening."
   effect:
     category: Utility
@@ -267,6 +311,8 @@
 - name: Tidepole Marker
   type: Mist Born
   usage: Reusable
+  tier: 2
+  tradeValue: 3
   flavor: "Something in the deep end of the mist recognizes this shape. It doesn't know the signal is wrong."
   effect:
     category: Disruption
@@ -290,6 +336,8 @@
 - name: Reed Candle
   type: The Croak
   usage: Consumable
+  tier: 1
+  tradeValue: 1
   flavor: "A thick candle pressed from reed wax and dried marsh grass. It burns slow and smells like still water after rain."
   effect:
     category: Restoration
@@ -300,6 +348,8 @@
 - name: Bubble Croaker
   type: The Croak
   usage: Consumable
+  tier: 1
+  tradeValue: 1
   flavor: "A thumb-sized frog that sits perfectly still until it doesn't. Then it fills its throat sac until the bubble is taller than a person and keeps going."
   effect:
     category: Utility
@@ -317,6 +367,8 @@
 - name: Blood Frog Totem
   type: The Croak
   usage: Consumable
+  tier: 2
+  tradeValue: 2
   flavor: "A squat clay frog packed with something that isn't clay. It squats where you leave it and watches the mist come in."
   effect:
     category: Protection
@@ -331,6 +383,8 @@
 - name: Stress Leeches
   type: The Croak
   usage: Consumable
+  tier: 1
+  tradeValue: 1
   flavor: "A damp pouch of swamp leeches, kept alive. The Croak sells them with the same expression they sell everything else."
   effect:
     category: Restoration
