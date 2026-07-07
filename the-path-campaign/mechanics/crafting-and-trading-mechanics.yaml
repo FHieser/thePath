@@ -84,7 +84,7 @@ pointSources:
 
 factionGating:
   description: |
-    Faction items (Blood, Rootbound, Fire Born, Brass Mechanicorum, Mist Born, The Croak) carry a tradeValue like anything else, but Trade Points alone don't unlock them — the player also needs standing or access with that faction. This keeps faction gear tied to relationships and questlines rather than becoming a shopping list anyone can walk up to.
+    Faction items carry a tradeValue like anything else, but Trade Points alone don't unlock them — the player also needs standing or access with that faction. This keeps faction gear tied to relationships and questlines rather than becoming a shopping list anyone can walk up to.
 
 specialCases:
   description: |
