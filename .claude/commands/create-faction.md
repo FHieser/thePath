@@ -118,6 +118,12 @@ Define the faction's artifact aesthetic:
 - **Effect categories** — what do they tend to do? (Disruption, Protection, Entanglement, Utility, etc.)
 - **Typical Cost** — the faction-appropriate price of using their items
 
+**Exception — umbrella factions with no shared culture** (e.g. Factionless, or any faction whose whole
+point is that its members don't share an agenda): don't invent a unified theme. Instead write
+`item_identity` as a short pointer to the NPC level — see `the-path-campaign/lore/factions/factionless/faction-details.yaml`
+for the pattern. Individual NPCs under that faction may carry their own optional `item_identity` field
+(see Step 11) when they have a distinct enough material/aesthetic identity to warrant one.
+
 ---
 
 ## Step 9: Rumors & Plot Hooks
@@ -176,6 +182,12 @@ For each NPC:
 - Or listed as a reference to create later?
 
 Add each NPC to the faction's `npcs:` list in `faction-details.yaml`.
+
+**Optional per-NPC `item_identity`:** if the faction's own `item_identity` defers to the NPC level
+(see Step 8 exception), an individual NPC file may carry its own `item_identity: {theme, cost}`
+block, in the same shape as the faction-level field. It's optional — only add it once that NPC has
+a developed material/aesthetic identity worth reusing across multiple items. When rendering or
+reading an NPC file, show/use this field only if it's present.
 
 ---
 

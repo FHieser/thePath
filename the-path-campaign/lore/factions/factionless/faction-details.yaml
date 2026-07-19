@@ -1,0 +1,142 @@
+name: Factionless
+id: factionless
+alignment: Neutral
+tier: Emerging
+
+identity:
+  description: |
+    Not a faction so much as the label everyone else uses for anyone the Path hasn't sorted into a
+    banner. Some never had the chance to join one — displaced before any group could reach them,
+    born between territories, or simply never crossing paths with one that would take them in.
+    Others could have joined and didn't, for reasons that are entirely their own. What they share
+    isn't a history or a disposition — it's just that no named power claims them, and they haven't
+    asked to be claimed. Most are unremarkable. A few, like the Archon of Mercy, are running
+    agendas worth tracking closely.
+  themes:
+    - Belonging by circumstance vs. belonging by choice — not every Factionless story is a rejection
+    - Judged by behavior, not by category — every other faction says some version of this about them
+    - What it means to build a life, or a purpose, with no institution standing behind you
+    - The quiet majority vs. the rare, memorable exception
+
+history:
+  origin: |
+    Factionless isn't founded — it's applied. It covers everyone who moves through the mist lands
+    without belonging to Fire Born, Mist Born, Rootbound, the Croak, or any of the other named
+    powers, for whatever reason that's true of them: cut off before any faction could reach them,
+    born in the gaps between territories, or never drawn to join one in the first place. The
+    category has no founder and no center — it's just what's left when every other label runs out.
+  events: []
+
+goals:
+  primary: None shared — every Factionless individual or band sets and pursues their own agenda
+  secondary: []
+  long_term: |
+    There is no collective long-term goal. Where a Factionless entity develops one worth tracking,
+    it belongs to them specifically — see their NPC file.
+
+territory:
+  type: Widespread
+  description: |
+    No claimed territory. Factionless presence is wherever an unaffiliated individual happens to
+    be living, working, or passing through — a quiet homestead, a stretch of road, a hidden
+    laboratory. Some hold a fixed base for their own reasons; most don't.
+  locations: []
+
+mist_protection:
+  type: Individual
+  description: |
+    Survival strategies differ entity to entity, from crude physical avoidance to deliberate
+    self-experimentation. There is no shared method. See the relevant NPC file for specifics where
+    one has been developed.
+
+subgroups:
+  - name: Never Had the Chance
+    role: Circumstance, not choice
+    description: |
+      Cut off from any faction by geography, timing, or the mist itself — displaced before they
+      could be claimed, born in the gaps between territories, or simply never crossing paths with
+      a group that would have taken them in. Most are unremarkable. A few aren't.
+  - name: Named Individuals
+    role: Deliberately independent
+    description: |
+      Chose not to join, and had their own reasons for it. Each is effectively a one-person
+      faction: their own goals, their own methods, their own relationship to the mist and to
+      everyone else on the Path. The Archon of Mercy is the clearest current example.
+
+relationships:
+  - faction: fire-born
+    stance: complex
+    description: |
+      No single stance — depends entirely on the individual. Fire Born themselves consider most
+      Factionless beneath notice unless they interfere with routes or goals.
+  - faction: mist-born
+    stance: complex
+    description: |
+      Depends entirely on the individual. Relevant to Mist Born only if a Factionless entity
+      carries flame or threatens the depths.
+  - faction: rootbound
+    stance: complex
+    description: |
+      Depends entirely on the individual. Rootbound judge each one individually based on behavior,
+      not category.
+  - faction: the-croak
+    stance: complex
+    description: |
+      Depends entirely on the individual. The Croak judges by behavior, same as everyone else who
+      has an opinion on this category.
+  - faction: copper-rust-clan
+    stance: complex
+    description: |
+      Depends entirely on the individual. Mostly unaware of each other by default.
+  - faction: brass-mechanicorum
+    stance: complex
+    description: |
+      Depends entirely on the individual. Contact, if any, is incidental.
+  - faction: spider-colony
+    stance: complex
+    description: |
+      Depends entirely on the individual.
+  - faction: village-in-the-mist
+    stance: complex
+    description: |
+      Depends entirely on the individual — some pass through, some trade, a few settle nearby, and
+      occasionally one causes trouble.
+
+item_identity:
+  theme: |
+    No unified aesthetic. Most Factionless entities don't produce items worth cataloguing at all.
+    Where a specific individual does — their own materials, methods, and craft — that identity is
+    defined on their NPC file below, not here. Check there first when creating a Factionless item.
+  cost: |
+    No faction-wide cost. Whatever price a Factionless item carries is defined per NPC, alongside
+    their item_identity.
+
+rumors:
+  - >
+    "Not everyone out there answers to a banner. Some of them never got the chance to. Some never
+    wanted it."
+  - >
+    "Most of the Factionless you'll meet just want to be left alone. It's the ones who don't that
+    people tell stories about."
+  - >
+    "Heard there's someone out there who's lived alone longer than any of the named factions have
+    stood. No banner, no title. Still here."
+  - >
+    "Every faction on the Path says the same thing about them: judge by behavior, not by category.
+    That's easy to say until you're the one deciding in the moment."
+
+plot_hooks: []
+
+storylines: []
+
+npcs:
+  - id: archon-of-mercy
+    file: npcs/archon-of-mercy.yaml
+    role: Researcher / Antagonist
+  - id: the-bound-raven
+    file: npcs/the-bound-raven.yaml
+    role: Crystal Purifier (imprisoned, Misty Waters)
+
+adversaries:
+  - id: archon-of-mercy
+    ref: ../../../adversaries/antagonists/archon-of-mercy.yaml

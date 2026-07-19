@@ -126,13 +126,6 @@ const CONTENT_INDEX = {
     "plague-march.yaml"
   ],
   "__factions__": {
-    "archon-of-mercy": {
-      "details": "faction-details.yaml",
-      "npcs": [
-        "archon-of-mercy.yaml",
-        "the-bound-raven.yaml"
-      ]
-    },
     "brass-mechanicorum": {
       "details": "faction-details.yaml",
       "npcs": [
@@ -143,6 +136,13 @@ const CONTENT_INDEX = {
       "details": "faction-details.yaml",
       "npcs": [
         "hund.yaml"
+      ]
+    },
+    "factionless": {
+      "details": "faction-details.yaml",
+      "npcs": [
+        "archon-of-mercy.yaml",
+        "the-bound-raven.yaml"
       ]
     },
     "fire-born": {

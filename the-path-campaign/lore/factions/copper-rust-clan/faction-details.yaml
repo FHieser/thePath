@@ -110,7 +110,7 @@ relationships:
     stance: neutral
     description: |
       Underground communities tend to stay clear of surface conflicts. No animosity. No contact.
-  - faction: archon-of-mercy
+  - faction: factionless
     stance: unknown
     description: |
       The Archon's Meteorite Lab sits in terrain near the Crystal Defense Line's sealed meteorite

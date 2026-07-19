@@ -66,13 +66,12 @@ Let the user choose, combine elements from multiple options, or ask for 5 more. 
 
 ### Faction Item Themes
 
-For faction items, the mechanic MUST reinforce the faction's identity. Reference the **Item Identity** section in each faction's file for agreed-upon themes and typical costs:
+For faction items, the mechanic MUST reinforce the faction's identity. Reference the `item_identity` section in `the-path-campaign/lore/factions/[faction-id]/faction-details.yaml` for agreed-upon themes and typical costs. Read the relevant faction file before developing a faction item.
 
-- `the-path-campaign/lore/factions/FireBorn.md` - Item Identity section
-- `the-path-campaign/lore/factions/Rootbound.md` - Item Identity section
-- `the-path-campaign/lore/factions/MistBorn.md` - Item Identity section
-- `the-path-campaign/lore/factions/BrassMechanicorum.md` - Item Identity section
-- *(Read the relevant faction file before developing a faction item)*
+**Factionless items are the exception.** The Factionless faction (`the-path-campaign/lore/factions/factionless/`) has no shared `item_identity` by design — its file explicitly points you to the NPCs instead. When the item's type is Factionless:
+1. Ask the user which NPC the item belongs to (e.g. the Archon of Mercy).
+2. Read that NPC's own `item_identity` field in `npcs/[npc-id].yaml` — it's optional and only present when that NPC has a developed material/aesthetic identity. Use it the same way you'd use a faction-level one.
+3. If the NPC has no `item_identity` yet, develop one with the user first (theme + cost) before designing the item, and offer to save it to the NPC file for reuse.
 
 ## Step 4: Compile Final Item
 

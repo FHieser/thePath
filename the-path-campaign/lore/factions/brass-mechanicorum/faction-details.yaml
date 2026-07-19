@@ -123,7 +123,7 @@ relationships:
     description: |
       The Spider Colony's territory overlaps with some underground survey routes.
       They are documented. No action taken.
-  - faction: archon-of-mercy
+  - faction: factionless
     stance: unknown
     description: |
       The Archon's interests in the crystalline material near the meteorite site overlaps with

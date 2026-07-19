@@ -1,29 +1,62 @@
 name: The Archon of Mercy
 id: archon-of-mercy
-alignment: Neutral
-tier: Emerging
+faction: factionless
+role: Researcher / Antagonist
+location: Meteorite Lab (formerly The Red Cellar)
 
-identity:
-  description: |
-    A single brilliant, dangerous mind pursuing knowledge at any cost. The Archon is not a
-    faction in the conventional sense — no army, no followers, no ideology to spread. He has
-    experiments, findings, and questions nobody else is asking. The mist lands have given him
-    what no laboratory ever could: unknown materials, living mutations, transformations beyond
-    conventional medicine.
-  themes:
-    - Knowledge pursued past the point of ethics
-    - The line between healing and harm
-    - Fascination as a form of predation
-    - What it means to be "improved" by something that should have killed you
-    - The difference between a subject and a patient
+appearance:
+  - Gaunt figure in a red embroidered cloak — the only concession to vanity
+  - Blue skin stretched over elongated fingers and pointed ears, all self-inflicted through years of hemomantic experimentation
+  - Moves with clinical precision — every action deliberate, nothing wasted
+  - Observes everything as data to be catalogued; eye contact with the Archon feels like being measured
+
+the_twist: |
+  He is not a villain performing villainy. He was a healer, genuinely — one who saved hundreds using
+  methods that horrified everyone who watched him do it. The mocking title was given to him precisely
+  because what he did worked. He accepted it because accepting it was easier than arguing about ethics
+  with people who had never watched someone die for lack of a better option.
+
+  The problem is that he stopped asking whether the patient consented to be saved. Then he stopped
+  asking whether they were a patient. Now he asks whether they are interesting.
+
+theme: |
+  The Line Between Helping and Using. The Archon forces players to confront what happens when
+  competence and care fully decouple. He is never cruel — cruelty would be imprecise. He is
+  interested, and his interest is the most dangerous thing about him. Players who need his knowledge
+  must decide how much of themselves they are willing to hand over as the price of access.
+
+wants:
+  - Aerion von Moosgrund — specifically the living mutation that adapted instead of killing
+  - Access to the meteorite's crystalline material and what it does to living tissue
+  - To answer one question: can the organic and the crystalline be integrated without destroying the host
+  - To be left alone to work, which is the one thing nobody ever allows him
+
+offers:
+  - Hemomantic compounds and alchemical consumables — genuinely effective, clinically produced
+  - Knowledge of the crystalline plague's mechanics that no surface faction possesses
+  - Analysis of mist-corrupted tissue and what the corruption actually does, physiologically
+  - Accurate, unsentimental information — he does not lie, because lying produces bad data
+
+combat_stats:
+  ref: adversaries/antagonists/archon-of-mercy.yaml
+  tier: 2
+  type: Bruiser
+  difficulty: 15
+
+gm_notes:
+  - He does not open with threats or posturing. He opens with an observation — something specific
+    about one of the PCs that he could only know from careful prior observation.
+  - The word "patient" never leaves his mouth. He uses "subject." Not from cruelty — from precision.
+    Push back on this and he will listen, consider it, and continue using "subject."
+  - He remembers Aerion. If Aerion is present, the Archon's attention narrows to them completely in
+    a way that should be uncomfortable for everyone in the room.
+  - He will not fight unless cornered. He considers combat a waste of data. If forced to fight, he
+    fights to survive and escape, not to win.
+  - The Red Cellar was a starting point. What he's built at the Meteorite Lab is the next iteration.
+    Players who helped him there will find him genuinely willing to share what he found — not from
+    gratitude, but because they proved capable of handling the information.
 
 history:
-  origin: |
-    Once a legendary war healer. When conventional methods failed he turned to hemomancy —
-    using the blood and bodies of the fallen to save the living. Shunned for it, he was given
-    the title "Archon of Mercy" as a mockery. He accepted it. Years of self-experimentation
-    have given him blue skin, elongated fingers, pointed ears, and a clinical detachment from
-    the moral weight of what he does.
   events:
     - name: The Red Cellar
       description: |
@@ -68,14 +101,6 @@ mist_protection:
     include mist tolerance as a side effect — he can move through low-mist areas that would
     distress ordinary travelers. Whether this was intentional is unclear even to him. He
     observes the effect with interest.
-
-subgroups:
-  - name: The Archon
-    role: Sole operator
-    description: |
-      There is only him. His previous experiments — the Hulk, other subjects from the Red Cellar —
-      are not allies. They are work. He does not consider them subordinate; he considers them
-      incomplete. The distinction matters to him.
 
 relationships:
   - faction: brass-mechanicorum
@@ -269,15 +294,3 @@ storylines:
           Players leave with information and the uncomfortable certainty that the Archon is still
           working. He does not pursue. He waits. He has other subjects in mind.
         branches: []
-
-npcs:
-  - id: archon-of-mercy
-    file: npcs/archon-of-mercy.yaml
-    role: Researcher / Antagonist
-  - id: the-bound-raven
-    file: npcs/the-bound-raven.yaml
-    role: Crystal Purifier (imprisoned, Misty Waters)
-
-adversaries:
-  - id: archon-of-mercy
-    ref: ../../../adversaries/antagonists/archon-of-mercy.yaml

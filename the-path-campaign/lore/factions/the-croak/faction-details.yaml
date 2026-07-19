@@ -177,18 +177,15 @@ relationships:
     stance: indifferent
     description: |
       Some Factionless buy amulets. Some pass through. The Croak judges by behavior,
-      not by category.
+      not by category. One exception: no contact with the Archon of Mercy specifically,
+      though the hemomantic overlap between Croa's methods and his work is undetected
+      on both sides.
   - faction: mist-clergy
     stance: wary
     description: |
       The Mist Clergy's ideology is incompatible with a community that actively resists
       the mist without Flame. No contact established, but the Clergy would not approve
       of what The Croak is if they understood it.
-  - faction: archon-of-mercy
-    stance: unknown
-    description: |
-      No contact. The hemomantic overlap between Croa's methods and the Archon's work
-      is undetected on both sides.
   - faction: copper-rust-clan
     stance: unknown
     description: |
