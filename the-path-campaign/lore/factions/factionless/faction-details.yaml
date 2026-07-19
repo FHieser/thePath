@@ -136,6 +136,9 @@ npcs:
   - id: the-bound-raven
     file: npcs/the-bound-raven.yaml
     role: Crystal Purifier (imprisoned, Misty Waters)
+  - id: timothy
+    file: npcs/timothy.yaml
+    role: Wandering Trader / Evie's Teacher
 
 adversaries:
   - id: archon-of-mercy

@@ -1,0 +1,111 @@
+name: Timothy ("Tim")
+id: timothy
+faction: factionless
+role: Wandering trader of mist-salvaged oddities who randomly swoops into the village — and, hidden beneath the theatrics, Evie's teacher and the true source of her power
+location: Traveling — no fixed location. Flies a small cart pulled by Helmut Pegasusesel, appearing at the village or elsewhere on the Path whenever he feels like it, never on a schedule
+
+appearance:
+  - Long dark blue robes, dusted with mist residue at the hem; a peaked blue wizard's cap scattered with white stars — some embroidered properly, a few obviously stitched on after the fact and slightly crooked
+  - A spiral symbol on his palm — tight inward-winding rings that never quite touch, with thin blue-violet cracks branching off it like frozen lightning. The same sigil is painted (badly, by his own admission) on both sides of his cart, glowing faintly at the edges, darker toward the center
+  - Small hand-carved wooden figures tucked into every pocket, shelf, and saddlebag — never quite where he left them last
+  - Travels in a small cart pulled by Helmut Pegasusesel — a donkey with genuine, functional wings, who flies them both wherever they're going and never lets anyone forget it. Preens after a smooth landing, demands recognition for it, sulks openly if a good entrance goes unappreciated
+
+personality:
+  - Introduces himself with an ever-shifting cascade of self-appointed titles ("Timothy, Master of— no, wait, was it Grand—you know, I've had a few names, hard to keep track") before losing the thread entirely — Tim the Enchanter's bombast filtered through someone who's genuinely lost count
+  - Casts like he's showing off, because he is — big, unnecessary flourishes for effects that didn't need them, treating "impressive" as a design requirement even when subtlety would've worked fine. Rick Sanchez's extravagant, unapologetic command of his own power, minus the flask
+  - Forgets names, repeats stories, occasionally calls Evie something else entirely — played for comedy, but it's not just old age — when his focus slips, so does his control, and small things nearby tend to slip right along with it
+  - Genuinely delighted by "interesting" chaos — a Path that rearranged itself overnight, a wooden figure that walked a foot to the left — treats them as curiosities out loud, even when they clearly unsettle him underneath
+
+the_twist: |
+  Publicly, he's an exiled mage from a once-allied circle of powerful spellcasters, gone into the mist
+  to study and slow its spread — partly for the village, partly to prove to the people who cast him out
+  that he's still capable of something enormous. Secretly, he's Soach, a minor chaos deity exiled by his
+  fellow lesser gods after his own leaking chaos re-ignited a plague that had nearly been wiped out,
+  turning his home city against its own gods. The possibility neither he nor Evie has confirmed: the
+  epidemic devastating her village, born from her own chaos-overflow, may be the same phenomenon that
+  got him exiled in the first place — and their two chaoses may have added together to cause it.
+
+theme: |
+  Three things braided together. The mystery of what's actually happening in the mist, which resists
+  being understood the same way Tim resists staying put. The reckoning of an idealized mentor turning
+  out to be flawed, maybe even complicit in what Evie is trying to cure. And a real vein of delight in
+  chaos and silliness for its own sake, which isn't a mask over the heavier stuff — it's simply also who
+  he is. One-line version: idealization vs. reality, and whether Evie still needs Tim to have the
+  answer, or has already outgrown needing him to.
+
+goals:
+  primary: Figure out what's actually happening in the mist — pure curiosity, no larger agenda
+  secondary: |
+    He's technically trapped in the mist too, so "a way out" is on the list, but there's no urgency
+    behind it — he's chaotic by nature, so the mist's randomness barely registers as a threat. It might
+    even feel a little like home.
+  unspoken: |
+    He genuinely likes being a mentor — staying relevant, being someone's great and terrible wizard,
+    being "hip with the kids." Underneath the titles and the showing-off is a real hunger to be needed,
+    not just performance.
+
+wants:
+  - An audience — someone to teach, to impress, to show off in front of
+  - Something genuinely strange from the mist to chew on; bring him that and you have his full attention
+  - To not be found lacking — he doesn't want Evie discovering he hasn't actually solved anything, or
+    that he might be part of the problem
+
+offers:
+  - Real, if scattered, knowledge of the mist's patterns, cross-referenced against years of collected
+    "mist elements"
+  - Theatrical magical favors, delivered with maximum unnecessary flourish
+  - Oddities salvaged from the mist, traded rather than given
+  - The mentor relationship itself, if the party (or Evie specifically) actually wants it
+
+item_identity:
+  theme: |
+    Small hand-carved wooden figures, carved compulsively as an outlet for his leaking chaos rather
+    than as deliberate craftsmanship. Most do nothing at all — that's the point, not a design gap. A
+    few have real, if minor, utility. Rarely, one develops something that looks uncomfortably like a
+    will of its own. No two are quite alike, and he's carved far more than anyone could ever need.
+  cost: |
+    Usually free to use — he hands them out and doesn't consider them precious. The real "cost" is
+    unpredictability: a couple of figures behave inconsistently, or occasionally do something nobody
+    planned, including him.
+
+village_visits: |
+  No pattern, no warning. Tim swoops into the village whenever he feels like it — sometimes weeks
+  apart, sometimes days — always a surprise, even to Evie. Useful as a GM tool: drop him into any
+  session that needs an unpredictable jolt of comedy or a loose piece of information, no scheduling
+  logic required. Evie's active search for him in the mist is a separate thread, driven by the
+  epidemic, not by his visiting rhythm.
+
+secrets:
+  known:
+    - Real insight into the mist's patterns and behavior, if he can be gotten to explain it in a
+      straight line — rare
+  hidden:
+    - name: Soach
+      description: |
+        Not an exiled mage — a minor chaos deity, cast out by his fellow lesser gods after his own
+        leaking chaos re-ignited a plague that had nearly been wiped out, turning his home city
+        against its gods.
+    - name: The Possible Connection
+      description: |
+        The epidemic ravaging Evie's village may be the same phenomenon that got him exiled — possibly
+        his and Evie's chaos adding together to cause it. He may already suspect this and hasn't let
+        himself confirm it, which would quietly explain why he's never been in a hurry to be found.
+  conditions: |
+    Soach's true nature surfaces through genuine connection, not force — someone actually engaging
+    with him rather than extracting information, or an external clue (his sigil on an altar elsewhere
+    on the Path, another entity who recognizes him) that makes denial impossible. The epidemic
+    connection is heavier and shouldn't come cheap — best earned through direct confrontation or hard
+    evidence, since it's the one thing he'd genuinely rather not know either.
+
+gm_notes:
+  - Play the titles and tangents for real comedic momentum, then let a single sincere question from a
+    player stop him mid-sentence — that gap is where the real Tim briefly shows up
+  - Helmut is not a prop. Give him reactions, opinions, and grievances; he's the one who calls Tim on
+    his nonsense without saying a word
+  - His hidden nature and the epidemic connection are both "when it lands, it lands" reveals — don't
+    force them onto a timeline, but they should cost the party genuine effort or evidence, not just
+    curiosity
+  - Part of his original divine circle included his twin, a deity of Order — more to come on that
+    thread later; don't invent details ahead of it
+  - Tied directly to Evie's personal arc — he's the reason she has magic, the person she's currently
+    searching for, and — depending how the reveal lands — possibly the reason her village is sick

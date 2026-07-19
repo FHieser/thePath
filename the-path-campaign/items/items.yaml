@@ -510,3 +510,93 @@
       Clear that many Stress. Lose 1 HP for each Stress cleared.
 
       The exchange is fixed — you choose the amount before the leeches are applied.
+
+# ============================================================
+# 🎩 TIM ITEMS
+# ============================================================
+
+- name: Thumbs-Up Guy
+  type: Tim
+  usage: Reusable
+  tier: 1
+  tradeValue: 1.5
+  flavor: "A palm-sized wooden figure, thumb permanently raised, grinning like it already knows how this goes."
+  effect:
+    category: Restoration
+    description: |
+      Give the little wooden figure a thumbs up back. Once per Long Rest, gain 1 Hope.
+
+- name: Miniature Wagon
+  type: Tim
+  usage: Consumable
+  tier: 2
+  tradeValue: 4
+  flavor: "A tiny carved cart, complete with a tiny carved donkey mid-flap. Something about it feels less like a toy and more like an address."
+  effect:
+    category: Utility
+    description: |
+      Speak Tim's name and set the miniature down. It splinters apart the moment it's used —
+      eventually, on his schedule and nobody else's, his cart descends from the mist and offers a
+      ride anywhere on the current Path. Cannot carry a Sacred Flame or Flame Essence; his cart
+      isn't built for it, and he's not about to start being careful now.
+
+- name: This-Way Guy
+  type: Tim
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "A small figure in a felt cloak, one arm permanently outstretched, pointing at something only it can see."
+  effect:
+    category: Utility
+    description: |
+      Snap it in half to reroll a roll that determines where you end up — a Mushroom Circle facing
+      roll, an Off-Path consequence roll, or similar — and take the new result.
+
+- name: Shrug Guy
+  type: Tim
+  usage: Reusable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "A tiny wooden figure with its shoulders carved permanently at their apex. It has never once had an opinion."
+  effect:
+    category: Utility
+    description: |
+      No mechanical effect. Pick it up, it shrugs. That's all it's ever done.
+
+- name: Reaction Boards
+  type: Tim
+  usage: Reusable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "A set of small wooden placards, each carved into a single unmistakable expression. Tim insists they're 'very useful.'"
+  effect:
+    category: Utility
+    description: |
+      No mechanical effect. Hold one up during a dramatic moment for the reaction it deserves.
+
+- name: The Bobblehead Wizard
+  type: Tim
+  usage: Reusable
+  tier: 1
+  tradeValue: 1
+  flavor: "A small carved likeness of Tim himself, head balanced on a spring far too enthusiastic for its own good."
+  effect:
+    category: Utility
+    description: |
+      No mechanical effect. Wobbles happily at the slightest vibration — a footstep, a sneeze, a
+      nearby structural collapse — with identical enthusiasm regardless of circumstances.
+
+- name: Woody
+  type: Tim
+  usage: Reusable
+  tier: 1
+  tradeValue: 1
+  flavor: "A stiff-legged little figure, wound tight and ready to march. Its carved eyes seem to track you when you're not looking directly at them."
+  effect:
+    category: Utility
+    description: |
+      Wind Woody up and set him down facing a direction. He walks in a straight line until he hits
+      something or tips over. Good for distracting a single enemy or triggering something from a
+      distance without you being there.
+
+      Rarely — GM's call, sparingly — he wanders off-script entirely.
