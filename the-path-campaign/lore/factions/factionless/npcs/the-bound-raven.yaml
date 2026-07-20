@@ -36,6 +36,13 @@ offers:
   - Hidden valuables: knows every cache from when it was still a thief; still knows where they are
   - Information brokerage: trades in secrets and stories, accumulating a mental map of the region
 
+item_reference:
+  page: starfall-crystals.html
+  note: |
+    Not her own item identity — she doesn't craft anything. She's tied to the wider Starfall Crystal
+    economy documented here: her purification work is what makes plague-tainted crystals safe to use
+    in the first place, so most of this catalog quietly depends on her.
+
 interaction_beats:
   - moment: First contact
     description: |

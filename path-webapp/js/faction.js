@@ -517,6 +517,12 @@ function buildNpcCard(npc) {
         if (npc.item_identity.cost) html += `<p style="font-size:0.8rem;opacity:0.7;font-style:italic">${escapeHtml('Cost: ')}${formatDescription(npc.item_identity.cost)}</p>`;
     }
 
+    if (npc.item_reference) {
+        html += `<div class="npc-section-label">Item Identity</div>`;
+        if (npc.item_reference.note) html += `<p style="font-size:0.83rem;opacity:0.8;line-height:1.5">${formatDescription(npc.item_reference.note)}</p>`;
+        if (npc.item_reference.page) html += `<p style="font-size:0.8rem"><a href="${escapeHtml(npc.item_reference.page)}">💎 View the Starfall Crystal System →</a></p>`;
+    }
+
     if (npc.gm_notes && npc.gm_notes.length) {
         html += `<div class="npc-section-label">GM Notes</div>
             <ul class="npc-gm" style="padding-left:1rem;list-style:disc">`;
