@@ -88,6 +88,9 @@ function displaySiege(mechanics, npcData, adversaries) {
     // Siege Phases (each phase renders its own sub-content)
     html += renderSiegePhases(mechanics.siegePhases);
 
+    // Siege Monsters & Leviathans
+    html += renderSiegeMonsters(mechanics.siegeMonsters);
+
     // NPC Defenders
     html += renderNPCDefenders(npcData);
 
@@ -103,8 +106,62 @@ function renderSiegeTrigger(trigger) {
         <section class="mechanics-section" id="siege-trigger">
             <h2>Siege Trigger</h2>
             <div class="mechanics-description">${escapeHtml(trigger.description)}</div>
+            ${trigger.thresholdScaling ? `
+                <div class="phase-subsection">
+                    <h3>Scaling the Threshold</h3>
+                    <div class="mechanics-description">${escapeHtml(trigger.thresholdScaling)}</div>
+                </div>
+            ` : ''}
         </section>
     `;
+}
+
+function renderSiegeMonsters(monsters) {
+    if (!monsters) return '';
+    let html = `
+        <section class="mechanics-section" id="siege-monsters">
+            <h2>Siege Monsters &amp; Leviathans</h2>
+            <div class="mechanics-description">${escapeHtml(monsters.description)}</div>
+    `;
+
+    if (monsters.multipleLeviathans) {
+        html += `
+            <div class="phase-subsection">
+                <h3>Fielding Multiple Leviathans</h3>
+                <div class="mechanics-description">${escapeHtml(monsters.multipleLeviathans.description)}</div>
+                ${monsters.multipleLeviathans.example ? `
+                    <div style="background: rgba(0, 0, 0, 0.3); border-left: 0.3rem solid var(--accent-amber); padding: 1rem; border-radius: 0.2rem; margin-top: 0.75rem;">
+                        <strong style="color: var(--accent-amber);">Example:</strong>
+                        <div style="margin-top: 0.5rem;">${escapeHtml(monsters.multipleLeviathans.example)}</div>
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    }
+
+    if (monsters.defenderCounterplay) {
+        const counter = monsters.defenderCounterplay;
+        html += `
+            <div class="phase-subsection">
+                <h3>Defender Counterplay</h3>
+                <div class="mechanics-description">${escapeHtml(counter.description)}</div>
+                ${counter.thresholds ? `
+                    <div class="fear-cost-table">
+                        ${counter.thresholds.map(t => `
+                            <div class="fear-cost-item">
+                                <div class="bp-value">${t.bp} BP${t.label ? ` &mdash; ${escapeHtml(t.label)}` : ''}</div>
+                                <div>${escapeHtml(t.effect)}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : ''}
+                ${counter.note ? `<div style="margin-top: 0.75rem; font-size: 0.9rem; opacity: 0.9;">${escapeHtml(counter.note)}</div>` : ''}
+            </div>
+        `;
+    }
+
+    html += `</section>`;
+    return html;
 }
 
 function renderZoneLayout(layout) {

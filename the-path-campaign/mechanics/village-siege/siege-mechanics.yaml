@@ -6,6 +6,11 @@ siegeTrigger:
   description: |
     The siege begins when the GM's Fear reaches a threshold (recommended: 12 Fear). The Sacred Flame flares - a desperate pulse of divine energy that draws the mist's attention. The Mist Born respond with overwhelming force.
 
+  thresholdScaling: |
+    The recommended 12 Fear threshold mirrors the artificial cap on Fear in core Daggerheart, but the Path opens up far more ways to both generate and spend Fear than the base game does (see Fear Spending Options in path-mechanics.yaml). That means the 12 Fear ceiling is a starting recommendation, not a hard rule - the GM can raise the siege threshold, and the effective Fear cap along with it, when the players have earned it.
+
+    Raise the threshold when players have meaningfully invested in the Village's defenses - completing a project that reinforces the Mist Wall Ring, establishing a second Sacred Flame anchor, or otherwise raising the Village's defensive profile through play. A Village with a genuinely stronger defensive posture can credibly hold the mist back a little longer before it forces a confrontation. In cases like this, raise the threshold and max Fear together to 13 or higher, giving the GM more Fear to hold in reserve before the siege is forced to trigger. Raise it in proportion to what the players actually built, not arbitrarily.
+
 victoryConditions:
   - name: Total Defense
     requirements:
@@ -81,7 +86,7 @@ siegePhases:
           totalBP: 42
         - partySize: 5
           totalBP: 51
-      siegeEngineCost: 10
+      siegeEngineCost: 12
       siegeEngineNote: The GM distributes remaining BP as enemies across Mist-Touched zones.
       placementConstraint: |
         Enemies can ONLY exist in Mist-Touched zones:
@@ -138,4 +143,26 @@ siegePhases:
     ends: Victory or defeat
     description: Desperate defense of the inner perimeter and Village.
 
-  
+siegeMonsters:
+  description: |
+    Leviathans carry a Battle Point cost of 12 - equal to the full Siege Engine cost from the Starting Forces budget (see Phase 1: Preparation) - making them the single most expensive threat the Mist Born can field. Fielding even one is already a major commitment of the siege's total BP pool; fielding it well is meant to outstrip what a typical NPC defender roster can neutralize in a single engagement.
+
+  multipleLeviathans:
+    description: |
+      For sieges where the situation calls for it, the GM may deploy 2 or more Leviathans at once. This is not a baseline expectation - reserve it for sieges the players have narratively escalated, since two Leviathans alone can consume the entire BP budget of even a large party's siege and crowd out room for anything else.
+    example: |
+      Players who reignite the flame at Lost Flame and destroy the Mist Born holding it draw direct retaliation - "The Mist Born will not let this flame come back without a fight." If that retaliation builds into an assault on the Village itself, the GM may answer with two Pale Shell Drifter Leviathans converging from different Mist Wall zones, reflecting how badly the Mist Born want the Sacred Flame extinguished again.
+
+  defenderCounterplay:
+    description: |
+      A Leviathan's 12 BP is normally far beyond what a single NPC deployment can neutralize (see NPC Defenders - Deployment). Defenders can instead combine Battle Power by deploying multiple NPCs into the Leviathan's zone during the same Player Phase.
+    thresholds:
+      - bp: 12
+        label: Full Match
+        effect: Defenders combining to 12 BP or more in the Leviathan's zone neutralize it outright, per the standard deployment resolution.
+      - bp: 6
+        label: Half Match
+        effect: Defenders combining to at least 6 BP (half the Leviathan's cost) can't defeat it, but they stall it - the Leviathan does not trigger its siege activation on its next turn.
+    note: |
+      Stalling still costs the defenders their normal Hope price for the NPCs deployed - a stalled Leviathan is delayed, not weakened, and resumes its activation at full BP the turn after.
+
