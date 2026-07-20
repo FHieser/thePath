@@ -461,32 +461,45 @@ function renderNPCDefenders(npcData) {
     // NPC roster
     if (npcData.npcs) {
         html += `<h3>Defender Roster</h3>`;
-        html += `<div style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Total Defender BP:</strong> ${npcData.totalDefenderBP || 'N/A'}</div>`;
-
         npcData.npcs.forEach(npc => {
-            const zones = npc.zonePlacement ? npc.zonePlacement.join(', ') : 'N/A';
-            const specials = npc.specialRules && npc.specialRules.length > 0
-                ? npc.specialRules.map(r => `<div style="margin-top: 0.5rem; color: var(--accent-amber);"><strong>${escapeHtml(r.name)}:</strong> ${escapeHtml(r.description)}</div>`).join('')
-                : '';
+            html += renderNpcCard(npc);
+        });
+    }
 
-            html += `
-                <div class="npc-card">
-                    <h4>${escapeHtml(npc.name)}</h4>
-                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin: 0.5rem 0;">
-                        <div class="npc-stat-line"><strong>Battle Power</strong><br>${npc.battlePower}</div>
-                        <div class="npc-stat-line"><strong>Starting Hope</strong><br>${npc.startingHopeCost}</div>
-                        <div class="npc-stat-line"><strong>Hope Increase</strong><br>+${npc.hopeIncrease}</div>
-                        <div class="npc-stat-line"><strong>Zones</strong><br>${escapeHtml(zones)}</div>
-                    </div>
-                    ${npc.description ? `<div style="font-size: 0.9rem; font-style: italic; opacity: 0.85; margin-top: 0.5rem;">${escapeHtml(npc.description)}</div>` : ''}
-                    ${specials}
-                </div>
-            `;
+    // Additional defenders that must be acquired through play
+    if (npcData.additionalDefenders && npcData.additionalDefenders.npcs) {
+        html += `<h3>Acquired Defenders</h3>`;
+        if (npcData.additionalDefenders.description) {
+            html += `<div class="mechanics-description">${escapeHtml(npcData.additionalDefenders.description)}</div>`;
+        }
+        npcData.additionalDefenders.npcs.forEach(npc => {
+            html += renderNpcCard(npc);
         });
     }
 
     html += `</section>`;
     return html;
+}
+
+function renderNpcCard(npc) {
+    const zones = npc.zonePlacement ? npc.zonePlacement.join(', ') : 'N/A';
+    const specials = npc.specialRules && npc.specialRules.length > 0
+        ? npc.specialRules.map(r => `<div style="margin-top: 0.5rem; color: var(--accent-amber);"><strong>${escapeHtml(r.name)}:</strong> ${escapeHtml(r.description)}</div>`).join('')
+        : '';
+
+    return `
+        <div class="npc-card">
+            <h4>${escapeHtml(npc.name)}</h4>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin: 0.5rem 0;">
+                <div class="npc-stat-line"><strong>Battle Power</strong><br>${npc.battlePower}</div>
+                <div class="npc-stat-line"><strong>Starting Hope</strong><br>${npc.startingHopeCost}</div>
+                <div class="npc-stat-line"><strong>Hope Increase</strong><br>+${npc.hopeIncrease}</div>
+                <div class="npc-stat-line"><strong>Zones</strong><br>${escapeHtml(zones)}</div>
+            </div>
+            ${npc.description ? `<div style="font-size: 0.9rem; font-style: italic; opacity: 0.85; margin-top: 0.5rem;">${escapeHtml(npc.description)}</div>` : ''}
+            ${specials}
+        </div>
+    `;
 }
 
 function renderSiegeAdversaries(adversaries) {

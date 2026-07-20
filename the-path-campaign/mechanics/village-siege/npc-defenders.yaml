@@ -83,4 +83,21 @@ npcs:
     specialRules: []
     description: Armed villagers willing to defend their home.
 
-totalDefenderBP: 18
+additionalDefenders:
+  description: |
+    NPCs that are not part of the Village's starting roster. These must be acquired through play before they join the Defender Roster and can be deployed.
+  npcs:
+    - name: Broken Fire Golem
+      battlePower: 6
+      startingHopeCost: 0
+      hopeIncrease: 0
+      zonePlacement:
+        - Outer
+        - Inner
+      specialRules:
+        - name: Ancient Hatred
+          description: Each time it destroys enemies, its Battle Power increases by 1 for the rest of the siege.
+        - name: Flame-Fed
+          description: Costs no Hope to deploy. Instead, spend 1 Flame Essence each time it is deployed.
+      description: |
+        A towering construct of ancient brass and inscribed stone, its chest housing a shard of captured Sacred Flame. Cracked and incomplete, salvaged from the wreckage of a Fire Born carrier, now bound to defend the Village in the Mist.
