@@ -511,6 +511,12 @@ function buildNpcCard(npc) {
         html += `</ul>`;
     }
 
+    if (npc.item_identity) {
+        html += `<div class="npc-section-label">Item Identity</div>`;
+        if (npc.item_identity.theme) html += `<p style="font-size:0.83rem;opacity:0.8;line-height:1.5">${formatDescription(npc.item_identity.theme)}</p>`;
+        if (npc.item_identity.cost) html += `<p style="font-size:0.8rem;opacity:0.7;font-style:italic">${escapeHtml('Cost: ')}${formatDescription(npc.item_identity.cost)}</p>`;
+    }
+
     if (npc.gm_notes && npc.gm_notes.length) {
         html += `<div class="npc-section-label">GM Notes</div>
             <ul class="npc-gm" style="padding-left:1rem;list-style:disc">`;
