@@ -94,15 +94,13 @@ features:
       Massive brass and iron machinery—a control station for the hydraulic network. Two primary functions remain operational.
 
       Drain Passage (Action):
-      Manipulate the wheels to drain a flooded section ahead.
-      Make a Knowledge roll (Difficulty 14).
+      Manipulate the wheels to drain a flooded section ahead. Make a Knowledge roll (Difficulty 14).
       - Success: +1 to traversal counter.
       - Failure: No effect.
       - Failure with Fear: Trigger Hydraulic Surge.
 
       Open Surface Gate (Action - Permanent):
-      Override the one-way current that traps travelers underground.
-      Make a Knowledge roll (Difficulty 14).
+      Override the one-way current that traps travelers underground. Make a Knowledge roll (Difficulty 14).
       - Success: Permanently disable the surge barrier—the Flooded Network now allows two-way travel to connected Cave Mouth locations.
       - Failure: No effect, may try again.
       - Failure with Fear: Trigger Hydraulic Surge.

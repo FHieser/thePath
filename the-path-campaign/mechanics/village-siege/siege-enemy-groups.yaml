@@ -1,8 +1,6 @@
 title: Siege Enemy Groups
 description: |
-  Predefined enemy group compositions for populating Village Siege encounters.
-  Combine groups to fill the remaining BP budget after placing the Siege Engine (10 BP fixed).
-  Walker packs count as 1 BP in group totals regardless of exact count — minion scaling applies in play.
+  Predefined enemy group compositions for populating Village Siege encounters. Combine groups to fill the remaining BP budget after placing the Siege Engine (10 BP fixed). Walker packs count as 1 BP in group totals regardless of exact count — minion scaling applies in play.
 
 bpReference:
   - type: Mist Walker (pack)

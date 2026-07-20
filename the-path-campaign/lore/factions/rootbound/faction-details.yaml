@@ -5,11 +5,7 @@ tier: Ancient
 
 identity:
   description: |
-    Solitary guardians of natural sanctuaries — places that resist the mist without Sacred Flame.
-    No organization, no shared doctrine, no hierarchy. Each Rootbound has one sanctuary and one
-    purpose: protect it. They are connected loosely through mushroom circle teleportation and
-    Path omens, and they respect each other's existence without requiring more. Some predate the
-    god's imprisonment. Others arrived during the mist era and stayed. None of them explain themselves.
+    Solitary guardians of natural sanctuaries — places that resist the mist without Sacred Flame. No organization, no shared doctrine, no hierarchy. Each Rootbound has one sanctuary and one purpose: protect it. They are connected loosely through mushroom circle teleportation and Path omens, and they respect each other's existence without requiring more. Some predate the god's imprisonment. Others arrived during the mist era and stayed. None of them explain themselves.
   themes:
     - Neutrality as a choice, not a default — they understand all sides and refuse them all
     - Ancient and individual — each guardian is entirely their own thing
@@ -19,22 +15,14 @@ identity:
 
 history:
   origin: |
-    No shared history. The Rootbound are not a faction in the conventional sense — they are a
-    category. What they share is their commitment to their sanctuaries and the fact that their
-    sanctuaries keep them alive. Some witnessed the god's imprisonment directly. Others arrived
-    to find the mist already there. All of them stayed when others fled.
+    No shared history. The Rootbound are not a faction in the conventional sense — they are a category. What they share is their commitment to their sanctuaries and the fact that their sanctuaries keep them alive. Some witnessed the god's imprisonment directly. Others arrived to find the mist already there. All of them stayed when others fled.
   events:
     - name: The Network Forms
       description: |
-        Rootbound began connecting through natural pathways — underground tunnels, mushroom
-        circles, Path omens when sanctuaries are adjacent. No founding moment, no charter.
-        Just the slow realization that other guardians existed and that occasional communication
-        was useful.
+        Rootbound began connecting through natural pathways — underground tunnels, mushroom circles, Path omens when sanctuaries are adjacent. No founding moment, no charter. Just the slow realization that other guardians existed and that occasional communication was useful.
     - name: The Network Strains
       description: |
-        Mushroom circle connections have been degrading. Rootbound appear in wrong sanctuaries,
-        or fail to arrive at all. Whether this is natural decay, external sabotage, or something
-        the mist is doing is unknown. The oldest Rootbound are concerned. They don't alarm easily.
+        Mushroom circle connections have been degrading. Rootbound appear in wrong sanctuaries, or fail to arrive at all. Whether this is natural decay, external sabotage, or something the mist is doing is unknown. The oldest Rootbound are concerned. They don't alarm easily.
 
 goals:
   primary: Protect the individual sanctuary from all threats — mist, flame, and mortals
@@ -44,16 +32,12 @@ goals:
     - Pursue individual agendas unique to each Rootbound
     - Test visitors to determine whether they're threat, nuisance, or occasionally useful
   long_term: |
-    Continue existing. They have outlasted gods and empires. They expect to outlast whatever
-    the mist is doing next.
+    Continue existing. They have outlasted gods and empires. They expect to outlast whatever the mist is doing next.
 
 territory:
   type: Fixed Natural
   description: |
-    Natural sanctuaries — places that resist the mist through primal magic, geology, or some
-    combination the Rootbound themselves may not fully understand. Each guardian claims one
-    primary domain. Found on both surface and underground. No geographic pattern to their
-    distribution.
+    Natural sanctuaries — places that resist the mist through primal magic, geology, or some combination the Rootbound themselves may not fully understand. Each guardian claims one primary domain. Found on both surface and underground. No geographic pattern to their distribution.
   locations:
     - Forest Refuge (The Watcher)
     - Reed Marsh Caverns (Naki)
@@ -62,41 +46,31 @@ territory:
 mist_protection:
   type: Natural Sanctuary
   description: |
-    The sanctuary itself resists the mist. Each Rootbound has developed individual methods for
-    brief mist exposure — herbal preparations, rituals, talismans, partial transformation, or
-    sheer age-earned endurance. They can venture out for limited time. They always come back.
-    Their deep understanding of WHY their location resists is knowledge no other faction possesses.
+    The sanctuary itself resists the mist. Each Rootbound has developed individual methods for brief mist exposure — herbal preparations, rituals, talismans, partial transformation, or sheer age-earned endurance. They can venture out for limited time. They always come back. Their deep understanding of WHY their location resists is knowledge no other faction possesses.
 
 subgroups:
   - name: The Guardians
     role: Individual sanctuary keepers
     description: |
-      Every Rootbound is their own category. No shared practices beyond commitment to their
-      domain. The Watcher communicates through forest-language and the behavior of fairy lights.
-      Naki brews potions, throws bones, and speaks entirely in third person. Others are stranger.
-      Connection exists. Coordination is rare.
+      Every Rootbound is their own category. No shared practices beyond commitment to their domain. The Watcher communicates through forest-language and the behavior of fairy lights. Naki brews potions, throws bones, and speaks entirely in third person. Others are stranger. Connection exists. Coordination is rare.
 
 relationships:
   - faction: fire-born
     stance: wary
     description: |
-      Ancient beings recognize each other, but Fire Born's mission conflicts with Rootbound
-      neutrality. Mutual respect for age and power. No cooperation.
+      Ancient beings recognize each other, but Fire Born's mission conflicts with Rootbound neutrality. Mutual respect for age and power. No cooperation.
   - faction: mist-born
     stance: hostile-if-threatened
     description: |
-      Mist Born cannot easily enter natural sanctuaries. The Rootbound will destroy them if
-      they attack the domain. The Rootbound do not pursue — they guard.
+      Mist Born cannot easily enter natural sanctuaries. The Rootbound will destroy them if they attack the domain. The Rootbound do not pursue — they guard.
   - faction: mist-clergy
     stance: dismissive
     description: |
-      "Young ideology from young gods." The Rootbound predate the conflict they're trying to
-      win. They don't engage with theological arguments.
+      "Young ideology from young gods." The Rootbound predate the conflict they're trying to win. They don't engage with theological arguments.
   - faction: brass-mechanicorum
     stance: dislike
     description: |
-      Ancient metal and artifice is an aversion to nature. Rootbound avoid mechanoid territories
-      and distrust their presence near sanctuaries.
+      Ancient metal and artifice is an aversion to nature. Rootbound avoid mechanoid territories and distrust their presence near sanctuaries.
   - faction: flame-seekers
     stance: tolerated
     description: |
@@ -104,8 +78,7 @@ relationships:
   - faction: ember-traders
     stance: transactional
     description: |
-      Rootbound occasionally trade knowledge for supplies. They respect Traders' neutrality but
-      don't extend trust.
+      Rootbound occasionally trade knowledge for supplies. They respect Traders' neutrality but don't extend trust.
   - faction: factionless
     stance: indifferent
     description: |
@@ -113,8 +86,7 @@ relationships:
   - faction: deep-dwellers
     stance: neutral
     description: |
-      Occasional contact through tunnel networks. Mutual understanding of staying out of surface
-      conflicts. Some Rootbound claim underground sanctuaries themselves.
+      Occasional contact through tunnel networks. Mutual understanding of staying out of surface conflicts. Some Rootbound claim underground sanctuaries themselves.
   - faction: copper-rust-clan
     stance: neutral
     description: |
@@ -122,13 +94,9 @@ relationships:
 
 item_identity:
   theme: |
-    Organic and unique — grown, gathered, or carved from the sanctuary itself. Effects tend toward
-    Restoration and Utility: healing, sensing, navigating, connecting to the natural world. Items
-    feel living: wrapped in moss, carved from old wood, infused with sap. Each one is different.
-    They respond to natural environments and go dormant in corrupted or artificial ones.
+    Organic and unique — grown, gathered, or carved from the sanctuary itself. Effects tend toward Restoration and Utility: healing, sensing, navigating, connecting to the natural world. Items feel living: wrapped in moss, carved from old wood, infused with sap. Each one is different. They respond to natural environments and go dormant in corrupted or artificial ones.
   cost: |
-    Narrative costs: the item demands something in return for nature. Plant a seed, leave an
-    offering, spend time tending a sanctuary. Some require being in a natural sanctuary to recharge.
+    Narrative costs: the item demands something in return for nature. Plant a seed, leave an offering, spend time tending a sanctuary. Some require being in a natural sanctuary to recharge.
 
 rumors:
   - >
@@ -148,44 +116,32 @@ plot_hooks:
   - id: network-breaks
     name: The Network Breaks
     description: |
-      Mushroom circle teleportation between natural sanctuaries is failing. Rootbound are
-      appearing confused in wrong locations, or not arriving at all. Something is severing
-      the network — deliberate sabotage or natural decay?
+      Mushroom circle teleportation between natural sanctuaries is failing. Rootbound are appearing confused in wrong locations, or not arriving at all. Something is severing the network — deliberate sabotage or natural decay?
   - id: recruitment-offer
     name: Recruitment Offer
     description: |
-      A dying Rootbound approaches the party. Their sanctuary will lose protection when they
-      pass. They offer to teach one PC how to become the new guardian — but it means staying
-      there, potentially forever.
+      A dying Rootbound approaches the party. Their sanctuary will lose protection when they pass. They offer to teach one PC how to become the new guardian — but it means staying there, potentially forever.
   - id: test-of-worth
     name: Test of Worth
     description: |
-      Players need passage through Rootbound territory. Must prove they won't harm the sanctuary
-      to gain safe transit.
+      Players need passage through Rootbound territory. Must prove they won't harm the sanctuary to gain safe transit.
   - id: wardens-bargain
     name: The Warden's Bargain
     description: |
-      A Rootbound offers players sanctuary during a mist storm — but demands payment afterward.
-      Not gold. A specific task: plant a seed in a dangerous location, retrieve something from
-      Brass Mechanicorum territory, carry a message to another Rootbound through the mist.
+      A Rootbound offers players sanctuary during a mist storm — but demands payment afterward. Not gold. A specific task: plant a seed in a dangerous location, retrieve something from Brass Mechanicorum territory, carry a message to another Rootbound through the mist.
 
 storylines:
   - id: network-failing
     name: The Network is Failing
     summary: |
-      The mushroom circles that connect the Rootbound are degrading. The Watcher's fairy lights
-      flicker in distress. Naki's bones won't throw a clear pattern. What is severing the network,
-      and whether it can be repaired before sanctuaries begin losing their protection, becomes a
-      question with a deadline.
+      The mushroom circles that connect the Rootbound are degrading. The Watcher's fairy lights flicker in distress. Naki's bones won't throw a clear pattern. What is severing the network, and whether it can be repaired before sanctuaries begin losing their protection, becomes a question with a deadline.
     status: available
     phases:
       - id: first-sign
         type: entry
         name: The Wrong Arrival
         description: |
-          A Rootbound arrives in the wrong sanctuary — confused, disoriented, far from their domain.
-          Or players use a mushroom circle and arrive somewhere they weren't going. The network is
-          not functioning correctly. This is new.
+          A Rootbound arrives in the wrong sanctuary — confused, disoriented, far from their domain. Or players use a mushroom circle and arrive somewhere they weren't going. The network is not functioning correctly. This is new.
         triggers:
           - Players encounter a mushroom circle or visit a Rootbound sanctuary
         branches:
@@ -198,9 +154,7 @@ storylines:
         type: active
         name: Mapping the Breaks
         description: |
-          Multiple mushroom circles are affected. The failure follows a pattern — not random decay,
-          but specific circles in specific regions. Something is targeting the network, or something
-          is happening in those regions that the circles can't survive near.
+          Multiple mushroom circles are affected. The failure follows a pattern — not random decay, but specific circles in specific regions. Something is targeting the network, or something is happening in those regions that the circles can't survive near.
         branches:
           - label: Identify the source
             next: source-found
@@ -209,10 +163,7 @@ storylines:
         type: milestone
         name: The Source
         description: |
-          Whatever is disrupting the network — Brass Mechanicorum construction near a circle site,
-          Mist Born pressure in a region, a dying sanctuary whose collapse is propagating outward —
-          is now identified. The Rootbound can't address it themselves without leaving their domains.
-          Players are the only ones positioned to act.
+          Whatever is disrupting the network — Brass Mechanicorum construction near a circle site, Mist Born pressure in a region, a dying sanctuary whose collapse is propagating outward — is now identified. The Rootbound can't address it themselves without leaving their domains. Players are the only ones positioned to act.
         branches:
           - label: Eliminate the disruption source
             next: network-restored
@@ -223,18 +174,14 @@ storylines:
         type: resolution
         name: The Network Restored
         description: |
-          The circles begin functioning again. Rootbound return to their sanctuaries. Naki's bones
-          throw clear patterns again. What the players are owed for this is for the Rootbound to
-          decide individually — but each guardian remembers.
+          The circles begin functioning again. Rootbound return to their sanctuaries. Naki's bones throw clear patterns again. What the players are owed for this is for the Rootbound to decide individually — but each guardian remembers.
         branches: []
 
       - id: partial-restoration
         type: resolution
         name: Partial Restoration
         description: |
-          Some circles are saved. Some aren't. One sanctuary has lost its Rootbound and its protection.
-          The guardian there is either dead or relocated. An empty natural sanctuary, no longer
-          protected, begins drawing the mist inward. A new problem, created by the resolution.
+          Some circles are saved. Some aren't. One sanctuary has lost its Rootbound and its protection. The guardian there is either dead or relocated. An empty natural sanctuary, no longer protected, begins drawing the mist inward. A new problem, created by the resolution.
         branches: []
 
 npcs:

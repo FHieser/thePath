@@ -11,19 +11,12 @@ appearance:
   - Observes everything as data to be catalogued; eye contact with the Archon feels like being measured
 
 the_twist: |
-  He is not a villain performing villainy. He was a healer, genuinely — one who saved hundreds using
-  methods that horrified everyone who watched him do it. The mocking title was given to him precisely
-  because what he did worked. He accepted it because accepting it was easier than arguing about ethics
-  with people who had never watched someone die for lack of a better option.
+  He is not a villain performing villainy. He was a healer, genuinely — one who saved hundreds using methods that horrified everyone who watched him do it. The mocking title was given to him precisely because what he did worked. He accepted it because accepting it was easier than arguing about ethics with people who had never watched someone die for lack of a better option.
 
-  The problem is that he stopped asking whether the patient consented to be saved. Then he stopped
-  asking whether they were a patient. Now he asks whether they are interesting.
+  The problem is that he stopped asking whether the patient consented to be saved. Then he stopped asking whether they were a patient. Now he asks whether they are interesting.
 
 theme: |
-  The Line Between Helping and Using. The Archon forces players to confront what happens when
-  competence and care fully decouple. He is never cruel — cruelty would be imprecise. He is
-  interested, and his interest is the most dangerous thing about him. Players who need his knowledge
-  must decide how much of themselves they are willing to hand over as the price of access.
+  The Line Between Helping and Using. The Archon forces players to confront what happens when competence and care fully decouple. He is never cruel — cruelty would be imprecise. He is interested, and his interest is the most dangerous thing about him. Players who need his knowledge must decide how much of themselves they are willing to hand over as the price of access.
 
 wants:
   - Aerion von Moosgrund — specifically the living mutation that adapted instead of killing
@@ -60,18 +53,10 @@ history:
   events:
     - name: The Red Cellar
       description: |
-        The Archon established a laboratory beneath the Monastery, repurposing old winery vaults
-        for hemomantic research. His primary subject: crystalline material from the mist lands —
-        the Starfall plague specifically. His work produced the Creature of the Cellar, a Hulk
-        stitched from plague-era corpses, still animated by a blood-red tether crystal. He has
-        since moved on. He left the Hulk running.
+        The Archon established a laboratory beneath the Monastery, repurposing old winery vaults for hemomantic research. His primary subject: crystalline material from the mist lands — the Starfall plague specifically. His work produced the Creature of the Cellar, a Hulk stitched from plague-era corpses, still animated by a blood-red tether crystal. He has since moved on. He left the Hulk running.
     - name: The Letter
       description: |
-        Having encountered Aerion von Moosgrund — a traveler with a living mutation that adapted
-        instead of killing — the Archon sent a letter to the Monastery. Aerion is the model
-        organism he cannot synthesize: a living integrated system, already running. He considers
-        this the most interesting thing on the Path. The letter is an invitation to his real
-        laboratory near the meteorite impact site.
+        Having encountered Aerion von Moosgrund — a traveler with a living mutation that adapted instead of killing — the Archon sent a letter to the Monastery. Aerion is the model organism he cannot synthesize: a living integrated system, already running. He considers this the most interesting thing on the Path. The letter is an invitation to his real laboratory near the meteorite impact site.
 
 goals:
   primary: Perfect his understanding of organic transformation and crystalline integration
@@ -80,15 +65,12 @@ goals:
     - Investigate the meteorite impact material
     - Document transformations unique to the mist lands that no outside institution knows exist
   long_term: |
-    Achieve a synthesis of the organic and crystalline that produces something genuinely new —
-    not a disease, not a weapon, but a next stage of what mortality can be
+    Achieve a synthesis of the organic and crystalline that produces something genuinely new — not a disease, not a weapon, but a next stage of what mortality can be
 
 territory:
   type: Hidden
   description: |
-    The Archon operates from temporary laboratories and leaves experiments behind when he moves.
-    His last known base was the Red Cellar beneath the Monastery. He has since relocated to the
-    Meteorite Lab — a hidden site near the crystal impact point referenced in his letter.
+    The Archon operates from temporary laboratories and leaves experiments behind when he moves. His last known base was the Red Cellar beneath the Monastery. He has since relocated to the Meteorite Lab — a hidden site near the crystal impact point referenced in his letter.
   locations:
     - The Red Cellar
     - The Monastery
@@ -97,33 +79,25 @@ territory:
 mist_protection:
   type: Adapted
   description: |
-    The Archon has experimented on himself extensively. His physical modifications appear to
-    include mist tolerance as a side effect — he can move through low-mist areas that would
-    distress ordinary travelers. Whether this was intentional is unclear even to him. He
-    observes the effect with interest.
+    The Archon has experimented on himself extensively. His physical modifications appear to include mist tolerance as a side effect — he can move through low-mist areas that would distress ordinary travelers. Whether this was intentional is unclear even to him. He observes the effect with interest.
 
 relationships:
   - faction: brass-mechanicorum
     stance: curious
     description: |
-      Mechanicorum construction principles overlap with his interest in inorganic subjects. He
-      would like access to their knowledge but has no mechanism to approach them safely.
+      Mechanicorum construction principles overlap with his interest in inorganic subjects. He would like access to their knowledge but has no mechanism to approach them safely.
   - faction: mist-born
     stance: wary
     description: |
-      The mist organism produces transformations he finds fascinating. He observes it at distance
-      and will not allow himself to be consumed. He considers it the most sophisticated biological
-      process on the Path.
+      The mist organism produces transformations he finds fascinating. He observes it at distance and will not allow himself to be consumed. He considers it the most sophisticated biological process on the Path.
   - faction: copper-rust-clan
     stance: unknown
     description: |
-      The Meteorite Lab sits near terrain the Clan's rail network passes through. He is likely
-      aware of their infrastructure without having made contact.
+      The Meteorite Lab sits near terrain the Clan's rail network passes through. He is likely aware of their infrastructure without having made contact.
   - faction: spider-colony
     stance: indifferent
     description: |
-      He has noted the Spider Queen's intelligence. He considers it an interesting case study
-      but not a current priority.
+      He has noted the Spider Queen's intelligence. He considers it an interesting case study but not a current priority.
   - faction: fire-born
     stance: indifferent
     description: |
@@ -135,14 +109,11 @@ relationships:
 
 item_identity:
   theme: |
-    Hemomantic tools and alchemical compounds. Effects tend toward Drain and Enhancement —
-    taking from one target to give to another, or pushing a subject past their normal limits.
+    Hemomantic tools and alchemical compounds. Effects tend toward Drain and Enhancement — taking from one target to give to another, or pushing a subject past their normal limits.
     Items feel clinical: copper tubing, glass vessels, precise measurements, faint iron smell.
     They function on the living and the recently dead with equal facility.
   cost: |
-    Hemomantic items require blood — the user's or a willing or unwilling subject's. Some
-    require sustained proximity to the subject. A few carry residual effects that don't fully
-    resolve.
+    Hemomantic items require blood — the user's or a willing or unwilling subject's. Some require sustained proximity to the subject. A few carry residual effects that don't fully resolve.
 
 rumors:
   - >
@@ -162,37 +133,28 @@ plot_hooks:
   - id: the-hulk-escapes
     name: The Hulk Escapes
     description: |
-      The tether crystal in the Red Cellar is damaged — by players, decay, or something external.
-      The Hulk is no longer anchored. It has left the cellar and is moving through the underground
-      network. The Archon is not nearby. It is not hunting — it is looking for something to return to.
+      The tether crystal in the Red Cellar is damaged — by players, decay, or something external. The Hulk is no longer anchored. It has left the cellar and is moving through the underground network. The Archon is not nearby. It is not hunting — it is looking for something to return to.
   - id: aerion-connection
     name: The Aerion Connection
     description: |
-      A PC is Aerion von Moosgrund, or knows them. The letter from the Red Cellar is addressed to
-      them personally. Following it means walking into the Archon's active laboratory at the
-      meteorite impact site. He will be genuinely pleased to see them arrive.
+      A PC is Aerion von Moosgrund, or knows them. The letter from the Red Cellar is addressed to them personally. Following it means walking into the Archon's active laboratory at the meteorite impact site. He will be genuinely pleased to see them arrive.
   - id: the-other-subjects
     name: The Other Subjects
     description: |
-      Players find evidence of experiments before the Hulk. Notes, residue, containment failures.
-      Something the Archon created is still in the underground network — and it adapted without him.
+      Players find evidence of experiments before the Hulk. Notes, residue, containment failures. Something the Archon created is still in the underground network — and it adapted without him.
 
 storylines:
   - id: the-research-trail
     name: The Research Trail
     summary: |
-      The Archon's work leaves a trail through the underground: the Red Cellar, the letter, and
-      somewhere beyond — his real laboratory. Players who follow the evidence will eventually find
-      him, and have to decide what they do when they do.
+      The Archon's work leaves a trail through the underground: the Red Cellar, the letter, and somewhere beyond — his real laboratory. Players who follow the evidence will eventually find him, and have to decide what they do when they do.
     status: active
     phases:
       - id: red-cellar-discovery
         type: entry
         name: The Red Cellar
         description: |
-          Players explore the vaults beneath the Monastery. Evidence of hemomantic experiments.
-          The Hulk — animated or inert depending on whether they triggered it. Abandoned equipment.
-          The Archon has not been here for some time, but the work has not stopped running.
+          Players explore the vaults beneath the Monastery. Evidence of hemomantic experiments. The Hulk — animated or inert depending on whether they triggered it. Abandoned equipment. The Archon has not been here for some time, but the work has not stopped running.
         triggers:
           - Players enter The Red Cellar location
         branches:
@@ -205,32 +167,22 @@ storylines:
         type: milestone
         name: The Letter to Aerion
         description: |
-          Hidden among the equipment — a letter addressed to Aerion von Moosgrund. Precise hand,
-          folded paper, wax seal pressed with a medical instrument.
+          Hidden among the equipment — a letter addressed to Aerion von Moosgrund. Precise hand, folded paper, wax seal pressed with a medical instrument.
 
           ---
           *To Aerion von Moosgrund*
 
-          If you found this, you have already seen my work in the cellar. Good. That saves me
-          an explanation.
+          If you found this, you have already seen my work in the cellar. Good. That saves me an explanation.
 
-          What is down there represents months of progress — crystalline material from these lands
-          of the mist, shaped into something that moves, that responds, that *functions*. It is the
-          furthest I have gotten with inorganic subjects. I am not dissatisfied with it.
+          What is down there represents months of progress — crystalline material from these lands of the mist, shaped into something that moves, that responds, that *functions*. It is the furthest I have gotten with inorganic subjects. I am not dissatisfied with it.
 
           But it is not what you are.
 
-          You carry something I cannot synthesize — a living system, already integrated, already
-          running. The mutation in you did not kill you. It adapted. That distinction is everything,
-          and it is the question I have been working toward since we spoke on the bridge.
+          You carry something I cannot synthesize — a living system, already integrated, already running. The mutation in you did not kill you. It adapted. That distinction is everything, and it is the question I have been working toward since we spoke on the bridge.
 
-          The cellar was a starting point. My real laboratory is further in — near where the meteorite
-          made landfall. That is where the work that matters is happening, and that is where I would
-          like to continue our conversation.
+          The cellar was a starting point. My real laboratory is further in — near where the meteorite made landfall. That is where the work that matters is happening, and that is where I would like to continue our conversation.
 
-          These lands of the mist hold more than anyone could have imagined. Hidden structures,
-          unknown materials, transformations no one has thought to study. I have no interest in
-          exploring that alone when there is someone worth exploring it with.
+          These lands of the mist hold more than anyone could have imagined. Hidden structures, unknown materials, transformations no one has thought to study. I have no interest in exploring that alone when there is someone worth exploring it with.
 
           Come find me at the impact site.
 
@@ -246,10 +198,7 @@ storylines:
         type: active
         name: Finding the Meteorite Lab
         description: |
-          The letter points to the meteorite impact site — which connects to the blocked shaft
-          at the top of the Crystal Defense Line. Players must navigate the Copper Rust Clan's
-          underground rail network and find a way through or above the sealed meteorite shaft
-          to reach the Archon's real laboratory.
+          The letter points to the meteorite impact site — which connects to the blocked shaft at the top of the Crystal Defense Line. Players must navigate the Copper Rust Clan's underground rail network and find a way through or above the sealed meteorite shaft to reach the Archon's real laboratory.
         branches:
           - label: Reach the impact site
             next: first-meeting
@@ -258,9 +207,7 @@ storylines:
         type: climax
         name: First Meeting
         description: |
-          The Archon is here. He is genuinely pleased. He does not perform warmth — he simply
-          proceeds as if continuing a conversation that was interrupted. He treats the players
-          as data, interesting data, but data. What happens next depends entirely on them.
+          The Archon is here. He is genuinely pleased. He does not perform warmth — he simply proceeds as if continuing a conversation that was interrupted. He treats the players as data, interesting data, but data. What happens next depends entirely on them.
         branches:
           - label: Collaborate with his research
             next: research-alliance
@@ -273,24 +220,19 @@ storylines:
         type: resolution
         name: Research Alliance
         description: |
-          The Archon becomes an irregular contact. Not an ally, but someone who trades information
-          and compounds for access to interesting subjects and mist phenomena. He keeps his distance.
-          He remembers everything useful. He will occasionally send notes.
+          The Archon becomes an irregular contact. Not an ally, but someone who trades information and compounds for access to interesting subjects and mist phenomena. He keeps his distance. He remembers everything useful. He will occasionally send notes.
         branches: []
 
       - id: confrontation
         type: resolution
         name: Confrontation
         description: |
-          Stopping the Archon means dealing with whatever he has built at the impact site, and
-          choosing what to do with his notes. Burning them destroys knowledge that might matter
-          elsewhere. Keeping them means carrying it.
+          Stopping the Archon means dealing with whatever he has built at the impact site, and choosing what to do with his notes. Burning them destroys knowledge that might matter elsewhere. Keeping them means carrying it.
         branches: []
 
       - id: uneasy-knowledge
         type: resolution
         name: Uneasy Knowledge
         description: |
-          Players leave with information and the uncomfortable certainty that the Archon is still
-          working. He does not pursue. He waits. He has other subjects in mind.
+          Players leave with information and the uncomfortable certainty that the Archon is still working. He does not pursue. He waits. He has other subjects in mind.
         branches: []

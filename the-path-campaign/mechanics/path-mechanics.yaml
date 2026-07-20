@@ -121,8 +121,7 @@ modifiers:
         These modifiers control whether locations remain fixed on the grid or shift with the mist between sessions. This mechanic creates the dynamic, ever-changing world of the Path—most locations are temporary and may never appear in the same configuration twice, while a few stable anchor points provide continuity and allow players to build lasting connections to specific places.
     verticalNavigation:
       description: |
-        These modifiers create a two-layer world with surface and underground locations. They enable vertical exploration and allow players to choose between surface routes and subterranean paths.
-        This vertical layer system could theoretically extend to additional dimensions beyond surface and underground. You could add sky-level locations accessible via climbing or flight, deeper underground layers beyond the first subterranean level, or even parallel dimensions like the Upside Down from Stranger Things or the Otherworld from Silent Hill. Each would use its own grid with specific connection modifiers to link between layers.
+        These modifiers create a two-layer world with surface and underground locations. They enable vertical exploration and allow players to choose between surface routes and subterranean paths. This vertical layer system could theoretically extend to additional dimensions beyond surface and underground. You could add sky-level locations accessible via climbing or flight, deeper underground layers beyond the first subterranean level, or even parallel dimensions like the Upside Down from Stranger Things or the Otherworld from Silent Hill. Each would use its own grid with specific connection modifiers to link between layers.
     corruptionAndProtection:
       description: |
         These modifiers represent the eternal struggle between the Sacred Flames that hold back the mist and the corrupting influence of the mist itself. They fundamentally alter the danger level and resource availability of a location and have special interaction rules (see Mist Mechanics section).
@@ -220,8 +219,7 @@ modifiers:
         If the PC faces the correct direction, they instantly travel to the target Mushroom Circle location. If the PC faces the wrong direction, roll 1d10 to determine the consequence:
         - 1-5: nothing happens and the magic fails harmlessly
         - 6-7: the PC gains 1 Stress from fey mischief and disorientation
-        - 8-10, the PC teleports to a random location on the current Path (GM's choice)
-        When a PC teleports to a random location (8-10 on the wrong direction roll), do not immediately reveal where they went. Place them on an unopened location card from the current Path. The PC knows they have teleported but not where they are. Once the players deduce or discover their location through play, you can reveal which location on the Path they reached.
+        - 8-10, the PC teleports to a random location on the current Path (GM's choice) When a PC teleports to a random location (8-10 on the wrong direction roll), do not immediately reveal where they went. Place them on an unopened location card from the current Path. The PC knows they have teleported but not where they are. Once the players deduce or discover their location through play, you can reveal which location on the Path they reached.
 
         If no other Mushroom Circle exists on the current Path, nothing happens—the magic lies dormant. Mushroom Circles only connect to other Mushroom Circle locations currently on the Path. The mist blocks connections to off-Path locations. Druids, rangers, and nature-focused characters can provide information about the general direction of other Mushroom Circles. Consulting with fey-touched NPCs or studying the mushroom patterns may reveal directional clues, helping PCs avoid the consequences of incorrect directional orientation.
 
@@ -456,8 +454,7 @@ flameMechanics:
 
     flameEssenceExtraction:
       description: |
-        Crystallized energy from Sacred Flames (amber to deep orange glow, stable during transport)
-        Only found at Flame-Touched locations (active Sacred Flames)
+        Crystallized energy from Sacred Flames (amber to deep orange glow, stable during transport) Only found at Flame-Touched locations (active Sacred Flames)
       extractionCost:
         fearGained: 2
         reason: Mist reacts to weakened flame

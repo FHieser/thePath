@@ -31,21 +31,14 @@ tiers:
       - name: Tangling Bolas
         type: Passive
         description: |
-          When Bola Throw hits, the target must make a Strength Reaction Roll
-          (Difficulty 14). On failure, they become Restrained — the bola has
-          wrapped around their legs. While Restrained, they may use their action
-          to attempt a Strength or Agility roll (Difficulty 14) to break free.
+          When Bola Throw hits, the target must make a Strength Reaction Roll (Difficulty 14). On failure, they become Restrained — the bola has wrapped around their legs. While Restrained, they may use their action to attempt a Strength or Agility roll (Difficulty 14) to break free.
 
       - name: Submerge
         type: Action
         description: |
-          The Swimmer slips beneath the surface of a water channel. While
-          submerged they cannot be targeted. Before making their next attack,
-          they may surface at any point along the connected channel within
-          Far range.
+          The Swimmer slips beneath the surface of a water channel. While submerged they cannot be targeted. Before making their next attack, they may surface at any point along the connected channel within Far range.
 
       - name: Surface Strike
         type: Reaction
         description: |
-          When the Swimmer surfaces from Submerge and makes an attack in the
-          same spotlight, they have advantage on that attack roll.
+          When the Swimmer surfaces from Submerge and makes an attack in the same spotlight, they have advantage on that attack roll.

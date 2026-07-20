@@ -11,19 +11,12 @@ appearance:
   - Always positions itself slightly lower than the party's eyeline when negotiating
 
 the_twist: |
-  The Emissary is not an independent mind — it is an extension of the Queen's will, capable of
-  improvisation within defined parameters but incapable of true deviation. When it speaks, it is not
-  translating the Queen. It is the Queen, operating at a distance.
+  The Emissary is not an independent mind — it is an extension of the Queen's will, capable of improvisation within defined parameters but incapable of true deviation. When it speaks, it is not translating the Queen. It is the Queen, operating at a distance.
 
-  This creates an unsettling dynamic: the Emissary can be killed without ending negotiations (the
-  Queen creates a new one within days), but attacking it is still an act of war — she was watching
-  through every strand of silk in the room.
+  This creates an unsettling dynamic: the Emissary can be killed without ending negotiations (the Queen creates a new one within days), but attacking it is still an act of war — she was watching through every strand of silk in the room.
 
 theme: |
-  Proxy and Presence. The Emissary forces players to confront what it means to negotiate with
-  something that has no agenda of its own. It will never lie because it has no reason to. It will
-  never promise what the Queen won't deliver. It is, in a strange way, the most honest NPC on the
-  Path — and that honesty makes it more unsettling, not less.
+  Proxy and Presence. The Emissary forces players to confront what it means to negotiate with something that has no agenda of its own. It will never lie because it has no reason to. It will never promise what the Queen won't deliver. It is, in a strange way, the most honest NPC on the Path — and that honesty makes it more unsettling, not less.
 
 wants:
   - To accurately convey the Queen's will and assess the party's nature

@@ -9,11 +9,9 @@ deployment:
     - "Resolve: The NPC neutralizes enemies with total BP equal to or less than their Battle Power"
   timing: NPCs can be deployed during the Player Phase. Deployment is instant.
   resolution: |
-    When deployed, the NPC clears enemies up to their Battle Power value from that zone.
-    The GM decides which enemies are destroyed. Excess enemy BP remains.
+    When deployed, the NPC clears enemies up to their Battle Power value from that zone. The GM decides which enemies are destroyed. Excess enemy BP remains.
   example: |
-    Brenner (4 BP) deployed against 1 Leader (3 BP) + 1 Support (1 BP) = 4 BP total.
-    Brenner neutralizes all enemies.
+    Brenner (4 BP) deployed against 1 Leader (3 BP) + 1 Support (1 BP) = 4 BP total. Brenner neutralizes all enemies.
 
 npcs:
   - name: Donatello
@@ -28,8 +26,7 @@ npcs:
       - name: Veteran Efficiency
         description: Hope cost never exceeds 4
     description: |
-      The village's most experienced fighter. Can venture into the deepest mist
-      and still operates effectively even under desperate conditions.
+      The village's most experienced fighter. Can venture into the deepest mist and still operates effectively even under desperate conditions.
 
   - name: Brenner
     battlePower: 4
@@ -41,8 +38,7 @@ npcs:
       - name: Rallying Presence
         description: NPCs deployed with him get +2 BP
     description: |
-      A capable defender who holds the inner line. Gets exhausted quickly when
-      fighting on the frontlines, but inspires others around him.
+      A capable defender who holds the inner line. Gets exhausted quickly when fighting on the frontlines, but inspires others around him.
 
   - name: The 7 Gnomes
     battlePower: 3

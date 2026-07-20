@@ -2,14 +2,9 @@ name: The Reeds
 tier: 3
 category: Social
 description: |
-  A permanent swamp settlement built across a network of wooden islands connected by plank
-  bridges and rope walkways. The community of frog people who live here — The Croak — move
-  through it with complete ease. Outsiders do not. At the center, a giant mangrove tree rises
-  above everything else, its crown holding a single dwelling visible from the swamp's edge.
-  The mist stops at the water's edge here. No one explains why.
+  A permanent swamp settlement built across a network of wooden islands connected by plank bridges and rope walkways. The community of frog people who live here — The Croak — move through it with complete ease. Outsiders do not. At the center, a giant mangrove tree rises above everything else, its crown holding a single dwelling visible from the swamp's edge. The mist stops at the water's edge here. No one explains why.
 impulses: |
-  Offer shelter at an undisclosed cost, conceal what keeps it standing, assess every visitor
-  and file what they reveal
+  Offer shelter at an undisclosed cost, conceal what keeps it standing, assess every visitor and file what they reveal
 difficulty: 17
 modifiers:
   - name: Inhabited
@@ -19,122 +14,73 @@ features:
   - name: The Paths
     type: Traversal
     description: |
-      The swamp has no clear entry. Mangrove trees cover the water in every direction, roots
-      breaking the surface, channels forking without signs. The wooden islands of The Reeds are
-      in there somewhere. Without knowing where to look, every direction looks the same.
+      The swamp has no clear entry. Mangrove trees cover the water in every direction, roots breaking the surface, channels forking without signs. The wooden islands of The Reeds are in there somewhere. Without knowing where to look, every direction looks the same.
 
-      Players make a Group Instinct roll (Difficulty 17). If the majority succeed, mark 1 progress.
-      They need 2 progress to find their way through.
+      Players make a Group Instinct roll (Difficulty 17). If the majority succeed, mark 1 progress. They need 2 progress to find their way through.
 
-      On a failed roll: half the party, rounded up, gains 1 Stress from exhaustion and
-      disorientation. On a failed roll with Fear: reset progress to 0. The party has looped back
-      to where they started.
+      On a failed roll: half the party, rounded up, gains 1 Stress from exhaustion and disorientation. On a failed roll with Fear: reset progress to 0. The party has looped back to where they started.
 
       With a Croak guide: no roll required.
 
-      Track total failed rolls across the navigation attempt. At 3 failures, the frog people have
-      noticed — they have been watching from the water and the trees. How they react is the GM's
-      choice, but they react.
+      Track total failed rolls across the navigation attempt. At 3 failures, the frog people have noticed — they have been watching from the water and the trees. How they react is the GM's choice, but they react.
     questions: |
-      What does the swamp do to people who linger too long without finding their way? What does
-      The Croak do with outsiders who have been circling for hours?
+      What does the swamp do to people who linger too long without finding their way? What does The Croak do with outsiders who have been circling for hours?
 
   - name: The Nests
     type: Passive
     description: |
-      Platforms built into the upper branches of the tallest trees ringing the settlement,
-      connected by rope bridges the Jumpers cross without slowing. Every island and path below
-      is visible from here. The Jumpers can vanish into the canopy completely — a Nest that
-      looks empty may not be. Players moving through The Reeds are never unobserved, and they
-      are never certain when the observation stops.
+      Platforms built into the upper branches of the tallest trees ringing the settlement, connected by rope bridges the Jumpers cross without slowing. Every island and path below is visible from here. The Jumpers can vanish into the canopy completely — a Nest that looks empty may not be. Players moving through The Reeds are never unobserved, and they are never certain when the observation stops.
 
-      Threat Counter: Track aggressive behavior, entering restricted areas, or actions that put
-      The Croak at risk. At 3 threat marks, Jumpers respond from above — positions block exits,
-      and every subsequent roll made against The Croak is at Difficulty 17 regardless of action type.
+      Threat Counter: Track aggressive behavior, entering restricted areas, or actions that put The Croak at risk. At 3 threat marks, Jumpers respond from above — positions block exits, and every subsequent roll made against The Croak is at Difficulty 17 regardless of action type.
 
-      Poison Darts (Fear Spend — Combat): Spend 1 Fear. A volley fires from the Nests. Target
-      gains 1 Stress and has disadvantage on their next action roll. This can trigger even when
-      no enemies are visible. Jumpers conceal perfectly in the canopy.
+      Poison Darts (Fear Spend — Combat): Spend 1 Fear. A volley fires from the Nests. Target gains 1 Stress and has disadvantage on their next action roll. This can trigger even when no enemies are visible. Jumpers conceal perfectly in the canopy.
     questions: |
-      What does a Jumper nest look like from the inside? What do Jumpers do between watches —
-      and what do they know about everyone who has passed through the paths below?
+      What does a Jumper nest look like from the inside? What do Jumpers do between watches — and what do they know about everyone who has passed through the paths below?
 
   - name: The Pools
     type: Action
     description: |
-      The outer islands are working space — fish pools lining the platform edges, well-managed
-      and well-stocked. The walkways here sit lower than anywhere else in the settlement, close
-      enough to the water that stepping off is a casual choice; the frog people do it constantly.
-      At the far end, enclosed pens hold the riding salamanders. They are large enough that when
-      they shift, the boards shake.
+      The outer islands are working space — fish pools lining the platform edges, well-managed and well-stocked. The walkways here sit lower than anywhere else in the settlement, close enough to the water that stepping off is a casual choice; the frog people do it constantly. At the far end, enclosed pens hold the riding salamanders. They are large enough that when they shift, the boards shake.
 
-      The fish pools produce in abundance. Players who simply ask are given a few without ceremony.
-      Fish are The Reeds' most common trade good; a handful costs nothing here.
+      The fish pools produce in abundance. Players who simply ask are given a few without ceremony. Fish are The Reeds' most common trade good; a handful costs nothing here.
 
-      If players agitate the salamanders, the pens breach and the chaos is immediate. Jumpers
-      descend from the Nests to contain it — while they are occupied, Nest surveillance and the
-      threat counter are suspended for the scene. The distraction and 1 threat mark arrive
-      together. The Jumpers return to position once the salamanders are contained.
+      If players agitate the salamanders, the pens breach and the chaos is immediate. Jumpers descend from the Nests to contain it — while they are occupied, Nest surveillance and the threat counter are suspended for the scene. The distraction and 1 threat mark arrive together. The Jumpers return to position once the salamanders are contained.
     questions: |
-      What does a loose salamander actually do to the settlement? What do the Swimmers think
-      of someone who would do this deliberately?
+      What does a loose salamander actually do to the settlement? What do the Swimmers think of someone who would do this deliberately?
 
   - name: The Chorus Ground
     type: Action
     description: |
-      The circular platform beside the Great Mangrove is the settlement's trade heart as much
-      as its ritual space. Croak goods change hands here throughout the day — Reed Candles,
-      Bubble Croakers, Blood Frog Totems, Stress Leeches. At dusk, the platform empties of
-      traders and the ritual begins.
+      The circular platform beside the Great Mangrove is the settlement's trade heart as much as its ritual space. Croak goods change hands here throughout the day — Reed Candles, Bubble Croakers, Blood Frog Totems, Stress Leeches. At dusk, the platform empties of traders and the ritual begins.
 
-      Being invited to receive the ritual is an honor. The Croakers say so plainly. They also
-      explain, plainly, what will happen — blood will be drawn at each stage, and the strongest
-      among them have been carried off the platform before the third stage was finished. Stage 3
-      can render both Croakers and players unconscious from the blood drawn. Players may stop
-      between any stage. No one will think less of them for it. Reaching Stage 3 and standing
-      is considered a mark of strength.
+      Being invited to receive the ritual is an honor. The Croakers say so plainly. They also explain, plainly, what will happen — blood will be drawn at each stage, and the strongest among them have been carried off the platform before the third stage was finished. Stage 3 can render both Croakers and players unconscious from the blood drawn. Players may stop between any stage. No one will think less of them for it. Reaching Stage 3 and standing is considered a mark of strength.
 
       The Blood Ritual (once per day):
       Stage 1 — Lose 1 HP: Clear 1 Stress.
       Stage 2 — Lose 2 HP: Clear 2 Stress, remove 1 Mist token.
       Stage 3 — Lose 3 HP: Clear all remaining Stress, remove 2 Mist tokens.
 
-      Costs are paid at the start of each stage. Benefits apply immediately. Players may opt
-      out between any stage and keep what they have gained.
+      Costs are paid at the start of each stage. Benefits apply immediately. Players may opt out between any stage and keep what they have gained.
     questions: |
-      What does the chorus sound like from inside it? What does a player feel at Stage 3 —
-      and does it feel like it came from the singing, or from somewhere else? What does The
-      Croak do for someone who falls unconscious during the ritual?
+      What does the chorus sound like from inside it? What does a player feel at Stage 3 — and does it feel like it came from the singing, or from somewhere else? What does The Croak do for someone who falls unconscious during the ritual?
 
   - name: The Great Mangrove
     type: Action
     description: |
-      The central island is the tree. The mangrove's roots have broken through every plank.
-      Croakers sit at the base in loose meditation. Branches grow in a natural stairway up to
-      the crown — visible, climbable, and clearly not an invitation. Players who move toward
-      it are redirected by community members without explanation. Croa's home is at the top.
+      The central island is the tree. The mangrove's roots have broken through every plank. Croakers sit at the base in loose meditation. Branches grow in a natural stairway up to the crown — visible, climbable, and clearly not an invitation. Players who move toward it are redirected by community members without explanation. Croa's home is at the top.
 
-      Players who reach the interior of the tree find a hidden entrance behind a wall.
-      An Instinct roll (Difficulty 17) reveals it. Below is the blood stone.
+      Players who reach the interior of the tree find a hidden entrance behind a wall. An Instinct roll (Difficulty 17) reveals it. Below is the blood stone.
 
-      Below the tree, in the root tangle, sits a flat stone table barely visible beneath
-      decades of encroaching wood. The symbol carved into its surface is precise — not
-      decorative, not worn, cut with intention by someone who knew exactly what they were
-      making. The grooves are filled with something dark that holds without spilling, as if
-      the stone itself is unwilling to let it go. The space smells of wet earth and iron.
+      Below the tree, in the root tangle, sits a flat stone table barely visible beneath decades of encroaching wood. The symbol carved into its surface is precise — not decorative, not worn, cut with intention by someone who knew exactly what they were making. The grooves are filled with something dark that holds without spilling, as if the stone itself is unwilling to let it go. The space smells of wet earth and iron.
 
-      Blood Stone (Passive — Network Drain): While The Reeds is active on the Path, all
-      mushroom circles on the current Path are disrupted. Players using a mushroom circle are
-      always treated as facing the wrong direction — roll 1d10:
+      Blood Stone (Passive — Network Drain): While The Reeds is active on the Path, all mushroom circles on the current Path are disrupted. Players using a mushroom circle are always treated as facing the wrong direction — roll 1d10:
       1–5: Nothing happens. The magic fails harmlessly.
       6–7: Gain 1 Stress from disorientation.
-      8–10: Teleport to a random location on the current Path (GM's choice). The player does
-      not immediately know where they are.
+      8–10: Teleport to a random location on the current Path (GM's choice). The player does not immediately know where they are.
 
       Items that aid mushroom circle navigation negate this effect.
     questions: |
-      What does the symbol feel like to a player who traces it with a finger? Does anything
-      happen when someone other than Croa presses blood into the grooves?
+      What does the symbol feel like to a player who traces it with a finger? Does anything happen when someone other than Croa presses blood into the grooves?
 
 featureQuestions:
   - What do members of The Croak call the mangrove tree — and do they know Croa grew it?

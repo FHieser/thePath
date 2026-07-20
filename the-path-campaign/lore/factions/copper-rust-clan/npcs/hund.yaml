@@ -12,20 +12,13 @@ appearance:
   - Watches exits. Does not make eye contact easily.
 
 the_twist: |
-  Hund's partner, Bryn, was at the sanctuary when the Brass Mechanicorum attacked. He escaped
-  during the chaos and doesn't know if Bryn made it out. He won't say this to anyone for a
-  long time. He just works. When he trusts the players enough, he will ask directly if they'll
-  take him back.
+  Hund's partner, Bryn, was at the sanctuary when the Brass Mechanicorum attacked. He escaped during the chaos and doesn't know if Bryn made it out. He won't say this to anyone for a long time. He just works. When he trusts the players enough, he will ask directly if they'll take him back.
 
-  The carvings tell it — small stone figures left in corners of the mine, never displayed. Early
-  ones are anonymous. Later ones are the same person, clearly, in increasingly private poses:
+  The carvings tell it — small stone figures left in corners of the mine, never displayed. Early ones are anonymous. Later ones are the same person, clearly, in increasingly private poses:
   reclining, at rest, unhurried. He never brings it up. He notices if they move one.
 
 theme: |
-  Certainty vs. Hope. Hund is living in suspension — functioning, contributing, building —
-  but won't fully grieve until he knows. The players have the power to resolve that, in either
-  direction. His question mirrors the village's own: is there something worth going back to,
-  or do you build here and accept the old world is gone?
+  Certainty vs. Hope. Hund is living in suspension — functioning, contributing, building — but won't fully grieve until he knows. The players have the power to resolve that, in either direction. His question mirrors the village's own: is there something worth going back to, or do you build here and accept the old world is gone?
 
 wants:
   - To find out what happened to Bryn — the grief won't lift until he knows
@@ -40,8 +33,7 @@ offers:
 interaction_beats:
   - moment: First contact (Brood Throne)
     description: |
-      First word — before he's fully conscious — is "Bryn?" When he realizes it's strangers,
-      he shuts down. If pressed: "Took you long enough." Immediately assesses exits.
+      First word — before he's fully conscious — is "Bryn?" When he realizes it's strangers, he shuts down. If pressed: "Took you long enough." Immediately assesses exits.
   - moment: Village arrival
     description: |
       No fanfare. One day the players notice he's started digging.

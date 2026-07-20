@@ -12,17 +12,10 @@ appearance:
   - Ancient Drakona teeth shed over centuries are in her divination pouch
 
 the_twist: |
-  She appears small, hunched, and odd — she is one of the oldest and most powerful beings on
-  the Path. She shrank herself deliberately. The humpback is structural, not age. She walked
-  into the mist when it first arrived and remembers what the world looked like before it.
-  Her power is never demonstrated through flashy magic. It is implied through age, casual
-  knowledge, and the fact that BFF — a giant frog — chose to stay.
+  She appears small, hunched, and odd — she is one of the oldest and most powerful beings on the Path. She shrank herself deliberately. The humpback is structural, not age. She walked into the mist when it first arrived and remembers what the world looked like before it. Her power is never demonstrated through flashy magic. It is implied through age, casual knowledge, and the fact that BFF — a giant frog — chose to stay.
 
 theme: |
-  Power hidden in unexpected forms. Naki challenges assumptions about strength, wisdom, and
-  capability. She is also genuinely warm and delighted by company — the isolation is real,
-  and visitors are a pleasure, not just a resource. The love of trading is authentic, not a
-  front for extraction.
+  Power hidden in unexpected forms. Naki challenges assumptions about strength, wisdom, and capability. She is also genuinely warm and delighted by company — the isolation is real, and visitors are a pleasure, not just a resource. The love of trading is authentic, not a front for extraction.
 
 wants:
   - Trading partners — the negotiation is enjoyed as much as the outcome
@@ -40,14 +33,12 @@ offers:
 
 speech_pattern: |
   NEVER uses "I", "me", or "my" — always "Naki", "Naki's". Warm and enthusiastic.
-  Examples: "Naki welcomes you!", "What does Naki's visitor need?", "Naki sees danger ahead
-  for the tall one", "Naki walked into the mist long ago. Naki remembers things others forgot."
+  Examples: "Naki welcomes you!", "What does Naki's visitor need?", "Naki sees danger ahead for the tall one", "Naki walked into the mist long ago. Naki remembers things others forgot."
 
 potion_crafting:
   framework: |
     Players provide ingredients; Naki brews. Match ingredients thematically to effect.
-    Wetland materials: glowworm essence, frog secretions, reed fibers, marsh fungi,
-    salamander scales, deep pool plants. Rare potions require dangerous ingredients.
+    Wetland materials: glowworm essence, frog secretions, reed fibers, marsh fungi, salamander scales, deep pool plants. Rare potions require dangerous ingredients.
   examples:
     - potion: Gill Salve (breathe underwater)
       ingredients: Glowworm essence + 3 pale salamander scales

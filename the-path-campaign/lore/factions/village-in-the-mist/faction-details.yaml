@@ -5,11 +5,7 @@ tier: Survivor
 
 identity:
   description: |
-    A refuge community built around an ancient Sacred Flame — one that is not, as most believe,
-    simply a brazier, but a dormant Fire Born temple-construct parked here centuries ago and never
-    retrieved. The village does not know this. What it knows is that the flame keeps the mist back,
-    that Flame Essence runs out, and that the people they send onto the Path don't always come back.
-    They survive by sending others into danger and being worth coming home to.
+    A refuge community built around an ancient Sacred Flame — one that is not, as most believe, simply a brazier, but a dormant Fire Born temple-construct parked here centuries ago and never retrieved. The village does not know this. What it knows is that the flame keeps the mist back, that Flame Essence runs out, and that the people they send onto the Path don't always come back. They survive by sending others into danger and being worth coming home to.
   themes:
     - A community built from necessity, sustained by trust and shared labor
     - Every face in the village is someone who had nowhere else to go
@@ -19,21 +15,14 @@ identity:
 
 history:
   origin: |
-    No founding myth, no charter. People arrived because the flame was here and the mist was
-    everywhere else. Some were travelers. Some were refugees. Some wandered in from the Path
-    with nothing left. The flame didn't ask questions. The village took its cues from that.
+    No founding myth, no charter. People arrived because the flame was here and the mist was everywhere else. Some were travelers. Some were refugees. Some wandered in from the Path with nothing left. The flame didn't ask questions. The village took its cues from that.
   events:
     - name: The Carrier Beneath
       description: |
-        Brenner the Flame Keeper has worked here for decades without knowing he was bonding
-        with something far older than the village itself. The fire marks on his arms are
-        not burn scars. They are the early stage of a transformation that happens once every
-        few centuries. Beneath the Sacred Flame Sanctuary, a Fire Born temple-construct has
-        been dormant since before anyone alive was born. Its carrier is waking up.
+        Brenner the Flame Keeper has worked here for decades without knowing he was bonding with something far older than the village itself. The fire marks on his arms are not burn scars. They are the early stage of a transformation that happens once every few centuries. Beneath the Sacred Flame Sanctuary, a Fire Born temple-construct has been dormant since before anyone alive was born. Its carrier is waking up.
     - name: Hund's Arrival
       description: |
-        A dwarf walked out of the underground tunnels and started digging a mine without being
-        asked. He said the village needed one. He was right. He hasn't said much else.
+        A dwarf walked out of the underground tunnels and started digging a mine without being asked. He said the village needed one. He was right. He hasn't said much else.
 
 goals:
   primary: Keep the Sacred Flame burning and the village alive
@@ -42,16 +31,12 @@ goals:
     - Keep village equipment functional and people fed
     - Expand slowly — more people, more structure, more resilience
   long_term: |
-    Become something more permanent than a refuge — a community that people build toward,
-    not just shelter in. What that looks like, nobody has dared to plan yet.
+    Become something more permanent than a refuge — a community that people build toward, not just shelter in. What that looks like, nobody has dared to plan yet.
 
 territory:
   type: Fixed Stable
   description: |
-    The village occupies the area protected by the Sacred Flame's aura. Five established
-    locations: the Sanctuary, the Forge, the Community Hearth, the Flame Gatherer's Lodge,
-    and the Supply Cache. Beyond the flame's reach: mist. The village does not expand without
-    additional Flame Essence or without pushing the mist back.
+    The village occupies the area protected by the Sacred Flame's aura. Five established locations: the Sanctuary, the Forge, the Community Hearth, the Flame Gatherer's Lodge, and the Supply Cache. Beyond the flame's reach: mist. The village does not expand without additional Flame Essence or without pushing the mist back.
   locations:
     - Sacred Flame Sanctuary (Brenner's domain)
     - The Forge (Brenner's workshop)
@@ -62,71 +47,50 @@ territory:
 mist_protection:
   type: Sacred Flame
   description: |
-    The village flame provides complete mist immunity within its aura. The village consumes
-    1 Flame Essence per day. Running out is not a scenario the village has prepared for in
-    any meaningful way. Brenner tracks the reserves obsessively and does not share exact
-    numbers with most of the village.
+    The village flame provides complete mist immunity within its aura. The village consumes 1 Flame Essence per day. Running out is not a scenario the village has prepared for in any meaningful way. Brenner tracks the reserves obsessively and does not share exact numbers with most of the village.
 
 subgroups:
   - name: Flame Seekers
     role: Expeditionary gatherers
     description: |
-      The people who go onto the Path to bring back Flame Essence and supplies. Donatello
-      leads them. They are the village's primary survival mechanism — and the group that
-      loses people most often. Every name carved into Donatello's shell was someone who
-      went out and didn't come back.
+      The people who go onto the Path to bring back Flame Essence and supplies. Donatello leads them. They are the village's primary survival mechanism — and the group that loses people most often. Every name carved into Donatello's shell was someone who went out and didn't come back.
   - name: Residents
     role: The community
     description: |
       Everyone else: craftspeople, growers, builders, the sick, the old, the children.
-      Nix knows all of them. Brenner has fixed their equipment. They are the reason the
-      Flame Seekers go out at all.
+      Nix knows all of them. Brenner has fixed their equipment. They are the reason the Flame Seekers go out at all.
 
 relationships:
   - faction: fire-born
     stance: unknown-connection
     description: |
-      The village's Sacred Flame is a dormant Fire Born temple-construct. No living village
-      resident knows this. Brenner's transformation is the first thread of this connection
-      becoming visible. When the carrier wakes, the relationship between village and Fire Born
-      changes permanently.
+      The village's Sacred Flame is a dormant Fire Born temple-construct. No living village resident knows this. Brenner's transformation is the first thread of this connection becoming visible. When the carrier wakes, the relationship between village and Fire Born changes permanently.
   - faction: copper-rust-clan
     stance: integration
     description: |
-      Hund arrived from the underground and began building immediately. He is not formally
-      integrated but is functionally part of the village. The village has not asked about
-      where he came from. He has not explained.
+      Hund arrived from the underground and began building immediately. He is not formally integrated but is functionally part of the village. The village has not asked about where he came from. He has not explained.
   - faction: spider-colony
     stance: wary-transactional
     description: |
-      Spiders have approached the village before. No formal arrangement. The village treats
-      them as dangerous but controllable — which the Spider Queen considers flattering in its
-      own way.
+      Spiders have approached the village before. No formal arrangement. The village treats them as dangerous but controllable — which the Spider Queen considers flattering in its own way.
   - faction: rootbound
     stance: unknown
     description: |
-      Natural sanctuaries exist beyond the village's awareness. Players who know about Naki
-      and The Watcher know more than any village resident does.
+      Natural sanctuaries exist beyond the village's awareness. Players who know about Naki and The Watcher know more than any village resident does.
   - faction: brass-mechanicorum
     stance: wary
     description: |
-      Copass at Highland Watch is known to some Flame Gatherers who have traded Path data
-      for equipment. Not trusted but acknowledged as useful.
+      Copass at Highland Watch is known to some Flame Gatherers who have traded Path data for equipment. Not trusted but acknowledged as useful.
   - faction: mist-born
     stance: existential-threat
     description: |
-      The Mist Born are why the flame matters. They will increase pressure as Brenner's
-      transformation progresses — the sleeping carrier waking draws their attention.
+      The Mist Born are why the flame matters. They will increase pressure as Brenner's transformation progresses — the sleeping carrier waking draws their attention.
 
 item_identity:
   theme: |
-    Practical and maintained. Village craftwork is functional above all — repaired multiple
-    times, designed for survival, never decorative. Brenner's forge-work carries faint heat
-    that doesn't fade. Items that have been near the Sacred Flame long enough develop a faint
-    resistance to mist-cold.
+    Practical and maintained. Village craftwork is functional above all — repaired multiple times, designed for survival, never decorative. Brenner's forge-work carries faint heat that doesn't fade. Items that have been near the Sacred Flame long enough develop a faint resistance to mist-cold.
   cost: |
-    Village equipment costs labor or Flame Essence. Brenner doesn't accept gold for survival
-    gear — he accepts help.
+    Village equipment costs labor or Flame Essence. Brenner doesn't accept gold for survival gear — he accepts help.
 
 rumors:
   - >
@@ -146,38 +110,28 @@ plot_hooks:
   - id: brenner-counter
     name: The Transformation
     description: |
-      Players notice the fire marks spreading each time they return. Then Mist Born begin
-      appearing at the perimeter. Then Brenner stops leaving the sanctuary. The village does
-      not have a word for what is happening to him.
+      Players notice the fire marks spreading each time they return. Then Mist Born begin appearing at the perimeter. Then Brenner stops leaving the sanctuary. The village does not have a word for what is happening to him.
   - id: essence-crisis
     name: Essence Crisis
     description: |
-      Brenner's reserves hit a critical threshold between sessions. The village has days,
-      not weeks. Donatello is organizing an emergency expedition. Players need to decide
-      how they help — and what they sacrifice.
+      Brenner's reserves hit a critical threshold between sessions. The village has days, not weeks. Donatello is organizing an emergency expedition. Players need to decide how they help — and what they sacrifice.
   - id: nix-knows-something
     name: Nix Knows Something
     description: |
-      Nix overheard a conversation they weren't supposed to. Now they're acting differently
-      — quieter, for once. Something they heard is making them careful.
+      Nix overheard a conversation they weren't supposed to. Now they're acting differently — quieter, for once. Something they heard is making them careful.
 
 storylines:
   - id: brenners-transformation
     name: Brenner's Transformation
     summary: |
-      The Flame Keeper of the village is slowly becoming something else. The fire marks that
-      started on his forearms are spreading. The flame responds to his proximity in ways it
-      shouldn't. Beneath the village, something ancient is waking up. When it does, the village
-      moves — or burns — depending on what has been built and who is standing there.
+      The Flame Keeper of the village is slowly becoming something else. The fire marks that started on his forearms are spreading. The flame responds to his proximity in ways it shouldn't. Beneath the village, something ancient is waking up. When it does, the village moves — or burns — depending on what has been built and who is standing there.
     status: active
     phases:
       - id: early-signs
         type: entry
         name: Early Signs
         description: |
-          Fire marks on Brenner's arms are spreading. He dismisses it. He's always near heat.
-          The flame in the sanctuary brightens slightly when he stands close to it — brighter
-          than proximity should explain. Players may notice before Brenner does.
+          Fire marks on Brenner's arms are spreading. He dismisses it. He's always near heat. The flame in the sanctuary brightens slightly when he stands close to it — brighter than proximity should explain. Players may notice before Brenner does.
         triggers:
           - Players spend multiple sessions at the village
         branches:
@@ -190,9 +144,7 @@ storylines:
         type: branch
         name: Investigation
         description: |
-          Research reveals fire marks matching ancient Fire Born records, specifically the early
-          bonding stage between a carrier and its Keeper. Something beneath the sanctuary has
-          been waiting for this. No one in the village has records old enough to explain it.
+          Research reveals fire marks matching ancient Fire Born records, specifically the early bonding stage between a carrier and its Keeper. Something beneath the sanctuary has been waiting for this. No one in the village has records old enough to explain it.
         branches:
           - label: Tell Brenner what you found
             next: middle-stage
@@ -203,9 +155,7 @@ storylines:
         type: active
         name: The Binding Deepens
         description: |
-          Brenner is being pulled toward the sanctuary. He no longer leaves the forge and
-          sanctuary complex voluntarily. The flame brightens whenever he approaches. Mist Born
-          scouts appear at the perimeter — distant, watching. Donatello starts counting them.
+          Brenner is being pulled toward the sanctuary. He no longer leaves the forge and sanctuary complex voluntarily. The flame brightens whenever he approaches. Mist Born scouts appear at the perimeter — distant, watching. Donatello starts counting them.
         branches:
           - label: Prepare defenses for the coming escalation
             next: late-stage
@@ -216,10 +166,7 @@ storylines:
         type: milestone
         name: The Village Knows
         description: |
-          The transformation is visible. Brenner glows. He is still himself — still practical,
-          still soft-spoken — but when he speaks near the flame the light moves with his words.
-          Mist Born patrols circle the village openly. The village knows something is coming.
-          Brenner tells them all to go about their work.
+          The transformation is visible. Brenner glows. He is still himself — still practical, still soft-spoken — but when he speaks near the flame the light moves with his words. Mist Born patrols circle the village openly. The village knows something is coming. Brenner tells them all to go about their work.
         branches:
           - label: Survive the siege
             next: awakening
@@ -228,11 +175,7 @@ storylines:
         type: climax
         name: The Carrier Wakes
         description: |
-          The Mist Born attack in force — drawn by the carrier beginning to wake beneath the
-          Sanctuary. During the fight, the ground beneath the flame shifts. The carrier rises.
-          Brenner bonds with it fully. The transformation is complete. The village sits on the
-          back of a Fire Born temple-construct that has been dormant for centuries — and it is,
-          for the first time in its existence, moving.
+          The Mist Born attack in force — drawn by the carrier beginning to wake beneath the Sanctuary. During the fight, the ground beneath the flame shifts. The carrier rises. Brenner bonds with it fully. The transformation is complete. The village sits on the back of a Fire Born temple-construct that has been dormant for centuries — and it is, for the first time in its existence, moving.
         branches:
           - label: Brenner keeps the village safe on the carrier
             next: mobile-village
@@ -243,20 +186,14 @@ storylines:
         type: resolution
         name: The Mobile Village
         description: |
-          The village is now mobile. It moves on the carrier — no longer anchored, no longer
-          in a fixed location. This changes everything about what the village means to the
-          campaign. Brenner is the carrier's keeper now. He is still the Flame Keeper. He is
-          becoming something more.
+          The village is now mobile. It moves on the carrier — no longer anchored, no longer in a fixed location. This changes everything about what the village means to the campaign. Brenner is the carrier's keeper now. He is still the Flame Keeper. He is becoming something more.
         branches: []
 
       - id: left-behind
         type: resolution
         name: Left Behind
         description: |
-          The carrier has its own agenda — ancient, pre-imprisonment. Brenner follows it.
-          The village is left at the location it occupied, now without the carrier's flame.
-          The Sacred Flame still burns — but it's smaller. And they know now what it was.
-          They have to decide whether to find another flame or build something without one.
+          The carrier has its own agenda — ancient, pre-imprisonment. Brenner follows it. The village is left at the location it occupied, now without the carrier's flame. The Sacred Flame still burns — but it's smaller. And they know now what it was. They have to decide whether to find another flame or build something without one.
         branches: []
 
 npcs:

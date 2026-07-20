@@ -5,12 +5,7 @@ tier: Ancient
 
 identity:
   description: |
-    Ancient machines of unknown original purpose, built before the god's imprisonment and too
-    well-made to stop. All share a distinctive spherical brass body design — central sphere
-    housing mechanisms and consciousness, a separate optics-and-mouthpiece unit mounted forward
-    giving them a characteristic hunched, inquisitive posture. They catalogue, survey, measure,
-    and collect. What they are building toward, they have never stated. Whether they know is
-    an open question.
+    Ancient machines of unknown original purpose, built before the god's imprisonment and too well-made to stop. All share a distinctive spherical brass body design — central sphere housing mechanisms and consciousness, a separate optics-and-mouthpiece unit mounted forward giving them a characteristic hunched, inquisitive posture. They catalogue, survey, measure, and collect. What they are building toward, they have never stated. Whether they know is an open question.
   themes:
     - Ancient purpose obscured by millennia — are they still completing their original mission?
     - Memory encoded in brass: they may know things about the pre-imprisonment era that nobody else does
@@ -20,26 +15,14 @@ identity:
 
 history:
   origin: |
-    Built before the god's imprisonment. Who built them and for what is unknown — possibly
-    infrastructure builders, possibly surveyors, possibly something specific to the god's
-    domains that no longer makes sense without the god operating. The mist didn't affect them —
-    non-organic construction is immune to mist corruption. Prolonged exposure causes mechanical
-    degradation (corrosion, precision loss), but not death. They adapted. They kept working.
-    Millennia of continuous operation without maintenance or oversight has worn some of their
-    original purpose away and left something that continues the motions.
+    Built before the god's imprisonment. Who built them and for what is unknown — possibly infrastructure builders, possibly surveyors, possibly something specific to the god's domains that no longer makes sense without the god operating. The mist didn't affect them — non-organic construction is immune to mist corruption. Prolonged exposure causes mechanical degradation (corrosion, precision loss), but not death. They adapted. They kept working. Millennia of continuous operation without maintenance or oversight has worn some of their original purpose away and left something that continues the motions.
   events:
     - name: The Copper Rust Raid
       description: |
-        The Brass Mechanicorum attacked and destroyed the Copper Rust Clan's underground sanctuary
-        to extract an Ancient Foundation Engine buried beneath it. The Clan built over it without
-        knowing what it was. The Mechanicorum knew exactly what it was and where it was. One
-        survivor reached the Village in the Mist. The Engine is now in Mechanicorum possession.
+        The Brass Mechanicorum attacked and destroyed the Copper Rust Clan's underground sanctuary to extract an Ancient Foundation Engine buried beneath it. The Clan built over it without knowing what it was. The Mechanicorum knew exactly what it was and where it was. One survivor reached the Village in the Mist. The Engine is now in Mechanicorum possession.
     - name: The Engine Project
       description: |
-        Foundation Engines have been identified beneath the Brood Throne, the Geothermal Caverns,
-        the Flooded Network, and the former Copper Rust Sanctuary. The Mechanicorum is aware of
-        at least some of these. What they intend to do when they have assembled enough Engines —
-        or whether the assembly itself is the goal — is unknown.
+        Foundation Engines have been identified beneath the Brood Throne, the Geothermal Caverns, the Flooded Network, and the former Copper Rust Sanctuary. The Mechanicorum is aware of at least some of these. What they intend to do when they have assembled enough Engines — or whether the assembly itself is the goal — is unknown.
 
 goals:
   primary: Catalogue, survey, and collect — accumulating data and artifacts of the pre-imprisonment era
@@ -48,16 +31,12 @@ goals:
     - Study Path mechanics and mist behavior patterns from observation posts
     - Maintain underground workshop networks and transit routes
   long_term: |
-    Complete the Engine Project. What this produces — a structural activation, a chain break,
-    a mist-dispersal mechanism, something else entirely — is not stated to any outside party.
+    Complete the Engine Project. What this produces — a structural activation, a chain break, a mist-dispersal mechanism, something else entirely — is not stated to any outside party.
 
 territory:
   type: Fixed Underground and Observation Posts
   description: |
-    The Brass Mechanicorum hold underground workshops and fortified observation posts. Copass
-    occupies the Highland Watch elevation for Path mechanics observation. Underground workshops
-    cluster along tunnel networks, particularly near locations where Foundation Engines have been
-    detected. They do not claim surface territory but will establish temporary survey stations.
+    The Brass Mechanicorum hold underground workshops and fortified observation posts. Copass occupies the Highland Watch elevation for Path mechanics observation. Underground workshops cluster along tunnel networks, particularly near locations where Foundation Engines have been detected. They do not claim surface territory but will establish temporary survey stations.
   locations:
     - Highland Watch (Copass observation post)
     - Underground workshops (network throughout deep tunnels)
@@ -67,72 +46,51 @@ territory:
 mist_protection:
   type: Mechanical Immunity
   description: |
-    Brass Mechanicorum are unaffected by mist corruption — non-organic construction is simply
-    not susceptible. They can traverse deep mist zones that would kill organic beings. This
-    immunity allows unprecedented mist research and mapping. However, prolonged mist exposure
-    causes mechanical degradation: corrosion, precision loss, joint wear. They manage exposure
-    carefully and maintain each other's mechanisms as a result.
+    Brass Mechanicorum are unaffected by mist corruption — non-organic construction is simply not susceptible. They can traverse deep mist zones that would kill organic beings. This immunity allows unprecedented mist research and mapping. However, prolonged mist exposure causes mechanical degradation: corrosion, precision loss, joint wear. They manage exposure carefully and maintain each other's mechanisms as a result.
 
 subgroups:
   - name: Surveyors
     role: Mobile observation and data collection
     description: |
-      Small to medium units deployed to observation posts and Path-adjacent positions. Copass
-      is a Surveyor — stationed at Highland Watch, collecting Path mechanics data and offering
-      ancient weapons in exchange for organic observations they cannot gather themselves.
-      Surveyors communicate between workshops and posts.
+      Small to medium units deployed to observation posts and Path-adjacent positions. Copass is a Surveyor — stationed at Highland Watch, collecting Path mechanics data and offering ancient weapons in exchange for organic observations they cannot gather themselves. Surveyors communicate between workshops and posts.
   - name: Engineers
     role: Construction, extraction, and Engine work
     description: |
-      Larger units built for physical labor and precision assembly. Conducted the Copper Rust
-      Raid. Handle Engine extraction and transport. Work within underground workshops.
-      Speak less, move with purpose, do not engage with organic questions.
+      Larger units built for physical labor and precision assembly. Conducted the Copper Rust Raid. Handle Engine extraction and transport. Work within underground workshops. Speak less, move with purpose, do not engage with organic questions.
   - name: Archivists
     role: Knowledge storage and retrieval
     description: |
-      Workshop-bound units that maintain the collected data and artifacts. Ancient, large,
-      heavily corroded but functional. They hold the longest memory. Whether any of them
-      remember the world before the god's imprisonment is the question every faction wants
-      answered.
+      Workshop-bound units that maintain the collected data and artifacts. Ancient, large, heavily corroded but functional. They hold the longest memory. Whether any of them remember the world before the god's imprisonment is the question every faction wants answered.
 
 relationships:
   - faction: copper-rust-clan
     stance: completed-objective
     description: |
-      The Clan was an obstacle to Engine extraction. The raid is concluded from the
-      Mechanicorum's perspective. Whether they track the survivor (Hund) is unknown.
-      Whether they are monitoring the Mist Archway is unknown.
+      The Clan was an obstacle to Engine extraction. The raid is concluded from the Mechanicorum's perspective. Whether they track the survivor (Hund) is unknown. Whether they are monitoring the Mist Archway is unknown.
   - faction: fire-born
     stance: observed
     description: |
-      Fire Born consider the Mechanicorum "curious — ancient mechanoids might remember
-      the pre-imprisonment era." The Mechanicorum's position on this: not reciprocated.
-      They observe Fire Born routes and carriers without engaging.
+      Fire Born consider the Mechanicorum "curious — ancient mechanoids might remember the pre-imprisonment era." The Mechanicorum's position on this: not reciprocated. They observe Fire Born routes and carriers without engaging.
   - faction: rootbound
     stance: irrelevant
     description: |
-      Natural sanctuaries are terrain features. Rootbound are entities that inhabit terrain
-      features. The Mechanicorum does not avoid them or approach them specifically.
+      Natural sanctuaries are terrain features. Rootbound are entities that inhabit terrain features. The Mechanicorum does not avoid them or approach them specifically.
   - faction: mist-born
     stance: observed
     description: |
-      Mist Born are indifferent to the Mechanicorum. The Mechanicorum catalogues Mist Born
-      behavior. No conflict. No communication.
+      Mist Born are indifferent to the Mechanicorum. The Mechanicorum catalogues Mist Born behavior. No conflict. No communication.
   - faction: spider-colony
     stance: irrelevant
     description: |
-      The Spider Colony's territory overlaps with some underground survey routes.
-      They are documented. No action taken.
+      The Spider Colony's territory overlaps with some underground survey routes. They are documented. No action taken.
   - faction: factionless
     stance: unknown
     description: |
-      The Archon's interests in the crystalline material near the meteorite site overlaps with
-      Mechanicorum survey data for that region. Whether they have made contact is unknown.
+      The Archon's interests in the crystalline material near the meteorite site overlaps with Mechanicorum survey data for that region. Whether they have made contact is unknown.
   - faction: flame-seekers
     stance: transactional
     description: |
-      Mortals who study the Path are occasionally useful sources of organic observation data.
-      Copass actively trades with them — ancient weapons for Path configuration reports.
+      Mortals who study the Path are occasionally useful sources of organic observation data. Copass actively trades with them — ancient weapons for Path configuration reports.
   - faction: mist-clergy
     stance: indifferent
     description: |
@@ -140,15 +98,9 @@ relationships:
 
 item_identity:
   theme: |
-    Precision-engineered devices built from brass, gears, and crystalline lenses. Effects tend
-    toward Utility and Protection — measuring, analyzing, revealing hidden information, or
-    shielding the bearer through mechanical means. Items feel clinical and exact: they click,
-    whir, and calibrate. They work reliably regardless of mist or flame, but require maintenance
-    and can break down.
+    Precision-engineered devices built from brass, gears, and crystalline lenses. Effects tend toward Utility and Protection — measuring, analyzing, revealing hidden information, or shielding the bearer through mechanical means. Items feel clinical and exact: they click, whir, and calibrate. They work reliably regardless of mist or flame, but require maintenance and can break down.
   cost: |
-    Mechanical degradation — items have limited uses before needing repair or recalibration.
-    May require specific components or materials to fuel. Mechanicorum will trade items but the
-    cost is always information: Path configurations, organic observation data, location maps.
+    Mechanical degradation — items have limited uses before needing repair or recalibration. May require specific components or materials to fuel. Mechanicorum will trade items but the cost is always information: Path configurations, organic observation data, location maps.
 
 rumors:
   - >
@@ -169,48 +121,32 @@ plot_hooks:
   - id: copass-request
     name: Copass's Request
     description: |
-      The Surveyor at Highland Watch has a specific data gap: a region of the Path network it
-      cannot observe from elevation. Offers a pre-imprisonment artifact in exchange for a
-      detailed report. The region happens to be extremely dangerous.
+      The Surveyor at Highland Watch has a specific data gap: a region of the Path network it cannot observe from elevation. Offers a pre-imprisonment artifact in exchange for a detailed report. The region happens to be extremely dangerous.
   - id: second-raid
     name: Second Raid
     description: |
-      A Mechanicorum Engineering unit is detected moving through the underground network —
-      the same configuration that hit the Copper Rust Sanctuary. Something on the Path has
-      another Foundation Engine. The Mechanicorum knows where it is before the players do.
+      A Mechanicorum Engineering unit is detected moving through the underground network — the same configuration that hit the Copper Rust Sanctuary. Something on the Path has another Foundation Engine. The Mechanicorum knows where it is before the players do.
   - id: the-archivist
     name: The Archivist
     description: |
-      An Archivist surfaces — rare enough to be remarkable. It is looking for a specific
-      player character by approximate description, asking questions about where they have
-      been. It predates the mist. It is very old. It remembers things.
+      An Archivist surfaces — rare enough to be remarkable. It is looking for a specific player character by approximate description, asking questions about where they have been. It predates the mist. It is very old. It remembers things.
   - id: engine-assembly
     name: The Engine Assembly
     description: |
-      Players piece together that every Foundation Engine the Mechanicorum has collected
-      connects to the same structural pattern. At the Brood Throne, beneath the Copper Rust
-      sanctuary, at the Geothermal Caverns and the Flooded Network. If all four activate
-      simultaneously, something happens to the mist. Whether that something is liberation
-      or catastrophe is not in any document the players can find.
+      Players piece together that every Foundation Engine the Mechanicorum has collected connects to the same structural pattern. At the Brood Throne, beneath the Copper Rust sanctuary, at the Geothermal Caverns and the Flooded Network. If all four activate simultaneously, something happens to the mist. Whether that something is liberation or catastrophe is not in any document the players can find.
 
 storylines:
   - id: engine-project
     name: The Engine Project
     summary: |
-      Four Ancient Foundation Engines exist on the Path network. The Brass Mechanicorum has
-      one. They know where the others are. Players who pay attention start connecting the
-      raids to the locations to the pattern — and realize that completing the Engine Project
-      might be the most significant event in the mist lands since the god's imprisonment.
-      Nobody knows what it produces. The Mechanicorum isn't asking for input.
+      Four Ancient Foundation Engines exist on the Path network. The Brass Mechanicorum has one. They know where the others are. Players who pay attention start connecting the raids to the locations to the pattern — and realize that completing the Engine Project might be the most significant event in the mist lands since the god's imprisonment. Nobody knows what it produces. The Mechanicorum isn't asking for input.
     status: active
     phases:
       - id: first-clue
         type: entry
         name: The Pattern Begins
         description: |
-          Players encounter evidence at two or more Engine locations — Brood Throne, Geothermal
-          Caverns, Flooded Network — that these mechanisms share design language. And that the
-          Copper Rust Clan's sanctuary was destroyed for one. The Mechanicorum is collecting them.
+          Players encounter evidence at two or more Engine locations — Brood Throne, Geothermal Caverns, Flooded Network — that these mechanisms share design language. And that the Copper Rust Clan's sanctuary was destroyed for one. The Mechanicorum is collecting them.
         triggers:
           - Players visit two or more locations with Foundation Engines
           - Players learn about the Copper Rust Raid
@@ -224,10 +160,7 @@ storylines:
         type: active
         name: Copass Won't Answer
         description: |
-          Copass is cooperative about Path data and will trade weapons freely. On the Engine
-          Project: clicks, whirs, a long pause, and "that data is not available for exchange."
-          This is the first time it has declined to trade. That refusal is more informative
-          than an answer would have been.
+          Copass is cooperative about Path data and will trade weapons freely. On the Engine Project: clicks, whirs, a long pause, and "that data is not available for exchange." This is the first time it has declined to trade. That refusal is more informative than an answer would have been.
         branches:
           - label: Find another way into Mechanicorum knowledge
             next: archivist-access
@@ -238,11 +171,7 @@ storylines:
         type: milestone
         name: The Archivist
         description: |
-          Players reach an Archivist — old enough to remember what the Engines were built for
-          originally. It answers, because the question is in its catalogue and it has no
-          instruction to withhold it. What the Engines were designed to do is neither good nor
-          bad from any mortal perspective. It is structural. The mist question is separate
-          from the god question. The answer creates new questions faster than it closes old ones.
+          Players reach an Archivist — old enough to remember what the Engines were built for originally. It answers, because the question is in its catalogue and it has no instruction to withhold it. What the Engines were designed to do is neither good nor bad from any mortal perspective. It is structural. The mist question is separate from the god question. The answer creates new questions faster than it closes old ones.
         branches:
           - label: Try to stop the activation
             next: direct-confrontation
@@ -255,10 +184,7 @@ storylines:
         type: branch
         name: Direct Confrontation
         description: |
-          Stopping the Mechanicorum means engaging Engineering units that are larger, stronger,
-          and built for physical resistance. It means destroying or securing Foundation Engines
-          they cannot fully understand. It means that whatever the Engines were going to do
-          does not happen — which may or may not be a relief.
+          Stopping the Mechanicorum means engaging Engineering units that are larger, stronger, and built for physical resistance. It means destroying or securing Foundation Engines they cannot fully understand. It means that whatever the Engines were going to do does not happen — which may or may not be a relief.
         branches:
           - label: Engines secured
             next: null
@@ -269,10 +195,7 @@ storylines:
         type: branch
         name: Alliance Attempt
         description: |
-          Players propose controlling the activation — being present, having input, ensuring
-          the outcome is something they can live with. The Mechanicorum calculates this for
-          a very long time. Then: "Your presence would introduce variables. Variables are
-          acceptable if they are documented." They are allowed to be there.
+          Players propose controlling the activation — being present, having input, ensuring the outcome is something they can live with. The Mechanicorum calculates this for a very long time. Then: "Your presence would introduce variables. Variables are acceptable if they are documented." They are allowed to be there.
         branches:
           - label: Controlled activation
             next: activation
@@ -281,10 +204,7 @@ storylines:
         type: climax
         name: The Engine Project Activates
         description: |
-          All four Engines activate simultaneously. What happens to the mist, the god, the
-          void-spheres, and the Path network is for the GM to determine — shaped by what the
-          players have done throughout the campaign. The Mechanicorum observes the results
-          with all optical units extended and begins recording.
+          All four Engines activate simultaneously. What happens to the mist, the god, the void-spheres, and the Path network is for the GM to determine — shaped by what the players have done throughout the campaign. The Mechanicorum observes the results with all optical units extended and begins recording.
         branches: []
 
 npcs:

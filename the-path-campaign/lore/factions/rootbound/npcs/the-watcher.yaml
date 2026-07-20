@@ -10,17 +10,10 @@ appearance:
   - Moves through the trees without sound — not suppressed sound, simply absent
 
 the_twist: |
-  The Watcher cannot speak at all. Not silence as choice — complete absence of voice.
-  All communication happens through gesture, body language, and the forest responding to
-  their presence: fairy lights brightening or dimming, forest sounds shifting, the mushroom
-  ring catching light. Players must interpret. The Watcher has been communicating this way
-  for longer than language has been stable, and has become remarkably precise.
+  The Watcher cannot speak at all. Not silence as choice — complete absence of voice. All communication happens through gesture, body language, and the forest responding to their presence: fairy lights brightening or dimming, forest sounds shifting, the mushroom ring catching light. Players must interpret. The Watcher has been communicating this way for longer than language has been stable, and has become remarkably precise.
 
 theme: |
-  Respect vs. Exploitation. The Watcher judges whether players treat sanctuaries as sacred
-  spaces or as resources. Rewards reverence. Punishes greed. Forces players to prove
-  their intentions through actions — the Watcher cannot be persuaded with words,
-  because the Watcher does not hear words the same way.
+  Respect vs. Exploitation. The Watcher judges whether players treat sanctuaries as sacred spaces or as resources. Rewards reverence. Punishes greed. Forces players to prove their intentions through actions — the Watcher cannot be persuaded with words, because the Watcher does not hear words the same way.
 
 wants:
   - Proof that visitors treat the sanctuary as a sacred space, not a supply depot
@@ -36,24 +29,17 @@ offers:
 interaction_beats:
   - moment: The marauders
     description: |
-      The Watcher hides in the forest while Factionless marauders occupy the dwelling.
-      Watching, judging whether the players are different.
+      The Watcher hides in the forest while Factionless marauders occupy the dwelling. Watching, judging whether the players are different.
   - moment: After combat
     description: |
-      Once players deal with the marauders, The Watcher emerges from the trees. Gestures thanks.
-      Offers tea and the health potion. Invites rest.
+      Once players deal with the marauders, The Watcher emerges from the trees. Gestures thanks. Offers tea and the health potion. Invites rest.
   - moment: The departure
     description: |
-      Points toward the Path ahead with a specific warning gesture — not attack, not mist,
-      something else — then fades back into the forest.
+      Points toward the Path ahead with a specific warning gesture — not attack, not mist, something else — then fades back into the forest.
 
 gm_notes:
-  - Establish gesture vocabulary quickly: head tilt = question, arm toward forest = welcome/safe,
-    hand flat between them = stop/danger, slow bow = genuine gratitude
-  - The fairy lights respond to emotional states — they dim when The Watcher is uncertain,
-    brighten noticeably when a player does something that registers as truly respectful
+  - "Establish gesture vocabulary quickly: head tilt = question, arm toward forest = welcome/safe, hand flat between them = stop/danger, slow bow = genuine gratitude"
+  - The fairy lights respond to emotional states — they dim when The Watcher is uncertain, brighten noticeably when a player does something that registers as truly respectful
   - Do not let players solve "the communication puzzle" too fast — the ambiguity is the point
-  - The Watcher is connected to Naki via the mushroom circle network; they communicate
-    occasionally through it (Naki describes The Watcher fondly: "Naki's quiet friend")
-  - If players damage the mushroom ring or harm the fairy lights: The Watcher disappears
-    into the forest and does not return during that visit
+  - "The Watcher is connected to Naki via the mushroom circle network; they communicate occasionally through it (Naki describes The Watcher fondly: \"Naki's quiet friend\")"
+  - "If players damage the mushroom ring or harm the fairy lights: The Watcher disappears into the forest and does not return during that visit"

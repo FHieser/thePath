@@ -2,7 +2,7 @@ name: Fallen Lord
 category: Solo
 description: A colossal figure in a dark robe, broad blade held low, stepping through solid walls as though they were fog. Where its face should be, cold mist pours outward in silence — not a disguise, but an absence. It moves with the patience of something that has been here a long time and does not intend to leave.
 motives: Stalk before striking, emerge from walls to overwhelm, exhale the void, sweep all within reach
-lore: The mist preserves what it swallows — including the idea of lordship over an abandoned place. The Fallen Lord is not the castle's original inhabitant, who was gone before the mist arrived. It is what the void built from the memory of authority: a shape coalesced from the residue of power that once moved through these halls. It does not know this. It does not know anything.
+lore: "The mist preserves what it swallows — including the idea of lordship over an abandoned place. The Fallen Lord is not the castle's original inhabitant, who was gone before the mist arrived. It is what the void built from the memory of authority: a shape coalesced from the residue of power that once moved through these halls. It does not know this. It does not know anything."
 
 tiers:
   - tier: 2

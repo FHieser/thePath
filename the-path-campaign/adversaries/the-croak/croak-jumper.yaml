@@ -34,33 +34,23 @@ tiers:
       - name: Drop Strike
         type: Reaction
         description: |
-          When the Jumper attacks from a position higher than their target — dropping
-          from a Nest, leaping from a bridge above, or striking downward from elevated
-          ground — they deal an additional 1d6 damage and the target is Vulnerable
-          until the end of their next turn.
+          When the Jumper attacks from a position higher than their target — dropping from a Nest, leaping from a bridge above, or striking downward from elevated ground — they deal an additional 1d6 damage and the target is Vulnerable until the end of their next turn.
 
       - name: Fluid Retreat
         type: Passive
         description: |
-          After making any attack, hit or miss, the Jumper may immediately move to
-          any position within Close range. This movement does not trigger reactions.
+          After making any attack, hit or miss, the Jumper may immediately move to any position within Close range. This movement does not trigger reactions.
 
       - name: "Ge' o'er 'ere"
         type: Action
         cost: Spend a Fear
         description: |
-          The Jumper's tongue shoots out at a target within Close range. The target
-          gains 1 Stress and must make a Strength Reaction Roll (Difficulty 17).
-          On failure, the target is pulled to Melee range and becomes Restrained —
-          they cannot move voluntarily while Restrained.
+          The Jumper's tongue shoots out at a target within Close range. The target gains 1 Stress and must make a Strength Reaction Roll (Difficulty 17). On failure, the target is pulled to Melee range and becomes Restrained — they cannot move voluntarily while Restrained.
 
-          While Restrained, the target may use their action to attempt a Strength
-          or Agility roll (Difficulty 17) to break free. The Restrain ends
-          immediately if the Jumper moves out of Close range.
+          While Restrained, the target may use their action to attempt a Strength or Agility roll (Difficulty 17) to break free. The Restrain ends immediately if the Jumper moves out of Close range.
 
       - name: Poison Dart
         type: Action
         cost: Spend a Fear
         description: |
-          Ranged attack against a target within Far range. The target gains 1 Stress
-          and has disadvantage on their next action roll.
+          Ranged attack against a target within Far range. The target gains 1 Stress and has disadvantage on their next action roll.

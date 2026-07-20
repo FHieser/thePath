@@ -82,17 +82,9 @@
   effect:
     category: Utility
     description: |
-      Once per long Rest, the Silkweaver can spin one silk item. Describe what you
-      weave; the GM assigns a minor utility effect appropriate to its form
-      (a length of rope, a wrapped bundle, a woven strip, a simple garment).
+      Once per long Rest, the Silkweaver can spin one silk item. Describe what you weave; the GM assigns a minor utility effect appropriate to its form (a length of rope, a wrapped bundle, a woven strip, a simple garment).
 
-      Each Short Rest, in plain sight, the spider spins a small open-weave
-      net and releases it to the wind. It drifts away on the breeze — visible
-      to anyone watching, gone within moments. The net carries encoded
-      information: scent-traces, the shape of where you have been, the faces
-      of those nearby. The Queen's drones intercept these nets. She
-      accumulates knowledge of your movements and will act on what she
-      learns when the time is right.
+      Each Short Rest, in plain sight, the spider spins a small open-weave net and releases it to the wind. It drifts away on the breeze — visible to anyone watching, gone within moments. The net carries encoded information: scent-traces, the shape of where you have been, the faces of those nearby. The Queen's drones intercept these nets. She accumulates knowledge of your movements and will act on what she learns when the time is right.
 
 # ============================================================
 # VILLAGE ITEMS
@@ -459,8 +451,7 @@
   effect:
     category: Restoration
     description: |
-      Light during a rest. All players taking that rest clear 1 Stress.
-      The candle burns for the duration of the rest and cannot be extinguished and relit.
+      Light during a rest. All players taking that rest clear 1 Stress. The candle burns for the duration of the rest and cannot be extinguished and relit.
 
 - name: Bubble Croaker
   type: The Croak
@@ -471,15 +462,11 @@
   effect:
     category: Utility
     description: |
-      Release the frog. It inflates a bubble large enough to hold up to 3 creatures, then
-      the bubble lifts free and the frog is gone.
+      Release the frog. It inflates a bubble large enough to hold up to 3 creatures, then the bubble lifts free and the frog is gone.
 
-      The bubble floats steadily upward by default. Passengers can push off nearby surfaces
-      or use tools to steer, but the bubble's natural direction is up.
+      The bubble floats steadily upward by default. Passengers can push off nearby surfaces or use tools to steer, but the bubble's natural direction is up.
 
-      The bubble persists until it contacts a sharp surface, takes damage from a weapon or
-      attack, or the scene ends. Creatures inside cannot take actions that would puncture
-      the bubble without destroying it.
+      The bubble persists until it contacts a sharp surface, takes damage from a weapon or attack, or the scene ends. Creatures inside cannot take actions that would puncture the bubble without destroying it.
 
 - name: Blood Frog Totem
   type: The Croak
@@ -492,8 +479,7 @@
     description: |
       Place the totem at any location within reach. It stays there.
 
-      While within Close range of the totem, whenever you would gain 1 Mist token, any
-      player in Close range may instead take 1 damage. The totem marks 1 charge.
+      While within Close range of the totem, whenever you would gain 1 Mist token, any player in Close range may instead take 1 damage. The totem marks 1 charge.
 
       After 5 charges the totem croaks once — loud, final — and splatters. It is destroyed.
 
@@ -506,8 +492,7 @@
   effect:
     category: Restoration
     description: |
-      Apply during a rest. Before applying, choose how many leeches to use (1 to 3).
-      Clear that many Stress. Lose 1 HP for each Stress cleared.
+      Apply during a rest. Before applying, choose how many leeches to use (1 to 3). Clear that many Stress. Lose 1 HP for each Stress cleared.
 
       The exchange is fixed — you choose the amount before the leeches are applied.
 
@@ -535,10 +520,7 @@
   effect:
     category: Utility
     description: |
-      Speak Tim's name and set the miniature down. It splinters apart the moment it's used —
-      eventually, on his schedule and nobody else's, his cart descends from the mist and offers a
-      ride anywhere on the current Path. Cannot carry a Sacred Flame or Flame Essence; his cart
-      isn't built for it, and he's not about to start being careful now.
+      Speak Tim's name and set the miniature down. It splinters apart the moment it's used — eventually, on his schedule and nobody else's, his cart descends from the mist and offers a ride anywhere on the current Path. Cannot carry a Sacred Flame or Flame Essence; his cart isn't built for it, and he's not about to start being careful now.
 
 - name: This-Way Guy
   type: Tim
@@ -549,8 +531,7 @@
   effect:
     category: Utility
     description: |
-      Snap it in half to reroll a roll that determines where you end up — a Mushroom Circle facing
-      roll, an Off-Path consequence roll, or similar — and take the new result.
+      Snap it in half to reroll a roll that determines where you end up — a Mushroom Circle facing roll, an Off-Path consequence roll, or similar — and take the new result.
 
 - name: Shrug Guy
   type: Tim
@@ -583,8 +564,7 @@
   effect:
     category: Utility
     description: |
-      No mechanical effect. Wobbles happily at the slightest vibration — a footstep, a sneeze, a
-      nearby structural collapse — with identical enthusiasm regardless of circumstances.
+      No mechanical effect. Wobbles happily at the slightest vibration — a footstep, a sneeze, a nearby structural collapse — with identical enthusiasm regardless of circumstances.
 
 - name: Woody
   type: Tim
@@ -595,8 +575,6 @@
   effect:
     category: Utility
     description: |
-      Wind Woody up and set him down facing a direction. He walks in a straight line until he hits
-      something or tips over. Good for distracting a single enemy or triggering something from a
-      distance without you being there.
+      Wind Woody up and set him down facing a direction. He walks in a straight line until he hits something or tips over. Good for distracting a single enemy or triggering something from a distance without you being there.
 
       Rarely — GM's call, sparingly — he wanders off-script entirely.

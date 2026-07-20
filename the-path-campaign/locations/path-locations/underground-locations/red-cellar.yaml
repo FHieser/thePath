@@ -19,8 +19,8 @@ features:
       The Red Cellar sprawls beneath the entire monastery footprint. Players descend from the Cave Mouth directly into the Storage. From there the cellar branches — through the Garden or through the Cages — with both paths converging at the Laboratory at the far end. The Laboratory is always the last section reached.
 
       Layout:
-        Storage (Entry) → Garden → Laboratory
-        Storage (Entry) → Cages → Laboratory
+      Storage (Entry) → Garden → Laboratory
+      Storage (Entry) → Cages → Laboratory
     questions: |
       What does the Archon's presence feel like in each section — clinical, hurried, obsessive? Does the cellar feel like it was built for this, or repurposed from something else?
 

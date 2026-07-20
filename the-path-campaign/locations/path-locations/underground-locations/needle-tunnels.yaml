@@ -46,8 +46,7 @@ features:
     description: |
       A warm alcove opens unexpectedly from the tunnel wall, its surfaces covered in softly glowing lichen. Fuzzy, palm-sized creatures nest here in clusters, chirping softly as they nibble on the luminescent growth. They show no fear of visitors, nuzzling against anyone who enters.
 
-      When the party discovers this alcove, each PC clears 1 Stress.
-      If the party takes a Short Rest here, each PC clears an additional 1 Stress.
+      When the party discovers this alcove, each PC clears 1 Stress. If the party takes a Short Rest here, each PC clears an additional 1 Stress.
     questions: |
       What do the critters remind you of from the world before the mist—and why does that memory hurt?
   - name: The Shrine of the Observer

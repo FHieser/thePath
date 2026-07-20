@@ -32,18 +32,12 @@ tiers:
       - name: Amphibious
         type: Passive
         description: |
-          The salamander moves freely between water channels and wooden platforms
-          without movement penalty. When it enters a water channel, any creature
-          within Melee range that is not amphibious must make an Agility Reaction
-          Roll (Difficulty 14) or be pulled in with it.
+          The salamander moves freely between water channels and wooden platforms without movement penalty. When it enters a water channel, any creature within Melee range that is not amphibious must make an Agility Reaction Roll (Difficulty 14) or be pulled in with it.
 
       - name: Rideable
         type: Passive
         description: |
-          When the salamander is spotlighted, its Croak rider may immediately move
-          to any position within Far range as a free action — this does not count
-          as their action for the turn. A mounted rider cannot be targeted
-          separately from the salamander while it is in motion.
+          When the salamander is spotlighted, its Croak rider may immediately move to any position within Far range as a free action — this does not count as their action for the turn. A mounted rider cannot be targeted separately from the salamander while it is in motion.
 
       - name: Regeneration
         type: Passive
@@ -53,6 +47,4 @@ tiers:
       - name: Agitated
         type: Reaction
         description: |
-          When the salamander takes Severe damage, the mounted rider must make an
-          Agility Reaction Roll (Difficulty 14) or be thrown to Very Close range
-          and become Prone.
+          When the salamander takes Severe damage, the mounted rider must make an Agility Reaction Roll (Difficulty 14) or be thrown to Very Close range and become Prone.

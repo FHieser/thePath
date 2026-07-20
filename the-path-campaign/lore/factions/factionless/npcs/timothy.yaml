@@ -17,32 +17,17 @@ personality:
   - Genuinely delighted by "interesting" chaos — a Path that rearranged itself overnight, a wooden figure that walked a foot to the left — treats them as curiosities out loud, even when they clearly unsettle him underneath
 
 the_twist: |
-  Publicly, he's an exiled mage from a once-allied circle of powerful spellcasters, gone into the mist
-  to study and slow its spread — partly for the village, partly to prove to the people who cast him out
-  that he's still capable of something enormous. Secretly, he's Soach, a minor chaos deity exiled by his
-  fellow lesser gods after his own leaking chaos re-ignited a plague that had nearly been wiped out,
-  turning his home city against its own gods. The possibility neither he nor Evie has confirmed: the
-  epidemic devastating her village, born from her own chaos-overflow, may be the same phenomenon that
-  got him exiled in the first place — and their two chaoses may have added together to cause it.
+  Publicly, he's an exiled mage from a once-allied circle of powerful spellcasters, gone into the mist to study and slow its spread — partly for the village, partly to prove to the people who cast him out that he's still capable of something enormous. Secretly, he's Soach, a minor chaos deity exiled by his fellow lesser gods after his own leaking chaos re-ignited a plague that had nearly been wiped out, turning his home city against its own gods. The possibility neither he nor Evie has confirmed: the epidemic devastating her village, born from her own chaos-overflow, may be the same phenomenon that got him exiled in the first place — and their two chaoses may have added together to cause it.
 
 theme: |
-  Three things braided together. The mystery of what's actually happening in the mist, which resists
-  being understood the same way Tim resists staying put. The reckoning of an idealized mentor turning
-  out to be flawed, maybe even complicit in what Evie is trying to cure. And a real vein of delight in
-  chaos and silliness for its own sake, which isn't a mask over the heavier stuff — it's simply also who
-  he is. One-line version: idealization vs. reality, and whether Evie still needs Tim to have the
-  answer, or has already outgrown needing him to.
+  Three things braided together. The mystery of what's actually happening in the mist, which resists being understood the same way Tim resists staying put. The reckoning of an idealized mentor turning out to be flawed, maybe even complicit in what Evie is trying to cure. And a real vein of delight in chaos and silliness for its own sake, which isn't a mask over the heavier stuff — it's simply also who he is. One-line version: idealization vs. reality, and whether Evie still needs Tim to have the answer, or has already outgrown needing him to.
 
 goals:
   primary: Figure out what's actually happening in the mist — pure curiosity, no larger agenda
   secondary: |
-    He's technically trapped in the mist too, so "a way out" is on the list, but there's no urgency
-    behind it — he's chaotic by nature, so the mist's randomness barely registers as a threat. It might
-    even feel a little like home.
+    He's technically trapped in the mist too, so "a way out" is on the list, but there's no urgency behind it — he's chaotic by nature, so the mist's randomness barely registers as a threat. It might even feel a little like home.
   unspoken: |
-    He genuinely likes being a mentor — staying relevant, being someone's great and terrible wizard,
-    being "hip with the kids." Underneath the titles and the showing-off is a real hunger to be needed,
-    not just performance.
+    He genuinely likes being a mentor — staying relevant, being someone's great and terrible wizard, being "hip with the kids." Underneath the titles and the showing-off is a real hunger to be needed, not just performance.
 
 wants:
   - An audience — someone to teach, to impress, to show off in front of
@@ -59,21 +44,12 @@ offers:
 
 item_identity:
   theme: |
-    Small hand-carved wooden figures, carved compulsively as an outlet for his leaking chaos rather
-    than as deliberate craftsmanship. Most do nothing at all — that's the point, not a design gap. A
-    few have real, if minor, utility. Rarely, one develops something that looks uncomfortably like a
-    will of its own. No two are quite alike, and he's carved far more than anyone could ever need.
+    Small hand-carved wooden figures, carved compulsively as an outlet for his leaking chaos rather than as deliberate craftsmanship. Most do nothing at all — that's the point, not a design gap. A few have real, if minor, utility. Rarely, one develops something that looks uncomfortably like a will of its own. No two are quite alike, and he's carved far more than anyone could ever need.
   cost: |
-    Usually free to use — he hands them out and doesn't consider them precious. The real "cost" is
-    unpredictability: a couple of figures behave inconsistently, or occasionally do something nobody
-    planned, including him.
+    Usually free to use — he hands them out and doesn't consider them precious. The real "cost" is unpredictability: a couple of figures behave inconsistently, or occasionally do something nobody planned, including him.
 
 village_visits: |
-  No pattern, no warning. Tim swoops into the village whenever he feels like it — sometimes weeks
-  apart, sometimes days — always a surprise, even to Evie. Useful as a GM tool: drop him into any
-  session that needs an unpredictable jolt of comedy or a loose piece of information, no scheduling
-  logic required. Evie's active search for him in the mist is a separate thread, driven by the
-  epidemic, not by his visiting rhythm.
+  No pattern, no warning. Tim swoops into the village whenever he feels like it — sometimes weeks apart, sometimes days — always a surprise, even to Evie. Useful as a GM tool: drop him into any session that needs an unpredictable jolt of comedy or a loose piece of information, no scheduling logic required. Evie's active search for him in the mist is a separate thread, driven by the epidemic, not by his visiting rhythm.
 
 secrets:
   known:
@@ -82,20 +58,12 @@ secrets:
   hidden:
     - name: Soach
       description: |
-        Not an exiled mage — a minor chaos deity, cast out by his fellow lesser gods after his own
-        leaking chaos re-ignited a plague that had nearly been wiped out, turning his home city
-        against its gods.
+        Not an exiled mage — a minor chaos deity, cast out by his fellow lesser gods after his own leaking chaos re-ignited a plague that had nearly been wiped out, turning his home city against its gods.
     - name: The Possible Connection
       description: |
-        The epidemic ravaging Evie's village may be the same phenomenon that got him exiled — possibly
-        his and Evie's chaos adding together to cause it. He may already suspect this and hasn't let
-        himself confirm it, which would quietly explain why he's never been in a hurry to be found.
+        The epidemic ravaging Evie's village may be the same phenomenon that got him exiled — possibly his and Evie's chaos adding together to cause it. He may already suspect this and hasn't let himself confirm it, which would quietly explain why he's never been in a hurry to be found.
   conditions: |
-    Soach's true nature surfaces through genuine connection, not force — someone actually engaging
-    with him rather than extracting information, or an external clue (his sigil on an altar elsewhere
-    on the Path, another entity who recognizes him) that makes denial impossible. The epidemic
-    connection is heavier and shouldn't come cheap — best earned through direct confrontation or hard
-    evidence, since it's the one thing he'd genuinely rather not know either.
+    Soach's true nature surfaces through genuine connection, not force — someone actually engaging with him rather than extracting information, or an external clue (his sigil on an altar elsewhere on the Path, another entity who recognizes him) that makes denial impossible. The epidemic connection is heavier and shouldn't come cheap — best earned through direct confrontation or hard evidence, since it's the one thing he'd genuinely rather not know either.
 
 gm_notes:
   - Play the titles and tangents for real comedic momentum, then let a single sincere question from a

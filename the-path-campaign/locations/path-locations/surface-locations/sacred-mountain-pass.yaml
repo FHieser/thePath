@@ -31,11 +31,11 @@ features:
     type: Passive
     description: |
       The mountain peak rises high enough that on clear nights, ancient star patterns become visible through the thinning mist. When PCs camp here overnight, they can study the celestial patterns from the Sacred Flame's warmth - a rare moment of peace where the stars shine through the eternal fog. Each PC gains 1 Hope as they connect with something eternal beyond the mist's reach. Like gazing at clouds and deriving shapes, the GM can offer rough hints through constellation patterns:
-       - Undiscovered Treasure (hidden caches or valuable resources)
-       - Hidden Enemies (lurking threats or ambush sites)
-       - Strong History (fragments of pre-mist civilization or lost knowledge)
-       - Visit Friends (where allies or helpful NPCs can be found)
-       - A Path Forward (the safest route or next destination).
+      - Undiscovered Treasure (hidden caches or valuable resources)
+      - Hidden Enemies (lurking threats or ambush sites)
+      - Strong History (fragments of pre-mist civilization or lost knowledge)
+      - Visit Friends (where allies or helpful NPCs can be found)
+      - A Path Forward (the safest route or next destination).
     questions: Do the stars appear different when viewed through Sacred Flame light? What stories do the constellations tell about the world before the mist?
 featureQuestions:
   - Why does this Sacred Flame burn when so many others have been extinguished by the mist?

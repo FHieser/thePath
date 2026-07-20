@@ -24,7 +24,7 @@ features:
     type: Action
     description: |
       @todo needs to be iterated on
-       The GM can spend 3 Fear to reveal that a current gathering expedition has encountered serious danger and needs immediate rescue. This creates an urgent time-sensitive mission where delays increase the risk to the endangered gatherers.
+      The GM can spend 3 Fear to reveal that a current gathering expedition has encountered serious danger and needs immediate rescue. This creates an urgent time-sensitive mission where delays increase the risk to the endangered gatherers.
     questions: |
       What went wrong with their mission? How much time do the PCs have before the situation becomes irreversible?
 featureQuestions:

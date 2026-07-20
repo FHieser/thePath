@@ -5,9 +5,7 @@ tier: Established
 
 identity:
   description: |
-    A vast underground empire ruled by an intelligence no one expected. The Spider Queen and her thousands
-    of offspring hunt, hoard, and survive with ruthless pragmatism. They are not evil — they are hungry.
-    And they are very, very organized.
+    A vast underground empire ruled by an intelligence no one expected. The Spider Queen and her thousands of offspring hunt, hoard, and survive with ruthless pragmatism. They are not evil — they are hungry. And they are very, very organized.
   themes:
     - Hunger as the root of all violence
     - Pragmatic alliance versus moral complicity
@@ -16,21 +14,14 @@ identity:
 
 history:
   origin: |
-    No one knows how the Spider Queen gained her intelligence. Two theories circulate: that she consumed
-    a powerful mage and absorbed their intellect, or that she was drawn to and transformed by the Ancient
-    Foundation Engine buried beneath her throne — a pre-Mist machine whose purpose she has never
-    understood, but has always felt.
+    No one knows how the Spider Queen gained her intelligence. Two theories circulate: that she consumed a powerful mage and absorbed their intellect, or that she was drawn to and transformed by the Ancient Foundation Engine buried beneath her throne — a pre-Mist machine whose purpose she has never understood, but has always felt.
   events:
     - name: The Claiming of the Brood Throne
       description: |
-        The Queen discovered the pre-Mist ruins and built her throne directly above the Ancient Foundation
-        Engine, instinctively drawn to its protective resonance. The colony grew outward from this fixed
-        point, silk spreading through every tunnel within reach.
+        The Queen discovered the pre-Mist ruins and built her throne directly above the Ancient Foundation Engine, instinctively drawn to its protective resonance. The colony grew outward from this fixed point, silk spreading through every tunnel within reach.
     - name: The Hundred Caravan Raids
       description: |
-        Over generations of Path travelers, the colony systematically ambushed caravans using the Silken
-        Spire as a trap. The wealth of a hundred trade runs now hangs silk-wrapped in the Brood Throne.
-        The Queen keeps everything — she has no concept of excess.
+        Over generations of Path travelers, the colony systematically ambushed caravans using the Silken Spire as a trap. The wealth of a hundred trade runs now hangs silk-wrapped in the Brood Throne. The Queen keeps everything — she has no concept of excess.
 
 goals:
   primary: Secure a reliable food source for the colony
@@ -43,9 +34,7 @@ goals:
 territory:
   type: Fixed Underground
   description: |
-    The colony controls the Silken Spire (surface) and Brood Throne (underground) — a Linked pair that
-    forms the only point where the colony maintains surface access. The tunnel network spreads outward
-    from the Brood Throne but the Queen rarely leaves her chamber.
+    The colony controls the Silken Spire (surface) and Brood Throne (underground) — a Linked pair that forms the only point where the colony maintains surface access. The tunnel network spreads outward from the Brood Throne but the Queen rarely leaves her chamber.
   locations:
     - Silken Spire
     - Brood Throne
@@ -53,82 +42,61 @@ territory:
 mist_protection:
   type: Engineered
   description: |
-    The Ancient Foundation Engine beneath the Brood Throne generates a resonance that keeps the mist
-    from fully penetrating the location. The engine is currently damaged, which is why the location
-    carries the Unstable modifier. The Queen does not fully understand the engine but feels its presence
-    — it is the reason she built her throne here.
+    The Ancient Foundation Engine beneath the Brood Throne generates a resonance that keeps the mist from fully penetrating the location. The engine is currently damaged, which is why the location carries the Unstable modifier. The Queen does not fully understand the engine but feels its presence — it is the reason she built her throne here.
 
 subgroups:
   - name: The Brood
     role: Colony labor and expansion
     description: |
-      The vast mass of standard spiders — hunters, web-spinners, egg-tenders. They operate on the
-      Queen's pheromone commands. Not individually intelligent but collectively relentless. When the
-      colony is hungry, the Brood pours out across the Path without coordination or mercy.
+      The vast mass of standard spiders — hunters, web-spinners, egg-tenders. They operate on the Queen's pheromone commands. Not individually intelligent but collectively relentless. When the colony is hungry, the Brood pours out across the Path without coordination or mercy.
   - name: Elite Guardians
     role: Defense and enforcement
     description: |
-      Larger, more powerful spiders who protect the Brood Throne chamber and escort the Queen. Capable
-      of coordinated tactical behavior. Distinguished by deep red markings on their carapace.
+      Larger, more powerful spiders who protect the Brood Throne chamber and escort the Queen. Capable of coordinated tactical behavior. Distinguished by deep red markings on their carapace.
   - name: The Emissary
     role: Diplomatic representative
     description: |
-      A uniquely marked spider gifted with speech by the Queen. There is only ever one at a time.
-      Speaks for the Queen to all outsiders. When the Emissary dies, the Queen creates a new one
-      within days — the knowledge transfers somehow.
+      A uniquely marked spider gifted with speech by the Queen. There is only ever one at a time. Speaks for the Queen to all outsiders. When the Emissary dies, the Queen creates a new one within days — the knowledge transfers somehow.
 
 relationships:
   - faction: fire-born
     stance: indifferent
     description: |
-      Fire is a hazard, not a religion. The Colony avoids flame-touched locations as a matter of
-      survival, not ideology. Fire Born are not prey and not allies.
+      Fire is a hazard, not a religion. The Colony avoids flame-touched locations as a matter of survival, not ideology. Fire Born are not prey and not allies.
   - faction: brass-mechanicorum
     stance: unknown
     description: |
-      The Queen is aware that the Foundation Engine shares characteristics with Brass Mechanicorum
-      construction. She has not yet made contact. If she did, she would have very specific questions.
+      The Queen is aware that the Foundation Engine shares characteristics with Brass Mechanicorum construction. She has not yet made contact. If she did, she would have very specific questions.
   - faction: rootbound
     stance: wary
     description: |
-      Nature-aligned beings who operate near the surface. The Colony avoids their territory — roots
-      disrupt silk, and Rootbound fight back effectively. Mutual avoidance by unspoken agreement.
+      Nature-aligned beings who operate near the surface. The Colony avoids their territory — roots disrupt silk, and Rootbound fight back effectively. Mutual avoidance by unspoken agreement.
   - faction: mist-born
     stance: hostile
     description: |
-      Mist Born encroach on hunting territory. The Colony drives them out when possible. Not a
-      philosophical conflict — purely territorial.
+      Mist Born encroach on hunting territory. The Colony drives them out when possible. Not a philosophical conflict — purely territorial.
   - faction: deep-dwellers
     stance: competitive
     description: |
-      Underground territory overlap creates constant friction. Neither side has decisively won control
-      of the deeper tunnels. Low-level skirmishes are ongoing.
+      Underground territory overlap creates constant friction. Neither side has decisively won control of the deeper tunnels. Low-level skirmishes are ongoing.
   - faction: flame-seekers
     stance: predatory
     description: |
-      Mortals traveling the Path are the colony's primary food source. Flame Seekers are prey unless
-      they have proven otherwise or made an arrangement.
+      Mortals traveling the Path are the colony's primary food source. Flame Seekers are prey unless they have proven otherwise or made an arrangement.
   - faction: ember-traders
     stance: transactional
     description: |
-      Traders occasionally approach the Silken Spire to attempt commerce. The Queen will sometimes
-      trade hoarded caravan goods for food deliveries. Purely practical.
+      Traders occasionally approach the Silken Spire to attempt commerce. The Queen will sometimes trade hoarded caravan goods for food deliveries. Purely practical.
   - faction: mist-clergy
     stance: hostile
     description: |
-      The Mist Clergy have attempted to use Mist Born to destabilize the colony's territory. The
-      Queen regards them as a long-term threat and remembers every incursion.
+      The Mist Clergy have attempted to use Mist Born to destabilize the colony's territory. The Queen regards them as a long-term threat and remembers every incursion.
 
 item_identity:
   theme: |
-    Silk-woven artifacts and venom-infused tools. Effects tend toward Entanglement and Paralysis —
-    restraining, slowing, or incapacitating targets. Items feel organic and unsettling: warm, slightly
-    sticky, faintly vibrating as if something alive is coiled inside. They perform best underground
-    and lose potency in direct sunlight.
+    Silk-woven artifacts and venom-infused tools. Effects tend toward Entanglement and Paralysis — restraining, slowing, or incapacitating targets. Items feel organic and unsettling: warm, slightly sticky, faintly vibrating as if something alive is coiled inside. They perform best underground and lose potency in direct sunlight.
   cost: |
-    Spider silk items require periodic maintenance — re-coating with the Queen's web fluid, or they
-    dry out and lose elasticity within weeks. Some carry a residual paralytic charge that can affect
-    the bearer under conditions of extreme stress.
+    Spider silk items require periodic maintenance — re-coating with the Queen's web fluid, or they dry out and lose elasticity within weeks. Some carry a residual paralytic charge that can affect the bearer under conditions of extreme stress.
 
 rumors:
   - >
@@ -148,43 +116,32 @@ plot_hooks:
   - id: missing-caravan
     name: The Missing Caravan
     description: |
-      A merchant caravan vanished near the Silken Spire three days ago. The village needs the
-      supplies. The silk wrappings visible from the Spire's entrance suggest the Colony has them.
-      Negotiation, stealth, or force — all have costs.
+      A merchant caravan vanished near the Silken Spire three days ago. The village needs the supplies. The silk wrappings visible from the Spire's entrance suggest the Colony has them. Negotiation, stealth, or force — all have costs.
   - id: egg-threat
     name: The Egg Threat
     description: |
-      Something — Mist Born, a rival faction, or a PC impulse — threatens to destroy the Queen's
-      egg chambers. She sends the Emissary to the village asking for help protecting her brood.
-      An alliance of necessity that puts players in an impossible position.
+      Something — Mist Born, a rival faction, or a PC impulse — threatens to destroy the Queen's egg chambers. She sends the Emissary to the village asking for help protecting her brood. An alliance of necessity that puts players in an impossible position.
   - id: emissary-alone
     name: The Emissary Alone
     description: |
-      Players find the Emissary injured and separated from the colony. It won't ask for help
-      directly, but it's dying. What attacked a spider who can call the entire colony for backup
-      at any moment?
+      Players find the Emissary injured and separated from the colony. It won't ask for help directly, but it's dying. What attacked a spider who can call the entire colony for backup at any moment?
   - id: rival-colony
     name: The Rival Colony
     description: |
-      A second silk fortress appears on the Path — the Queen didn't authorize it. An Elite Guardian
-      has broken away and is establishing a rival colony. She wants the players to help eliminate it
-      before it grows beyond control.
+      A second silk fortress appears on the Path — the Queen didn't authorize it. An Elite Guardian has broken away and is establishing a rival colony. She wants the players to help eliminate it before it grows beyond control.
 
 storylines:
   - id: engine-pact
     name: The Engine Pact
     summary: |
-      The Queen wants her Ancient Foundation Engine repaired. She has tasked the players with finding
-      4 missing components scattered across the Path world. Success permanently stabilizes both the
-      Brood Throne and the Silken Spire and forges a lasting alliance.
+      The Queen wants her Ancient Foundation Engine repaired. She has tasked the players with finding 4 missing components scattered across the Path world. Success permanently stabilizes both the Brood Throne and the Silken Spire and forges a lasting alliance.
     status: active
     phases:
       - id: first-contact
         type: entry
         name: First Contact
         description: |
-          Players encounter the Spider Emissary at the Silken Spire entrance. The Emissary assesses
-          them as prey, threat, or something more interesting.
+          Players encounter the Spider Emissary at the Silken Spire entrance. The Emissary assesses them as prey, threat, or something more interesting.
         triggers:
           - Players reach the Silken Spire
         branches:
@@ -197,16 +154,14 @@ storylines:
         type: dead-end
         name: War with the Colony
         description: |
-          The Queen does not forgive attacks on her Emissary. The colony becomes actively hostile on
-          all Path encounters — the Brood hunts the players across the underground network.
+          The Queen does not forgive attacks on her Emissary. The colony becomes actively hostile on all Path encounters — the Brood hunts the players across the underground network.
         branches: []
 
       - id: audience
         type: milestone
         name: Audience with the Queen
         description: |
-          Players descend to the Brood Throne and speak with the Spider Queen directly through
-          silk-vibration translation. She is direct, patient, and unmistakably intelligent.
+          Players descend to the Brood Throne and speak with the Spider Queen directly through silk-vibration translation. She is direct, patient, and unmistakably intelligent.
         branches:
           - label: Accept the Engine Pact
             next: component-hunt
@@ -219,8 +174,7 @@ storylines:
         type: branch
         name: Food Alliance
         description: |
-          Players agree to direct the colony's hunger toward a specific location or supply route.
-          A cold peace holds. The engine pact remains on the table.
+          Players agree to direct the colony's hunger toward a specific location or supply route. A cold peace holds. The engine pact remains on the table.
         branches:
           - label: Later accept engine repair
             next: component-hunt
@@ -231,8 +185,7 @@ storylines:
         type: milestone
         name: Uneasy Truce
         description: |
-          Players and the Colony maintain cold peace — the colony won't attack them, but offers
-          no further cooperation. The Queen is watching to see if they change their minds.
+          Players and the Colony maintain cold peace — the colony won't attack them, but offers no further cooperation. The Queen is watching to see if they change their minds.
         branches:
           - label: Accept engine pact
             next: component-hunt
@@ -241,9 +194,7 @@ storylines:
         type: active
         name: Component Hunt
         description: |
-          Players search the Path for 4 missing engine components. Each is housed in a different
-          location, integrated into ancient machinery from the same pre-Mist civilization that built
-          the Foundation Engine.
+          Players search the Path for 4 missing engine components. Each is housed in a different location, integrated into ancient machinery from the same pre-Mist civilization that built the Foundation Engine.
         progress:
           required: 4
           current: 0
@@ -268,9 +219,7 @@ storylines:
         type: climax
         name: Engine Repair
         description: |
-          Players install all components and attempt the final Knowledge roll (Difficulty 15). The
-          Queen watches from her throne without speaking. The silk around the chamber vibrates with
-          something that might be anticipation.
+          Players install all components and attempt the final Knowledge roll (Difficulty 15). The Queen watches from her throne without speaking. The silk around the chamber vibrates with something that might be anticipation.
         branches:
           - label: Success
             next: stable-alliance
@@ -281,9 +230,7 @@ storylines:
         type: setback
         name: Partial Repair
         description: |
-          The engine partially restores — the Unstable modifier weakens but persists. The Queen is
-          disappointed but acknowledges the attempt. Players may try again with another Knowledge roll
-          after a rest.
+          The engine partially restores — the Unstable modifier weakens but persists. The Queen is disappointed but acknowledges the attempt. Players may try again with another Knowledge roll after a rest.
         branches:
           - label: Try again
             next: repair-attempt
@@ -292,9 +239,7 @@ storylines:
         type: resolution
         name: Permanent Alliance
         description: |
-          The Brood Throne and Silken Spire become Stable. The Queen becomes a recurring trade
-          partner with reach across the underground network — intelligence, goods, and early warning
-          of threats moving through her domain. She remembers everyone who helped her.
+          The Brood Throne and Silken Spire become Stable. The Queen becomes a recurring trade partner with reach across the underground network — intelligence, goods, and early warning of threats moving through her domain. She remembers everyone who helped her.
         branches: []
 
 npcs:

@@ -23,10 +23,10 @@ features:
     type: Counter
     description: |
       The Fire Born brazier sits cold and cracked at the temple's summit — the wound this place is named for. Players can donate Flame Essences to reignite it. Track donations on a counter (0→7). Each donation drives the Mist Born into reaction based on current progress:
-        - 1–3 donated: GM gains 1 Fear
-        - 4–5 donated: GM gains 2 Fear
-        - 6 donated: GM gains 4 Fear
-        - 7 donated: The Mist Born are destroyed. Location gains Stable + Flame-Touched. PCs may extract up to 3 Flame Essences per future visit (GM gains 2 Fear per extraction).
+      - 1–3 donated: GM gains 1 Fear
+      - 4–5 donated: GM gains 2 Fear
+      - 6 donated: GM gains 4 Fear
+      - 7 donated: The Mist Born are destroyed. Location gains Stable + Flame-Touched. PCs may extract up to 3 Flame Essences per future visit (GM gains 2 Fear per extraction).
       The Mist Born will not let this flame come back without a fight.
     questions: Does the brazier still hold the shape of the Fire Born carrier that died here? What does it feel like to stand next to cold stone that once held back the entire mist?
 
@@ -38,9 +38,9 @@ features:
       Players who approach and examine the dead can claim the Flame Bearer's Amulet freely — it lies on the nearest paladin, cold but intact.
 
       The Flame Blade is still sheathed at a paladin's side. Any PC who touches the hilt finds the blade beginning to draw itself — the flame inside recognises a living hand. The sequence cannot be stopped once started:
-        - First pull: Lose 1 HP. The blade is halfway drawn — hold on or release?
-        - Second pull: Lose 1 HP, remove 1 Mist token. The flame is burning through you — hold on or release?
-        - Third pull: Lose 1 HP, remove 1 Mist token. The blade is yours.
+      - First pull: Lose 1 HP. The blade is halfway drawn — hold on or release?
+      - Second pull: Lose 1 HP, remove 1 Mist token. The flame is burning through you — hold on or release?
+      - Third pull: Lose 1 HP, remove 1 Mist token. The blade is yours.
       A PC who releases at any stage drops the blade. Another PC may attempt to claim it from the start.
     questions: What do the inscriptions on the carrier say — and is there anyone left who could read them? What did the Fire Born think was worth dying for in this specific temple?
 

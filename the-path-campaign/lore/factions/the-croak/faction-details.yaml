@@ -5,13 +5,7 @@ tier: Established
 
 identity:
   description: |
-    The Croak is a community of frog people who do not know what they are. Their leader,
-    Croa — a former Rootbound guardian and Naki's estranged sister — used hemomancy to
-    transform swamp frogs into people, then built a life around them in that same swamp.
-    The community is real, the culture is real, the loyalty is absolute. The swamp appears
-    to resist the mist naturally. It does not. Croa siphons from the Rootbound mushroom
-    network to maintain it, drawing small amounts of sanctuary energy from connections
-    across the Path. She knows both secrets. She has told no one either of them.
+    The Croak is a community of frog people who do not know what they are. Their leader, Croa — a former Rootbound guardian and Naki's estranged sister — used hemomancy to transform swamp frogs into people, then built a life around them in that same swamp. The community is real, the culture is real, the loyalty is absolute. The swamp appears to resist the mist naturally. It does not. Croa siphons from the Rootbound mushroom network to maintain it, drawing small amounts of sanctuary energy from connections across the Path. She knows both secrets. She has told no one either of them.
   themes:
     - Pragmatism as its own morality — Croa didn't do wrong things, she did necessary
       things. Whether there is a difference is what players must decide.
@@ -24,35 +18,17 @@ identity:
 
 history:
   origin: |
-    Croa grew up in the swamp — a Rootbound guardian tending a sanctuary she had inherited
-    too young. Naki's younger sister, with the same ancient knowledge of how natural
-    sanctuaries work, how the mushroom network connects them, and what living things absorb
-    from sacred ground. She found the blood stone as a child: a flat carved altar at the
-    swamp's heart with a symbol cut deep into its surface. Old enough that she had no name
-    for it. She pressed her blood into the grooves and experimented.
+    Croa grew up in the swamp — a Rootbound guardian tending a sanctuary she had inherited too young. Naki's younger sister, with the same ancient knowledge of how natural sanctuaries work, how the mushroom network connects them, and what living things absorb from sacred ground. She found the blood stone as a child: a flat carved altar at the swamp's heart with a symbol cut deep into its surface. Old enough that she had no name for it. She pressed her blood into the grooves and experimented.
   events:
     - name: The First Person
       description: |
-        She was a child. She used the blood stone to transform a swamp frog through
-        hemomancy, and it worked, and she was delighted. She showed the Rootbound what
-        she had made. They were not delighted. She could not understand why — the frog
-        was more now, not less. The rejection of something she was genuinely proud of
-        planted something cold in her that never left. She kept making more. They found
-        out she had not stopped.
+        She was a child. She used the blood stone to transform a swamp frog through hemomancy, and it worked, and she was delighted. She showed the Rootbound what she had made. They were not delighted. She could not understand why — the frog was more now, not less. The rejection of something she was genuinely proud of planted something cold in her that never left. She kept making more. They found out she had not stopped.
     - name: The Exile
       description: |
-        The Rootbound severed her node. A child, cast out into the mist with the people
-        she had made. Exile in the mist is death. She learned quickly what survives and
-        what does not. Pragmatism was not a philosophy she chose — it was what the mist
-        left behind after it burned away everything softer.
+        The Rootbound severed her node. A child, cast out into the mist with the people she had made. Exile in the mist is death. She learned quickly what survives and what does not. Pragmatism was not a philosophy she chose — it was what the mist left behind after it burned away everything softer.
     - name: The First Siphon
       description: |
-        She came back to the swamp. The blood stone was still there. She pressed her blood
-        into the carved symbol — which fills and holds without spilling — and found she could
-        reach the Rootbound network through it. Not as a node (her connection was severed)
-        but as a gap between other nodes, a crack she could pull through. The swamp held.
-        It still holds. The symbol on the stone is old enough that she has never found a
-        name for it. Its origins are a thread she has not pulled, and does not intend to.
+        She came back to the swamp. The blood stone was still there. She pressed her blood into the carved symbol — which fills and holds without spilling — and found she could reach the Rootbound network through it. Not as a node (her connection was severed) but as a gap between other nodes, a crack she could pull through. The swamp held. It still holds. The symbol on the stone is old enough that she has never found a name for it. Its origins are a thread she has not pulled, and does not intend to.
 
 goals:
   primary: Keep the swamp alive and the community safe — nothing more complicated than that
@@ -61,131 +37,81 @@ goals:
     - Trade mist protection amulets for what the swamp cannot produce
     - Continue developing what the frog people can do and become
   long_term: |
-    Build something that survives without her. The Croakers' rituals already draw from
-    the same source she does — unconsciously, collectively, without knowing it. She has
-    not told them. She has not decided whether she will.
+    Build something that survives without her. The Croakers' rituals already draw from the same source she does — unconsciously, collectively, without knowing it. She has not told them. She has not decided whether she will.
 
 territory:
   type: Fixed
   description: |
-    A permanent swamp built around a central giant mangrove tree that Croa grew or
-    enhanced with her magic — old enough now to have colonized much of the swamp floor
-    with its roots. Croa lives in the upper structure. The blood stone — a flat carved
-    altar whose symbol fills with blood and holds it — is housed in the root tangle at
-    the base, not visible to visitors. The Croakers perform their chorus rituals at the
-    tree without knowing what is beneath them. The swamp's mist protection is maintained
-    from here through two mechanisms: Croa's daily blood ritual and the Croakers' communal
-    song — both drawing from the Rootbound network, neither group aware the other does
-    the same thing.
+    A permanent swamp built around a central giant mangrove tree that Croa grew or enhanced with her magic — old enough now to have colonized much of the swamp floor with its roots. Croa lives in the upper structure. The blood stone — a flat carved altar whose symbol fills with blood and holds it — is housed in the root tangle at the base, not visible to visitors. The Croakers perform their chorus rituals at the tree without knowing what is beneath them. The swamp's mist protection is maintained from here through two mechanisms: Croa's daily blood ritual and the Croakers' communal song — both drawing from the Rootbound network, neither group aware the other does the same thing.
   locations:
     - The Croak (Swamp Settlement)
     - The Great Mangrove (central landmark, Croa's dwelling)
   note: |
-    While The Croak's location is active on the Path, mushroom circle connections
-    are suppressed network-wide for that session. This is a side effect of the
-    siphon. Croa has never explained it.
+    While The Croak's location is active on the Path, mushroom circle connections are suppressed network-wide for that session. This is a side effect of the siphon. Croa has never explained it.
 
 mist_protection:
   type: Siphoned
   description: |
-    The swamp's protection comes from Croa pressing her blood into the carved stone at
-    the heart of the mangrove's root tangle. The symbol fills and holds, and through it
-    she pulls from the Rootbound mushroom network — small amounts from many nodes, none
-    fatal individually. The Croakers' chorus rituals draw from the same source through
-    harmonic resonance, without anyone in the community knowing that is what they do.
-    The community believes the swamp resists naturally. It does not.
+    The swamp's protection comes from Croa pressing her blood into the carved stone at the heart of the mangrove's root tangle. The symbol fills and holds, and through it she pulls from the Rootbound mushroom network — small amounts from many nodes, none fatal individually. The Croakers' chorus rituals draw from the same source through harmonic resonance, without anyone in the community knowing that is what they do. The community believes the swamp resists naturally. It does not.
   consequence: |
-    If Croa is incapacitated or the network degrades enough, the swamp loses protection
-    within a day. She has no backup plan she has finished building. While The Croak's
-    location is active on the Path, mushroom circles across the session are suppressed.
+    If Croa is incapacitated or the network degrades enough, the swamp loses protection within a day. She has no backup plan she has finished building. While The Croak's location is active on the Path, mushroom circles across the session are suppressed.
 
 subgroups:
   - name: Jumpers
     role: Scouts and warriors
     description: |
-      The only members of The Croak who regularly leave the swamp, trade the amulets,
-      and deal with outsiders. They are the face of the faction to everyone else — brief,
-      businesslike, fair. Fast and vertical fighters who use terrain rather than holding
-      ground; an encounter with Jumpers in the swamp is deeply disorienting for anyone
-      trained to fight in straight lines. Croa trusts them most with partial truths: they
-      know the amulets come from her work. They do not know how.
+      The only members of The Croak who regularly leave the swamp, trade the amulets, and deal with outsiders. They are the face of the faction to everyone else — brief, businesslike, fair. Fast and vertical fighters who use terrain rather than holding ground; an encounter with Jumpers in the swamp is deeply disorienting for anyone trained to fight in straight lines. Croa trusts them most with partial truths: they know the amulets come from her work. They do not know how.
   - name: Swimmers
     role: Farmers and ranchers
     description: |
-      The productive backbone of The Croak — tending insect pools, reed beds, blind fish,
-      water-plant cultivation, and the few larger amphibious animals kept for meat and
-      material. The most numerous group and the most content. The swamp provides; the
-      swamp is home; that is sufficient. They are the purest expression of the faction's
-      philosophy: what survives is right, and they are surviving.
+      The productive backbone of The Croak — tending insect pools, reed beds, blind fish, water-plant cultivation, and the few larger amphibious animals kept for meat and material. The most numerous group and the most content. The swamp provides; the swamp is home; that is sufficient. They are the purest expression of the faction's philosophy: what survives is right, and they are surviving.
   - name: Croakers
     role: Priests and healers
     description: |
-      Developed their own spiritual framework around the swamp entirely without Croa's
-      involvement — she neither created it nor discourages it. Healers in the practical
-      sense, and priests in the sense that they lead communal chorus rituals they believe
-      reinforce the swamp's natural resistance. They are accidentally closest to the truth:
-      the rituals genuinely work, drawing on the Rootbound network through harmonic
-      resonance. Croa knows this. She has never said so. The Croakers' conscious knowledge
-      of what their song does is the one thing that could replace her blood ritual entirely.
+      Developed their own spiritual framework around the swamp entirely without Croa's involvement — she neither created it nor discourages it. Healers in the practical sense, and priests in the sense that they lead communal chorus rituals they believe reinforce the swamp's natural resistance. They are accidentally closest to the truth:
+      the rituals genuinely work, drawing on the Rootbound network through harmonic resonance. Croa knows this. She has never said so. The Croakers' conscious knowledge of what their song does is the one thing that could replace her blood ritual entirely.
 
 relationships:
   - faction: rootbound
     stance: complex
     description: |
-      Naki is Croa's sister. She has traced the network degradation to this region and
-      has not yet confronted it directly. She suspects. She is processing this at the
-      speed of something ancient and alone. The relationship is not hostile because
-      there has been no confrontation yet. When there is, it will be.
+      Naki is Croa's sister. She has traced the network degradation to this region and has not yet confronted it directly. She suspects. She is processing this at the speed of something ancient and alone. The relationship is not hostile because there has been no confrontation yet. When there is, it will be.
   - faction: village-in-the-mist
     stance: friendly
     description: |
-      The village needs mist protection and The Croak produces it at fair prices. The
-      cleanest relationship The Croak has. Neither side asks too many questions.
+      The village needs mist protection and The Croak produces it at fair prices. The cleanest relationship The Croak has. Neither side asks too many questions.
   - faction: brass-mechanicorum
     stance: transactional
     description: |
-      Jumpers sell amulets. The Brass Mechanicorum make their own filtration devices
-      and are simultaneously potential customers and potential competition. No warmth.
-      Clear accounting. Mutual respect for pragmatism.
+      Jumpers sell amulets. The Brass Mechanicorum make their own filtration devices and are simultaneously potential customers and potential competition. No warmth. Clear accounting. Mutual respect for pragmatism.
   - faction: spider-colony
     stance: indifferent
     description: |
-      Two pragmatic non-Flame communities with no territorial overlap and no shared
-      enemies. No reason for conflict, no reason for alliance. Not yet.
+      Two pragmatic non-Flame communities with no territorial overlap and no shared enemies. No reason for conflict, no reason for alliance. Not yet.
   - faction: mist-born
     stance: wary
     description: |
-      The swamp holds the Mist Born back, but The Croak has no offensive capacity
-      against a concentrated incursion. If the siphon failed, the swamp would be
-      indefensible within a day. The Croak does not advertise this.
+      The swamp holds the Mist Born back, but The Croak has no offensive capacity against a concentrated incursion. If the siphon failed, the swamp would be indefensible within a day. The Croak does not advertise this.
   - faction: fire-born
     stance: indifferent
     description: |
-      No Sacred Flame, no theological overlap, no contact. The Fire Born's mission
-      does not touch The Croak.
+      No Sacred Flame, no theological overlap, no contact. The Fire Born's mission does not touch The Croak.
   - faction: flame-seekers
     stance: indifferent
     description: |
-      Flame-aligned travelers pass through occasionally to buy amulets. No deeper
-      engagement. The Croak does not share their reverence for the flame.
+      Flame-aligned travelers pass through occasionally to buy amulets. No deeper engagement. The Croak does not share their reverence for the flame.
   - faction: ember-traders
     stance: transactional
     description: |
-      Traders are customers. The Croak is a supplier. The relationship is exactly
-      that and nothing more.
+      Traders are customers. The Croak is a supplier. The relationship is exactly that and nothing more.
   - faction: factionless
     stance: indifferent
     description: |
-      Some Factionless buy amulets. Some pass through. The Croak judges by behavior,
-      not by category. One exception: no contact with the Archon of Mercy specifically,
-      though the hemomantic overlap between Croa's methods and his work is undetected
-      on both sides.
+      Some Factionless buy amulets. Some pass through. The Croak judges by behavior, not by category. One exception: no contact with the Archon of Mercy specifically, though the hemomantic overlap between Croa's methods and his work is undetected on both sides.
   - faction: mist-clergy
     stance: wary
     description: |
-      The Mist Clergy's ideology is incompatible with a community that actively resists
-      the mist without Flame. No contact established, but the Clergy would not approve
-      of what The Croak is if they understood it.
+      The Mist Clergy's ideology is incompatible with a community that actively resists the mist without Flame. No contact established, but the Clergy would not approve of what The Croak is if they understood it.
   - faction: copper-rust-clan
     stance: unknown
     description: |
@@ -193,15 +119,9 @@ relationships:
 
 item_identity:
   theme: |
-    Simple or transactional — nothing in between. Simple items are exactly what they
-    look like: treated skin, stoppered reed, knotted cord. They work without ceremony.
-    Exchange items operate on the same logic as The Croak itself: you give something,
-    you receive something of equivalent use. The swap is always visible, always fair,
-    always decided before the item acts. Nothing is decorated. Nothing requires belief.
+    Simple or transactional — nothing in between. Simple items are exactly what they look like: treated skin, stoppered reed, knotted cord. They work without ceremony. Exchange items operate on the same logic as The Croak itself: you give something, you receive something of equivalent use. The swap is always visible, always fair, always decided before the item acts. Nothing is decorated. Nothing requires belief.
   cost: |
-    Traded for goods the swamp does not produce. They name a price; you pay it or you
-    do not. Exchange items often have the cost built in — the item takes from you to
-    give back in a different form.
+    Traded for goods the swamp does not produce. They name a price; you pay it or you do not. Exchange items often have the cost built in — the item takes from you to give back in a different form.
 
 rumors:
   - >
@@ -224,52 +144,32 @@ plot_hooks:
   - id: ward-that-failed
     name: The Amulet That Stopped Working
     description: |
-      A traveler's Croak ward failed mid-journey. They survived but they want answers.
-      When players investigate, the amulet isn't defective — the protection in that area
-      simply dropped. Someone in The Croak made a mistake, or Croa missed a morning.
-      The Croak will not discuss this. Croa will meet with players herself and answer
-      nothing that matters while being entirely pleasant about it.
+      A traveler's Croak ward failed mid-journey. They survived but they want answers. When players investigate, the amulet isn't defective — the protection in that area simply dropped. Someone in The Croak made a mistake, or Croa missed a morning. The Croak will not discuss this. Croa will meet with players herself and answer nothing that matters while being entirely pleasant about it.
   - id: croaker-who-left
     name: The Croaker Who Left
     description: |
-      A Croaker priest arrived at the Village in the Mist three days ago, alone, and
-      won't say why they left. They've been performing their chorus ritual quietly at
-      odd hours. The mushroom circle in the village stopped working the morning they
-      arrived. Players connect those two facts or they don't — but the Croaker is
-      frightened of something, and it isn't the mist.
+      A Croaker priest arrived at the Village in the Mist three days ago, alone, and won't say why they left. They've been performing their chorus ritual quietly at odd hours. The mushroom circle in the village stopped working the morning they arrived. Players connect those two facts or they don't — but the Croaker is frightened of something, and it isn't the mist.
   - id: the-symbol
     name: The Blood Stone
     description: |
-      Someone in the Path is looking for a carved stone with a specific symbol —
-      badly, urgently, and with money. They don't say why. The symbol they describe
-      matches something a player glimpsed in The Croak's mangrove roots when Croa
-      wasn't watching. She was watching. She has been waiting to see if they mention it.
+      Someone in the Path is looking for a carved stone with a specific symbol — badly, urgently, and with money. They don't say why. The symbol they describe matches something a player glimpsed in The Croak's mangrove roots when Croa wasn't watching. She was watching. She has been waiting to see if they mention it.
   - id: fair-exchange
     name: Fair Exchange
     description: |
-      The Croak needs something from outside the swamp — a specific material, a skill,
-      a task they cannot send Jumpers to do without drawing attention they cannot afford.
-      Full payment offered. The task itself is straightforward. The reason they cannot
-      do it themselves becomes clear to players who ask the right questions: doing it
-      visibly would expose something Croa has spent years keeping hidden.
+      The Croak needs something from outside the swamp — a specific material, a skill, a task they cannot send Jumpers to do without drawing attention they cannot afford. Full payment offered. The task itself is straightforward. The reason they cannot do it themselves becomes clear to players who ask the right questions: doing it visibly would expose something Croa has spent years keeping hidden.
 
 storylines:
   - id: what-the-circles-dont-say
     name: What the Circles Don't Say
     summary: |
-      Three threads lead to the swamp: a pattern of failed mushroom circles, an amulet
-      traced back to a frog trader, and Donatello's quiet answer about where he buys
-      his protection. All roads lead to Croa. What players find when they get there
-      depends on how hard they look — and whether Croa decides they're worth the truth.
+      Three threads lead to the swamp: a pattern of failed mushroom circles, an amulet traced back to a frog trader, and Donatello's quiet answer about where he buys his protection. All roads lead to Croa. What players find when they get there depends on how hard they look — and whether Croa decides they're worth the truth.
     status: dormant
     phases:
       - id: broken-circles
         type: entry
         name: Broken Circles
         description: |
-          Mushroom circles near a location on the Path refuse to activate. No error —
-          they simply don't respond. The pattern, when mapped, consistently points
-          toward one area of the swamp.
+          Mushroom circles near a location on the Path refuse to activate. No error — they simply don't respond. The pattern, when mapped, consistently points toward one area of the swamp.
         triggers:
           - Players attempt to use a mushroom circle near The Croak territory
           - Players investigate why mushroom circle connections are suppressed this session
@@ -281,8 +181,7 @@ storylines:
         type: entry
         name: Donatello's Amulet
         description: |
-          Donatello has a mist protection amulet of unusual quality — it holds longer
-          than anything on the general market. When players ask where he got it, he says:
+          Donatello has a mist protection amulet of unusual quality — it holds longer than anything on the general market. When players ask where he got it, he says:
           "A frog. Passing through. Heading back toward the marsh."
         triggers:
           - Players ask Donatello about his mist protection
@@ -295,10 +194,7 @@ storylines:
         type: entry
         name: The Frog Trader
         description: |
-          A Jumper from The Croak is selling amulets on the Path. Businesslike, brief,
-          fair price. Not unfriendly — just not interested in small talk. If pressed,
-          they give a direction. "The swamp. South of the old crossing. You'll smell it
-          before you see it."
+          A Jumper from The Croak is selling amulets on the Path. Businesslike, brief, fair price. Not unfriendly — just not interested in small talk. If pressed, they give a direction. "The swamp. South of the old crossing. You'll smell it before you see it."
         triggers:
           - Players encounter a Croak Jumper on the Path
           - Players ask traders about mist protection amulets
@@ -310,11 +206,7 @@ storylines:
         type: milestone
         name: The Swamp
         description: |
-          Players find The Croak. The swamp is real, the community is real, and the
-          giant mangrove tree at the center is visible from the edge. Croa meets them
-          herself — she always meets visitors herself. She is unsurprised, pragmatic,
-          and not forthcoming. She answers what she answers and deflects what she
-          deflects, and the deflections are smooth enough that players may not notice them.
+          Players find The Croak. The swamp is real, the community is real, and the giant mangrove tree at the center is visible from the edge. Croa meets them herself — she always meets visitors herself. She is unsurprised, pragmatic, and not forthcoming. She answers what she answers and deflects what she deflects, and the deflections are smooth enough that players may not notice them.
         branches:
           - label: Engage with the community
             next: deeper-in
@@ -325,10 +217,7 @@ storylines:
         type: active
         name: What the Swamp Holds
         description: |
-          The more time players spend in The Croak, the more threads appear. The Croakers'
-          chorus rituals feel like they do something real. The mushroom circle suppression
-          is consistent and unexplained. The mangrove tree is enormous and wrong in a way
-          that's hard to name. Croa is always nearby when players approach the tree's roots.
+          The more time players spend in The Croak, the more threads appear. The Croakers' chorus rituals feel like they do something real. The mushroom circle suppression is consistent and unexplained. The mangrove tree is enormous and wrong in a way that's hard to name. Croa is always nearby when players approach the tree's roots.
         branches:
           - label: Push toward the mangrove roots
             next: blood-stone-found
@@ -341,10 +230,7 @@ storylines:
         type: milestone
         name: What Is at the Roots
         description: |
-          Players find the carved stone in the mangrove's root tangle. The symbol is old —
-          older than the swamp, older than The Croak. The grooves are clean and dark.
-          Croa is there when they find it. She doesn't lie. She doesn't explain fully.
-          She asks what they intend to do with what they know.
+          Players find the carved stone in the mangrove's root tangle. The symbol is old — older than the swamp, older than The Croak. The grooves are clean and dark. Croa is there when they find it. She doesn't lie. She doesn't explain fully. She asks what they intend to do with what they know.
         branches:
           - label: Expose the siphon to the Rootbound
             next: rootbound-confrontation
@@ -359,10 +245,7 @@ storylines:
         type: milestone
         name: Naki Follows the Drain
         description: |
-          The Rootbound have traced the degradation to this region. Naki hasn't arrived
-          yet — but her presence is felt through a mushroom circle that briefly activates
-          nearby and then goes silent again. Something is looking. Players are now caught
-          between two parties with a history they don't fully understand.
+          The Rootbound have traced the degradation to this region. Naki hasn't arrived yet — but her presence is felt through a mushroom circle that briefly activates nearby and then goes silent again. Something is looking. Players are now caught between two parties with a history they don't fully understand.
         branches:
           - label: Warn Croa
             next: blood-stone-found
@@ -373,10 +256,7 @@ storylines:
         type: setback
         name: The Swamp Weakens
         description: |
-          Mist begins pressing through the swamp's edge in places it didn't reach before.
-          The Croakers' chorus rituals grow longer, louder, more desperate — they can feel
-          something is wrong but cannot name it. Croa is at the blood stone every morning.
-          The deadline is no longer abstract.
+          Mist begins pressing through the swamp's edge in places it didn't reach before. The Croakers' chorus rituals grow longer, louder, more desperate — they can feel something is wrong but cannot name it. Croa is at the blood stone every morning. The deadline is no longer abstract.
         branches:
           - label: Push Croa for answers
             next: blood-stone-found
@@ -387,10 +267,7 @@ storylines:
         type: climax
         name: Naki Arrives
         description: |
-          Naki comes to the swamp. She and Croa face each other for the first time since
-          the exile. Neither speaks first. Players are in the middle of something older
-          than anything they have been part of before. What happens next depends entirely
-          on what they do with that silence.
+          Naki comes to the swamp. She and Croa face each other for the first time since the exile. Neither speaks first. Players are in the middle of something older than anything they have been part of before. What happens next depends entirely on what they do with that silence.
         branches:
           - label: Broker a negotiation between them
             next: tenuous-peace
@@ -401,10 +278,7 @@ storylines:
         type: climax
         name: Teaching the Chorus
         description: |
-          Players help Croa teach the Croakers what their rituals actually do —
-          consciously, deliberately, drawing on the network as a community rather than
-          through a single blood ritual. Whether Croa tells them the full truth about
-          their origin in the process is her choice, and she makes it during this scene.
+          Players help Croa teach the Croakers what their rituals actually do — consciously, deliberately, drawing on the network as a community rather than through a single blood ritual. Whether Croa tells them the full truth about their origin in the process is her choice, and she makes it during this scene.
         branches:
           - label: The Croakers understand and hold
             next: self-sustaining
@@ -415,10 +289,7 @@ storylines:
         type: climax
         name: The Truth Lands
         description: |
-          The frog people learn what they are. The reaction is not uniform — some don't
-          care, some care enormously, some direct their anger at Croa, some at the players.
-          Whether Croa survives this as their leader is an open question that plays out
-          across this scene.
+          The frog people learn what they are. The reaction is not uniform — some don't care, some care enormously, some direct their anger at Croa, some at the players. Whether Croa survives this as their leader is an open question that plays out across this scene.
         branches:
           - label: Croa holds her leadership
             next: uneasy-alliance
@@ -431,42 +302,28 @@ storylines:
         type: resolution
         name: The Arrangement Continues
         description: |
-          Players know. Croa knows they know. The swamp holds. Nothing is resolved and
-          nothing is exposed. The Croak remains functional, the siphon remains active,
-          and the Rootbound network continues to degrade slowly. Players have a contact
-          in the swamp and a secret they are carrying for someone who did not ask them to.
+          Players know. Croa knows they know. The swamp holds. Nothing is resolved and nothing is exposed. The Croak remains functional, the siphon remains active, and the Rootbound network continues to degrade slowly. Players have a contact in the swamp and a secret they are carrying for someone who did not ask them to.
         branches: []
 
       - id: tenuous-peace
         type: resolution
         name: Sisters, Briefly
         description: |
-          Naki and Croa reach something — not reconciliation, not forgiveness, but an
-          acknowledgment. Naki permits a reduced, controlled draw from the network. The
-          swamp holds at lower strength. The Croak survives with less margin than before.
-          Naki leaves without warmth. BFF watches her go from the edge of the forest.
+          Naki and Croa reach something — not reconciliation, not forgiveness, but an acknowledgment. Naki permits a reduced, controlled draw from the network. The swamp holds at lower strength. The Croak survives with less margin than before. Naki leaves without warmth. BFF watches her go from the edge of the forest.
         branches: []
 
       - id: self-sustaining
         type: resolution
         name: The Chorus Holds
         description: |
-          The Croakers, now conscious of what their rituals do, maintain the swamp's
-          protection without Croa's blood ritual. The network drain reduces. Mushroom
-          circles in the area begin working again. Croa is still there — her role is
-          different now, smaller in some ways, but the community is genuinely stable
-          for the first time. She does not thank the players. She does remember them.
+          The Croakers, now conscious of what their rituals do, maintain the swamp's protection without Croa's blood ritual. The network drain reduces. Mushroom circles in the area begin working again. Croa is still there — her role is different now, smaller in some ways, but the community is genuinely stable for the first time. She does not thank the players. She does remember them.
         branches: []
 
       - id: siphon-severed
         type: dead-end
         name: The Swamp Fails
         description: |
-          The siphon is cut — by Naki, by the network's collapse, by Croa's
-          incapacitation, or by the community's own choice. The mist presses in within
-          a day. The Croak has to move, fight, or scatter. Whatever they were is no
-          longer possible in that swamp. The blood stone remains in the mangrove roots.
-          The tree does not die immediately.
+          The siphon is cut — by Naki, by the network's collapse, by Croa's incapacitation, or by the community's own choice. The mist presses in within a day. The Croak has to move, fight, or scatter. Whatever they were is no longer possible in that swamp. The blood stone remains in the mangrove roots. The tree does not die immediately.
         branches: []
 
 npcs:
