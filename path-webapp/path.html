@@ -34,6 +34,15 @@
 
         if (!id) { titleEl.textContent = "Path not found"; return; }
 
+        // Path-library grid cells can flag a location's own static modifiers for at-a-glance
+        // reading (keyed lowercase, matching path-mechanics.yaml modifier names).
+        const CELL_MODIFIER_STYLES = {
+          "stable": { cls: "stable", icon: "⚓" },
+          "mushroom circle": { cls: "mushroom-circle", icon: "🍄" },
+          "cave mouth": { cls: "cave-mouth-entry", icon: "⬇" },
+          "mist-touched": { cls: "mist-touched", icon: "🌫️" },
+        };
+
         try {
           const res = await fetch(`../the-path-campaign/example-path/path-library/${id}.yaml`);
           if (!res.ok) throw new Error("Not found");
@@ -53,15 +62,6 @@
         function idToName(id) {
           return id.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
         }
-
-        // Path-library grid cells can flag a location's own static modifiers for at-a-glance
-        // reading (keyed lowercase, matching path-mechanics.yaml modifier names).
-        const CELL_MODIFIER_STYLES = {
-          "stable": { cls: "stable", icon: "⚓" },
-          "mushroom circle": { cls: "mushroom-circle", icon: "🍄" },
-          "cave mouth": { cls: "cave-mouth-entry", icon: "⬇" },
-          "mist-touched": { cls: "mist-touched", icon: "🌫️" },
-        };
 
         function getRange(grid) {
           const rows = new Set(), cols = new Set();
