@@ -77,11 +77,18 @@
             html += `<tr><th>${label}</th>`;
             allCols.forEach((c) => {
               const key = `${c},${r}`;
-              const locId = grid[key];
-              if (locId) {
+              const cell = grid[key];
+              if (cell) {
+                const locId = typeof cell === "object" ? cell.location : cell;
+                const cellMods = typeof cell === "object" && Array.isArray(cell.modifiers) ? cell.modifiers.map((m) => m.toLowerCase()) : [];
                 const isHub = locId === "village-in-the-mist";
-                const cls = isHub ? "path-cell hub" : isUnderground ? "path-cell underground" : "path-cell";
-                html += `<td><a href="location.html?id=${locId}" class="${cls}">${idToName(locId)}</a></td>`;
+                const classes = ["path-cell"];
+                classes.push(isHub ? "hub" : isUnderground ? "underground" : null);
+                if (cellMods.includes("stable")) classes.push("stable");
+                if (cellMods.includes("mushroom circle")) classes.push("mushroom-circle");
+                const icon = cellMods.includes("stable") ? "⚓ " : cellMods.includes("mushroom circle") ? "🍄 " : "";
+                const title = cellMods.length ? ` title="${cell.modifiers.join(', ')}"` : "";
+                html += `<td><a href="location.html?id=${locId}" class="${classes.filter(Boolean).join(' ')}"${title}>${icon}${idToName(locId)}</a></td>`;
               } else {
                 html += `<td><span class="path-cell empty">—</span></td>`;
               }

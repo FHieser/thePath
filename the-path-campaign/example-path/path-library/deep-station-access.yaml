@@ -8,17 +8,17 @@ rowLabels:
   "2": A
 
 gridSurface:
-  "2,-1": mantaray-tree
+  "2,-1": { location: mantaray-tree, modifiers: [Stable] }
   "2,0": windswept-grasslands
   "3,0": the-giant-walls
   "4,0": lost-flame
   "3,1": misty-waters
-  "0,2": village-in-the-mist
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "4,2": ancient-crossing
-  "5,2": sacred-mountain-pass
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
 
 gridUnderground:
-  "0,2": underground-access-card
+  "0,2": { location: underground-access-card, modifiers: [Stable] }
   "1,2": sanctum-line
   "2,2": deep-station
   "3,2": outer-mine-line

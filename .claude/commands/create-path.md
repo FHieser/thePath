@@ -82,7 +82,7 @@ Place locations cell by cell, working left to right through each row. For each l
 1. **Which cell?** (e.g., A3, B'5)
 2. **Does it need a Cave Mouth neighbor?** If it's Underground, there must be a surface location at the same column with Cave Mouth.
 3. **Does it satisfy any Routes(N) constraints?** Check how many neighbors it's connecting to.
-4. **Is it Stable?** Note this in the Planning Notes.
+4. **Is it Stable, or does it have a modifier worth flagging (e.g. Mushroom Circle)?** Tag the cell inline in the grid (see Step 7) rather than in a separate note — Village in the Mist, Sacred Mountain Pass, Underground Access, and Mantaray Tree are always Stable; check other locations' `modifiers:` block for Stable or Mushroom Circle.
 
 Build the surface grid first, then the underground grid. Cross-reference column alignment as you go.
 
@@ -134,6 +134,7 @@ rowLabels:
 
 gridSurface:
   "col,row": location-id   # col = column index (col 1 = 0, col 2 = 1, ..., col 6 = 5)
+  "col,row": { location: location-id, modifiers: [Stable] }   # tagged cell — see below
   # ... one entry per surface location
 
 gridUnderground:
@@ -150,6 +151,9 @@ gridUnderground:
 - Keys containing commas (like `"1,0"`) must be double-quoted
 - rowLabel values with apostrophes (like `A'`) must be double-quoted
 - Plain location IDs (kebab-case, no special chars) do not need quoting
+
+**Tagging Stable / Mushroom Circle cells:**
+Most cells are just `"col,row": location-id`. When the location is Stable, or has a modifier worth spotting at a glance on the grid (currently: Mushroom Circle, for tracing possible teleport links), use the object form instead: `"col,row": { location: location-id, modifiers: [Stable] }`. This is purely a readability aid for scanning the file/webapp — it doesn't change the location's own canonical modifiers (those live in the location's own file). Village in the Mist, Sacred Mountain Pass, Underground Access, and Mantaray Tree are always tagged `[Stable]`; tag `[Mushroom Circle]` on any location that has that modifier in its own file (check `modifiers:` there — e.g. Hollow Woods, Highland Circle, Forest Refuge, Reed Marsh Caverns).
 
 **File location:** `path-webapp/data/path-library/[thematic-name].yaml`
 
@@ -228,6 +232,7 @@ The summary should mention:
 - [ ] Every location placed with confirmed cell coordinate
 - [ ] Cave Mouth / Underground column alignment verified
 - [ ] Routes(N) neighbor counts satisfied
+- [ ] Stable / Mushroom Circle cells tagged inline (`{ location: ..., modifiers: [...] }`)
 
 **Step 5: Connection Review**
 - [ ] Route from start to end exists

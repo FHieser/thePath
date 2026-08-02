@@ -1234,6 +1234,15 @@ footer {
   border-color: #5a4a8a;
 }
 
+.path-cell.stable {
+  border-style: double;
+  border-width: 0.2rem;
+}
+
+.path-cell.mushroom-circle {
+  border-style: dashed;
+}
+
 .path-cell.empty {
   background: transparent;
   border-color: transparent;

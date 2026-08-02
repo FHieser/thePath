@@ -14,12 +14,12 @@ gridSurface:
   "4,1": unstable-mist
   "5,1": hanging-gardens
   "6,1": devils-rock
-  "0,2": village-in-the-mist
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": windswept-grasslands
   "2,2": the-giant-walls
-  "3,2": forest-refuge
+  "3,2": { location: forest-refuge, modifiers: [Mushroom Circle] }
   "4,2": stone-works
-  "5,2": sacred-mountain-pass
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
   "3,3": misty-waters
   "5,3": blood-fern-valley
 

@@ -88,6 +88,13 @@
         }
         surfaceGrid.appendChild(cellS);
 
+        // highlight surface cell if the location is Stable or has a Mushroom Circle
+        if (idS && locations[idS] && Array.isArray(locations[idS].modifiers)) {
+          const modsS = locations[idS].modifiers.map((m) => getModifierName(m).toLowerCase());
+          if (modsS.includes("stable")) cellS.classList.add("stable");
+          if (modsS.includes("mushroom circle")) cellS.classList.add("mushroom-circle");
+        }
+
         // underground cell
         const cellU = makeCell(c, r, "underground");
         const idU = model.underground[key];
@@ -98,6 +105,11 @@
         }
         if (surfaceHasCave) {
           cellU.classList.add("cave-mouth");
+        }
+        if (idU && locations[idU] && Array.isArray(locations[idU].modifiers)) {
+          const modsU = locations[idU].modifiers.map((m) => getModifierName(m).toLowerCase());
+          if (modsU.includes("stable")) cellU.classList.add("stable");
+          if (modsU.includes("mushroom circle")) cellU.classList.add("mushroom-circle");
         }
         if (idU) {
           cellU.classList.add("filled");
@@ -113,6 +125,19 @@
         undergroundGrid.appendChild(cellU);
       }
     }
+  }
+
+  // Path library grid cells may be a plain location id, or { location, modifiers }
+  // for cells the library wants to flag (Stable, Mushroom Circle, ...). The creator's
+  // own model only ever stores plain ids — modifier highlighting is derived live from
+  // each location's own modifiers (see renderGrid above) — so unwrap on the way in.
+  function normalizeGrid(grid) {
+    const out = {};
+    Object.keys(grid || {}).forEach((key) => {
+      const v = grid[key];
+      out[key] = v && typeof v === "object" ? v.location : v;
+    });
+    return out;
   }
 
   function placeAt(col, row, id, layer) {
@@ -307,8 +332,8 @@
         const data = JSON.parse(ev.target.result);
         if (!data.gridSurface && !data.grid) throw new Error("Invalid format");
         if (data.gridSurface) {
-          model.surface = data.gridSurface || {};
-          model.underground = data.gridUnderground || {};
+          model.surface = normalizeGrid(data.gridSurface);
+          model.underground = normalizeGrid(data.gridUnderground);
         } else if (data.grid) {
           model.surface = data.grid;
           model.underground = {};
@@ -355,8 +380,8 @@
     if (!ex) return;
     const occupied = Object.keys(model.surface).length + Object.keys(model.underground).length;
     if (occupied > 0 && !confirm("Load example? This will replace the current grid.")) return;
-    model.surface = { ...(ex.gridSurface || {}) };
-    model.underground = { ...(ex.gridUnderground || {}) };
+    model.surface = normalizeGrid(ex.gridSurface);
+    model.underground = normalizeGrid(ex.gridUnderground);
     renderGrid();
   }
 

@@ -9,17 +9,17 @@ rowLabels:
 
 gridSurface:
   "1,-1": bells-edge
-  "2,-1": mantaray-tree
+  "2,-1": { location: mantaray-tree, modifiers: [Stable] }
   "1,0": highland-watch
   "0,1": misty-waters
-  "0,2": village-in-the-mist
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": stone-works
   "4,2": silken-spire
-  "5,2": sacred-mountain-pass
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
   "6,2": unstable-mist
 
 gridUnderground:
-  "1,0": reed-marsh-caverns
+  "1,0": { location: reed-marsh-caverns, modifiers: [Mushroom Circle] }
   "0,1": crystal-defense-line
   "1,1": geothermal-caverns
   "1,2": mining-complex

@@ -1,6 +1,9 @@
 name: Underground Access
 tier: 1
 category: Social
+modifiers:
+  - name: Stable
+  - name: Underground
 description: |
   A reinforced shaft at the village edge, descending into the dark below. At the bottom, a short tunnel opens into the underground network. The passage was finished in the players' time here. The village now has a way down.
 impulses: |

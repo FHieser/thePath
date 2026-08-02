@@ -9,23 +9,23 @@ rowLabels:
   "2": A
 
 gridSurface:
-  "2,-1": mantaray-tree
+  "2,-1": { location: mantaray-tree, modifiers: [Stable] }
   "1,0": bells-edge
   "2,0": the-reeds
   "3,0": misty-waters
   "4,0": devils-rock
   "0,1": redcloth-pass
-  "1,1": forest-refuge
+  "1,1": { location: forest-refuge, modifiers: [Mushroom Circle] }
   "2,1": verdant-crossing
   "3,1": barnacle-gardens
-  "0,2": village-in-the-mist
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": blood-fern-valley
   "3,2": windswept-grasslands
   "4,2": coldspire-keep
-  "5,2": sacred-mountain-pass
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
 
 gridUnderground:
-  "0,2": underground-access-card
+  "0,2": { location: underground-access-card, modifiers: [Stable] }
   "1,2": fungal-depths
   "3,0": sacred-underground
-  "4,2": reed-marsh-caverns
+  "4,2": { location: reed-marsh-caverns, modifiers: [Mushroom Circle] }

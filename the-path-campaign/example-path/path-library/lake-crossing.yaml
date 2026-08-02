@@ -6,18 +6,18 @@ rowLabels:
   "1": A
   "2": B
 gridSurface:
-  "2,0": forest-refuge
+  "2,0": { location: forest-refuge, modifiers: [Mushroom Circle] }
   "3,0": hanging-gardens
   "4,0": the-giant-walls
-  "0,1": village-in-the-mist
+  "0,1": { location: village-in-the-mist, modifiers: [Stable] }
   "1,1": blood-fern-valley
   "2,1": misty-waters
   "3,1": barnacle-gardens
   "4,1": stone-works
-  "5,1": sacred-mountain-pass
+  "5,1": { location: sacred-mountain-pass, modifiers: [Stable] }
   "2,2": trading-grounds
 gridUnderground:
   "2,1": sacred-underground
-  "3,1": reed-marsh-caverns
+  "3,1": { location: reed-marsh-caverns, modifiers: [Mushroom Circle] }
   "4,1": fungal-depths
   "2,2": geothermal-caverns

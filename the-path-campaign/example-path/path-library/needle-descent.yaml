@@ -10,10 +10,10 @@ gridSurface:
   "2,1": unstable-mist
   "3,1": windswept-grasslands
   "5,1": highland-watch
-  "0,2": village-in-the-mist
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": the-giant-walls
   "2,2": ancient-crossing
-  "5,2": sacred-mountain-pass
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
 gridUnderground:
   "2,0": brood-throne
   "2,1": flooded-network

@@ -13,12 +13,12 @@ gridSurface:
   "2,1": the-giant-walls
   "3,1": windswept-grasslands
   "4,1": barnacle-gardens
-  "5,1": highland-circle
+  "5,1": { location: highland-circle, modifiers: [Mushroom Circle] }
   "-1,2": unstable-mist
-  "0,2": village-in-the-mist
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": blood-fern-valley
   "2,2": highland-watch
-  "5,2": sacred-mountain-pass
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
 
 gridUnderground:
   "0,0": red-cellar
