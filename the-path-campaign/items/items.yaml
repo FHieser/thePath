@@ -53,7 +53,7 @@
   type: General
   usage: Consumable
   tier: 1
-  tradeValue: 1.5
+  tradeValue: 1
   flavor: "A pinch of sharp white powder that makes the air taste like lightning."
   effect:
     category: Enhancement
@@ -437,6 +437,19 @@
       - 6–9 Mist tokens: Gain 1 Mist token
 
       The pole hums while grounded, broadcasting to a network that no longer receives.
+
+- name: Netos's Protection
+  type: Mist Born
+  usage: Reusable
+  tier: 2
+  tradeValue: 3
+  flavor: "A band of layered coral-scale grown in the shape of an old guardian's hide, cold and faintly damp against the skin."
+  effect:
+    category: Protection
+    description: |
+      Twist the ring. Mist escapes from the coral-scale in a thin hiss and crawls into the crack of a marked Armor Slot, sealing it shut from the inside.
+
+      Clear 1 marked Armor Slot. Gain Mist tokens without suffering their immediate consequence — the first use since your last long rest costs 1 Mist token, and each use after costs 1 more than the last. The debt resets when you finally do a long rest.
 
 # ============================================================
 # THE CROAK ITEMS
