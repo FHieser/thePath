@@ -9,6 +9,7 @@ rowLabels:
   "2": A
 
 gridSurface:
+  "-1,2": unstable-mist
   "2,-1": { location: mantaray-tree, modifiers: [Stable] }
   "1,0": bells-edge
   "2,0": the-reeds
