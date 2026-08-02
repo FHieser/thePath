@@ -10,15 +10,15 @@ rowLabels:
 gridSurface:
   "1,-1": { location: mantaray-tree, modifiers: [Stable] }
   "1,0": redcloth-pass
-  "2,0": bells-edge
-  "3,0": monastery
+  "2,0": { location: bells-edge, modifiers: [Mist-Touched] }
+  "3,0": { location: monastery, modifiers: [Cave Mouth] }
   "5,1": devils-rock
-  "-1,2": lost-flame
+  "-1,2": { location: lost-flame, modifiers: [Mist-Touched, Cave Mouth] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": windswept-grasslands
   "2,2": { location: forest-refuge, modifiers: [Mushroom Circle] }
-  "3,2": stone-works
-  "4,2": ancient-crossing
+  "3,2": { location: stone-works, modifiers: [Cave Mouth] }
+  "4,2": { location: ancient-crossing, modifiers: [Cave Mouth] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
 
 gridUnderground:

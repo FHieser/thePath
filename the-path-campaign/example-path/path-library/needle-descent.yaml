@@ -6,13 +6,13 @@ rowLabels:
   "1": "A'"
   "2": A
 gridSurface:
-  "2,0": silken-spire
-  "2,1": unstable-mist
+  "2,0": { location: silken-spire, modifiers: [Cave Mouth] }
+  "2,1": { location: unstable-mist, modifiers: [Mist-Touched] }
   "3,1": windswept-grasslands
-  "5,1": highland-watch
+  "5,1": { location: highland-watch, modifiers: [Cave Mouth] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": the-giant-walls
-  "2,2": ancient-crossing
+  "2,2": { location: ancient-crossing, modifiers: [Cave Mouth] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
 gridUnderground:
   "2,0": brood-throne

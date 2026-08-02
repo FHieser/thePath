@@ -8,15 +8,15 @@ rowLabels:
   "2": A
 
 gridSurface:
-  "1,-1": bells-edge
+  "1,-1": { location: bells-edge, modifiers: [Mist-Touched] }
   "2,-1": { location: mantaray-tree, modifiers: [Stable] }
-  "1,0": highland-watch
-  "0,1": misty-waters
+  "1,0": { location: highland-watch, modifiers: [Cave Mouth] }
+  "0,1": { location: misty-waters, modifiers: [Cave Mouth] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
-  "1,2": stone-works
-  "4,2": silken-spire
+  "1,2": { location: stone-works, modifiers: [Cave Mouth] }
+  "4,2": { location: silken-spire, modifiers: [Cave Mouth] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
-  "6,2": unstable-mist
+  "6,2": { location: unstable-mist, modifiers: [Mist-Touched] }
 
 gridUnderground:
   "1,0": { location: reed-marsh-caverns, modifiers: [Mushroom Circle] }

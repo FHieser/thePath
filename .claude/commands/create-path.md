@@ -152,8 +152,14 @@ gridUnderground:
 - rowLabel values with apostrophes (like `A'`) must be double-quoted
 - Plain location IDs (kebab-case, no special chars) do not need quoting
 
-**Tagging Stable / Mushroom Circle cells:**
-Most cells are just `"col,row": location-id`. When the location is Stable, or has a modifier worth spotting at a glance on the grid (currently: Mushroom Circle, for tracing possible teleport links), use the object form instead: `"col,row": { location: location-id, modifiers: [Stable] }`. This is purely a readability aid for scanning the file/webapp — it doesn't change the location's own canonical modifiers (those live in the location's own file). Village in the Mist, Sacred Mountain Pass, Underground Access, and Mantaray Tree are always tagged `[Stable]`; tag `[Mushroom Circle]` on any location that has that modifier in its own file (check `modifiers:` there — e.g. Hollow Woods, Highland Circle, Forest Refuge, Reed Marsh Caverns).
+**Tagging notable cells:**
+Most cells are just `"col,row": location-id`. When the location carries a modifier worth spotting at a glance on the grid, use the object form instead: `"col,row": { location: location-id, modifiers: [Stable] }` (multiple modifiers: `[Mist-Touched, Cave Mouth]`). This is purely a readability aid for scanning the file/webapp — it doesn't change the location's own canonical modifiers (those live in the location's own file) and it isn't a full mirror of every modifier the location has, just the ones worth flagging on the grid. Currently tagged:
+- `Stable` — Village in the Mist, Sacred Mountain Pass, Underground Access, and Mantaray Tree are always Stable.
+- `Cave Mouth` — surface locations with a descent point (check the location's `modifiers:` block).
+- `Mist-Touched` — locations that start the session already corrupted by the mist, not just GM-Fear-triggered mid-session (check the location's `modifiers:` block).
+- `Mushroom Circle` — locations with a fey teleport ring, for tracing possible jump links (check the location's `modifiers:` block).
+
+When adding a new location to a path, check its own file's `modifiers:` list for any of these four and tag the cell accordingly.
 
 **File location:** `path-webapp/data/path-library/[thematic-name].yaml`
 

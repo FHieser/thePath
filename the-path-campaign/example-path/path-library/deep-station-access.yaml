@@ -11,10 +11,10 @@ gridSurface:
   "2,-1": { location: mantaray-tree, modifiers: [Stable] }
   "2,0": windswept-grasslands
   "3,0": the-giant-walls
-  "4,0": lost-flame
-  "3,1": misty-waters
+  "4,0": { location: lost-flame, modifiers: [Mist-Touched, Cave Mouth] }
+  "3,1": { location: misty-waters, modifiers: [Cave Mouth] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
-  "4,2": ancient-crossing
+  "4,2": { location: ancient-crossing, modifiers: [Cave Mouth] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
 
 gridUnderground:

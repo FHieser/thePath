@@ -9,20 +9,20 @@ rowLabels:
   "2": A
 
 gridSurface:
-  "-1,2": unstable-mist
+  "-1,2": { location: unstable-mist, modifiers: [Mist-Touched] }
   "2,-1": { location: mantaray-tree, modifiers: [Stable] }
-  "1,0": bells-edge
+  "1,0": { location: bells-edge, modifiers: [Mist-Touched] }
   "2,0": the-reeds
-  "3,0": misty-waters
+  "3,0": { location: misty-waters, modifiers: [Cave Mouth] }
   "4,0": devils-rock
   "0,1": redcloth-pass
   "1,1": { location: forest-refuge, modifiers: [Mushroom Circle] }
   "2,1": verdant-crossing
-  "3,1": barnacle-gardens
+  "3,1": { location: barnacle-gardens, modifiers: [Mist-Touched] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": blood-fern-valley
   "3,2": windswept-grasslands
-  "4,2": coldspire-keep
+  "4,2": { location: coldspire-keep, modifiers: [Mist-Touched, Cave Mouth] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
 
 gridUnderground:

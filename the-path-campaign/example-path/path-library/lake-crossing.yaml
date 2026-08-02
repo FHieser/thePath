@@ -11,9 +11,9 @@ gridSurface:
   "4,0": the-giant-walls
   "0,1": { location: village-in-the-mist, modifiers: [Stable] }
   "1,1": blood-fern-valley
-  "2,1": misty-waters
-  "3,1": barnacle-gardens
-  "4,1": stone-works
+  "2,1": { location: misty-waters, modifiers: [Cave Mouth] }
+  "3,1": { location: barnacle-gardens, modifiers: [Mist-Touched] }
+  "4,1": { location: stone-works, modifiers: [Cave Mouth] }
   "5,1": { location: sacred-mountain-pass, modifiers: [Stable] }
   "2,2": trading-grounds
 gridUnderground:

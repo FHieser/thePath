@@ -88,29 +88,18 @@
         }
         surfaceGrid.appendChild(cellS);
 
-        // highlight surface cell if the location is Stable or has a Mushroom Circle
-        if (idS && locations[idS] && Array.isArray(locations[idS].modifiers)) {
-          const modsS = locations[idS].modifiers.map((m) => getModifierName(m).toLowerCase());
-          if (modsS.includes("stable")) cellS.classList.add("stable");
-          if (modsS.includes("mushroom circle")) cellS.classList.add("mushroom-circle");
-        }
+        // highlight surface cell for its own notable static modifiers
+        const modsS = applyModifierClasses(cellS, idS);
+        if (modsS.includes("cave mouth")) cellS.classList.add("cave-mouth-entry");
 
         // underground cell
         const cellU = makeCell(c, r, "underground");
         const idU = model.underground[key];
-        // highlight if surface has Cave Mouth
-        let surfaceHasCave = false;
-        if (idS && locations[idS] && Array.isArray(locations[idS].modifiers)) {
-          surfaceHasCave = locations[idS].modifiers.map(m=>getModifierName(m).toLowerCase()).includes("cave mouth");
-        }
-        if (surfaceHasCave) {
+        // highlight if surface has Cave Mouth (this cell is a potential descent point)
+        if (modsS.includes("cave mouth")) {
           cellU.classList.add("cave-mouth");
         }
-        if (idU && locations[idU] && Array.isArray(locations[idU].modifiers)) {
-          const modsU = locations[idU].modifiers.map((m) => getModifierName(m).toLowerCase());
-          if (modsU.includes("stable")) cellU.classList.add("stable");
-          if (modsU.includes("mushroom circle")) cellU.classList.add("mushroom-circle");
-        }
+        applyModifierClasses(cellU, idU);
         if (idU) {
           cellU.classList.add("filled");
           const loc = locations[idU];
@@ -125,6 +114,20 @@
         undergroundGrid.appendChild(cellU);
       }
     }
+  }
+
+  // Modifier names (lowercased) that get a highlight class on their grid cell.
+  const NOTABLE_CELL_MODIFIERS = ["stable", "mushroom circle", "mist-touched"];
+
+  // Adds highlight classes to a grid cell based on its location's own static modifiers
+  // (loaded from the location's canonical file, not from the path library's per-cell tags).
+  // Returns the location's lowercased modifier names for the caller to check further.
+  function applyModifierClasses(cell, id) {
+    const loc = id && locations[id];
+    if (!loc || !Array.isArray(loc.modifiers)) return [];
+    const mods = loc.modifiers.map((m) => getModifierName(m).toLowerCase());
+    mods.filter((m) => NOTABLE_CELL_MODIFIERS.includes(m)).forEach((m) => cell.classList.add(m.replace(" ", "-")));
+    return mods;
   }
 
   // Path library grid cells may be a plain location id, or { location, modifiers }

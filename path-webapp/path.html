@@ -54,6 +54,15 @@
           return id.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
         }
 
+        // Path-library grid cells can flag a location's own static modifiers for at-a-glance
+        // reading (keyed lowercase, matching path-mechanics.yaml modifier names).
+        const CELL_MODIFIER_STYLES = {
+          "stable": { cls: "stable", icon: "⚓" },
+          "mushroom circle": { cls: "mushroom-circle", icon: "🍄" },
+          "cave mouth": { cls: "cave-mouth-entry", icon: "⬇" },
+          "mist-touched": { cls: "mist-touched", icon: "🌫️" },
+        };
+
         function getRange(grid) {
           const rows = new Set(), cols = new Set();
           Object.keys(grid).forEach((key) => { const [c, r] = key.split(",").map(Number); cols.add(c); rows.add(r); });
@@ -84,11 +93,11 @@
                 const isHub = locId === "village-in-the-mist";
                 const classes = ["path-cell"];
                 classes.push(isHub ? "hub" : isUnderground ? "underground" : null);
-                if (cellMods.includes("stable")) classes.push("stable");
-                if (cellMods.includes("mushroom circle")) classes.push("mushroom-circle");
-                const icon = cellMods.includes("stable") ? "⚓ " : cellMods.includes("mushroom circle") ? "🍄 " : "";
-                const title = cellMods.length ? ` title="${cell.modifiers.join(', ')}"` : "";
-                html += `<td><a href="location.html?id=${locId}" class="${classes.filter(Boolean).join(' ')}"${title}>${icon}${idToName(locId)}</a></td>`;
+                const styled = cellMods.map((m) => CELL_MODIFIER_STYLES[m]).filter(Boolean);
+                styled.forEach((s) => classes.push(s.cls));
+                const icon = styled.map((s) => s.icon).join("");
+                const title = typeof cell === "object" && cell.modifiers.length ? ` title="${cell.modifiers.join(', ')}"` : "";
+                html += `<td><a href="location.html?id=${locId}" class="${classes.filter(Boolean).join(' ')}"${title}>${icon ? icon + " " : ""}${idToName(locId)}</a></td>`;
               } else {
                 html += `<td><span class="path-cell empty">—</span></td>`;
               }

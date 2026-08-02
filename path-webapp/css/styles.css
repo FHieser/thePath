@@ -1243,6 +1243,14 @@ footer {
   border-style: dashed;
 }
 
+.path-cell.cave-mouth-entry {
+  border-color: rgba(217, 115, 54, 0.9);
+}
+
+.path-cell.mist-touched {
+  border-color: var(--danger-red);
+}
+
 .path-cell.empty {
   background: transparent;
   border-color: transparent;

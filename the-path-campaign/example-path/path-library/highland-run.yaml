@@ -10,5 +10,5 @@ gridSurface:
   "1,1": windswept-grasslands
   "2,1": verdant-crossing
   "3,1": blood-fern-valley
-  "4,1": highland-watch
+  "4,1": { location: highland-watch, modifiers: [Cave Mouth] }
   "5,1": { location: sacred-mountain-pass, modifiers: [Stable] }

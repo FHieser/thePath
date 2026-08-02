@@ -9,18 +9,18 @@ rowLabels:
   "3": B
 
 gridSurface:
-  "3,0": monastery
-  "3,1": barnacle-gardens
-  "4,1": unstable-mist
+  "3,0": { location: monastery, modifiers: [Cave Mouth] }
+  "3,1": { location: barnacle-gardens, modifiers: [Mist-Touched] }
+  "4,1": { location: unstable-mist, modifiers: [Mist-Touched] }
   "5,1": hanging-gardens
   "6,1": devils-rock
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": windswept-grasslands
   "2,2": the-giant-walls
   "3,2": { location: forest-refuge, modifiers: [Mushroom Circle] }
-  "4,2": stone-works
+  "4,2": { location: stone-works, modifiers: [Cave Mouth] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
-  "3,3": misty-waters
+  "3,3": { location: misty-waters, modifiers: [Cave Mouth] }
   "5,3": blood-fern-valley
 
 gridUnderground:
