@@ -6,7 +6,7 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
-## Surface Locations (25 locations)
+## 🌄 Surface Locations (25 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -39,7 +39,7 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
-## Underground Locations (15 locations)
+## 🪨 Underground Locations (15 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                        |
 | -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -61,7 +61,7 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
-## Special Locations (2 locations)
+## ✦ Special Locations (2 locations)
 
 | Assigned | Ready | Location                                                          | Description                                                  |
 | -------- | ----- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -71,14 +71,14 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
-## Tarot Card Assignments
+## 🃏 Tarot Card Assignments
 
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
 **Assigned: 44** | **Unassigned: 34** (43.6% remaining)
 
-### Major Arcana (11 of 22 assigned)
+### 🔮 Major Arcana (11 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -105,7 +105,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | XX Judgement          | Burnt Clearing       |
 | XXI The World         | Brood Throne         |
 
-### Minor Arcana - Wands (6 of 14 assigned)
+### 🪄 Minor Arcana - Wands (6 of 14 assigned)
 
 | Card            | Location             |
 | --------------- | -------------------- |
@@ -124,7 +124,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Wands  | Blood Fern Valley    |
 | King of Wands   |                      |
 
-### Minor Arcana - Swords (4 of 14 assigned)
+### ⚔️ Minor Arcana - Swords (4 of 14 assigned)
 
 | Card             | Location |
 | ---------------- | -------- |
@@ -143,7 +143,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Swords  | Coldspire Keep   |
 | King of Swords   |          |
 
-### Minor Arcana - Discs (Pentacles) (7 of 14 assigned)
+### ⚙️ Minor Arcana - Discs (Pentacles) (7 of 14 assigned)
 
 | Card            | Location           |
 | --------------- | ------------------ |
@@ -162,7 +162,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Discs  |                    |
 | King of Discs   |                    |
 
-### Minor Arcana - Goblets (Cups) (4 of 14 assigned)
+### 🍷 Minor Arcana - Goblets (Cups) (4 of 14 assigned)
 
 | Card              | Location         |
 | ----------------- | ---------------- |
