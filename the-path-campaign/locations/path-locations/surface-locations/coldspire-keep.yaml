@@ -1,14 +1,16 @@
 name: Coldspire Keep
-tier: 2
+tier: 3
 category: Combat
 description: An abandoned lord's house sealed in mist-preserved winter — a Fire Born brazier still burns in the hall, the stump of a destroyed Mist Born Tide Marker still exhales in the courtyard, and something the mist built from the memory of lordship roams the halls.
 tagline: A dead lord's house, still cold, still watched — the flame burns alone in the hall, and something resents it.
 impulses: Reward the placing of flames, haunt those who linger, press the cold into everything
-difficulty: 14
+difficulty: 17
 modifiers:
   - name: Unstable
   - name: Mist-Touched
   - name: Cave Mouth
+  - name: Nothing
+    value: 1
 potentialAdversaries: Mist Ghost, Mist Spirit, Fallen Lord
 features:
   - name: Cold Way Towards the Keep
@@ -20,9 +22,11 @@ features:
     questions: How long has this path been unwatched — and why does the snow feel wrong underfoot in places?
 
   - name: Inner Courtyard
-    type: Passive
+    type: Passive/Action
     description: |
-      A raised stone platform at the center of the courtyard holds what remains of the Tide Marker — a waist-high iron stump worked with marine symbols: tide lines, depth gauges, ocean script in no mortal language. The pole was split cleanly in two. Behind it, a sword cut runs a full forearm's length into the stone wall. Old Mist Born prayer flags hang from the surrounding battlements — some collapsed, some still snagged on ironwork, all frozen in place by the mist. The stump breathes mist slowly outward, a broken exhale that never stops.
+      A raised stone platform at the center of the courtyard holds what remains of the Tide Marker — a waist-high iron stump worked with marine symbols: tide lines, depth gauges, ocean script in no mortal language. The pole was split cleanly in two. Behind it, a sword cut runs a full forearm's length into the stone wall. Old Mist Born prayer flags hang from the surrounding battlements, inscribed with the deep script of the Mist Born disciples — meditation techniques for emptying the mind and embracing the void. Some have collapsed, some still snagged on ironwork, all frozen in place by the mist. The stump breathes mist slowly outward, a broken exhale that never stops.
+
+      This location has the Nothing(1) modifier, sustained by the unbroken prayer flags. Players can destroy the prayer flags (3 total) to remove the Nothing(1) modifier — doing so draws the attention of nearby mist adversaries. At the start of the next cycle, the mist resets the flags and restores the Nothing(1) modifier.
 
       Every player who enters the Inner Courtyard gains 1 Mist token.
 

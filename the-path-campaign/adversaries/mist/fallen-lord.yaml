@@ -5,21 +5,21 @@ motives: Stalk before striking, emerge from walls to overwhelm, exhale the void,
 lore: "The mist preserves what it swallows — including the idea of lordship over an abandoned place. The Fallen Lord is not the castle's original inhabitant, who was gone before the mist arrived. It is what the void built from the memory of authority: a shape coalesced from the residue of power that once moved through these halls. It does not know this. It does not know anything."
 
 tiers:
-  - tier: 2
-    difficulty: 15
+  - tier: 3
+    difficulty: 18
     thresholds:
-      major: 13
-      severe: 26
-    hp: 9
-    stress: 5
+      major: 21
+      severe: 37
+    hp: 11
+    stress: 6
     attack:
-      bonus: '+3'
+      bonus: '+5'
       name: Lord's Sweep
       range: Melee
-      damage: 2d10+4 phy
+      damage: 3d12+6 phy
     experience:
       - name: Overwhelming Presence
-        value: 3
+        value: 4
     features:
       - name: Mist-Ghost
         type: Passive
@@ -41,4 +41,4 @@ tiers:
       - name: Mist Exhale
         type: Action
         cost: Mark a Stress
-        description: The Fallen Lord breathes outward in a Very Close cone. All targets in the cone immediately gain 1 Mist token. At the start of each affected target's spotlight, they must succeed on a Strength or Agility reaction roll. On a failure, they are Restrained until the start of their next spotlight. This effect repeats for each target until they succeed on the roll.
+        description: The Fallen Lord breathes outward in a Very Close cone. All targets in the cone immediately gain 2 Mist tokens. At the start of each affected target's spotlight, they must succeed on a Strength or Agility reaction roll. On a failure, they are Restrained until the start of their next spotlight. This effect repeats for each target until they succeed on the roll.
