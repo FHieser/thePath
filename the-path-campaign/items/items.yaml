@@ -1,5 +1,6 @@
 # The Path - Items
-# Sorted by type: General first, then Village market goods, then faction items grouped by faction name
+# Sorted by type: General first, then Village market goods, then faction items grouped by faction name,
+# then Custom items last (player-created items that don't belong to a faction's Item Identity)
 
 # ============================================================
 # GENERAL ITEMS
@@ -438,7 +439,7 @@
 
       The pole hums while grounded, broadcasting to a network that no longer receives.
 
-- name: Netos's Protection
+- name: Netos' Protection
   type: Mist Born
   usage: Reusable
   tier: 2
@@ -591,3 +592,26 @@
       Wind Woody up and set him down facing a direction. He walks in a straight line until he hits something or tips over. Good for distracting a single enemy or triggering something from a distance without you being there.
 
       Rarely — GM's call, sparingly — he wanders off-script entirely.
+
+# ============================================================
+# CUSTOM ITEMS (player-created)
+# ============================================================
+# Items created for individual players' characters — not tied to a
+# faction's Item Identity.
+
+- name: Bambi-bal-lecter
+  type: Custom
+  usage: Reusable
+  tier: 2
+  tradeValue: not tradeable — a bonded nature spirit, not merchandise
+  flavor: "By every appearance, an ordinary stag out of Blood Fern Valley — until it isn't there, and then it is."
+  effect:
+    category: Disruption
+    description: |
+      Bambi-bal-lecter looks like an ordinary stag. She isn't — a nature spirit wearing a stag's shape, which is how she manages to appear out of nowhere at your call, run down a target, and fade back into the trees.
+
+      Attack using Presence. On a hit, roll a number of d10s equal to your Proficiency and add the modifier of the Experience you invoke for the attack.
+
+      - Summon: Spend 1 Hope to have Bambi-bal-lecter attack a target within Very Far range.
+      - Delightful: Roll a d6 after the attack resolves. On a 6, a player within Close range gains 1 Hope.
+      - Forceful: On a successful hit, push the target Close range in a direction of your choice.
