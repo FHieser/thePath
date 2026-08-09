@@ -1,0 +1,122 @@
+name: Guardian Projection
+id: guardian-projection
+category: Social
+description: An Ancient Guardian surfaces a projection of itself — the only form of it a mortal mind survives — and begins asking questions.
+impulses: Weigh the mortals against the mandate, overwhelming presence, mortals meeting an immortal
+potentialAdversaries: Mist creatures
+
+trigger: |
+  Activate when both are true — the PCs are somewhere the mist runs deep (a Mist-Touched location, a Mist Born site, an altar or shrine tied to the binding), and they take an action significant enough to warrant an Ancient Guardian's notice.
+
+  Examples: placing a Sacred Flame or lit canister on a mist-sacred altar; forcing entry to a Guardian alcove; disturbing a descent route toward a void-sphere; destroying something the Mist Born maintain.
+
+tiers:
+  - tier: 2
+    difficulty: 14
+    features:
+      - name: Dramatic Entrance
+        type: Passive
+        description: |
+          When this event activates, designate which Ancient Guardian is projecting. Its NPC entry governs what it wants, what it despises, and therefore where advantage and disadvantage fall during the conversation.
+
+          Its presence arrives before a single word does. The GM gains 2 Fear and every PC marks 1 Stress.
+        questions: What does its arrival do to the air, the light, the water? Which PC feels it before the others do?
+
+      - name: Beyond Your Reach
+        type: Passive
+        description: |
+          The projection cannot be fought. Weapons and spells pass through it or break against it, and the GM should make this unmistakable **before** a PC spends a turn learning it the hard way — the party must understand they are outmatched, not discover it through a wasted action.
+
+          Escape by other means remains fair. A party that finds a genuine way out — severing what anchors the projection, a ritual, an exchange the Guardian accepts — has earned it.
+
+          A party that refuses to speak is not spared. For each exchange they give the Guardian nothing, the GM may use **Seeping Mist** or **Teeth of Disappointment** without spending Fear. It is not in a hurry. It does not need to be.
+        questions: What does it do while it waits? How does it make silence cost more than speaking would?
+
+      - name: In the Jaws of the Beast
+        type: Action
+        description: |
+          The projection holds the party where they stand — they cannot leave this location while the Guardian speaks. Start a counter at 0, tracked with a die on the table: a d6 at first, swapped to a d8 and then a d12 as the count outgrows it. The counter cannot fall below 0.
+
+          When a PC addresses the Guardian, they make a roll — usually Presence, though the GM may call for another trait if the approach warrants it. The GM should grant advantage or disadvantage based on how well the approach fits this particular entity: appealing to what it genuinely wants earns advantage; tactics it despises earn disadvantage.
+
+          - **Success with Hope:** counter +2
+          - **Success with Fear:** counter +1
+          - **Failure with Hope:** no change
+          - **Failure with Fear:** counter −2
+
+          **5 — Release.** The Guardian's hold relaxes. The party may leave this location freely.
+
+          **7 — A Truth.** The Guardian answers one question honestly, at a depth no other source on the Path can match. It does not lie — but it may decline what it will never share with anyone.
+
+          **12 — A Boon.** Something material: an item out of the depths, a marked favor other members of its faction will honor, safe passage, or a task worth the undertaking.
+        questions: What does the Guardian ask first? What answer would it find genuinely surprising?
+
+      - name: Seeping Mist
+        type: Action
+        description: |
+          Spend a Fear to give one PC 1 Mist token. Alternatively, spend Fear equal to half the party (rounded up) to give every PC 1 Mist token. Use the second sparingly — it is the realm pressing in, not a punishment.
+        questions: Welcome in the realm of the mist. How does it announce itself — through the skin, the lungs, the eyes?
+
+      - name: Teeth of Disappointment
+        type: Reaction
+        description: |
+          When a PC gives the Guardian an answer it finds wanting, spend a Fear to give that PC 2 Mist tokens. Whether an answer disappoints is the GM's judgement, guided by the designated Guardian's character.
+        questions: What did it expect to hear instead? What does an immortal's disappointment actually look like?
+
+  - tier: 3
+    difficulty: 17
+    features:
+      - name: Dramatic Entrance
+        type: Passive
+        description: |
+          When this event activates, designate which Ancient Guardian is projecting. Its NPC entry governs what it wants, what it despises, and therefore where advantage and disadvantage fall during the conversation.
+
+          Its presence arrives before a single word does. The GM gains 3 Fear and every PC marks 2 Stress.
+        questions: What does its arrival do to the air, the light, the water? Which PC feels it before the others do?
+
+      - name: Beyond Your Reach
+        type: Passive
+        description: |
+          The projection cannot be fought. Weapons and spells pass through it or break against it, and the GM should make this unmistakable **before** a PC spends a turn learning it the hard way — the party must understand they are outmatched, not discover it through a wasted action.
+
+          Escape by other means remains fair. A party that finds a genuine way out — severing what anchors the projection, a ritual, an exchange the Guardian accepts — has earned it.
+
+          A party that refuses to speak is not spared. For each exchange they give the Guardian nothing, the GM may use **Seeping Mist** or **Teeth of Disappointment** without spending Fear. It is not in a hurry. It does not need to be.
+        questions: What does it do while it waits? How does it make silence cost more than speaking would?
+
+      - name: In the Jaws of the Beast
+        type: Action
+        description: |
+          The projection holds the party where they stand — they cannot leave this location while the Guardian speaks. Start a counter at 0, tracked with a die on the table: a d6 at first, swapped to a d8 and then a d12 as the count outgrows it. The counter cannot fall below 0.
+
+          When a PC addresses the Guardian, they make a roll — usually Presence, though the GM may call for another trait if the approach warrants it. The GM should grant advantage or disadvantage based on how well the approach fits this particular entity: appealing to what it genuinely wants earns advantage; tactics it despises earn disadvantage.
+
+          - **Success with Hope:** counter +2
+          - **Success with Fear:** counter +1
+          - **Failure with Hope:** no change
+          - **Failure with Fear:** counter −2
+
+          **5 — Release.** The Guardian's hold relaxes. The party may leave this location freely.
+
+          **7 — A Truth.** The Guardian answers one question honestly, at a depth no other source on the Path can match. It does not lie — but it may decline what it will never share with anyone.
+
+          **12 — A Boon.** Something material: an item out of the depths, a marked favor other members of its faction will honor, safe passage, or a task worth the undertaking.
+        questions: What does the Guardian ask first? What answer would it find genuinely surprising?
+
+      - name: Seeping Mist
+        type: Action
+        description: |
+          Spend a Fear to give one PC 1 Mist token. Alternatively, spend Fear equal to half the party (rounded up) to give every PC 1 Mist token. Use the second sparingly — it is the realm pressing in, not a punishment.
+        questions: Welcome in the realm of the mist. How does it announce itself — through the skin, the lungs, the eyes?
+
+      - name: Teeth of Disappointment
+        type: Reaction
+        description: |
+          When a PC gives the Guardian an answer it finds wanting, spend a Fear to give that PC 3 Mist tokens. Whether an answer disappoints is the GM's judgement, guided by the designated Guardian's character.
+        questions: What did it expect to hear instead? What does an immortal's disappointment actually look like?
+
+featureQuestions:
+  - Which Ancient Guardian is projecting here, and what does it actually want from these particular mortals?
+  - What action drew its attention — and did the party understand what they were doing when they took it?
+  - What would these mortals have to do for it to seek them out a second time?
+  - How does the projection manifest in this place? What does it displace or change to make room for itself?
