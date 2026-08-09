@@ -6,17 +6,6 @@
 # GENERAL ITEMS
 # ============================================================
 
-- name: Mist Protection Charm
-  type: General
-  usage: Consumable
-  tier: 1
-  tradeValue: 0.5
-  flavor: "A small wooden bead carved with a simple ward-mark, strung on rough cord. Travelers going into the mist tie a handful to their wrists and come back with fewer than they left with."
-  effect:
-    category: Protection
-    description: |
-      When you would gain a Mist token, you may destroy this charm to negate that token.
-
 - name: Cliffgold
   type: General
   usage: Consumable
@@ -455,6 +444,17 @@
 # ============================================================
 # THE CROAK ITEMS
 # ============================================================
+
+- name: Mist Protection Charm
+  type: The Croak
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "A small wooden bead carved with a simple ward-mark, strung on rough cord. Travelers going into the mist tie a handful to their wrists and come back with fewer than they left with."
+  effect:
+    category: Protection
+    description: |
+      When you would gain a Mist token, you may destroy this charm to negate that token.
 
 - name: Reed Candle
   type: The Croak
