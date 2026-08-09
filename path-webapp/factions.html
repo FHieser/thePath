@@ -7,32 +7,44 @@
     <title>Factions - The Path</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .filter-bar {
+        .filter-controls {
+            margin: 1rem 0 1.5rem;
             display: flex;
             flex-wrap: wrap;
             gap: 0.4rem;
-            margin: 1rem 0 1.5rem;
         }
 
-        .align-filter {
-            padding: 0.3rem 0.8rem;
+        .filter-tag {
+            padding: 0.3rem 0.6rem;
             border-radius: 0.2rem;
             font-size: 0.8rem;
             font-weight: 700;
             text-transform: uppercase;
             cursor: pointer;
-            border: 0.15rem solid transparent;
-            opacity: 0.5;
             transition: all 0.15s;
+            border: 0.15rem solid transparent;
             user-select: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-light);
+            opacity: 0.6;
         }
-        .align-filter:hover { opacity: 0.8; }
-        .align-filter.active { opacity: 1; border-color: currentColor; }
 
-        .align-filter.flame  { background: rgba(200, 121, 65, 0.25); color: #c87941; }
-        .align-filter.mist   { background: rgba(74, 123, 157, 0.25); color: #6ea8c8; }
-        .align-filter.neutral{ background: rgba(107, 123, 92, 0.25); color: #9ab08a; }
-        .align-filter.underground { background: rgba(122, 92, 63, 0.25); color: #b8977a; }
+        .filter-tag:hover {
+            opacity: 0.85;
+        }
+
+        .filter-tag.include {
+            background: rgba(74, 107, 82, 0.6);
+            border-color: var(--success-green);
+            opacity: 1;
+        }
+
+        .filter-tag.exclude {
+            background: rgba(196, 69, 54, 0.5);
+            border-color: #c44536;
+            opacity: 1;
+            text-decoration: line-through;
+        }
 
         .factions-grid {
             display: grid;
@@ -142,12 +154,9 @@
         </header>
 
         <main>
-            <div class="filter-bar" id="filter-bar">
-                <span class="align-filter flame active"   data-align="Flame">🔥 Flame</span>
-                <span class="align-filter mist active"    data-align="Mist">🌫️ Mist</span>
-                <span class="align-filter neutral active" data-align="Neutral">⚖️ Neutral</span>
-                <span class="align-filter underground active" data-align="Underground">⛏️ Underground</span>
-            </div>
+            <section class="filter-controls" id="filter-tags">
+                <!-- Alignment filter tags populated dynamically -->
+            </section>
 
             <div class="factions-grid" id="factions-grid">
                 <div class="empty-state">Loading factions...</div>

@@ -2,7 +2,10 @@
 const FACTIONS_BASE = '../the-path-campaign/lore/factions/';
 
 let allFactions = {};
-let activeAlignments = new Set(['Flame', 'Mist', 'Neutral', 'Underground']);
+// Tri-state filter map: alignment name -> 'include' | 'exclude' | undefined (neutral)
+let alignmentFilters = {};
+let knownAlignments = [];
+const ALIGNMENT_ORDER = ['Flame', 'Mist', 'Neutral', 'Underground'];
 
 async function loadFactions() {
     const grid = document.getElementById('factions-grid');
@@ -27,13 +30,39 @@ async function loadFactions() {
         }
     }));
 
+    collectAlignments();
+    renderFilterTags();
     renderFactions();
-    setupFilters();
+}
+
+// Collect all unique alignment values from loaded factions, in preferred order
+function collectAlignments() {
+    const seen = new Set(Object.values(allFactions).map(f => f.alignment).filter(Boolean));
+    const ordered = ALIGNMENT_ORDER.filter(a => seen.has(a));
+    const extra = Array.from(seen).filter(a => !ALIGNMENT_ORDER.includes(a)).sort();
+    knownAlignments = [...ordered, ...extra];
+}
+
+// Filter factions based on alignment tri-state toggles.
+// Alignment is a single scalar per faction (not an array like location modifiers),
+// so "include" tags match on ANY selected alignment (OR) while "exclude" tags
+// drop factions with that alignment (AND-NOT) — an include-set together with
+// an AND filter would always yield zero results for a single-valued field.
+function filterFactions() {
+    const entries = Object.values(allFactions);
+    const includes = Object.entries(alignmentFilters).filter(([, s]) => s === 'include').map(([a]) => a);
+    const excludes = Object.entries(alignmentFilters).filter(([, s]) => s === 'exclude').map(([a]) => a);
+
+    return entries.filter(f => {
+        if (excludes.includes(f.alignment)) return false;
+        if (includes.length > 0 && !includes.includes(f.alignment)) return false;
+        return true;
+    });
 }
 
 function renderFactions() {
     const grid = document.getElementById('factions-grid');
-    const visible = Object.values(allFactions).filter(f => activeAlignments.has(f.alignment));
+    const visible = filterFactions();
 
     if (visible.length === 0) {
         grid.innerHTML = '<div class="empty-state">No factions match the current filter.</div>';
@@ -75,19 +104,34 @@ function buildFactionCard(f) {
         </a>`;
 }
 
-function setupFilters() {
-    document.querySelectorAll('.align-filter').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const align = btn.dataset.align;
-            if (activeAlignments.has(align)) {
-                activeAlignments.delete(align);
-                btn.classList.remove('active');
+// Render the alignment filter tags into the filter bar
+function renderFilterTags() {
+    const container = document.getElementById('filter-tags');
+    container.innerHTML = '';
+    knownAlignments.forEach(align => {
+        const tag = document.createElement('span');
+        tag.className = `filter-tag ${align.toLowerCase()}`;
+        tag.textContent = align;
+        tag.dataset.align = align;
+
+        const state = alignmentFilters[align];
+        if (state) tag.classList.add(state);
+
+        tag.addEventListener('click', () => {
+            // Cycle: neutral -> include -> exclude -> neutral
+            const current = alignmentFilters[align];
+            if (!current) {
+                alignmentFilters[align] = 'include';
+            } else if (current === 'include') {
+                alignmentFilters[align] = 'exclude';
             } else {
-                activeAlignments.add(align);
-                btn.classList.add('active');
+                delete alignmentFilters[align];
             }
+            renderFilterTags();
             renderFactions();
         });
+
+        container.appendChild(tag);
     });
 }
 
