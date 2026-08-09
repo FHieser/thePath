@@ -1,0 +1,67 @@
+name: Netos
+id: netos
+faction: mist-born
+role: The First Warden
+location: The void-sphere sites — the Ancient Guardians' territory, position shifting with the depths
+
+appearance:
+  - Only the crown of an impossibly large head breaks the surface — the rest stays below the waterline
+  - Faint lines of blue-green bioluminescence trace across the visible skull-ridge and jaw like veins, continuing down into the water and fading only as the dark swallows them — however far down that is
+  - What's visible is already wrong: at least three eyes catch the light along the skull-ridge, none blinking in unison, and the jaw-line splits twice more than a crocodile's should — ridges suggesting mouths stacked behind mouths
+  - Beneath the surface, more limbs move than a body should have room for — unpaired, asymmetrical, the count changing every time something breaks the water: a tail here, a clawed limb there, never the same shape twice
+  - No ripples reach the shore despite all that motion underneath — as if the water itself is protecting the viewer from whatever the rest of them actually looks like
+
+personality:
+  - Speaks plainly and answers questions honestly — not out of openness, but because eons of patience left no use for evasion; secrecy is a young thing's tool
+  - Judges everything on one axis: does this help hold the prison, or endanger it and the Disciples. Everything else is noise
+  - Patience that isn't temperament so much as scale — a human lifetime registers to them the way a single breath does to a human
+  - Genuine, almost scholarly curiosity about mortals who keep resisting the mist despite everything — not affection, more like an architect still checking their own work centuries later
+
+the_twist: |
+  Netos's loyalty shifted over the eons they spent building and maintaining the prison. Rather than allegiance to the gods who commissioned it, their loyalty now lies with the Disciples they taught and the prison they created. If the distant gods ever moved against either the binding or their own people, they would not side with the gods.
+
+theme: |
+  Netos is the campaign's sharpest challenge to a simple us-vs-mist framing. Most Mist Born enforce the mandate through violence or doctrine — Netos can just answer honestly, and that's what makes them dangerous in a completely different way: talking to them risks the party actually agreeing with the thing that's been slowly consuming their world. There's also a direct mirror available: Netos chose their Disciples and their creation over abstract obligation to distant gods. Any party that's ever weighed loyalty-to-people against loyalty-to-cause is looking at an eons-old version of the same choice.
+
+goals:
+  primary: Keep their void-sphere's binding intact, indefinitely, regardless of personal cost
+  secondary: Protect the Mist Born — especially the Disciples they personally shaped — even against the distant gods, if it ever came to that
+  willing_to_do: |
+    Use lethal force without hesitation against a genuine threat to either the binding or their people — but genuinely prefers to understand a threat before ending it, since eons of pattern-recognition make premature violence feel wasteful rather than merciful.
+
+wants:
+  - Loyalty, above all else — real alignment with the prison's cause, meaning active opposition to the Fire Born, not just staying out of the way. Everything else is trivial by comparison.
+  - Willing to build that loyalty incrementally, extending trust step by step as it's earned
+  - No patience for games, stalling, or manipulation — direct and brutal with anyone who tries them
+
+offers:
+  - Fusion — "Become part of me, part of the mist." A path into something beyond mortality
+  - Teaching — direct instruction in the Guardian's own ways, not the doctrine filtered down through generations of Disciples
+  - Allegiance — a Guardian's protection and word, once loyalty is proven
+
+interaction_beats:
+  - moment: First Meeting
+    description: |
+      Meeting Netos directly isn't something early travelers survive — not only because of where they dwell, but because their presence alone would break someone who hasn't yet grown into surviving it. For a first encounter, contact happens through a projection cast into the mist from wherever Netos actually is. It isn't distance or caution — it's simply the only interface available to someone who isn't yet strong enough for the real thing.
+
+      Through that projection, they speak plainly and expect the same back: state what you are, state what you want. Evasion, games, or stalling isn't met with patience — it's met with punishment, scaled to how blatant the disrespect was.
+  - moment: Trust Threshold
+    description: |
+      Trust doesn't move on promises. Netos has watched every kind of mortal lie for longer than most civilizations have existed — words cost nothing, so words prove nothing. The threshold shifts only on demonstrated action: the party doing something that actually costs them, against the Fire Born or the spread of flame, with nothing to gain from Netos noticing. That's the only currency that registers.
+  - moment: Breaking Point
+    description: |
+      Aiding the Fire Born, threatening the binding, or harming the Mist Born under Netos's protection — any of these ends the relationship immediately and permanently, no chance to explain after. Discovered deception is the worst version: if trust was already extended through demonstrated action, a later betrayal doesn't just cost that trust — it confirms, in Netos's judgment, that violence should have been the answer from the very first meeting.
+
+secrets:
+  what_they_know: |
+    Real answers about the Expansion Crisis and what THE Nothing actually is, beyond the doctrine version the Mist Born teach.
+  what_they_hide: |
+    Officially, Netos is assumed to serve the imprisoning gods' mandate without question. In truth, their loyalty has shifted entirely to the prison and their own Disciples. This isn't public — even most Mist Born assume otherwise — because it would destabilize their standing and could draw the attention of the very gods they'd now defy.
+  conditions: |
+    General cosmic knowledge comes proportional to earned trust. The shifted loyalty is the deepest secret, revealed only to those who've proven through action against the Fire Born that they're worth confiding in.
+
+gm_notes:
+  - First contact is always a projection cast into the mist — use a slightly delayed, echoing voice, and remind the table the real Netos is nowhere near wherever it appears
+  - Ties directly to the Mist Born faction file's "The Surface Call" storyline — the First Disciple who rises to the surface there could plausibly be acting on Netos's behalf, or investigating something Netos already suspects
+  - The faction file's existing relationships (hostile to Fire Born/flame-seekers/ember-traders) are the concrete definition of what "aiding the Fire Born" means as a breaking point — no new interpretation needed at the table
+  - Long-term escalation hook — once the party is genuinely powerful, direct in-person contact with Netos might finally become survivable — a possible Tier 3/4 payoff for the relationship
