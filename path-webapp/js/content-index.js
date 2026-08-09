@@ -123,7 +123,11 @@ const CONTENT_INDEX = {
     "lake-crossing.yaml",
     "monastery-march.yaml",
     "needle-descent.yaml",
-    "plague-march.yaml"
+    "plague-march.yaml",
+    "wetlands.yaml"
+  ],
+  "../the-path-campaign/lore/events/": [
+    "guardian-projection.yaml"
   ],
   "__factions__": {
     "brass-mechanicorum": {
@@ -142,7 +146,8 @@ const CONTENT_INDEX = {
       "details": "faction-details.yaml",
       "npcs": [
         "archon-of-mercy.yaml",
-        "the-bound-raven.yaml"
+        "the-bound-raven.yaml",
+        "timothy.yaml"
       ]
     },
     "fire-born": {
@@ -151,7 +156,9 @@ const CONTENT_INDEX = {
     },
     "mist-born": {
       "details": "faction-details.yaml",
-      "npcs": []
+      "npcs": [
+        "netos.yaml"
+      ]
     },
     "rootbound": {
       "details": "faction-details.yaml",

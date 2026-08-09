@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+        }
+
+        .event-card {
+            background: rgba(0,0,0,0.2);
+            border: 0.15rem solid var(--border-color);
+            border-left: 0.3rem solid #6a4c93;
+            border-radius: 0.2rem;
+            padding: 1rem;
+            text-decoration: none;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.2s;
+        }
+        .event-card:hover {
+            background: rgba(0,0,0,0.35);
+            border-color: #6a4c93;
+            transform: translateY(-2px);
+        }
+        .event-card.social      { border-left-color: #4a7b9d; }
+        .event-card.social:hover{ border-color: #4a7b9d; }
+
+        .event-card h3 {
+            color: var(--accent-amber);
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .event-meta {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.15rem 0.5rem;
+            border-radius: 0.15rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .badge.social { background: rgba(74, 123, 157, 0.3); color: #6ea8c8; }
+        .badge.event  { background: rgba(106, 76, 147, 0.3); color: #a98fd0; }
+        .badge.tier   { background: rgba(255,255,255,0.08); color: var(--text-light); }
+
+        .event-desc {
+            font-size: 0.88rem;
+            font-style: italic;
+            opacity: 0.85;
+            margin-bottom: 0.75rem;
+            flex-grow: 1;
+            line-height: 1.5;
+        }
+
+        .event-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.78rem;
+            opacity: 0.7;
+            padding-top: 0.5rem;
+            border-top: 0.1rem solid rgba(17,68,102,0.3);
+            margin-top: auto;
+        }
+        .event-footer span { color: var(--accent-amber); font-weight: 600; }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            opacity: 0.6;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+    <a class="home-btn" href="index.html">&#8962; Home</a>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb"><a href="index.html">← Back to Path</a></nav>
+            <h1>Events</h1>
+            <p class="subtitle">Occurrences that happen in a place, rather than places themselves</p>
+        </header>
+
+        <main>
+            <div class="events-grid" id="events-grid">
+                <div class="empty-state">Loading events...</div>
+            </div>
+        </main>
+
+        <footer><p>The Path - Daggerheart Campaign Frame</p></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

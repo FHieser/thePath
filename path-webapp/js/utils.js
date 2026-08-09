@@ -24,6 +24,10 @@ const LOCATION_FOLDERS = [
   { path: '../the-path-campaign/locations/village-in-the-mist/',                  type: 'village' },
 ];
 
+// Events live in a single flat folder — occurrences rather than places, so they
+// carry no grid coordinate, tarot card, or Glossary entry.
+const EVENTS_URL = '../the-path-campaign/lore/events/';
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -40,17 +44,46 @@ function escapeHtml(text) {
  * Convert a multi-line YAML text block into readable HTML.
  * Double newlines (blank lines) become <br><br>; single newlines become <br>.
  * Handles both Unix (\n) and Windows (\r\n) line endings.
+ *
+ * Also renders the small subset of Markdown the campaign YAML actually uses:
+ * **bold** and `- ` bullet lists. Campaign files have long been authored with
+ * these, so without this they render as literal asterisks and dashes.
  */
 function formatDescription(text) {
   if (!text) return '';
-  return text
-    .trim()
-    .replace(/\r\n/g, '\n')
-    .replace(/\r/g, '\n')
-    .replace(/\n\n+/g, '\n\n')
-    .split('\n\n')
-    .map(para => para.replace(/\n/g, '<br>'))
-    .join('<br><br>');
+
+  const inline = s => s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+  const lines = text.trim().replace(/\r\n?/g, '\n').split('\n');
+
+  // Group consecutive bullet lines into list blocks, everything else into text
+  // blocks, so a <ul> is emitted as a block rather than <br>-joined lines.
+  const parts = [];
+  for (const line of lines) {
+    const bullet = line.match(/^\s*[-*]\s+(.*)$/);
+    const last = parts[parts.length - 1];
+    if (bullet) {
+      if (last && last.type === 'list') last.lines.push(bullet[1]);
+      else parts.push({ type: 'list', lines: [bullet[1]] });
+    } else {
+      if (last && last.type === 'text') last.lines.push(line);
+      else parts.push({ type: 'text', lines: [line] });
+    }
+  }
+
+  return parts.map(part => {
+    if (part.type === 'list') {
+      return `<ul class="md-list">${part.lines.map(l => `<li>${inline(l)}</li>`).join('')}</ul>`;
+    }
+    return part.lines
+      .join('\n')
+      .replace(/\n{2,}/g, '\n\n')
+      .trim()
+      .split('\n\n')
+      .filter(Boolean)
+      .map(para => inline(para.replace(/\n/g, '<br>')))
+      .join('<br><br>');
+  }).filter(Boolean).join('');
 }
 
 /** Return the modifier name regardless of whether it's a string or {name:…} object. */

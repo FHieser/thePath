@@ -24,6 +24,7 @@ const FOLDERS = [
   'the-path-campaign/locations/path-locations/starfall-city',
   'the-path-campaign/locations/village-in-the-mist',
   'the-path-campaign/example-path/path-library',
+  'the-path-campaign/lore/events',
 ];
 
 const index = {};
