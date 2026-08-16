@@ -117,7 +117,7 @@
   }
 
   // Modifier names (lowercased) that get a highlight class on their grid cell.
-  const NOTABLE_CELL_MODIFIERS = ["stable", "mushroom circle", "mist-touched"];
+  const NOTABLE_CELL_MODIFIERS = ["stable", "mushroom circle", "mist-touched", "mist-protected"];
 
   // Adds highlight classes to a grid cell based on its location's own static modifiers
   // (loaded from the location's canonical file, not from the path library's per-cell tags).

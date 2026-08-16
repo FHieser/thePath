@@ -1262,6 +1262,10 @@ footer {
   border-color: var(--danger-red);
 }
 
+.path-cell.mist-protected {
+  border-color: var(--success-green);
+}
+
 .path-cell.empty {
   background: transparent;
   border-color: transparent;
