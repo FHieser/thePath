@@ -129,10 +129,12 @@ function filterLocations() {
 function createLocationCard(id, location) {
     const modifierTags = (location.modifiers || []).map(mod => {
         const modName = getModifierName(mod);
+        const modValue = typeof mod === 'object' ? mod.value : undefined;
+        const modLabel = modValue !== undefined ? `${modName} (${modValue})` : modName;
         const cssClass = modName.toLowerCase().replace(/\s+/g, '-');
         const modData = modifierDescriptions[modName.toLowerCase()];
         const tooltip = modData ? modData.description.trim() : '';
-        return `<span class="modifier-tag modifier-tooltip ${cssClass}" data-tooltip="${escapeHtml(tooltip)}">${modName}</span>`;
+        return `<span class="modifier-tag modifier-tooltip ${cssClass}" data-tooltip="${escapeHtml(tooltip)}">${modLabel}</span>`;
     }).join('');
 
     const featureCount = location.features ? location.features.length : 0;

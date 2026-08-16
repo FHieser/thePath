@@ -169,9 +169,11 @@ async function displayLocation(loc) {
                     <div class="meta-inline"><strong>Difficulty:</strong> ${loc.difficulty}</div>
                     <div class="meta-inline"><strong>Modifiers:</strong> ${loc.modifiers.map(m => {
                         const modName = typeof m === 'object' ? m.name : m;
+                        const modValue = typeof m === 'object' ? m.value : undefined;
+                        const modLabel = modValue !== undefined ? `${modName} (${modValue})` : modName;
                         const modData = modifierDescriptions[modName.toLowerCase()];
                         const tooltip = modData ? modData.description.trim() : '';
-                        return `<span class="tag modifier-tooltip" data-tooltip="${escapeHtml(tooltip)}">${modName}</span>`;
+                        return `<span class="tag modifier-tooltip" data-tooltip="${escapeHtml(tooltip)}">${modLabel}</span>`;
                     }).join('')}</div>
                 </div>
 
