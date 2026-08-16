@@ -128,7 +128,8 @@ const CONTENT_INDEX = {
     "wetlands.yaml"
   ],
   "../the-path-campaign/lore/events/": [
-    "guardian-projection.yaml"
+    "guardian-projection.yaml",
+    "in-the-eye-of-the-titan.yaml"
   ],
   "__factions__": {
     "brass-mechanicorum": {

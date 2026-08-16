@@ -1,0 +1,292 @@
+name: In the Eye of the Titan
+category: Social
+description: Something enormous has noticed you, and it is willing to listen for exactly as long as it chooses to.
+impulses: Tower over them, how long will these entertain you, patient up to a point
+
+trigger: |
+  Activate when the party is spotted by — or deliberately approaches — a being of titanic scale.
+
+  Examples: seeking an audience with a dormant colossus; crossing open ground within sight of something immense; waking or disturbing something vast that was sleeping; arriving with tribute before an entity known to grant audiences; being noticed while trying to slip past unseen.
+
+tiers:
+  - tier: 1
+    difficulty: 11
+    features:
+      - name: Dramatic Entrance
+        type: Passive
+        description: |
+          When this event activates, designate which titanic entity is speaking and its **disposition** toward the party — hostile, neutral, or well-disposed. Its NPC entry governs what it wants, what it despises, and therefore where advantage and disadvantage fall.
+
+          Disposition is separate from the Patience die. Offerings move the die; they never move the disposition.
+
+          Its presence arrives before a single word does. The GM gains 1 Fear.
+        questions: What does its arrival do to the light, the ground, the air? Which PC understands the scale of it first?
+
+      - name: In the Eye of the Titan
+        type: Action
+        description: |
+          Two counters run this scene. **The GM should explain both to the players before it begins** — this encounter is a visible race, not a hidden one.
+
+          **Patience** — how long the Titan will keep listening. Tracked with a physical die on the table, starting at its highest face and turned down as Patience erodes. Disposition sets the die:
+
+          - **d4** — hostile
+          - **d6** — neutral
+          - **d8** — well-disposed
+
+          Then adjust for what the party brought: **+1 step** for a present or good news, **+2 steps** for both, **−1 step** for bad news. Steps run d2 → d4 → d6 → d8 → d10 → d12, clamped at either end.
+
+          **Progress** — how far the party gets with what they came to say. Starts at 0.
+
+          Unless the Titan is well-disposed, the party cannot leave until Progress reaches 5.
+
+          When a PC addresses the Titan, they make a roll — usually Presence, though the GM may call for another trait if the approach warrants it. The GM should grant advantage or disadvantage based on how well the approach fits this particular entity.
+
+          - **Critical Success:** Patience +3, Progress +3
+          - **Success with Hope:** Patience +1, Progress +2
+          - **Success with Fear:** Patience −1, Progress +1
+          - **Failure with Hope:** no change
+          - **Failure with Fear:** Patience −3
+
+          **5 — Release.** The Titan's attention releases them; they may leave.
+
+          **7 — A Truth.** It answers one question honestly.
+
+          **12 — A Boon.** Something material: an item, a favor, safe passage, or a task worth the undertaking.
+        questions: What did the party bring, and did they know it would matter? What is the Titan actually waiting to hear?
+
+      - name: Oppressive Presence
+        type: Action
+        description: |
+          Spend a Fear to give one PC 1 Stress. Spend 2 Fear to give every PC 1 Stress. The Titan is not doing this deliberately — it is simply too large to be near.
+        questions: What is it about being near this thing that wears a person down? Who feels it worst?
+
+      - name: My Patience Runs Thin
+        type: Reaction
+        description: |
+          When the party does something that displeases the Titan, roll a d3 and reduce Patience by that amount. Whether an action displeases is the GM's judgement, guided by the designated entity's character.
+
+          *(No d3? Roll a d6 and halve, rounding up.)*
+        questions: What did they do? Does the Titan explain itself, or simply let them feel the loss?
+
+      - name: My Patience Has Run Out
+        type: Reaction
+        description: |
+          When Patience reaches 0, the Titan is finished. What follows depends on its **disposition** — not on the die it ended up with:
+
+          - **Hostile** — it attacks.
+          - **Neutral** — the GM chooses: it attacks, or it tells them to leave.
+          - **Well-disposed** — it asks them to leave, or simply withdraws.
+        questions: What does it look like when something this large decides you are finished? Does it say anything, or nothing at all?
+
+  - tier: 2
+    difficulty: 14
+    features:
+      - name: Dramatic Entrance
+        type: Passive
+        description: |
+          When this event activates, designate which titanic entity is speaking and its **disposition** toward the party — hostile, neutral, or well-disposed. Its NPC entry governs what it wants, what it despises, and therefore where advantage and disadvantage fall.
+
+          Disposition is separate from the Patience die. Offerings move the die; they never move the disposition.
+
+          Its presence arrives before a single word does. The GM gains 2 Fear and every PC marks 1 Stress.
+        questions: What does its arrival do to the light, the ground, the air? Which PC understands the scale of it first?
+
+      - name: In the Eye of the Titan
+        type: Action
+        description: |
+          Two counters run this scene. **The GM should explain both to the players before it begins** — this encounter is a visible race, not a hidden one.
+
+          **Patience** — how long the Titan will keep listening. Tracked with a physical die on the table, starting at its highest face and turned down as Patience erodes. Disposition sets the die:
+
+          - **d4** — hostile
+          - **d6** — neutral
+          - **d8** — well-disposed
+
+          Then adjust for what the party brought: **+1 step** for a present or good news, **+2 steps** for both, **−1 step** for bad news. Steps run d2 → d4 → d6 → d8 → d10 → d12, clamped at either end.
+
+          **Progress** — how far the party gets with what they came to say. Starts at 0.
+
+          Unless the Titan is well-disposed, the party cannot leave until Progress reaches 5.
+
+          When a PC addresses the Titan, they make a roll — usually Presence, though the GM may call for another trait if the approach warrants it. The GM should grant advantage or disadvantage based on how well the approach fits this particular entity.
+
+          - **Critical Success:** Patience +3, Progress +3
+          - **Success with Hope:** Patience +1, Progress +2
+          - **Success with Fear:** Patience −1, Progress +1
+          - **Failure with Hope:** no change
+          - **Failure with Fear:** Patience −3
+
+          **5 — Release.** The Titan's attention releases them; they may leave.
+
+          **7 — A Truth.** It answers one question honestly.
+
+          **12 — A Boon.** Something material: an item, a favor, safe passage, or a task worth the undertaking.
+        questions: What did the party bring, and did they know it would matter? What is the Titan actually waiting to hear?
+
+      - name: Oppressive Presence
+        type: Action
+        description: |
+          Spend a Fear to give one PC 1 Stress. Spend 2 Fear to give every PC 1 Stress. The Titan is not doing this deliberately — it is simply too large to be near.
+        questions: What is it about being near this thing that wears a person down? Who feels it worst?
+
+      - name: My Patience Runs Thin
+        type: Reaction
+        description: |
+          When the party does something that displeases the Titan, roll a d3 and reduce Patience by that amount. Whether an action displeases is the GM's judgement, guided by the designated entity's character.
+
+          *(No d3? Roll a d6 and halve, rounding up.)*
+        questions: What did they do? Does the Titan explain itself, or simply let them feel the loss?
+
+      - name: My Patience Has Run Out
+        type: Reaction
+        description: |
+          When Patience reaches 0, the Titan is finished. What follows depends on its **disposition** — not on the die it ended up with:
+
+          - **Hostile** — it attacks.
+          - **Neutral** — the GM chooses: it attacks, or it tells them to leave.
+          - **Well-disposed** — it asks them to leave, or simply withdraws.
+        questions: What does it look like when something this large decides you are finished? Does it say anything, or nothing at all?
+
+  - tier: 3
+    difficulty: 17
+    features:
+      - name: Dramatic Entrance
+        type: Passive
+        description: |
+          When this event activates, designate which titanic entity is speaking and its **disposition** toward the party — hostile, neutral, or well-disposed. Its NPC entry governs what it wants, what it despises, and therefore where advantage and disadvantage fall.
+
+          Disposition is separate from the Patience die. Offerings move the die; they never move the disposition.
+
+          Its presence arrives before a single word does. The GM gains 3 Fear and every PC marks 2 Stress.
+        questions: What does its arrival do to the light, the ground, the air? Which PC understands the scale of it first?
+
+      - name: In the Eye of the Titan
+        type: Action
+        description: |
+          Two counters run this scene. **The GM should explain both to the players before it begins** — this encounter is a visible race, not a hidden one.
+
+          **Patience** — how long the Titan will keep listening. Tracked with a physical die on the table, starting at its highest face and turned down as Patience erodes. Disposition sets the die:
+
+          - **d4** — hostile
+          - **d6** — neutral
+          - **d8** — well-disposed
+
+          Then adjust for what the party brought: **+1 step** for a present or good news, **+2 steps** for both, **−1 step** for bad news. Steps run d2 → d4 → d6 → d8 → d10 → d12, clamped at either end.
+
+          **Progress** — how far the party gets with what they came to say. Starts at 0.
+
+          Unless the Titan is well-disposed, the party cannot leave until Progress reaches 5.
+
+          When a PC addresses the Titan, they make a roll — usually Presence, though the GM may call for another trait if the approach warrants it. The GM should grant advantage or disadvantage based on how well the approach fits this particular entity.
+
+          - **Critical Success:** Patience +3, Progress +3
+          - **Success with Hope:** Patience +1, Progress +2
+          - **Success with Fear:** Patience −1, Progress +1
+          - **Failure with Hope:** no change
+          - **Failure with Fear:** Patience −3
+
+          **5 — Release.** The Titan's attention releases them; they may leave.
+
+          **7 — A Truth.** It answers one question honestly.
+
+          **12 — A Boon.** Something material: an item, a favor, safe passage, or a task worth the undertaking.
+        questions: What did the party bring, and did they know it would matter? What is the Titan actually waiting to hear?
+
+      - name: Oppressive Presence
+        type: Action
+        description: |
+          Spend a Fear to give one PC 1 Stress. Spend 2 Fear to give every PC 1 Stress. The Titan is not doing this deliberately — it is simply too large to be near.
+        questions: What is it about being near this thing that wears a person down? Who feels it worst?
+
+      - name: My Patience Runs Thin
+        type: Reaction
+        description: |
+          When the party does something that displeases the Titan, roll a d3 and reduce Patience by that amount. Whether an action displeases is the GM's judgement, guided by the designated entity's character.
+
+          *(No d3? Roll a d6 and halve, rounding up.)*
+        questions: What did they do? Does the Titan explain itself, or simply let them feel the loss?
+
+      - name: My Patience Has Run Out
+        type: Reaction
+        description: |
+          When Patience reaches 0, the Titan is finished. What follows depends on its **disposition** — not on the die it ended up with:
+
+          - **Hostile** — it attacks.
+          - **Neutral** — the GM chooses: it attacks, or it tells them to leave.
+          - **Well-disposed** — it asks them to leave, or simply withdraws.
+        questions: What does it look like when something this large decides you are finished? Does it say anything, or nothing at all?
+
+  - tier: 4
+    difficulty: 20
+    features:
+      - name: Dramatic Entrance
+        type: Passive
+        description: |
+          When this event activates, designate which titanic entity is speaking and its **disposition** toward the party — hostile, neutral, or well-disposed. Its NPC entry governs what it wants, what it despises, and therefore where advantage and disadvantage fall.
+
+          Disposition is separate from the Patience die. Offerings move the die; they never move the disposition.
+
+          Its presence arrives before a single word does. The GM gains 4 Fear and every PC marks 3 Stress.
+        questions: What does its arrival do to the light, the ground, the air? Which PC understands the scale of it first?
+
+      - name: In the Eye of the Titan
+        type: Action
+        description: |
+          Two counters run this scene. **The GM should explain both to the players before it begins** — this encounter is a visible race, not a hidden one.
+
+          **Patience** — how long the Titan will keep listening. Tracked with a physical die on the table, starting at its highest face and turned down as Patience erodes. Disposition sets the die:
+
+          - **d4** — hostile
+          - **d6** — neutral
+          - **d8** — well-disposed
+
+          Then adjust for what the party brought: **+1 step** for a present or good news, **+2 steps** for both, **−1 step** for bad news. Steps run d2 → d4 → d6 → d8 → d10 → d12, clamped at either end.
+
+          **Progress** — how far the party gets with what they came to say. Starts at 0.
+
+          Unless the Titan is well-disposed, the party cannot leave until Progress reaches 5.
+
+          When a PC addresses the Titan, they make a roll — usually Presence, though the GM may call for another trait if the approach warrants it. The GM should grant advantage or disadvantage based on how well the approach fits this particular entity.
+
+          - **Critical Success:** Patience +3, Progress +3
+          - **Success with Hope:** Patience +1, Progress +2
+          - **Success with Fear:** Patience −1, Progress +1
+          - **Failure with Hope:** no change
+          - **Failure with Fear:** Patience −3
+
+          **5 — Release.** The Titan's attention releases them; they may leave.
+
+          **7 — A Truth.** It answers one question honestly.
+
+          **12 — A Boon.** Something material: an item, a favor, safe passage, or a task worth the undertaking.
+        questions: What did the party bring, and did they know it would matter? What is the Titan actually waiting to hear?
+
+      - name: Oppressive Presence
+        type: Action
+        description: |
+          Spend a Fear to give one PC 1 Stress. Spend 2 Fear to give every PC 1 Stress. The Titan is not doing this deliberately — it is simply too large to be near.
+        questions: What is it about being near this thing that wears a person down? Who feels it worst?
+
+      - name: My Patience Runs Thin
+        type: Reaction
+        description: |
+          When the party does something that displeases the Titan, roll a d3 and reduce Patience by that amount. Whether an action displeases is the GM's judgement, guided by the designated entity's character.
+
+          *(No d3? Roll a d6 and halve, rounding up.)*
+        questions: What did they do? Does the Titan explain itself, or simply let them feel the loss?
+
+      - name: My Patience Has Run Out
+        type: Reaction
+        description: |
+          When Patience reaches 0, the Titan is finished. What follows depends on its **disposition** — not on the die it ended up with:
+
+          - **Hostile** — it attacks.
+          - **Neutral** — the GM chooses: it attacks, or it tells them to leave.
+          - **Well-disposed** — it asks them to leave, or simply withdraws.
+        questions: What does it look like when something this large decides you are finished? Does it say anything, or nothing at all?
+
+featureQuestions:
+  - What is this Titan, and what was it doing before the party interrupted?
+  - How does the party learn its disposition — or do they find out only when Patience runs out?
+  - What would count as a worthy offering to something this size?
+  - What does it want that mortals could plausibly provide?
