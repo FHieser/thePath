@@ -10,7 +10,7 @@
   type: General
   usage: Consumable
   tier: 2
-  tradeValue: 1.5
+  tradeValue: 2
   flavor: "A bright yellow flower that clings to cliff faces where nothing else grows — ancient, stubborn, and worth the reach."
   effect:
     category: Restoration
@@ -28,17 +28,6 @@
     description: |
       Can only be consumed during an encounter. Clear 2 Stress.
 
-- name: Firepatch
-  type: General
-  usage: Consumable
-  tier: 1
-  tradeValue: 1
-  flavor: "A rough bandage soaked in alchemical fire that sears wounds shut on contact."
-  effect:
-    category: Restoration
-    description: |
-      Can only be used during an encounter. Press it against an open wound to heal 2 HP. Mark 2 Stress - the burning is excruciating.
-
 - name: Rushpowder
   type: General
   usage: Consumable
@@ -54,7 +43,7 @@
   type: General
   usage: Consumable
   tier: 2
-  tradeValue: 1.5
+  tradeValue: 0.75
   flavor: "A grey-black paste that smells faintly of copper and old stone. Applied to the temple, it doesn't numb the pain — it convinces you the pain was never worth feeling."
   effect:
     category: Restoration
@@ -159,6 +148,17 @@
     category: Enhancement
     description: |
       You gain a +1 bonus to your next Knowledge Roll.
+
+- name: Firepatch
+  type: Village
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.75
+  flavor: "A rough bandage soaked in alchemical fire that sears wounds shut on contact."
+  effect:
+    category: Restoration
+    description: |
+      Can only be used during an encounter. Press it against an open wound to heal 2 HP. Mark 2 Stress - the burning is excruciating.
 
 - name: Minor Health Potion
   type: Village
@@ -277,7 +277,7 @@
   type: Rootbound
   usage: Consumable
   tier: 1
-  tradeValue: 1
+  tradeValue: 0.5
   flavor: "A strip of pale bark that tastes of soil and sleep. Chew it and the world behind your eyes opens."
   effect:
     category: Utility
@@ -299,7 +299,7 @@
   type: Rootbound
   usage: Consumable
   tier: 1
-  tradeValue: 1.5
+  tradeValue: 2
   flavor: "A pouch of dried herbs that blooms into fragrant tea when steeped in warm water. Quite some powerful stuff, but takes a while to get going. Tastes good too."
   effect:
     category: Restoration
