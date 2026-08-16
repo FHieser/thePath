@@ -15,7 +15,7 @@ gridSurface:
   "2,1": { location: hollow-woods, modifiers: [Mushroom Circle] }
   "3,1": { location: highland-watch, modifiers: [Cave Mouth] }
   "4,1": { location: misty-waters, modifiers: [Cave Mouth] }
-  "5,1": { location: highland-circle, modifiers: [Mushroom Circle] }
+  "5,1": { location: highland-circle, modifiers: [Mushroom Circle, Mist-Protected] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "4,2": { location: unstable-mist, modifiers: [Mist-Touched] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }

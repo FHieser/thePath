@@ -6,7 +6,7 @@ rowLabels:
   "1": A
   "2": B
 gridSurface:
-  "2,0": { location: forest-refuge, modifiers: [Mushroom Circle] }
+  "2,0": { location: forest-refuge, modifiers: [Mushroom Circle, Mist-Protected] }
   "3,0": hanging-gardens
   "4,0": the-giant-walls
   "0,1": { location: village-in-the-mist, modifiers: [Stable] }

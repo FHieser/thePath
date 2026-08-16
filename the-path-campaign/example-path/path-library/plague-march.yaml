@@ -13,7 +13,7 @@ gridSurface:
   "2,1": the-giant-walls
   "3,1": windswept-grasslands
   "4,1": { location: barnacle-gardens, modifiers: [Mist-Touched] }
-  "5,1": { location: highland-circle, modifiers: [Mushroom Circle] }
+  "5,1": { location: highland-circle, modifiers: [Mushroom Circle, Mist-Protected] }
   "-1,2": { location: unstable-mist, modifiers: [Mist-Touched] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": blood-fern-valley

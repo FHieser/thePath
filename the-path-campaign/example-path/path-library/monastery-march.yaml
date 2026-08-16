@@ -17,7 +17,7 @@ gridSurface:
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": windswept-grasslands
   "2,2": the-giant-walls
-  "3,2": { location: forest-refuge, modifiers: [Mushroom Circle] }
+  "3,2": { location: forest-refuge, modifiers: [Mushroom Circle, Mist-Protected] }
   "4,2": { location: stone-works, modifiers: [Cave Mouth] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
   "3,3": { location: misty-waters, modifiers: [Cave Mouth] }

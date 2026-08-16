@@ -7,5 +7,5 @@ gridSurface:
   "0,0": { location: village-in-the-mist, modifiers: [Stable] }
   "1,0": windswept-grasslands
   "2,0": { location: ancient-crossing, modifiers: [Cave Mouth] }
-  "3,0": { location: forest-refuge, modifiers: [Mushroom Circle] }
+  "3,0": { location: forest-refuge, modifiers: [Mushroom Circle, Mist-Protected] }
   "4,0": { location: sacred-mountain-pass, modifiers: [Stable] }

@@ -16,7 +16,7 @@ gridSurface:
   "-1,2": { location: lost-flame, modifiers: [Mist-Touched, Cave Mouth] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": windswept-grasslands
-  "2,2": { location: forest-refuge, modifiers: [Mushroom Circle] }
+  "2,2": { location: forest-refuge, modifiers: [Mushroom Circle, Mist-Protected] }
   "3,2": { location: stone-works, modifiers: [Cave Mouth] }
   "4,2": { location: ancient-crossing, modifiers: [Cave Mouth] }
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
