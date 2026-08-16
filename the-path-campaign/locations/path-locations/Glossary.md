@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 44** (26 Surface + 15 Underground + 3 Special)
+**Total Locations: 45** (27 Surface + 15 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (25 locations)
+## 🌄 Surface Locations (27 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -36,6 +36,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Windswept Grasslands](./surface-locations/windswept-grasslands.md) | Open plains swept by constant winds                         |
 | ☑        | ☑     | [Redcloth Pass](./surface-locations/redcloth-pass.yaml)             | Sea-people cliff road where waymarkers wait to be restored and the mist sits far below |
 | ☑        | ☑     | [The Reeds](./surface-locations/the-reeds.yaml)                     | Frog people swamp settlement built on wooden islands — safe without a flame, concealed at cost |
+| ☑        | ☑     | [Shrinewood](./surface-locations/shrinewood.yaml)                   | Ancient forest riddled with shrines to ten thousand small gods, gathered around a great central tree |
 
 ---
 

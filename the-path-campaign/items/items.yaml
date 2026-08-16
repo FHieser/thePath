@@ -258,6 +258,17 @@
 
       Blood Chamber: At any time, spend HP to fill the chamber (up to 3 HP maximum). At any time, draw 1 HP from the chamber to restore it to yourself. HP stored in the chamber persists until spent.
 
+- name: Blood-Soaked Talisman
+  type: Blood
+  usage: Consumable
+  tier: 3
+  tradeValue: 7
+  flavor: "A twist of blood-dark cord and bone, tied by something that remembers only violence."
+  effect:
+    category: Disruption
+    description: |
+      Break the talisman to tear a screaming shape free of it: the ghost falls upon a single enemy of your choice within sight and destroys it outright. If the target is a Leviathan-class Colossus, the ghost instead destroys one of its segments that is not marked as vital. Every PC in the party marks 1 HP as the ghost tears free on its way out.
+
 # ============================================================
 # ROOTBOUND ITEMS
 # ============================================================

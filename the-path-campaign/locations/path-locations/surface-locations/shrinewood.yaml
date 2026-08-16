@@ -1,0 +1,78 @@
+name: Shrinewood
+tier: 2
+category: Social
+description: Ten thousand small gods live beneath one enormous tree, and none of them agree on how a guest should behave.
+impulses: Shelter those who ask properly, exact a price for every gift, quarrel over who is owed
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Inhabited
+  - name: Mushroom Circle
+  - name: Mist-Protected
+    value: 3
+potentialAdversaries: Woodland Spirits, Rootbound Hermits
+features:
+  - name: Heartwood Clearing
+    type: Passive
+    description: |
+      At the center of Shrinewood the roots pull back from an open, moss-floored clearing — the only ground here that belongs to no shrine. A ring of pale mushrooms grows in its empty middle: this location has the Mushroom Circle modifier. Everything else in Shrinewood orbits this clearing, and the sheer density of small watching presences makes it a hard place for the mist to take hold: this location has the Mist-Protected(3) modifier.
+    questions: What do the shrine-spirits do when they gather here, and does the great tree ever join them?
+  - name: Thousand Spirit Gates
+    type: Passive + Action
+    description: |
+      Countless shrines riddle the ancient forest, connected by narrow paths that wind between root and trunk. Each is marked by a spirit gate — two carved pillars joined by a crossbeam, some barely taller than a person, others looming twice as high. To pass beneath a gate is to enter that spirit's domain: petitioners feel something drawn out of them at the threshold, small and immediate — the gate's toll, paid to something old before it will even listen.
+
+      A party need not risk everyone at once. One PC may go forth as envoy, paying the toll alone and petitioning the spirit directly. If the envoy's petition succeeds, the rest of the party may follow through the same gate and receive the same boon, each paying the toll in turn — the envoy has already proven the spirit's temper. If the envoy's petition fails, the gate's mood is spent for now; the party learns what the forest thought of the offer without further risk.
+
+      No two shrines share a spirit's face. With this many gods packed into one forest, appearance is never fixed — when a spirit manifests, the GM may describe it, or hand the choice to whoever is petitioning: ask them what shape it takes. Let their answer stand for this visit; the next petitioner, even at the same shrine, may see something else entirely.
+
+      Each shrine may be petitioned once per Path visit.
+
+      **Shrine of Moss** — gate toll: 1 resource
+      A boulder wrapped floor-to-crown in green, so old the stone beneath is only a rumor. The gate here is squat and close, its pillars soft with the same growth, easy to miss until you're standing under it.
+      - Critical Success: Gain 2 resources (clear Stress, recover HP, or gain Hope, in any combination).
+      - Success: Gain 1 resource (clear Stress, recover HP, or gain Hope).
+      - Failure with Fear: No resource gained. A thin green film clings to the petitioner's skin — it does not fade on its own, and remains until washed off.
+
+      **Shrine of Insects** — gate toll: 1 resource
+      A rotted stump wrapped floor to crown in a shifting curtain — moth wings, beetle shells, the papery husks of a thousand cicadas, layered so thick the wood beneath is never quite visible. The gate here is low and narrow, and it hums before you're close enough to hear why.
+      - Critical Success: The GM turns 2 face-down Path location cards face-up.
+      - Success: The GM turns 1 face-down Path location card face-up.
+      - Failure with Fear: No cards revealed. Every PC who passed through the gate for this petition marks 2 Stress as the swarm crawls over them.
+
+      **Shrine of Shadows** — gate toll: 1 resource
+      A hollow between two close-grown trunks where no light seems to reach, regardless of the hour. The gate is unmarked, easy to walk past — you only find it if something wants you to.
+      - Critical Success: The party gains Advantage on all Stealth rolls and rolls to hide for the rest of this Path visit.
+      - Success: The party gains Advantage on the next 3 rolls to hide.
+      - Failure with Fear: No advantage gained. The petitioner marks 1 Stress, and until the party's next rest, their player must speak all of that character's dialogue very loudly.
+
+      **Shrine of Wind** — gate toll: 2 resources
+      A ring of hollow reed-pipes strung between two lashed poles, each one carved to a different pitch — the wind through the canopy never stops moving here, and the pipes never stop answering it. The gate is taller than most, its crossbeam hung with pale streamers that point wherever the wind decides to go next.
+      - Critical Success: The party may skip ahead 3 locations on the current Path — players choose which location to skip to.
+      - Success: The party may skip ahead 2 locations on the current Path — players choose which location to skip to.
+      - Failure with Fear: No skip granted. The wind carries the party somewhere else instead — the GM chooses a location on the current Path to send them to.
+
+      **Shrine of Coin** — gate toll: 2 resources
+      A weathered stone fox sits at the gate's foot, its tail chipped, coins and faded silk ribbons scattered in the moss around it — offerings no one remembers leaving, going back further than anyone can say.
+      - Critical Success: The GM selects 3 General Consumable items with a combined trade value of 4 TP; the petitioner chooses 2 to keep.
+      - Success: The GM selects 3 General Consumable items with a combined trade value of 4 TP; the petitioner chooses 1 to keep.
+      - Failure with Fear: No items offered. The fox takes its cut anyway — the GM asks what trade goods the petitioner is carrying and takes up to 2 Trade Points worth of it.
+
+      **Shrine of Wrath and Death** — gate toll: 3 resources
+      A ring of broken weapons driven blade-first into the earth, rusted and half-swallowed by root, coiled together with cord gone the color of old blood. The gate posts are notched all over, like something has been counting on them for a very long time.
+      - Critical Success: The petitioner is gifted a Blood-Soaked Talisman (see Items), at no cost to the party.
+      - Success: The petitioner is gifted a Blood-Soaked Talisman (see Items). Every PC in the party marks 1 HP as the spirit takes its price in blood.
+      - Failure with Fear: No talisman granted. The spirit takes its blood anyway — every PC marks 1 HP, for nothing in return.
+    questions: What shape does the forest floor take between gates — worn dirt path, root-bridge, something stranger?
+  - name: Breach of Custom
+    type: Reaction
+    description: |
+      If a PC takes anything from a shrine — an offering, a relic, any object left at or belonging to a gate — without petitioning the spirit for it directly, every gate in Shrinewood closes: no shrine can be petitioned again until the Path resets. When the gates close, the GM gains 2 Fear.
+    questions: What does a closed gate look like — sealed shut, gone dark, actively hostile to approach?
+featureQuestions:
+  - Who tends Shrinewood between visits, if anyone does?
+  - Do the spirits ever war with one another, or only quarrel?
+  - What happened the one time the great tree's clearing was violated?
+  - Is there a shrine older than all the others, and does it still accept petitioners?
+  - Do the Rootbound Hermits serve Shrinewood's spirits, or simply share the forest with them?
+  - What would it take for a spirit to leave its shrine and follow a party out onto the Path?
