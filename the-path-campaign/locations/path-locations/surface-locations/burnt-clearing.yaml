@@ -6,12 +6,14 @@ impulses: Echo with past violence, reveal the cost of faction warfare, offer the
 difficulty: 14
 modifiers:
   - name: Unstable
+  - name: Mist-Protected
+    value: 2
 potentialAdversaries: The Lost (bandit crew), Mist creatures (encroaching), Desperate Refugees
 features:
   - name: Fire-Scarred Sentinel
     type: Counter System
     description: |
-      The massive blackened tree still holds remnants of its ancient protective essence. Start a Sentinel Protection counter at 7. Each time PCs visit this location, reduce the counter by 1. While the counter is above 0, the tree's lingering power provides protection against mist corruption - it costs 2 additional Fear to make this location Mist-Touched. At 3: The tree's bark begins to crumble and its protective aura visibly dims. At 0: The tree's protection fails completely - this benefit is lost and the location becomes vulnerable to mist encroachment.
+      The massive blackened tree still holds remnants of its ancient protective essence. Start a Sentinel Protection counter at 7. Each time PCs visit this location, reduce the counter by 1. While the counter is above 0, this location has the Mist-Protected(2) modifier, sustained by the tree's lingering power. At 3: The tree's bark begins to crumble and its protective aura visibly dims. At 0: The tree's protection fails completely - the Mist-Protected(2) modifier is permanently removed and the location becomes vulnerable to mist encroachment.
     questions: What will happen to the sanctuary when the tree's protection finally fails? Can the tree's essence be restored, or is its death inevitable? What signs show the tree's power fading with each visit?
   - name: Ash Drift
     type: Action

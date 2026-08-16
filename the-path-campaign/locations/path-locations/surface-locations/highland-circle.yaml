@@ -7,12 +7,14 @@ difficulty: 11
 modifiers:
   - name: Unstable
   - name: Mushroom Circle
+  - name: Mist-Protected
+    value: 2
 potentialAdversaries: Grazing Beasts
 features:
   - name: Standing Stones
     type: Passive
     description: |
-      The great stones hold the mist at bay through an ancient, wordless compact. Resting within the circle — even if the location becomes Mist-Touched — grants no Mist tokens. It costs 2 additional Fear to make this location Mist-Touched. After resting here, the next time players travel off-Path they may draw 3 location cards and choose 1 to travel toward.
+      The great stones hold the mist at bay through an ancient, wordless compact. Resting within the circle — even if the location becomes Mist-Touched — grants no Mist tokens. This location has the Mist-Protected(2) modifier. After resting here, the next time players travel off-Path they may draw 3 location cards and choose 1 to travel toward.
     questions: What ancient power bound these stones against the mist's corruption? Do the stones remember the Rootbound who first raised them?
 
   - name: Mushroom Ring Magic

@@ -68,6 +68,7 @@ const CONTENT_INDEX = {
     "overgrown-temple.yaml",
     "redcloth-pass.yaml",
     "sacred-mountain-pass.yaml",
+    "shrinewood.yaml",
     "silken-spire.yaml",
     "stone-works.yaml",
     "the-giant-walls.yaml",

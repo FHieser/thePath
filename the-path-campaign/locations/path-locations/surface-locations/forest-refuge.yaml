@@ -8,6 +8,8 @@ modifiers:
   - name: Unstable
   - name: Inhabited
   - name: Mushroom Circle
+  - name: Mist-Protected
+    value: 2
 potentialAdversaries: Forest Beasts (Dire Wolf, Glass Snake), Woodland Spirits, Suspicious Hermit
 features:
   - name: Mysterious Dwelling
@@ -16,7 +18,7 @@ features:
     questions: Who lives in this remote dwelling? Why did they choose such an isolated location? What do their personal belongings reveal about them?
   - name: Fairy Light Grove
     type: Passive
-    description: The grove is illuminated by gentle, floating fairy lights that drift between the trees. These lights provide protection against mist corruption - it costs 2 additional Fear to make this location Mist-Touched.
+    description: The grove is illuminated by gentle, floating fairy lights that drift between the trees. This location has the Mist-Protected(2) modifier.
     questions: What creates these fairy lights? Do they respond to the PCs' presence? What happens if the lights are extinguished?
   - name: Mushroom Ring Magic
     type: Passive

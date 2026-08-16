@@ -163,6 +163,14 @@ modifiers:
       description: |
         The location has been corrupted by prolonged mist exposure and reality warps under the mist's influence. These locations always contain mist adversary encounters, can distribute Mist tokens to players who linger too long, and feature unstable terrain affected by reality distortions. The GM can spend Fear to make locations Mist-Touched during play (see Mist Mechanics section).
 
+    - name: Mist-Protected
+      type: corruptionAndProtection
+      valueRange: 1-3
+      description: |
+        The location carries a natural or ancient ward that resists the mist's foothold. It costs X additional Fear for the GM to make this location Mist-Touched (see Mist Mechanics section). Example: Mist-Protected(1) raises the cost by 1 Fear; Mist-Protected(3) raises it by 3. This represents lingering protective magic, watchful guardians, or a place too full of other presence for the mist to easily claim.
+
+        This formalizes a pattern used narratively at several locations — a fairy light grove, a dying sentinel tree, an ancient stone circle — where local protection made the mist's job harder without granting full Flame-Touched sanctuary status.
+
     - name: Nothing
       type: corruptionAndProtection
       valueRange: 1-3
@@ -481,6 +489,27 @@ flameMechanics:
 
     - trigger: When village Flame Essence reserves drop below 1
       fearGained: 2
+
+  portableBraziers:
+    description: |
+      Some Fire Born brazier constructs can be pulled free of their original site and replanted elsewhere — most notably a salvaged golem brazier, as opposed to a full Sacred Flame sanctuary. A planted brazier is NOT a Flame-Touched location: it grants none of that modifier's benefits (no mist immunity, no sanctuary status). It only projects a Flame Funnel.
+
+    flameFunnel:
+      description: |
+        A planted brazier draws latent flame potential out of the mist within a radius of grid cells, converting it into Flame Essence. Radius is measured in grid cells from the brazier's coordinate, using the same Row|Column adjacency as the Path grid (see gridSystem above).
+
+      generation:
+        timing: Resolves once per Path creation (when a new Path is drawn/laid out for the session) rather than tracking in-fiction days — this keeps the tick mechanically anchored to something the table already does every session.
+        amount: 1 Flame Essence per grid cell within the brazier's Radius stat, provided that cell doesn't also fall within another active flame's radius.
+
+      overlapRule: |
+        If any part of the brazier's radius overlaps the radius of another active flame source (a Flame-Touched location, the Village's Sacred Flame, or another brazier), the funnel generates 0 Flame Essence that cycle. Competing flames cancel the draw rather than splitting it — this closes off stacking flames near each other for free yield.
+
+      villageDrainRule: |
+        If the brazier's radius specifically reaches the Village's own Sacred Flame radius, the overlap rule inverts: instead of generating nothing, the brazier drains 1 Flame Essence per cycle from the Village's reserve. This close to a true Sacred Flame, the broken funnel can't distinguish ambient mist from the anchor it's meant to protect — it starts pulling from the well instead of the fog.
+
+      golemTether: |
+        A construct bound to a portable brazier (such as a revived Fire Born golem with a broken flame core) cannot stray outside the radius of an active flame without weakening, per Fire Born mist_protection lore. If the brazier is planted away from the Village to generate Essence, the bound construct is not present at the Village and cannot be deployed as an NPC Defender that siege — and vice versa. Players choose one role per cycle; the brazier cannot both generate Essence away from the Village and provide a Village defender at the same time.
 
 notes:
   - This document will be updated as playtesting reveals how these systems function in actual play.
