@@ -120,7 +120,6 @@ Write to `the-path-campaign/lore/events/[event-name].yaml`:
 
 ```yaml
 name: [Event Name]
-id: [kebab-case-id]
 category: [Social / Combat / Exploration / Traversal]
 description: [Tagline]
 impulses: [Three impulses, comma-separated]
