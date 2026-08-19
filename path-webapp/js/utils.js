@@ -46,13 +46,18 @@ function escapeHtml(text) {
  * Handles both Unix (\n) and Windows (\r\n) line endings.
  *
  * Also renders the small subset of Markdown the campaign YAML actually uses:
- * **bold** and `- ` bullet lists. Campaign files have long been authored with
- * these, so without this they render as literal asterisks and dashes.
+ * **bold**, *italic*, and `- ` bullet lists. Campaign files have long been
+ * authored with these, so without this they render as literal asterisks and
+ * dashes.
  */
 function formatDescription(text) {
   if (!text) return '';
 
-  const inline = s => s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  // Bold runs first, so by the time italics are matched no ** pairs remain and
+  // a plain single-asterisk pattern can't chew into them.
+  const inline = s => s
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
 
   const lines = text.trim().replace(/\r\n?/g, '\n').split('\n');
 

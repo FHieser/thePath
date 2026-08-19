@@ -129,7 +129,8 @@ const CONTENT_INDEX = {
   ],
   "../the-path-campaign/lore/events/": [
     "guardian-projection.yaml",
-    "in-the-eye-of-the-titan.yaml"
+    "in-the-eye-of-the-titan.yaml",
+    "left-to-the-mist.yaml"
   ],
   "__factions__": {
     "brass-mechanicorum": {
