@@ -49,7 +49,8 @@ const CONTENT_INDEX = {
     "croak-swimmer.yaml"
   ],
   "../the-path-campaign/adversaries/fire-born/": [
-    "flame-carrier-golem.yaml"
+    "flame-carrier-golem.yaml",
+    "paladin-of-fire.yaml"
   ],
   "../the-path-campaign/locations/path-locations/surface-locations/": [
     "ancient-crossing.yaml",

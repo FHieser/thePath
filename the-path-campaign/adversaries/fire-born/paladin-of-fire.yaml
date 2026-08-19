@@ -1,0 +1,61 @@
+name: Paladin of Fire
+category: Solo
+description: A figure in scorched, alien armour standing atop the carrier's shoulders, a two-handed blade of hot metal held low. It watches you silently.
+motives: Hunt the mist, fulfil the oath, keep the flames lit
+lore: "Paladins are the Fire Born who range ahead — advance scouts and Mist Hunters, pushing into mist and ruin to fulfil their sacred oath. Millennia of this has left them unable to parse mortal speech or motive. They are not hostile to travellers so much as uninterested in the question — right up until a traveller stands between them and the machinations of the mist."
+
+tiers:
+  - tier: 3
+    difficulty: 19
+    thresholds:
+      major: 18
+      severe: 30
+    hp: 10
+    stress: 6
+    attack:
+      bonus: '+7'
+      name: Flame Blade
+      range: Melee
+      damage: 3d10+8 phy
+    experience:
+      - name: Mist Hunter
+        value: 3
+      - name: Zeal
+        value: 3
+    features:
+      - name: Will of the Flame, Bound to the Flame
+        type: Passive
+        description: |
+          While the Paladin of Fire is present, this location gains the Everything(1) modifier — the GM's Fear die is reduced one step (d12 → d10). The Paladin enacts the will of a god, and consequence thins in its presence.
+
+          But it cannot live apart from sacred fire. When the Paladin is spotlighted while neither at a Flame-Touched location nor within Very Far range of a lit Flame Carrier Golem, it marks a Hit Point.
+
+      - name: Relentless (3)
+        type: Passive
+        description: The Paladin may be spotlighted up to 3 times per GM turn. Spend Fear as normal.
+
+      - name: Flare Up
+        type: Action
+        cost: Mark 3 Stress
+        description: |
+          Mark 3 Stress to ignite the blade. The Paladin is flared for the next 5 spotlights. It may activate this again while already flared, marking another 3 Stress to reset the duration. Track the remaining spotlights with a die counting down from 5.
+
+          While flared:
+
+          - Once per GM turn, the GM may spotlight the Paladin without spending Fear — whether to act again after it has already acted, or to seize the spotlight from the players.
+          - Its Flame Blade attacks deal 1 additional HP damage, and the target must mark 1 Stress.
+          - After attacking, the Paladin may dash up to Far range.
+
+      - name: Flame Slash
+        type: Action
+        uses: 1
+        cost: Spend 2 Fear
+        description: |
+          Once per scene, spend 2 Fear to sweep the Flame Blade in a wide arc, throwing fire in a cone in front of the Paladin within Close range. All targets in the area must make an Agility Reaction Roll. Targets who fail take 2d20+5 magic damage. Targets who succeed must mark 2 Stress or take half damage.
+
+      - name: Death Fire
+        type: Reaction
+        description: |
+          When the Paladin of Fire would mark its last Hit Point, it does not fall. It immediately activates Flare Up without marking Stress, and Flame Slash's use is restored.
+
+          Until that flare ends, the Paladin cannot be damaged — blades pass through fire. When the flare ends, it goes up in flames and is destroyed.
