@@ -1,0 +1,225 @@
+name: Left to the Mist
+category: Event
+description: Left behind and left for dead, with only the voices in the mist for company.
+impulses: Walking at the edge, is this the end?, what you see and hear from your past
+potentialAdversaries: Mist creatures
+
+trigger: |
+  Activate when a character is left behind unconscious in a mist region, for any reason — the party fled a losing fight, believed them dead, was separated and couldn't find them, or chose to leave them.
+
+  Examples: a retreat where nobody could carry them; a mist creature dragging them out of sight in zero visibility; the party moving on convinced they were killed; a deliberate abandonment.
+
+tiers:
+  - tier: 1
+    difficulty: 11
+    features:
+      - name: Alone and at the End of the Rope
+        type: Passive
+        description: |
+          The character regains consciousness alone in the mist, with no sign of the party and no memory of being left.
+
+          Set their Mist tokens to **8** — unless they already have more, in which case leave them. This event never reduces existing corruption.
+
+          The player rolls **1d4** for HP and **1d4** for Stress. Mark all of the character's HP and Stress except that many slots each.
+
+          The GM should state plainly, before the scene begins, that this character may die here. This is dire, and the player should know it going in.
+
+          They are Off-Path. Follow the Off-Path Travel procedure in `path-mechanics.yaml` — shuffle the Unstable cards, draw one per move, and remove the previous card as they advance.
+        questions: What was the last thing they remember? Do they know they were left, or do they assume the party is dead?
+
+      - name: No Help Is Coming
+        type: Passive
+        description: |
+          While the character is alone, their Hope die is reduced one step (d12 → d10 → d8 → d6 → d4, minimum d4). Optimism is a group activity.
+
+          This is a condition, not a scene rule — it lasts exactly as long as the isolation does. It lifts the moment they are no longer alone: meeting a friendly NPC, reuniting with another PC, or rejoining the current Path.
+        questions: What does the silence do to them? What do they start hearing in it?
+
+      - name: Voices in the Mist
+        type: Passive
+        description: |
+          While the character traverses the mist, they see and hear things from their past. Each time they draw a new location card, the GM will ask the player to narrate what they see or hear in the mist:
+
+          - *Who do you hear in the mist?*
+          - *What scene do you see?*
+          - *Whose voice is that, and what are they saying to you?*
+
+          The GM privately notes which background each voice belongs to — a faction (Fire Born, Mist Born, the Archon), the party that left them, or the character's own history. Once two voices from the same background have been named, the GM may decide that help arrives from that background.
+
+          Keep the tally hidden. The player should be answering honestly, not steering.
+
+          Help is not the same as rescue. Whatever arrives wants something in return — a character found by the Mist Born is not saved the way a character found by their own party is.
+        questions: Who does this character reach for when there is nothing left? What does it cost to be found by that particular someone?
+
+      - name: How This Ends
+        type: Reaction
+        description: |
+          This scene resolves in one of four ways.
+
+          - **They walk out.** Reaching the current Path — drawing a location that is part of it — puts them back on known ground at its grid coordinates. At night the Path consists only of Stable locations, so the way out narrows after dark.
+          - **They are found.** Help arrives through **Voices in the Mist**, on whatever terms that background demands.
+          - **The mist keeps them.** Reaching 10 Mist tokens, or drawing the Vanishing Mist, marks them **Lost in the Mist** — removed from the active roster, and the player creates a new character. They are not necessarily dead; see `vanishing-mist.md` for recovery hooks.
+          - **They die.** If they mark their last Hit Point, the character is dead. Not lost, not recoverable. This really is the end.
+        questions: If they walk out, what came out with them?
+
+  - tier: 2
+    difficulty: 14
+    features:
+      - name: Alone and at the End of the Rope
+        type: Passive
+        description: |
+          The character regains consciousness alone in the mist, with no sign of the party and no memory of being left.
+
+          Set their Mist tokens to **8** — unless they already have more, in which case leave them. This event never reduces existing corruption.
+
+          The player rolls **1d4** for HP and **1d4** for Stress. Mark all of the character's HP and Stress except that many slots each.
+
+          The GM should state plainly, before the scene begins, that this character may die here. This is dire, and the player should know it going in.
+
+          They are Off-Path. Follow the Off-Path Travel procedure in `path-mechanics.yaml` — shuffle the Unstable cards, draw one per move, and remove the previous card as they advance.
+        questions: What was the last thing they remember? Do they know they were left, or do they assume the party is dead?
+
+      - name: No Help Is Coming
+        type: Passive
+        description: |
+          While the character is alone, their Hope die is reduced one step (d12 → d10 → d8 → d6 → d4, minimum d4). Optimism is a group activity.
+
+          This is a condition, not a scene rule — it lasts exactly as long as the isolation does. It lifts the moment they are no longer alone: meeting a friendly NPC, reuniting with another PC, or rejoining the current Path.
+        questions: What does the silence do to them? What do they start hearing in it?
+
+      - name: Voices in the Mist
+        type: Passive
+        description: |
+          While the character traverses the mist, they see and hear things from their past. Each time they draw a new location card, the GM will ask the player to narrate what they see or hear in the mist:
+
+          - *Who do you hear in the mist?*
+          - *What scene do you see?*
+          - *Whose voice is that, and what are they saying to you?*
+
+          The GM privately notes which background each voice belongs to — a faction (Fire Born, Mist Born, the Archon), the party that left them, or the character's own history. Once two voices from the same background have been named, the GM may decide that help arrives from that background.
+
+          Keep the tally hidden. The player should be answering honestly, not steering.
+
+          Help is not the same as rescue. Whatever arrives wants something in return — a character found by the Mist Born is not saved the way a character found by their own party is.
+        questions: Who does this character reach for when there is nothing left? What does it cost to be found by that particular someone?
+
+      - name: How This Ends
+        type: Reaction
+        description: |
+          This scene resolves in one of four ways.
+
+          - **They walk out.** Reaching the current Path — drawing a location that is part of it — puts them back on known ground at its grid coordinates. At night the Path consists only of Stable locations, so the way out narrows after dark.
+          - **They are found.** Help arrives through **Voices in the Mist**, on whatever terms that background demands.
+          - **The mist keeps them.** Reaching 10 Mist tokens, or drawing the Vanishing Mist, marks them **Lost in the Mist** — removed from the active roster, and the player creates a new character. They are not necessarily dead; see `vanishing-mist.md` for recovery hooks.
+          - **They die.** If they mark their last Hit Point, the character is dead. Not lost, not recoverable. This really is the end.
+        questions: If they walk out, what came out with them?
+
+  - tier: 3
+    difficulty: 17
+    features:
+      - name: Alone and at the End of the Rope
+        type: Passive
+        description: |
+          The character regains consciousness alone in the mist, with no sign of the party and no memory of being left.
+
+          Set their Mist tokens to **8** — unless they already have more, in which case leave them. This event never reduces existing corruption.
+
+          The player rolls **1d4** for HP and **1d4** for Stress. Mark all of the character's HP and Stress except that many slots each.
+
+          The GM should state plainly, before the scene begins, that this character may die here. This is dire, and the player should know it going in.
+
+          They are Off-Path. Follow the Off-Path Travel procedure in `path-mechanics.yaml` — shuffle the Unstable cards, draw one per move, and remove the previous card as they advance.
+        questions: What was the last thing they remember? Do they know they were left, or do they assume the party is dead?
+
+      - name: No Help Is Coming
+        type: Passive
+        description: |
+          While the character is alone, their Hope die is reduced one step (d12 → d10 → d8 → d6 → d4, minimum d4). Optimism is a group activity.
+
+          This is a condition, not a scene rule — it lasts exactly as long as the isolation does. It lifts the moment they are no longer alone: meeting a friendly NPC, reuniting with another PC, or rejoining the current Path.
+        questions: What does the silence do to them? What do they start hearing in it?
+
+      - name: Voices in the Mist
+        type: Passive
+        description: |
+          While the character traverses the mist, they see and hear things from their past. Each time they draw a new location card, the GM will ask the player to narrate what they see or hear in the mist:
+
+          - *Who do you hear in the mist?*
+          - *What scene do you see?*
+          - *Whose voice is that, and what are they saying to you?*
+
+          The GM privately notes which background each voice belongs to — a faction (Fire Born, Mist Born, the Archon), the party that left them, or the character's own history. Once two voices from the same background have been named, the GM may decide that help arrives from that background.
+
+          Keep the tally hidden. The player should be answering honestly, not steering.
+
+          Help is not the same as rescue. Whatever arrives wants something in return — a character found by the Mist Born is not saved the way a character found by their own party is.
+        questions: Who does this character reach for when there is nothing left? What does it cost to be found by that particular someone?
+
+      - name: How This Ends
+        type: Reaction
+        description: |
+          This scene resolves in one of four ways.
+
+          - **They walk out.** Reaching the current Path — drawing a location that is part of it — puts them back on known ground at its grid coordinates. At night the Path consists only of Stable locations, so the way out narrows after dark.
+          - **They are found.** Help arrives through **Voices in the Mist**, on whatever terms that background demands.
+          - **The mist keeps them.** Reaching 10 Mist tokens, or drawing the Vanishing Mist, marks them **Lost in the Mist** — removed from the active roster, and the player creates a new character. They are not necessarily dead; see `vanishing-mist.md` for recovery hooks.
+          - **They die.** If they mark their last Hit Point, the character is dead. Not lost, not recoverable. This really is the end.
+        questions: If they walk out, what came out with them?
+
+  - tier: 4
+    difficulty: 20
+    features:
+      - name: Alone and at the End of the Rope
+        type: Passive
+        description: |
+          The character regains consciousness alone in the mist, with no sign of the party and no memory of being left.
+
+          Set their Mist tokens to **8** — unless they already have more, in which case leave them. This event never reduces existing corruption.
+
+          The player rolls **1d4** for HP and **1d4** for Stress. Mark all of the character's HP and Stress except that many slots each.
+
+          The GM should state plainly, before the scene begins, that this character may die here. This is dire, and the player should know it going in.
+
+          They are Off-Path. Follow the Off-Path Travel procedure in `path-mechanics.yaml` — shuffle the Unstable cards, draw one per move, and remove the previous card as they advance.
+        questions: What was the last thing they remember? Do they know they were left, or do they assume the party is dead?
+
+      - name: No Help Is Coming
+        type: Passive
+        description: |
+          While the character is alone, their Hope die is reduced one step (d12 → d10 → d8 → d6 → d4, minimum d4). Optimism is a group activity.
+
+          This is a condition, not a scene rule — it lasts exactly as long as the isolation does. It lifts the moment they are no longer alone: meeting a friendly NPC, reuniting with another PC, or rejoining the current Path.
+        questions: What does the silence do to them? What do they start hearing in it?
+
+      - name: Voices in the Mist
+        type: Passive
+        description: |
+          While the character traverses the mist, they see and hear things from their past. Each time they draw a new location card, the GM will ask the player to narrate what they see or hear in the mist:
+
+          - *Who do you hear in the mist?*
+          - *What scene do you see?*
+          - *Whose voice is that, and what are they saying to you?*
+
+          The GM privately notes which background each voice belongs to — a faction (Fire Born, Mist Born, the Archon), the party that left them, or the character's own history. Once two voices from the same background have been named, the GM may decide that help arrives from that background.
+
+          Keep the tally hidden. The player should be answering honestly, not steering.
+
+          Help is not the same as rescue. Whatever arrives wants something in return — a character found by the Mist Born is not saved the way a character found by their own party is.
+        questions: Who does this character reach for when there is nothing left? What does it cost to be found by that particular someone?
+
+      - name: How This Ends
+        type: Reaction
+        description: |
+          This scene resolves in one of four ways.
+
+          - **They walk out.** Reaching the current Path — drawing a location that is part of it — puts them back on known ground at its grid coordinates. At night the Path consists only of Stable locations, so the way out narrows after dark.
+          - **They are found.** Help arrives through **Voices in the Mist**, on whatever terms that background demands.
+          - **The mist keeps them.** Reaching 10 Mist tokens, or drawing the Vanishing Mist, marks them **Lost in the Mist** — removed from the active roster, and the player creates a new character. They are not necessarily dead; see `vanishing-mist.md` for recovery hooks.
+          - **They die.** If they mark their last Hit Point, the character is dead. Not lost, not recoverable. This really is the end.
+        questions: If they walk out, what came out with them?
+
+featureQuestions:
+  - What does the mist show them that they would rather not see?
+  - Who comes for them — and what do they want in return?
+  - What do the rest of the party believe happened?
+  - What would it take for this character to forgive being left?
