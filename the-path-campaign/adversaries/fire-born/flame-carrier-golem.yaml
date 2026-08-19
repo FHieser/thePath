@@ -1,0 +1,61 @@
+name: Flame Carrier Golem
+category: Solo
+description: A war-construct the size of a house — brass and inscribed stone walking on four heavy limbs. On its back sits a great brazier of burning flame essence, and the air above it bends with heat.
+motives: Carry the bearer, keep the flame lit, crush what comes near, hold the road
+lore: "Fire Born carriers are homes, weapons, and life support at once — a Paladin who leaves their flame weakens, and one whose flame goes out dies. The Flame Carrier Golem is the smallest of them: a single-rider construct built for the Paladins who range ahead of the temple-cities, hunting the god's chains. It does not think. It carries, it burns, and it defends the thing riding it."
+
+tiers:
+  - tier: 3
+    difficulty: 17
+    thresholds:
+      major: 25
+      severe: 40
+    hp: 12
+    stress: 5
+    attack:
+      bonus: '+4'
+      name: Brazen Fists
+      range: Melee
+      damage: 3d12+6 phy
+    experience:
+      - name: Beast of Burden
+        value: 4
+    features:
+      - name: Burning Sanctuary
+        type: Passive
+        description: |
+          The brazier on the back of the golem glows with the flame essence, holding the mist at bay. All creatures within Close range — including PCs — cannot gain Mist tokens. A mist adversary that gains the spotlight within that range takes 1 HP damage.
+
+          While in Battle Stance, the aura burns rather than warms: when a creature makes a successful attack against the Golem from within Very Close range, they must mark a Stress and take 2d8+3 magic damage.
+
+      - name: Relentless (2)
+        type: Passive
+        description: While in Battle Stance, the Golem may be spotlighted up to 2 times per GM turn. Spend Fear as normal.
+
+      - name: Flare Up
+        type: Reaction
+        description: |
+          When the Paladin it carries is attacked or dismounted, the Golem enters Battle Stance and the GM gains 2 Fear. The brazier on its back flares from amber to white and the air above it distorts.
+
+          It does not settle again. Once roused, the Golem remains in Battle Stance for the rest of the scene — even if the Paladin falls.
+
+      - name: Momentum
+        type: Reaction
+        description: When the Golem makes a successful attack against a PC, you gain a Fear.
+
+      - name: Purging Fire
+        type: Action
+        cost: Spend 2 Fear
+        description: |
+          Spend 2 Fear to vent the brazier in an area within Close range. All targets in this area must make an Agility Reaction Roll.
+
+          Targets who fail take 4d6+5 magic damage and remove 1d4 Mist tokens — the flame does not distinguish between burning a thing and cleansing it.
+
+          Targets who succeed must mark 2 Stress or take half damage. They remove no Mist tokens; avoiding the fire means keeping what it would have burned out of them.
+
+          Mist adversaries caught in the area take an additional 1 HP damage.
+
+      - name: Trample
+        type: Action
+        cost: Mark a Stress
+        description: While in Battle Stance, mark a Stress to have the Golem move up to Far range in a straight line, walking through anything in its way. All creatures in its path must succeed on an Agility Reaction Roll or take 2d10+5 physical damage and be knocked over, becoming Vulnerable until they next act.
