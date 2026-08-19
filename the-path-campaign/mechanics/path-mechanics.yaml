@@ -176,6 +176,8 @@ modifiers:
       valueRange: 1-3
       description: |
         The location is touched by THE Nothing's influence, draining hope from those who enter. While at this location, all PCs' Hope dice are reduced in size by X steps (d12→d10→d8→d6→d4, minimum d4). This represents the void's crushing effect on optimism and possibility. Example: Nothing(1) reduces d12 to d10. Nothing(3) reduces d12 to d6. The Hope die returns to normal once PCs leave the location.
+
+        **Meeting Everything:** If a location carries both Nothing and Everything, they cancel. Subtract the smaller value from the larger and apply only the remainder. Nothing(3) with Everything(1) leaves Nothing(2). Equal values cancel completely and neither applies. Divine presence and the void annul each other where they meet.
       counterplay: |
         At the GM's discretion, PCs may discover or craft protective items that reduce or negate the Nothing modifier's effect. Examples might include blessed talismans, Sacred Flame-infused artifacts, or ritual preparations that shield hope from the void's influence.
 
@@ -184,6 +186,8 @@ modifiers:
       valueRange: 1-3
       description: |
         The location is touched by overwhelming divine presence, burning away fear and consequence. While at this location, the GM's Fear dice are reduced in size by X steps (d12→d10→d8→d6→d4, minimum d4). This represents divine power's suppression of tension and danger. Example: Everything(1) reduces d12 to d10. Everything(3) reduces d12 to d6. The Fear die returns to normal once PCs leave the location.
+
+        **Meeting Nothing:** If a location carries both Everything and Nothing, they cancel. Subtract the smaller value from the larger and apply only the remainder. Everything(3) with Nothing(1) leaves Everything(2). Equal values cancel completely and neither applies. Divine presence and the void annul each other where they meet.
       counterplay: |
         At the GM's discretion, adversaries or environmental effects may discover or create corrupting influences that reduce or negate the Everything modifier's effect.
 
