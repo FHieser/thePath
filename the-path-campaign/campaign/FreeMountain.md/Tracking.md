@@ -2,7 +2,7 @@
 
 ## Last Updated
 
-- 11 D
+- 13 D
 
 ## Future Plotlines
 
@@ -20,17 +20,18 @@
 
 - Coin of the Devil: Trade back the Book that was given.
 
+
 ## Planned
 
 - Hund: Build the Stone 1D
 - Hund: Build the Underground 3D
 - Gnomes: Build the Bunker 2D
-- Nix: Build Wand Tier 2
+
 
 
 ## Current Development
 
-- Hund baut die Mine 2 D
+- 
 
 ## Completed
 
@@ -42,7 +43,8 @@
 - Nix: Base Grappling Hand
 - Nix: Grappling Hand
 - Brenner: Improve Flame Essence (3 to 5)
-
+- Hund: mine build for underground access
+Hund: Bunker build
 - Player: 6 Deer
 
 ### Locations
@@ -63,7 +65,8 @@
   - Build 1
 
 - Lost Flame:
-  - Dontated 4 Fa´lame
+  - Donated 4 Flame
+  - Broken Fire Golem revived by proximity to the flame; brazier pulled up and carried to Village (see Broken Fire Golem, npc-defenders.yaml). Not yet planted anywhere — decide placement before it can start generating Flame Essence via the Flame Funnel rule.
 
 ## Char Progression
 
