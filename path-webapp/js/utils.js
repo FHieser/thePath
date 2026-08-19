@@ -14,6 +14,7 @@ const ADVERSARY_FOLDERS = [
   { key: 'siege',          name: 'Siege',                path: '../the-path-campaign/adversaries/siege/' },
   { key: 'village-siege',  name: 'Village Siege',        path: '../the-path-campaign/mechanics/village-siege/adversaries/' },
   { key: 'the-croak',     name: 'The Croak',            path: '../the-path-campaign/adversaries/the-croak/' },
+  { key: 'fire-born',      name: 'Fire Born',            path: '../the-path-campaign/adversaries/fire-born/' },
 ];
 
 // Location folder registry — surface, underground, starfall city, village.

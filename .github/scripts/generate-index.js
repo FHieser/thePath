@@ -19,6 +19,7 @@ const FOLDERS = [
   'the-path-campaign/adversaries/siege',
   'the-path-campaign/mechanics/village-siege/adversaries',
   'the-path-campaign/adversaries/the-croak',
+  'the-path-campaign/adversaries/fire-born',
   'the-path-campaign/locations/path-locations/surface-locations',
   'the-path-campaign/locations/path-locations/underground-locations',
   'the-path-campaign/locations/path-locations/starfall-city',
