@@ -1,0 +1,224 @@
+name: Don't Wake the Beast
+category: Traversal
+description: There is something here. Better not wake it.
+impulses: One step at a time, hold your breath, don't wake it up
+
+trigger: |
+  Activate when the party must move through or past an area where something dangerous lies dormant, and rousing it would be worse than whatever they came here for.
+
+  Examples: crossing a crater rim past a sleeping leviathan; picking through a chamber of crystallised dead; skirting a hoard its owner is lying on; moving through a nest while its occupant sleeps; passing a construct that has not been given a reason to activate in a very long time.
+
+tiers:
+  - tier: 1
+    difficulty: 11
+    features:
+      - name: Stir
+        type: Passive
+        description: |
+          The sleeper wakes when Stir reaches **2 + (number of PCs × (number of traversal features − 1))**.
+
+          Count traversal features when setting the scene up: anything tricky enough that crossing it risks noise — faulty equipment, a heaped pile of junk, a hall that echoes, a floor that will not hold quietly. A four-person party crossing three such features wakes the sleeper at 10.
+
+          **Stir rises:**
+
+          - A failed reaction roll to cross — **+1** per failure
+          - Taking something the sleeper lies upon — **+2** per piece
+          - A loud or hurried action — **+1**
+          - The GM spends a Fear — **+1**
+
+          **Stir falls:**
+
+          - A PC marks **1 Stress** to move with total control — breath held, gear stilled, every motion deliberate — reducing Stir by **1**. Any number of PCs may do this, at any point.
+
+          Silence is not free and it is not a roll. It is a resource the party spends, which means they arrive on the far side either loud or exhausted.
+        questions: What does the party hear that tells them how close they are? Who is the first to suggest turning back?
+
+      - name: Crossing
+        type: Action
+        description: |
+          Each PC makes a **reaction roll** to get themselves across a traversal feature. The GM sets the trait to fit the obstacle — Agility for a rotted gantry, Strength for a shifting spar, Instinct for footing that cannot be seen.
+
+          **Fear from the attempt.** Reaction rolls generate no Fear by default, which would leave the GM starved of fuel across an entire crossing — so this event grants it directly instead. **Each attempt to cross a traversal feature gives the GM 1 Fear.** Once per attempt, regardless of how many PCs move during it:
+
+          - The whole party crossing together is one attempt, one Fear
+          - A straggler crossing afterwards is a second attempt, a second Fear
+
+          Splitting up is therefore more expensive than moving as one. The Fear is not the climbing — it is the waiting. It is the people already across, watching someone they cannot reach take the same rig they just survived, able to do nothing but hold still.
+
+          **Two deliberate departures from the standard reaction roll**, both intentional here:
+
+          - PCs **may Help an Ally** — steadying a ladder, taking someone's weight, guiding a foot to a hold
+          - A **critical success gains a Hope and clears a Stress** as normal, on top of ignoring the effect entirely and adding no Stir
+        questions: What does this obstacle sound like when it fails? Who goes first, and why did they volunteer?
+
+      - name: It Wakes
+        type: Reaction
+        description: |
+          When this event activates, **designate the sleeper**. Its own statblock governs what waking means.
+
+          **At two below the threshold, it stirs.** The GM describes the warning in whatever terms suit the sleeper — this is the party's last clear signal, and the moment Stress spent on holding still buys the most.
+
+          **At the threshold, it wakes.** What follows is between the party and whatever they just woke.
+        questions: What was the last sound before it moved? Does it know where they are, or only that something is there?
+
+  - tier: 2
+    difficulty: 14
+    features:
+      - name: Stir
+        type: Passive
+        description: |
+          The sleeper wakes when Stir reaches **2 + (number of PCs × (number of traversal features − 1))**.
+
+          Count traversal features when setting the scene up: anything tricky enough that crossing it risks noise — faulty equipment, a heaped pile of junk, a hall that echoes, a floor that will not hold quietly. A four-person party crossing three such features wakes the sleeper at 10.
+
+          **Stir rises:**
+
+          - A failed reaction roll to cross — **+1** per failure
+          - Taking something the sleeper lies upon — **+2** per piece
+          - A loud or hurried action — **+1**
+          - The GM spends a Fear — **+1**
+
+          **Stir falls:**
+
+          - A PC marks **1 Stress** to move with total control — breath held, gear stilled, every motion deliberate — reducing Stir by **1**. Any number of PCs may do this, at any point.
+
+          Silence is not free and it is not a roll. It is a resource the party spends, which means they arrive on the far side either loud or exhausted.
+        questions: What does the party hear that tells them how close they are? Who is the first to suggest turning back?
+
+      - name: Crossing
+        type: Action
+        description: |
+          Each PC makes a **reaction roll** to get themselves across a traversal feature. The GM sets the trait to fit the obstacle — Agility for a rotted gantry, Strength for a shifting spar, Instinct for footing that cannot be seen.
+
+          **Fear from the attempt.** Reaction rolls generate no Fear by default, which would leave the GM starved of fuel across an entire crossing — so this event grants it directly instead. **Each attempt to cross a traversal feature gives the GM 1 Fear.** Once per attempt, regardless of how many PCs move during it:
+
+          - The whole party crossing together is one attempt, one Fear
+          - A straggler crossing afterwards is a second attempt, a second Fear
+
+          Splitting up is therefore more expensive than moving as one. The Fear is not the climbing — it is the waiting. It is the people already across, watching someone they cannot reach take the same rig they just survived, able to do nothing but hold still.
+
+          **Two deliberate departures from the standard reaction roll**, both intentional here:
+
+          - PCs **may Help an Ally** — steadying a ladder, taking someone's weight, guiding a foot to a hold
+          - A **critical success gains a Hope and clears a Stress** as normal, on top of ignoring the effect entirely and adding no Stir
+        questions: What does this obstacle sound like when it fails? Who goes first, and why did they volunteer?
+
+      - name: It Wakes
+        type: Reaction
+        description: |
+          When this event activates, **designate the sleeper**. Its own statblock governs what waking means.
+
+          **At two below the threshold, it stirs.** The GM describes the warning in whatever terms suit the sleeper — this is the party's last clear signal, and the moment Stress spent on holding still buys the most.
+
+          **At the threshold, it wakes.** What follows is between the party and whatever they just woke.
+        questions: What was the last sound before it moved? Does it know where they are, or only that something is there?
+
+  - tier: 3
+    difficulty: 17
+    features:
+      - name: Stir
+        type: Passive
+        description: |
+          The sleeper wakes when Stir reaches **2 + (number of PCs × (number of traversal features − 1))**.
+
+          Count traversal features when setting the scene up: anything tricky enough that crossing it risks noise — faulty equipment, a heaped pile of junk, a hall that echoes, a floor that will not hold quietly. A four-person party crossing three such features wakes the sleeper at 10.
+
+          **Stir rises:**
+
+          - A failed reaction roll to cross — **+1** per failure
+          - Taking something the sleeper lies upon — **+2** per piece
+          - A loud or hurried action — **+1**
+          - The GM spends a Fear — **+1**
+
+          **Stir falls:**
+
+          - A PC marks **1 Stress** to move with total control — breath held, gear stilled, every motion deliberate — reducing Stir by **1**. Any number of PCs may do this, at any point.
+
+          Silence is not free and it is not a roll. It is a resource the party spends, which means they arrive on the far side either loud or exhausted.
+        questions: What does the party hear that tells them how close they are? Who is the first to suggest turning back?
+
+      - name: Crossing
+        type: Action
+        description: |
+          Each PC makes a **reaction roll** to get themselves across a traversal feature. The GM sets the trait to fit the obstacle — Agility for a rotted gantry, Strength for a shifting spar, Instinct for footing that cannot be seen.
+
+          **Fear from the attempt.** Reaction rolls generate no Fear by default, which would leave the GM starved of fuel across an entire crossing — so this event grants it directly instead. **Each attempt to cross a traversal feature gives the GM 1 Fear.** Once per attempt, regardless of how many PCs move during it:
+
+          - The whole party crossing together is one attempt, one Fear
+          - A straggler crossing afterwards is a second attempt, a second Fear
+
+          Splitting up is therefore more expensive than moving as one. The Fear is not the climbing — it is the waiting. It is the people already across, watching someone they cannot reach take the same rig they just survived, able to do nothing but hold still.
+
+          **Two deliberate departures from the standard reaction roll**, both intentional here:
+
+          - PCs **may Help an Ally** — steadying a ladder, taking someone's weight, guiding a foot to a hold
+          - A **critical success gains a Hope and clears a Stress** as normal, on top of ignoring the effect entirely and adding no Stir
+        questions: What does this obstacle sound like when it fails? Who goes first, and why did they volunteer?
+
+      - name: It Wakes
+        type: Reaction
+        description: |
+          When this event activates, **designate the sleeper**. Its own statblock governs what waking means.
+
+          **At two below the threshold, it stirs.** The GM describes the warning in whatever terms suit the sleeper — this is the party's last clear signal, and the moment Stress spent on holding still buys the most.
+
+          **At the threshold, it wakes.** What follows is between the party and whatever they just woke.
+        questions: What was the last sound before it moved? Does it know where they are, or only that something is there?
+
+  - tier: 4
+    difficulty: 20
+    features:
+      - name: Stir
+        type: Passive
+        description: |
+          The sleeper wakes when Stir reaches **2 + (number of PCs × (number of traversal features − 1))**.
+
+          Count traversal features when setting the scene up: anything tricky enough that crossing it risks noise — faulty equipment, a heaped pile of junk, a hall that echoes, a floor that will not hold quietly. A four-person party crossing three such features wakes the sleeper at 10.
+
+          **Stir rises:**
+
+          - A failed reaction roll to cross — **+1** per failure
+          - Taking something the sleeper lies upon — **+2** per piece
+          - A loud or hurried action — **+1**
+          - The GM spends a Fear — **+1**
+
+          **Stir falls:**
+
+          - A PC marks **1 Stress** to move with total control — breath held, gear stilled, every motion deliberate — reducing Stir by **1**. Any number of PCs may do this, at any point.
+
+          Silence is not free and it is not a roll. It is a resource the party spends, which means they arrive on the far side either loud or exhausted.
+        questions: What does the party hear that tells them how close they are? Who is the first to suggest turning back?
+
+      - name: Crossing
+        type: Action
+        description: |
+          Each PC makes a **reaction roll** to get themselves across a traversal feature. The GM sets the trait to fit the obstacle — Agility for a rotted gantry, Strength for a shifting spar, Instinct for footing that cannot be seen.
+
+          **Fear from the attempt.** Reaction rolls generate no Fear by default, which would leave the GM starved of fuel across an entire crossing — so this event grants it directly instead. **Each attempt to cross a traversal feature gives the GM 1 Fear.** Once per attempt, regardless of how many PCs move during it:
+
+          - The whole party crossing together is one attempt, one Fear
+          - A straggler crossing afterwards is a second attempt, a second Fear
+
+          Splitting up is therefore more expensive than moving as one. The Fear is not the climbing — it is the waiting. It is the people already across, watching someone they cannot reach take the same rig they just survived, able to do nothing but hold still.
+
+          **Two deliberate departures from the standard reaction roll**, both intentional here:
+
+          - PCs **may Help an Ally** — steadying a ladder, taking someone's weight, guiding a foot to a hold
+          - A **critical success gains a Hope and clears a Stress** as normal, on top of ignoring the effect entirely and adding no Stir
+        questions: What does this obstacle sound like when it fails? Who goes first, and why did they volunteer?
+
+      - name: It Wakes
+        type: Reaction
+        description: |
+          When this event activates, **designate the sleeper**. Its own statblock governs what waking means.
+
+          **At two below the threshold, it stirs.** The GM describes the warning in whatever terms suit the sleeper — this is the party's last clear signal, and the moment Stress spent on holding still buys the most.
+
+          **At the threshold, it wakes.** What follows is between the party and whatever they just woke.
+        questions: What was the last sound before it moved? Does it know where they are, or only that something is there?
+
+featureQuestions:
+  - What is asleep here, and why has nobody dealt with it?
+  - What is worth crossing this for, when going around is impossible?
+  - What did the last group to try this leave behind?
+  - If the party makes it across in silence, what do they carry away from it?

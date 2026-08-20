@@ -132,6 +132,7 @@ const CONTENT_INDEX = {
     "wetlands.yaml"
   ],
   "../the-path-campaign/lore/events/": [
+    "dont-wake-the-beast.yaml",
     "guardian-projection.yaml",
     "in-the-eye-of-the-titan.yaml",
     "left-to-the-mist.yaml"
