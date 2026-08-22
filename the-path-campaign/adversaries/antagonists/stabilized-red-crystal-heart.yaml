@@ -1,0 +1,26 @@
+name: Stabilized Red Crystal Heart
+category: Support
+description: A tank taller than a person, filled with dark liquid. Suspended at its centre is a red crystal cut into eight faces, turning slowly and never quite settling. Copper tubing runs from the housing out through the walls to every room in the building.
+motives: Sustain the receiver, power the works, endure. A static objective — it does not move, act, or take the spotlight.
+lore: "A hemomantic engine. The crystal is stabilized in a bath that keeps it from burning itself out, and bound to a single receiver through a matching stone set into their body. While it stands, it returns to the receiver whatever their surroundings take from them — which is what makes it possible to live and work somewhere nothing should. Everything else in the building runs off the same lines. Building one is the work of years. Moving one is not possible; the binding is to the place as much as to the person."
+
+tiers:
+  - tier: 3
+    difficulty: 14
+    thresholds:
+      major: 12
+      severe: 24
+    hp: 10
+    stress: 5
+    features:
+      - name: Conduit
+        type: Passive
+        description: |
+          The Heart is bound to a single receiver, who carries its conduit — a matching red crystal set into their body.
+
+          While the Heart stands, the receiver cannot be killed within this location. When the receiver is spotlighted, they clear 3 HP. If they are brought to 0 HP they are not dead — after a minute they stand back up with 3 HP.
+
+      - name: Discharge
+        type: Reaction
+        description: |
+          When the Heart takes damage, the fluid flashes and the housing throws off a pulse of raw hemomantic charge. All creatures within Close range take 1 HP damage.
