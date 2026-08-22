@@ -52,6 +52,17 @@
 
       Each time you use a dose, the next time you would recover Stress (from any source), you recover 1 less Stress for each dose used since your last Long Rest. If this reduces your recovery to 0 or less, you recover no Stress from that source.
 
+- name: Smoke Vials
+  type: General
+  usage: Consumable
+  tier: 2
+  tradeValue: 1.5
+  flavor: "Three squat vials of grey compound, stoppered with wax and labelled in a precise hand."
+  effect:
+    category: Utility
+    description: |
+      Throw the vials to shatter them and fill the area with obscuring vapour, then move up to Close range under cover of it. You cannot be targeted by ranged attacks until you make an attack.
+
 - name: Silkweaver
   type: General
   usage: Reusable
@@ -229,6 +240,19 @@
     category: Restoration
     description: |
       Inject during an encounter. Regain 5 HP. Gain 2 Stress. Mark your first unmarked Hit Point — this slot cannot be healed until you spend a Long Rest action to regenerate it.
+
+- name: Hemofog Vial
+  type: Blood
+  usage: Consumable
+  tier: 2
+  tradeValue: 2
+  flavor: "Smoke vials enchanted with hemomancy. The blood ignites with the blackpowder and leaves a blood-red mist that attacks the lifeforce of anything still standing in it."
+  effect:
+    category: Disruption
+    description: |
+      Mark 1 HP to shatter the vial, mixing your own blood into the vapour, then move up to Close range under cover of it. You cannot be targeted by ranged attacks until you make an attack.
+
+      Each other creature within Close range must succeed on an Agility Reaction Roll (13) or take 2d8 magic damage.
 
 - name: Red Eye
   type: Blood
