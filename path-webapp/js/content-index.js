@@ -2,7 +2,8 @@
 // Run: node .github/scripts/generate-index.js
 const CONTENT_INDEX = {
   "../the-path-campaign/adversaries/antagonists/": [
-    "archon-of-mercy.yaml"
+    "archon-of-mercy.yaml",
+    "stabilized-red-crystal-heart.yaml"
   ],
   "../the-path-campaign/adversaries/beasts/": [
     "bff-big-frog.yaml",
@@ -67,6 +68,7 @@ const CONTENT_INDEX = {
     "hollow-woods.yaml",
     "lost-flame.yaml",
     "mantaray-tree.yaml",
+    "meteorite-lab.yaml",
     "misty-waters.yaml",
     "monastery.yaml",
     "overgrown-temple.yaml",
@@ -75,6 +77,7 @@ const CONTENT_INDEX = {
     "shrinewood.yaml",
     "silken-spire.yaml",
     "stone-works.yaml",
+    "the-fallen-star.yaml",
     "the-giant-walls.yaml",
     "the-reeds.yaml",
     "unstable-mist.yaml",

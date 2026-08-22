@@ -1,0 +1,97 @@
+name: The Fallen Star
+tier: 3
+category: Traversal
+description: |
+  The crater where the star came down. A wide bowl of fused glass and crystal, with the meteorite still at the bottom — most of it intact. The material here is raw and unspread, which is why there are so few crystallised dead: almost nobody was here after the plague spread. It did its work elsewhere. A route runs around the rim through abandoned works — rotting mining rigs, a crystalline cavern that opens onto the hollow, a field of glass spires strung with newer instruments. Nobody crosses the middle.
+tagline: A wish, a star, everything they always wanted.
+impulses: |
+  Keep the sleeper sleeping, offer more than they can carry, a way around
+difficulty: 17
+modifiers:
+  - name: Unstable
+  - name: Cave Mouth
+  - name: Linked
+    value: Meteorite Lab
+potentialAdversaries: Crystal creatures; the sleeper in the hollow
+features:
+  - name: The Motherlode
+    type: Passive
+    description: |
+      This location runs on **Don't Wake the Beast**. Designate the sleeper in the hollow. The three rim features below are its traversal features, so a four-person party wakes it at **Stir 10**.
+
+      The meteorite lies at the bottom of the crater, largely intact — the raw material every starfall crystal on the Path is a fragment of. Here it isn't grown through anyone's ribcage. It's simply lying there, in quantity, unclaimed.
+
+      Loose crystal is scattered across the hollow's lower edge and can be prised free without tools. Each piece taken adds **+2 Stir** and yields **1d3+2 Crystals**.
+
+      There is no route across the middle. Anything crossing the hollow passes within reach of the sleeper.
+    questions: |
+      What is asleep down there, and how did it come to be lying on the star? Does it predate the impact, or did it arrive with it?
+
+  - name: The Undercut
+    type: Passive
+    description: |
+      A shaft cut down through the crater wall, connecting the hollow to the mining system below. This is how anyone reaches the crater. Travellers crossing the surface come down through it; anything climbing from underground comes up through it. Every approach passes through the Undercut.
+
+      This location has the **Cave Mouth** modifier — the shaft continues down into the mining system. It was sealed from beneath, and crystal growth has closed that passage thick enough to block an ascent, so from below it must be cleared to pass. Whatever it was sealed against, it was sealed downward: against what comes out, not what goes in.
+    questions: |
+      Who dug toward this, and how long before they understood what they were digging toward? Is the seal still holding, or has the crystal done that work instead?
+
+  - name: The Old Extraction Rigs
+    type: Passive/Action
+    description: |
+      The first stretch of the rim route. Timber and iron scaffolding built out over the edge by people who meant to take the star apart and haul it away piece by piece. Nothing has been maintained since they stopped. Platforms sag, cables have rusted through, and whole sections hang from a single anchor.
+
+      A traversal feature. Each PC crosses one of two ways:
+
+      - **Fast** — a single Agility or Strength reaction roll at this location's Difficulty.
+      - **Careful** — two reaction rolls at Difficulty 13, working the structure rather than trusting it. This counts as two crossing attempts, so the GM gains 2 Fear.
+
+      **The Winch:** A hand-cranked lift still turns, and can carry the whole party across in one go with no reaction rolls at all. The cranking is a long grinding noise — add **1d[party size] + 1** Stir. The GM gains 1 Fear for the crossing as normal. For party sizes without a matching die, halve a larger one and round up: three PCs roll a d6 and halve, five PCs roll a d10 and halve.
+    questions: |
+      Who built this, and how long did they work before they stopped? What is still lashed to the platforms that they meant to come back for?
+
+  - name: Crystal Gallery
+    type: Passive/Action
+    description: |
+      A cavern along the rim, walls and ceiling grown thick with crystal formations. Several openings look down into the hollow. You can see the meteorite from here, and what is lying on it.
+
+      A traversal feature. Crossing requires a **Finesse or Instinct** reaction roll — moving through formations that will ring if struck.
+
+      **Resonance:** The crystal carries sound. Every failure in this cavern adds **+2 Stir** instead of +1.
+
+      **The Crane:** An extraction crane still reaches from the centre of the gallery out over the hollow. A PC can climb the arm and work loose the meteorite's best material — an Agility roll:
+
+      - **Success with Hope** — +1 Stir, gain 5 Crystals
+      - **Success with Fear** — +2 Stir, gain 5 Crystals
+      - **Failure with Hope** — +1 Stir, nothing
+      - **Failure with Fear** — +3 Stir, nothing
+
+      Failures on the crane do not take the Resonance doubling. The material out there does not run out.
+    questions: |
+      What can be seen through the openings that the party would rather not have seen? How long has the crane been hanging there, and who left it extended?
+
+  - name: The Instrument Field
+    type: Passive/Action
+    description: |
+      The impact threw molten rock outward and it cooled where it landed: a field of fused glass spires along the crater's edge, brittle and sharp. Threaded through it is newer work — cabling, sensor housings, measuring stakes driven into the glass, all of it maintained. Someone is still working here.
+
+      A traversal feature. Crossing requires an **Agility or Knowledge** reaction roll — picking through the spires, or reading the instrument layout to find the route its builder uses.
+
+      **Active Instruments:** The instruments are live. Any crossing here, successful or not, tells the Archon that someone is coming. He is not alarmed by this.
+
+      Breaking them is loud. Damaging the instruments adds Stir — **+1** for a cut cable or a toppled housing, up to **+3** for wrecking a section thoroughly. The glass carries it.
+
+      **Failsafe Mist Dispersal:** Pressurised tanks stand at the field's edge, hoses running out over the hollow and angled down. Releasing them floods the crater with mist. **Stir drops to 0** and every creature in the location gains **3 Mist tokens**, the party included. Stillness reinforces stillness — this works even if the sleeper has already risen. It settles again.
+
+      There is one charge.
+
+      Beyond the field lies the **Meteorite Lab**.
+    questions: |
+      What is he measuring, and for how long? Does he see who crossed, or only that something did?
+
+featureQuestions:
+  - What did the last group to attempt this crossing leave behind on the rim?
+  - How much of the hoard would it take to change the Village's fortunes, and how much can anyone actually carry out?
+  - What woke the sleeper the last time, and who was here to see it?
+  - If the Failsafe is spent, what does the Archon do about replacing it?
+  - Does anything else know this place exists, and what would they do with it?

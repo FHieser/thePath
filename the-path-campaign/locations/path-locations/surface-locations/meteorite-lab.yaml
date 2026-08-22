@@ -1,0 +1,125 @@
+name: Meteorite Lab
+tier: 3
+category: Exploration
+description: |
+  The mine's old overseer station, on a spur at the crater's edge. Four rooms and a platform, reached by a ropeway built for people rather than ore. The Archon of Mercy took it whole and changed only what he needed to. Everything in it is aimed at one question, and he will tell you what the question is if you ask.
+tagline: An overseer's station at the crater's edge, still watching, still recording.
+impulses: |
+  The Great Work, at the edge of the crater, what things will come from this?
+difficulty: 17
+modifiers:
+  - name: Unstable
+  - name: Inhabited
+  - name: Linked
+    value: The Fallen Star
+potentialAdversaries: The Archon of Mercy; Stabilized Red Crystal Heart
+features:
+  - name: The Overseer Building
+    type: Passive
+    description: |
+      This location is **Linked to The Fallen Star** and always appears with it. The building sits on the crater's edge; everything it watches, measures and reaches is over there.
+
+      It was the overseer housing and planning station, set on its own spur above the crater so the people running the extraction could watch it without walking down. The ropeway that reaches it was built to carry people, a few at a time, and nothing heavier.
+
+      Players arrive at **the Overlook**, at the ropeway's end. Everything else opens from there.
+
+      Ropeway → The Overlook → The Sample Wall → The Graft Room → The Red Lab
+    questions: |
+      How long has he been here, and what did the place look like when he arrived? What did the overseers leave behind that he decided was worth keeping?
+
+  - name: The Overlook
+    type: Passive/Action
+    description: |
+      The end of the ropeway. A railed platform and a squat stone room on a spur standing out over the hollow of The Fallen Star, positioned so the people running the extraction could see every part of the works at once. The sight lines are still perfect. The Archon has filled the room with optics, plate glass and recording gear, all of it aimed downward, all of it maintained. The Failsafe's tanks and compressors stand at the platform's edge, plumbed down into the crater.
+
+      This is where he learned that the mist quiets the thing below.
+
+      **Sight Lines:** From here the whole of The Fallen Star reads at a glance — the rim route, all three of its traversal features, and where the crystal lies thickest.
+
+      **The Tank Gauge:** A single dial reads the Failsafe Mist Dispersal's charge. It shows whether the failsafe can still be used, and nothing else.
+
+      **The Stir Meter:** A needle and a scale, wired to sensors across the hollow. It shows the current Stir value from *Don't Wake the Beast* as it runs at The Fallen Star, and the number at which the sleeper wakes.
+
+      **Remote Release:** The Failsafe Mist Dispersal can be triggered from here. Same effect, same single charge — every creature at The Fallen Star gains 3 Mist tokens. The platform stands clear of it.
+    questions: |
+      What is the first thing the party sees on the ride out? Who looks down, and who does not?
+
+  - name: The Sample Wall
+    type: Passive/Action
+    description: |
+      The planning room, walls shelved floor to ceiling. Sealed jars and mounted plates in strict order: mist-corrupted tissue, plague crystal at every stage, raw fragments from the hollow. Each labelled, dated, cross-referenced. The mine's own extraction ledgers are still here, shoved to the lower shelves and annotated in a second, newer hand.
+
+      One jar holds a hand.
+
+      **The Notes:** Read the wall in order — or simply ask, because he will explain — and the findings come out roughly like this:
+
+      - *The kingdom below was infected by the crater's crystal long before the mist came. The mist arrived shortly after, and swallowed what was left.*
+      - *Concentrated mist keeps the crystal dormant. This appears reliable.*
+      - *The crystals are empty. They want to be filled. Given energy and time, they grow.*
+      - *Flesh, mist and crystal combine in ways worth pursuing.*
+      - *There is a city somewhere in the mist holding a great deal of this material. Hybrids have formed there. It should be examined.*
+      - *The origin of the crystal is the meteorite. The origin of the meteorite is unknown. Divine, possibly.*
+      - *The purest material is at the central mount. A large creature is lying on it.*
+      - *I lost a hand to that creature. It is preserved here, as a reminder not to do anything so stupid again.*
+      - *Crystal combined with hemomancy produces a stabilized pulse. This could serve as a battery, or a generator.*
+
+      **Salvage:** 20 Crystals are displayed across the wall, along with roughly 6 trade points of goods.
+    questions: |
+      Which note does the party read first, and which one do they go back to? Is anything on the shelves labelled with a name they recognise?
+
+  - name: The Graft Room
+    type: Passive/Action
+    description: |
+      The old shift room, cleared and re-floored. Tables with drains cut into them. Racks of fine tools kept oiled and in order — chisels, probes and separators that appear highly effective at manipulating crystalline structures without shattering them. Along one wall, work at various stages: tissue with crystal driven into it, held in frames and under glass. Some of it is preserved. Some of it is not.
+
+      **The Offer:** He will graft crystal into a living body. He has done it to himself, and he explains the risks accurately beforehand, because a subject who consents produces cleaner data.
+
+      The first graft is free. Every graft after the first permanently marks one Hit Point slot, which can never be cleared.
+
+      - **Mist-Hardened** — seeded through the lungs and throat. Your corruption curve shifts one step right. The first Mist token has no effect; you suffer the 1–3 effects at 2–4, the 4–6 effects at 5–7, both tiers at 8–10, and you are not consumed until 11.
+      - **Blood-Fed** — woven into the marrow. At the start of each rest, clear 1 additional Hit Point. You may also fill one blood reserve without spending HP.
+      - **Braced** — driven along the bones of the arms and legs. Once per long rest, turn a failed Strength, Agility or Finesse roll into a success with Fear.
+      - **Wired** — laid along the spine and behind the eyes. Once per long rest, turn a failed Knowledge, Instinct or Presence roll into a success with Fear.
+
+      These four are what he has ready. **Stronger work is possible**, and he is willing to attempt it — negotiate the effect and its price with the GM directly. He will want something in return, and it will not be crystals.
+    questions: |
+      What did he take from, to have this much on the wall? Who agreed?
+
+  - name: The Red Lab
+    type: Passive/Action
+    description: |
+      The mine's old assay room, stripped and rebuilt. Copper tubing runs the walls, glass vessels are racked by size, and the benches are scored with heat marks and older stains. Everything is labelled in a precise hand. At the centre stands the tank.
+
+      The **Stabilized Red Crystal Heart** is here. See its statblock.
+
+      **Salvage:** The racks hold finished work. The GM decides what is actually on them — players claim from what is there, not from the catalogue. A reasonable stock is up to 4 trade points' worth of Blood items.
+
+      **Crafting here:** An excellent workshop, and better while the Heart stands.
+
+      - **Short Rest** — ×2 while the Heart stands, ×1.5 without it
+      - **Long Rest** — ×4 while the Heart stands, ×3 without it
+
+      A single crafting action at this location can produce items totalling up to 4 trade points, replacing the standard 2-point ceiling. This applies on either rest.
+    questions: |
+      What is running on the lines that the party can hear but not see? What stops when the tank does?
+
+  - name: Blood Trade
+    type: Action
+    description: |
+      While the Archon is alive and at this location, the lab is a trading post. He deals in four things, and assigns each a trade value on the spot:
+
+      - **Crystals** — 5 Crystals for 2 trade points
+      - **Hemomantic information** — methods, results, failures, anything he does not already have. 0.5–2 points, by how new it is to him
+      - **Crystal-twisted creatures** — bodies, parts, or firsthand accounts. 1–2 points for material, 0.5–1 for a good account
+      - **Manipulated crystal items** — at the item's listed trade value
+
+      He pays in what the building already holds: Blood items from the Red Lab racks, access to the workshop and its crafting bonus, grafts beyond the free first, and answers — which are frequently the most valuable thing on the table.
+    questions: |
+      What does he ask about first? What does he write down afterwards?
+
+featureQuestions:
+  - If a party member arrives carried rather than climbing, what state is he keeping them in when the others find them?
+  - What does he want badly enough to break his own rule about not fighting?
+  - If the Heart is destroyed, where does he go next, and what does he leave running behind him?
+  - Which of the nine notes is the one he is actually working on right now?
+  - What would it take for him to consider the party colleagues rather than material?
