@@ -424,6 +424,35 @@ mistMechanics:
         - tokenRange: 10+
           effect: Your character is consumed by the mist and lost. Create a new character.
 
+customExperiences:
+  description: |
+    Custom Experiences are campaign-specific Experience categories. Each category defines its own mechanics; each player supplies their own fiction for how their character does it. Two characters holding the same category may describe it completely differently — one a steam exhaust venting the mist away, another an inherited chaos-working — and both use the same rule.
+
+    Like any Experience, a custom Experience has a value. Unlike a standard Experience, that value does not simply add to rolls: each category defines what its own value means. Custom Experiences can be granted to the players through events, quests or other means that the GM deems appropriate.
+
+  list:
+    - name: Mist Warding
+      summary: Hold the mist off, by whatever means the character's fiction supplies.
+      description: |
+        Spend Hope to negate 1 Mist token as it would be gained.
+
+        Your first uses since your last long rest — up to your Mist Warding value — cost **1 Hope** each. Every use after that costs 1 more Hope than the last: the next costs 2, then 3, then 4, and so on. It always negates exactly **1** token, whatever it cost.
+
+        The count resets on a long rest.
+      example: |
+        Mist Warding 2. The first and second uses cost 1 Hope each and negate 1 token each. The third costs 2 Hope and still negates 1. The fourth costs 3.
+
+    - name: Mist Attuned
+      summary: Carry the mist rather than resist it. Capacity, not protection — and it does not reverse.
+      description: |
+        Your corruption curve shifts right by a number of steps equal to your Mist Attuned value. Tokens up to that value have no effect, every consequence tier begins that much later, and you are not consumed until **10 + your value**.
+
+        Every effect that removes Mist tokens removes that many fewer. An effect that would remove **all** your tokens instead leaves you holding your value.
+      example: |
+        Mist Attuned 2. You suffer the 1-3 effects at 3-5 tokens, the 4-6 effects at 6-8, both tiers at 9-11, and you are consumed at 12. Cliffgold, which removes 3 tokens, removes 1. Dewcleanse, which removes 2, removes none. A long rest at a Flame-Touched location leaves you holding 2.
+      note: |
+        Granted by the Teachings of the Mist event, one rank per teaching, to a maximum of 4.
+
 fearSpendingOptions:
   mist:
     - cost: 2
