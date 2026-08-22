@@ -31,6 +31,8 @@ tiers:
           - A PC marks **1 Stress** to move with total control — breath held, gear stilled, every motion deliberate — reducing Stir by **1**. Any number of PCs may do this, at any point.
 
           Silence is not free and it is not a roll. It is a resource the party spends, which means they arrive on the far side either loud or exhausted.
+
+          **Stir persists.** It does not reset when the party leaves and comes back. It carries over until the location itself resets — on the Path, that means when a new Path is drawn.
         questions: What does the party hear that tells them how close they are? Who is the first to suggest turning back?
 
       - name: Crossing
@@ -83,6 +85,8 @@ tiers:
           - A PC marks **1 Stress** to move with total control — breath held, gear stilled, every motion deliberate — reducing Stir by **1**. Any number of PCs may do this, at any point.
 
           Silence is not free and it is not a roll. It is a resource the party spends, which means they arrive on the far side either loud or exhausted.
+
+          **Stir persists.** It does not reset when the party leaves and comes back. It carries over until the location itself resets — on the Path, that means when a new Path is drawn.
         questions: What does the party hear that tells them how close they are? Who is the first to suggest turning back?
 
       - name: Crossing
@@ -135,6 +139,8 @@ tiers:
           - A PC marks **1 Stress** to move with total control — breath held, gear stilled, every motion deliberate — reducing Stir by **1**. Any number of PCs may do this, at any point.
 
           Silence is not free and it is not a roll. It is a resource the party spends, which means they arrive on the far side either loud or exhausted.
+
+          **Stir persists.** It does not reset when the party leaves and comes back. It carries over until the location itself resets — on the Path, that means when a new Path is drawn.
         questions: What does the party hear that tells them how close they are? Who is the first to suggest turning back?
 
       - name: Crossing
@@ -187,6 +193,8 @@ tiers:
           - A PC marks **1 Stress** to move with total control — breath held, gear stilled, every motion deliberate — reducing Stir by **1**. Any number of PCs may do this, at any point.
 
           Silence is not free and it is not a roll. It is a resource the party spends, which means they arrive on the far side either loud or exhausted.
+
+          **Stir persists.** It does not reset when the party leaves and comes back. It carries over until the location itself resets — on the Path, that means when a new Path is drawn.
         questions: What does the party hear that tells them how close they are? Who is the first to suggest turning back?
 
       - name: Crossing
