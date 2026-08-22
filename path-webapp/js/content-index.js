@@ -14,6 +14,7 @@ const CONTENT_INDEX = {
   "../the-path-campaign/adversaries/mist/": [
     "fallen-lord.yaml",
     "mist-crab.yaml",
+    "mist-envoy.yaml",
     "mist-ghost.yaml",
     "mist-octopus.yaml",
     "mist-spirit.yaml",

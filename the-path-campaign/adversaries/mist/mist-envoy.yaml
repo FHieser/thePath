@@ -1,0 +1,78 @@
+name: Mist Envoy
+category: Leader
+description: |
+  A monk in layered robes, a veil of mist hanging still where its face should be. Tall prayer flags rise from its back, crowded with script, swaying constantly — in the mist, and in air that isn't moving. It carries a censer on a long chain, pouring mist on its path.
+motives: Teach what was promised, thicken the mist, keep the conclave close, give freely
+lore: |
+  An envoy comes when someone has shown themselves willing to hear. It walks out of the fog, thickens the air around it, teaches what it came to teach, and leaves. It does not recruit, bargain or press — the teaching is given freely and refused without penalty. Whoever it was before it took the veil is not something it will discuss, and not something it appears to miss.
+
+tiers:
+  - tier: 2
+    difficulty: 15
+    thresholds:
+      major: 12
+      severe: 24
+    hp: 5
+    stress: 5
+    attack:
+      bonus: '+3'
+      name: Censer Swing
+      range: Very Close
+      damage: 2d6+2 phy
+    experience:
+      - name: Doctrine
+        value: 3
+      - name: Ritual
+        value: 3
+    features:
+      - name: Teachings of Nothing
+        type: Passive
+        description: |
+          While the Mist Envoy is present, this location gains the **Nothing(1)** modifier. If the location already carries Nothing, increase its value by 1 instead.
+
+          Multiple Mist Envoys do not stack — one is enough.
+
+      - name: Leader of the Conclave
+        type: Passive
+        description: |
+          The Mist Envoy never travels alone. It arrives with two Void Pearl Monks, at no Battle Point cost.
+
+      - name: Mist Incense
+        type: Action
+        description: |
+          It swings the censer, and the mist thickens where the smoke goes. Distribute 2 Mist tokens among PCs within Close range.
+
+  - tier: 3
+    difficulty: 18
+    thresholds:
+      major: 18
+      severe: 36
+    hp: 6
+    stress: 6
+    attack:
+      bonus: '+5'
+      name: Censer Swing
+      range: Very Close
+      damage: 3d6+2 phy
+    experience:
+      - name: Doctrine
+        value: 4
+      - name: Ritual
+        value: 4
+    features:
+      - name: Teachings of Nothing
+        type: Passive
+        description: |
+          While the Mist Envoy is present, this location gains the **Nothing(1)** modifier. If the location already carries Nothing, increase its value by 1 instead.
+
+          Multiple Mist Envoys do not stack — one is enough.
+
+      - name: Leader of the Conclave
+        type: Passive
+        description: |
+          The Mist Envoy never travels alone. It arrives with two Void Pearl Monks, at no Battle Point cost.
+
+      - name: Mist Incense
+        type: Action
+        description: |
+          It swings the censer, and the mist thickens where the smoke goes. Distribute 2 Mist tokens among PCs within Close range.
