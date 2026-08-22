@@ -1,0 +1,73 @@
+name: Archon of Mercy, Crystal Infused
+category: Solo
+description: |
+  A gaunt figure in a red embroidered cloak, blue skin stretched over elongated fingers — self-inflicted modifications from years of hemomantic experimentation. One hand is no longer his: crystal in deep arterial red, grown into the wrist and partway up the forearm. He moves with the same clinical precision he always did. He is simply much harder to stop now.
+motives: Perfect his work, acquire knowledge, reclaim Aerion, avoid unnecessary combat, open his own veins when the work requires it
+lore: |
+  Once a legendary war healer who saved countless lives, the Archon turned to hemomancy when conventional methods failed. Shunned for using the blood and bodies of the fallen to save the living, he accepted the mocking title they gave him.
+
+  He has since stopped seeking an answer to his central question and simply answered it, on himself. The organic and the crystalline can be integrated without destroying the host. The hand is the proof. What he lost reaching for the material is preserved in a jar on his sample wall, labelled and dated like everything else.
+
+tiers:
+  - tier: 3
+    difficulty: 18
+    thresholds:
+      major: 18
+      severe: 30
+    hp: 10
+    stress: 6
+    attack:
+      bonus: '+5'
+      name: Sanguine Strike
+      range: Very Close
+      damage: 3d12+6 phy
+    experience:
+      - name: Hemomancy
+        value: 5
+      - name: Alchemy
+        value: 4
+      - name: Medicine
+        value: 4
+    features:
+      - name: Blood Soaked
+        type: Passive
+        description: |
+          While the Archon has 3 or more Hit Points marked, he is **Blood Soaked**. Several of his features have an enhanced effect while he is Blood Soaked, noted in each.
+
+          He can also mark his own Hit Points deliberately as a cost, and frequently does.
+
+      - name: Relentless (2)
+        type: Passive
+        description: |
+          The Archon can be spotlighted up to 2 times per GM turn. Spend Fear as usual to spotlight him.
+
+      - name: Sanguine Bloom
+        type: Action
+        description: |
+          Choose any number of targets within Far range. For each target chosen, the Archon marks 1 Stress and 1 Hit Point — he opens himself, and their blood answers, forcing outward through the skin in spikes.
+
+          Each target marks 2 Hit Points.
+
+          While Blood Soaked, each target marks 3 Hit Points instead. Blood Soaked is checked *before* the cost is paid.
+
+      - name: Seeding
+        type: Action
+        description: |
+          Make an attack against a target within Very Close range. On a success, the Archon presses the crystal hand to them and leaves something behind.
+
+          A **Seeded** target marks 1 Stress each time they are spotlighted. Removing the seed takes an action and costs 1 Hit Point — by then it has taken root.
+
+      - name: Blood Puppet
+        type: Action
+        cost: Spend 2 Fear
+        description: |
+          Make an attack against a creature within Far range, living or dead. On a success, the Archon takes control — move them up to Close range from their position, and/or have them make one standard attack against a target of your choice within their range. The Archon makes the attack roll at his own bonus; the puppet deals its normal damage.
+
+          While Blood Soaked, he takes control of two creatures with the same action, resolving each in turn.
+
+      - name: Smoke Vials
+        type: Action
+        description: |
+          He throws alchemical vials that shatter and release obscuring vapour, then moves up to Close range under cover of it. He cannot be targeted by ranged attacks until he makes an attack.
+
+          While Blood Soaked, the vials carry his own blood into the mix. Each PC within Close range must make an Agility Reaction Roll or take 2d8+3 magic damage.

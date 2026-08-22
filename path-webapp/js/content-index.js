@@ -2,6 +2,7 @@
 // Run: node .github/scripts/generate-index.js
 const CONTENT_INDEX = {
   "../the-path-campaign/adversaries/antagonists/": [
+    "archon-of-mercy-crystal-infused.yaml",
     "archon-of-mercy.yaml",
     "stabilized-red-crystal-heart.yaml"
   ],

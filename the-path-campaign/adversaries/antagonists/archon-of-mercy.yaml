@@ -9,8 +9,8 @@ tiers:
 - tier: 2
   difficulty: 15
   thresholds:
-    major: 3
-    severe: 6
+    major: 12
+    severe: 26
   hp: 6
   stress: 4
   attack:

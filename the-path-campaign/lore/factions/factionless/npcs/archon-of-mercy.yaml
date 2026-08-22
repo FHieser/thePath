@@ -6,6 +6,7 @@ location: Meteorite Lab (formerly The Red Cellar)
 appearance:
   - Gaunt figure in a red embroidered cloak — the only concession to vanity
   - Blue skin stretched over elongated fingers and pointed ears, all self-inflicted through years of hemomantic experimentation
+  - One hand is crystal, deep arterial red, grown into the wrist and partway up the forearm. It is a conduit, and he will say so plainly if asked
   - Moves with clinical precision — every action deliberate, nothing wasted
   - Observes everything as data to be catalogued; eye contact with the Archon feels like being measured
 
@@ -30,10 +31,12 @@ offers:
   - Accurate, unsentimental information — he does not lie, because lying produces bad data
 
 combat_stats:
-  ref: adversaries/antagonists/archon-of-mercy.yaml
-  tier: 2
-  type: Bruiser
-  difficulty: 15
+  ref: adversaries/antagonists/archon-of-mercy-crystal-infused.yaml
+  tier: 3
+  type: Solo
+  difficulty: 18
+  note: |
+    Current form, since the crystal graft. His earlier statblock — Tier 2 Bruiser, difficulty 15 — is preserved at adversaries/antagonists/archon-of-mercy.yaml for encounters set before the crater.
 
 gm_notes:
   - He does not open with threats or posturing. He opens with an observation — something specific
@@ -69,11 +72,11 @@ goals:
 territory:
   type: Hidden
   description: |
-    The Archon operates from temporary laboratories and leaves experiments behind when he moves. His last known base was the Red Cellar beneath the Monastery. He has since relocated to the Meteorite Lab — a hidden site near the crystal impact point referenced in his letter.
+    The Archon operates from temporary laboratories and leaves experiments behind when he moves. His last known base was the Red Cellar beneath the Monastery. He has since relocated to the Meteorite Lab — the old mine overseer station on a spur above the meteorite crater, reached by ropeway and Linked to The Fallen Star.
   locations:
     - The Red Cellar
     - The Monastery
-    - Meteorite Lab (location TBD — near the Crystal Defense Line meteorite shaft)
+    - Meteorite Lab (built into the old overseer station at the crater's edge, Linked to The Fallen Star)
 
 mist_protection:
   type: Adapted
