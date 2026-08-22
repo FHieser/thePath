@@ -1,0 +1,270 @@
+name: The Teachings of the Mist
+category: Event
+description: The teachings of the mist are freely given and change everything.
+impulses: Welcome them deeper, transformation, nothing
+potentialAdversaries: Mist Envoy; Void Pearl Monk
+
+trigger: |
+  Activate when both are true — the party has been offered instruction by something that speaks for the mist, and an envoy is able to reach them.
+
+  Examples: after accepting a Guardian's offer of teaching; when an envoy surfaces to find them; at a mist-thick location where they were told to wait; when a character's corruption has grown deep enough to be noticed from below.
+
+tiers:
+  - tier: 1
+    difficulty: 11
+    features:
+      - name: The Envoy
+        type: Passive
+        description: |
+          When this event activates, designate the envoy — what has surfaced to teach, and where it sits among the mist's ranks. Its own entry governs how it behaves.
+
+          It asks one question: *Did you come for the teachings?* If the answer is yes, the rite begins. It is given freely, and refused without penalty.
+
+          **The rite runs in order:**
+
+          - **The Calling** — the mist is summoned, and the recipient is filled
+          - **The Teaching** — the lesson for the rank being taken
+          - **Internalization** — Mist Attuned rises by 1
+          - **Release** — the mist withdraws from the Path
+        questions: Who did the envoy come for, and how did it know where to find them? What does it do while it waits for an answer?
+
+      - name: The Calling
+        type: Action
+        description: |
+          The envoy calls, and the mist comes — not as weather, but as attention. It costs nothing to summon and takes nothing while it is here.
+
+          Each recipient's Mist tokens are **filled up to** the number for the teaching they are taking. If they already hold more, they keep what they have.
+
+          - First teaching — fill to **6**
+          - Second teaching — fill to **8**
+          - Third teaching — fill to **10**
+          - Fourth teaching — fill to **12**
+
+          Tokens gained this way carry no immediate consequence — no Hope lost, no Stress marked, no Fear to the GM, no Hit Point.
+        questions: What does being filled feel like from the inside? Who in the party watches, and what do they see?
+
+      - name: The Teaching
+        type: Action
+        description: |
+          The envoy gives the lesson for the rank being taken.
+
+          **First** — *The mist is not hostile. It does not want anything from you. It simply is — decided, long ago, by a higher power.*
+
+          **Second** — *The mist keeps. The mist preserves. The mist holds things asleep. The flame is the opposite — the power that keeps things moving, that tries to wake.*
+
+          **Third** — *There is something asleep in the depths of the mist. Held prisoner, by the will of the gods. Our guardians protect it. The flames are trying to wake it. It would mean the end.*
+
+          **Fourth** — *The full shape of it: the god, what the mist is for, and the embrace that protects the prison. You are one of us. Welcome to nothing.*
+        questions: Which part does the recipient refuse to believe? Who else in the party is listening, and do they get the teaching too?
+
+      - name: Internalization
+        type: Action
+        description: |
+          The recipient's **Mist Attuned** rises by 1, to a maximum of 4. See Custom Experiences in `path-mechanics.yaml`.
+
+          Mist Attuned shifts the corruption curve right by its value, and every effect that removes Mist tokens removes that many fewer. An effect that would remove all of a character's tokens instead leaves them holding their value. It does not reverse.
+        questions: What changes about the recipient that the others can see? What do they notice about themselves first?
+
+      - name: Release
+        type: Reaction
+        description: |
+          When the rite completes, the mist withdraws from more than the room. **Remove the Mist-Touched modifier from every location on the current Path.**
+
+          This is a peace offering and should read as one. The GM may make locations Mist-Touched again by the usual means, but doing so soon after the rite should feel like something being broken. Save it for a moment that earns it.
+        questions: What does the Path look like with the mist pulled back off it? How long before anyone trusts it?
+
+  - tier: 2
+    difficulty: 14
+    features:
+      - name: The Envoy
+        type: Passive
+        description: |
+          When this event activates, designate the envoy — what has surfaced to teach, and where it sits among the mist's ranks. Its own entry governs how it behaves.
+
+          It asks one question: *Did you come for the teachings?* If the answer is yes, the rite begins. It is given freely, and refused without penalty.
+
+          **The rite runs in order:**
+
+          - **The Calling** — the mist is summoned, and the recipient is filled
+          - **The Teaching** — the lesson for the rank being taken
+          - **Internalization** — Mist Attuned rises by 1
+          - **Release** — the mist withdraws from the Path
+        questions: Who did the envoy come for, and how did it know where to find them? What does it do while it waits for an answer?
+
+      - name: The Calling
+        type: Action
+        description: |
+          The envoy calls, and the mist comes — not as weather, but as attention. It costs nothing to summon and takes nothing while it is here.
+
+          Each recipient's Mist tokens are **filled up to** the number for the teaching they are taking. If they already hold more, they keep what they have.
+
+          - First teaching — fill to **6**
+          - Second teaching — fill to **8**
+          - Third teaching — fill to **10**
+          - Fourth teaching — fill to **12**
+
+          Tokens gained this way carry no immediate consequence — no Hope lost, no Stress marked, no Fear to the GM, no Hit Point.
+        questions: What does being filled feel like from the inside? Who in the party watches, and what do they see?
+
+      - name: The Teaching
+        type: Action
+        description: |
+          The envoy gives the lesson for the rank being taken.
+
+          **First** — *The mist is not hostile. It does not want anything from you. It simply is — decided, long ago, by a higher power.*
+
+          **Second** — *The mist keeps. The mist preserves. The mist holds things asleep. The flame is the opposite — the power that keeps things moving, that tries to wake.*
+
+          **Third** — *There is something asleep in the depths of the mist. Held prisoner, by the will of the gods. Our guardians protect it. The flames are trying to wake it. It would mean the end.*
+
+          **Fourth** — *The full shape of it: the god, what the mist is for, and the embrace that protects the prison. You are one of us. Welcome to nothing.*
+        questions: Which part does the recipient refuse to believe? Who else in the party is listening, and do they get the teaching too?
+
+      - name: Internalization
+        type: Action
+        description: |
+          The recipient's **Mist Attuned** rises by 1, to a maximum of 4. See Custom Experiences in `path-mechanics.yaml`.
+
+          Mist Attuned shifts the corruption curve right by its value, and every effect that removes Mist tokens removes that many fewer. An effect that would remove all of a character's tokens instead leaves them holding their value. It does not reverse.
+        questions: What changes about the recipient that the others can see? What do they notice about themselves first?
+
+      - name: Release
+        type: Reaction
+        description: |
+          When the rite completes, the mist withdraws from more than the room. **Remove the Mist-Touched modifier from every location on the current Path.**
+
+          This is a peace offering and should read as one. The GM may make locations Mist-Touched again by the usual means, but doing so soon after the rite should feel like something being broken. Save it for a moment that earns it.
+        questions: What does the Path look like with the mist pulled back off it? How long before anyone trusts it?
+
+  - tier: 3
+    difficulty: 17
+    features:
+      - name: The Envoy
+        type: Passive
+        description: |
+          When this event activates, designate the envoy — what has surfaced to teach, and where it sits among the mist's ranks. Its own entry governs how it behaves.
+
+          It asks one question: *Did you come for the teachings?* If the answer is yes, the rite begins. It is given freely, and refused without penalty.
+
+          **The rite runs in order:**
+
+          - **The Calling** — the mist is summoned, and the recipient is filled
+          - **The Teaching** — the lesson for the rank being taken
+          - **Internalization** — Mist Attuned rises by 1
+          - **Release** — the mist withdraws from the Path
+        questions: Who did the envoy come for, and how did it know where to find them? What does it do while it waits for an answer?
+
+      - name: The Calling
+        type: Action
+        description: |
+          The envoy calls, and the mist comes — not as weather, but as attention. It costs nothing to summon and takes nothing while it is here.
+
+          Each recipient's Mist tokens are **filled up to** the number for the teaching they are taking. If they already hold more, they keep what they have.
+
+          - First teaching — fill to **6**
+          - Second teaching — fill to **8**
+          - Third teaching — fill to **10**
+          - Fourth teaching — fill to **12**
+
+          Tokens gained this way carry no immediate consequence — no Hope lost, no Stress marked, no Fear to the GM, no Hit Point.
+        questions: What does being filled feel like from the inside? Who in the party watches, and what do they see?
+
+      - name: The Teaching
+        type: Action
+        description: |
+          The envoy gives the lesson for the rank being taken.
+
+          **First** — *The mist is not hostile. It does not want anything from you. It simply is — decided, long ago, by a higher power.*
+
+          **Second** — *The mist keeps. The mist preserves. The mist holds things asleep. The flame is the opposite — the power that keeps things moving, that tries to wake.*
+
+          **Third** — *There is something asleep in the depths of the mist. Held prisoner, by the will of the gods. Our guardians protect it. The flames are trying to wake it. It would mean the end.*
+
+          **Fourth** — *The full shape of it: the god, what the mist is for, and the embrace that protects the prison. You are one of us. Welcome to nothing.*
+        questions: Which part does the recipient refuse to believe? Who else in the party is listening, and do they get the teaching too?
+
+      - name: Internalization
+        type: Action
+        description: |
+          The recipient's **Mist Attuned** rises by 1, to a maximum of 4. See Custom Experiences in `path-mechanics.yaml`.
+
+          Mist Attuned shifts the corruption curve right by its value, and every effect that removes Mist tokens removes that many fewer. An effect that would remove all of a character's tokens instead leaves them holding their value. It does not reverse.
+        questions: What changes about the recipient that the others can see? What do they notice about themselves first?
+
+      - name: Release
+        type: Reaction
+        description: |
+          When the rite completes, the mist withdraws from more than the room. **Remove the Mist-Touched modifier from every location on the current Path.**
+
+          This is a peace offering and should read as one. The GM may make locations Mist-Touched again by the usual means, but doing so soon after the rite should feel like something being broken. Save it for a moment that earns it.
+        questions: What does the Path look like with the mist pulled back off it? How long before anyone trusts it?
+
+  - tier: 4
+    difficulty: 20
+    features:
+      - name: The Envoy
+        type: Passive
+        description: |
+          When this event activates, designate the envoy — what has surfaced to teach, and where it sits among the mist's ranks. Its own entry governs how it behaves.
+
+          It asks one question: *Did you come for the teachings?* If the answer is yes, the rite begins. It is given freely, and refused without penalty.
+
+          **The rite runs in order:**
+
+          - **The Calling** — the mist is summoned, and the recipient is filled
+          - **The Teaching** — the lesson for the rank being taken
+          - **Internalization** — Mist Attuned rises by 1
+          - **Release** — the mist withdraws from the Path
+        questions: Who did the envoy come for, and how did it know where to find them? What does it do while it waits for an answer?
+
+      - name: The Calling
+        type: Action
+        description: |
+          The envoy calls, and the mist comes — not as weather, but as attention. It costs nothing to summon and takes nothing while it is here.
+
+          Each recipient's Mist tokens are **filled up to** the number for the teaching they are taking. If they already hold more, they keep what they have.
+
+          - First teaching — fill to **6**
+          - Second teaching — fill to **8**
+          - Third teaching — fill to **10**
+          - Fourth teaching — fill to **12**
+
+          Tokens gained this way carry no immediate consequence — no Hope lost, no Stress marked, no Fear to the GM, no Hit Point.
+        questions: What does being filled feel like from the inside? Who in the party watches, and what do they see?
+
+      - name: The Teaching
+        type: Action
+        description: |
+          The envoy gives the lesson for the rank being taken.
+
+          **First** — *The mist is not hostile. It does not want anything from you. It simply is — decided, long ago, by a higher power.*
+
+          **Second** — *The mist keeps. The mist preserves. The mist holds things asleep. The flame is the opposite — the power that keeps things moving, that tries to wake.*
+
+          **Third** — *There is something asleep in the depths of the mist. Held prisoner, by the will of the gods. Our guardians protect it. The flames are trying to wake it. It would mean the end.*
+
+          **Fourth** — *The full shape of it: the god, what the mist is for, and the embrace that protects the prison. You are one of us. Welcome to nothing.*
+        questions: Which part does the recipient refuse to believe? Who else in the party is listening, and do they get the teaching too?
+
+      - name: Internalization
+        type: Action
+        description: |
+          The recipient's **Mist Attuned** rises by 1, to a maximum of 4. See Custom Experiences in `path-mechanics.yaml`.
+
+          Mist Attuned shifts the corruption curve right by its value, and every effect that removes Mist tokens removes that many fewer. An effect that would remove all of a character's tokens instead leaves them holding their value. It does not reverse.
+        questions: What changes about the recipient that the others can see? What do they notice about themselves first?
+
+      - name: Release
+        type: Reaction
+        description: |
+          When the rite completes, the mist withdraws from more than the room. **Remove the Mist-Touched modifier from every location on the current Path.**
+
+          This is a peace offering and should read as one. The GM may make locations Mist-Touched again by the usual means, but doing so soon after the rite should feel like something being broken. Save it for a moment that earns it.
+        questions: What does the Path look like with the mist pulled back off it? How long before anyone trusts it?
+
+featureQuestions:
+  - What did the party expect the teaching to be, and how far off were they?
+  - Who refuses, and what do they make of the ones who accept?
+  - What does a character three teachings deep notice about themselves that the others have not?
+  - Who else finds out that the party has been taught, and what do they do about it?
+  - If the party never returns for the fourth teaching, does the envoy come looking?
