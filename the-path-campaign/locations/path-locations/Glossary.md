@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 45** (27 Surface + 15 Underground + 3 Special)
+**Total Locations: 47** (29 Surface + 15 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (27 locations)
+## 🌄 Surface Locations (29 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -37,6 +37,8 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Redcloth Pass](./surface-locations/redcloth-pass.yaml)             | Sea-people cliff road where waymarkers wait to be restored and the mist sits far below |
 | ☑        | ☑     | [The Reeds](./surface-locations/the-reeds.yaml)                     | Frog people swamp settlement built on wooden islands — safe without a flame, concealed at cost |
 | ☑        | ☑     | [Shrinewood](./surface-locations/shrinewood.yaml)                   | Ancient forest riddled with shrines to ten thousand small gods, gathered around a great central tree |
+| ☑        | ☑     | [The Fallen Star](./surface-locations/the-fallen-star.yaml)         | Meteorite crater with the star still at the bottom, something asleep on top of it, and a rim route around the edge (Linked to Meteorite Lab) |
+| ☑        | ☑     | [Meteorite Lab](./surface-locations/meteorite-lab.yaml)             | The Archon's laboratory in the old mine overseer station at the crater's edge (Linked to The Fallen Star) |
 
 ---
 
@@ -77,9 +79,9 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 44** | **Unassigned: 34** (43.6% remaining)
+**Assigned: 46** | **Unassigned: 32** (41.0% remaining)
 
-### 🔮 Major Arcana (11 of 22 assigned)
+### 🔮 Major Arcana (12 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -91,7 +93,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | V The Hierophant      | The Giant Walls      |
 | VI The Lovers         | Misty Waters         |
 | VII The Chariot       | Underground Access   |
-| VIII Strength         |                      |
+| VIII Strength         | The Fallen Star      |
 | IX The Hermit         |                      |
 | X Wheel of Fortune    | Village in the Mist  |
 | XI Justice            | Bell's Edge          |
@@ -163,7 +165,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Discs  |                    |
 | King of Discs   |                    |
 
-### 🍷 Minor Arcana - Goblets (Cups) (4 of 14 assigned)
+### 🍷 Minor Arcana - Goblets (Cups) (5 of 14 assigned)
 
 | Card              | Location         |
 | ----------------- | ---------------- |
@@ -177,7 +179,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 8 of Goblets      |                  |
 | 9 of Goblets      |                  |
 | 10 of Goblets     | Ancient Crossing |
-| Page of Goblets   |                  |
+| Page of Goblets   | Meteorite Lab    |
 | Knight of Goblets |                  |
 | Queen of Goblets  |                  |
 | King of Goblets   |                  |
