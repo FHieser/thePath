@@ -79,7 +79,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 46** | **Unassigned: 32** (41.0% remaining)
+**Assigned: 47** | **Unassigned: 31** (39.7% remaining)
 
 ### 🔮 Major Arcana (12 of 22 assigned)
 
@@ -108,11 +108,11 @@ _Physical card mappings for location representation during play. Select cards ba
 | XX Judgement          | Burnt Clearing       |
 | XXI The World         | Brood Throne         |
 
-### 🪄 Minor Arcana - Wands (6 of 14 assigned)
+### 🪄 Minor Arcana - Wands (7 of 14 assigned)
 
 | Card            | Location             |
 | --------------- | -------------------- |
-| Ace of Wands    |                      |
+| Ace of Wands    | Shrinewood           |
 | 2 of Wands      | Windswept Grasslands |
 | 3 of Wands      | Verdant Crossing     |
 | 4 of Wands      | Highland Circle      |

@@ -423,8 +423,6 @@
   effect:
     category: Utility
     description: |
-      Cannot be used at Flame-Touched locations — the sacred fire drowns out the depths.
-
       Press the shell to your ear. Gain 1 Mist token — you do not suffer its immediate consequence. The number of uses per long rest and the strength of the effect depend on your current Mist token total:
 
       - 0 tokens: Gain 1 Mist token (no immediate consequence). The conch does not answer. The void does not yet know you.
@@ -452,8 +450,6 @@
     category: Disruption
     description: |
       Requires Strength +1 or higher to carry — the pole is dense iron, heavy with age and residual void energy.
-
-      Can only be used in Mist-Touched locations.
 
       Drive the pole into the ground and channel mist through its broken scan network. Gain Mist tokens without suffering their immediate consequence — in exchange, the GM removes 1 Fear. The amount you feed depends on how deep you already are:
 
