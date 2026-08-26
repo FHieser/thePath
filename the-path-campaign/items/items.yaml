@@ -414,6 +414,25 @@
 # MIST BORN ITEMS
 # ============================================================
 
+- name: Mist Clutch
+  type: Mist Born
+  usage: Reusable
+  tier: 2
+  tradeValue: 3.5
+  flavor: "Coral-marked metal prongs arc from a central sphere, curving closed at both tips — the sphere breathes pale mist that seeps outward along each arm in slow, continuous curls."
+  effect:
+    category: Protection
+    description: |
+      Offhand weapon.
+
+      Deflecting (Passive): When you are attacked, you may mark an Armor Slot to gain a bonus to your Evasion equal to your available Armor Slots against that attack.
+
+      Embrace of the Mist (Action): Gain Mist tokens without suffering their immediate consequence, then clear 2 Stress. The number of tokens required scales with your attunement — the deeper you are in the nothing, the less it costs to receive the teaching:
+
+      - 0–3 tokens: gain 3 Mist tokens
+      - 4–6 tokens: gain 2 Mist tokens
+      - 7+ tokens: gain 1 Mist token
+
 - name: The Claiming Conch
   type: Mist Born
   usage: Reusable
