@@ -188,13 +188,18 @@ No changes to `events.html`, `event.html`, or `index.html` are needed for a new 
 - File: `the-path-campaign/lore/events/guardian-projection.yaml`
 - Demonstrates: agnostic naming with a designate step, a rising counter with hidden thresholds tracked by a physical die (d6→d8→d12), four-outcome duality movement, an unfightable antagonist, self-funding Fear economy, tier scaling via `tiers:` array
 
-**SRD Events** in `lib/daggerheart-srd/environments/`
-- `Cult Ritual.md` (T2) — Countdown (6) ticking on rolls with Fear, cancelled if its leader falls
-- `Divine Usurpation.md` (T4) — chained countdowns, raises the GM's Fear ceiling, designate step
-- `Ambushed.md` / `Ambushers.md` (T1) — the simplest possible event shape
-- `Castle Siege.md`, `Pitched Battle.md` (T3) — large-scale event structure
+**SRD Events** — data lives in `lib/og-dhsrd/scripts/og-dhsrd-features.js`, a minified JS bundle with one giant line per section. Lines are too long for `Read` or for `Grep` context flags (`-A`/`-B`/`-C`) to display, so pull each entry with `grep -aoE` and *trailing* context instead (leading context silently returns nothing on lines this long):
 
-**IMPORTANT:** Read these files directly to see complete feature descriptions and how mechanics reinforce themes.
+```
+grep -aoE '"<Name>", name: "<slug>".{3000}' lib/og-dhsrd/scripts/og-dhsrd-features.js
+```
+
+- Cult Ritual (`cult-ritual`, T2) — Countdown (6) ticking on rolls with Fear, cancelled if its leader falls
+- Divine Usurpation (`divine-usurpation`, T4) — chained countdowns, raises the GM's Fear ceiling, designate step
+- Ambushed / Ambushers (`ambushed` / `ambushers`, T1) — the simplest possible event shape
+- Castle Siege (`castle-siege`), Pitched Battle (`pitched-battle`) (T3) — large-scale event structure
+
+**IMPORTANT:** Extract these directly to see complete feature descriptions and how mechanics reinforce themes.
 
 ## Key Principles
 

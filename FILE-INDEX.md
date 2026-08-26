@@ -2,7 +2,7 @@
 
 Auto-generated index of all tracked, non-gitignored files. Organized by directory with brief descriptions to aid navigation.
 
-> **Excluded**: `path-webapp/` (web app, gitignored), `lib/daggerheart-srd/` contents (git submodule), `lib/og-dhsrd/` contents (git submodule)
+> **Excluded**: `path-webapp/` (web app, gitignored), `lib/og-dhsrd/` contents (git submodule)
 
 ---
 
@@ -17,7 +17,7 @@ Auto-generated index of all tracked, non-gitignored files. Organized by director
 | [STYLE-GUIDE.md](STYLE-GUIDE.md) | Standardized modifier terminology and formatting rules |
 | [TODO.md](TODO.md) | Active task tracking and backlog |
 | [.gitignore](.gitignore) | Ignored paths: `path-webapp/`, `serve.sh`, `serve.bat`, `/index.html` |
-| [.gitmodules](.gitmodules) | Submodule definitions for `lib/daggerheart-srd` and `lib/og-dhsrd` |
+| [.gitmodules](.gitmodules) | Submodule definition for `lib/og-dhsrd` |
 | [.gitattributes](.gitattributes) | Git attributes configuration |
 
 ---
@@ -67,8 +67,7 @@ Auto-generated index of all tracked, non-gitignored files. Organized by director
 
 | Path | Description |
 |------|-------------|
-| [lib/daggerheart-srd/](lib/daggerheart-srd/) | Git submodule — official Daggerheart SRD with complete rules, classes, ancestries, equipment, adversaries. Key path: `lib/daggerheart-srd/.build/json/` for structured JSON data |
-| [lib/og-dhsrd/](lib/og-dhsrd/) | Git submodule — HTML version of the SRD with adversary benchmarks, tier scaling, and design guidelines. Key file: `lib/og-dhsrd/index.html` |
+| [lib/og-dhsrd/](lib/og-dhsrd/) | Git submodule — official Daggerheart SRD in HTML format. `index.html` has rules prose and design guidelines; `scripts/og-dhsrd-features.js` has adversary/environment stat blocks and tier scaling, injected client-side (see CLAUDE.md Data Access Patterns for how to extract from it) |
 
 ---
 

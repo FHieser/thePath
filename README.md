@@ -46,8 +46,7 @@ For use with [Claude Code](https://claude.com/claude-code) in this repo — slas
 <details>
 <summary>Also in this repo</summary>
 
-- **`lib/daggerheart-srd/`** — Git submodule with the official Daggerheart SRD
-- **`lib/og-dhsrd/`** — HTML reference version of the SRD (adversary benchmarks, scaling guidelines)
+- **`lib/og-dhsrd/`** — Git submodule; HTML reference version of the official Daggerheart SRD. `index.html` has rules prose; adversary/environment stat blocks and scaling guidelines live in `scripts/og-dhsrd-features.js`, injected client-side
 - **`homebrew-kit/`** — Official Daggerheart Homebrew Kit for content creation guidelines
 - **`Pitch.md`** — Campaign concept and core mechanics overview
 - **`Progression.md`** — Development changelog and campaign advancement tracking

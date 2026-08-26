@@ -31,8 +31,7 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
   - `campaign/` - Active campaign tracking (e.g., Moonfield, FreeMountain)
   - `example-path/` - Example Path configurations, incl. `path-library/` of reusable path YAMLs
   - `zarchive/` - Deprecated/superseded content kept for reference
-- `lib/daggerheart-srd/` - Git submodule containing official Daggerheart SRD with complete rules and content
-- `lib/og-dhsrd/` - HTML version of SRD with benchmarks and scaling guidelines
+- `lib/og-dhsrd/` - Git submodule; HTML version of the SRD (sole SRD reference source). `index.html` has static rules prose and design guidelines; structured stat blocks (adversaries, environments/events) are client-side-injected from `scripts/og-dhsrd-features.js` and must be extracted from that file directly — see Data Access Patterns below
 - `homebrew-kit/` - Official Daggerheart Homebrew Kit PDF (v1.0) for content creation guidelines
 - `path-webapp/` - Static web app for browsing campaign content (locations, adversaries, factions, path mechanics); deployed to GitHub Pages
 - `.github/workflows/deploy.yml` - Builds `index.html`, `path-webapp/`, and `the-path-campaign/` into `_site` and publishes to GitHub Pages on push to `main`
@@ -53,10 +52,9 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
 - Modifier system defines location properties (Underground, Cave Mouth, Inhabited, Wild Beasts, Mist-Touched)
 
 ### Data Sources
-- **Official SRD**: `lib/daggerheart-srd/` contains complete rules, classes, ancestries, equipment, adversaries
-- **SRD HTML Reference**: `lib/og-dhsrd/index.html` contains the complete Daggerheart SRD in HTML format with adversary benchmarks, scaling guidelines, and design principles
+- **SRD rules prose**: `lib/og-dhsrd/index.html` — core rules, classes, ancestries, equipment, design principles (static HTML text)
+- **SRD stat blocks**: `lib/og-dhsrd/scripts/og-dhsrd-features.js` — adversaries, environments/events, benchmarks, scaling guidelines (structured data the page injects at runtime; not present as static text in `index.html`)
 - **Campaign Content**: `the-path-campaign/` contains location-specific materials and framework
-- **Processed Data**: `lib/daggerheart-srd/.build/json/` contains structured game data (weapons, adversaries, environments, etc.)
 
 ## Key Systems
 
@@ -65,7 +63,7 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
 - Use tier-appropriate scaling: Tier 1 (level 1), Tier 2 (levels 2-4), Tier 3 (levels 5-7), Tier 4 (levels 8-10)
 - Current campaign content is Tier 1 (level 1 only)
 - Maintain asymmetrical design (PC vs adversary mechanics)
-- Reference existing SRD content in `lib/daggerheart-srd/`
+- Reference existing SRD content in `lib/og-dhsrd/` (`index.html` for rules prose, `scripts/og-dhsrd-features.js` for adversary/environment stat blocks)
 - Keep "The Path" campaign themes and mist mechanics central
 - Follow modifier formatting from `STYLE-GUIDE.md` (capitalize: Stable, Underground, Cave Mouth, etc.)
 - Use location design framework from `the-path-campaign/mechanics/path-mechanics.yaml` (Concept → Modifiers → Features → Integration)
@@ -86,16 +84,15 @@ Locations are organized in `the-path-campaign/locations/` with detailed descript
 ## Working with This Repository
 
 ### When Creating Campaign Content
-1. Reference existing SRD content in `lib/daggerheart-srd/`
+1. Reference existing SRD content in `lib/og-dhsrd/` (`index.html` for rules prose, `scripts/og-dhsrd-features.js` for adversary/environment stat blocks)
 2. Follow tier scaling guidelines (T1-T4)
 3. Maintain "The Path" campaign themes and mist mechanics
 4. Use existing location structure as templates
 5. Ensure content fits within the shifting Path framework
 
 ### Data Access Patterns
-- **SRD content**: Read from `lib/daggerheart-srd/contents/` and subdirectories
-- **SRD HTML reference**: Use `lib/og-dhsrd/index.html` for adversary benchmarks, tier scaling, and design guidelines
-- **Game data**: Access JSON files in `lib/daggerheart-srd/.build/json/` (adversaries.json, weapons.json, environments.json, etc.)
+- **SRD rules/prose**: Read `lib/og-dhsrd/index.html` directly for rules, classes, ancestries, equipment, and design guidelines
+- **SRD stat blocks** (adversaries, environments/events, benchmarks, tier scaling): live in `lib/og-dhsrd/scripts/og-dhsrd-features.js`, a minified JS bundle with one huge line per entry. `Read` and `Grep`'s context flags (`-A`/`-B`/`-C`) can't display lines this long — use `grep -aoE '"<Name>", name: "<slug>".{3000}' lib/og-dhsrd/scripts/og-dhsrd-features.js` (trailing context only; leading context silently returns nothing on lines this long)
 - **Campaign content**: Organize in `the-path-campaign/` following existing patterns
 - **Surface locations**: Place in `the-path-campaign/locations/path-locations/surface-locations/`
 - **Underground locations**: Place in `the-path-campaign/locations/path-locations/underground-locations/`
@@ -151,7 +148,7 @@ Locations are organized in `the-path-campaign/locations/` with detailed descript
 - This repository is built under the Darrington Press Community Gaming License
 - All content must comply with official Daggerheart design principles
 - Campaign frame focuses on mist mechanics and shifting Path configurations
-- The `lib/daggerheart-srd/` submodule provides authoritative rules reference
+- The `lib/og-dhsrd/` submodule provides authoritative rules reference
 - Location content should be modular to support the shifting Path concept
 - Use specialized agents in `.claude/agents/` for content creation tasks
 - Reference `Progression.md` for complete development history and design decisions
