@@ -1,0 +1,35 @@
+name: The Long Way Round
+tier: 3
+personal_ranking: 7
+
+rowLabels:
+  "-1": "C'"
+  "0": "B'"
+  "1": "A'"
+  "2": A
+  "3": B
+
+gridSurface:
+  "-1,2": { location: unstable-mist, modifiers: [Mist-Touched] }
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
+  "2,2": windswept-grasslands
+  "3,2": { location: coldspire-keep, modifiers: [Mist-Touched, Cave Mouth] }
+  "4,2": { location: highland-circle, modifiers: [Mushroom Circle, Mist-Protected] }
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
+  "6,2": { location: silken-spire, modifiers: [Cave Mouth] }
+  "2,1": hanging-gardens
+  "6,1": { location: highland-watch, modifiers: [Cave Mouth] }
+  "2,0": the-reeds
+  "3,0": { location: misty-waters, modifiers: [Cave Mouth] }
+  "2,-1": { location: mantaray-tree, modifiers: [Stable] }
+
+gridUnderground:
+  "0,2": { location: underground-access-card, modifiers: [Stable] }
+  "1,2": outer-mine-line
+  "2,2": deep-station
+  "3,2": sanctum-line
+  "3,1": needle-tunnels
+  "3,0": { location: reed-marsh-caverns, modifiers: [Mushroom Circle] }
+  "2,3": crystal-defense-line
+  "6,2": brood-throne
+  "6,1": sacred-underground
