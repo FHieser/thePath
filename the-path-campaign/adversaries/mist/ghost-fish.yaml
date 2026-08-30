@@ -1,0 +1,43 @@
+name: Ghost Fish
+category: Horde
+description: Translucent schools of pale fish that drift through stone and flesh alike. Their fins leave brief trails of mist. Eye sockets open and close like mouths. They move in tight formation — never scattered, always purposeful — and pass through solid surfaces as though the stone is water.
+motives: School around threats, block sightlines, carry the mist, guard the anchor
+lore: Wherever mist pools long enough in still water, fish that live in it stop dying. They lose color first, then mass, then the need to breathe. They school near mist-anchoring objects — coral growths, old machinery, sealed doors — and do not leave. Defeating them without destroying the anchor they arrived with accomplishes nothing.
+
+tiers:
+  - tier: 3
+    difficulty: 15
+    thresholds:
+      major: 16
+      severe: 30
+    hp: 7
+    stress: 3
+    attack:
+      bonus: '+1'
+      name: Phase Through
+      range: Melee
+      damage: 3d6+6 mag
+    experience:
+      - name: Schooling
+        value: 3
+    features:
+      - name: Horde (2d6+2)
+        type: Passive
+        description: |
+          When the Ghost Fish have marked half or more of their Hit Points, their standard attack deals 2d6+2 magic damage instead.
+
+      - name: Blinding Multitude
+        type: Passive
+        description: |
+          The swarm is so thick it blocks the vision of anyone it engulfs. Creatures within Melee range have disadvantage on attacks made against adversaries other than the Ghost Fish.
+
+      - name: Mist Stream
+        type: Action
+        cost: Spend 1 Fear
+        description: |
+          A stream of mist follows the swarm. Choose a straight line within Close range. Each creature in that line gains 1 Mist token.
+
+      - name: Coral Spawn
+        type: Passive
+        description: |
+          The Ghost Fish arrive with a Coral Growth — a pale, branching mass anchored to the nearest surface (Difficulty 15, Thresholds 16/30, HP 2). When the Ghost Fish are reduced to 0 HP, if their Coral Growth is still intact, they reform at it at the start of the next round at full HP and Stress. If the Coral Growth has been destroyed, the Ghost Fish are permanently defeated.
