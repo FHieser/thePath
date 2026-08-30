@@ -13,6 +13,8 @@ const CONTENT_INDEX = {
   ],
   "../the-path-campaign/adversaries/mist/": [
     "fallen-lord.yaml",
+    "ghost-fish.yaml",
+    "makara.yaml",
     "mist-crab.yaml",
     "mist-envoy.yaml",
     "mist-ghost.yaml",
@@ -90,6 +92,7 @@ const CONTENT_INDEX = {
     "black-beach.yaml",
     "black-falls.yaml",
     "brood-throne.yaml",
+    "copper-rust-sanctuary.yaml",
     "crystal-defense-line.yaml",
     "deep-station.yaml",
     "flooded-network.yaml",
@@ -123,6 +126,7 @@ const CONTENT_INDEX = {
     "underground-access-card.yaml"
   ],
   "../the-path-campaign/example-path/path-library/": [
+    "3.7-the-long-way-round.yaml",
     "clan-extension.yaml",
     "cliff-road.yaml",
     "close-encounters.yaml",
@@ -141,6 +145,7 @@ const CONTENT_INDEX = {
     "guardian-projection.yaml",
     "in-the-eye-of-the-titan.yaml",
     "left-to-the-mist.yaml",
+    "strange-dreams.yaml",
     "teachings-of-the-mist.yaml"
   ],
   "__factions__": {

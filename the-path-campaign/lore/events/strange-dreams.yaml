@@ -1,0 +1,241 @@
+name: Strange Dreams
+category: Exploration
+description: You chose how deep to go under. Now you have to come back up.
+impulses: The dream holds you, is it true what you see?, tossing and turning
+
+trigger: |
+  Activate when the party takes a rest, and at least one character is carrying something unresolved — a choice not yet paid for, a loss not yet grieved, a question they have been avoiding.
+
+  Examples: the night after someone was left behind; a rest taken immediately after a hard decision; the first sleep following a death the party has not spoken about; any night the GM wants to put a character in front of themselves.
+
+tiers:
+  - tier: 1
+    difficulty: 11
+    features:
+      - name: How Deep Is Your Sleep
+        type: Passive
+        description: |
+          When this event activates, the GM asks each sleeping PC one question: *How deep is your sleep tonight?*
+
+          The player answers in their character's voice and picks a depth. The GM may nudge; the choice belongs to the player.
+
+          - **Depth 1** — shallow. Climb **3**. You keep a fragment.
+          - **Depth 2** — proper sleep. Climb **5**. You get most of it.
+          - **Depth 3** — like the dead. Climb **7**. You get all of it.
+
+          Each sleeping PC resolves their own dream separately, even when several dream on the same night. The GM should shape what each one sees around that particular character.
+        questions: Who answers quickly, and who has to think about it? Does anyone lie about how well they sleep?
+
+      - name: The Climb Out
+        type: Action
+        description: |
+          The sleeper works toward waking. Each attempt is a **reaction roll** — the GM sets the trait to fit what the dream is doing to them.
+
+          - **Success with Hope** — counter +2
+          - **Success with Fear** — counter +1, mark a Stress
+          - **Failure with Hope** — no change
+          - **Failure with Fear** — counter −1, mark a Stress
+
+          Instead of rolling, the sleeper may **spend a Hope to advance the counter by 1**. No roll, no Stress, and it always works.
+
+          Every attempt is something specific in the dream, not an abstract effort: a door that will not open, a corridor that keeps arriving back where it started, someone who will not stop talking. The GM narrates the obstacle, then calls for the roll. A Hope spent is the sleeper pushing through one of these by will alone — say what they pushed through.
+
+          The counter cannot fall below 0. When it reaches the depth's number, they wake.
+        questions: What is the first thing standing in their way? What does the dream do when they nearly get out?
+
+      - name: What It Shows
+        type: Passive
+        description: |
+          The dream is built out of the sleeper. The GM draws on what that character is struggling with now and what they have struggled with before — not omens, not prophecy, not messages from elsewhere. Their own material, rearranged and given back to them.
+
+          Depth decides how much of it lands:
+
+          - **Depth 1** — a fragment. One image that is still there when they wake.
+          - **Depth 2** — most of it. They see the shape of the thing and know what it was about.
+          - **Depth 3** — all of it. Nothing is withheld, including the parts they had put away.
+        questions: What has this character never said out loud? What would they recognise instantly and refuse to name?
+
+      - name: Waking
+        type: Reaction
+        description: |
+          When the counter reaches the depth's number, the sleeper wakes.
+
+          The GM asks one more question: *What does this dream do to you?*
+
+          The player answers. The GM gains **1 to 3 Fear**, judged by what they said — 1 for something the character can set down, 3 for something they cannot.
+        questions: What do they do in the first minute after waking? Do the others notice?
+
+  - tier: 2
+    difficulty: 14
+    features:
+      - name: How Deep Is Your Sleep
+        type: Passive
+        description: |
+          When this event activates, the GM asks each sleeping PC one question: *How deep is your sleep tonight?*
+
+          The player answers in their character's voice and picks a depth. The GM may nudge; the choice belongs to the player.
+
+          - **Depth 1** — shallow. Climb **3**. You keep a fragment.
+          - **Depth 2** — proper sleep. Climb **5**. You get most of it.
+          - **Depth 3** — like the dead. Climb **7**. You get all of it.
+
+          Each sleeping PC resolves their own dream separately, even when several dream on the same night. The GM should shape what each one sees around that particular character.
+        questions: Who answers quickly, and who has to think about it? Does anyone lie about how well they sleep?
+
+      - name: The Climb Out
+        type: Action
+        description: |
+          The sleeper works toward waking. Each attempt is a **reaction roll** — the GM sets the trait to fit what the dream is doing to them.
+
+          - **Success with Hope** — counter +2
+          - **Success with Fear** — counter +1, mark a Stress
+          - **Failure with Hope** — no change
+          - **Failure with Fear** — counter −1, mark a Stress
+
+          Instead of rolling, the sleeper may **spend a Hope to advance the counter by 1**. No roll, no Stress, and it always works.
+
+          Every attempt is something specific in the dream, not an abstract effort: a door that will not open, a corridor that keeps arriving back where it started, someone who will not stop talking. The GM narrates the obstacle, then calls for the roll. A Hope spent is the sleeper pushing through one of these by will alone — say what they pushed through.
+
+          The counter cannot fall below 0. When it reaches the depth's number, they wake.
+        questions: What is the first thing standing in their way? What does the dream do when they nearly get out?
+
+      - name: What It Shows
+        type: Passive
+        description: |
+          The dream is built out of the sleeper. The GM draws on what that character is struggling with now and what they have struggled with before — not omens, not prophecy, not messages from elsewhere. Their own material, rearranged and given back to them.
+
+          Depth decides how much of it lands:
+
+          - **Depth 1** — a fragment. One image that is still there when they wake.
+          - **Depth 2** — most of it. They see the shape of the thing and know what it was about.
+          - **Depth 3** — all of it. Nothing is withheld, including the parts they had put away.
+        questions: What has this character never said out loud? What would they recognise instantly and refuse to name?
+
+      - name: Waking
+        type: Reaction
+        description: |
+          When the counter reaches the depth's number, the sleeper wakes.
+
+          The GM asks one more question: *What does this dream do to you?*
+
+          The player answers. The GM gains **1 to 3 Fear**, judged by what they said — 1 for something the character can set down, 3 for something they cannot.
+        questions: What do they do in the first minute after waking? Do the others notice?
+
+  - tier: 3
+    difficulty: 17
+    features:
+      - name: How Deep Is Your Sleep
+        type: Passive
+        description: |
+          When this event activates, the GM asks each sleeping PC one question: *How deep is your sleep tonight?*
+
+          The player answers in their character's voice and picks a depth. The GM may nudge; the choice belongs to the player.
+
+          - **Depth 1** — shallow. Climb **3**. You keep a fragment.
+          - **Depth 2** — proper sleep. Climb **5**. You get most of it.
+          - **Depth 3** — like the dead. Climb **7**. You get all of it.
+
+          Each sleeping PC resolves their own dream separately, even when several dream on the same night. The GM should shape what each one sees around that particular character.
+        questions: Who answers quickly, and who has to think about it? Does anyone lie about how well they sleep?
+
+      - name: The Climb Out
+        type: Action
+        description: |
+          The sleeper works toward waking. Each attempt is a **reaction roll** — the GM sets the trait to fit what the dream is doing to them.
+
+          - **Success with Hope** — counter +2
+          - **Success with Fear** — counter +1, mark a Stress
+          - **Failure with Hope** — no change
+          - **Failure with Fear** — counter −1, mark a Stress
+
+          Instead of rolling, the sleeper may **spend a Hope to advance the counter by 1**. No roll, no Stress, and it always works.
+
+          Every attempt is something specific in the dream, not an abstract effort: a door that will not open, a corridor that keeps arriving back where it started, someone who will not stop talking. The GM narrates the obstacle, then calls for the roll. A Hope spent is the sleeper pushing through one of these by will alone — say what they pushed through.
+
+          The counter cannot fall below 0. When it reaches the depth's number, they wake.
+        questions: What is the first thing standing in their way? What does the dream do when they nearly get out?
+
+      - name: What It Shows
+        type: Passive
+        description: |
+          The dream is built out of the sleeper. The GM draws on what that character is struggling with now and what they have struggled with before — not omens, not prophecy, not messages from elsewhere. Their own material, rearranged and given back to them.
+
+          Depth decides how much of it lands:
+
+          - **Depth 1** — a fragment. One image that is still there when they wake.
+          - **Depth 2** — most of it. They see the shape of the thing and know what it was about.
+          - **Depth 3** — all of it. Nothing is withheld, including the parts they had put away.
+        questions: What has this character never said out loud? What would they recognise instantly and refuse to name?
+
+      - name: Waking
+        type: Reaction
+        description: |
+          When the counter reaches the depth's number, the sleeper wakes.
+
+          The GM asks one more question: *What does this dream do to you?*
+
+          The player answers. The GM gains **1 to 3 Fear**, judged by what they said — 1 for something the character can set down, 3 for something they cannot.
+        questions: What do they do in the first minute after waking? Do the others notice?
+
+  - tier: 4
+    difficulty: 20
+    features:
+      - name: How Deep Is Your Sleep
+        type: Passive
+        description: |
+          When this event activates, the GM asks each sleeping PC one question: *How deep is your sleep tonight?*
+
+          The player answers in their character's voice and picks a depth. The GM may nudge; the choice belongs to the player.
+
+          - **Depth 1** — shallow. Climb **3**. You keep a fragment.
+          - **Depth 2** — proper sleep. Climb **5**. You get most of it.
+          - **Depth 3** — like the dead. Climb **7**. You get all of it.
+
+          Each sleeping PC resolves their own dream separately, even when several dream on the same night. The GM should shape what each one sees around that particular character.
+        questions: Who answers quickly, and who has to think about it? Does anyone lie about how well they sleep?
+
+      - name: The Climb Out
+        type: Action
+        description: |
+          The sleeper works toward waking. Each attempt is a **reaction roll** — the GM sets the trait to fit what the dream is doing to them.
+
+          - **Success with Hope** — counter +2
+          - **Success with Fear** — counter +1, mark a Stress
+          - **Failure with Hope** — no change
+          - **Failure with Fear** — counter −1, mark a Stress
+
+          Instead of rolling, the sleeper may **spend a Hope to advance the counter by 1**. No roll, no Stress, and it always works.
+
+          Every attempt is something specific in the dream, not an abstract effort: a door that will not open, a corridor that keeps arriving back where it started, someone who will not stop talking. The GM narrates the obstacle, then calls for the roll. A Hope spent is the sleeper pushing through one of these by will alone — say what they pushed through.
+
+          The counter cannot fall below 0. When it reaches the depth's number, they wake.
+        questions: What is the first thing standing in their way? What does the dream do when they nearly get out?
+
+      - name: What It Shows
+        type: Passive
+        description: |
+          The dream is built out of the sleeper. The GM draws on what that character is struggling with now and what they have struggled with before — not omens, not prophecy, not messages from elsewhere. Their own material, rearranged and given back to them.
+
+          Depth decides how much of it lands:
+
+          - **Depth 1** — a fragment. One image that is still there when they wake.
+          - **Depth 2** — most of it. They see the shape of the thing and know what it was about.
+          - **Depth 3** — all of it. Nothing is withheld, including the parts they had put away.
+        questions: What has this character never said out loud? What would they recognise instantly and refuse to name?
+
+      - name: Waking
+        type: Reaction
+        description: |
+          When the counter reaches the depth's number, the sleeper wakes.
+
+          The GM asks one more question: *What does this dream do to you?*
+
+          The player answers. The GM gains **1 to 3 Fear**, judged by what they said — 1 for something the character can set down, 3 for something they cannot.
+        questions: What do they do in the first minute after waking? Do the others notice?
+
+featureQuestions:
+  - What has this character been avoiding, and how long have they managed it?
+  - Who else is awake to see them sleeping badly?
+  - Does anyone tell the others what they saw, and what do they leave out?
+  - What would make someone choose Depth 3 on purpose?
+  - If the same dream comes back on another night, what has changed in it?
