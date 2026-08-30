@@ -1,0 +1,52 @@
+name: Makara
+category: Solo
+description: A creature the size of a draft horse suspended in air. Its front half is heavy — a wide crocodilian jaw hung with pale elephant tusks on each side, a proboscis curling down toward whatever surface lies below. One pair of crocodile feet extend from its chest, claws spread, reaching into the air ahead of it and grabbing onto clouds of mist it shapes and holds as it pulls itself forward. Its back half is fish: broad fins swept back flat, a long tail sweeping in slow arcs behind it. Mist pools wherever it passes, drifting from it in slow curtains.
+motives: Maintain elevation, seed coral below, command Ghost Fish, suppress intruders with mist
+lore: The Makara appears wherever the Mist Born have claimed a place they do not want restored. It spreads coral as it moves — pale growths that anchor Ghost Fish schools and feed on ambient mist. It does not press into melee if it can avoid it. It waits above, commands below, and lets the water and the mist do the work.
+
+tiers:
+  - tier: 3
+    difficulty: 17
+    thresholds:
+      major: 20
+      severe: 38
+    hp: 10
+    stress: 6
+    attack:
+      bonus: '+2'
+      name: Water Jet
+      range: Far
+      damage: 3d10+2 mag
+    experience:
+      - name: Mist Affinity
+        value: 4
+      - name: Coral Dominion
+        value: 4
+    features:
+      - name: Relentless (2)
+        type: Passive
+        description: |
+          The Makara can be spotlighted up to twice per GM turn. Spend Fear as usual to spotlight it.
+
+      - name: Momentum
+        type: Reaction
+        description: |
+          When the Makara makes a successful attack against a PC, you gain a Fear.
+
+      - name: Mist Mantle
+        type: Action
+        cost: Spend 1 Fear
+        description: |
+          The Makara rises to the top of the chamber. Creatures within Close range directly below it immediately gain 1 Mist token. While it holds this position, attacks against it have difficulty raised by 3. This effect ends the next time the Makara is spotlighted.
+
+      - name: Coral Seeding
+        type: Action
+        cost: Spend 2 Fear
+        description: |
+          Two Ghost Fish Hordes appear in zones directly below the Makara, each accompanied by their Coral Growth.
+
+      - name: Lord of the Waves
+        type: Action
+        cost: Mark 2 Stress
+        description: |
+          The Makara commands its schools. Spotlight up to 3 Ghost Fish Hordes in the encounter — each may immediately make an attack or use Mist Stream.
