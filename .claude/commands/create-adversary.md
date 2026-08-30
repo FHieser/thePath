@@ -29,7 +29,15 @@ Then discuss:
 
 ## Step 2: Core Statistics
 
-Reference tier benchmarks from `lib/og-dhsrd/scripts/index.html`:
+**Finding benchmark data** — two sources, use both:
+
+1. **Damage arrays per category** live in `adversaryTypeList` in `lib/og-dhsrd/scripts/og-dhsrd-features.js`. Extract for any category with:
+```
+grep -aoE '"<Category>", name: "<slug>".{1000}' lib/og-dhsrd/scripts/og-dhsrd-features.js
+```
+Example: `'"Horde", name: "horde".{1000}'` returns `t1damage`, `t2damage`, `t3damage`, `t4damage` arrays (and `t1damagehalf` etc. for Hordes).
+
+2. **HP, Stress, Difficulty, Thresholds, ATK ranges** — derive from the SRD example stat blocks for that category. Each example entry has fields: `difficulty`, `thresholdmajor`, `thresholdsevere`, `hp`, `stress`, `attackbonus`. Sample several examples at the target tier and use the observed range. The benchmark tables shown in the SRD are rendered at runtime and not stored as static data.
 
 Work with the user to determine stats **per tier**:
 - **Difficulty** (within tier/category range)
