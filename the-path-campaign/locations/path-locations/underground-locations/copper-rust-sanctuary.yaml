@@ -1,0 +1,189 @@
+name: Copper Rust Sanctuary
+tier: 3
+category: Exploration
+description: |
+  A crater-shaped underground city carved into solid rock. Four working quarters ring the inner walls in terraces — Forge Quarter to the left of the entrance, Root Quarter to the right, Shrine Quarter beyond the Forge, Hearth Quarter beyond the Root. The Foundation Chamber lies at the center bottom.
+
+  Players who look down from the entrance see ancient brass machinery below, pale coral growing around its base, and a stillness against the Engine that is not still.
+
+  The quarters are damaged but intact. Tools rest on forge benches where someone set them down mid-shift. Rune-lights still glow in the Forge walls. The mist has settled into the lowest points. Everything here was left in the middle of a shift.
+tagline: The Clan left their tools on the benches. The mist moved in while they were gone.
+impulses: |
+  Hold what the Clan built, resist what the mist has claimed, draw the players deeper one repair at a time
+difficulty: 17
+modifiers:
+  - name: Underground
+  - name: Mist-Touched
+  - name: Linked (Deep Station)
+potentialAdversaries: Makara, Ghost Fish
+
+features:
+
+  # ── FORGE QUARTER ────────────────────────────────────────────────────────────
+
+  - name: The Forge Quarter
+    type: Passive
+    description: |
+      The left-facing quarter from the entrance. Terraced stone workbenches descend toward the rim edge. Forge equipment lines the lower tier — smelters, anvils, tool racks, all mid-use and abandoned. Pipes run along the ceiling and walls, carrying heat from the Hearth Quarter. Rune-lights glow in the walls here: small carvings, each different, each left by a Clan member who finished something they were proud of.
+
+      The forges are unlit. The rune-lights still work.
+
+  - name: The Press
+    type: Action
+    description: |
+      A machine at the Forge Quarter's center — a heavy press of brass and iron, rune-marked, with a vertical channel on one face and material receptacles at the base. A notation in Clan script runs along the top rail. Players who can read it, or succeed on a Knowledge reaction (Difficulty 17), understand its function: feed appropriate material, pull the lever, receive the formed component.
+
+      The Press produces a hammer and chisel when fed 1 trade point of appropriate material (worked metal, tool-grade stone, similar).
+
+      Success: The machine produces the hammer and chisel. 1 trade point of material is consumed.
+      Failure with Hope: The mechanism catches. The player keeps working, consuming a second trade point, and receives the items at the end.
+
+      A notation at the machine's base reads: "Take them to the Shrine. Let the pipes finish them."
+    questions: |
+      What else did the Clan use this machine to produce?
+
+  - name: Forge Quarter — Repairs
+    type: Counter
+    description: |
+      The Forge Quarter's smelters, forming benches, and metalworking infrastructure can be rebuilt. Spend trade points of metalworking material across visits. One stage of repair work consumes the current visit.
+
+      Stage 1 (5 trade points): The primary workbench is functional. Players can perform basic item repairs and simple metalworking.
+      Stage 2 (15 trade points): The forge reaches full operating temperature. Players may use the Forge Quarter as an outside Rune Forge — same rules and complexity tiers apply.
+      Stage 3 (30 trade points): The master forge is operational. Players may craft Copper Rust Clan items here and apply Rune enchantments using the Master Forge rules.
+    questions: |
+      Are there unfinished items still sitting in the forge racks — work the Clan never completed?
+
+  # ── SHRINE QUARTER ───────────────────────────────────────────────────────────
+
+  - name: The Shrine Quarter
+    type: Passive
+    description: |
+      The quarter beyond the Forge, continuing clockwise around the rim. Lower-ceilinged than the others, the walls close and warm from pipes running beneath the stone. A central pipe — wider than the others, running floor to ceiling — stands at the quarter's center. Beside it, a stone pit is carved into the floor, filled with flat-faced rocks arranged in a rough circle. Rune-marks run along the pit edge.
+
+      This is where the Clan kept their relationship with the God of the Deep formal.
+
+  - name: The Hum
+    type: Action
+    description: |
+      A player carrying the hammer and chisel from The Press who walks through the Shrine Quarter hears a low sound — felt more than heard, a resonance coming from somewhere in the stonework. Only the carrier hears it.
+
+      Instinct Reaction (Difficulty 17): The player locates the source — the central pipe, a specific section near the quarter wall. Hammering this section with the chisel while the hammer is in hand completes the enchantment.
+
+      The hammer and chisel become the Rune Hammer — an item tied to the player who completed this ritual. While carried, the Rune Hammer adds +3 to all Rune Station and Master Forge enchantment rolls made by its bearer.
+    questions: |
+      Is this resonance the God of the Deep's voice, or something mechanical built to mimic it?
+
+  - name: The Stone Pit
+    type: Passive/Action
+    description: |
+      A circular pit carved into the Shrine Quarter floor, filled with flat-faced rocks arranged in rings. Rune-marks along the pit edge indicate orientation and sequence.
+
+      When the central pipe is struck — either during The Hum or deliberately — vibration passes through the floor and into the pit. The rocks shift and come to rest in new positions. A player who succeeds on a Knowledge reaction (Difficulty 17) can read the orientations as directional markers pointing to underground locations not yet visited.
+
+      Shrine Quarter Repairs unlock the pit's full range:
+      Stage 1 (5 trade points): The rocks reveal 1 underground location card.
+      Stage 2 (15 trade points): The rocks reveal 3 underground location cards.
+      Stage 3 (30 trade points): The rocks reveal all accessible underground locations in the current Path.
+
+      Revealed locations appear in the current Path configuration and may be traveled to.
+    questions: |
+      Did the Clan know the third stage was possible? Or was it theoretical — something they wrote down but never tested?
+
+  - name: The Sculptor's Workshop
+    type: Passive
+    description: |
+      A side space off the Shrine Quarter, recessed into the rock wall — a workshop with a home attached. The door to the home is intact. Tools are laid out in organized rows, still clean. Small carved figures stand on a shelf along the back wall and in alcoves cut into the rock — dozens of them, carefully placed. They survived whatever happened here.
+
+      All figures depict the same person. Early carvings are rough and anonymous. Later ones are detailed: a specific face, at rest, in unhurried poses. The later figures are placed in progressively more private alcoves, tucked around corners and behind tool racks — not hidden, but not displayed.
+
+      Players who enter this space gain 1 Hope.
+
+      The home at the back is undamaged.
+    questions: |
+      Who carved these, and is the subject still somewhere in the Sanctuary — or did they leave before it was sealed?
+
+  # ── HEARTH QUARTER ───────────────────────────────────────────────────────────
+
+  - name: The Hearth Quarter
+    type: Passive
+    description: |
+      The quarter beyond the Shrine, opposite the Forge. A large iron-banded boiler occupies the center — taller than a person, its firebox cold. Heat pipes branch from it along the ceiling and walls into all other quarters. The pipes still carry trace warmth from somewhere deeper.
+
+      Stone benches ring the boiler. A communal fire pit sits in front of it. The quarter was built to be the place people came back to between shifts.
+
+  - name: Hearth Quarter — Repairs
+    type: Counter
+    description: |
+      Restoring the Hearth Quarter means relighting and maintaining the boiler and its heat distribution system. Spend trade points of fuel material and mechanical components across visits. One stage of repair work consumes the current visit.
+
+      Stage 1 (5 trade points): The boiler ignites. Heat flows through the pipes into all quarters. Players who take a short rest in the Sanctuary clear an additional 5 Stress.
+      Stage 2 (15 trade points): The heat system stabilizes. Players who take a short rest in the Sanctuary recover 1 additional life.
+      Stage 3 (30 trade points): The Hearth Quarter reaches full warmth. Players who take a short rest in the Sanctuary lose 1d3 Mist tokens.
+    questions: |
+      Who maintained the boiler? Is there a logbook tracking fuel consumption or heat-routing configurations?
+
+  # ── ROOT QUARTER ─────────────────────────────────────────────────────────────
+
+  - name: The Root Quarter
+    type: Passive
+    description: |
+      The quarter to the right of the entrance. Root systems and underground fungi have pushed through the worked stone — the Clan cultivated them deliberately, maintaining a subsurface garden for food and medicinal stock. The mist has settled heaviest here. The plants are overgrown and strange, fed by the mist for years without tending. Some have changed shape.
+
+      Players who move through the Root Quarter without protective gear feel the mist pressing in — a physical weight that settles on exposed skin.
+
+  - name: Root Quarter — Repairs
+    type: Counter
+    description: |
+      Restoring the Root Quarter means clearing corrupted growth, redirecting root systems to healthy stone, and reseeding the cultivated sections. Spend trade points of appropriate material (root-cutting tools, soil amendments, seed stock) across visits. One stage of repair work consumes the current visit.
+
+      Each repair stage costs 2 Mist tokens per player — the quarter's corruption transfers as the mist is displaced.
+
+      Stage 1 (5 trade points): The front sections clear. The quarter yields common herbs — 0.25 trade value per visit.
+      Stage 2 (15 trade points): The cultivated beds are restored. The quarter yields medicinal herbs — 0.75 trade value per visit.
+      Stage 3 (30 trade points): The Root Quarter is fully reclaimed. The quarter yields rare herbs — 2 trade value per visit.
+    questions: |
+      What did the Clan cultivate here that isn't native to underground rock? Where did the original seeds come from?
+
+  # ── FOUNDATION CHAMBER ───────────────────────────────────────────────────────
+
+  - name: The Foundation Chamber
+    type: Passive
+    description: |
+      The chamber sits at the lowest point of the Sanctuary, reachable by stone stairways descending from each quarter. Ancient brass and iron machinery occupies its center — built by hands that predate the Clan, running on principles the Clan maintained without fully understanding. Coral has grown up around the Engine's base, pale and branching.
+
+      A creature rests against the Engine. From the rim it looks like a stillness — a mass of scales and mist where the chamber floor meets the machine. It is not still. It is watching the entrance.
+
+      The Claw of the Mist sits in a bracket near the Engine's primary interface. The creature has not touched it yet.
+
+  - name: The Makara's Hold
+    type: Passive
+    description: |
+      While the Makara lives in the Foundation Chamber, all repair progress made during this visit is undone before the next — the coral reclaims what was cleared, the mist resettles into what was swept out, the machinery shifts back out of alignment. The Sanctuary's Mist-Touched modifier persists.
+
+      At the start of combat, the Makara takes the Claw of the Mist from its bracket. While it holds the Claw, the first time the Makara is spotlighted each GM turn, the GM gains 1 Fear and the Makara heals 1 HP.
+
+      When the Makara is defeated, the Claw falls to the chamber floor. The Mist-Touched modifier lifts. Repair progress made from this point forward persists between visits.
+    questions: |
+      Was the Makara placed here deliberately, or did it move in when the Engine went dormant?
+
+  - name: Ancient Foundation Engine — Repairs
+    type: Counter
+    description: |
+      The Foundation Engine predates the Copper Rust Clan. They built the Sanctuary over it without knowing what it was. The mist creatures who attacked targeted the Engine specifically — it cannot be fully restored, but it can be stabilized. Repairs require the Makara to be defeated first.
+
+      Spend trade points of rune-work material and Clan engineering components across visits. One stage of repair work consumes the current visit.
+
+      Stage 1 (5 trade points): The Engine stabilizes. The Sanctuary loses its Unstable modifier and persists between Path sessions.
+      Stage 2 (15 trade points): The Engine reaches operating capacity. The Sanctuary gains a functional Sacred Flame anchor — the Goods Elevator shaft at Deep Station clears.
+      Stage 3 (30 trade points): The Engine reaches full output. All connected rail locations — Outer Mine Line, Crystal Defense Line, Deep Station — become Stable and persist between Path sessions regardless of Path generation.
+
+      The Engine cannot be made resistant to mist. It functions, but remains vulnerable.
+    questions: |
+      What was the Engine originally built to do? Does restoring it alert whoever built it that it is running again?
+
+featureQuestions:
+  - The Sculptor's Workshop shows someone lived here after the raid. Did they leave before it was sealed, or is there evidence they were still here when the mist wall closed?
+  - The Stone Pit reveals underground locations — does it show places that currently exist, or places that once existed and may no longer?
+  - Repairing the Root Quarter costs Mist tokens. At what point does the repair arc become too costly to continue in a single session?
+  - The Engine cannot be made mist-resistant. What happens the next time a mist creature finds it?
+  - The Clan built over this Engine without understanding it. What else in this Sanctuary was built on top of something they did not understand?

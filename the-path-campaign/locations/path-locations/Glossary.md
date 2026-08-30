@@ -2,7 +2,7 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 47** (29 Surface + 15 Underground + 3 Special)
+**Total Locations: 48** (29 Surface + 16 Underground + 3 Special)
 
 ---
 
@@ -52,6 +52,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Flooded Network](./underground-locations/flooded-network.yaml)     | Ancient hydraulic tunnels with one-way water trap                  |
 | ☑        | ☑     | [Fungal Depths](./underground-locations/fungal-depths.md)           | Caverns dominated by massive fungal growth                         |
 | ☑        | ☑     | [Geothermal Caverns](./underground-locations/geothermal-caverns.md) | Hot springs and volcanic activity underground                      |
+| ☑        | ☑     | [Copper Rust Sanctuary](./underground-locations/copper-rust-sanctuary.yaml) | Sealed underground city built over an Ancient Foundation Engine — four quarters, a guardian in the depths, and a long repair arc |
 | ☑        | ☑     | [Mining Complex](./underground-locations/mining-complex.yaml)       | Pre-Starfall mining station sealed behind a Clan door, gravity rails, and a crystal taint box |
 | ☑        | ☑     | [Needle Tunnels](./underground-locations/needle-tunnels.yaml)       | Claustrophobic passages hiding comfort and cosmic horror           |
 | ☑        | ☑     | [Outer Mine Line](./underground-locations/outer-mine-line.yaml)     | Copper Rust Clan drift-cart railway through natural caverns, linking the rail network to the ancient mining station |
@@ -79,7 +80,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 47** | **Unassigned: 31** (39.7% remaining)
+**Assigned: 48** | **Unassigned: 30** (38.5% remaining)
 
 ### 🔮 Major Arcana (12 of 22 assigned)
 
@@ -150,7 +151,7 @@ _Physical card mappings for location representation during play. Select cards ba
 
 | Card            | Location           |
 | --------------- | ------------------ |
-| Ace of Discs    |                    |
+| Ace of Discs    | Copper Rust Sanctuary |
 | 2 of Discs      | Sacred Underground |
 | 3 of Discs      | Black Falls        |
 | 4 of Discs      | Outer Mine Line    |
