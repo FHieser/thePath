@@ -411,10 +411,27 @@
       While carried, the Br4ss Filt3r absorbs Mist tokens before they reach you. It can absorb up to 3 Mist tokens total. Once full, it stops working and must be replaced or repaired by the Brass Mechanicorum.
 
 # ============================================================
+# COPPER RUST CLAN ITEMS
+# ============================================================
+
+- name: Rune Hammer
+  type: Copper Rust Clan
+  usage: Permanent
+  tier: 3
+  tradeValue: null
+  flavor: "A hammer and chisel formed by the Press in the Forge Quarter and finished by the pipes in the Shrine — the enchantment lives in the handle, not the head. It hums faintly against worked stone."
+  effect:
+    category: Utility
+    description: |
+      Ritual Item. The Rune Hammer is tied to the player who completed its enchantment in the Copper Rust Sanctuary and cannot be traded or transferred.
+
+      While carried, the bearer adds +3 to all enchantment rolls made at the Rune Station (Deep Station) and the Master Forge (Copper Rust Sanctuary).
+
+# ============================================================
 # MIST BORN ITEMS
 # ============================================================
 
-- name: Mist Clutch
+- name: Claw of the Mist
   type: Mist Born
   usage: Reusable
   tier: 2
