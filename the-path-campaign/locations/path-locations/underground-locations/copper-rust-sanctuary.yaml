@@ -2,11 +2,13 @@ name: Copper Rust Sanctuary
 tier: 3
 category: Exploration
 description: |
-  A crater-shaped underground city carved into solid rock. Four working quarters ring the inner walls in terraces — Forge Quarter to the left of the entrance, Root Quarter to the right, Shrine Quarter beyond the Forge, Hearth Quarter beyond the Root. The Foundation Chamber lies at the center bottom.
+  A crater-shaped underground city carved into solid rock. Four quarters ring the inner walls in terraces — Forge Quarter to the left of the entrance, Root Quarter to the right, Shrine Quarter beyond the Forge, Hearth Quarter beyond the Root. The Foundation Chamber sits at the center bottom, fifty feet below the rim.
 
-  Players who look down from the entrance see ancient brass machinery below, pale coral growing around its base, and a stillness against the Engine that is not still.
+  The place was hit hard. Forges overturned. Pipe sections torn from the ceiling and left where they fell. Sections of terrace collapsed inward. The mist has settled into the lower levels and hasn't moved since. In the Forge walls, a few rune-lights still glow — small carvings left by workers who finished something they were proud of. Everything else is dark.
 
-  The quarters are damaged but intact. Tools rest on forge benches where someone set them down mid-shift. Rune-lights still glow in the Forge walls. The mist has settled into the lowest points. Everything here was left in the middle of a shift.
+  There is nobody here. Tools are scattered across the floor, some still near the benches they were pulled from. A meal sits on a stone shelf in the Hearth Quarter, untouched. Whatever happened moved fast.
+
+  At the bottom of the crater, pale coral has grown up around the Foundation Engine. A creature rests against the machine. From the rim it looks like a stillness — a mass of scales and mist where the chamber floor meets the Engine. It is not still.
 tagline: The Clan left their tools on the benches. The mist moved in while they were gone.
 impulses: |
   Hold what the Clan built, resist what the mist has claimed, draw the players deeper one repair at a time
@@ -21,17 +23,19 @@ features:
 
   # ── FORGE QUARTER ────────────────────────────────────────────────────────────
 
-  - name: The Forge Quarter
+  - name: Forge Quarter — Overview
     type: Passive
     description: |
-      The left-facing quarter from the entrance. Terraced stone workbenches descend toward the rim edge. Forge equipment lines the lower tier — smelters, anvils, tool racks, all mid-use and abandoned. Pipes run along the ceiling and walls, carrying heat from the Hearth Quarter. Rune-lights glow in the walls here: small carvings, each different, each left by a Clan member who finished something they were proud of.
+      The left-facing quarter from the entrance. The raid hit hardest here. Smelters are cracked open, their contents long cold. Anvils knocked from their mounts. A tool rack pulled from the wall and left across the floor. The terraced workbenches are intact — too heavy to move — but the equipment on them is scattered or broken.
 
-      The forges are unlit. The rune-lights still work.
+      Pipes run along the ceiling and walls, connecting to the Hearth Quarter. Several sections have been torn loose and hang from their fittings.
 
-  - name: The Press
+      In the walls, small rune-carvings still glow — one for each piece of work a Clan member was proud of. They survived. The rest of the quarter did not.
+
+  - name: Forge Quarter — The Press
     type: Action
     description: |
-      A machine at the Forge Quarter's center — a heavy press of brass and iron, rune-marked, with a vertical channel on one face and material receptacles at the base. A notation in Clan script runs along the top rail. Players who can read it, or succeed on a Knowledge reaction (Difficulty 17), understand its function: feed appropriate material, pull the lever, receive the formed component.
+      A machine at the Forge Quarter's center — a heavy press of brass and iron, rune-marked, with a vertical channel on one face and material receptacles at the base. A notation in Clan script runs along the top rail. Players who can read it, or succeed on a Knowledge reaction, understand its function: feed appropriate material, pull the lever, receive the formed component.
 
       The Press produces a hammer and chisel when fed 1 trade point of appropriate material (worked metal, tool-grade stone, similar).
 
@@ -55,30 +59,30 @@ features:
 
   # ── SHRINE QUARTER ───────────────────────────────────────────────────────────
 
-  - name: The Shrine Quarter
+  - name: Shrine Quarter — Overview
     type: Passive
     description: |
-      The quarter beyond the Forge, continuing clockwise around the rim. Lower-ceilinged than the others, the walls close and warm from pipes running beneath the stone. A central pipe — wider than the others, running floor to ceiling — stands at the quarter's center. Beside it, a stone pit is carved into the floor, filled with flat-faced rocks arranged in a rough circle. Rune-marks run along the pit edge.
+      The quarter beyond the Forge, continuing clockwise around the rim. Lower-ceilinged than the others, tucked further from the entrance — the raid moved through here without stopping. The walls are intact. The pipes beneath the stone still carry faint warmth.
 
-      This is where the Clan kept their relationship with the God of the Deep formal.
+      A central pipe — wider than the others, running floor to ceiling — stands at the quarter's center. Beside it, a stone pit is carved into the floor, filled with flat-faced rocks arranged in a rough circle. Rune-marks run along the pit edge. None of it was touched.
 
-  - name: The Hum
+  - name: Shrine Quarter — The Hum
     type: Action
     description: |
       A player carrying the hammer and chisel from The Press who walks through the Shrine Quarter hears a low sound — felt more than heard, a resonance coming from somewhere in the stonework. Only the carrier hears it.
 
-      Instinct Reaction (Difficulty 17): The player locates the source — the central pipe, a specific section near the quarter wall. Hammering this section with the chisel while the hammer is in hand completes the enchantment.
+      Instinct Reaction: The player locates the source — the central pipe, a specific section near the quarter wall. Hammering this section with the chisel while the hammer is in hand completes the enchantment.
 
       The hammer and chisel become the Rune Hammer — an item tied to the player who completed this ritual. While carried, the Rune Hammer adds +3 to all Rune Station and Master Forge enchantment rolls made by its bearer.
     questions: |
       Is this resonance the God of the Deep's voice, or something mechanical built to mimic it?
 
-  - name: The Stone Pit
+  - name: Shrine Quarter — The Stone Pit
     type: Passive/Action
     description: |
       A circular pit carved into the Shrine Quarter floor, filled with flat-faced rocks arranged in rings. Rune-marks along the pit edge indicate orientation and sequence.
 
-      When the central pipe is struck — either during The Hum or deliberately — vibration passes through the floor and into the pit. The rocks shift and come to rest in new positions. A player who succeeds on a Knowledge reaction (Difficulty 17) can read the orientations as directional markers pointing to underground locations not yet visited.
+      When the central pipe is struck — either during The Hum or deliberately — vibration passes through the floor and into the pit. The rocks shift and come to rest in new positions. A player who succeeds on a Knowledge reaction can read the orientations as directional markers pointing to underground locations not yet visited.
 
       Shrine Quarter Repairs unlock the pit's full range:
       Stage 1 (5 trade points): The rocks reveal 1 underground location card.
@@ -89,7 +93,7 @@ features:
     questions: |
       Did the Clan know the third stage was possible? Or was it theoretical — something they wrote down but never tested?
 
-  - name: The Sculptor's Workshop
+  - name: Shrine Quarter — The Sculptor's Workshop
     type: Passive
     description: |
       A side space off the Shrine Quarter, recessed into the rock wall — a workshop with a home attached. The door to the home is intact. Tools are laid out in organized rows, still clean. Small carved figures stand on a shelf along the back wall and in alcoves cut into the rock — dozens of them, carefully placed. They survived whatever happened here.
@@ -104,12 +108,12 @@ features:
 
   # ── HEARTH QUARTER ───────────────────────────────────────────────────────────
 
-  - name: The Hearth Quarter
+  - name: Hearth Quarter — Overview
     type: Passive
     description: |
-      The quarter beyond the Shrine, opposite the Forge. A large iron-banded boiler occupies the center — taller than a person, its firebox cold. Heat pipes branch from it along the ceiling and walls into all other quarters. The pipes still carry trace warmth from somewhere deeper.
+      The quarter beyond the Shrine, opposite the Forge. A large iron-banded boiler occupies the center — taller than a person, its firebox cold, one side caved in where something struck it. The pipe connections have been torn loose. Heat stopped flowing into the other quarters when this one went dark.
 
-      Stone benches ring the boiler. A communal fire pit sits in front of it. The quarter was built to be the place people came back to between shifts.
+      Stone benches are knocked over. The communal fire pit still has ash in it from the last time someone used it. A meal on a stone shelf near the back wall is untouched.
 
   - name: Hearth Quarter — Repairs
     type: Counter
@@ -124,10 +128,12 @@ features:
 
   # ── ROOT QUARTER ─────────────────────────────────────────────────────────────
 
-  - name: The Root Quarter
+  - name: Root Quarter — Overview
     type: Passive
     description: |
-      The quarter to the right of the entrance. Root systems and underground fungi have pushed through the worked stone — the Clan cultivated them deliberately, maintaining a subsurface garden for food and medicinal stock. The mist has settled heaviest here. The plants are overgrown and strange, fed by the mist for years without tending. Some have changed shape.
+      The quarter to the right of the entrance. The Clan cultivated roots and fungi here deliberately — a subsurface garden for food and medicinal stock. The mist that moved in destroyed the harvest and settled. What grows now is overgrown, pale where it should be dark, branching in directions that don't follow the light. Some has changed shape entirely.
+
+      The worked stone walls are still mostly intact. Whatever came through here was less interested in this quarter than in the others.
 
       Players who move through the Root Quarter without protective gear feel the mist pressing in — a physical weight that settles on exposed skin.
 
@@ -146,7 +152,7 @@ features:
 
   # ── FOUNDATION CHAMBER ───────────────────────────────────────────────────────
 
-  - name: The Foundation Chamber
+  - name: Foundation Chamber — Overview
     type: Passive
     description: |
       The chamber sits at the lowest point of the Sanctuary, reachable by stone stairways descending from each quarter. Ancient brass and iron machinery occupies its center — built by hands that predate the Clan, running on principles the Clan maintained without fully understanding. Coral has grown up around the Engine's base, pale and branching.
@@ -155,7 +161,7 @@ features:
 
       The Claw of the Mist sits in a bracket near the Engine's primary interface. The creature has not touched it yet.
 
-  - name: The Makara's Hold
+  - name: Foundation Chamber — The Makara's Hold
     type: Passive
     description: |
       While the Makara lives in the Foundation Chamber, all repair progress made during this visit is undone before the next — the coral reclaims what was cleared, the mist resettles into what was swept out, the machinery shifts back out of alignment. The Sanctuary's Mist-Touched modifier persists.
@@ -166,7 +172,7 @@ features:
     questions: |
       Was the Makara placed here deliberately, or did it move in when the Engine went dormant?
 
-  - name: Ancient Foundation Engine — Repairs
+  - name: Foundation Chamber — Engine Repairs
     type: Counter
     description: |
       The Foundation Engine predates the Copper Rust Clan. They built the Sanctuary over it without knowing what it was. The mist creatures who attacked targeted the Engine specifically — it cannot be fully restored, but it can be stabilized. Repairs require the Makara to be defeated first.
