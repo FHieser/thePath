@@ -378,26 +378,58 @@ function displayMechanics(data) {
         html += `</section>`;
     }
 
-    // Custom Experiences
+    // Custom Experiences (intro only — Mist Warding and Mist Attuned are their own sections below)
     if (data.customExperiences) {
         html += `
             <section class="mechanics-section" id="custom-experiences">
                 <h2>Custom Experiences</h2>
                 <div class="mechanics-description">${formatDescription(data.customExperiences.description)}</div>
+            </section>
         `;
+    }
 
-        if (data.customExperiences.list && Array.isArray(data.customExperiences.list)) {
-            html += `<div class="modifier-list" style="margin-top: 1rem;">`;
-            data.customExperiences.list.forEach(exp => {
-                const summaryHTML = exp.summary ? `<div class="mechanics-description" style="font-style: italic; opacity: 0.9;">${escapeHtml(exp.summary)}</div>` : '';
-                const exampleHTML = exp.example ? `<div class="mechanics-description" style="margin-top: 0.5rem; opacity: 0.9;"><strong>Example:</strong> ${formatDescription(exp.example)}</div>` : '';
-                const noteHTML = exp.note ? `<div class="mechanics-description" style="margin-top: 0.5rem; font-style: italic; opacity: 0.85;">${formatDescription(exp.note)}</div>` : '';
-                html += `<div class="modifier-item"><h4>${escapeHtml(exp.name)}</h4>${summaryHTML}<div class="mechanics-description">${formatDescription(exp.description)}</div>${exampleHTML}${noteHTML}</div>`;
+    // Mist Warding
+    if (data.mistWarding) {
+        const mw = data.mistWarding;
+        const summaryHTML = mw.summary ? `<div class="mechanics-description" style="font-style: italic; opacity: 0.9;">${escapeHtml(mw.summary)}</div>` : '';
+        const exampleHTML = mw.example ? `<div class="mechanics-description" style="margin-top: 0.5rem; opacity: 0.9;"><strong>Example:</strong> ${formatDescription(mw.example)}</div>` : '';
+        html += `
+            <section class="mechanics-section" id="mist-warding">
+                <h2>Mist Warding</h2>
+                ${summaryHTML}
+                <div class="mechanics-description">${formatDescription(mw.description)}</div>
+                ${exampleHTML}
+            </section>
+        `;
+    }
+
+    // Mist Attuned
+    if (data.mistAttuned) {
+        const ma = data.mistAttuned;
+        const summaryHTML = ma.summary ? `<div class="mechanics-description" style="font-style: italic; opacity: 0.9;">${escapeHtml(ma.summary)}</div>` : '';
+        let ranksHTML = '';
+        if (ma.ranks && Array.isArray(ma.ranks)) {
+            ranksHTML = '<div class="modifier-list" style="margin-top: 1rem;">';
+            ma.ranks.forEach(rank => {
+                const grantsHTML = rank.grants && rank.grants.length
+                    ? `<ul class="md-list">${rank.grants.map(g => `<li>${escapeHtml(g)}</li>`).join('')}</ul>` : '';
+                const exampleHTML = rank.example ? `<div class="mechanics-description" style="margin-top: 0.5rem; opacity: 0.9;"><strong>Example:</strong> ${formatDescription(rank.example)}</div>` : '';
+                const expectationHTML = rank.expectation ? `<div class="mechanics-description" style="margin-top: 0.5rem;"><strong>Expectation:</strong> ${formatDescription(rank.expectation)}</div>` : '';
+                const noteHTML = rank.note ? `<div class="mechanics-description" style="margin-top: 0.5rem; font-style: italic; opacity: 0.85;"><strong>GM Note:</strong> ${formatDescription(rank.note)}</div>` : '';
+                ranksHTML += `<div class="modifier-item"><h4>Rank ${escapeHtml(String(rank.value))}</h4>${grantsHTML}${exampleHTML}${expectationHTML}${noteHTML}</div>`;
             });
-            html += `</div>`;
+            ranksHTML += '</div>';
         }
-
-        html += `</section>`;
+        const grantedByHTML = ma.grantedBy ? `<div class="mechanics-description" style="margin-top: 0.5rem; font-style: italic; opacity: 0.85;">${formatDescription(ma.grantedBy)}</div>` : '';
+        html += `
+            <section class="mechanics-section" id="mist-attuned">
+                <h2>Mist Attuned</h2>
+                ${summaryHTML}
+                <div class="mechanics-description">${formatDescription(ma.coreMechanic)}</div>
+                ${grantedByHTML}
+                ${ranksHTML}
+            </section>
+        `;
     }
 
     // Fear Spending Options

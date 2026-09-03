@@ -430,28 +430,71 @@ customExperiences:
 
     Like any Experience, a custom Experience has a value. Unlike a standard Experience, that value does not simply add to rolls: each category defines what its own value means. Custom Experiences can be granted to the players through events, quests or other means that the GM deems appropriate.
 
-  list:
-    - name: Mist Warding
-      summary: Hold the mist off, by whatever means the character's fiction supplies.
-      description: |
-        Spend Hope to negate 1 Mist token as it would be gained.
+mistWarding:
+  summary: Hold the mist off, by whatever means the character's fiction supplies.
+  description: |
+    Spend Hope to negate 1 Mist token as it would be gained.
 
-        Your first uses since your last long rest — up to your Mist Warding value — cost **1 Hope** each. Every use after that costs 1 more Hope than the last: the next costs 2, then 3, then 4, and so on. It always negates exactly **1** token, whatever it cost.
+    Your first uses since your last long rest — up to your Mist Warding value — cost **1 Hope** each. Every use after that costs 1 more Hope than the last: the next costs 2, then 3, then 4, and so on. It always negates exactly **1** token, whatever it cost.
 
-        The count resets on a long rest.
+    The count resets on a long rest.
+  example: |
+    Mist Warding 2. The first and second uses cost 1 Hope each and negate 1 token each. The third costs 2 Hope and still negates 1. The fourth costs 3.
+
+mistAttuned:
+  summary: Carry the mist rather than resist it. Capacity, not protection — and it does not reverse.
+  coreMechanic: |
+    Your corruption curve shifts right by a number of steps equal to your Mist Attuned value. Tokens up to that value have no effect, every consequence tier begins that much later, and you are not consumed until **10 + your value**.
+
+    Every effect that removes Mist tokens removes that many fewer. An effect that would remove **all** your tokens instead leaves you holding your value.
+
+    Mist Warding and Mist Attuned are not mutually exclusive — a character can hold both, contradictory as that is in doctrine.
+  grantedBy: |
+    Granted by the Teachings of the Mist event, one rank per teaching, to a maximum of 4.
+  ranks:
+    - value: 1
       example: |
-        Mist Warding 2. The first and second uses cost 1 Hope each and negate 1 token each. The third costs 2 Hope and still negates 1. The fourth costs 3.
+        Value 1. You suffer the 1-3 effects at 2-4 tokens, the 4-6 effects at 5-7, both tiers at 8-10, and you are consumed at 11.
+      grants:
+        - Fire Born items can still be used, but any action roll made with one deals you 1 direct damage — the flame reacting against mist-tainted flesh.
+      expectation: |
+        No expectation yet. This is a courtesy extended before any loyalty is asked for.
 
-    - name: Mist Attuned
-      summary: Carry the mist rather than resist it. Capacity, not protection — and it does not reverse.
-      description: |
-        Your corruption curve shifts right by a number of steps equal to your Mist Attuned value. Tokens up to that value have no effect, every consequence tier begins that much later, and you are not consumed until **10 + your value**.
-
-        Every effect that removes Mist tokens removes that many fewer. An effect that would remove **all** your tokens instead leaves you holding your value.
+    - value: 2
       example: |
-        Mist Attuned 2. You suffer the 1-3 effects at 3-5 tokens, the 4-6 effects at 6-8, both tiers at 9-11, and you are consumed at 12. Cliffgold, which removes 3 tokens, removes 1. Dewcleanse, which removes 2, removes none. A long rest at a Flame-Touched location leaves you holding 2.
+        Value 2. You suffer the 1-3 effects at 3-5 tokens, the 4-6 effects at 6-8, both tiers at 9-11, and you are consumed at 12. Cliffgold, which removes 3 tokens, removes 1. Dewcleanse, which removes 2, removes none. A long rest at a Flame-Touched location leaves you holding 2.
+      grants:
+        - Fire Born items can still be used, but any action roll made with one deals you 2 direct damage — the flame reacting against mist-tainted flesh.
+        - When you would gain Mist tokens from a source, you may choose to gain 1 fewer.
+        - Basic Mist Born creatures ignore you, unless you attack them.
+      expectation: |
+        Treated as a mercenary or a minion, not an ally. Expect small, transactional asks. Refusing costs nothing yet, but the relationship doesn't move forward without doing what's asked.
+
+    - value: 3
+      example: |
+        Value 3. You suffer the 1-3 effects at 4-6 tokens, the 4-6 effects at 7-9, both tiers at 10-12, and you are consumed at 13.
+      grants:
+        - Fire Born items can still be used, but any action roll made with one deals you 3 direct damage — the flame reacting against mist-tainted flesh.
+        - When you would gain Mist tokens from a source, you may choose to gain 2 fewer.
+        - Basic Mist Born creatures obey your commands as though you were one of their own, no roll required.
+        - Each action you take in a Flame-Touched location costs 1 Stress.
+      expectation: |
+        Real alignment is expected now. Command carries the assumption it is used in the mist's interest.
       note: |
-        Granted by the Teachings of the Mist event, one rank per teaching, to a maximum of 4.
+        A character at this rank should not be able to walk this back casually. Treat abandoning the mist's cause as a real betrayal with lasting consequences, not a clean reset.
+
+    - value: 4
+      example: |
+        Value 4. You suffer the 1-3 effects at 5-7 tokens, the 4-6 effects at 8-10, both tiers at 11-13, and you are consumed at 14.
+      grants:
+        - Fire Born items can still be used, but any action roll made with one deals you 4 direct damage — the flame reacting against mist-tainted flesh.
+        - When you would gain Mist tokens from a source, you may choose to gain 3 fewer.
+        - Basic and higher-ranking Mist Born creatures obey your commands as though you were one of their own, no roll required.
+        - Each action you take in a Flame-Touched location costs 2 Stress.
+      expectation: |
+        Treated as one of the mist's own — closer to a faction commitment than a character trait.
+      note: |
+        There is no convenient path back to neutrality. Don't let a Rank 4 character quietly disengage.
 
 fearSpendingOptions:
   mist:
