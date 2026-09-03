@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 48** (29 Surface + 16 Underground + 3 Special)
+**Total Locations: 49** (30 Surface + 16 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (29 locations)
+## 🌄 Surface Locations (30 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -39,6 +39,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Shrinewood](./surface-locations/shrinewood.yaml)                   | Ancient forest riddled with shrines to ten thousand small gods, gathered around a great central tree |
 | ☑        | ☑     | [The Fallen Star](./surface-locations/the-fallen-star.yaml)         | Meteorite crater with the star still at the bottom, something asleep on top of it, and a rim route around the edge (Linked to Meteorite Lab) |
 | ☑        | ☑     | [Meteorite Lab](./surface-locations/meteorite-lab.yaml)             | The Archon's laboratory in the old mine overseer station at the crater's edge (Linked to The Fallen Star) |
+| ☑        | ☑     | [Mist Gate](./surface-locations/mist-gate.yaml)                     | Wishing archway that delivers named destinations already on the Path — or casts failures into the mist |
 
 ---
 
@@ -80,7 +81,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 48** | **Unassigned: 30** (38.5% remaining)
+**Assigned: 49** | **Unassigned: 29** (37.2% remaining)
 
 ### 🔮 Major Arcana (12 of 22 assigned)
 
@@ -128,14 +129,14 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Wands  | Blood Fern Valley    |
 | King of Wands   |                      |
 
-### ⚔️ Minor Arcana - Swords (4 of 14 assigned)
+### ⚔️ Minor Arcana - Swords (5 of 14 assigned)
 
 | Card             | Location |
 | ---------------- | -------- |
 | Ace of Swords    |          |
 | 2 of Swords      |          |
 | 3 of Swords      |          |
-| 4 of Swords      |          |
+| 4 of Swords      | Mist Gate        |
 | 5 of Swords      | Lost Flame       |
 | 6 of Swords      |          |
 | 7 of Swords      |          |

@@ -1,0 +1,44 @@
+name: Mist Gate
+tier: 2
+category: Traversal
+description: A doorway in the mist. It leads to desire.
+impulses: Bring players to a place they want, lead into the Mist, travel at a cost
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Mist-Touched
+  - name: Routes
+    value: 1
+potentialAdversaries: Mist Walkers, Mist Stalkers
+features:
+  - name: Disorienting Mist
+    type: Action
+    description: |
+      Thick mist engulfs this location, reducing visibility to mere steps ahead. Shadow landmarks flicker in and out of existence—distant silhouettes that could be stone markers, trees, or phantom structures that vanish when approached. Multiple paths lead away into the obscurity, making it nearly impossible to maintain direction. This heavy mist corruption gives the location the **Mist-Touched** modifier. Each PC who enters this location immediately gains 1 Mist token from the oppressive corruption.
+
+      When the party attempts to leave this location, they make a group Instinct roll. On a success, they exit in their intended direction. On a failure, the GM decides which exit the party takes instead—the mist has turned them around.
+    questions: What do the false exits look like? Where do they lead when the group fails their navigation roll? Do the shadow landmarks correspond to real places, or are they pure mist illusions?
+  - name: The Whispering Threshold
+    type: Action
+    description: |
+      An ancient stone archway stands at the heart of this location, weathered by ages the mist has swallowed. A tattered veil of pale, gauzy fabric hangs within its frame, stirring as if in a breeze that isn't there—sometimes still, sometimes rippling as though something on the other side just breathed. A pattern is etched into the floor before it, pointing toward a single spot. When a PC stands at that point, whispers rise from everywhere and nowhere at once, asking a single question: *where do you wish to go?* The player answers aloud, naming any location.
+
+      The instant they answer, the veil tears open, exhaling thick mist. This happens only once per visit—the GM gains 2 Fear, a single one-time gain regardless of how many PCs eventually step through. Once open, the gate stays open for the rest of the party's time here. Any PC may choose to step through at any point; each PC who does gains 2 Mist tokens, on top of the 1 already gained from Disorienting Mist just for being at this location.
+
+      Once any PC gives an answer, that destination is locked in for the remainder of this visit—further attempts to stand on the pattern do nothing.
+    questions: What does the named destination sound like spoken aloud through the veil—does the mist repeat it back, distort it, or stay silent? What happens if a PC names a location that doesn't exist anywhere in the world?
+  - name: The Gate's Verdict
+    type: Passive
+    description: |
+      Whether the named location is real is decided by whether it is currently on the Path—placed on this session's grid, face-up or face-down.
+
+      If the destination is on the Path, the gate holds true: everyone who steps through arrives at that location's card. If the destination is not on the Path, the gate lies: everyone who steps through is now off-Path, and the GM resolves their fate using the standard off-Path travel procedure (shuffle the Unstable location cards, draw one at a time in isolation, escape only by drawing a Stable location).
+
+      Once every PC has left this location—whether by stepping through the gate or retreating the way they came—the Mist Gate vanishes from the grid entirely.
+    questions: Does the party learn whether the gate held true or lied before anyone steps through, or only after? What happens to PCs who retreat instead of gambling on the gate—do they ever learn what would have happened?
+featureQuestions:
+  - What created the Mist Gate, and why does it grant wishes at all?
+  - Does the gate know the truth before the PCs step through, or is it as uncertain as they are?
+  - Can the same destination be named at two different Mist Gates with different results, since "on the Path" changes session to session?
+  - What happens to a PC who is lost in the mist through a failed gate—can they ever be recovered, and does the answer differ from other forms of being lost off-Path?
+  - Why is the veil's whisper always a question, never a demand or a warning?

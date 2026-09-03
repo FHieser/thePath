@@ -73,6 +73,7 @@ const CONTENT_INDEX = {
     "lost-flame.yaml",
     "mantaray-tree.yaml",
     "meteorite-lab.yaml",
+    "mist-gate.yaml",
     "misty-waters.yaml",
     "monastery.yaml",
     "overgrown-temple.yaml",
