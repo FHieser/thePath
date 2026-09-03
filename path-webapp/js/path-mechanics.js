@@ -383,29 +383,16 @@ function displayMechanics(data) {
         html += `
             <section class="mechanics-section" id="custom-experiences">
                 <h2>Custom Experiences</h2>
-                <div class="mechanics-description">${escapeHtml(data.customExperiences.description)}</div>
+                <div class="mechanics-description">${formatDescription(data.customExperiences.description)}</div>
         `;
 
         if (data.customExperiences.list && Array.isArray(data.customExperiences.list)) {
             html += `<div class="modifier-list" style="margin-top: 1rem;">`;
             data.customExperiences.list.forEach(exp => {
-                html += `
-                    <div class="modifier-item">
-                        <h4>${escapeHtml(exp.name)}</h4>
-                        ${exp.summary ? `<div class="mechanics-description" style="font-style: italic; opacity: 0.9;">${escapeHtml(exp.summary)}</div>` : ''}
-                        <div class="mechanics-description">${formatDescription(exp.description)}</div>
-                        ${exp.example ? `
-                            <div class="mechanics-description" style="margin-top: 0.5rem; opacity: 0.9;">
-                                <strong>Example:</strong> ${escapeHtml(exp.example)}
-                            </div>
-                        ` : ''}
-                        ${exp.note ? `
-                            <div class="mechanics-description" style="margin-top: 0.5rem; font-style: italic; opacity: 0.85;">
-                                ${escapeHtml(exp.note)}
-                            </div>
-                        ` : ''}
-                    </div>
-                `;
+                const summaryHTML = exp.summary ? `<div class="mechanics-description" style="font-style: italic; opacity: 0.9;">${escapeHtml(exp.summary)}</div>` : '';
+                const exampleHTML = exp.example ? `<div class="mechanics-description" style="margin-top: 0.5rem; opacity: 0.9;"><strong>Example:</strong> ${formatDescription(exp.example)}</div>` : '';
+                const noteHTML = exp.note ? `<div class="mechanics-description" style="margin-top: 0.5rem; font-style: italic; opacity: 0.85;">${formatDescription(exp.note)}</div>` : '';
+                html += `<div class="modifier-item"><h4>${escapeHtml(exp.name)}</h4>${summaryHTML}<div class="mechanics-description">${formatDescription(exp.description)}</div>${exampleHTML}${noteHTML}</div>`;
             });
             html += `</div>`;
         }
