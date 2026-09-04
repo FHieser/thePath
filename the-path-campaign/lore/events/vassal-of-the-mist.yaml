@@ -1,0 +1,418 @@
+name: Vassal of the Mist
+category: Event
+description: A offer to undo your death, but the mist does not save you for free.
+impulses: Another chance, a price for your life, you come back changed
+potentialAdversaries: Mist creatures
+
+trigger: |
+  Activate when a character has died, and that character is mist-touched — carrying a Mist Born item, or holding any rank of Mist Attuned.
+
+  Examples: a PC falls in a Mist-Touched location while carrying a Claiming Conch; a vassal dies a second time; a character who took the Teachings falls in combat; someone dies still holding a Tidepole Marker they took off a corpse.
+
+tiers:
+  - tier: 1
+    difficulty: 11
+    features:
+      - name: The Offer
+        type: Passive
+        description: |
+          This event fires only after a character has actually died, and only if they are mist-touched: carrying a Mist Born item, or holding any rank of Mist Attuned.
+
+          **Eligibility:** the character must have **3 or more Hope slots remaining**. The price costs 2, and a character reduced to zero slots is taken by the mist entirely — that is an ending, not a resurrection. A character with 2 or fewer slots is never offered this.
+
+          Let the death land first. Then, away from the fiction, the GM asks the player whether they want to continue this character.
+
+          Only if the answer is yes does the mist make its offer.
+        questions: Who else at the table has an opinion? Does the player already know what this will cost?
+
+      - name: Dissolution
+        type: Action
+        description: |
+          The body unravels into mist. There is nothing left behind.
+
+          The rest of the party can only watch it happen.
+        questions: What do the others think they just saw? Does anyone try to stop it?
+
+      - name: Before the Guardian
+        type: Action
+        description: |
+          The mist sets them down somewhere in the mist, and something is waiting.
+
+          Designate which Guardian appears. What stands there is a projection — a fraction of the thing, cast up from wherever it actually is. Meeting one directly is not survivable, and being dead does not change that.
+
+          The character regains **1 HP** — enough to stand, and to answer.
+
+          It does not explain, does not bargain, and does not name a price. It makes one offer:
+
+          ***Be a vassal to the Mist, or perish.***
+        questions: What does the character understand about where they are? Does the Guardian wait, or is there a limit to its patience?
+
+      - name: Become the Vassal
+        type: Action
+        description: |
+          With a yes the pact is sealed, and the mist starts to gather and change the character.
+
+          Their Mist tokens are **filled up to** the number for the rank they are entering. If they already hold more, they keep what they have.
+
+          - Entering rank 1 — fill to **6**
+          - Entering rank 2 — fill to **8**
+          - Entering rank 3 — fill to **10**
+          - Entering rank 4 — fill to **12**
+
+          Tokens gained this way carry no immediate consequence — no Hope lost, no Stress marked, no Fear to the GM, no Hit Point.
+
+          Then, in order:
+
+          - **Mist Attuned** rises by 1
+          - **Two Hope slots are lost, permanently**
+          - They regain **1d4 + their tier** HP and **1d4 + their tier** Stress
+
+          As long as the pact holds, they gain this trait:
+
+          **Ephemeral** — Your body wavers in and out of being corporeal. You are resistant to physical damage, take double magic damage, and can mark 2 Stress to momentarily pass through a solid object.
+        questions: What do they feel go missing? Do they understand what it cost before they wake?
+
+      - name: Or Perish
+        type: Reaction
+        description: |
+          If the character refuses, the mist simply stops holding them together, and the 1 HP it lent them goes with it.
+
+          They die. There is no way to recover from this. The character met its end.
+        questions: Why did they refuse? Is there anyone the Guardian expects them to name?
+
+      - name: Go Forth My Vassal
+        type: Action
+        description: |
+          Before it lets them go, the Guardian names one thing it wants done. It is specific, it is possible, and it is not negotiable.
+
+          The task always serves the mist against the flame. Examples:
+
+          - Extinguish the Sacred Flame at a named location
+          - Destroy or surrender a specific Fire Born item — one the party is carrying, ideally
+          - Remove someone tied to the flame: a Flame Seeker, an Ember Trader, a Fire Born, or a member of the party
+
+          **Be cruel here.** The character just traded two Hope slots and a piece of themselves to keep existing, and the mist did not save them out of kindness. Name something that costs them — a place they care about, an item they earned, a person at the table. A task the vassal can complete without anyone noticing is not a task, it is a favour.
+        questions: Why this task and not another? Who is going to find out, and when?
+
+      - name: Breaking the Pact
+        type: Reaction
+        description: |
+          A vassal who does not do what the mist asked earns a **Doubt**. The GM hands them a token across the table, and they keep it in front of them.
+
+          A Doubt is earned when the vassal:
+
+          - Refuses the task outright
+          - Acts directly for the flame — relighting a Sacred Flame, defending one against the Mist Born, carrying Flame Essence to where it is needed, arming someone with a Fire Born item
+          - Lets sessions pass without doing anything about the task at all
+
+          **On the third Doubt, the mist stops believing they were worth raising.** It takes back what it gave. The resurrection is reversed, the character dies where they stand, and this time there is no offer.
+
+          **Completing what the mist asked seals the pact.** All Doubts are removed, and Ephemeral remains — the character is now permanently what the mist made them. The mist may ask again.
+        questions: What does the second Doubt change about how the character behaves? Who at the table is counting?
+
+  - tier: 2
+    difficulty: 14
+    features:
+      - name: The Offer
+        type: Passive
+        description: |
+          This event fires only after a character has actually died, and only if they are mist-touched: carrying a Mist Born item, or holding any rank of Mist Attuned.
+
+          **Eligibility:** the character must have **3 or more Hope slots remaining**. The price costs 2, and a character reduced to zero slots is taken by the mist entirely — that is an ending, not a resurrection. A character with 2 or fewer slots is never offered this.
+
+          Let the death land first. Then, away from the fiction, the GM asks the player whether they want to continue this character.
+
+          Only if the answer is yes does the mist make its offer.
+        questions: Who else at the table has an opinion? Does the player already know what this will cost?
+
+      - name: Dissolution
+        type: Action
+        description: |
+          The body unravels into mist. There is nothing left behind.
+
+          The rest of the party can only watch it happen.
+        questions: What do the others think they just saw? Does anyone try to stop it?
+
+      - name: Before the Guardian
+        type: Action
+        description: |
+          The mist sets them down somewhere in the mist, and something is waiting.
+
+          Designate which Guardian appears. What stands there is a projection — a fraction of the thing, cast up from wherever it actually is. Meeting one directly is not survivable, and being dead does not change that.
+
+          The character regains **1 HP** — enough to stand, and to answer.
+
+          It does not explain, does not bargain, and does not name a price. It makes one offer:
+
+          ***Be a vassal to the Mist, or perish.***
+        questions: What does the character understand about where they are? Does the Guardian wait, or is there a limit to its patience?
+
+      - name: Become the Vassal
+        type: Action
+        description: |
+          With a yes the pact is sealed, and the mist starts to gather and change the character.
+
+          Their Mist tokens are **filled up to** the number for the rank they are entering. If they already hold more, they keep what they have.
+
+          - Entering rank 1 — fill to **6**
+          - Entering rank 2 — fill to **8**
+          - Entering rank 3 — fill to **10**
+          - Entering rank 4 — fill to **12**
+
+          Tokens gained this way carry no immediate consequence — no Hope lost, no Stress marked, no Fear to the GM, no Hit Point.
+
+          Then, in order:
+
+          - **Mist Attuned** rises by 1
+          - **Two Hope slots are lost, permanently**
+          - They regain **1d4 + their tier** HP and **1d4 + their tier** Stress
+
+          As long as the pact holds, they gain this trait:
+
+          **Ephemeral** — Your body wavers in and out of being corporeal. You are resistant to physical damage, take double magic damage, and can mark 2 Stress to momentarily pass through a solid object.
+        questions: What do they feel go missing? Do they understand what it cost before they wake?
+
+      - name: Or Perish
+        type: Reaction
+        description: |
+          If the character refuses, the mist simply stops holding them together, and the 1 HP it lent them goes with it.
+
+          They die. There is no way to recover from this. The character met its end.
+        questions: Why did they refuse? Is there anyone the Guardian expects them to name?
+
+      - name: Go Forth My Vassal
+        type: Action
+        description: |
+          Before it lets them go, the Guardian names one thing it wants done. It is specific, it is possible, and it is not negotiable.
+
+          The task always serves the mist against the flame. Examples:
+
+          - Extinguish the Sacred Flame at a named location
+          - Destroy or surrender a specific Fire Born item — one the party is carrying, ideally
+          - Remove someone tied to the flame: a Flame Seeker, an Ember Trader, a Fire Born, or a member of the party
+
+          **Be cruel here.** The character just traded two Hope slots and a piece of themselves to keep existing, and the mist did not save them out of kindness. Name something that costs them — a place they care about, an item they earned, a person at the table. A task the vassal can complete without anyone noticing is not a task, it is a favour.
+        questions: Why this task and not another? Who is going to find out, and when?
+
+      - name: Breaking the Pact
+        type: Reaction
+        description: |
+          A vassal who does not do what the mist asked earns a **Doubt**. The GM hands them a token across the table, and they keep it in front of them.
+
+          A Doubt is earned when the vassal:
+
+          - Refuses the task outright
+          - Acts directly for the flame — relighting a Sacred Flame, defending one against the Mist Born, carrying Flame Essence to where it is needed, arming someone with a Fire Born item
+          - Lets sessions pass without doing anything about the task at all
+
+          **On the third Doubt, the mist stops believing they were worth raising.** It takes back what it gave. The resurrection is reversed, the character dies where they stand, and this time there is no offer.
+
+          **Completing what the mist asked seals the pact.** All Doubts are removed, and Ephemeral remains — the character is now permanently what the mist made them. The mist may ask again.
+        questions: What does the second Doubt change about how the character behaves? Who at the table is counting?
+
+  - tier: 3
+    difficulty: 17
+    features:
+      - name: The Offer
+        type: Passive
+        description: |
+          This event fires only after a character has actually died, and only if they are mist-touched: carrying a Mist Born item, or holding any rank of Mist Attuned.
+
+          **Eligibility:** the character must have **3 or more Hope slots remaining**. The price costs 2, and a character reduced to zero slots is taken by the mist entirely — that is an ending, not a resurrection. A character with 2 or fewer slots is never offered this.
+
+          Let the death land first. Then, away from the fiction, the GM asks the player whether they want to continue this character.
+
+          Only if the answer is yes does the mist make its offer.
+        questions: Who else at the table has an opinion? Does the player already know what this will cost?
+
+      - name: Dissolution
+        type: Action
+        description: |
+          The body unravels into mist. There is nothing left behind.
+
+          The rest of the party can only watch it happen.
+        questions: What do the others think they just saw? Does anyone try to stop it?
+
+      - name: Before the Guardian
+        type: Action
+        description: |
+          The mist sets them down somewhere in the mist, and something is waiting.
+
+          Designate which Guardian appears. What stands there is a projection — a fraction of the thing, cast up from wherever it actually is. Meeting one directly is not survivable, and being dead does not change that.
+
+          The character regains **1 HP** — enough to stand, and to answer.
+
+          It does not explain, does not bargain, and does not name a price. It makes one offer:
+
+          ***Be a vassal to the Mist, or perish.***
+        questions: What does the character understand about where they are? Does the Guardian wait, or is there a limit to its patience?
+
+      - name: Become the Vassal
+        type: Action
+        description: |
+          With a yes the pact is sealed, and the mist starts to gather and change the character.
+
+          Their Mist tokens are **filled up to** the number for the rank they are entering. If they already hold more, they keep what they have.
+
+          - Entering rank 1 — fill to **6**
+          - Entering rank 2 — fill to **8**
+          - Entering rank 3 — fill to **10**
+          - Entering rank 4 — fill to **12**
+
+          Tokens gained this way carry no immediate consequence — no Hope lost, no Stress marked, no Fear to the GM, no Hit Point.
+
+          Then, in order:
+
+          - **Mist Attuned** rises by 1
+          - **Two Hope slots are lost, permanently**
+          - They regain **1d4 + their tier** HP and **1d4 + their tier** Stress
+
+          As long as the pact holds, they gain this trait:
+
+          **Ephemeral** — Your body wavers in and out of being corporeal. You are resistant to physical damage, take double magic damage, and can mark 2 Stress to momentarily pass through a solid object.
+        questions: What do they feel go missing? Do they understand what it cost before they wake?
+
+      - name: Or Perish
+        type: Reaction
+        description: |
+          If the character refuses, the mist simply stops holding them together, and the 1 HP it lent them goes with it.
+
+          They die. There is no way to recover from this. The character met its end.
+        questions: Why did they refuse? Is there anyone the Guardian expects them to name?
+
+      - name: Go Forth My Vassal
+        type: Action
+        description: |
+          Before it lets them go, the Guardian names one thing it wants done. It is specific, it is possible, and it is not negotiable.
+
+          The task always serves the mist against the flame. Examples:
+
+          - Extinguish the Sacred Flame at a named location
+          - Destroy or surrender a specific Fire Born item — one the party is carrying, ideally
+          - Remove someone tied to the flame: a Flame Seeker, an Ember Trader, a Fire Born, or a member of the party
+
+          **Be cruel here.** The character just traded two Hope slots and a piece of themselves to keep existing, and the mist did not save them out of kindness. Name something that costs them — a place they care about, an item they earned, a person at the table. A task the vassal can complete without anyone noticing is not a task, it is a favour.
+        questions: Why this task and not another? Who is going to find out, and when?
+
+      - name: Breaking the Pact
+        type: Reaction
+        description: |
+          A vassal who does not do what the mist asked earns a **Doubt**. The GM hands them a token across the table, and they keep it in front of them.
+
+          A Doubt is earned when the vassal:
+
+          - Refuses the task outright
+          - Acts directly for the flame — relighting a Sacred Flame, defending one against the Mist Born, carrying Flame Essence to where it is needed, arming someone with a Fire Born item
+          - Lets sessions pass without doing anything about the task at all
+
+          **On the third Doubt, the mist stops believing they were worth raising.** It takes back what it gave. The resurrection is reversed, the character dies where they stand, and this time there is no offer.
+
+          **Completing what the mist asked seals the pact.** All Doubts are removed, and Ephemeral remains — the character is now permanently what the mist made them. The mist may ask again.
+        questions: What does the second Doubt change about how the character behaves? Who at the table is counting?
+
+  - tier: 4
+    difficulty: 20
+    features:
+      - name: The Offer
+        type: Passive
+        description: |
+          This event fires only after a character has actually died, and only if they are mist-touched: carrying a Mist Born item, or holding any rank of Mist Attuned.
+
+          **Eligibility:** the character must have **3 or more Hope slots remaining**. The price costs 2, and a character reduced to zero slots is taken by the mist entirely — that is an ending, not a resurrection. A character with 2 or fewer slots is never offered this.
+
+          Let the death land first. Then, away from the fiction, the GM asks the player whether they want to continue this character.
+
+          Only if the answer is yes does the mist make its offer.
+        questions: Who else at the table has an opinion? Does the player already know what this will cost?
+
+      - name: Dissolution
+        type: Action
+        description: |
+          The body unravels into mist. There is nothing left behind.
+
+          The rest of the party can only watch it happen.
+        questions: What do the others think they just saw? Does anyone try to stop it?
+
+      - name: Before the Guardian
+        type: Action
+        description: |
+          The mist sets them down somewhere in the mist, and something is waiting.
+
+          Designate which Guardian appears. What stands there is a projection — a fraction of the thing, cast up from wherever it actually is. Meeting one directly is not survivable, and being dead does not change that.
+
+          The character regains **1 HP** — enough to stand, and to answer.
+
+          It does not explain, does not bargain, and does not name a price. It makes one offer:
+
+          ***Be a vassal to the Mist, or perish.***
+        questions: What does the character understand about where they are? Does the Guardian wait, or is there a limit to its patience?
+
+      - name: Become the Vassal
+        type: Action
+        description: |
+          With a yes the pact is sealed, and the mist starts to gather and change the character.
+
+          Their Mist tokens are **filled up to** the number for the rank they are entering. If they already hold more, they keep what they have.
+
+          - Entering rank 1 — fill to **6**
+          - Entering rank 2 — fill to **8**
+          - Entering rank 3 — fill to **10**
+          - Entering rank 4 — fill to **12**
+
+          Tokens gained this way carry no immediate consequence — no Hope lost, no Stress marked, no Fear to the GM, no Hit Point.
+
+          Then, in order:
+
+          - **Mist Attuned** rises by 1
+          - **Two Hope slots are lost, permanently**
+          - They regain **1d4 + their tier** HP and **1d4 + their tier** Stress
+
+          As long as the pact holds, they gain this trait:
+
+          **Ephemeral** — Your body wavers in and out of being corporeal. You are resistant to physical damage, take double magic damage, and can mark 2 Stress to momentarily pass through a solid object.
+        questions: What do they feel go missing? Do they understand what it cost before they wake?
+
+      - name: Or Perish
+        type: Reaction
+        description: |
+          If the character refuses, the mist simply stops holding them together, and the 1 HP it lent them goes with it.
+
+          They die. There is no way to recover from this. The character met its end.
+        questions: Why did they refuse? Is there anyone the Guardian expects them to name?
+
+      - name: Go Forth My Vassal
+        type: Action
+        description: |
+          Before it lets them go, the Guardian names one thing it wants done. It is specific, it is possible, and it is not negotiable.
+
+          The task always serves the mist against the flame. Examples:
+
+          - Extinguish the Sacred Flame at a named location
+          - Destroy or surrender a specific Fire Born item — one the party is carrying, ideally
+          - Remove someone tied to the flame: a Flame Seeker, an Ember Trader, a Fire Born, or a member of the party
+
+          **Be cruel here.** The character just traded two Hope slots and a piece of themselves to keep existing, and the mist did not save them out of kindness. Name something that costs them — a place they care about, an item they earned, a person at the table. A task the vassal can complete without anyone noticing is not a task, it is a favour.
+        questions: Why this task and not another? Who is going to find out, and when?
+
+      - name: Breaking the Pact
+        type: Reaction
+        description: |
+          A vassal who does not do what the mist asked earns a **Doubt**. The GM hands them a token across the table, and they keep it in front of them.
+
+          A Doubt is earned when the vassal:
+
+          - Refuses the task outright
+          - Acts directly for the flame — relighting a Sacred Flame, defending one against the Mist Born, carrying Flame Essence to where it is needed, arming someone with a Fire Born item
+          - Lets sessions pass without doing anything about the task at all
+
+          **On the third Doubt, the mist stops believing they were worth raising.** It takes back what it gave. The resurrection is reversed, the character dies where they stand, and this time there is no offer.
+
+          **Completing what the mist asked seals the pact.** All Doubts are removed, and Ephemeral remains — the character is now permanently what the mist made them. The mist may ask again.
+        questions: What does the second Doubt change about how the character behaves? Who at the table is counting?
+
+featureQuestions:
+  - What did the party decide had happened, in the time before the vassal came back?
+  - How does the vassal explain themselves, and how much do they leave out?
+  - Who notices the Ephemeral trait first, and what do they do about it?
+  - If the task points at someone in the party, when does that come out?
+  - What would a second death, and a second offer, mean for this character?

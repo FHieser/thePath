@@ -147,7 +147,8 @@ const CONTENT_INDEX = {
     "in-the-eye-of-the-titan.yaml",
     "left-to-the-mist.yaml",
     "strange-dreams.yaml",
-    "teachings-of-the-mist.yaml"
+    "teachings-of-the-mist.yaml",
+    "vassal-of-the-mist.yaml"
   ],
   "__factions__": {
     "brass-mechanicorum": {
