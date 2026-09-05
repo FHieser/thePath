@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 49** (30 Surface + 16 Underground + 3 Special)
+**Total Locations: 50** (31 Surface + 16 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (30 locations)
+## 🌄 Surface Locations (31 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -40,10 +40,11 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [The Fallen Star](./surface-locations/the-fallen-star.yaml)         | Meteorite crater with the star still at the bottom, something asleep on top of it, and a rim route around the edge (Linked to Meteorite Lab) |
 | ☑        | ☑     | [Meteorite Lab](./surface-locations/meteorite-lab.yaml)             | The Archon's laboratory in the old mine overseer station at the crater's edge (Linked to The Fallen Star) |
 | ☑        | ☑     | [Mist Gate](./surface-locations/mist-gate.yaml)                     | Wishing archway that delivers named destinations already on the Path — or casts failures into the mist |
+| ☑        | ☑     | [The Beacon](./surface-locations/the-beacon.yaml)                    | Tier 3 vertical climb up a giant stairway to a Fire Born signal brazier above the clouds — light it and a temple-carrier comes |
 
 ---
 
-## 🪨 Underground Locations (15 locations)
+## 🪨 Underground Locations (16 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                        |
 | -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -66,7 +67,7 @@ _Complete reference for all locations in the Path Network system_
 
 ---
 
-## ✦ Special Locations (2 locations)
+## ✦ Special Locations (3 locations)
 
 | Assigned | Ready | Location                                                          | Description                                                  |
 | -------- | ----- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -81,7 +82,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 49** | **Unassigned: 29** (37.2% remaining)
+**Assigned: 50** | **Unassigned: 28** (35.9% remaining)
 
 ### 🔮 Major Arcana (12 of 22 assigned)
 
@@ -129,11 +130,11 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Wands  | Blood Fern Valley    |
 | King of Wands   |                      |
 
-### ⚔️ Minor Arcana - Swords (5 of 14 assigned)
+### ⚔️ Minor Arcana - Swords (6 of 14 assigned)
 
 | Card             | Location |
 | ---------------- | -------- |
-| Ace of Swords    |          |
+| Ace of Swords    | The Beacon |
 | 2 of Swords      |          |
 | 3 of Swords      |          |
 | 4 of Swords      | Mist Gate        |

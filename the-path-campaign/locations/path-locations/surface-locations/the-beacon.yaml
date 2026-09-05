@@ -1,0 +1,139 @@
+name: The Beacon
+tier: 2
+category: Traversal
+description: |
+  A spire of black rock standing off the end of a ridge, rising until it goes into the cloud layer and not stopping there. From the ground there is no seeing the top of it.
+
+  Up its flank runs a stairway — enormous slabs extruded from the wall in a long ascending line, each step waist-high on a person, built for legs that were not human. The stairway does not survive the whole climb. It is intact at the bottom, breaking apart in the middle, and above the cloud base it is gone entirely, leaving only the cut sockets in blank rock where the slabs used to be set.
+
+  At the summit, above the weather and in open sky, stands a brazier scaled to the same builders — a bowl a person could lie down in, on a stem taller than a house. There is old ash packed hard in the bottom of it. It has been cold a long time.
+tagline: Stairway towards a flame-filled heaven. Who is it calling?
+impulses: |
+  To give travelers less to stand on the higher they climb, to pay better the further up they are willing to go, to hold a signal that calls something enormous and answers only when the price is paid in full
+difficulty: 14
+modifiers:
+  - name: Unstable
+    note: Gains Stable while a summoned temple-carrier is approaching (see The Cold Bowl).
+  - name: Routes
+    value: 1
+potentialAdversaries: Mist Ghosts, Mist Spirits
+features:
+  - name: The Ascent
+    type: Action
+    description: |
+      The spire is climbed in three ascents — Ancient Steps, Broken Steps, and Blank Stone — separated by two ledges, The Wreck and Cloudfoot.
+
+      Structure: Base → Ancient Steps → The Wreck → Broken Steps → Cloudfoot → Blank Stone → Summit
+
+      Each ascent is resolved with one Group Action Roll using Strength or Agility, made against that ascent's own difficulty rather than the location's. A success carries the party up to the next ledge. A fall carries them back down to the last one. The party cannot skip an ascent or stop partway up one — they are either on a ledge or on the wall between two of them.
+
+      Every ascent must be climbed again on the way down. There is no other way off the spire.
+
+      Critical Success: The party reaches the next ledge. Each PC gains 1 Hope.
+      Success with Hope: The party reaches the next ledge.
+      Success with Fear: The party reaches the next ledge. Each PC marks 1 Stress.
+      Failure with Hope: The party does not make it. They hold where they are, losing no progress. Each PC marks 1 Stress and may attempt the ascent again.
+      Failure with Fear: The party falls to the ledge below. Each PC marks 1 HP and 1 Stress.
+    questions: |
+      Who takes the lead, and does the same person keep taking it? What does the party do differently on the way down than they did on the way up?
+
+  - name: Ancient Steps
+    type: Passive
+    description: |
+      This ascent has Difficulty 11.
+
+      Big slabs of stone extrude from the spire's wall in a long ascending line. An ancient stairway, if you want to call it that, but not one built for human legs — each step comes up past the waist. Weather and time have chipped their edges round. The slabs themselves are solid and take weight without complaint.
+
+      A fall drops the party to the Base.
+    questions: |
+      What was tall enough to use these as stairs, and is it still somewhere on the spire?
+
+  - name: The Wreck
+    type: Passive/Action
+    description: |
+      The first ledge. Something came down out of the cloud layer and caught here — a bent frame, a long spar, torn plating, and a drum of cable wound around the stone where it stopped. It has been here long enough that the wind has polished one side of it. Nobody knows what it was part of, or what it was doing above the clouds.
+
+      Shelter: The wreck lies across the ledge and its plating breaks the wind. Each PC who rests here clears 1 additional Stress.
+
+      The Drum: The wreck is a great deal of good material in the wrong shape. The party can cannibalize it into a working descent line by spending 10 resources, tracked on a counter and paid across as many visits as they need.
+
+      Once rigged, the cable runs between the Base and The Wreck, and Ancient Steps no longer needs to be climbed in either direction. The cable cannot be extended higher — there is nothing above this ledge to carry it to and nothing up there to hang it from.
+    questions: |
+      What came out of the clouds, and was it falling or trying to land? Why was it carrying a drum of cable?
+
+  - name: Broken Steps
+    type: Passive/Reaction
+    description: |
+      This ascent has Difficulty 14.
+
+      The stairway goes on, but it is losing pieces. Slabs have broken off the wall entirely, leaving gaps where the party has to bridge from one intact step to the next across bare stone. What remains still holds. Most of it.
+
+      A fall drops the party to The Wreck.
+
+      A Step Gives Way: The GM may spend 3 Fear as a PC commits their weight to a slab. It shears off the wall under them. That PC makes an Agility or Instinct reaction roll.
+      - Success: They catch the edge and haul themselves back onto solid stone.
+      - Failure with Hope: They fall clear of the party but not clear of the spire, landing at The Wreck and marking 1 HP and 1 Stress. The rest of the party does not fall. That PC must climb Broken Steps again alone to rejoin them.
+      - Failure with Fear: They go off the spire entirely. That PC is now in off-Path travel, alone.
+
+      There is no limit on how often the GM may spend for this. The cost is the limit.
+    questions: |
+      Where did the broken slabs land, and why is there no rubble at the foot of the spire? Does the party climb back down for someone who fell, or hold position and wait?
+
+  - name: Cloudfoot
+    type: Passive/Action
+    description: |
+      The second ledge, still beneath the cloud base, and the air under it is glass-clear. The land runs out below in every direction — the mist lying flat and white in the low ground, ridges standing out of it, the shapes of places that might be worth knowing. From here you can see further than from anywhere anyone in the Village has ever stood. Above, the ceiling sits close and grey, and the stairway runs up into it and stops being a thing you can see.
+
+      The Long Sight: On reaching Cloudfoot, reveal every location within distance 2 on the grid. Count orthogonal steps as 1 and diagonal steps as 2.
+
+      Route Planning: The party studies what can be made out of the route above before it disappears into the cloud. Make a Knowledge or Instinct roll.
+      - Success: The party gains advantage on the next Ascent.
+      - Failure: Each PC marks 1 Stress. They have seen enough of the route to understand how hard it is, and nothing about it is encouraging.
+
+      Route Planning can be used in either direction — coming down through the cloud to Cloudfoot restores the same visibility for judging Broken Steps below.
+    questions: |
+      What is the thing on the horizon that nobody can identify? Who else on the Path is high enough to be looking back?
+
+  - name: Blank Stone
+    type: Passive
+    description: |
+      This ascent has Difficulty 17.
+
+      The wall goes blank. The stairway's markings are still on it — the cut sockets where the slabs were set, the straight lines, the whole shape of a staircase printed across the rock — but the stairs themselves are gone. Nothing left to stand on. Only the record of where standing used to be possible.
+
+      And the party is inside the cloud now. They cannot see the summit above them. They cannot see the ledge below them.
+
+      Exception to The Ascent: on a failure with Fear the party does not fall to the ledge below. They come off the spire in the white with no way of knowing which way they are going. The whole party enters off-Path travel, marking 2 HP in addition to the fall's toll.
+    questions: |
+      Were the slabs taken, or did they fall? If they fell, why is there nothing at the bottom of the spire?
+
+  - name: The Summit
+    type: Action
+    description: |
+      The party comes up out of the cloud into open sky. The top of the spire is a flat cut platform, and standing on it is a brazier built for something enormous. Below, the cloud runs out flat in every direction, and there is nothing else in the world above it.
+
+      The Top: Each PC who reaches the Summit gains 1 Hope.
+
+      The Cold Bowl: Lighting the beacon requires 3 Flame Essence poured into the bowl at once. Any lesser offering does nothing — the ash will not catch, the spire stays dark, and the Essence is not consumed.
+
+      When it catches, it throws a column of light straight up out of the cloud layer, visible from everywhere on the Path and from a good deal further than that. This is not a fire. It is a signal, and it is being read.
+
+      The Approach: Lighting the beacon summons a Fire Born temple-carrier. Track its approach in Path configurations, set by how much Flame Essence was poured in at the lighting:
+      - 3 Essence: 5 Path configurations
+      - 4 Essence: 4 Path configurations
+      - 5 Essence: 3 Path configurations
+      - 6 Essence: 2 Path configurations
+      - 7 or more Essence: 1 Path configuration
+
+      While the temple is approaching, The Beacon has the Stable modifier. It holds its grid position and will not vanish into the mist.
+
+      The Cracked Fire Claws: Players can find a pair of clawed gauntlets at the foot of the brazier, half-sunk in ash packed hard by decades of weather — set down by someone who did not pick them up again. The metal is alien and split along every plate, and it is warm to the touch, which nothing else on this summit is.
+    questions: |
+      What does the light look like from below the cloud, and who else is standing somewhere on the Path watching it come on? What did the last person to climb this leave behind, and why did they not light it?
+
+featureQuestions:
+  - Who built a stairway on a scale no person can use, and where did the top flight of it go?
+  - The Fire Born cannot leave their flames without dying. What does an unlit beacon mean to something that physically cannot reach it?
+  - This spire is an extraction point — a place to call a temple to pull a stranded Paladin out. Who used it last, and did the temple arrive in time?
+  - What happens the session a temple-carrier the size of a mountain actually arrives, and what does it want from the people who called it?
+  - The Village burns 1 Flame Essence per day. What does the party give up at home to spend 3 of it on a fire nobody down there can see?
