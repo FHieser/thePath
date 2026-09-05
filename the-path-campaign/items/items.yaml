@@ -395,6 +395,21 @@
     description: |
       Light the Flashburn. Distribute 3 Hope among the players. The GM gains 2 Fear - the mist recoils from the flame but the shadows grow larger in answer.
 
+- name: Cracked Fire Claws
+  type: Fire Born
+  usage: Reusable
+  tier: 3
+  tradeValue: 4
+  flavor: "Clawed gauntlets of alien metal run hot along the fracture lines and hotter when you close your fist."
+  effect:
+    category: Enhancement
+    description: |
+      While worn, gain advantage on all rolls made to climb.
+
+      Charged: Mark a Stress to gain a +1 bonus to your Proficiency on a primary weapon attack. Take 1 HP damage and remove 1 Mist token — the flame runs through the broken plates and into your hands before it ever reaches the weapon.
+
+      The claws function even if your primary weapon is two-handed.
+
 # ============================================================
 # BRASS MECHANICORUM ITEMS
 # ============================================================
