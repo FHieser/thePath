@@ -17,17 +17,13 @@ Work through location creation step-by-step, one feature at a time. Do NOT creat
 Ask the user for:
 - Location name
 - Basic concept (1-2 sentences)
-- Tier (1 or 2)
+- Tier (1-4)
 - Type (Combat, Exploration, Traversal, Social)
-
-Then help craft:
-- Tagline (evocative 1-sentence description)
-- 3 Impulses (what the location wants/does)
 
 ## Step 2: Core Parameters
 
 Determine together:
-- **Difficulty:** Based on tier (11 for T1, 14-15 for T2)
+- **Difficulty:** Based on tier (11 for T1, 14-15 for T2, 17 for T3, 18+ for T4)
 - **Modifiers:** Select from existing modifiers (Stable/Unstable, Mist-Touched/Flame-Touched, Underground, Cave Mouth, etc.)
 - **Potential Adversaries:** What creatures/threats fit this location?
 
@@ -112,10 +108,24 @@ When developing each feature:
 After all features are developed, check:
 - Do features interact with each other? (countdown + barnacle hum synergy)
 - Is there variety in feature types? (passive, action, counter, etc.)
-- Do features support the location's impulses?
 - Is there player agency and meaningful choice?
+- Does every feature still serve the Step 1 concept, or has the location become something else? (If it has, that's fine — Step 6 will name what it actually became.)
 
-## Step 6: Compile Final Location
+## Step 6: Tagline & Impulses
+
+With the finished features in front of you, write the two summary fields. Both are derived from the mechanics, not the other way around — which is why they come last.
+
+**Impulses** (3, comma-separated) - what the location *wants*. These are GM steering: read them mid-session and they should suggest the next move. Derive each one from a feature that actually exists:
+- Read back the finished features and ask what pressure each one applies to the party
+- Phrase as active verbs directed at travelers ("Drive travelers forward faster than they can govern")
+- If an impulse doesn't trace to a specific feature, cut it - it's flavor pretending to be guidance
+
+**Tagline** (1 sentence) - the card's voice. Written last, because it should land the location's actual identity:
+- Present 3-4 options and let the user choose
+- The strongest taglines state the design tension the features create, not just atmosphere
+- Match the voice of existing locations (blunt and declarative: "The line goes where the Clan was going. No one told it to stop.")
+
+## Step 7: Compile Final Location
 
 Create the complete location markdown file using this template:
 
@@ -150,11 +160,12 @@ Create the complete location markdown file using this template:
 - [Question about long-term consequences]
 ```
 
-## Step 7: Tarot Assignment & Integration
+## Step 8: Tarot Assignment & Integration
 
-- Suggest appropriate tarot card based on themes
-- Add to Glossary.md
-- Add to path-webapp files (locations.json and index.html)
+- Suggest an appropriate tarot card based on themes, choosing from the unassigned cards listed in `Glossary.md`
+- Add the location to `Glossary.md`: a row in the correct location table, the tarot card assignment, and the location/card counts in both headers
+- Regenerate the webapp index: `node .github/scripts/generate-index.js`. Do NOT hand-edit `path-webapp/js/content-index.js` — the webapp auto-discovers content through it, so no per-location JSON or HTML edits are needed
+- Validate the new YAML parses before finishing
 
 ## Important Guidelines
 
@@ -210,10 +221,8 @@ Use this to track progress through the location creation process:
 **Step 1: Initial Concept**
 - [ ] Location name chosen
 - [ ] Basic concept defined
-- [ ] Tier selected (1 or 2)
+- [ ] Tier selected (1-4)
 - [ ] Type selected (Combat/Exploration/Traversal/Social)
-- [ ] Tagline crafted
-- [ ] 3 Impulses defined
 
 **Step 2: Core Parameters**
 - [ ] Difficulty set
@@ -234,18 +243,22 @@ Use this to track progress through the location creation process:
 - [ ] Features interact with each other checked
 - [ ] Feature type variety confirmed
 - [ ] Player agency verified
-- [ ] Impulses supported
+- [ ] Features still serve the concept (or the concept has been updated to match)
 
-**Step 6: Compile Final Location**
+**Step 6: Tagline & Impulses**
+- [ ] 3 Impulses derived from finished features
+- [ ] Tagline chosen from options
+
+**Step 7: Compile Final Location**
 - [ ] YAML file created
 - [ ] Markdown file created
 - [ ] Feature Questions added (4-6 broader questions)
 
-**Step 7: System Integration**
-- [ ] Tarot card assigned
-- [ ] Added to Glossary.md
-- [ ] Added to path-webapp/data/locations.json
-- [ ] Added to path-webapp/index.html
+**Step 8: System Integration**
+- [ ] Tarot card assigned (from the unassigned list in Glossary.md)
+- [ ] Glossary.md row, tarot table, and both header counts updated
+- [ ] `node .github/scripts/generate-index.js` run
+- [ ] New YAML validated
 
 ---
 
