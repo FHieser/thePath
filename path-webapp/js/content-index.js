@@ -68,6 +68,7 @@ const CONTENT_INDEX = {
     "forest-refuge.yaml",
     "hanging-gardens.yaml",
     "highland-circle.yaml",
+    "highland-creek.yaml",
     "highland-watch.yaml",
     "hollow-woods.yaml",
     "lost-flame.yaml",

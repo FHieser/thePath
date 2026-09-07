@@ -1,0 +1,61 @@
+name: Highland Creek
+tier: 1
+category: Traversal
+description: |
+  Follow the creek through the sea of green.
+
+  The water winds slow and shallow through grass that runs on in every direction. Black rock pushes up out of the ground here and there and the creek curls around it. Half-sunken menhirs lean where the ground is soft. An old bridge crosses the whole width of the riverbed, its middle span long gone.
+
+impulses: Calm and steady, A touch of ancientness, The green sea
+
+difficulty: 11
+
+modifiers:
+  - name: Unstable
+    note: Becomes Stable when the Cairn counter reaches 10. Reverts to Unstable if the counter drops below 10.
+  - name: Mist-Protected
+    value: 1
+
+potentialAdversaries: Grazing Beasts
+
+features:
+  - name: The Green Along the Creek
+    type: Action
+    description: |
+      The creek winds its way through the green, slow and shallow. Here and there black rock pushes up out of the ground and the water curls around it. In the calmer bends, where the rock breaks the wind, patches of herbs grow thick. From time to time a hare rushes through the grass and disappears into its hollow.
+
+      PCs may spend time gathering in the sheltered patches. Roll 1d3 for the quantity harvested — unprocessed herbs, worth 0.25 Trade Points each.
+    questions: What do the players feel visiting such a peaceful place? A hare would be a nice catch — can the players do this?
+
+  - name: The Broken Bridge
+    type: Action
+    description: |
+      An old bridge crosses the entire width of the riverbed, carried high over the water on stone piers. The middle of the span is gone; both ends still stand. Following the creek takes the party directly beneath it. Underneath there is dry ground, out of the wind, and old ash where others have stopped before.
+
+      Each PC who rests beneath the bridge gains 1 Hope.
+    questions: Who built a bridge this size out here, and where was the road going? Whose ash is that?
+
+  - name: The Menhirs
+    type: Passive
+    description: |
+      Half-sunken menhirs stand where the ground is soft, overgrown and leaning out of true. The runes cut into them are still there beneath the moss.
+
+      This location has the Mist-Protected(1) modifier.
+    questions: Who set them, and were they warding the bridge, the water, or something else? Can the runes still be read?
+
+  - name: Cairn Bindings
+    type: Counter
+    description: |
+      Cairns of dark, flat slabs broken off the black rock, stacked along the bank where they stand above the grass and can be seen from a distance.
+
+      Each time PCs build a cairn at this location, mark progress on a counter (starts at 0). When the counter reaches 10, the accumulated stone markers anchor the location against the mist and Highland Creek gains the Stable modifier. If the counter ever drops below 10, the location reverts to Unstable.
+    questions: What ancient power flows through carefully stacked stone? What happens when travelers disturb or add to the sacred arrangements?
+
+tarotCard: 8 of Sticks
+
+featureQuestions:
+  - Who built a bridge that size out here, and what road did it carry across the water?
+  - Were the menhirs set before the bridge or after — and by the same hands?
+  - Where does the creek go once it leaves the highland?
+  - The ash beneath the bridge is old. Who rested here last, and did they make it onward?
+  - The hares live here in numbers. What keeps the predators off this stretch of water?
