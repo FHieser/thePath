@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 50** (31 Surface + 16 Underground + 3 Special)
+**Total Locations: 51** (32 Surface + 16 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (31 locations)
+## 🌄 Surface Locations (32 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -41,6 +41,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Meteorite Lab](./surface-locations/meteorite-lab.yaml)             | The Archon's laboratory in the old mine overseer station at the crater's edge (Linked to The Fallen Star) |
 | ☑        | ☑     | [Mist Gate](./surface-locations/mist-gate.yaml)                     | Wishing archway that delivers named destinations already on the Path — or casts failures into the mist |
 | ☑        | ☑     | [The Beacon](./surface-locations/the-beacon.yaml)                    | Tier 3 vertical climb up a giant stairway to a Fire Born signal brazier above the clouds — light it and a temple-carrier comes |
+| ☑        | ☑     | [Highland Creek](./surface-locations/highland-creek.yaml)           | Calm highland creek winding through a sea of green — herb gathering, a broken bridge to rest beneath, and rune-cut menhirs |
 
 ---
 
@@ -82,7 +83,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 50** | **Unassigned: 28** (35.9% remaining)
+**Assigned: 51** | **Unassigned: 27** (34.6% remaining)
 
 ### 🔮 Major Arcana (12 of 22 assigned)
 
@@ -111,7 +112,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | XX Judgement          | Burnt Clearing       |
 | XXI The World         | Brood Throne         |
 
-### 🪄 Minor Arcana - Wands (7 of 14 assigned)
+### 🪄 Minor Arcana - Wands (8 of 14 assigned)
 
 | Card            | Location             |
 | --------------- | -------------------- |
@@ -122,7 +123,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 5 of Wands      | Sanctum Line         |
 | 6 of Wands      | Forest Refuge        |
 | 7 of Wands      | Hollow Woods         |
-| 8 of Wands      |                      |
+| 8 of Wands      | Highland Creek       |
 | 9 of Wands      |                      |
 | 10 of Wands     | Fungal Depths        |
 | Page of Wands   | Reed Marsh Caverns   |

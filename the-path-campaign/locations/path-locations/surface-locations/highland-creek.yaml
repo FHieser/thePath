@@ -51,8 +51,6 @@ features:
       Each time PCs build a cairn at this location, mark progress on a counter (starts at 0). When the counter reaches 10, the accumulated stone markers anchor the location against the mist and Highland Creek gains the Stable modifier. If the counter ever drops below 10, the location reverts to Unstable.
     questions: What ancient power flows through carefully stacked stone? What happens when travelers disturb or add to the sacred arrangements?
 
-tarotCard: 8 of Sticks
-
 featureQuestions:
   - Who built a bridge that size out here, and what road did it carry across the water?
   - Were the menhirs set before the bridge or after — and by the same hands?
