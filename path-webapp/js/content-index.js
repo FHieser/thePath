@@ -64,6 +64,7 @@ const CONTENT_INDEX = {
     "blood-fern-valley.yaml",
     "burnt-clearing.yaml",
     "coldspire-keep.yaml",
+    "dark-forest.yaml",
     "devils-rock.yaml",
     "forest-refuge.yaml",
     "hanging-gardens.yaml",

@@ -1,0 +1,115 @@
+name: Dark Forest
+tier: 2
+category: Traversal
+description: |
+  The sky is blocked out by the trees. You have to find your way. You could swear you have been here before.
+
+  Old growth standing close, and a canopy that closes over the top of everything. The ground is soft with years of leaf fall and holds a bootprint well. There are things in here — a burner's clearing, a shrine, a stair going down into the ground — and no reliable way to go looking for any of them.
+
+impulses: Dark forest, Getting lost, Losing time
+
+difficulty: 14
+
+modifiers:
+  - name: Unstable
+  - name: Cave Mouth
+  - name: Mushroom Circle
+
+potentialAdversaries: Creatures of the Forest
+
+features:
+  - name: Finding the Way
+    type: Counter System
+    description: |
+      There's no path through. Before entering, the party names which connected location they are heading for. That choice is binding — the forest only ever costs time, never the destination.
+
+      One PC takes the lead and reads the forest: the lean of the trunks, which side the moss grows, where the ground drains. They roll Instinct or Knowledge against the Difficulty. A different PC may take the lead on any attempt.
+
+      Two counters run together: **Progress** (0 → 8) and **Time Passed** (0 → 6).
+
+      | Roll result      | Progress | Time |
+      |------------------|----------|------|
+      | Critical success | +4       | —    |
+      | Success with Hope| +3       | +1   |
+      | Success with Fear| +2       | +2   |
+      | Failure with Hope| —        | +1   |
+      | Failure with Fear| −2       | +2   |
+
+      Progress cannot drop below 0. At 8 Progress the party arrives at the location they named.
+
+      At 6 Time Passed the party spends one of its two short rests (see Resting on the Path in path-mechanics). Time Passed stops there — the forest takes one rest and no more. If both short rests are already spent, the mist rolls in, the Path ends, and the party begins off-Path travel from where they stand.
+
+      Both counters reset to 0 on every attempt and every new visit.
+    questions: What is the leader actually reading — the trees, or something the trees are doing? What does it sound like when you have lost the way?
+
+  - name: Findings in the Forest
+    type: Passive
+    description: |
+      The forest is full of things nobody put on a map, and crossing it means walking into them. When the Progress counter reaches 4 or higher, the party comes across one — roll 1d6 on the table below and resolve it before continuing. If Progress later drops below 4 and climbs back, they find something again. Roll every time.
+
+      | Roll | Finding                     |
+      |------|-----------------------------|
+      | 1    | Charcoal Burner's Clearing  |
+      | 2    | The Small Shrine            |
+      | 3    | Dead Trees                  |
+      | 4    | The Turning                 |
+      | 5    | The Stair                   |
+      | 6    | The Ring                    |
+
+      ---
+
+      **Charcoal Burner's Clearing**
+      Turf-covered mounds in a clearing, cold for years, and a hut with half its roof still on. Someone worked this wood for a living and left in no particular hurry. Searching it costs +1 Time. Salvage 1d3 raw materials worth 0.25 Trade Points each — cut timber, charcoal, iron banding off a fallen barrel.
+
+      ---
+
+      **The Small Shrine**
+      A hand-sized god sits in a hollow at the base of a trunk, worn down to no face at all, with the remains of something left in front of it. A PC may leave an offering and gain 1 Hope. Once per Path.
+
+      ---
+
+      **Dead Trees**
+      A patch of bare standing trunks — no canopy above, nothing growing below, clear sightlines in every direction. Navigating is simple here: advantage on the next Finding the Way roll. There is a reason why these trees are dead. Better not linger. The GM gains 1 Fear.
+
+      ---
+
+      **The Turning**
+      The same split trunk. The same soft ground with boot marks already pressed into it, and they are yours. Each PC marks 1 Stress and Progress drops by 2. This can trigger Findings in the Forest again.
+
+      ---
+
+      **The Stair**
+      Twelve stone steps going down into the ground, and no building above them. The dark at the bottom moves air. This is the forest's Cave Mouth. Taking it ends the traversal: no further rolls, no further Time, and the named destination is forfeit.
+
+      ---
+
+      **The Ring**
+      A mushroom circle fruiting in the dark, pale against the leaf litter. This is the forest's Mushroom Circle. Stepping through ends the traversal: no further rolls, no further Time, and the named destination is forfeit.
+    questions: What did the forest grow over, and how long did it take? Who was the last person to walk out of here on purpose?
+
+  - name: Searching in the Dark
+    type: Action
+    description: |
+      A party may decide they are not crossing the forest at all — they are looking for something in it. The Stair, the Ring, the shrine, whatever they came in for.
+
+      They still have to reach Progress 4. When they do, roll 1d6 on Findings in the Forest as normal and resolve whatever comes up. If it isn't what they were after, that's what the forest gave them.
+
+      Then Progress resets to 0. Time Passed does not reset. Searching again means climbing back to 4 with the clock exactly where they left it.
+    questions: What did they hear about this place, and who told them it was here?
+
+  - name: Arriving from Below or Beyond
+    type: Passive
+    description: |
+      Not everyone walks into the Dark Forest. This location has the Cave Mouth and Mushroom Circle modifiers — the stair connects it to the underground grid, and the ring connects it to any other Mushroom Circle currently on the Path.
+
+      A party arriving by either route comes out somewhere in the middle of the trees, with no sense of which direction they were facing. Begin the traversal immediately: name a destination from the locations this forest connects to, and start Progress and Time Passed at 0. Arriving costs nothing further.
+    questions: What comes up the stair when nobody is using it? Does the ring put everyone down in the same place, or somewhere different each time?
+
+tarotCard: 9 of Wands
+
+featureQuestions:
+  - The clearing, the shrine, the stair with no building above it — people lived and worked in this forest once. What happened to them?
+  - Where does the stair actually go, and does anything come up it?
+  - When the party walks in a circle, are they lost, or is the forest moving?
+  - Who carved the small god in the tree, and has anyone fed it since?
+  - The forest costs a short rest almost every time it is crossed. What do the people who use this route regularly do about that?
