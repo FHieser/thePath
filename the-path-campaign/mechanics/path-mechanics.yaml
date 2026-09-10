@@ -329,6 +329,25 @@ sessionTracking:
         - The Watcher - Located in Forest Refuge (moved there after players cleared marauders from his dwelling). Friendly to the party.
         - Factionless Leader - Last seen at Trading Grounds. Hostile (survived combat encounter with party).
 
+restingOnThePath:
+  description: |
+    The mist holds the Path's shape only so long. Rests indicate the passage of time.
+
+    The party may take 2 short rests while on a Path. A third short rest, or any long rest, calls the mist in and the current Path ends.
+
+  restBudget:
+    shortRestsAllowed: 2
+    trigger: A third short rest, or any long rest, ends the current Path
+
+  pathReset:
+    description: |
+      When the Path ends, the mist rolls in over the route. Unstable locations return to the deck and a new Path is generated (see placementMethod above). Stable locations keep their grid positions.
+    partyPlacement:
+      - condition: The party is on a Stable location
+        result: They remain where they are. The location persists through the reset and sits on the new Path at its known coordinates.
+      - condition: The party is on an Unstable location
+        result: The ground goes with the mist. They begin off-Path travel from where they stand (see offPathTravel below).
+
 mistMechanics:
   description: |
     The mist is more than atmospheric scenery—it's an active threat that corrupts those who venture into its grasp. This section covers three interconnected mechanics: Mist-Touched locations that pose immediate dangers, off-Path travel that offers desperate gambles, and Mist tokens that track accumulating corruption.

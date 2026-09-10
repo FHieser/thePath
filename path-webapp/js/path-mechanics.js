@@ -247,6 +247,42 @@ function displayMechanics(data) {
         html += `</section>`;
     }
 
+    // Resting on the Path
+    if (data.restingOnThePath) {
+        const rest = data.restingOnThePath;
+        html += `
+            <section class="mechanics-section" id="resting-on-the-path">
+                <h2>Resting on the Path</h2>
+                <div class="mechanics-description">${escapeHtml(rest.description)}</div>
+        `;
+
+        if (rest.restBudget) {
+            html += `
+                <div class="mechanics-description">
+                    <strong>Short rests allowed per Path:</strong> ${escapeHtml(String(rest.restBudget.shortRestsAllowed))}<br>
+                    <strong>Trigger:</strong> ${escapeHtml(rest.restBudget.trigger)}
+                </div>
+            `;
+        }
+
+        if (rest.pathReset) {
+            html += `
+                <h3>Path Reset</h3>
+                <div class="mechanics-description">${escapeHtml(rest.pathReset.description)}</div>
+            `;
+
+            if (Array.isArray(rest.pathReset.partyPlacement)) {
+                html += `<ul class="md-list">`;
+                rest.pathReset.partyPlacement.forEach(entry => {
+                    html += `<li><strong>${escapeHtml(entry.condition)}:</strong> ${escapeHtml(entry.result)}</li>`;
+                });
+                html += `</ul>`;
+            }
+        }
+
+        html += `</section>`;
+    }
+
     // Mist Mechanics
     if (data.mistMechanics) {
         html += `
