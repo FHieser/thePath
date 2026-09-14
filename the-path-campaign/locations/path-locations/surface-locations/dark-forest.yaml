@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Wands
   number: 9
+soundtracks:
+  - name: Dark Forest
+    url: https://www.youtube.com/watch?v=7ElGv7zMqeY
 description: |
   The sky is blocked out by the trees. You have to find your way. You could swear you have been here before.
 

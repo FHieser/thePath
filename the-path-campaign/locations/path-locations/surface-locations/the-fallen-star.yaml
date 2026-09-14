@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Major
   number: 8
+soundtracks:
+  - name: The Fallen Star
+    url: https://www.youtube.com/watch?v=TUCzY-6XjUo&t=5240s
 description: |
   The crater where the star came down. A wide bowl of fused glass and crystal, with the meteorite still at the bottom — most of it intact. The material here is raw and unspread, which is why there are so few crystallised dead: almost nobody was here after the plague spread. It did its work elsewhere. A route runs around the rim through abandoned works — rotting mining rigs, a crystalline cavern that opens onto the hollow, a field of glass spires strung with newer instruments. Nobody crosses the middle.
 tagline: A wish, a star, everything they always wanted.

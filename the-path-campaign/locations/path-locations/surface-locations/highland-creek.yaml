@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Wands
   number: 8
+soundtracks:
+  - name: Highland Creek
+    url: https://www.youtube.com/watch?v=zwVcys7iBWA
 description: |
   Follow the creek through the sea of green.
 

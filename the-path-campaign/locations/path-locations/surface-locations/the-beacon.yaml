@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Swords
   number: 1
+soundtracks:
+  - name: The Beacon
+    url: https://www.youtube.com/watch?v=S9nYiX8scsY
 description: |
   A spire of black rock standing off the end of a ridge, rising until it goes into the cloud layer and not stopping there. From the ground there is no seeing the top of it.
 

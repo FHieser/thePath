@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Swords
   number: 4
+soundtracks:
+  - name: Mist Gate
+    url: https://www.youtube.com/watch?v=YssDKQmiST0
 description: A doorway in the mist. It leads to desire.
 impulses: Bring players to a place they want, lead into the Mist, travel at a cost
 difficulty: 14
