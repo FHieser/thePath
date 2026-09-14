@@ -2,8 +2,19 @@
 let allLocations = {};
 // Tri-state filter map: modifier name -> 'include' | 'exclude' | undefined (neutral)
 let modifierFilters = {};
+// Same tri-state map, keyed by tarot type (Major, Wands, …)
+let tarotFilters = {};
 let knownModifiers = []; // Populated from loaded location data
 let modifierDescriptions = {};
+
+// Filter bar layout: these groups first, then Tarot, then every other modifier.
+const MODIFIER_GROUPS = [
+    ['Stable', 'Unstable'],
+    ['Underground', 'Cave Mouth', 'Mushroom Circle'],
+    ['Mist-Touched', 'Flame-Touched'],
+];
+
+const TAROT_LABELS = { Major: 'Major Arcana', Wands: 'Wands', Swords: 'Swords', Discs: 'Discs', Goblets: 'Goblets' };
 
 // Helper function to check if a location has a specific modifier
 // Handles both object {name: "..."} and string formats
@@ -51,7 +62,8 @@ async function loadLocations() {
 // Render locations based on current filter
 function renderLocations() {
     const container = document.getElementById('locations-container');
-    const filteredLocations = filterLocations();
+    const filteredLocations = filterLocations()
+        .sort(([, a], [, b]) => compareTarotCards(a.tarotCard, b.tarotCard) || a.name.localeCompare(b.name));
 
     if (filteredLocations.length === 0) {
         container.innerHTML = '<p style="text-align: center; padding: 2rem; opacity: 0.7;">No locations match the current filter.</p>';
@@ -108,20 +120,21 @@ function collectModifiers() {
     knownModifiers = Array.from(modSet).sort();
 }
 
-// Filter locations based on modifier tri-state toggles
+// Filter locations based on modifier and tarot tri-state toggles
 function filterLocations() {
-    const entries = Object.entries(allLocations);
     const activeFilters = Object.entries(modifierFilters).filter(([, state]) => state);
+    // A location holds a single card, so included tarot types match ANY rather than ALL
+    const tarotIncludes = Object.keys(tarotFilters).filter(type => tarotFilters[type] === 'include');
+    const tarotExcludes = Object.keys(tarotFilters).filter(type => tarotFilters[type] === 'exclude');
 
-    if (activeFilters.length === 0) {
-        return entries;
-    }
-
-    return entries.filter(([id, location]) => {
-        return activeFilters.every(([mod, state]) => {
+    return Object.entries(allLocations).filter(([id, location]) => {
+        const modifiersMatch = activeFilters.every(([mod, state]) => {
             const has = hasModifier(location, mod);
             return state === 'include' ? has : !has;
         });
+        const type = location.tarotCard?.type;
+        const tarotMatch = (tarotIncludes.length === 0 || tarotIncludes.includes(type)) && !tarotExcludes.includes(type);
+        return modifiersMatch && tarotMatch;
     });
 }
 
@@ -149,42 +162,55 @@ function createLocationCard(id, location) {
             <div class="location-modifiers">${modifierTags}</div>
             <div class="location-stats">
                 <span>Difficulty ${location.difficulty}</span>
+                ${location.tarotCard ? `<span>${tarotCardName(location.tarotCard)}</span>` : ''}
                 <span>${featureCount} Features</span>
             </div>
         </a>
     `;
 }
 
-// Render the modifier filter tags into the filter bar
+// Render the filter tags into the filter bar, one visual group per row segment
 function renderFilterTags() {
     const container = document.getElementById('filter-tags');
     container.innerHTML = '';
-    knownModifiers.forEach(mod => {
-        const tag = document.createElement('span');
-        tag.className = 'filter-tag';
-        tag.textContent = mod;
-        tag.dataset.modifier = mod;
 
-        // Apply current state
-        const state = modifierFilters[mod];
-        if (state) tag.classList.add(state);
+    const grouped = MODIFIER_GROUPS.flat();
+    const groups = MODIFIER_GROUPS.map(group =>
+        group.filter(mod => knownModifiers.includes(mod)).map(mod => [mod, modifierFilters, mod]));
+    groups.push(TAROT_TYPES.map(type => [TAROT_LABELS[type], tarotFilters, type]));
+    groups.push(knownModifiers.filter(mod => !grouped.includes(mod)).map(mod => [mod, modifierFilters, mod]));
 
-        tag.addEventListener('click', () => {
-            // Cycle: neutral -> include -> exclude -> neutral
-            const current = modifierFilters[mod];
-            if (!current) {
-                modifierFilters[mod] = 'include';
-            } else if (current === 'include') {
-                modifierFilters[mod] = 'exclude';
-            } else {
-                delete modifierFilters[mod];
-            }
-            renderFilterTags();
-            renderLocations();
-        });
-
-        container.appendChild(tag);
+    groups.filter(group => group.length > 0).forEach(group => {
+        const groupEl = document.createElement('div');
+        groupEl.className = 'filter-group';
+        group.forEach(([label, filters, key]) => groupEl.appendChild(createFilterTag(label, filters, key)));
+        container.appendChild(groupEl);
     });
+}
+
+function createFilterTag(label, filters, key) {
+    const tag = document.createElement('span');
+    tag.className = 'filter-tag';
+    tag.textContent = label;
+
+    // Apply current state
+    if (filters[key]) tag.classList.add(filters[key]);
+
+    tag.addEventListener('click', () => {
+        // Cycle: neutral -> include -> exclude -> neutral
+        const current = filters[key];
+        if (!current) {
+            filters[key] = 'include';
+        } else if (current === 'include') {
+            filters[key] = 'exclude';
+        } else {
+            delete filters[key];
+        }
+        renderFilterTags();
+        renderLocations();
+    });
+
+    return tag;
 }
 
 // Set up filter controls (called once on init, tags rendered after data loads)

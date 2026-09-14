@@ -1,6 +1,9 @@
 name: Barnacle Gardens
 tier: 2
 category: Combat
+tarotCard:
+  type: Swords
+  number: 10
 description: A corrupted area where prayer flags flutter above a landscape entirely covered in mist-breathing barnacles, while a breathing chasm exhales corrupted fog in tidal rhythms.
 impulses: Corrupt those who linger with tidal mist pulses, protect the breathing chasm from interference, test combat prowess against mist-born guardians
 difficulty: 14

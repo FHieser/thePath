@@ -1,6 +1,9 @@
 name: Sacred Mountain Pass
 tier: 1
 category: Traversal
+tarotCard:
+  type: Major
+  number: 18
 description: A treacherous mountain path leading to ancient ceremonial grounds where a Sacred Flame flickers against the mist.
 impulses: Challenge travelers with dangerous terrain, preserve ancient sacred traditions, guard the flame's mysteries
 difficulty: 11

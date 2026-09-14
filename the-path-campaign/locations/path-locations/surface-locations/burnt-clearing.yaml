@@ -1,6 +1,9 @@
 name: Burnt Clearing
 tier: 2
 category: Exploration
+tarotCard:
+  type: Major
+  number: 20
 description: A scorched forest sanctuary dying from a battle between Fire Born and Mist creatures, where ash drifts like snow and embers refuse to die.
 impulses: Echo with past violence, reveal the cost of faction warfare, offer the dying sanctuary's last gifts before it fades
 difficulty: 14

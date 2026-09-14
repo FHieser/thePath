@@ -1,6 +1,9 @@
 name: Stone Works
 tier: 1
 category: Exploration
+tarotCard:
+  type: Goblets
+  number: 4
 description: An abandoned quarry where exposed cliff faces reveal hidden caverns filled with resonant crystals.
 impulses: Echo with ancient industry, reveal hidden geological treasures, challenge with unstable terrain
 difficulty: 11

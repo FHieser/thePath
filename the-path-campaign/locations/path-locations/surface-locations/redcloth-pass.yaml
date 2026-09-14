@@ -1,6 +1,9 @@
 name: Redcloth Pass
 tier: 2
 category: Traversal
+tarotCard:
+  type: Goblets
+  number: 6
 description: |
   An ancient road along a cliff's lip, where the mist sits far below and the waymarkers have been waiting to be found.
 

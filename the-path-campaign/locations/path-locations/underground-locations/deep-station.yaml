@@ -1,6 +1,9 @@
 name: Deep Station
 tier: 3
 category: Exploration
+tarotCard:
+  type: Discs
+  number: 12
 description: |
   The convergence point of the Copper Rust Clan's entire rail network — three track lines meeting at a carved stone hub the size of a small town square. Platform edges are worn smooth from generations of boots. Cart cradles line one wall. The rune-lamps are dead. A massive switching junction sits misaligned at the track center, its mechanism frozen mid-turn. One line leads toward the outer mine. One leads toward the defense line. The third ends at an archway of Clan stonework carved with the God of the Deep's sigil — and beyond it, a wall of mist solid enough to lean against. At the center of the station floor, set into a ring of carved stone, an iron pipe rises from the ground. A hammer hangs on a bracket beside it.
 tagline: The rails stop here. So does everything else.

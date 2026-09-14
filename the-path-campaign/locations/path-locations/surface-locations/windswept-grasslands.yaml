@@ -1,6 +1,9 @@
 name: Windswept Grasslands
 tier: 1
 category: Exploration
+tarotCard:
+  type: Wands
+  number: 2
 description: Open fields swept by endless winds where ancient shrines and windmill ruins dot the landscape.
 impulses: Test endurance against the elements, reveal forgotten offerings, echo with voices of the past
 difficulty: 11

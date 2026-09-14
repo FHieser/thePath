@@ -1,6 +1,9 @@
 name: The Silken Spire
 tier: 2
 category: Exploration
+tarotCard:
+  type: Major
+  number: 17
 description: A towering castle woven entirely from spider silk, where massive webs connect ancient trees transformed into gleaming white towers that spiral skyward.
 impulses: Defend the Queen's domain, lure prey into silk traps, protect the descent to the Brood Throne
 difficulty: 14

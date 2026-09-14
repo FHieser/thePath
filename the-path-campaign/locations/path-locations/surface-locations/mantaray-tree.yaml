@@ -1,6 +1,9 @@
 name: Mantaray Tree
 tier: 2
 category: Exploration
+tarotCard:
+  type: Major
+  number: 14
 description: |
   From the sea of mist it looks like a lighthouse — a steady blue-white glow rising from the cliff top, visible long before the location itself. Up close it is something else: a giant coral tree, ancient and wide-branched, each branch holding a pool of water where water mantarays rest between flights. The swarm circles the crown constantly. Their collective glow is what travelers see from the mist and call a light.
 

@@ -1,6 +1,9 @@
 name: Hanging Gardens
 tier: 2
 category: Exploration
+tarotCard:
+  type: Discs
+  number: 9
 description: An overgrown Brass Mechanicorum botanical research station rising on corroded stilts above a carpet of carnivorous plants, where experimental chambers dangle from chains and ancient automata tend their endless gardens.
 impulses: Preserve forbidden botanical knowledge, test visitors against nature's hunger, reward those who understand the balance between cultivation and chaos
 difficulty: 14

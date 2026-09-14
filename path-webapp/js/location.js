@@ -167,6 +167,7 @@ async function displayLocation(loc) {
 
                 <div style="margin: 0.5rem 0;">
                     <div class="meta-inline"><strong>Difficulty:</strong> ${loc.difficulty}</div>
+                    ${loc.tarotCard ? `<div class="meta-inline"><strong>Tarot Card:</strong> ${tarotCardName(loc.tarotCard)}</div>` : ''}
                     <div class="meta-inline"><strong>Modifiers:</strong> ${loc.modifiers.map(m => {
                         const modName = typeof m === 'object' ? m.name : m;
                         const modValue = typeof m === 'object' ? m.value : undefined;

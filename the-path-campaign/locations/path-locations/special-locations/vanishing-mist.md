@@ -6,6 +6,7 @@ _An impenetrable wall of swirling mist that appears between destinations, disori
 
 > **Difficulty:** —
 > **Modifiers:** Unstable
+> **Tarot Card:** XIII Death
 
 ## SPECIAL MECHANIC
 

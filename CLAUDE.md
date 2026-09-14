@@ -70,7 +70,7 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
 
 ### Campaign Locations
 Locations are organized in `the-path-campaign/locations/` with detailed descriptions:
-- **Surface Locations** (25 environments) in `path-locations/surface-locations/` - e.g. Windswept Grasslands, Ancient Crossing, Forest Refuge, Highland Watch, Misty Waters, Overgrown Temple, Sacred Mountain Pass, Stone Works, Coldspire Keep, The Reeds
+- **Surface Locations** (25 environments) in `path-locations/surface-locations/` - e.g. Windswept Grasslands, Ancient Crossing, Forest Refuge, Highland Watch, Misty Waters, Sacred Mountain Pass, Stone Works, Coldspire Keep, The Reeds
 - **Underground Locations** (15 environments) in `path-locations/underground-locations/` - e.g. Flooded Network, Fungal Depths, Geothermal Caverns, Mining Complex, Sacred Underground, Sanctum Line, Brood Throne
 - **Starfall City** (9 locations) in `path-locations/starfall-city/` - a self-contained sub-area (Craftsmen's Ward, Sealed District, Scaffold Square, Sanctuary Keep, Old Gate, Riot Market, Mechanics Workshop, Council Hall, University/Burning Fields)
 - **Special Locations** in `path-locations/special-locations/` - non-standard entries (Vanishing Mist, Village in the Mist overview)

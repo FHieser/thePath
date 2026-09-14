@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 52** (33 Surface + 16 Underground + 3 Special)
+**Total Locations: 51** (32 Surface + 16 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (33 locations)
+## 🌄 Surface Locations (32 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -24,7 +24,6 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Hollow Woods](./surface-locations/hollow-woods.md)                 | Forest with mysterious hollowed structures                  |
 | ☑        | ☑     | [Misty Waters](./surface-locations/misty-waters.yaml)               | Flooded Crystal-Plague village with bound raven spirit      |
 | ☑        | ☑     | [The Monastery](./surface-locations/monastery.yaml)                 | Ruined abbey and winery repurposed as the Archon's field lab (Linked to The Red Cellar) |
-| ☐        | ☐     | [Overgrown Temple](./surface-locations/overgrown-temple.md)         | Ancient temple reclaimed by nature                          |
 | ☑        | ☑     | [Sacred Mountain Pass](./surface-locations/sacred-mountain-pass.md) | Blessed passage through the mountains                       |
 | ☑        | ☑     | [Silken Spire](./surface-locations/silken-spire.md)                 | Tower wrapped in luminous silk (Cave Mouth to Brood Throne) |
 | ☑        | ☑     | [Stone Works](./surface-locations/stone-works.md)                   | Ancient quarry or stonecraft site                           |
@@ -84,9 +83,9 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 52** | **Unassigned: 26** (33.3% remaining)
+**Assigned: 51** | **Unassigned: 27** (34.6% remaining)
 
-### 🔮 Major Arcana (12 of 22 assigned)
+### 🔮 Major Arcana (16 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -113,7 +112,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | XX Judgement          | Burnt Clearing       |
 | XXI The World         | Brood Throne         |
 
-### 🪄 Minor Arcana - Wands (9 of 14 assigned)
+### 🪄 Minor Arcana - Wands (12 of 14 assigned)
 
 | Card            | Location             |
 | --------------- | -------------------- |
@@ -151,7 +150,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Swords  | Coldspire Keep   |
 | King of Swords   |          |
 
-### ⚙️ Minor Arcana - Discs (Pentacles) (7 of 14 assigned)
+### ⚙️ Minor Arcana - Discs (Pentacles) (11 of 14 assigned)
 
 | Card            | Location           |
 | --------------- | ------------------ |
@@ -170,11 +169,11 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Discs  |                    |
 | King of Discs   |                    |
 
-### 🍷 Minor Arcana - Goblets (Cups) (5 of 14 assigned)
+### 🍷 Minor Arcana - Goblets (Cups) (6 of 14 assigned)
 
 | Card              | Location         |
 | ----------------- | ---------------- |
-| Ace of Goblets    | Trading Grounds  |
+| Ace of Goblets    |                  |
 | 2 of Goblets      | The Monastery    |
 | 3 of Goblets      |                  |
 | 4 of Goblets      | Stone Works      |

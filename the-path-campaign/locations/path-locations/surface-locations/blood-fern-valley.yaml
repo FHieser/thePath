@@ -1,6 +1,9 @@
 name: Blood Fern Valley
 tier: 2
 category: Exploration
+tarotCard:
+  type: Wands
+  number: 13
 description: A serene valley where blood-red ferns grow beneath ancient carved stones suspended from the trees, and deer paths wind through the crimson undergrowth.
 impulses: Shelter the innocent, remember ancient oaths, punish the dishonorable
 difficulty: 14

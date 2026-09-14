@@ -1,6 +1,9 @@
 name: Reed Marsh Caverns
 tier: 1
 category: Exploration
+tarotCard:
+  type: Wands
+  number: 11
 description: |
   A vast underground wetland where tall reeds grow in shallow pools, warm mist rises from vapor vents, and bioluminescent larvae create a false starry sky above.
 impulses: |

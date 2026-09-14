@@ -1,6 +1,9 @@
 name: Forest Refuge
 tier: 1
 category: Exploration
+tarotCard:
+  type: Wands
+  number: 6
 description: A dense woodland sanctuary where a mysterious dwelling shelters beneath ancient oaks and fairy rings bloom.
 impulses: Offer shelter and secrets, test visitors' intentions, preserve woodland mysteries
 difficulty: 11

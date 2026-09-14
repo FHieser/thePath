@@ -1,6 +1,9 @@
 name: Ancient Crossing
 tier: 1
 category: Traversal
+tarotCard:
+  type: Goblets
+  number: 10
 description: A crumbling stone bridge spans a deep chasm, guarded by broken monuments and treacherous stairs descending into darkness.
 impulses: Test courage and balance, preserve forgotten history, warn of dangers below
 difficulty: 11

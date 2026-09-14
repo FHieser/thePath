@@ -1,6 +1,9 @@
 name: Needle Tunnels
 tier: 2
 category: Traversal
+tarotCard:
+  type: Swords
+  number: 9
 description: |
   The stone presses close, the air runs thin, and something in the dark already knows you're coming.
 impulses: |

@@ -1,6 +1,9 @@
 name: Meteorite Lab
 tier: 3
 category: Exploration
+tarotCard:
+  type: Goblets
+  number: 11
 description: |
   The mine's old overseer station, on a spur at the crater's edge. Four rooms and a platform, reached by a ropeway built for people rather than ore. The Archon of Mercy took it whole and changed only what he needed to. Everything in it is aimed at one question, and he will tell you what the question is if you ask.
 tagline: An overseer's station at the crater's edge, still watching, still recording.

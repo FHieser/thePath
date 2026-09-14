@@ -97,6 +97,44 @@ function getModifierName(mod) {
   return typeof mod === 'object' ? mod.name : mod;
 }
 
+// ---------------------------------------------------------------------------
+// Tarot cards — Path locations carry `tarotCard: { type, number }`.
+// type: Major | Wands | Swords | Discs | Goblets (also the sort order).
+// number: 0–21 for Major; Ace=1 … 10, Page=11, Knight=12, Queen=13, King=14.
+// ---------------------------------------------------------------------------
+const TAROT_TYPES = ['Major', 'Wands', 'Swords', 'Discs', 'Goblets'];
+
+const MAJOR_ARCANA = [
+  'The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor',
+  'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit',
+  'Wheel of Fortune', 'Justice', 'The Hanged Man', 'Death', 'Temperance',
+  'The Devil', 'The Tower', 'The Star', 'The Moon', 'The Sun', 'Judgement', 'The World',
+];
+
+const TAROT_COURT = { 1: 'Ace', 11: 'Page', 12: 'Knight', 13: 'Queen', 14: 'King' };
+
+function toRoman(n) {
+  return [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']].reduce((out, [value, numeral]) => {
+    while (n >= value) { out += numeral; n -= value; }
+    return out;
+  }, '');
+}
+
+/** Display name for a tarot card, e.g. "XV The Devil" or "Knight of Discs". */
+function tarotCardName(card) {
+  if (!card) return '';
+  if (card.type === 'Major') {
+    return `${card.number === 0 ? '0' : toRoman(card.number)} ${MAJOR_ARCANA[card.number]}`;
+  }
+  return `${TAROT_COURT[card.number] || card.number} of ${card.type}`;
+}
+
+/** Sort comparator: by type (Major first), then number. Cardless entries sort last. */
+function compareTarotCards(a, b) {
+  if (!a || !b) return !a - !b;
+  return TAROT_TYPES.indexOf(a.type) - TAROT_TYPES.indexOf(b.type) || a.number - b.number;
+}
+
 /**
  * Fetch a directory listing and return all immediate subdirectory names found
  * in it (e.g. ["mist", "beasts", "spider-queen"]).

@@ -1,6 +1,9 @@
 name: Black Falls
 tier: 2
 category: Exploration
+tarotCard:
+  type: Discs
+  number: 3
 description: |
   A treacherous underground passage where black water cascades down multi-tiered falls, creating haunting rainbows in the mist while ancient stone penitents kneel eternally along the narrow path.
 impulses: |

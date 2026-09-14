@@ -1,6 +1,9 @@
 name: Dark Forest
 tier: 2
 category: Traversal
+tarotCard:
+  type: Wands
+  number: 9
 description: |
   The sky is blocked out by the trees. You have to find your way. You could swear you have been here before.
 
@@ -104,8 +107,6 @@ features:
 
       A party arriving by either route comes out somewhere in the middle of the trees, with no sense of which direction they were facing. Begin the traversal immediately: name a destination from the locations this forest connects to, and start Progress and Time Passed at 0. Arriving costs nothing further.
     questions: What comes up the stair when nobody is using it? Does the ring put everyone down in the same place, or somewhere different each time?
-
-tarotCard: 9 of Wands
 
 featureQuestions:
   - The clearing, the shrine, the stair with no building above it — people lived and worked in this forest once. What happened to them?

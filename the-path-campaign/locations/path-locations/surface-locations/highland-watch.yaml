@@ -1,6 +1,9 @@
 name: Highland Watch
 tier: 1
 category: Traversal
+tarotCard:
+  type: Goblets
+  number: 7
 description: A cluster of ancient stone formations where watchtowers and signal fires once formed a defensive line against creatures emerging from the mist.
 impulses: Maintain vigilance against mist incursions, provide elevated sanctuary, preserve anti-mist defenses
 difficulty: 11

@@ -1,6 +1,9 @@
 name: Fungal Depths
 tier: 2
 category: Exploration
+tarotCard:
+  type: Wands
+  number: 10
 description: |
   A vast underground ecosystem where giant fungi create their own luminescent world among bone-scattered chambers and root-pierced caverns.
 impulses: |

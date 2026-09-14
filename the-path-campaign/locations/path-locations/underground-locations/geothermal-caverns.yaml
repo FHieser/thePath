@@ -1,6 +1,9 @@
 name: Geothermal Caverns
 tier: 2
 category: Exploration
+tarotCard:
+  type: Discs
+  number: 6
 description: |
   A network of heated underground chambers where ancient thermal machinery harnesses volcanic vents and molten rock has carved winding passages.
 impulses: |

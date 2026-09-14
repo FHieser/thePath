@@ -1,6 +1,9 @@
 name: Sanctum Line
 tier: 2
 category: Traversal
+tarotCard:
+  type: Wands
+  number: 5
 description: |
   A rail line that feels different from the others — the Clan's rune-work runs cleaner here, the tunnel walls dressed more carefully than the outer network. Two natural caverns break the worked stone: one where something far older than the Clan made its home, and one the Clan was still cutting when the raid came. Both have something to offer. The tracks know where to go. The stone remembers why.
 tagline: The line runs quiet here. That's either a comfort or a warning.

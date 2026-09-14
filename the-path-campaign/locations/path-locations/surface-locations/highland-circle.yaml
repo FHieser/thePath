@@ -1,6 +1,9 @@
 name: Highland Circle
 tier: 1
 category: Traversal
+tarotCard:
+  type: Wands
+  number: 4
 description: Ancient standing stones crown a windswept highland where a mushroom ring glows at the circle's heart, and the mist rolls back from a power older than memory.
 impulses: Draw weary travelers beneath the shelter of the stones, Open pathways between the old places for those who know how to ask, Give generously to those who tend the mushroom ring and honor the growth
 difficulty: 11

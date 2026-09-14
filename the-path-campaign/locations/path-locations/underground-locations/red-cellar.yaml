@@ -1,6 +1,9 @@
 name: The Red Cellar
 tier: 2
 category: Exploration
+tarotCard:
+  type: Major
+  number: 12
 description: |
   Beneath the monastery, aging vaults reek of iron instead of wine — someone has been working here recently, and not everything they made has stopped moving.
 impulses: |

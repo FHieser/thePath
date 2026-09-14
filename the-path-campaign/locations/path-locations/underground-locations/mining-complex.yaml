@@ -1,6 +1,9 @@
 name: Mining Complex
 tier: 1
 category: Exploration
+tarotCard:
+  type: Discs
+  number: 5
 description: |
   An ancient underground mining station that predates the Starfall Kingdom, its stone walls cut by hands that left no other history. The Copper Rust Clan found it during their expansion — followed their rail line down to a station already built by someone else, explored it, and sealed it behind a massive door. They didn't explain why. The old rails still work, in their way. They only go down.
 tagline: Someone was here first. The Clan decided that was enough of a reason to put a door in the way.

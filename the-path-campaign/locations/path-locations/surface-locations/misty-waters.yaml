@@ -1,6 +1,9 @@
 name: Misty Waters
 tier: 2
 category: Exploration
+tarotCard:
+  type: Major
+  number: 6
 description: A village deliberately flooded by desperate survivors, now a submerged graveyard where crystallized corpses lie beneath dark waters and glowing crystal formations spread through the streets like veins of corrupted light.
 impulses: Conceal the drowned tragedy beneath still waters, tempt with crystalline beauty while threatening awakening, chronicle the village's desperate final choice
 difficulty: 14

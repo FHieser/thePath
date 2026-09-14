@@ -78,7 +78,6 @@ const CONTENT_INDEX = {
     "mist-gate.yaml",
     "misty-waters.yaml",
     "monastery.yaml",
-    "overgrown-temple.yaml",
     "redcloth-pass.yaml",
     "sacred-mountain-pass.yaml",
     "shrinewood.yaml",

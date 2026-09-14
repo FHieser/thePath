@@ -1,6 +1,9 @@
 name: The Brood Throne
 tier: 2
 category: Exploration
+tarotCard:
+  type: Major
+  number: 21
 description: |
   A vast underground chamber where the Spider Queen rules from her throne of woven silk, surrounded by countless egg sacs and the wealth of a hundred plundered caravans.
 impulses: |

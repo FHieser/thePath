@@ -1,6 +1,9 @@
 name: The Outer Mine Line
 tier: 2
 category: Traversal
+tarotCard:
+  type: Discs
+  number: 4
 description: |
   A copper-railed transit line built by the Copper Rust Clan to push their network deeper into unclaimed stone. The rails are inlaid with rune-work that draws ambient stone magic and feeds it into the carts — the Clan's solution to hauling ore across impossible distances. Survey stakes, half-finished side tunnels, and tools set down mid-shift mark the frontier they never finished mapping. The line passes through two natural caverns the Clan broke into during expansion. The carts still run.
 tagline: The line goes where the Clan was going. No one told it to stop.

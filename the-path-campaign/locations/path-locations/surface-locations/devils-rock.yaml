@@ -1,6 +1,9 @@
 name: Devil's Rock
 tier: 2
 category: Social
+tarotCard:
+  type: Major
+  number: 15
 description: A massive stone precipice jutting over the sea of mist like a throne for something that never sits. This is where the king of the Starfall Kingdom climbed alone and called his wish into the storm. The devil that answered still listens. The storm still cracks with unnatural fury.
 impulses: To whisper promises that sound like salvation, to stand as proof that some bargains cannot be undone, to echo with the king's final words
 difficulty: 14

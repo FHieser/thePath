@@ -1,6 +1,9 @@
 name: The Monastery
 tier: 2
 category: Exploration
+tarotCard:
+  type: Goblets
+  number: 2
 description: |
   A ruined abbey built into the base of a sheer cliff face, its vineyard terraces carved into the rock above and long since gone wild. Defensive walls still stand. Everything else is what time and the plague left behind.
 impulses: |

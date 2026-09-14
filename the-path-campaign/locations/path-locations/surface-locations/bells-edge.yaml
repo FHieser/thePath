@@ -1,6 +1,9 @@
 name: Bell's Edge
 tier: 2
 category: Exploration
+tarotCard:
+  type: Major
+  number: 11
 description: |
   At the edge where the sea became mist, a bell still rings and the god still listens.
 

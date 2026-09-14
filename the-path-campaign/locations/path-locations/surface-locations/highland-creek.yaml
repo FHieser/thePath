@@ -1,6 +1,9 @@
 name: Highland Creek
 tier: 1
 category: Traversal
+tarotCard:
+  type: Wands
+  number: 8
 description: |
   Follow the creek through the sea of green.
 

@@ -1,6 +1,9 @@
 name: Black Beach
 tier: 2
 category: Exploration
+tarotCard:
+  type: Discs
+  number: 10
 description: |
   An impossible underground shore where black sand meets dark waters, illuminated by dancing witch lights and dominated by an ancient bleeding altar rising from the depths.
 impulses: |

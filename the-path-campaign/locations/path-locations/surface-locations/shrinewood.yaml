@@ -1,6 +1,9 @@
 name: Shrinewood
 tier: 2
 category: Social
+tarotCard:
+  type: Wands
+  number: 1
 description: Ten thousand small gods live beneath one enormous tree, and none of them agree on how a guest should behave.
 impulses: Shelter those who ask properly, exact a price for every gift, quarrel over who is owed
 difficulty: 14

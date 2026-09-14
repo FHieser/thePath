@@ -1,6 +1,9 @@
 name: Sacred Underground
 tier: 1
 category: Exploration
+tarotCard:
+  type: Discs
+  number: 2
 description: |
   A massive cathedral-like cavern where ancient stone pillars support the ceiling and a sacred altar rests in a natural bowl formation.
 impulses: |
