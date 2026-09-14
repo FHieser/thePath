@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Wands
   number: 10
+soundtracks:
+  - name: Fungal Depths
+    url: https://www.youtube.com/watch?v=ieP0nAecdmA
 description: |
   A vast underground ecosystem where giant fungi create their own luminescent world among bone-scattered chambers and root-pierced caverns.
 impulses: |

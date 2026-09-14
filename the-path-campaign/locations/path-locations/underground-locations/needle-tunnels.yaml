@@ -4,6 +4,13 @@ category: Traversal
 tarotCard:
   type: Swords
   number: 9
+soundtracks:
+  - name: Needle Tunnels
+    url: https://www.youtube.com/watch?v=kSS_tDfeLOk
+  - name: Warm Nook
+    url: https://www.youtube.com/watch?v=7AF44XGCkSE
+  - name: Cosmic Descent
+    url: https://www.youtube.com/watch?v=j8EGy8ivR98
 description: |
   The stone presses close, the air runs thin, and something in the dark already knows you're coming.
 impulses: |

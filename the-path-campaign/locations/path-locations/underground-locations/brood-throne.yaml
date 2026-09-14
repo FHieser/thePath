@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Major
   number: 21
+soundtracks:
+  - name: Brood Throne
+    url: https://www.youtube.com/watch?v=X3XbYbgE9_k
 description: |
   A vast underground chamber where the Spider Queen rules from her throne of woven silk, surrounded by countless egg sacs and the wealth of a hundred plundered caravans.
 impulses: |

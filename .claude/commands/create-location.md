@@ -164,6 +164,7 @@ Create the complete location markdown file using this template:
 
 - Suggest an appropriate tarot card based on themes, choosing from the unassigned cards listed in `Glossary.md`
 - Record it in the YAML directly under `category:` as `tarotCard:` with `type` (Major, Wands, Swords, Discs, Goblets) and `number` (Major 0–21; Ace=1 … 10, Page=11, Knight=12, Queen=13, King=14) — e.g. `type: Discs` / `number: 12` for Knight of Discs
+- If the user has music for the location, add `soundtracks:` directly under `tarotCard:` as a list of `name` / `url` entries (multiple tracks allowed). General mood music goes in `the-path-campaign/soundboard.yaml` instead
 - Add the location to `Glossary.md`: a row in the correct location table, the tarot card assignment, and the location/card counts in both headers
 - Regenerate the webapp index: `node .github/scripts/generate-index.js`. Do NOT hand-edit `path-webapp/js/content-index.js` — the webapp auto-discovers content through it, so no per-location JSON or HTML edits are needed
 - Validate the new YAML parses before finishing

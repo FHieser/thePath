@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Major
   number: 5
+soundtracks:
+  - name: The Giant Walls
+    url: https://www.youtube.com/watch?v=yPFBRf2jwtY
 description: Massive walls stretching into the mist where a desperate kingdom tried to contain the crystalline plague, now haunted by the frozen tragedy of those who waited and those who guarded.
 impulses: Guard what can no longer be protected, show the price of choosing safety over compassion, chronicle the kingdom's fall through scattered evidence
 difficulty: 14

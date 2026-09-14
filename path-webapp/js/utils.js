@@ -129,6 +129,14 @@ function tarotCardName(card) {
   return `${TAROT_COURT[card.number] || card.number} of ${card.type}`;
 }
 
+/** Inline links for a `soundtracks: [{ name, url }]` field; opens in a new tab. */
+function soundtrackLinks(soundtracks) {
+  if (!Array.isArray(soundtracks) || soundtracks.length === 0) return '';
+  return soundtracks
+    .map(track => `<a class="soundtrack-link" href="${escapeHtml(track.url)}" target="_blank" rel="noopener">♪ ${escapeHtml(track.name)}</a>`)
+    .join('');
+}
+
 /** Sort comparator: by type (Major first), then number. Cardless entries sort last. */
 function compareTarotCards(a, b) {
   if (!a || !b) return !a - !b;

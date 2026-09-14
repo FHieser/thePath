@@ -7,6 +7,7 @@ _A fortified village protected by a Sacred Flame, serving as the primary safe ha
 > **Difficulty:** —
 > **Modifiers:** Stable, Flame-Touched, Inhabited
 > **Tarot Card:** X Wheel of Fortune
+> **Soundtrack:** [Village](https://www.youtube.com/watch?v=rJ90ljliEzU)
 
 ## CENTRAL HUB
 

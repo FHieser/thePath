@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Discs
   number: 8
+soundtracks:
+  - name: Flooded Network
+    url: https://www.youtube.com/watch?v=pv7sc85UZ-4
 description: |
   A network of water-filled tunnels and chambers where underground springs feed dark lakes and ancient machinery still turns with the current. The hydraulic system was built to flow one way—down. Those who enter may find themselves trapped until they master the machinery that controls the waters.
 impulses: |

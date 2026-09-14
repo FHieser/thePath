@@ -4,6 +4,9 @@ category: Social
 tarotCard:
   type: Major
   number: 2
+soundtracks:
+  - name: The Reeds
+    url: https://www.youtube.com/watch?v=FJSoqV-EZW4
 description: |
   A permanent swamp settlement built across a network of wooden islands connected by plank bridges and rope walkways. The community of frog people who live here — The Croak — move through it with complete ease. Outsiders do not. At the center, a giant mangrove tree rises above everything else, its crown holding a single dwelling visible from the swamp's edge. The mist stops at the water's edge here. No one explains why.
 impulses: |

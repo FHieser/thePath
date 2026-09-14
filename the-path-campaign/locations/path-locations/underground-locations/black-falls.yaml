@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Discs
   number: 3
+soundtracks:
+  - name: Black Falls
+    url: https://www.youtube.com/watch?v=pIvRQWk25dg
 description: |
   A treacherous underground passage where black water cascades down multi-tiered falls, creating haunting rainbows in the mist while ancient stone penitents kneel eternally along the narrow path.
 impulses: |

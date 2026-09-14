@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Goblets
   number: 6
+soundtracks:
+  - name: Redcloth Pass
+    url: https://www.youtube.com/watch?v=ST_cPtDe3-c
 description: |
   An ancient road along a cliff's lip, where the mist sits far below and the waymarkers have been waiting to be found.
 

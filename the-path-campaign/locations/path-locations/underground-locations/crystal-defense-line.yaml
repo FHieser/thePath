@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Discs
   number: 11
+soundtracks:
+  - name: Crystal Defense Line
+    url: https://www.youtube.com/watch?v=yJkKyVU_9as
 description: |
   The inner rail segment of the Copper Rust Clan's network, running closer to the heart of their operation and fortified accordingly. A massive gate cavern marks the midpoint — proper stonework, arbalest positions, a raisable door built for exactly the kind of threat that eventually came. Beyond it, the rails push into crystal-growth tunnels where a meteorite's material has seeped down through a blocked surface shaft. The Clan never opened it. The creatures that come through don't need it open.
 tagline: They built this line to hold. It held. Just not against what came from inside.

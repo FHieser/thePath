@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Wands
   number: 6
+soundtracks:
+  - name: Forest Refuge
+    url: https://www.youtube.com/watch?v=XxEhuSJF780
 description: A dense woodland sanctuary where a mysterious dwelling shelters beneath ancient oaks and fairy rings bloom.
 impulses: Offer shelter and secrets, test visitors' intentions, preserve woodland mysteries
 difficulty: 11

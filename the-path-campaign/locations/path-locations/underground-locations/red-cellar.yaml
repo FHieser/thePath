@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Major
   number: 12
+soundtracks:
+  - name: The Red Cellar
+    url: https://www.youtube.com/watch?v=pAeI_lVmZqA
 description: |
   Beneath the monastery, aging vaults reek of iron instead of wine — someone has been working here recently, and not everything they made has stopped moving.
 impulses: |

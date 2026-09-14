@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Discs
   number: 2
+soundtracks:
+  - name: Sacred Underground
+    url: https://www.youtube.com/watch?v=a0PvlNn7B-0
 description: |
   A massive cathedral-like cavern where ancient stone pillars support the ceiling and a sacred altar rests in a natural bowl formation.
 impulses: |

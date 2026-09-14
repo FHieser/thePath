@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Major
   number: 0
+soundtracks:
+  - name: Unstable Mist
+    url: https://www.youtube.com/watch?v=YZoUcp1A260
 description: Thick mist obscures shadow landmarks on minimal solid ground
 impulses: Obscure navigation with thick mist and vanishing shadow landmarks, disorient travelers with landmarks that flicker in and out of existence, transform into other locations through the temple's mysterious power
 difficulty: 14

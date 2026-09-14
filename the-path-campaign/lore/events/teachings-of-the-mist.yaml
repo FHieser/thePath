@@ -1,5 +1,8 @@
 name: The Teachings of the Mist
 category: Event
+soundtracks:
+  - name: Outer Wilds – Eye of the Universe
+    url: https://www.youtube.com/watch?v=4Bjs3CPHOSo
 description: The teachings of the mist are freely given and change everything.
 impulses: Welcome them deeper, transformation, nothing
 potentialAdversaries: Mist Envoy; Void Pearl Monk

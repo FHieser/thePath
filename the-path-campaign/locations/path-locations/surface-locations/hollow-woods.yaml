@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Wands
   number: 7
+soundtracks:
+  - name: Hollow Woods
+    url: https://www.youtube.com/watch?v=2Uec7UM2OQY
 description: Ancient trees with hollow interiors large enough to shelter entire groups, their bark scarred with old carvings and forgotten histories.
 impulses: Shelter weary travelers, preserve ancient knowledge, reveal traces of those who came before
 difficulty: 14

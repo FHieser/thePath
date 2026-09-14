@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Major
   number: 11
+soundtracks:
+  - name: Bell's Edge
+    url: https://www.youtube.com/watch?v=OTov04ChgZ8
 description: |
   At the edge where the sea became mist, a bell still rings and the god still listens.
 

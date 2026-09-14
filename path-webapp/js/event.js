@@ -81,6 +81,7 @@ function displayEvent() {
 
                 <div style="margin: 0.5rem 0;">
                     <div class="meta-inline"><strong>Difficulty:</strong> ${escapeHtml(String(block.difficulty ?? '—'))}</div>
+                    ${ev.soundtracks ? `<div class="meta-inline"><strong>Soundtrack:</strong> ${soundtrackLinks(ev.soundtracks)}</div>` : ''}
                 </div>
 
                 ${ev.impulses ? `<p class="stat-line"><strong>Impulses:</strong> <em>${escapeHtml(ev.impulses)}</em></p>` : ''}

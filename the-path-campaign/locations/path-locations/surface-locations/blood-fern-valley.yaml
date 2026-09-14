@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Wands
   number: 13
+soundtracks:
+  - name: Blood Fern Valley
+    url: https://www.youtube.com/watch?v=0smkZsIXogQ&list=PL3hdxPRqMv-yR31Cin-pHRULZ_XgrTnpI
 description: A serene valley where blood-red ferns grow beneath ancient carved stones suspended from the trees, and deer paths wind through the crimson undergrowth.
 impulses: Shelter the innocent, remember ancient oaths, punish the dishonorable
 difficulty: 14

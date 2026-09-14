@@ -1,0 +1,45 @@
+# Soundboard — general mood music for the table, grouped by category.
+# Location, event and NPC tracks live on those files as `soundtracks: [{ name, url }]`.
+categories:
+  - name: Fight
+    tracks:
+      - name: XCOM
+        url: https://www.youtube.com/watch?v=0e1oyEExLtU&list=PLie1YpP7SAWEr2LzxaezjcWMzwa9uKMfv
+      - name: Darkest Dungeon
+        url: https://www.youtube.com/watch?v=JYFU_RiefKk&list=RDJYFU_RiefKk&start_radio=1
+      - name: Hand of Fate 2
+        url: https://www.youtube.com/watch?v=-dDm_tbGL7Y&list=OLAK5uy_keNKB-pQH-S2Brw2i1x_HPBvPh-MOvKZs&index=21
+      - name: Control Core Borderlands
+        url: https://www.youtube.com/watch?v=5mGYsfcvdCo&list=PLvx-haXEgpEEdj2NdeSyTpnc5RDjQLaUh&index=9
+      - name: Hogwarts Legacy
+        url: https://music.youtube.com/watch?v=UTadGxS9iqY&list=OLAK5uy_lF2wschaf8QrPVT4dAZ4HUYZEdN3f9-OA
+      - name: Pathfinder
+        url: https://www.youtube.com/watch?v=g_N3y5cjP-c&list=PLqnX-F8B1lKaxWnRjWK1gQ7ux9zImLoV6&index=1
+      - name: Darkest Dungeon 2
+        url: https://www.youtube.com/watch?v=Dnx98fVUPxw&list=PLhd1Uq9h_TcAR4y3wXqLPDi7qaLJBKr2O&index=2
+      - name: Evolve
+        url: https://www.youtube.com/watch?v=Jsz4Ot4tco0&list=PLA-S_iErwwwQm2j8k5wZ8vpaw2J4AU2Tj
+      - name: Deep Rock
+        url: https://www.youtube.com/watch?v=_wZmfpmVPQ0
+      - name: Darkest Dungeon Miller
+        url: https://www.youtube.com/watch?v=SzJYa9Z15-I
+      - name: Darkest Dungeon – All Things Must Come
+        url: https://www.youtube.com/watch?v=E7JzX4CHJYg
+      - name: Underwater Fight
+        url: https://www.youtube.com/watch?v=DJx9oU1MolI&list=PL8P17RpErTDQ_tTkNzhwH5EBWNZWpfaKQ
+      - name: Final Stand
+        url: https://www.youtube.com/watch?v=vEP3sGEjxhY
+  - name: Mist
+    tracks:
+      - name: Sea of Mist
+        url: https://www.youtube.com/watch?v=WaT_jXI_89I
+      - name: Nebel
+        url: https://www.youtube.com/watch?v=fv_7EurNAss
+  - name: Siege
+    tracks:
+      - name: Siege
+        url: https://www.youtube.com/watch?v=pdp0SC-ehV4
+  - name: Misc
+    tracks:
+      - name: Fahrstuhlmusik
+        url: https://www.youtube.com/watch?v=IH6C3-GUai8&t=1315s

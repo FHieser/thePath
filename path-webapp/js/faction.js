@@ -485,6 +485,10 @@ function buildNpcCard(npc) {
         html += `<div class="npc-location">📍 ${escapeHtml(npc.location)}</div>`;
     }
 
+    if (npc.soundtracks && npc.soundtracks.length) {
+        html += `<div class="npc-location">${soundtrackLinks(npc.soundtracks)}</div>`;
+    }
+
     if (npc.appearance && npc.appearance.length) {
         html += `<div class="npc-section-label">Appearance</div>
             <ul class="npc-appearance" style="padding-left:1rem">`;

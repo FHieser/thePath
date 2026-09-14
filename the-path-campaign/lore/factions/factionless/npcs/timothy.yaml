@@ -2,6 +2,9 @@ name: Timothy ("Tim")
 faction: factionless
 role: Wandering trader of mist-salvaged oddities who randomly swoops into the village — and, hidden beneath the theatrics, Evie's teacher and the true source of her power
 location: Traveling — no fixed location. Flies a small cart pulled by Helmut Pegasusesel, appearing at the village or elsewhere on the Path whenever he feels like it, never on a schedule
+soundtracks:
+  - name: Wizard Disco
+    url: https://www.youtube.com/watch?v=tThOlpk0NlI
 
 appearance:
   - Long dark blue robes, dusted with mist residue at the hem; a peaked blue wizard's cap scattered with white stars — some embroidered properly, a few obviously stitched on after the fact and slightly crooked

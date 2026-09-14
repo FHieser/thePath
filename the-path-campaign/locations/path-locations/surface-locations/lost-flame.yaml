@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Swords
   number: 5
+soundtracks:
+  - name: Lost Flame
+    url: https://www.youtube.com/watch?v=UMva1aPcWnM
 description: |
   A cold mountain temple rising in terraces, each level carved with alien writing and strange forms — Fire Born inscription and Mist Born response layered over each other in stone. A battle took place here and the evidence is everywhere: shattered art, broken columns, wounds in the walls where something burned through. Stairs climb upward through the terraces toward a domed upper chamber whose walls lean inward to meet — but the top is open to the sky, and the mist sits in it like water in a bowl.
 impulses: Force visitors to witness what the mist destroys, Draw the curious upward through terraces that grow colder and stranger, Offer the summit to those willing to see what burns there

@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Discs
   number: 1
+soundtracks:
+  - name: Copper Rust Sanctuary
+    url: https://www.youtube.com/watch?v=eOTv_gt_7mU
 description: |
   A crater-shaped underground city carved into solid rock. Four quarters ring the inner walls in terraces — Forge Quarter to the left of the entrance, Root Quarter to the right, Shrine Quarter beyond the Forge, Hearth Quarter beyond the Root. The Foundation Chamber sits at the center bottom, fifty feet below the rim.
 

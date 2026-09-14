@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Goblets
   number: 7
+soundtracks:
+  - name: Highland Watch
+    url: https://www.youtube.com/watch?v=1zCDGPtDR8Q
 description: A cluster of ancient stone formations where watchtowers and signal fires once formed a defensive line against creatures emerging from the mist.
 impulses: Maintain vigilance against mist incursions, provide elevated sanctuary, preserve anti-mist defenses
 difficulty: 11

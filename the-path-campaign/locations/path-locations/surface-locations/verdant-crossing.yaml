@@ -4,6 +4,9 @@ category: Traversal
 tarotCard:
   type: Wands
   number: 3
+soundtracks:
+  - name: Verdant Crossing
+    url: https://www.youtube.com/watch?v=eWLDwkH71cM
 description: A treacherous descent down a cliff face where massive shelf fungi form natural stairs and woven tree roots provide handholds, all illuminated by luminescent moss in the forest gloom.
 impulses: Guide travelers safely down the cliff descent, sustain the living growth through constant renewal, test the balance and caution of climbers
 difficulty: 14

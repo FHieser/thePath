@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Wands
   number: 2
+soundtracks:
+  - name: Windswept Grasslands
+    url: https://www.youtube.com/watch?v=sT5f1jBJHng&t=4910s
 description: Open fields swept by endless winds where ancient shrines and windmill ruins dot the landscape.
 impulses: Test endurance against the elements, reveal forgotten offerings, echo with voices of the past
 difficulty: 11

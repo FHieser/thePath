@@ -4,6 +4,9 @@ category: Exploration
 tarotCard:
   type: Discs
   number: 6
+soundtracks:
+  - name: Geothermal Caverns
+    url: https://www.youtube.com/watch?v=b9xUoHavp34
 description: |
   A network of heated underground chambers where ancient thermal machinery harnesses volcanic vents and molten rock has carved winding passages.
 impulses: |
