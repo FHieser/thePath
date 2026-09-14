@@ -230,6 +230,19 @@
     description: |
       Spend 1 HP at any time to fill the vial with your blood. The vial holds 1 HP of blood. Pour the filled vial at a location that requires a blood sacrifice to count as 1 HP of sacrifice. Multiple vials can be used together to meet higher sacrifice costs.
 
+- name: Blood Transfusion Kit
+  type: Blood
+  usage: Reusable
+  tier: 1
+  tradeValue: 2
+  flavor: "A length of copper tubing with a needle at each end and a red crystal set in the canister between — it warms as the blood runs through."
+  effect:
+    category: Restoration
+    description: |
+      Cannot be used during combat. In a calm moment, connect the tube between two willing creatures. Transfer up to 3 HP: the donor marks that many HP, and the recipient clears that many.
+
+      The crystal fouls with use. The kit cannot be used again until it has been thoroughly cleaned somewhere equipped for it — the Village, the Red Cellar, the Meteorite Lab, or a comparable facility.
+
 - name: Rapid Mutator
   type: Blood
   usage: Consumable
