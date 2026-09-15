@@ -140,6 +140,7 @@ const CONTENT_INDEX = {
     "lake-crossing.yaml",
     "monastery-march.yaml",
     "needle-descent.yaml",
+    "new-ways.yaml",
     "plague-march.yaml",
     "wetlands.yaml"
   ],

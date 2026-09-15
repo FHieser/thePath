@@ -1,0 +1,32 @@
+name: New Ways
+tier: 3
+
+rowLabels:
+  "-1": "C'"
+  "0": "B'"
+  "1": "A'"
+  "2": A
+  "3": B
+
+gridSurface:
+  "2,-1": { location: mantaray-tree, modifiers: [Stable] }
+  "3,-1": { location: mist-gate, modifiers: [Mist-Touched] }
+  "1,0": { location: bells-edge, modifiers: [Mist-Touched] }
+  "2,0": { location: dark-forest, modifiers: [Cave Mouth, Mushroom Circle] }
+  "2,1": { location: shrinewood, modifiers: [Mushroom Circle, Mist-Protected] }
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
+  "1,2": { location: stone-works, modifiers: [Cave Mouth] }
+  # "2,2": TBD — location not yet built (Unstable, Inhabited). Keystone junction: without it the surface cannot reach Sacred Mountain Pass.
+  "3,2": { location: highland-creek, modifiers: [Mist-Protected] }
+  "4,2": verdant-crossing
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
+  "2,3": the-beacon
+  "5,3": devils-rock
+
+gridUnderground:
+  "0,2": { location: underground-access-card, modifiers: [Stable] }
+  "1,0": black-beach
+  "2,0": fungal-depths
+  "1,1": black-falls
+  "1,2": flooded-network
+  "1,3": { location: reed-marsh-caverns, modifiers: [Mushroom Circle] }
