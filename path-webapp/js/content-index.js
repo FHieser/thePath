@@ -63,6 +63,7 @@ const CONTENT_INDEX = {
     "bells-edge.yaml",
     "blood-fern-valley.yaml",
     "burnt-clearing.yaml",
+    "cloudburst-inn.yaml",
     "coldspire-keep.yaml",
     "dark-forest.yaml",
     "devils-rock.yaml",
@@ -171,6 +172,7 @@ const CONTENT_INDEX = {
       "npcs": [
         "archon-of-mercy.yaml",
         "the-bound-raven.yaml",
+        "the-host.yaml",
         "timothy.yaml"
       ]
     },

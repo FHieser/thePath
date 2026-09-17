@@ -1,0 +1,59 @@
+name: The Host
+faction: factionless
+role: Innkeeper of the Cloudburst Inn
+location: Cloudburst Inn
+
+appearance:
+  - Butler's dress — black coat, waistcoat, white collar and cravat, all of it immaculate
+  - Nothing above the collar. The clothes hold their shape as though a head were in them
+  - Does not speak under normal circumstances. Questions get answered by pointing at the rules
+  - When it does speak, the voice is smooth and comes from everywhere in the room at once, regardless of where The Host is standing
+  - Moves without hurry and is never in anyone's way. Drinks tend to arrive before they are ordered
+
+the_twist: |
+  The Host is the visible part of an eldritch entity that settled into this building. The inn is part of the same entity — the room, the fire and the butler are one thing in three shapes.
+
+  Time is not a fixed concept to it. Inside, it is always evening and the fire is always burning. Urgent things outside — a siege closing in, something on the party's trail — do not progress while guests are in the room.
+
+theme: |
+  It wants a good story. Looking for reasoning beyond that doesn't get anywhere — it's an eldritch being, and its motives aren't built to be understood.
+
+wants:
+  - A story from every guest, told before they are served
+  - A good one. Length and polish don't matter — it can tell when someone is holding back
+
+offers:
+  - Shelter. The door is never locked and nobody is turned away
+  - A drink in exchange for a story. Clears 1 Stress
+  - A story of its own, when it feels like telling one. The guests play the parts
+  - Afterward, something out of that story, handed over as though it had always been behind the bar — a keepsake, or something that works, or both
+
+interaction_beats:
+  - moment: Arriving
+    description: |
+      The party comes in out of the rain. Nobody is turned away and nobody is asked anything. The rules are on the wall, and The Host points at them.
+  - moment: A Story for a Drink
+    description: |
+      Each guest tells one to be served. Whatever the players invent here becomes true about the world.
+  - moment: The Host Tells One
+    description: |
+      When the GM has something prepared, The Host begins a story and the players take the parts in it. The party cannot decline once it starts. This is the vessel for a one-shot: lore from outside the mist, the world before it came, or somewhere the party would otherwise never reach. It costs a short rest and pays out as a long rest, so it can be dropped into a session without breaking the campaign's pace.
+
+secrets:
+  what_they_know: |
+    Every story ever told in this room, in the teller's own words. That includes tales from before the mist, and things about people the party knows.
+  what_they_hide: |
+    What it is, where it came from, and what it does with what it hears. It doesn't hide these out of caution — it has simply never been asked in a way it recognises as a question.
+  conditions: |
+    It will repeat any story it has been told, in exchange for one it hasn't heard. It will never explain itself. No trade, favour or threat opens that up, and it isn't withholding — there's nothing there that would translate.
+
+combat_stats:
+  ref: null
+  note: The Host does not fight and has no stat block. A guest who turns aggressive is simply outside, standing in the rain, with no transition.
+
+gm_notes:
+  - It never speaks except when telling a story. Answer questions by pointing at the rules; the silence is most of the character
+  - When it does speak, the voice comes from everywhere in the room regardless of where it is standing. Play it as unremarkable — it isn't trying to unsettle anyone
+  - When The Host begins a story, the players don't get to decline. Mechanics are in the Cloudburst Inn location file
+  - Urgent things outside hold still while the party is inside. Don't tell them this
+  - Stories the players invent for drinks are now canon and retrievable later. Write them down

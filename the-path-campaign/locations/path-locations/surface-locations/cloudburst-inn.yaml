@@ -1,0 +1,81 @@
+name: Cloudburst Inn
+tier: 2
+category: Traversal
+description: |
+  In between the pouring rain sits a lone tavern with a warm fire.
+
+  A cobblestone road in pouring rain. Lightning flashing from time to time. In the distance barely visible a shadow of a building. Coming in out of the rain it opens up to a crackling fire and a well lit tavern. Faint laughter and the telling of stories lies in the air.
+
+impulses: Storm and Thunder, Crackling fire and a moment's rest, Stories that take you away
+
+difficulty: 14
+
+modifiers:
+  - name: Unstable
+  - name: Inhabited
+
+potentialAdversaries: The Storm
+
+features:
+  - name: The Open Road
+    type: Passive
+    description: |
+      The road is cobbled, straight and entirely exposed. There is no cover on it anywhere — no trees, no walls, no high ground — and the rain comes down hard enough to hurt.
+
+      Crossing the open road marks 1 Stress. Walking to the Inn costs 1 Stress, and walking away from it costs 1 Stress again.
+    questions: Who laid a cobbled road out here, and where was it going before the mist came?
+
+  - name: Lightning
+    type: Action
+    description: |
+      The GM spends 2 Fear. Lightning comes down on the open road — the players decide who it hits. That PC marks 2 HP and 1 Stress.
+
+      The struck PC may then name another PC for a second strike. The GM spends 2 more Fear to make it land, and that PC may name a third. The chain runs as long as the GM keeps paying for it.
+
+      Lightning does not reach inside the Inn.
+    questions: Does the storm ever strike the Inn itself? Has anyone ever seen it try?
+
+  - name: The Cloudburst Inn
+    type: Passive
+    description: |
+      A single building beside the road, light in its windows, the door never locked. Inside it is always evening and the fire is always burning. The Host keeps the room (see The Host in lore/factions/factionless/npcs).
+
+      Three rules are written where every guest can read them, and The Host points at them rather than speaking:
+
+      1. No fighting.
+      2. We don't ask where anyone came from.
+      3. You have to tell a story before you get a drink.
+
+      A guest who turns aggressive is simply outside, standing in the rain, with no transition.
+
+      While the party is inside, urgent things elsewhere do not progress — a siege closing on the village, something following them along the Path, any countdown the GM is running. Do not tell the players this.
+    questions: How long has the Inn stood on this road? Who else is drinking here tonight, and what did they tell to be served?
+
+  - name: A Story for a Drink
+    type: Action
+    description: |
+      Rule 3 is enforced without exception. A PC tells a story — any story, theirs or borrowed, true or not — and is served. The drink clears 1 Stress.
+
+      Whatever the players invent to be served is now true about the world, and The Host remembers it exactly.
+    questions: What does each PC choose to tell a room full of strangers? What do they leave out?
+
+  - name: The Host Tells a Story
+    type: Action
+    description: |
+      When The Host feels like telling one, it tells one. In practice this happens when the GM has something prepared — the Inn works perfectly well as an ordinary refuge on any other night.
+
+      The party cannot decline once it starts. The players take the parts in the story and play it out: lore from outside the mist, the world before it came, or somewhere the party would otherwise never reach.
+
+      The party spends 1 short rest and gains the effects of a long rest. This does not count as a long rest for Resting on the Path — the Path does not end. The GM gains 1d4 Fear as for any short rest.
+
+      Afterward The Host produces something out of the story and hands it over, as though it had always been behind the bar. A keepsake, or something that works, or both — GM's choice.
+    questions: What story does The Host choose to tell tonight, and why that one? What did it keep back?
+
+tarotCard: 9 of Goblets
+
+featureQuestions:
+  - Why does it rain here and nowhere else on the Path?
+  - The Inn is Unstable and moves with the mist like everything else. Does The Host know that, or does the building simply stand wherever it stands?
+  - Every guest who has ever drunk here told a story to be served. Where does The Host keep them?
+  - The mementos come out of stories. What happens if a party brings one back and someone recognises it?
+  - Rule 2 means nobody asks where anyone came from — including The Host. Has anyone ever broken that rule instead of rule 1?

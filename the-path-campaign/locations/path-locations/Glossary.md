@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 51** (32 Surface + 16 Underground + 3 Special)
+**Total Locations: 52** (33 Surface + 16 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (32 locations)
+## 🌄 Surface Locations (33 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -42,6 +42,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [The Beacon](./surface-locations/the-beacon.yaml)                    | Tier 3 vertical climb up a giant stairway to a Fire Born signal brazier above the clouds — light it and a temple-carrier comes |
 | ☑        | ☑     | [Highland Creek](./surface-locations/highland-creek.yaml)           | Calm highland creek winding through a sea of green — herb gathering, a broken bridge to rest beneath, and rune-cut menhirs |
 | ☑        | ☑     | [Dark Forest](./surface-locations/dark-forest.yaml)                 | Lightless old-growth crossing where finding the way costs hours — and running out of hours costs a short rest |
+| ☑        | ☑     | [Cloudburst Inn](./surface-locations/cloudburst-inn.yaml)           | Storm-lashed cobbled road with one inn on it, kept by a headless Host who trades drinks for stories |
 
 ---
 
@@ -83,7 +84,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 51** | **Unassigned: 27** (34.6% remaining)
+**Assigned: 52** | **Unassigned: 26** (33.3% remaining)
 
 ### 🔮 Major Arcana (16 of 22 assigned)
 
@@ -169,7 +170,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Discs  |                    |
 | King of Discs   |                    |
 
-### 🍷 Minor Arcana - Goblets (Cups) (6 of 14 assigned)
+### 🍷 Minor Arcana - Goblets (Cups) (7 of 14 assigned)
 
 | Card              | Location         |
 | ----------------- | ---------------- |
@@ -181,7 +182,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 6 of Goblets      | Redcloth Pass    |
 | 7 of Goblets      | Highland Watch   |
 | 8 of Goblets      |                  |
-| 9 of Goblets      |                  |
+| 9 of Goblets      | Cloudburst Inn   |
 | 10 of Goblets     | Ancient Crossing |
 | Page of Goblets   | Meteorite Lab    |
 | Knight of Goblets |                  |
