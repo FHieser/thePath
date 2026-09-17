@@ -16,7 +16,7 @@ gridSurface:
   "2,1": { location: shrinewood, modifiers: [Mushroom Circle, Mist-Protected] }
   "0,2": { location: village-in-the-mist, modifiers: [Stable] }
   "1,2": { location: stone-works, modifiers: [Cave Mouth] }
-  # "2,2": TBD — location not yet built (Unstable, Inhabited). Keystone junction: without it the surface cannot reach Sacred Mountain Pass.
+  "2,2": cloudburst-inn
   "3,2": { location: highland-creek, modifiers: [Mist-Protected] }
   "4,2": verdant-crossing
   "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
