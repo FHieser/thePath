@@ -1,0 +1,122 @@
+name: Shadow Clan Contract
+difficulty: 11
+
+summary: |
+  Shadow-clan rats take a contract to clear a bandit outpost from an old fort ruin. A climb up the bridge foundations, a patrol on a span narrow enough that a fall kills anything that takes one, and a keep where nothing can be done quietly.
+
+  Players make new characters for it.
+
+background: |
+  Far away there is the kingdom of rats. Seven Rat Clans living side by side.
+
+  Rats of the fields of grain.
+  Rats of the hills of cheese.
+  Rats in the burrows under the earth.
+  Rats of the Wall, defending the realm.
+  Rats of the Dark Forest.
+  Rats of the Sea and the rivers.
+  And rats living in the shadows of the kingdom.
+
+  The shadows seem deep today.
+  We can see them moving.
+
+characters: |
+  The players play rats of the Shadow Clan — a humanoid rat people, not vermin. Everyone makes a new character for this story:
+
+  - Ancestry: Simiah
+  - Community: Slyborne
+  - Class: Assassin, Rogue or Ranger
+
+goals: |
+  The Shadow Clan has been given a contract: clear a bandit outpost holed up in an old fort ruin.
+
+  Where the contract came from is not the concern of the rats carrying it out.
+
+locations:
+  - name: The Foundations
+    description: The stone piers the bridge stands on. Wet, weathered, thick with old growth in the joints. Unclimbable for a person. Not for a rat.
+  - name: The Bridge
+    description: The only way into the fort. Narrow enough that two stand abreast and no more. No railing, and a long way down.
+  - name: The Outbuildings
+    description: Three ruined buildings inside the fort walls, the first thing reached once across.
+  - name: The Keep
+    description: The stone tower at the centre of the fort, where the ones worth worrying about are.
+
+steps:
+  - step: 1
+    name: The telling begins
+    description: |
+      Each player makes a rat of the Shadow Clan — Simiah, Slyborne, and Assassin, Rogue or Ranger.
+
+  - step: 2
+    name: The climb
+    description: |
+      Climbing the bridge foundations uses a Progress Countdown (8). It ticks down when the PCs make an action roll to climb:
+
+      | Roll result      | Countdown |
+      |------------------|-----------|
+      | Critical success | tick down 3 |
+      | Success with Hope| tick down 2 |
+      | Success with Fear| tick down 1 |
+      | Failure with Hope| no advancement |
+      | Failure with Fear| tick up 1 |
+
+      On a failure with Fear the rat's grip goes and they drop to the level below: tick up 1 and take 1d8+3 physical damage.
+
+      When the countdown triggers, the party is up on the bridge.
+    questions: What has grown in the joints of the stonework? What did the last thing to climb up here leave behind?
+
+  - step: 3
+    name: The bridge
+    description: |
+      Three Jagged Knife Lackeys (Tier 1 Minion, DH Core 213) hold the span: two standing side by side, and one on its own further along.
+
+      The climb brings the party up onto the bridge rather than along the road. The bandits are watching the approach; nobody is watching the drop.
+
+      Anything that goes over the edge is dead. That applies to the rats exactly as much as to the bandits.
+
+      A lackey who notices the rats and lives to act on it raises the alarm. One thrown off the bridge does not — whatever it shouts on the way down, nobody in the fort is listening.
+
+  - step: 4
+    name: The branch
+    description: |
+      If the alarm goes up, the fort empties onto the bridge. Run the keep encounter here instead, and skip steps 5 and 6.
+
+      If the bridge is taken in silence, continue.
+
+  - step: 5
+    name: The outbuildings
+    description: |
+      Each of the three buildings holds one hidden alarm — a tripline, a stack of tin, something strung across a doorway in the dark. Finding and dealing with one is a Finesse roll vs 11.
+
+      Lackeys are quartered here and can be taken quietly, one building at a time, so long as the alarms stay silent.
+
+  - step: 6
+    name: The keep
+    description: |
+      Any attack or kill inside the keep alarms the rest of the bandits. There is no quiet way through this room.
+
+      **The Keep encounter** — bandits holding a ruined tower: commander on the stair, shooters above, knives in the dark.
+
+      | Adversary | Type | BP |
+      |-----------|------|----|
+      | Jagged Knife Lieutenant | Leader | 3 |
+      | Jagged Knife Sniper | Ranged | 2 |
+      | Jagged Knife Shadow | Skulk | 2 |
+      | Jagged Knife Bandit | Standard | 2 |
+      | Jagged Knife Lackey | Minion | 1 |
+
+      All Tier 1. Lackeys quartered in the outbuildings are not counted in the budget below.
+
+      | Party | Composition | Total |
+      |-------|-------------|-------|
+      | 2 PCs | 1 Lieutenant (3) + 1 Sniper (2) + 1 Shadow (2) + Lackeys (1) | 8 BP |
+      | 3 PCs | 1 Lieutenant (3) + 1 Sniper (2) + 1 Shadow (2) + 2 Bandits (4) | 11 BP |
+      | 4 PCs | 1 Lieutenant (3) + 2 Snipers (4) + 1 Shadow (2) + 2 Bandits (4) + Lackeys (1) | 14 BP |
+      | 5 PCs | 1 Lieutenant (3) + 2 Snipers (4) + 2 Shadows (4) + 3 Bandits (6) | 17 BP |
+      | 6 PCs | 1 Lieutenant (3) + 3 Snipers (6) + 2 Shadows (4) + 3 Bandits (6) + Lackeys (1) | 20 BP |
+
+      Tactics: The Lieutenant holds the stair and uses Tactician to reposition the gang as the rats come in, saving Coup de Grace for anyone who drops. Snipers work from the upper floor with Unseen Strike. Shadows use Cloaked to vanish in the tower's dark and Backstab isolated rats — the same tactic the party came here to use. Bandits block the doorway and the stair. If the alarm went up on the bridge, the whole roster is awake and waiting instead of scattered.
+
+ending: |
+  The fort is cleared. The rats loot what the bandits left, and the story goes out into the night with them.
