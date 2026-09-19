@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .story-header { margin-bottom: 1.5rem; }
+        .story-header h1 { margin-bottom: 0.4rem; }
+
+        .story-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .badge {
+            padding: 0.15rem 0.5rem;
+            border-radius: 0.15rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .badge.story { background: rgba(138, 111, 59, 0.3); color: #d0b071; }
+        .badge.tier  { background: rgba(255,255,255,0.08); color: var(--text-light); }
+
+        .story-section { margin-bottom: 2rem; }
+        .story-section h2 {
+            color: var(--accent-amber);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 0.1rem solid rgba(17,68,102,0.5);
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .story-summary, .story-ending {
+            font-style: italic;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .story-background {
+            background: rgba(0,0,0,0.2);
+            border-left: 0.2rem solid #8a6f3b;
+            border-radius: 0.15rem;
+            padding: 0.8rem 1rem;
+            line-height: 1.7;
+        }
+
+        .location-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 0.8rem;
+        }
+        .location-point {
+            background: rgba(0,0,0,0.2);
+            border: 0.15rem solid var(--border-color);
+            border-radius: 0.2rem;
+            padding: 0.8rem;
+        }
+        .location-point h3 {
+            color: var(--accent-amber);
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+        .location-point p { font-size: 0.88rem; line-height: 1.5; opacity: 0.9; }
+
+        .story-step {
+            background: rgba(0,0,0,0.2);
+            border: 0.15rem solid var(--border-color);
+            border-left: 0.3rem solid #8a6f3b;
+            border-radius: 0.2rem;
+            padding: 1rem;
+            margin-bottom: 0.8rem;
+        }
+        .step-head { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.5rem; }
+        .step-num {
+            background: rgba(138, 111, 59, 0.3);
+            color: #d0b071;
+            border-radius: 0.15rem;
+            padding: 0.1rem 0.5rem;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+        .step-head h3 { color: var(--accent-amber); font-size: 1rem; margin: 0; }
+        .step-body { line-height: 1.6; }
+        .step-questions {
+            font-style: italic;
+            opacity: 0.75;
+            font-size: 0.85rem;
+            margin-top: 0.6rem;
+            padding-top: 0.5rem;
+            border-top: 0.1rem solid rgba(17,68,102,0.3);
+        }
+
+        .table-scroll { overflow-x: auto; margin: 0.75rem 0; }
+        .story-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.85rem;
+        }
+        .story-table th, .story-table td {
+            border: 0.1rem solid rgba(17,68,102,0.5);
+            padding: 0.35rem 0.6rem;
+            text-align: left;
+        }
+        .story-table th {
+            background: rgba(138, 111, 59, 0.2);
+            color: var(--accent-amber);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.03em;
+        }
+        .story-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.03); }
+
+        .empty-state { text-align: center; padding: 3rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <a class="home-btn" href="index.html">&#8962; Home</a>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb"><a href="stories.html">← Back to Stories</a></nav>
+        </header>
+
+        <main id="story-content">
+            <div class="loading"><p>Loading story...</p></div>
+        </main>
+
+        <footer><p>The Path - Daggerheart Campaign Frame</p></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/story.js"></script>
+</body>
+</html>

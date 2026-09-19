@@ -29,6 +29,10 @@ const LOCATION_FOLDERS = [
 // carry no grid coordinate, tarot card, or Glossary entry.
 const EVENTS_URL = '../the-path-campaign/lore/events/';
 
+// Stories are the tales The Host tells at the Cloudburst Inn — self-contained
+// one-shots the players take the parts in. They carry no grid position.
+const STORIES_URL = '../the-path-campaign/lore/stories/';
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------

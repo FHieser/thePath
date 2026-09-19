@@ -154,6 +154,9 @@ const CONTENT_INDEX = {
     "teachings-of-the-mist.yaml",
     "vassal-of-the-mist.yaml"
   ],
+  "../the-path-campaign/lore/stories/": [
+    "shadow-clan-contract.yaml"
+  ],
   "__factions__": {
     "brass-mechanicorum": {
       "details": "faction-details.yaml",
