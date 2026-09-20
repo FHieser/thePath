@@ -15,9 +15,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h2>${escapeHtml(category.name)}</h2>
                 <div class="nav-cards">
                     ${(category.tracks || []).map(track => `
-                        <a href="${escapeHtml(track.url)}" class="nav-card" target="_blank" rel="noopener">
-                            <h3>♪ ${escapeHtml(track.name)}</h3>
-                        </a>
+                        <div class="nav-card track-card">
+                            <a href="${escapeAttr(track.url)}" class="track-card-link" target="_blank" rel="noopener">
+                                <h3>♪ ${escapeHtml(track.name)}</h3>
+                            </a>
+                            ${copyLinkButton(track.url, track.name)}
+                        </div>
                     `).join('')}
                 </div>
             </section>

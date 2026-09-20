@@ -133,11 +133,66 @@ function tarotCardName(card) {
   return `${TAROT_COURT[card.number] || card.number} of ${card.type}`;
 }
 
-/** Inline links for a `soundtracks: [{ name, url }]` field; opens in a new tab. */
+/** Escape a value for use inside a double-quoted HTML attribute (quotes included). */
+function escapeAttr(text) {
+  return String(text ?? '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+/**
+ * A small button that copies `url` to the clipboard instead of opening it —
+ * handy for pasting a track into a Watch2Gether room. Click handling lives in
+ * the delegated listener below, so any page that loads utils.js gets it free.
+ */
+const COPY_GLYPH = '⧉';
+
+function copyLinkButton(url, label) {
+  const title = `Copy link${label ? ` to “${label}”` : ''}`;
+  return `<button type="button" class="copy-link-btn" data-copy-url="${escapeAttr(url)}" title="${escapeAttr(title)}" aria-label="${escapeAttr(title)}">${COPY_GLYPH}</button>`;
+}
+
+/** Copy `text` to the clipboard; falls back to execCommand where the async API is unavailable. */
+async function copyToClipboard(text) {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch (error) {
+    // Fall through to the legacy path below.
+  }
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.setAttribute('readonly', '');
+  textarea.style.cssText = 'position:fixed;top:-1000px;opacity:0;';
+  document.body.appendChild(textarea);
+  textarea.select();
+  let copied = false;
+  try { copied = document.execCommand('copy'); } catch (error) { copied = false; }
+  textarea.remove();
+  return copied;
+}
+
+// One delegated handler for every copy button on the page, present or future.
+document.addEventListener('click', async event => {
+  const button = event.target.closest('[data-copy-url]');
+  if (!button) return;
+  event.preventDefault();
+  event.stopPropagation();
+  const copied = await copyToClipboard(button.dataset.copyUrl);
+  button.textContent = copied ? '✓' : '✗';
+  button.classList.add(copied ? 'copied' : 'copy-failed');
+  clearTimeout(button.dataset.resetTimer);
+  button.dataset.resetTimer = setTimeout(() => {
+    button.textContent = COPY_GLYPH;
+    button.classList.remove('copied', 'copy-failed');
+  }, 1200);
+});
+
+/** Inline links for a `soundtracks: [{ name, url }]` field; opens in a new tab, plus a copy button. */
 function soundtrackLinks(soundtracks) {
   if (!Array.isArray(soundtracks) || soundtracks.length === 0) return '';
   return soundtracks
-    .map(track => `<a class="soundtrack-link" href="${escapeHtml(track.url)}" target="_blank" rel="noopener">♪ ${escapeHtml(track.name)}</a>`)
+    .map(track => `<span class="soundtrack-item"><a class="soundtrack-link" href="${escapeAttr(track.url)}" target="_blank" rel="noopener">♪ ${escapeHtml(track.name)}</a>${copyLinkButton(track.url, track.name)}</span>`)
     .join('');
 }
 

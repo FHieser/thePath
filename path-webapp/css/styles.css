@@ -196,9 +196,70 @@ h3 {
   font-size: 0.8rem;
 }
 
-.soundtrack-link {
+.soundtrack-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
   margin-right: 0.6rem;
+}
+
+.soundtrack-link {
   white-space: nowrap;
+}
+
+/* Copy-to-clipboard button — sits beside any shareable link. */
+.copy-link-btn {
+  background: none;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 0.2rem;
+  color: var(--accent-amber);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0.15rem 0.3rem;
+  transition: all 0.2s;
+}
+
+.copy-link-btn:hover {
+  border-color: var(--accent-amber);
+  background: rgba(212, 165, 116, 0.2);
+}
+
+.copy-link-btn.copied {
+  color: var(--text-light);
+  border-color: var(--success-green);
+  background: var(--success-green);
+}
+
+.copy-link-btn.copy-failed {
+  color: var(--text-light);
+  border-color: var(--danger-red);
+  background: var(--danger-red);
+}
+
+/* Soundboard track card: link fills the card, copy button pinned to the right. */
+.nav-card.track-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.track-card-link {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
+}
+
+.track-card-link h3 {
+  margin-bottom: 0;
+}
+
+.nav-card.track-card .copy-link-btn {
+  font-size: 1rem;
+  padding: 0.3rem 0.45rem;
+  flex-shrink: 0;
 }
 
 .tag {
