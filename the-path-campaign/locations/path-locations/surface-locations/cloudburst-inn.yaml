@@ -1,6 +1,11 @@
 name: Cloudburst Inn
 tier: 2
 category: Traversal
+soundtracks:
+  - name: The Open Road
+    url: https://www.youtube.com/watch?v=559a-bGMoR4
+  - name: Inside the Inn
+    url: https://www.youtube.com/watch?v=UgHKb_7884o
 description: |
   In between the pouring rain sits a lone tavern with a warm fire.
 
