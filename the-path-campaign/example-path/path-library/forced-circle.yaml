@@ -8,16 +8,16 @@ rowLabels:
   "2": A
 
 gridSurface:
-  # "0,-1": TBD — location not yet chosen. Closes the circle between Redcloth Pass (0,0) and Bell's Edge (1,-1); until it is filled the route is an out-and-back.
+  "0,-1": { location: the-deep-harbour, modifiers: [Mist-Touched] }
   "1,-1": { location: bells-edge, modifiers: [Mist-Touched] }
   "2,-1": { location: mantaray-tree, modifiers: [Stable] }
   "3,-1": the-reeds
   "4,-1": { location: highland-creek, modifiers: [Mist-Protected] }
   "5,-1": the-giant-walls
   "6,-1": the-beacon
-  "0,0": redcloth-pass
+  "0,0": { location: barnacle-gardens, modifiers: [Mist-Touched] }
   "5,0": { location: misty-waters, modifiers: [Cave Mouth] }
-  "0,1": { location: barnacle-gardens, modifiers: [Mist-Touched] }
+  "0,1": redcloth-pass
   "2,1": { location: the-fallen-star, modifiers: [Cave Mouth] }
   "3,1": meteorite-lab
   "5,1": { location: highland-circle, modifiers: [Mushroom Circle, Mist-Protected] }
