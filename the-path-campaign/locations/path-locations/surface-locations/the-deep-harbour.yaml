@@ -47,7 +47,7 @@ features:
   - name: The Leviathan Rises
     type: Reaction
     description: |
-      When the Shadows Rise counter reaches 4, a leviathan (**Pale Shell Drifter Leviathan** or **Giant Cloud Drifter**) rises out of the Downpour, bringing a surge of mist up with it. Each PC within Close range of where it surfaces gains **2 Mist tokens**. The GM decides whether it rises beside the ring or docks at the old dock. If it was called with the bell, it tries to dock.
+      When the Shadows Rise counter reaches 4, a leviathan (**Pale Shell Drifter Leviathan** or **Giant Cloud Drifter**) rises out of the Downpour, bringing a surge of mist up with it. Each PC within Close range of where it surfaces gains **2 Mist tokens**. The GM decides whether it rises beside the ring or docks at the old dock. If it was called with the gong, it tries to dock.
 
       If any PC openly holds a **Fire Born item** or the party carries **Flame Essence**, the leviathan attacks.
 
@@ -58,13 +58,13 @@ features:
   - name: The Old Dock
     type: Action
     description: |
-      A large stone dock juts out from the inner edge of the ring over the Downpour, next to the lighthouse. Parts of it have broken away. Crates, bundles wrapped in prayer cloth, and coils of old chain are stacked across it, waiting to be loaded or left behind. At its end hangs a large bell, used to call the leviathans up from below.
+      A large stone dock juts out from the inner edge of the ring over the Downpour, next to the lighthouse. Parts of it have broken away. Crates, bundles wrapped in prayer cloth, and coils of old chain are stacked across it, waiting to be loaded or left behind. At its end hangs a large bronze gong, its face covered in prayer script, used to call the leviathans up from below.
 
       **Salvage:** A PC can try to steal something from the stacks without being noticed with a **Finesse roll**. On a success, they take goods worth **0.75 trade points** — coral-void, deep-sea bone, prayer cloth, crystallised mist. On a failure, the Shadows Rise counter goes up by 1, or by 2 on a failure with Fear. (These amounts already include the usual +1 for rolling with Fear. A success with Fear still raises the counter by 1.)
 
-      A PC can ring the bell. The Shadows Rise counter goes to 4, and the leviathan rises and tries to dock.
+      A PC can strike the gong. A leviathan rises immediately (see **The Leviathan Rises**) and tries to dock.
     questions: |
-      Who used to ring the bell, and what did they send down or bring up?
+      Who used to strike the gong, and what did they send down or bring up?
 
   - name: The Eye
     type: Passive/Action
