@@ -4,11 +4,15 @@ You are helping the user create a new Daggerheart location for "The Path" campai
 
 ## Initial Setup
 
-**FIRST:** Run the `/loadBase` command to load essential context files (path-mechanics.md and Glossary.md) before beginning location creation.
+**FIRST:** Run the `/loadBase` command to load essential context files (`path-mechanics.yaml` and `Glossary.md`) before beginning location creation.
 
 ## Process Overview
 
-Work through location creation step-by-step, one feature at a time. Do NOT create all steps automatically - instead, iterate with the user on each element.
+Work through location creation step-by-step, one feature at a time. Do NOT create all steps automatically - instead, iterate with the user on each element. Features are developed one at a time; the frame fields (type, difficulty, modifiers, adversaries, tagline, impulses, tarot, feature questions) can be proposed together in one batch.
+
+**Start physical.** When brainstorming a concept, lead with something physically interesting — a place, a structure, a landform. Factions, lore and mechanics get baked in afterwards. Short lists of ideas (one line each) work better than a few long pitches. Before pitching, check existing locations for overlap and say so when an idea is close to one.
+
+**Write plain prose.** Feature descriptions are GM reference text: state what is where and what it does, in simple sentences. No repetition for effect, no ominous cadence ("always toward the hole, always in one direction"), no read-aloud arrival text. Check spatial rules against variable setups (e.g. any number of access points), not just the one pictured.
 
 **Note:** If the user provides pre-written narrative feature descriptions (e.g., "Border Post - The checkpoint where guards turned back..."), accept these as the feature concepts in Step 3 and proceed directly to developing mechanics in Step 4.
 
@@ -29,9 +33,11 @@ Determine together:
 
 ## Step 3: Feature Brainstorming
 
-Identify 3-4 distinct feature concepts:
+Identify 3-6 distinct feature concepts:
 - What are the visual/thematic elements of this location?
 - What makes each one mechanically interesting?
+
+The **first feature** describes the location's defining physical element and the overall layout (what is where, how travellers move through it). It is Passive and also carries location-wide rules such as Mist-Touched or Nothing(X). Further layout-only details can be a second structure feature.
 
 **User may provide either:**
 1. **Feature concept names** (e.g., "Prayer flags," "Breathing chasm") - then develop descriptions together
@@ -127,37 +133,38 @@ With the finished features in front of you, write the two summary fields. Both a
 
 ## Step 7: Compile Final Location
 
-Create the complete location markdown file using this template:
+Create a single YAML file in the right folder (`surface-locations/`, `underground-locations/`, `starfall-city/`) named `[location-name].yaml`. No separate Markdown file — the webapp renders the YAML. The filename is the id; there is no `id:` field.
 
-```markdown
-# [LOCATION NAME]
-
-***Tier X Type***
-*[Tagline]*
-**Impulses:** [Three impulses]
-
-> **Difficulty:** [Number]
-> **Modifiers:** [List]
-> **Potential Adversaries:** [List]
-
-## FEATURES
-
-***[Feature 1 Name] - [Type]:*** [Description and mechanics]
-
-  *[GM Question]*
-
-***[Feature 2 Name] - [Type]:*** [Description and mechanics]
-
-  *[GM Question]*
-
-[Continue for all features...]
-
-## FEATURE QUESTIONS
-
-- [Broader question about the location]
-- [Question about location's history or purpose]
-- [Question about player impact on location]
-- [Question about long-term consequences]
+```yaml
+name: [Location Name]
+tier: [1-4]
+category: [Combat | Exploration | Traversal | Social]
+tarotCard:
+  type: [Major | Wands | Swords | Discs | Goblets]
+  number: [n]
+description: |
+  [2-4 plain sentences: what the place is and what is in it]
+tagline: [One sentence]
+impulses: |
+  [Impulse one, impulse two, impulse three]
+difficulty: [n]
+modifiers:
+  - name: Unstable
+  - name: Nothing
+    value: 1
+potentialAdversaries: [Comma-separated list]
+features:
+  - name: [Feature Name]
+    type: [Passive | Action | Reaction | Passive/Counter | ...]
+    description: |
+      [Description and mechanics. Bold key terms and numbers.]
+    questions: |
+      [GM questions]
+featureQuestions:
+  - [Broader question about the location]
+  - [Question about history or purpose]
+  - [Question about player impact]
+  - [Question about long-term consequences]
 ```
 
 ## Step 8: Tarot Assignment & Integration
@@ -232,7 +239,7 @@ Use this to track progress through the location creation process:
 - [ ] Potential Adversaries listed
 
 **Step 3: Feature Brainstorming**
-- [ ] 3-4 feature concepts identified
+- [ ] 3-6 feature concepts identified, first one is the defining physical/layout feature
 - [ ] Each concept has clear theme
 
 **Step 4: Feature Development**
@@ -252,8 +259,7 @@ Use this to track progress through the location creation process:
 - [ ] Tagline chosen from options
 
 **Step 7: Compile Final Location**
-- [ ] YAML file created
-- [ ] Markdown file created
+- [ ] YAML file created (single file, no Markdown)
 - [ ] Feature Questions added (4-6 broader questions)
 
 **Step 8: System Integration**
