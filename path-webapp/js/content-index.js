@@ -135,6 +135,7 @@ const CONTENT_INDEX = {
     "cliff-road.yaml",
     "close-encounters.yaml",
     "deep-station-access.yaml",
+    "forced-circle.yaml",
     "highland-run.yaml",
     "hollow-cross.yaml",
     "initial-path.yaml",

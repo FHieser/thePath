@@ -1,0 +1,36 @@
+name: Forced Circle
+tier: 3
+
+rowLabels:
+  "-1": "C'"
+  "0": "B'"
+  "1": "A'"
+  "2": A
+
+gridSurface:
+  # "0,-1": TBD — location not yet chosen. Closes the circle between Redcloth Pass (0,0) and Bell's Edge (1,-1); until it is filled the route is an out-and-back.
+  "1,-1": { location: bells-edge, modifiers: [Mist-Touched] }
+  "2,-1": { location: mantaray-tree, modifiers: [Stable] }
+  "3,-1": the-reeds
+  "4,-1": { location: highland-creek, modifiers: [Mist-Protected] }
+  "5,-1": the-giant-walls
+  "6,-1": the-beacon
+  "0,0": redcloth-pass
+  "5,0": { location: misty-waters, modifiers: [Cave Mouth] }
+  "0,1": { location: barnacle-gardens, modifiers: [Mist-Touched] }
+  "2,1": { location: the-fallen-star, modifiers: [Cave Mouth] }
+  "3,1": meteorite-lab
+  "5,1": { location: highland-circle, modifiers: [Mushroom Circle, Mist-Protected] }
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
+  "4,2": { location: dark-forest, modifiers: [Cave Mouth, Mushroom Circle] }
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
+
+gridUnderground:
+  "5,0": { location: reed-marsh-caverns, modifiers: [Mushroom Circle] }
+  "2,1": crystal-defense-line
+  "0,2": { location: underground-access-card, modifiers: [Stable] }
+  "1,2": outer-mine-line
+  "2,2": deep-station
+  "3,2": sanctum-line
+  "4,2": flooded-network
+  "2,3": { location: copper-rust-sanctuary, modifiers: [Mist-Touched] }
