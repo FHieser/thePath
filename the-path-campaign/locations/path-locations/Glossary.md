@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 52** (33 Surface + 16 Underground + 3 Special)
+**Total Locations: 53** (34 Surface + 16 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (33 locations)
+## 🌄 Surface Locations (34 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -43,6 +43,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Highland Creek](./surface-locations/highland-creek.yaml)           | Calm highland creek winding through a sea of green — herb gathering, a broken bridge to rest beneath, and rune-cut menhirs |
 | ☑        | ☑     | [Dark Forest](./surface-locations/dark-forest.yaml)                 | Lightless old-growth crossing where finding the way costs hours — and running out of hours costs a short rest |
 | ☑        | ☑     | [Cloudburst Inn](./surface-locations/cloudburst-inn.yaml)           | Storm-lashed cobbled road with one inn on it, kept by a headless Host who trades drinks for stories |
+| ☑        | ☑     | [The Deep Harbour](./surface-locations/the-deep-harbour.yaml)       | Tier 3 Mist Born harbour around a crater the mist drains into — a watching Eye on the lighthouse, leviathans rising to the dock, hostile to anyone carrying flame |
 
 ---
 
@@ -84,9 +85,9 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 52** | **Unassigned: 26** (33.3% remaining)
+**Assigned: 53** | **Unassigned: 25** (32.1% remaining)
 
-### 🔮 Major Arcana (16 of 22 assigned)
+### 🔮 Major Arcana (17 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -106,7 +107,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | XIII Death            | Vanishing Mist       |
 | XIV Temperance        | Mantaray Tree        |
 | XV The Devil          | Devil's Rock         |
-| XVI The Tower         |                      |
+| XVI The Tower         | The Deep Harbour     |
 | XVII The Star         | Silken Spire         |
 | XVIII The Moon        | Sacred Mountain Pass |
 | XIX The Sun           |                      |

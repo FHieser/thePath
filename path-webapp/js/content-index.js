@@ -85,6 +85,7 @@ const CONTENT_INDEX = {
     "silken-spire.yaml",
     "stone-works.yaml",
     "the-beacon.yaml",
+    "the-deep-harbour.yaml",
     "the-fallen-star.yaml",
     "the-giant-walls.yaml",
     "the-reeds.yaml",

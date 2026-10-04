@@ -1,0 +1,95 @@
+name: The Deep Harbour
+tier: 3
+category: Traversal
+tarotCard:
+  type: Major
+  number: 16
+description: |
+  A huge crater where the mist drains into the depths, ringed by an old stone walkway. On its inner edge stand the Mist Born's lighthouse, crowned with a watching Eye, and an old dock where leviathans rise from below to berth. Coral grows out of the flowing mist around the ring, and Ghost Fish swim between it.
+tagline: A harbour for ships that never touch water.
+impulses: |
+  Watch the Path for flames, call the leviathans up from the deep, trade with those who come without fire
+difficulty: 17
+modifiers:
+  - name: Unstable
+  - name: Mist-Touched
+  - name: Nothing
+    value: 2
+  - name: Inhabited
+potentialAdversaries: Mist Envoy, Void Pearl Monks, Ghost Fish, Makara, Pale Shell Drifter Leviathan, Giant Cloud Drifter
+features:
+  - name: The Downpour
+    type: Passive/Counter
+    description: |
+      This location is **Mist-Touched** and has **Nothing(1)**. This Nothing(1) can't be removed or cancelled, including by Everything.
+
+      In the middle of the ring, the ground falls away into a huge crater. The mist pours over its rim from every side and falls into the depths. Temples and shrines are carved into the crater walls, overgrown with coral that grows thicker further down. From time to time, lightning flashes far below and lights up the whole crater. In the flash, huge shadows can be seen floating deep in the mist.
+
+      **Shadows Rise (Counter 0 → 4):** When the PCs arrive, the counter starts at 1 for each Flame Essence they carry. It goes up by 1 each time the GM spends Fear at this location and each time a PC rolls with Fear. Every time it goes up, lightning flashes below and one of the shadows is visibly closer to the surface. When the counter reaches 4, a leviathan rises (see **The Leviathan Rises**).
+
+      When the PCs leave, the counter resets to 0 and any leviathan sinks back into the Downpour.
+    questions: |
+      What are the shadows, and why do they stay down there? What does the lightning come from?
+
+  - name: The Ring Walk
+    type: Passive/Action
+    description: |
+      An old stone walkway runs around the entire rim of the Downpour, raised above the ground on worn pillars. Several walkways lead to it from the surrounding area and join the ring at different points.
+
+      Below the walkways, the mist flows toward the Downpour and pours over the rim into the depths. The walkways themselves stay clear of it. Barnacles grow over the stones. The GM can **spend 1 Fear** to have the barnacles spray mist at a character on the walkway. That character gains **1 Mist token**.
+
+      Coral growths rise out of the flowing mist on both sides of the walkways. Schools of **Ghost Fish** swim around them. When a fight breaks out with mist creatures or Mist Born, **3 Ghost Fish** hordes join on their side. Each horde uses a nearby coral growth as its **Coral Growth** (see Coral Spawn), so the coral has to be reached in the mist to defeat them for good.
+
+      The **lighthouse** stands on the inner edge of the ring, next to the **old dock**. From wherever the players join the ring, they can go either way around. One way passes the lighthouse, the other doesn't.
+    questions: |
+      Who built the walkways, and were they here before the Downpour opened? What keeps the Ghost Fish near the coral?
+
+  - name: The Leviathan Rises
+    type: Reaction
+    description: |
+      When the Shadows Rise counter reaches 4, a leviathan (**Pale Shell Drifter Leviathan** or **Giant Cloud Drifter**) rises out of the Downpour, bringing a surge of mist up with it. Each PC within Close range of where it surfaces gains **2 Mist tokens**. The GM decides whether it rises beside the ring or docks at the old dock. If it was called with the bell, it tries to dock.
+
+      If any PC openly holds a **Fire Born item** or the party carries **Flame Essence**, the leviathan attacks.
+
+      Otherwise, a PC with **Mist Attuned 2** or higher can ask it for passage. The leviathan carries the party to any location on the current Path, or down into the mist below.
+    questions: |
+      Who is aboard the leviathan when it rises? Where does it take those who ask to go down?
+
+  - name: The Old Dock
+    type: Action
+    description: |
+      A large stone dock juts out from the inner edge of the ring over the Downpour, next to the lighthouse. Parts of it have broken away. Crates, bundles wrapped in prayer cloth, and coils of old chain are stacked across it, waiting to be loaded or left behind. At its end hangs a large bell, used to call the leviathans up from below.
+
+      **Salvage:** A PC can try to steal something from the stacks without being noticed with a **Finesse roll**. On a success, they take goods worth **0.75 trade points** — coral-void, deep-sea bone, prayer cloth, crystallised mist. On a failure, the Shadows Rise counter goes up by 1, or by 2 on a failure with Fear. (These amounts already include the usual +1 for rolling with Fear. A success with Fear still raises the counter by 1.)
+
+      A PC can ring the bell. The Shadows Rise counter goes to 4, and the leviathan rises and tries to dock.
+    questions: |
+      Who used to ring the bell, and what did they send down or bring up?
+
+  - name: The Eye
+    type: Passive/Action
+    description: |
+      The lighthouse is a tower of coral-void and deep-sea bone. Prayer flags run from its top down to the ring. At the top sits a huge, lidless Eye that looks out across the mist. While this location is on the Path, the Eye watches the whole Path.
+
+      When the PCs take Flame Essence anywhere on this Path, the GM gains **1 additional Fear for each Flame Essence** taken, and the Eye spots them.
+
+      Once the Eye has spotted the PCs, the GM can **spend 3 Fear** to have a leviathan rise at a Mist-Touched location of their choice on the Path.
+    questions: |
+      What does the Eye belong to? What do the Mist Born see through it?
+
+  - name: The Keeper
+    type: Passive
+    description: |
+      A **Mist Envoy** tends the lighthouse, with its two **Void Pearl Monks**. While it is here, the location's Nothing rises to **Nothing(2)**.
+
+      The Keeper trades with travellers. It sells Mist Born goods and buys what the PCs bring, like any trader.
+
+      If any PC openly holds a **Fire Born item** or the party carries **Flame Essence**, the Keeper attacks.
+    questions: |
+      Why does an Envoy trade here when Envoys elsewhere only teach? Who does it trade with when no one comes?
+featureQuestions:
+  - Who built the harbour, and what did it serve before the Mist Born took it?
+  - Where do the leviathans go when they sink back into the Downpour?
+  - What would happen to the Path if the Eye were put out?
+  - What lies at the bottom of the Downpour, beneath the shadows?
+  - Has the Keeper ever let a flame-carrier pass?
