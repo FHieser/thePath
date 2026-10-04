@@ -85,6 +85,8 @@
           }
           actions += "</div>";
           cellS.innerHTML = `<div class="cell-name">${name}</div>${actions}`;
+          const tipS = gridCellTooltip(loc);
+          if (tipS) cellS.dataset.hoverTip = tipS;
         }
         surfaceGrid.appendChild(cellS);
 
@@ -110,6 +112,8 @@
           }
           actions += "</div>";
           cellU.innerHTML = `<div class="cell-name">${name}</div>${actions}`;
+          const tipU = gridCellTooltip(loc);
+          if (tipU) cellU.dataset.hoverTip = tipU;
         }
         undergroundGrid.appendChild(cellU);
       }

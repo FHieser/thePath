@@ -101,6 +101,31 @@ function getModifierName(mod) {
   return typeof mod === 'object' ? mod.name : mod;
 }
 
+/**
+ * Modifier as a single label, carrying its value where it has one:
+ * "Nothing(2)" for the numeric ones, "Linked (Meteorite Lab)" for a named
+ * target, plain "Inhabited" for the rest.
+ */
+function formatModifier(mod) {
+  const name = getModifierName(mod);
+  const value = typeof mod === 'object' ? mod.value : undefined;
+  if (value === undefined || value === null || value === '') return name;
+  return typeof value === 'number' ? `${name}(${value})` : `${name} (${value})`;
+}
+
+/**
+ * Hover text for a path grid cell: which physical card represents it, then the
+ * location's own modifiers, one per line. Takes either a location object (as
+ * the creator holds) or the { card, modifiers } shape loadLocationGridInfo
+ * returns.
+ */
+function gridCellTooltip(loc) {
+  if (!loc) return '';
+  const card = loc.card || tarotCardName(loc.tarotCard);
+  const mods = Array.isArray(loc.modifiers) ? loc.modifiers.map(formatModifier) : [];
+  return [card, ...mods].filter(Boolean).join('\n');
+}
+
 // ---------------------------------------------------------------------------
 // Tarot cards — Path locations carry `tarotCard: { type, number }`.
 // type: Major | Wands | Swords | Discs | Goblets (also the sort order).
@@ -127,6 +152,8 @@ function toRoman(n) {
 /** Display name for a tarot card, e.g. "XV The Devil" or "Knight of Discs". */
 function tarotCardName(card) {
   if (!card) return '';
+  // Tolerate a hand-authored string ("9 of Goblets") as well as { type, number }.
+  if (typeof card === 'string') return card.trim();
   if (card.type === 'Major') {
     return `${card.number === 0 ? '0' : toRoman(card.number)} ${MAJOR_ARCANA[card.number]}`;
   }
@@ -195,6 +222,99 @@ function soundtrackLinks(soundtracks) {
     .map(track => `<span class="soundtrack-item"><a class="soundtrack-link" href="${escapeAttr(track.url)}" target="_blank" rel="noopener">♪ ${escapeHtml(track.name)}</a>${copyLinkButton(track.url, track.name)}</span>`)
     .join('');
 }
+
+/**
+ * Resolve location ids to what a path grid needs for each cell: the physical
+ * card that represents it and the location's own modifiers. Reads each
+ * location's own `tarotCard` and `modifiers` fields;
+ * the two special locations are Markdown rather than YAML, so their
+ * "**Tarot Card:**" line is read instead (those carry no modifier block).
+ * Returns id -> { name, card, modifiers }, leaving out ids it can't resolve.
+ */
+const SPECIAL_LOCATIONS_URL = '../the-path-campaign/locations/path-locations/special-locations/';
+
+async function loadLocationGridInfo(ids) {
+  const info = {};
+
+  // Folder membership is already known offline from the generated content index,
+  // which avoids a round of 404s per location; probe the folders if it's absent.
+  const indexedFolder = id => {
+    if (typeof CONTENT_INDEX === 'undefined') return null;
+    return LOCATION_FOLDERS.map(f => f.path).find(path => (CONTENT_INDEX[path] || []).includes(`${id}.yaml`)) || null;
+  };
+
+  await Promise.all([...new Set(ids)].map(async id => {
+    const indexed = indexedFolder(id);
+    for (const folder of indexed ? [indexed] : LOCATION_FOLDERS.map(f => f.path)) {
+      try {
+        const response = await fetch(`${folder}${id}.yaml`);
+        if (!response.ok) continue;
+        const loc = jsyaml.load(await response.text());
+        info[id] = { name: loc.name, card: tarotCardName(loc.tarotCard), modifiers: loc.modifiers };
+        return;
+      } catch (e) {
+        // Try the next folder.
+      }
+    }
+    try {
+      const response = await fetch(`${SPECIAL_LOCATIONS_URL}${id}.md`);
+      if (!response.ok) return;
+      const text = await response.text();
+      const card = text.match(/\*\*Tarot Card:\*\*\s*(.+)/);
+      if (card) info[id] = { card: card[1].trim() };
+    } catch (e) {
+      // Leave the id out; callers fall back to showing no tooltip.
+    }
+  }));
+
+  return info;
+}
+
+// ---------------------------------------------------------------------------
+// Hover tooltips — any element carrying data-hover-tip gets one, on any page
+// that loads utils.js. A single element positioned with fixed coordinates is
+// used rather than a CSS ::before, because the grid tables sit inside
+// overflow:auto wrappers that would clip a tooltip drawn inside the cell.
+// ---------------------------------------------------------------------------
+let hoverTipEl = null;
+
+function showHoverTip(target) {
+  const text = target.dataset.hoverTip;
+  if (!text) return;
+  if (!hoverTipEl) {
+    hoverTipEl = document.createElement('div');
+    hoverTipEl.className = 'hover-tip';
+    document.body.appendChild(hoverTipEl);
+  }
+  hoverTipEl.textContent = text;
+  hoverTipEl.classList.add('visible');
+
+  // Prefer above the cell, flip below when there's no room, and keep the
+  // tooltip inside the viewport horizontally.
+  const cell = target.getBoundingClientRect();
+  const tip = hoverTipEl.getBoundingClientRect();
+  const left = Math.max(8, Math.min(cell.left + cell.width / 2 - tip.width / 2, window.innerWidth - tip.width - 8));
+  const above = cell.top - tip.height - 8;
+  hoverTipEl.style.left = `${left}px`;
+  hoverTipEl.style.top = `${above < 8 ? cell.bottom + 8 : above}px`;
+}
+
+function hideHoverTip() {
+  if (hoverTipEl) hoverTipEl.classList.remove('visible');
+}
+
+document.addEventListener('mouseover', event => {
+  const target = event.target.closest('[data-hover-tip]');
+  if (target) showHoverTip(target);
+  else hideHoverTip();
+});
+document.addEventListener('focusin', event => {
+  const target = event.target.closest('[data-hover-tip]');
+  if (target) showHoverTip(target);
+});
+document.addEventListener('focusout', hideHoverTip);
+// Capture phase so the tooltip also follows scrolling of the grid's own wrapper.
+window.addEventListener('scroll', hideHoverTip, true);
 
 /** Sort comparator: by type (Major first), then number. Cardless entries sort last. */
 function compareTarotCards(a, b) {

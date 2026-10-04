@@ -25,6 +25,8 @@
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/content-index.js"></script>
+    <script src="js/utils.js"></script>
     <script>
       (async function () {
         const id = new URLSearchParams(window.location.search).get("id");
@@ -33,6 +35,9 @@
         const contentEl = document.getElementById("path-content");
 
         if (!id) { titleEl.textContent = "Path not found"; return; }
+
+        // id -> { name, card, modifiers }, for each cell's hover text.
+        let cardInfo = {};
 
         // Path-library grid cells can flag a location's own static modifiers for at-a-glance
         // reading (keyed lowercase, matching path-mechanics.yaml modifier names).
@@ -49,6 +54,11 @@
           if (!res.ok) throw new Error("Not found");
           const ex = jsyaml.load(await res.text());
           ex._id = id;
+
+          const cellIds = [...Object.values(ex.gridSurface || {}), ...Object.values(ex.gridUnderground || {})]
+            .map((cell) => (typeof cell === "object" ? cell.location : cell))
+            .filter(Boolean);
+          cardInfo = await loadLocationGridInfo(cellIds);
 
           document.title = `${ex.name} — The Path`;
           titleEl.textContent = ex.name;
@@ -97,8 +107,10 @@
                 const styled = cellMods.map((m) => CELL_MODIFIER_STYLES[m]).filter(Boolean);
                 styled.forEach((s) => classes.push(s.cls));
                 const icon = styled.map((s) => s.icon).join("");
-                const title = typeof cell === "object" && cell.modifiers.length ? ` title="${cell.modifiers.join(', ')}"` : "";
-                html += `<td><a href="location.html?id=${locId}" class="${classes.filter(Boolean).join(' ')}"${title}>${icon ? icon + " " : ""}${idToName(locId)}</a></td>`;
+                const info = cardInfo[locId] || {};
+                const tipText = gridCellTooltip(info);
+                const tip = tipText ? ` data-hover-tip="${escapeAttr(tipText)}"` : "";
+                html += `<td><a href="location.html?id=${locId}" class="${classes.filter(Boolean).join(' ')}"${tip}>${icon ? icon + " " : ""}${info.name || idToName(locId)}</a></td>`;
               } else {
                 html += `<td><span class="path-cell empty">—</span></td>`;
               }

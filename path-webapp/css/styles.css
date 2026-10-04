@@ -1340,6 +1340,30 @@ footer {
   cursor: default;
 }
 
+/* Hover tooltips (data-hover-tip) — one shared, body-level element, so grid
+   cells inside overflow:auto wrappers can show a tooltip without it clipping. */
+.hover-tip {
+  position: fixed;
+  z-index: 2000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  background: rgba(20, 37, 48, 0.98);
+  color: var(--text-light);
+  border: 1px solid var(--primary-blue);
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 0.4rem 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+  white-space: pre-line;
+  max-width: 16rem;
+}
+
+.hover-tip.visible { opacity: 1; }
+
 /* Modifier Tooltips */
 .modifier-tooltip {
   position: relative;
