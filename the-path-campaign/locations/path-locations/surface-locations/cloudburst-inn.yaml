@@ -76,7 +76,9 @@ features:
       Afterward The Host produces something out of the story and hands it over, as though it had always been behind the bar. A keepsake, or something that works, or both — GM's choice.
     questions: What story does The Host choose to tell tonight, and why that one? What did it keep back?
 
-tarotCard: 9 of Goblets
+tarotCard:
+  type: Goblets
+  number: 9
 
 featureQuestions:
   - Why does it rain here and nowhere else on the Path?
