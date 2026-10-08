@@ -26,8 +26,10 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
     - `path-mechanics.yaml` - Path network mechanics reference
     - `crafting-and-trading-mechanics.yaml` - Crafting and trading system rules
     - `starfall-city-mechanics.yaml` - Starfall City-specific mechanics
-    - `wandering-stars.md` - Wandering Stars mechanic
     - `village-siege/` - Village siege encounter framework
+  - `flavor/` - Setting texture shown on the webapp's Flavor section
+    - `wandering-stars.md` - The Wandering Stars (Open Skies reading); the webapp's `stars.js` holds its own copy of the planet data
+    - `runes.yaml` - Elder Futhark rune reference, fetched directly by `runes.html`
   - `campaign/` - Active campaign tracking (e.g., Moonfield, FreeMountain)
   - `example-path/` - Example Path configurations, incl. `path-library/` of reusable path YAMLs
   - `zarchive/` - Deprecated/superseded content kept for reference
@@ -137,7 +139,8 @@ Locations are organized in `the-path-campaign/locations/` with detailed descript
 - Location modifier system (Stable/Unstable, Underground, Cave Mouth, etc.)
 - Tarot-based Path generation mechanics, plus a 12-entry reusable `path-library/`
 - Crafting & trading mechanics and an items catalog (`items.yaml`, `starfall-crystals.yaml`)
-- Village siege framework and a Wandering Stars mechanic
+- Village siege framework
+- Flavor references: the Wandering Stars and an Elder Futhark rune list
 - 9 faction folders exist in `lore/factions/`: `brass-mechanicorum`, `copper-rust-clan`, `factionless`, `fire-born`, `mist-born`, `rootbound`, `spider-colony`, `the-croak`, `village-in-the-mist` (most have at least one NPC file; narrative completeness varies per folder — verify before assuming a faction is "done"). `factionless` is an umbrella for unaffiliated NPCs (marauder bands through named individuals like the Archon of Mercy) — each NPC carries its own agenda, and its own `item_identity` if it has one, rather than the faction sharing a single one.
 - 7 adversary type folders (`mist/`, `beasts/`, `siege/`, `crystal-plague/`, `spider-queen/`, `the-croak/`, `antagonists/`) covering ~28 individual adversary files
 - Starfall City / mist-islands lore (Starfall Kingdom, character write-ups)

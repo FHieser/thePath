@@ -253,7 +253,8 @@ Auto-generated index of all tracked, non-gitignored files. Organized by director
 |------|-------------|
 | [the-path-campaign/lore/BaseIdea.md](the-path-campaign/lore/BaseIdea.md) | Original base concept and foundational lore |
 | [the-path-campaign/lore/celestial-events.md](the-path-campaign/lore/celestial-events.md) | Calendar of celestial events affecting The Path |
-| [the-path-campaign/lore/wandering-stars.md](the-path-campaign/lore/wandering-stars.md) | Lore on wandering stars and their significance |
+| [the-path-campaign/flavor/wandering-stars.md](the-path-campaign/flavor/wandering-stars.md) | The twenty-five Wandering Stars and their domains (Open Skies reading) |
+| [the-path-campaign/flavor/runes.yaml](the-path-campaign/flavor/runes.yaml) | Elder Futhark rune reference — names, meanings, sources |
 
 #### Factions
 | File | Description |

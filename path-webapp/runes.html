@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Runes — The Path</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&display=swap">
+    <style>
+      .rune-glyph {
+        font-family: 'Noto Sans Runic', 'Segoe UI Historic', serif;
+      }
+
+      .stone-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 560px;
+        min-height: 9rem;
+        margin: 0 auto 1rem auto;
+        border-radius: 0.3rem;
+        border: 0.15rem solid var(--primary-blue);
+        background: radial-gradient(ellipse at center, #1a1f26 0%, #0b0e12 100%);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 2rem 1rem 1.5rem;
+        box-sizing: border-box;
+      }
+
+      .stone-label {
+        position: absolute;
+        top: 0.6rem;
+        left: 0.75rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent-amber);
+        opacity: 0.7;
+      }
+
+      .stone-hint {
+        font-size: 0.75rem;
+        opacity: 0.35;
+        font-style: italic;
+      }
+
+      .stone-rune {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+      .stone-rune .rune-glyph {
+        font-size: 3.5rem;
+        line-height: 1;
+        color: #c94a3a;
+        text-shadow: 0 0 10px rgba(200, 60, 40, 0.55);
+      }
+
+      .stone-rune-name {
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        opacity: 0.55;
+      }
+
+      .rune-intro {
+        font-size: 0.8rem;
+        opacity: 0.6;
+        font-style: italic;
+        margin-bottom: 0.75rem;
+        padding-left: 0.5rem;
+        border-left: 0.15rem solid var(--primary-blue);
+      }
+
+      .rune-source {
+        font-size: 0.72rem;
+        opacity: 0.55;
+        margin-bottom: 1.25rem;
+      }
+
+      .rune-source summary {
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--accent-amber);
+      }
+
+      .rune-controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .rune-controls h2 {
+        margin: 0;
+        border: none;
+        padding: 0;
+        flex: 1;
+      }
+
+      .ctrl-btn {
+        background: transparent;
+        border: 0.15rem solid rgba(255, 255, 255, 0.15);
+        color: var(--text-light);
+        border-radius: 0.25rem;
+        padding: 0.3rem 0.65rem;
+        font-size: 0.7rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.6;
+        transition: opacity 0.15s, border-color 0.15s;
+      }
+      .ctrl-btn:hover { opacity: 1; border-color: rgba(255,255,255,0.35); }
+
+      .aett-heading {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent-amber);
+        margin: 1rem 0 0.5rem;
+        opacity: 0.85;
+      }
+
+      .rune-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.5rem;
+      }
+
+      .rune-btn {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 0.15rem solid rgba(255, 255, 255, 0.08);
+        border-radius: 0.3rem;
+        padding: 0.6rem 0.75rem;
+        cursor: pointer;
+        color: var(--text-light);
+        text-align: left;
+        transition: border-color 0.15s, background 0.15s;
+        width: 100%;
+      }
+
+      .rune-btn:hover {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .rune-btn.active {
+        border-color: var(--accent-amber);
+        background: rgba(212, 165, 116, 0.09);
+      }
+
+      .rune-btn .rune-glyph {
+        font-size: 1.9rem;
+        line-height: 1;
+        width: 1.6rem;
+        text-align: center;
+        flex-shrink: 0;
+        color: var(--accent-amber);
+      }
+
+      .rune-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+      }
+
+      .rune-name {
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+      }
+
+      .rune-sound {
+        font-weight: 400;
+        text-transform: none;
+        opacity: 0.45;
+        margin-left: 0.3rem;
+      }
+
+      .rune-meaning {
+        font-size: 0.72rem;
+        color: var(--accent-amber);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.85;
+      }
+
+      .rune-note {
+        font-size: 0.72rem;
+        opacity: 0.5;
+        font-style: italic;
+        line-height: 1.4;
+        margin-top: 0.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="home-btn" href="index.html">&#8962; Home</a>
+    <div class="container">
+      <header>
+        <h1>The Path</h1>
+        <p class="subtitle">A Daggerheart Campaign Frame</p>
+      </header>
+
+      <main>
+        <div class="breadcrumb">
+          <a href="index.html">← Home</a>
+        </div>
+
+        <div id="stone" class="stone-wrapper">
+          <span class="stone-label">Carved Runes</span>
+          <span class="stone-hint">Select runes below</span>
+        </div>
+
+        <p id="rune-intro" class="rune-intro"></p>
+        <details class="rune-source">
+          <summary>Sources</summary>
+          <div id="rune-source"></div>
+        </details>
+
+        <div class="rune-controls">
+          <h2>The Elder Futhark</h2>
+          <button id="clear-btn" class="ctrl-btn">Clear</button>
+        </div>
+
+        <div id="rune-list"><p style="opacity: 0.7;">Loading runes...</p></div>
+      </main>
+
+      <footer>
+        <p>The Path - Daggerheart Campaign Frame | Built with the Darrington Press Community Gaming License</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/runes.js"></script>
+  </body>
+</html>
