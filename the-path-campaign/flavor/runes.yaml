@@ -1,0 +1,137 @@
+title: The Runes
+intro: |
+  The twenty-four runes of the Elder Futhark, grouped in three ætts of eight. This is the real-world reference list the campaign's runes are drawn from — their meaning within the mist is defined separately.
+source: |
+  The rune names are modern reconstructions in Proto-Germanic; no name list survives from the period the Elder Futhark was in use (c. 2nd–8th century). The earliest complete row is carved on the Kylver Stone (Gotland, c. 400 AD). Most meanings come from much later rune poems — the Old English (c. 8th–10th century), Old Norwegian and Old Icelandic (c. 12th–15th century) — which describe the later Anglo-Saxon and Younger Futhark rows. Where the poems disagree or are silent, the meaning is marked as uncertain. The order of the final runes varies between sources (Dagaz and Othala are often swapped).
+
+  Further reading: R. I. Page, Runes; Ralph W. V. Elliott, Runes: An Introduction.
+
+aetts:
+  - name: Freyr's Ætt
+    runes:
+      - name: Fehu
+        glyph: ᚠ
+        sound: f
+        meaning: Cattle, wealth
+        note: All three poems read it as wealth. The Norse poems add that it causes strife among kin; the Old English that it must be shared freely.
+      - name: Uruz
+        glyph: ᚢ
+        sound: u
+        meaning: Aurochs, strength
+        note: The Old English poem describes the aurochs, a fierce wild ox. The Norse poems read it instead as slag or drizzle.
+      - name: Thurisaz
+        glyph: ᚦ
+        sound: th
+        meaning: Giant, thorn
+        note: Norse "thurs" is a giant who torments women; the Old English poem renames it "thorn", sharp to anyone who grasps it.
+      - name: Ansuz
+        glyph: ᚨ
+        sound: a
+        meaning: God, breath, word
+        note: Norse "óss" names one of the Æsir and is tied to Odin; the Old English "os" reads as mouth, the source of speech.
+      - name: Raidho
+        glyph: ᚱ
+        sound: r
+        meaning: Riding, journey
+        note: Easy for the one sitting in the hall, hard for the one on horseback covering the miles.
+      - name: Kenaz
+        glyph: ᚲ
+        sound: k
+        meaning: Torch
+        note: The Old English poem gives a torch burning where nobles rest. The Norse poems read it instead as an ulcer or sore.
+      - name: Gebo
+        glyph: ᚷ
+        sound: g
+        meaning: Gift, exchange
+        note: Only in the Old English poem. A gift brings honour to the giver and support to the destitute.
+      - name: Wunjo
+        glyph: ᚹ
+        sound: w
+        meaning: Joy
+        note: Only in the Old English poem. Joy belongs to the one who knows little sorrow.
+
+  - name: Hagal's Ætt
+    runes:
+      - name: Hagalaz
+        glyph: ᚺ
+        sound: h
+        meaning: Hail
+        note: The whitest of grains, whirled from the sky — destructive, then melting to water.
+      - name: Naudiz
+        glyph: ᚾ
+        sound: n
+        meaning: Need, hardship
+        note: A tight constraint on the heart, but a help to those who heed it in time.
+      - name: Isa
+        glyph: ᛁ
+        sound: i
+        meaning: Ice
+        note: Cold and slippery, beautiful to look at — a bridge, and a standstill.
+      - name: Jera
+        glyph: ᛃ
+        sound: j
+        meaning: Year, harvest
+        note: The good year, when the earth gives its fruit to rich and poor alike.
+      - name: Eihwaz
+        glyph: ᛇ
+        sound: ei / æ
+        meaning: Yew
+        note: Only in the Old English poem — a tree rough outside, firm in the earth, guardian of flame. The sound value is uncertain.
+      - name: Perthro
+        glyph: ᛈ
+        sound: p
+        meaning: Uncertain — often read as a lot-cup or game
+        note: The Old English verse describes play and laughter in the hall. The original meaning is unknown; "fate" is a modern reading.
+      - name: Algiz
+        glyph: ᛉ
+        sound: z
+        meaning: Elk, or elk-sedge
+        note: The Old English "eolhx" is a sedge that cuts anyone who grasps it. "Protection" is a modern reading.
+      - name: Sowilo
+        glyph: ᛊ
+        sound: s
+        meaning: Sun
+        note: A hope to seafarers crossing the water, light of the lands.
+
+  - name: Týr's Ætt
+    runes:
+      - name: Tiwaz
+        glyph: ᛏ
+        sound: t
+        meaning: The god Týr
+        note: Týr lost his hand to bind the wolf Fenrir. The Old English poem calls it a guiding sign that keeps faith.
+      - name: Berkano
+        glyph: ᛒ
+        sound: b
+        meaning: Birch
+        note: A tree without fruit that still puts out shoots — associated with growth and renewal.
+      - name: Ehwaz
+        glyph: ᛖ
+        sound: e
+        meaning: Horse
+        note: Only in the Old English poem. The joy of nobles, a comfort to the restless.
+      - name: Mannaz
+        glyph: ᛗ
+        sound: m
+        meaning: Man, human
+        note: Joy to his kin, yet each must fail the other — the body is given back to the earth.
+      - name: Laguz
+        glyph: ᛚ
+        sound: l
+        meaning: Water, lake
+        note: Endless to those who must venture out on an unsteady ship.
+      - name: Ingwaz
+        glyph: ᛜ
+        sound: ng
+        meaning: The god Ing
+        note: Only in the Old English poem — Ing, first seen among the East Danes, who went east over the waves. "Seed" is a modern reading.
+      - name: Dagaz
+        glyph: ᛞ
+        sound: d
+        meaning: Day
+        note: Only in the Old English poem. The Lord's light, a hope and help to rich and poor.
+      - name: Othala
+        glyph: ᛟ
+        sound: o
+        meaning: Inherited land, ancestral home
+        note: Only in the Old English poem. Dear to every man, if he may enjoy what is right in his own house.
