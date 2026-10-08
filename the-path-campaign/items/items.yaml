@@ -6,17 +6,6 @@
 # GENERAL ITEMS
 # ============================================================
 
-- name: Cliffgold
-  type: General
-  usage: Consumable
-  tier: 2
-  tradeValue: 2
-  flavor: "A bright yellow flower that clings to cliff faces where nothing else grows — ancient, stubborn, and worth the reach."
-  effect:
-    category: Restoration
-    description: |
-      Consume during a rest. Remove 3 Mist tokens.
-
 - name: Deadnerve
   type: General
   usage: Consumable
@@ -353,6 +342,17 @@
     category: Utility
     description: |
       Throw the ash into a Mushroom Circle. The particles swirl and drift toward the direction of linked Mushroom Circle locations, showing you which way to face before stepping in.
+
+- name: Cliffgold
+  type: Rootbound
+  usage: Consumable
+  tier: 2
+  tradeValue: 2
+  flavor: "A bright yellow flower that clings to cliff faces where nothing else grows — ancient, stubborn, and worth the reach."
+  effect:
+    category: Restoration
+    description: |
+      Consume during a rest. Remove 3 Mist tokens.
 
 # ============================================================
 # FIRE BORN ITEMS
