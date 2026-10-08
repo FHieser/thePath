@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wandering Stars — The Path</title>
+    <title>Readings — The Path</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&display=swap">
     <style>
       .sky-wrapper {
         position: relative;
@@ -158,6 +160,22 @@
       #export-btn { color: var(--accent-amber); border-color: rgba(212,165,116,0.3); }
       #export-btn:hover:not(:disabled) { border-color: var(--accent-amber); opacity: 1; }
 
+      .rune-glyph {
+        font-family: 'Noto Sans Runic', 'Segoe UI Historic', serif;
+        font-size: 1.5rem;
+        line-height: 1;
+        width: 1.4rem;
+        text-align: center;
+        flex-shrink: 0;
+        color: #cfe0ff;
+      }
+
+      .section-heading {
+        margin: 1.5rem 0 0.75rem;
+        border: none;
+        padding: 0;
+      }
+
       .mechanic-note {
         font-size: 0.8rem;
         opacity: 0.6;
@@ -184,13 +202,17 @@
         <div class="sky-wrapper">
           <canvas id="sky-canvas"></canvas>
           <span class="sky-label">Open Skies Reading</span>
-          <span class="sky-hint">Toggle planets below</span>
+          <span class="sky-hint">Toggle planets and runes below</span>
         </div>
 
         <p class="mechanic-note">
           Available wherever the GM rules the sky is open above the mist. Once per rest, a player may attempt an
           <strong>Instinct</strong> roll (or argue another stat) to read tonight's sky. The GM sets which planet is
           prominent — its domain determines what kind of question the stars can answer.
+        </p>
+        <p class="mechanic-note">
+          A character carrying the <strong>Finding</strong> rune stone can also read the rune standing among the
+          stars. The GM sets one rune — it shapes what kind of answer the reading gives.
         </p>
 
         <div class="stars-controls">
@@ -202,6 +224,9 @@
 
         <div id="planet-grid" class="planet-grid"></div>
 
+        <h2 class="section-heading">Runes in the Sky</h2>
+        <div id="rune-grid" class="planet-grid"><p style="opacity: 0.7;">Loading runes...</p></div>
+
         <img id="gif-preview" alt="Generated GIF" title="Right-click to copy or drag into Telegram"
           style="display:none; max-width:560px; width:100%; margin:0.75rem auto 0; border-radius:0.3rem; border:0.15rem solid var(--primary-blue); cursor:grab;" />
       </main>
@@ -211,6 +236,8 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/utils.js"></script>
     <script src="js/stars.js"></script>
   </body>
 </html>

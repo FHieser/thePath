@@ -307,6 +307,11 @@ for (const p of PLANETS) {
 const activePlanets = new Set();
 let lastFlicker = 0;
 
+// Runes come from the flavor list; only one can stand in the sky at a time
+const RUNES_URL = '../the-path-campaign/flavor/runes.yaml';
+const RUNE_FONT = '"Noto Sans Runic", "Segoe UI Historic", serif';
+let activeRune = null;
+
 const canvas = document.getElementById('sky-canvas');
 const ctx = canvas.getContext('2d', { willReadFrequently: true });
 
@@ -325,6 +330,24 @@ function drawBgStars(t) {
     ctx.arc(s.x * canvas.width, s.y * canvas.height, s.r, 0, Math.PI * 2);
     ctx.fill();
   }
+}
+
+function drawRune(t) {
+  const W = canvas.width;
+  const H = canvas.height;
+  const size = W * 0.42;
+  const alpha = 0.22 + Math.sin(t * 0.0011) * 0.06;
+
+  ctx.save();
+  ctx.font = `${size}px ${RUNE_FONT}`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.globalAlpha = alpha;
+  ctx.shadowColor = 'rgba(190, 215, 255, 0.9)';
+  ctx.shadowBlur = W * 0.04;
+  ctx.fillStyle = '#cfe0ff';
+  ctx.fillText(activeRune.glyph, W * 0.5, H * 0.5);
+  ctx.restore();
 }
 
 function drawCircle(x, y, radius, color, glowColor, alpha = 1) {
@@ -797,6 +820,8 @@ function render(t) {
 
   drawBgStars(t);
 
+  if (activeRune) drawRune(t);
+
   for (const p of PLANETS) {
     if (activePlanets.has(p.id)) drawPlanet(p, t);
   }
@@ -924,13 +949,54 @@ function initButtons() {
 
   document.getElementById('clear-btn').addEventListener('click', () => {
     activePlanets.clear();
+    activeRune = null;
     document.querySelectorAll('.planet-btn').forEach(b => b.classList.remove('active'));
   });
   document.getElementById('export-btn').addEventListener('click', exportGif);
   document.getElementById('copy-btn').addEventListener('click', copyFrame);
 }
 
+async function initRunes() {
+  const grid = document.getElementById('rune-grid');
+  try {
+    const response = await fetch(RUNES_URL);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = jsyaml.load(await response.text());
+
+    // Canvas text won't trigger a webfont download on its own
+    document.fonts?.load(`48px ${RUNE_FONT}`, 'ᚠ').catch(() => {});
+
+    grid.innerHTML = '';
+    for (const aett of data.aetts || []) {
+      for (const rune of aett.runes || []) {
+        const btn = document.createElement('button');
+        btn.className = 'planet-btn';
+        btn.innerHTML = `
+          <span class="rune-glyph">${escapeHtml(rune.glyph)}</span>
+          <span class="planet-info">
+            <span class="planet-name">${escapeHtml(rune.name)}</span>
+            <span class="planet-domain">${escapeHtml(rune.meaning)}</span>
+          </span>
+        `;
+
+        btn.addEventListener('click', () => {
+          const wasActive = activeRune === rune;
+          grid.querySelectorAll('.planet-btn').forEach(b => b.classList.remove('active'));
+          activeRune = wasActive ? null : rune;
+          if (!wasActive) btn.classList.add('active');
+        });
+
+        grid.appendChild(btn);
+      }
+    }
+  } catch (err) {
+    console.error('Failed to load runes:', err);
+    grid.innerHTML = '<p style="opacity: 0.7;">Could not load runes.</p>';
+  }
+}
+
 window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
 initButtons();
+initRunes();
 requestAnimationFrame(render);

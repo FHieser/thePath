@@ -1,0 +1,43 @@
+title: Rune Stones
+version: 1
+
+introduction: |
+  Runes are carved through a blood ritual. Big runes are fixed ritual sites. Small runes are carried items, made as preparation for travelling into the mist. This file covers how small runes are charged and what each one does.
+
+charging:
+  description: |
+    Each small rune has a passive effect that works while it is carried, and an active effect that spends charges.
+
+    Charging is a ritual. Every 3 HP marked by a living creature taking part in the ritual adds 1 charge to the rune. The blood does not have to be given willingly — a PC can pay it, or a captured creature can be bled for it. Each rune also names a condition that must be met for the ritual to work — see the rune's own entry.
+
+    There is no limit on how often a rune can be charged. The HP cost is the limit.
+  costPerCharge: 3 HP
+  maxCharges: 7
+
+smallRunes:
+  - name: Finding
+    status: done
+    summary: Step into the mist between locations on the current Path without getting lost.
+    chargeCondition: The ritual must be performed under an open sky. The GM decides where the sky is open above the mist.
+    passive: |
+      The holder can read runes in the sky. When they make a Wandering Stars reading, the GM also reveals the runes that stand among the stars that night.
+    description: |
+      The holder can lead characters through an empty grid cell — a cell with no location on the current Path — to the location on its far side.
+
+      Each character crossing one empty cell spends 1 charge and gains 3 Mist tokens. A character can cross several empty cells in a row, spending 1 charge and gaining 3 Mist tokens for each.
+
+      The destination must be a location on the current Path.
+    example: |
+      The rune holds 4 charges. Four characters can cross one empty cell together, or one character can cross four empty cells in a row — gaining 12 Mist tokens, which kills them unless something prevents it.
+
+  - name: Warding
+    status: open
+    summary: Hold off the mist's corruption.
+
+  - name: Travel
+    status: open
+    summary: Hold the Path together for one more short rest.
+
+  - name: Returning
+    status: open
+    summary: Find the way back.

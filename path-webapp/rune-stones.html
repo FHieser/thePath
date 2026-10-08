@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rune Stones - The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root {
+            --rune-red: #c94a3a;
+        }
+
+        .rune-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .rune-sidebar {
+            position: sticky;
+            top: 1.5rem;
+            height: fit-content;
+        }
+
+        .rune-sidebar h2 {
+            color: var(--accent-amber);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 0 0 0.6rem 0;
+            opacity: 0.7;
+        }
+
+        .rune-sidebar .toc-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .rune-sidebar .toc-entry {
+            font-size: 0.82rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .rune-content h2 {
+            color: var(--rune-red);
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 0.1rem solid var(--primary-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .rune-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .rune-intro {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin-bottom: 1rem;
+        }
+
+        .charge-stats {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .charge-stat {
+            background: rgba(10, 20, 40, 0.6);
+            border: 0.1rem solid var(--border-color);
+            border-radius: 0.3rem;
+            padding: 0.4rem 0.8rem;
+            font-size: 0.8rem;
+        }
+
+        .charge-stat strong {
+            color: var(--rune-red);
+            margin-right: 0.35rem;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.06em;
+        }
+
+        .rune-card {
+            background: rgba(10, 20, 40, 0.6);
+            border: 0.1rem solid var(--border-color);
+            border-left: 0.25rem solid var(--rune-red);
+            border-radius: 0.4rem;
+            padding: 1rem 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .rune-card.open {
+            opacity: 0.55;
+            border-left-style: dashed;
+        }
+
+        .rune-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin: 0 0 0.25rem 0;
+        }
+
+        .rune-status {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-amber);
+            margin-left: 0.5rem;
+            font-weight: 400;
+        }
+
+        .rune-summary {
+            font-size: 0.8rem;
+            color: var(--accent-amber);
+            margin-bottom: 0.5rem;
+        }
+
+        .rune-card p, .rune-card .rune-body {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.55;
+            opacity: 0.9;
+        }
+
+        .rune-field {
+            margin-top: 0.6rem;
+            font-size: 0.82rem;
+            line-height: 1.5;
+        }
+
+        .rune-field strong {
+            color: var(--rune-red);
+            display: block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.1rem;
+        }
+
+        .rune-field.example {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        @media (max-width: 700px) {
+            .rune-layout { grid-template-columns: 1fr; }
+            .rune-sidebar { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <a class="home-btn" href="index.html">&#8962; Home</a>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="items.html">← Back to Items</a>
+            </nav>
+            <h1>Rune Stones</h1>
+            <p class="subtitle">Small runes carved in blood — charged, carried, and spent</p>
+            <a href="items.html" class="btn btn-primary" style="display:inline-block;margin-top:0.75rem;text-decoration:none;">🎒 Item Catalogue →</a>
+        </header>
+
+        <main>
+            <div class="rune-layout">
+                <aside class="rune-sidebar">
+                    <h2>Contents</h2>
+                    <div id="rune-toc" class="toc-grid">
+                        <span style="opacity:0.5;font-size:0.8rem;">Loading…</span>
+                    </div>
+                </aside>
+
+                <div id="rune-content" class="rune-content">
+                    <div class="loading">Loading rune data…</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>The Path - Daggerheart Campaign Frame</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+    (async function () {
+        const contentEl = document.getElementById('rune-content');
+        const tocEl     = document.getElementById('rune-toc');
+
+        function slugify(str) {
+            return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        }
+
+        try {
+            const res = await fetch('../the-path-campaign/items/rune-stones.yaml');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = jsyaml.load(await res.text());
+
+            let html = '';
+            let tocHtml = '';
+
+            if (data.introduction) {
+                html += `<div class="rune-intro">${formatDescription(data.introduction)}</div>`;
+            }
+
+            // Charging — shared by every small rune
+            if (data.charging) {
+                const c = data.charging;
+                tocHtml += `<a href="#charging" class="toc-entry">Charging</a>`;
+                html += `<h2 id="charging">Charging</h2>`;
+                html += `<div class="charge-stats">
+                    <span class="charge-stat"><strong>Cost</strong>${escapeHtml(c.costPerCharge)} per charge</span>
+                    <span class="charge-stat"><strong>Max</strong>${escapeHtml(String(c.maxCharges))} charges</span>
+                </div>`;
+                html += `<div class="rune-card"><div class="rune-body">${formatDescription(c.description)}</div></div>`;
+            }
+
+            // Small runes
+            if (data.smallRunes?.length) {
+                tocHtml += `<a href="#small-runes" class="toc-entry">Small Runes</a>`;
+                html += `<h2 id="small-runes">Small Runes</h2>`;
+                for (const rune of data.smallRunes) {
+                    const isOpen = rune.status === 'open';
+                    tocHtml += `<a href="#${slugify(rune.name)}" class="toc-entry">${escapeHtml(rune.name)}</a>`;
+                    html += `<div id="${slugify(rune.name)}" class="rune-card${isOpen ? ' open' : ''}">
+                        <h3>${escapeHtml(rune.name)}${isOpen ? '<span class="rune-status">In design</span>' : ''}</h3>
+                        ${rune.summary ? `<div class="rune-summary">${escapeHtml(rune.summary)}</div>` : ''}
+                        ${rune.chargeCondition ? `<div class="rune-field"><strong>Charge condition</strong>${escapeHtml(rune.chargeCondition)}</div>` : ''}
+                        ${rune.passive ? `<div class="rune-field"><strong>Passive</strong>${formatDescription(rune.passive)}</div>` : ''}
+                        ${rune.description ? `<div class="rune-field"><strong>Active</strong>${formatDescription(rune.description)}</div>` : ''}
+                        ${rune.example ? `<div class="rune-field example"><strong>Example</strong>${formatDescription(rune.example)}</div>` : ''}
+                    </div>`;
+                }
+            }
+
+            contentEl.innerHTML = html;
+            tocEl.innerHTML = tocHtml || '<span style="opacity:0.4;font-size:0.8rem;">—</span>';
+
+        } catch (err) {
+            contentEl.innerHTML = `<p class="error">Failed to load rune data: ${err.message}</p>`;
+            tocEl.innerHTML = '';
+            console.error(err);
+        }
+    })();
+    </script>
+</body>
+</html>
