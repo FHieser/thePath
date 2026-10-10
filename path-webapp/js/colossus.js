@@ -1,5 +1,7 @@
 // Colossus detail page - Dedicated renderer for multi-segment adversaries
 // Splits multi-document YAML by top-level keys instead of --- separators
+let colossusDocs = null;
+
 document.addEventListener('DOMContentLoaded', async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const colossusId = urlParams.get('id');
@@ -9,10 +11,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    // Known colossus locations
-    const colossusPaths = [
-        `../the-path-campaign/adversaries/siege/${colossusId}.yaml`
-    ];
+    // Colossi can live in any adversary folder (siege, crystal-plague, ...)
+    const colossusPaths = ADVERSARY_FOLDERS.map(({ path }) => `${path}${colossusId}.yaml`);
 
     try {
         let yamlText = null;
@@ -37,39 +37,78 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Strip --- separators, then split by top-level "name:" or "lore:" keys
         const cleaned = yamlText.replace(/^---\s*$/gm, '');
         const docTexts = cleaned.split(/\n(?=name:|lore:)/).filter(s => s.trim());
-        const docs = docTexts.map(text => jsyaml.load(text));
+        colossusDocs = docTexts.map(text => jsyaml.load(text));
 
-        displayColossus(docs);
+        const selectedPhase = parseInt(urlParams.get('phase')) || null;
+        displayColossus(colossusDocs, selectedPhase);
     } catch (error) {
         console.error('Full error:', error);
         displayError(`Failed to load colossus: ${error.message}`);
     }
 });
 
-function displayColossus(docs) {
+function selectPhase(phaseNum) {
+    displayColossus(colossusDocs, phaseNum);
+}
+
+// An item without a `phase` field belongs to every phase; `phase` may be a number or a list
+function inPhase(item, phaseNum) {
+    if (phaseNum === null || item.phase === undefined || item.phase === null) return true;
+    return Array.isArray(item.phase) ? item.phase.includes(phaseNum) : item.phase === phaseNum;
+}
+
+function displayColossus(docs, selectedPhase) {
     const container = document.getElementById('adversary-content');
     const framework = docs[0];
 
     // Separate segments and lore document
-    const segments = [];
+    const allSegments = [];
     let loreDoc = null;
     for (let i = 1; i < docs.length; i++) {
         const doc = docs[i];
         if (doc && doc.segment_of) {
-            segments.push(doc);
+            allSegments.push(doc);
         } else if (doc && doc.lore && !doc.name) {
             loreDoc = doc;
         }
     }
 
-    const tierCategory = `Tier ${framework.tier} ${framework.category}`;
+    // Phased colossi (e.g. The Sleeper) show one phase at a time
+    const phases = Array.isArray(framework.phases) ? framework.phases : null;
+    let phase = null;
+    if (phases) {
+        phase = phases.find(p => p.phase === selectedPhase) || phases[0];
+        const url = new URL(window.location);
+        url.searchParams.set('phase', phase.phase);
+        history.replaceState(null, '', url);
+    }
+    const phaseNum = phase ? phase.phase : null;
+
+    const segments = allSegments.filter(seg => inPhase(seg, phaseNum));
+    const features = (framework.features || []).filter(f => inPhase(f, phaseNum));
+    const segmentNames = new Set(segments.map(seg => seg.name));
+    const adjacency = framework.adjacency && phase
+        ? Object.fromEntries(Object.entries(framework.adjacency).filter(([name]) => segmentNames.has(name)))
+        : framework.adjacency;
+
+    const tierCategory = `Tier ${phase && phase.tier ? phase.tier : framework.tier} ${framework.category}`;
+
+    const phaseSelector = phases ? `
+        <div class="tier-selector">
+            ${phases.map(p => `
+                <button class="tier-btn ${p.phase === phaseNum ? 'active' : ''}"
+                        onclick="selectPhase(${p.phase})">Phase ${p.phase}</button>
+            `).join('')}
+        </div>
+    ` : '';
 
     // Format thresholds
+    const thresholds = phase && phase.thresholds ? phase.thresholds : framework.thresholds;
     let thresholdsText = 'None';
-    if (framework.thresholds) {
-        thresholdsText = typeof framework.thresholds === 'object'
-            ? `${framework.thresholds.major}/${framework.thresholds.severe}`
-            : framework.thresholds;
+    if (thresholds) {
+        thresholdsText = typeof thresholds === 'object'
+            ? `${thresholds.major}/${thresholds.severe}`
+            : thresholds;
     }
 
     // Format experience
@@ -88,6 +127,7 @@ function displayColossus(docs) {
             <div class="adversary-header">
                 <h1>${escapeHtml(framework.name)}</h1>
                 <div class="location-type">${tierCategory}</div>
+                ${phaseSelector}
             </div>
 
             <!-- Framework Stat Block -->
@@ -120,11 +160,11 @@ function displayColossus(docs) {
 
                 <!-- Framework Features -->
                 <h3 style="margin-top: 1rem; margin-bottom: 0.5rem; border-top: 0.1rem solid var(--danger-red); padding-top: 0.5rem;">Framework Features</h3>
-                ${framework.features ? framework.features.map(f => renderFeature(f)).join('') : ''}
+                ${features.map(f => renderFeature(f)).join('')}
             </div>
 
             <!-- Adjacency Map -->
-            ${framework.adjacency ? renderAdjacency(framework.adjacency) : ''}
+            ${adjacency ? renderAdjacency(adjacency) : ''}
 
             <!-- Segments -->
             <h2 style="color: var(--accent-amber); margin-top: 2rem; border-bottom: 0.15rem solid var(--danger-red);">Segments</h2>

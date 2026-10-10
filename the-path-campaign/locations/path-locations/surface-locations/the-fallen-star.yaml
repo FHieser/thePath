@@ -18,12 +18,12 @@ modifiers:
   - name: Cave Mouth
   - name: Linked
     value: Meteorite Lab
-potentialAdversaries: Crystal creatures; the sleeper in the hollow
+potentialAdversaries: Crystal creatures, The Sleeper
 features:
   - name: The Motherlode
     type: Passive
     description: |
-      This location runs on **Don't Wake the Beast**. Designate the sleeper in the hollow. The three rim features below are its traversal features, so a four-person party wakes it at **Stir 10**.
+      This location runs on **Don't Wake the Beast**. The sleeper is the meteorite itself — **The Sleeper**. The three rim features below are its traversal features, so a four-person party wakes it at **Stir 10**.
 
       The meteorite lies at the bottom of the crater, largely intact — the raw material every starfall crystal on the Path is a fragment of. Here it isn't grown through anyone's ribcage. It's simply lying there, in quantity, unclaimed.
 
@@ -31,7 +31,7 @@ features:
 
       There is no route across the middle. Anything crossing the hollow passes within reach of the sleeper.
     questions: |
-      What is asleep down there, and how did it come to be lying on the star? Does it predate the impact, or did it arrive with it?
+      What does the star do in its sleep? Has anyone seen it move?
 
   - name: The Undercut
     type: Passive
@@ -59,7 +59,7 @@ features:
   - name: Crystal Gallery
     type: Passive/Action
     description: |
-      A cavern along the rim, walls and ceiling grown thick with crystal formations. Several openings look down into the hollow. You can see the meteorite from here, and what is lying on it.
+      A cavern along the rim, walls and ceiling grown thick with crystal formations. Several openings look down into the hollow. You can see the meteorite from here, and the crystal slowly growing and shifting across its surface.
 
       A traversal feature. Crossing requires a **Finesse or Instinct** reaction roll — moving through formations that will ring if struck.
 
@@ -87,7 +87,7 @@ features:
 
       Breaking them is loud. Damaging the instruments adds Stir — **+1** for a cut cable or a toppled housing, up to **+3** for wrecking a section thoroughly. The glass carries it.
 
-      **Failsafe Mist Dispersal:** Pressurised tanks stand at the field's edge, hoses running out over the hollow and angled down. Releasing them floods the crater with mist. **Stir drops to 0** and every creature in the location gains **3 Mist tokens**, the party included. Stillness reinforces stillness — this works even if the sleeper has already risen. It settles again.
+      **Failsafe Mist Dispersal:** Pressurised tanks stand at the field's edge, hoses running out over the hollow and angled down. Releasing them floods the crater with mist. **Stir drops to 0** and every creature in the location gains **3 Mist tokens**, the party included. Stillness reinforces stillness — this works even if the Sleeper has already woken, as long as it hasn't torn itself free (Phases 1 and 2). It settles again.
 
       There is one charge.
 

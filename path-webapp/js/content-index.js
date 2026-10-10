@@ -39,6 +39,7 @@ const CONTENT_INDEX = {
     "crystal-golem.yaml",
     "crystal-zombie.yaml",
     "crystalline-charger.yaml",
+    "the-sleeper.yaml",
     "the-warden.yaml",
     "trap-crystal.yaml"
   ],

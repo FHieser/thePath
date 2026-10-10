@@ -1,0 +1,427 @@
+name: The Sleeper
+tier: 4
+category: Colossus
+
+description: |
+  The meteorite itself, the size of a hill at the bottom of the crater: corrupted heavenly crystal, glowing from the inside. It has no fixed shape. When it wakes, crystal grows out of it into whatever it needs — a club, arms, a mouth, an eye — and when it has torn itself free, lightning lifts it into the air.
+
+motives: |
+  Defend itself, go back to sleep, if freed seek out the flame.
+
+size: The size of a hill; about 150 ft. across when it rises
+
+phases:
+  - phase: 1
+    tier: 3
+    thresholds: 25/48
+  - phase: 2
+    tier: 4
+    thresholds: 30/65
+  - phase: 3
+    tier: 4
+    thresholds: 30/65
+
+segments:
+  - Shell
+  - Crystal Arm
+  - Lattice Spire
+  - Cracked Star
+  - Grasping Arm
+  - Tearing Limb
+  - The Maw
+  - Core
+  - The Eye
+  - The Lance
+  - Storm Ring
+
+thresholds: 25/48 (Phase 1) · 30/65 (Phases 2–3)
+stress: 6
+
+experience:
+  - name: Ancient
+    value: 4
+  - name: Unstoppable
+    value: 3
+
+adjacency:
+  Shell:
+    - Crystal Arm
+    - Lattice Spire
+  Crystal Arm:
+    - Shell
+  Lattice Spire:
+    - Shell
+  Cracked Star:
+    - Grasping Arm
+    - Tearing Limb
+    - The Maw
+  Grasping Arm:
+    - Cracked Star
+  Tearing Limb:
+    - Cracked Star
+  The Maw:
+    - Cracked Star
+  Core:
+    - The Eye
+    - The Lance
+    - Storm Ring
+  The Eye:
+    - Core
+    - The Lance
+  The Lance:
+    - Core
+    - The Eye
+  Storm Ring:
+    - Core
+
+features:
+  - name: Pinned
+    type: Passive
+    phase: 1
+    description: |
+      The Sleeper is pinned in the hollow and can't move. Phase 1 ends when the **Shell** is Destroyed, or when the **Crystal Arm** and the **Lattice Spire** are both Destroyed. The Shell then breaks off and Phase 2 begins.
+
+  - name: Tearing Loose
+    type: Passive
+    phase: 2
+    description: |
+      The Sleeper is still pinned but is pulling itself loose. Phase 2 ends when the **Cracked Star** is Destroyed, or when the **Grasping Arm**, **Tearing Limb** and **The Maw** are all Destroyed. The Sleeper then tears free and Phase 3 begins.
+
+  - name: Free
+    type: Passive
+    phase: 3
+    description: |
+      The Sleeper is free. It is defeated when the **Core** is Destroyed.
+
+  - name: Breaking Free
+    type: Reaction
+    phase: 3
+    description: |
+      When Phase 3 begins, the Sleeper tears itself out of the crater floor and rises. The GM gains **3 Fear**.
+
+      The ground shakes as it comes loose. Each PC standing on the star makes an **Agility reaction roll (20)**. On a success, they hold on and are still on it as it rises. On a failure, they're thrown off and fall into the hollow, taking **1d20+5 physical damage**.
+
+  - name: Colossal Power
+    type: Reaction
+    description: |
+      When the Sleeper fails an attack, you gain a Fear.
+
+  - name: Mist Settles It
+    type: Reaction
+    phase: [1, 2]
+    description: |
+      When the Fallen Star's **Failsafe Mist Dispersal** is released, the Sleeper goes still and sinks back into the crater floor. The fight ends. Destroyed segments stay destroyed until the Path resets. Once it has torn free in Phase 3, the mist no longer holds it.
+
+  - name: Dormant Again
+    type: Passive
+    phase: [1, 2]
+    description: |
+      If the Sleeper never reached Phase 3, it returns to its dormant state when the Path resets.
+
+  - name: Seek the Flame
+    type: Reaction
+    phase: 3
+    description: |
+      If the party is defeated or driven off during Phase 3, the Sleeper rises out of the crater and leaves to seek the nearest Sacred Flame. The GM decides where it appears next.
+
+---
+
+name: Shell
+segment_of: The Sleeper
+phase: 1
+adjacent_segments:
+  - Crystal Arm
+  - Lattice Spire
+
+description: |
+  The crust of crystal over the star, thick and cracked.
+
+difficulty: 14
+hp: 8
+
+features:
+  - name: Regrowth
+    type: Action
+    description: |
+      New crystal spreads over the cracks. One segment that isn't Destroyed clears **2 HP**.
+
+---
+
+name: Crystal Arm
+segment_of: The Sleeper
+phase: 1
+adjacent_segments:
+  - Shell
+
+description: |
+  A single limb of crystal grown out of the star, long enough to reach the rim and ending in a solid mass like a club.
+
+difficulty: 16
+hp: 5
+
+attack:
+  bonus: '+4'
+  name: Club
+  range: Far
+  damage: 3d12+9 phy
+
+features:
+  - name: Smash
+    type: Action
+    description: |
+      The Arm swings out of the hollow and slams down on the rim. Make an attack against all targets within Very Close range of a point within Far range.
+
+  - name: Stuck
+    type: Passive
+    description: |
+      The Arm can only be targeted while it's stuck. After Smash, it's lodged in the crater wall until the Sleeper's next spotlight. While it's stuck, PCs can climb along it down to the Shell.
+
+---
+
+name: Lattice Spire
+segment_of: The Sleeper
+phase: 1
+adjacent_segments:
+  - Shell
+
+description: |
+  A tall open mesh of thin crystal rods rising from the top of the star. Lightning arcs across its tip, and crystal shards form in the air around it and hang there.
+
+difficulty: 15
+hp: 4
+
+attack:
+  bonus: '+3'
+  name: Shards
+  range: Very Far
+  damage: 2d8+3 phy
+
+features:
+  - name: Volley
+    type: Action
+    description: |
+      Make up to **3 attacks** against targets within Very Far range.
+
+---
+
+name: Cracked Star
+segment_of: The Sleeper
+phase: 2
+adjacent_segments:
+  - Grasping Arm
+  - Tearing Limb
+  - The Maw
+
+description: |
+  The star under the broken shell, glowing through its cracks.
+
+difficulty: 16
+hp: 8
+
+features:
+  - name: Hardened
+    type: Passive
+    description: |
+      Damage below the Major threshold doesn't mark HP on this segment.
+
+---
+
+name: Grasping Arm
+segment_of: The Sleeper
+phase: 2
+adjacent_segments:
+  - Cracked Star
+
+description: |
+  A long arm ending in a hand of crystal fingers that reaches out of the hollow.
+
+difficulty: 16
+hp: 5
+
+attack:
+  bonus: '+5'
+  name: Grab
+  range: Far
+  damage: 4d10+6 phy
+
+features:
+  - name: Drag Down
+    type: Action
+    description: |
+      Make an attack against a target within Far range. On a success, the target takes damage and is pulled into the hollow and dropped onto the star.
+
+---
+
+name: Tearing Limb
+segment_of: The Sleeper
+phase: 2
+adjacent_segments:
+  - Cracked Star
+
+description: |
+  An arm sunk into the crater floor, pulling at it. The ground around it cracks.
+
+difficulty: 15
+hp: 6
+
+features:
+  - name: Quake
+    type: Action
+    description: |
+      The Sleeper heaves and the whole hollow shakes. Every target on the star makes an **Agility or Strength reaction roll**. On a failure, they slide toward the Maw, ending within Melee range of it, and become **Vulnerable** until the end of the next round.
+
+      A Vulnerable PC can clear the condition by **spending 2 Hope** to regain their footing. PCs can pay this Hope for each other.
+
+---
+
+name: The Maw
+segment_of: The Sleeper
+phase: 2
+adjacent_segments:
+  - Cracked Star
+
+description: |
+  An opening in the star's surface, ringed with crystal teeth.
+
+difficulty: 17
+hp: 5
+
+attack:
+  bonus: '+6'
+  name: Bite
+  range: Melee
+  damage: 3d20+8 phy
+
+features:
+  - name: Swallow
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      Make an attack against a target on the star within Melee range. On a success, the target is swallowed: they're **Restrained** inside the Maw and mark **1 HP and 1 Stress** at the start of each of their turns. A swallowed PC can only attack the Maw, and does so with advantage. They're freed when the Maw is Destroyed or takes **Severe** damage.
+
+  - name: Spew Crystal Cloud
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      The Maw breathes out a cloud of crystal dust. Each target within Close range of the star marks **2 Stress**. Swallowed targets are also affected.
+
+---
+
+name: Core
+segment_of: The Sleeper
+phase: 3
+adjacent_segments:
+  - The Eye
+  - The Lance
+  - Storm Ring
+
+description: |
+  The heart of the star, a mass of light at the centre of everything else.
+
+difficulty: 17
+hp: 6
+
+features:
+  - name: Fatal
+    type: Passive
+    description: |
+      When this segment is Destroyed, the Sleeper is defeated.
+
+  - name: Armored
+    type: Passive
+    description: |
+      When this segment takes damage, it marks 1 fewer HP.
+
+  - name: Regrow
+    type: Action
+    cost: Spend 1 Fear
+    description: |
+      One Destroyed Phase 3 segment grows back and clears **2 HP**.
+
+---
+
+name: The Eye
+segment_of: The Sleeper
+phase: 3
+adjacent_segments:
+  - Core
+  - The Lance
+
+description: |
+  A huge eye of clear crystal set in the star, with light moving behind it.
+
+difficulty: 18
+hp: 4
+
+features:
+  - name: Gaze
+    type: Passive
+    description: |
+      The Eye looks at one target at a time. The GM chooses whom when the Eye is spotlit. The target in its gaze **can't be Hidden**, and attacks from the Lance against them have **advantage**.
+
+  - name: Crystallise
+    type: Action
+    description: |
+      Crystal grows over the target in the Eye's gaze. They mark **1 Stress** and are **Restrained** until they break free with a Strength or Finesse roll, or an ally breaks the crystal.
+
+---
+
+name: The Lance
+segment_of: The Sleeper
+phase: 3
+adjacent_segments:
+  - Core
+  - The Eye
+
+description: |
+  Lightning gathers above the star and forms a single huge spear of crystal.
+
+difficulty: 16
+hp: 5
+
+attack:
+  bonus: '+6'
+  name: Lance
+  range: Very Far
+  damage: 4d12+15 phy
+
+features:
+  - name: Charge
+    type: Passive
+    description: |
+      When the Lance is spotlit without a token on it, place a token and describe where it's pointing. The next time it's spotlit, clear the token and it attacks.
+
+  - name: Impact
+    type: Passive
+    description: |
+      On a hit, the target marks **1 additional HP**, and the Lance explodes: every other creature within Very Close range of the target takes **half damage**.
+
+---
+
+name: Storm Ring
+segment_of: The Sleeper
+phase: 3
+adjacent_segments:
+  - Core
+
+description: |
+  A ring of crystal rods under the star, crackling with the lightning that holds it in the air.
+
+difficulty: 15
+hp: 5
+
+features:
+  - name: Levitation
+    type: Action
+    description: |
+      The Sleeper drifts anywhere within Far range.
+
+  - name: Grounded
+    type: Passive
+    description: |
+      When this segment is Destroyed, the Sleeper crashes to the ground and can't move until the Storm Ring is regrown.
+
+---
+
+lore: |
+  The meteorite the devil dropped on the Starfall Kingdom. Every starfall crystal and every Crystal Golem on the Path started as a fragment of it. Like all the plague crystal, it answers to divine power. The mist keeps it still. The Sacred Flame carries the imprisoned god's domain of war and expansion, and the star grows with it. It has been asleep in its crater since it landed. Once free, it goes looking for flames to grow on.
