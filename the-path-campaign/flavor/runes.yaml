@@ -1,8 +1,10 @@
 title: The Runes
 intro: |
-  The twenty-four runes of the Elder Futhark, grouped in three ætts of eight. This is the real-world reference list the campaign's runes are drawn from — their meaning within the mist is defined separately.
+  The twenty-four runes of the Elder Futhark, grouped in three ætts of eight. Each rune lists its literal meaning, a broader sense, and what it means when it stands in the sky during a reading.
 source: |
   The rune names are modern reconstructions in Proto-Germanic; no name list survives from the period the Elder Futhark was in use (c. 2nd–8th century). The earliest complete row is carved on the Kylver Stone (Gotland, c. 400 AD). Most meanings come from much later rune poems — the Old English (c. 8th–10th century), Old Norwegian and Old Icelandic (c. 12th–15th century) — which describe the later Anglo-Saxon and Younger Futhark rows. Where the poems disagree or are silent, the meaning is marked as uncertain. The order of the final runes varies between sources (Dagaz and Othala are often swapped).
+
+  The readings are this campaign's own interpretation for Wandering Stars readings.
 
   Further reading: R. I. Page, Runes; Ralph W. V. Elliott, Runes: An Introduction.
 
@@ -12,102 +14,150 @@ aetts:
       - name: Fehu
         glyph: ᚠ
         sound: f
-        meaning: Cattle, wealth
+        literal: Cattle
+        broader: Wealth
+        reading: Sacrifice
       - name: Uruz
         glyph: ᚢ
         sound: u
-        meaning: Aurochs, strength
+        literal: Aurochs
+        broader: Strength
+        reading: Power
       - name: Thurisaz
         glyph: ᚦ
         sound: th
-        meaning: Giant, thorn
+        literal: Giant
+        broader: Thorn
+        reading: Obstacle
       - name: Ansuz
         glyph: ᚨ
         sound: a
-        meaning: God, breath, word
+        literal: God
+        broader: Word
+        reading: Law
       - name: Raidho
         glyph: ᚱ
         sound: r
-        meaning: Riding, journey
+        literal: Riding
+        broader: Journey
+        reading: The way forward
       - name: Kenaz
         glyph: ᚲ
         sound: k
-        meaning: Torch
+        literal: Torch
+        broader: Knowledge
+        reading: Learning something new
       - name: Gebo
         glyph: ᚷ
         sound: g
-        meaning: Gift, exchange
+        literal: Gift
+        broader: Exchange
+        reading: Trade
       - name: Wunjo
         glyph: ᚹ
         sound: w
-        meaning: Joy
+        literal: Joy
+        broader: Fellowship
+        reading: Success, good fate
 
   - name: Hagal's Ætt
     runes:
       - name: Hagalaz
         glyph: ᚺ
         sound: h
-        meaning: Hail
+        literal: Hail
+        broader: Destruction
+        reading: Disaster
       - name: Naudiz
         glyph: ᚾ
         sound: n
-        meaning: Need, hardship
+        literal: Need
+        broader: Hardship
+        reading: Necessity
       - name: Isa
         glyph: ᛁ
         sound: i
-        meaning: Ice
+        literal: Ice
+        broader: Standstill
+        reading: Isolation, uncertainty
       - name: Jera
         glyph: ᛃ
         sound: j
-        meaning: Year, harvest
+        literal: Year
+        broader: Harvest
+        reading: Cycle
       - name: Eihwaz
         glyph: ᛇ
         sound: ei / æ
-        meaning: Yew
+        literal: Yew
+        broader: Death and life
+        reading: Regeneration
       - name: Perthro
         glyph: ᛈ
         sound: p
-        meaning: Uncertain — often read as a lot-cup or game
+        literal: Lot-cup
+        broader: Chance
+        reading: Fate, chance, change
       - name: Algiz
         glyph: ᛉ
         sound: z
-        meaning: Elk, or elk-sedge
+        literal: Elk
+        broader: Protection
+        reading: Endurance, patience
       - name: Sowilo
         glyph: ᛊ
         sound: s
-        meaning: Sun
+        literal: Sun
+        broader: Light
+        reading: Clarity
 
   - name: Týr's Ætt
     runes:
       - name: Tiwaz
         glyph: ᛏ
         sound: t
-        meaning: The god Týr
+        literal: Týr
+        broader: Justice
+        reading: Justice, self-sacrifice, binding oath
       - name: Berkano
         glyph: ᛒ
         sound: b
-        meaning: Birch
+        literal: Birch
+        broader: Birth
+        reading: Growth
       - name: Ehwaz
         glyph: ᛖ
         sound: e
-        meaning: Horse
+        literal: Horse
+        broader: Trust
+        reading: Partnership
       - name: Mannaz
         glyph: ᛗ
         sound: m
-        meaning: Man, human
+        literal: Man
+        broader: Humanity
+        reading: Self
       - name: Laguz
         glyph: ᛚ
         sound: l
-        meaning: Water, lake
+        literal: Water
+        broader: Depth
+        reading: The unknown
       - name: Ingwaz
         glyph: ᛜ
         sound: ng
-        meaning: The god Ing
+        literal: Ing
+        broader: Seed
+        reading: Potential
       - name: Dagaz
         glyph: ᛞ
         sound: d
-        meaning: Day
+        literal: Day
+        broader: Dawn
+        reading: New beginnings
       - name: Othala
         glyph: ᛟ
         sound: o
-        meaning: Inherited land, ancestral home
+        literal: Inheritance
+        broader: Ancestral land
+        reading: Responsibility

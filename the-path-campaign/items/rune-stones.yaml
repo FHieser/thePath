@@ -8,7 +8,7 @@ charging:
   description: |
     Each small rune has a passive effect that works while it is carried, and an active effect that spends charges.
 
-    Charging is a ritual. Every 3 HP marked by a living creature taking part in the ritual adds 1 charge to the rune. The blood does not have to be given willingly — a PC can pay it, or a captured creature can be bled for it. Each rune also names a condition that must be met for the ritual to work — see the rune's own entry.
+    Charging is a ritual. Every 3 HP marked by a living creature present at the ritual adds 1 charge to the rune. The blood does not have to be given willingly — a PC can pay it, or a captured creature can be bled for it. Blood spilled in a fight does not count, and the blood of mist creatures does not take. Each rune also names a condition that must be met for the ritual to work — see the rune's own entry.
 
     There is no limit on how often a rune can be charged. The HP cost is the limit.
   costPerCharge: 3 HP
@@ -16,11 +16,26 @@ charging:
 
 smallRunes:
   - name: Finding
+    rune: Kenaz
+    glyph: ᚲ
     status: done
-    summary: Step into the mist between locations on the current Path without getting lost.
+    summary: Reveal what waits on the Path ahead.
     chargeCondition: The ritual must be performed under an open sky. The GM decides where the sky is open above the mist.
     passive: |
       The holder can read runes in the sky. When they make a Wandering Stars reading, the GM also reveals the runes that stand among the stars that night.
+    description: |
+      While under an open sky, the holder can spend 1 charge to turn one face-down location card on the current Path face-up. The players learn which location it is before anyone travels there.
+    example: |
+      The party stands on a high pass under a clear night. The rune holds 3 charges. The holder spends 2 and turns over the two cards ahead of them, then picks the route that avoids the Mist-Touched one.
+
+  - name: Travel
+    rune: Raidho
+    glyph: ᚱ
+    status: done
+    summary: Step into the mist between locations on the current Path without getting lost.
+    chargeCondition: The ritual must be performed on a Stable location.
+    passive: |
+      If the Path ends while the party is on an Unstable location, the holder draws 2 location cards for each off-Path step instead of 1 and chooses which one the party moves to. The other card goes back into the deck.
     description: |
       The holder can lead characters through an empty grid cell — a cell with no location on the current Path — to the location on its far side.
 
@@ -30,14 +45,26 @@ smallRunes:
     example: |
       The rune holds 4 charges. Four characters can cross one empty cell together, or one character can cross four empty cells in a row — gaining 12 Mist tokens, which kills them unless something prevents it.
 
-  - name: Warding
-    status: open
-    summary: Hold off the mist's corruption.
+  - name: Inheritance
+    rune: Othala
+    glyph: ᛟ
+    status: done
+    summary: Claim a location so the mist cannot take it.
+    chargeCondition: Each charge also requires giving up goods worth 1 Trade Point (see Crafting & Trading). The goods are consumed by the ritual.
+    passive: |
+      While in a location made Stable by this rune, the holder can choose to gain 1 fewer Mist token whenever they would gain Mist tokens.
+    description: |
+      The holder can spend 3 charges to make the location they are in Stable. The claim survives the next 2 Path resets: the location keeps its grid position when each new Path is laid out. After the second reset it is Unstable again, and the next reset removes it like any other Unstable location.
 
-  - name: Travel
-    status: open
-    summary: Hold the Path together for one more short rest.
+      There is no limit on how many locations can be claimed this way. The same location can only be claimed once per Path — claiming it again on a later Path restarts its count at 2.
 
-  - name: Returning
-    status: open
-    summary: Find the way back.
+  - name: Fate
+    rune: Perthro
+    glyph: ᛈ
+    status: done
+    summary: Rewrite what a character is.
+    chargeCondition: The blood must be taken unwillingly. A PC's own blood does not take.
+    passive: |
+      Fate pulls harder on the holder's rolls. When the holder rolls with Hope, they gain 1 additional Hope. When they roll with Fear, the GM gains 1 additional Fear. On a critical success, they gain 1 additional Hope.
+    description: |
+      The holder can spend all 7 charges to rewrite one character's fate. That character may change their ancestry and their community, and adapt their class.

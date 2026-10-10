@@ -975,7 +975,8 @@ async function initRunes() {
           <span class="rune-glyph">${escapeHtml(rune.glyph)}</span>
           <span class="planet-info">
             <span class="planet-name">${escapeHtml(rune.name)}</span>
-            <span class="planet-domain">${escapeHtml(rune.meaning)}</span>
+            <span class="planet-domain">${escapeHtml(rune.reading)}</span>
+            <span class="planet-desc">${escapeHtml(rune.literal)} → ${escapeHtml(rune.broader)}</span>
           </span>
         `;
 
