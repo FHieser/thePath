@@ -8,53 +8,66 @@ source: |
 
   Further reading: R. I. Page, Runes; Ralph W. V. Elliott, Runes: An Introduction.
 
+decoding: |
+  Players are not given the meaning of a rune. They uncover it through the Wandering Stars.
+
+  When a rune stands in the sky, the GM shows planets alongside it, chosen so that their domains describe the rune. The players guess what the rune means. Depending on how close the guess comes, the GM grants them one or more of the rune's three levels — literal, broader, reading. A player who holds all three levels knows the rune fully.
+
 aetts:
   - name: Freyr's Ætt
     runes:
       - name: Fehu
         glyph: ᚠ
+        color: '#c0392b'
         sound: f
         literal: Cattle
         broader: Wealth
         reading: Sacrifice
       - name: Uruz
         glyph: ᚢ
+        color: '#e07b2e'
         sound: u
         literal: Aurochs
         broader: Strength
         reading: Power
       - name: Thurisaz
         glyph: ᚦ
+        color: '#6f8f3a'
         sound: th
         literal: Giant
         broader: Thorn
         reading: Obstacle
       - name: Ansuz
         glyph: ᚨ
+        color: '#e8c45a'
         sound: a
         literal: God
         broader: Word
         reading: Law
       - name: Raidho
         glyph: ᚱ
+        color: '#d4a373'
         sound: r
         literal: Riding
         broader: Journey
         reading: The way forward
       - name: Kenaz
         glyph: ᚲ
+        color: '#ffa94d'
         sound: k
         literal: Torch
         broader: Knowledge
         reading: Learning something new
       - name: Gebo
         glyph: ᚷ
+        color: '#c9824e'
         sound: g
         literal: Gift
         broader: Exchange
         reading: Trade
       - name: Wunjo
         glyph: ᚹ
+        color: '#ffe066'
         sound: w
         literal: Joy
         broader: Fellowship
@@ -64,48 +77,56 @@ aetts:
     runes:
       - name: Hagalaz
         glyph: ᚺ
+        color: '#8796b0'
         sound: h
         literal: Hail
         broader: Destruction
         reading: Disaster
       - name: Naudiz
         glyph: ᚾ
+        color: '#9e978e'
         sound: n
         literal: Need
         broader: Hardship
         reading: Necessity
       - name: Isa
         glyph: ᛁ
+        color: '#a8e0ff'
         sound: i
         literal: Ice
         broader: Standstill
         reading: Isolation, uncertainty
       - name: Jera
         glyph: ᛃ
+        color: '#b8c95a'
         sound: j
         literal: Year
         broader: Harvest
         reading: Cycle
       - name: Eihwaz
         glyph: ᛇ
+        color: '#3fa066'
         sound: ei / æ
         literal: Yew
         broader: Death and life
         reading: Regeneration
       - name: Perthro
         glyph: ᛈ
+        color: '#a77be0'
         sound: p
         literal: Lot-cup
         broader: Chance
         reading: Fate, chance, change
       - name: Algiz
         glyph: ᛉ
+        color: '#a87b5c'
         sound: z
         literal: Elk
         broader: Protection
         reading: Endurance, patience
       - name: Sowilo
         glyph: ᛊ
+        color: '#fff3b0'
         sound: s
         literal: Sun
         broader: Light
@@ -115,48 +136,56 @@ aetts:
     runes:
       - name: Tiwaz
         glyph: ᛏ
+        color: '#7fa7d9'
         sound: t
         literal: Týr
         broader: Justice
         reading: Justice, self-sacrifice, binding oath
       - name: Berkano
         glyph: ᛒ
+        color: '#a4e08f'
         sound: b
         literal: Birch
         broader: Birth
         reading: Growth
       - name: Ehwaz
         glyph: ᛖ
+        color: '#e09a9a'
         sound: e
         literal: Horse
         broader: Trust
         reading: Partnership
       - name: Mannaz
         glyph: ᛗ
+        color: '#f0bfa6'
         sound: m
         literal: Man
         broader: Humanity
         reading: Self
       - name: Laguz
         glyph: ᛚ
+        color: '#2fa3b0'
         sound: l
         literal: Water
         broader: Depth
         reading: The unknown
       - name: Ingwaz
         glyph: ᛜ
+        color: '#5fd6a6'
         sound: ng
         literal: Ing
         broader: Seed
         reading: Potential
       - name: Dagaz
         glyph: ᛞ
+        color: '#ffb3c7'
         sound: d
         literal: Day
         broader: Dawn
         reading: New beginnings
       - name: Othala
         glyph: ᛟ
+        color: '#b3a05a'
         sound: o
         literal: Inheritance
         broader: Ancestral land

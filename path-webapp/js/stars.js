@@ -333,19 +333,22 @@ function drawBgStars(t) {
 }
 
 function drawRune(t) {
+  const color = activeRune.color || '#cfe0ff';
   const W = canvas.width;
   const H = canvas.height;
   const size = W * 0.42;
-  const alpha = 0.22 + Math.sin(t * 0.0011) * 0.06;
+  // Breathes between barely there and clearly lit; the glow swells with it
+  const pulse = 0.5 + Math.sin(t * 0.0011) * 0.5;
+  const alpha = 0.12 + pulse * 0.6;
 
   ctx.save();
   ctx.font = `${size}px ${RUNE_FONT}`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.globalAlpha = alpha;
-  ctx.shadowColor = 'rgba(190, 215, 255, 0.9)';
-  ctx.shadowBlur = W * 0.04;
-  ctx.fillStyle = '#cfe0ff';
+  ctx.shadowColor = color;
+  ctx.shadowBlur = W * (0.02 + pulse * 0.05);
+  ctx.fillStyle = color;
   ctx.fillText(activeRune.glyph, W * 0.5, H * 0.5);
   ctx.restore();
 }
@@ -972,7 +975,7 @@ async function initRunes() {
         const btn = document.createElement('button');
         btn.className = 'planet-btn';
         btn.innerHTML = `
-          <span class="rune-glyph">${escapeHtml(rune.glyph)}</span>
+          <span class="rune-glyph" style="color:${escapeHtml(rune.color || '#cfe0ff')};text-shadow:0 0 6px ${escapeHtml(rune.color || '#cfe0ff')};">${escapeHtml(rune.glyph)}</span>
           <span class="planet-info">
             <span class="planet-name">${escapeHtml(rune.name)}</span>
             <span class="planet-domain">${escapeHtml(rune.reading)}</span>
