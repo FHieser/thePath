@@ -17,7 +17,7 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
     - `path-locations/starfall-city/` - 9 location files for the Starfall City sub-area (Craftsmen's Ward, Sealed District, Council Hall, etc.)
     - `path-locations/special-locations/` - Non-standard locations (Vanishing Mist, Village in the Mist overview)
     - `village-in-the-mist/` - Central hub: 6 location cards (incl. `underground-access-card.yaml`) plus `village-overview.md` and `upgrades.md`
-  - `items/` - Equipment and item catalogs (`items.yaml`, `starfall-crystals.yaml`)
+  - `items/` - Equipment and item catalogs (`items.yaml`, `starfall-crystals.yaml`, `rune-stones.yaml` — small runes and their blood-ritual charging, shown on `rune-stones.html`)
   - `adversaries/` - Custom adversaries organized by type: `mist/`, `beasts/`, `siege/`, `crystal-plague/`, `spider-queen/`, `the-croak/`, `antagonists/`
   - `lore/` - Campaign lore and worldbuilding
     - `factions/` - One folder per faction with `faction-details.yaml` and an `npcs/` subfolder (see Data Access Patterns below)
@@ -28,8 +28,8 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
     - `starfall-city-mechanics.yaml` - Starfall City-specific mechanics
     - `village-siege/` - Village siege encounter framework
   - `flavor/` - Setting texture shown on the webapp's Flavor section
-    - `wandering-stars.md` - The Wandering Stars (Open Skies reading); the webapp's `stars.js` holds its own copy of the planet data
-    - `runes.yaml` - Elder Futhark rune reference, fetched directly by `runes.html`
+    - `wandering-stars.md` - The Wandering Stars (Open Skies reading); the webapp's `readings.js` holds its own copy of the planet data
+    - `runes.yaml` - Elder Futhark rune reference; `readings.html` (the Readings page) fetches it for runes in the sky
   - `campaign/` - Active campaign tracking (e.g., Moonfield, FreeMountain)
   - `example-path/` - Example Path configurations, incl. `path-library/` of reusable path YAMLs
   - `zarchive/` - Deprecated/superseded content kept for reference

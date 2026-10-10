@@ -155,11 +155,6 @@
             margin-bottom: 0.1rem;
         }
 
-        .rune-field.example {
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
         @media (max-width: 700px) {
             .rune-layout { grid-template-columns: 1fr; }
             .rune-sidebar { display: none; }
@@ -233,22 +228,46 @@
                 html += `<div class="rune-card"><div class="rune-body">${formatDescription(c.description)}</div></div>`;
             }
 
+            function field(label, text, cls = '') {
+                return text ? `<div class="rune-field${cls}"><strong>${label}</strong>${formatDescription(text)}</div>` : '';
+            }
+
+            function runeCard(rune) {
+                const isOpen = rune.status === 'open';
+                tocHtml += `<a href="#${slugify(rune.name)}" class="toc-entry">${escapeHtml(rune.name)}</a>`;
+                return `<div id="${slugify(rune.name)}" class="rune-card${isOpen ? ' open' : ''}">
+                    <h3>${rune.glyph ? `<span class="rune-glyph">${escapeHtml(rune.glyph)}</span>` : ''}${escapeHtml(rune.name)}${rune.rune ? `<span class="rune-status">${escapeHtml(rune.rune)}</span>` : ''}${isOpen ? '<span class="rune-status">In design</span>' : ''}</h3>
+                    ${rune.summary ? `<div class="rune-summary">${escapeHtml(rune.summary)}</div>` : ''}
+                    ${field('Location', rune.location)}
+                    ${field('Carried', rune.carried)}
+                    ${field('Charge condition', rune.chargeCondition)}
+                    ${field('Passive', rune.passive)}
+                    ${field('Active', rune.description)}
+                </div>`;
+            }
+
             // Small runes
             if (data.smallRunes?.length) {
                 tocHtml += `<a href="#small-runes" class="toc-entry">Small Runes</a>`;
                 html += `<h2 id="small-runes">Small Runes</h2>`;
-                for (const rune of data.smallRunes) {
-                    const isOpen = rune.status === 'open';
-                    tocHtml += `<a href="#${slugify(rune.name)}" class="toc-entry">${escapeHtml(rune.name)}</a>`;
-                    html += `<div id="${slugify(rune.name)}" class="rune-card${isOpen ? ' open' : ''}">
-                        <h3>${rune.glyph ? `<span class="rune-glyph">${escapeHtml(rune.glyph)}</span>` : ''}${escapeHtml(rune.name)}${rune.rune ? `<span class="rune-status">${escapeHtml(rune.rune)}</span>` : ''}${isOpen ? '<span class="rune-status">In design</span>' : ''}</h3>
-                        ${rune.summary ? `<div class="rune-summary">${escapeHtml(rune.summary)}</div>` : ''}
-                        ${rune.chargeCondition ? `<div class="rune-field"><strong>Charge condition</strong>${escapeHtml(rune.chargeCondition)}</div>` : ''}
-                        ${rune.passive ? `<div class="rune-field"><strong>Passive</strong>${formatDescription(rune.passive)}</div>` : ''}
-                        ${rune.description ? `<div class="rune-field"><strong>Active</strong>${formatDescription(rune.description)}</div>` : ''}
-                        ${rune.example ? `<div class="rune-field example"><strong>Example</strong>${formatDescription(rune.example)}</div>` : ''}
-                    </div>`;
-                }
+                for (const rune of data.smallRunes) html += runeCard(rune);
+            }
+
+            // Big runes
+            if (data.bigRunes?.length) {
+                tocHtml += `<a href="#big-runes" class="toc-entry">Big Runes</a>`;
+                html += `<h2 id="big-runes">Big Runes</h2>`;
+                for (const rune of data.bigRunes) html += runeCard(rune);
+            }
+
+            // Ascension
+            if (data.ascension) {
+                tocHtml += `<a href="#ascension" class="toc-entry">The Ascension</a>`;
+                html += `<h2 id="ascension">The Ascension</h2>`;
+                html += `<div class="rune-card">
+                    <div class="rune-body">${formatDescription(data.ascension.description)}</div>
+                    ${field('Outcome', data.ascension.outcome)}
+                </div>`;
             }
 
             contentEl.innerHTML = html;

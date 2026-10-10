@@ -27,8 +27,6 @@ smallRunes:
       The holder can read runes in the sky. When they make a Wandering Stars reading, the GM also reveals the runes that stand among the stars that night.
     description: |
       While under an open sky, the holder can spend 1 charge to turn one face-down location card on the current Path face-up. The players learn which location it is before anyone travels there.
-    example: |
-      The party stands on a high pass under a clear night. The rune holds 3 charges. The holder spends 2 and turns over the two cards ahead of them, then picks the route that avoids the Mist-Touched one.
 
   - name: Travel
     rune: Raidho
@@ -44,8 +42,6 @@ smallRunes:
       Each character crossing one empty cell spends 1 charge and gains 3 Mist tokens. A character can cross several empty cells in a row, spending 1 charge and gaining 3 Mist tokens for each.
 
       The destination must be a location on the current Path.
-    example: |
-      The rune holds 4 charges. Four characters can cross one empty cell together, or one character can cross four empty cells in a row — gaining 12 Mist tokens, which kills them unless something prevents it.
 
   - name: Inheritance
     rune: Othala
@@ -70,3 +66,41 @@ smallRunes:
       Fate pulls harder on the holder's rolls. When the holder rolls with Hope, they gain 1 additional Hope. When they roll with Fear, the GM gains 1 additional Fear. On a critical success, they gain 1 additional Hope.
     description: |
       The holder can spend all 7 charges to rewrite one character's fate. That character may change their ancestry and their community, and adapt their class.
+
+bigRunes:
+  - name: Godhood
+    rune: Ansuz
+    glyph: ᚨ
+    status: open
+    summary: The rune of ascension.
+    location: The ascension site in the Eisenwald — a forest that turned to iron when the ritual was performed. A temple holds 7 sockets, one per rune. Location file TBD.
+    carried: Carved on the body of the one who ascends.
+    chargeCondition: Each charge costs the one who ascends 1 max HP, permanently. Max HP lost this way cannot be restored during the ritual.
+
+  - name: Sacrifice
+    rune: Fehu
+    glyph: ᚠ
+    status: open
+    summary: The rune of the offering.
+    location: Produces blood. TBD.
+    carried: Blood from the rune is brought to the ritual in some form. TBD.
+    chargeCondition: 1 willing sacrifice per charge. The rune is carved on the sacrifice's body.
+
+  - name: Humanity
+    rune: Mannaz
+    glyph: ᛗ
+    status: open
+    summary: The rune of the self — getting to know oneself.
+    location: TBD.
+    carried: Carved on the body of the one who ascends.
+    chargeCondition: TBD.
+
+ascension:
+  description: |
+    The ascension ritual takes place at the Godhood rune's site. It needs 49 charges in total.
+
+    Four runes are required and must be fully charged (7 charges each, 28 in total): Godhood (Ansuz), Sacrifice (Fehu), Humanity (Mannaz) and Fate (Perthro).
+
+    The site has 7 slots, one rune each. The other 3 slots take any other runes, each fully charged (21 charges). A partly charged rune does not count. These runes only fill the ritual.
+  outcome: |
+    What the one who ascends becomes is the GM's call. For the ancestor, the GM decides which runes he used. If a PC attempts the ritual, the GM offers options based on which runes filled it.
