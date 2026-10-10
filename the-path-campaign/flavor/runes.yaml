@@ -11,7 +11,7 @@ source: |
 decoding: |
   Players are not given the meaning of a rune. They uncover it through the Wandering Stars.
 
-  When a rune stands in the sky, the GM shows planets alongside it, chosen so that their domains describe the rune. The players guess what the rune means. Depending on how close the guess comes, the GM grants them one or more of the rune's three levels — literal, broader, reading. A player who holds all three levels knows the rune fully.
+  When a rune stands in the sky, the GM shows planets alongside it, chosen so that their domains describe the rune. The players guess what the rune means. Depending on how close the guess comes, the GM grants them one or more of the rune's three levels — literal, broader, reading. A player who holds all three levels knows the rune fully. Knowing a rune fully is what lets a character charge and use a rune stone carrying it.
 
 aetts:
   - name: Freyr's Ætt
@@ -116,7 +116,7 @@ aetts:
         sound: p
         literal: Lot-cup
         broader: Chance
-        reading: Fate, chance, change
+        reading: Fate, change
       - name: Algiz
         glyph: ᛉ
         color: '#a87b5c'
@@ -140,7 +140,7 @@ aetts:
         sound: t
         literal: Týr
         broader: Justice
-        reading: Justice, self-sacrifice, binding oath
+        reading: Self-sacrifice, binding oath
       - name: Berkano
         glyph: ᛒ
         color: '#a4e08f'

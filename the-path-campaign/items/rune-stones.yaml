@@ -8,6 +8,8 @@ charging:
   description: |
     Each small rune has a passive effect that works while it is carried, and an active effect that spends charges.
 
+    A rune stone is inert in the hands of someone who does not understand it. A character can only charge a rune stone or use its passive and active once they know its rune fully — all three levels, uncovered through the Wandering Stars (see the Readings page). Knowing the rune is also how they learn its charge condition.
+
     Charging is a ritual. Every 3 HP marked by a living creature present at the ritual adds 1 charge to the rune. The blood does not have to be given willingly — a PC can pay it, or a captured creature can be bled for it. Blood spilled in a fight does not count, and the blood of mist creatures does not take. Each rune also names a condition that must be met for the ritual to work — see the rune's own entry.
 
     There is no limit on how often a rune can be charged. The HP cost is the limit.

@@ -978,8 +978,11 @@ async function initRunes() {
           <span class="rune-glyph" style="color:${escapeHtml(rune.color || '#cfe0ff')};text-shadow:0 0 6px ${escapeHtml(rune.color || '#cfe0ff')};">${escapeHtml(rune.glyph)}</span>
           <span class="planet-info">
             <span class="planet-name">${escapeHtml(rune.name)}</span>
-            <span class="planet-domain">${escapeHtml(rune.reading)}</span>
-            <span class="planet-desc">${escapeHtml(rune.literal)} → ${escapeHtml(rune.broader)}</span>
+            <span class="rune-levels">
+              <span class="rune-level"><span class="rune-level-num">I</span>${escapeHtml(rune.literal)}</span>
+              <span class="rune-level"><span class="rune-level-num">II</span>${escapeHtml(rune.broader)}</span>
+              <span class="rune-level reading"><span class="rune-level-num">III</span>${escapeHtml(rune.reading)}</span>
+            </span>
           </span>
         `;
 
