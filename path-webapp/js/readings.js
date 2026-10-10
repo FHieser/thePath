@@ -1,4 +1,4 @@
-// Wandering Stars — Open Skies Reading Tool
+// Readings — Wandering Stars and runes in the open sky
 
 const PLANETS = [
   {
