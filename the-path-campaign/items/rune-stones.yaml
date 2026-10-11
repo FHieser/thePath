@@ -85,7 +85,7 @@ bigRunes:
     location: |
       The blood stone beneath the Great Mangrove in The Reeds. The stone is the rune itself, made from the blood of the many killed on it. Its grooves still hold that blood.
 
-      The stone is a well. Once per day, a rune stone laid in the grooves gains 1 charge without anyone marking HP — the blood in the stone pays for it. The rune's own charge condition still applies.
+      The stone is a well. Once per day, a rune stone laid in the grooves gains 1 charge without anyone marking HP — the blood in the stone pays for it. This ignores the rune's own charge condition.
     carried: The stone stays where it is. In the ascension ritual, Fehu is represented by sacrifices who bear the rune on their bodies.
     chargeCondition: In the ritual, 1 willing sacrifice bearing the rune per charge.
 

@@ -77,7 +77,7 @@ features:
 
       Players who reach the interior of the tree find a hidden entrance behind a wall. An Instinct roll (Difficulty 17) reveals it. Below is the blood stone.
 
-      Below the tree, in the root tangle, sits a flat stone table barely visible beneath decades of encroaching wood. The symbol carved into its surface is precise — not decorative, not worn, cut with intention by someone who knew exactly what they were making. The grooves are filled with something dark that holds without spilling, as if the stone itself is unwilling to let it go. The space smells of wet earth and iron.
+      Below the tree, in the root tangle, sits a flat stone table barely visible beneath decades of encroaching wood. The symbol carved into its surface, ᚠ, is precise — not decorative, not worn, cut with intention by someone who knew exactly what they were making. The grooves are filled with something dark that holds without spilling, as if the stone itself is unwilling to let it go. The space smells of wet earth and iron.
 
       Blood Stone (Passive — Network Drain): While The Reeds is active on the Path, all mushroom circles on the current Path are disrupted. Players using a mushroom circle are always treated as facing the wrong direction — roll 1d10:
       1–5: Nothing happens. The magic fails harmlessly.
@@ -86,7 +86,7 @@ features:
 
       Items that aid mushroom circle navigation negate this effect.
 
-      GM note: The blood stone is the great rune Fehu, and the blood in its grooves belongs to the tribe the Ancestor slaughtered on it. Once per day it can charge a rune stone laid in its grooves. See items/rune-stones.yaml (Big Runes — Sacrifice) and lore/factions/factionless/npcs/the-ancestor.yaml.
+      GM note: The blood stone is the great rune Fehu, and the blood in its grooves belongs to the tribe the Ancestor slaughtered on it. Once per day it gives 1 charge to a rune stone laid in its grooves, regardless of that rune's charge condition. See items/rune-stones.yaml (Big Runes — Sacrifice) and lore/factions/factionless/npcs/the-ancestor.yaml.
     questions: |
       What does the symbol feel like to a player who traces it with a finger? Does anything happen when someone other than Croa presses blood into the grooves?
 
