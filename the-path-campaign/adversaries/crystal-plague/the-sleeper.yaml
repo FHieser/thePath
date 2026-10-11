@@ -33,6 +33,7 @@ segments:
   - The Eye
   - The Lance
   - Storm Ring
+  - Hurling Arm
 
 thresholds: 25/48 (Phase 1) · 30/65 (Phases 2–3)
 stress: 6
@@ -65,6 +66,7 @@ adjacency:
     - The Eye
     - The Lance
     - Storm Ring
+    - Hurling Arm
   The Eye:
     - Core
     - The Lance
@@ -72,6 +74,8 @@ adjacency:
     - Core
     - The Eye
   Storm Ring:
+    - Core
+  Hurling Arm:
     - Core
 
 features:
@@ -314,6 +318,7 @@ adjacent_segments:
   - The Eye
   - The Lance
   - Storm Ring
+  - Hurling Arm
 
 description: |
   The heart of the star, a mass of light at the centre of everything else.
@@ -420,6 +425,32 @@ features:
     type: Passive
     description: |
       When this segment is Destroyed, the Sleeper crashes to the ground and can't move until the Storm Ring is regrown.
+
+---
+
+name: Hurling Arm
+segment_of: The Sleeper
+phase: 3
+adjacent_segments:
+  - Core
+
+description: |
+  A long arm of crystal that reaches across the star's surface and down to the ground below it.
+
+difficulty: 16
+hp: 5
+
+attack:
+  bonus: '+6'
+  name: Grab
+  range: Close
+  damage: 4d10+6 phy
+
+features:
+  - name: Grab and Hurl
+    type: Action
+    description: |
+      Make an attack against a target within Close range, including PCs riding the Sleeper. On a success, the arm throws them anywhere within Far range. They take damage and land where the GM chooses.
 
 ---
 
