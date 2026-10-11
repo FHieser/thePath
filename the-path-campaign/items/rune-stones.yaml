@@ -26,7 +26,7 @@ smallRunes:
     passive: |
       The holder can read runes in the sky. When they make a Wandering Stars reading, the GM also reveals the runes that stand among the stars that night.
     description: |
-      While under an open sky, the holder can spend 1 charge to turn one face-down location card on the current Path face-up. The players learn which location it is before anyone travels there.
+      **Reveal a location:** While under an open sky, the holder can spend 1 charge to turn one face-down location card on the current Path face-up. The players learn which location it is before anyone travels there.
 
   - name: Travel
     rune: Raidho
@@ -66,6 +66,20 @@ smallRunes:
       Fate pulls harder on the holder's rolls. When the holder rolls with Hope, they gain 1 additional Hope. When they roll with Fear, the GM gains 1 additional Fear. On a critical success, they gain 1 additional Hope.
     description: |
       The holder can spend all 7 charges to rewrite one character's fate. That character may change their ancestry and their community, and adapt their class.
+
+  - name: Regeneration
+    rune: Eihwaz
+    glyph: ᛇ
+    status: done
+    summary: Return from what should have killed you.
+    chargeCondition: The ritual must be performed directly after a fight, before anyone rests.
+    passive: |
+      When the holder rests, they clear 1 additional Hit Point.
+    description: |
+      When the holder marks their last Hit Point, or gains the Mist token that would consume them, they can spend 3 charges in response:
+
+      - **Against death:** they clear 1 Hit Point right after marking the last one. They are left with 1 Hit Point, stay standing, and make no death move.
+      - **Against the mist:** they lose Mist tokens until they are one below the number that would consume them.
 
 bigRunes:
   - name: Godhood
