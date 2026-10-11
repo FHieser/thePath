@@ -167,7 +167,7 @@ When adding a new location to a path, check its own file's `modifiers:` list for
 
 ## Step 8: Auto-Discovery (No Manual Index Needed)
 
-The webapp auto-discovers YAML files from the `data/path-library/` folder by scanning directory listings. No manual index update is required — the file appearing in the folder is sufficient for it to show up in the Path Library, the index page cards, and the Path Creator's example dropdown.
+The webapp auto-discovers YAML files from the `data/path-library/` folder by scanning directory listings. No manual index update is required — the file appearing in the folder is sufficient for it to show up in the Path Library and the index page cards.
 
 Optionally update `the-path-campaign/example-path/path-library/definitions.md` as a human-readable planning reference:
 
