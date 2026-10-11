@@ -67,6 +67,12 @@ features:
       - *Crystal combined with hemomancy produces a stabilized pulse. This could serve as a battery, or a generator.*
 
       **Salvage:** 20 Crystals are displayed across the wall, along with roughly 6 trade points of goods.
+
+      **The Carved Stone:** On its own plate, apart from the crystal, sits a small stone carved with ᚱ. The grooves are dark. His label reads: *Blood Rune. Carries the bearer across the gaps between places. Charged with blood on stable ground. Used — it works.*
+
+      He knows exactly what it is worth. It is not part of the Blood Trade, and he will not part with it for anything the party is likely to carry.
+
+      GM note: This is the Travel rune stone (Raidho). See items/rune-stones.yaml.
     questions: |
       Which note does the party read first, and which one do they go back to? Is anything on the shelves labelled with a name they recognise?
 
