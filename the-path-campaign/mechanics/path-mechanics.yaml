@@ -181,6 +181,8 @@ modifiers:
       counterplay: |
         At the GM's discretion, PCs may discover or craft protective items that reduce or negate the Nothing modifier's effect. Examples might include blessed talismans, Sacred Flame-infused artifacts, or ritual preparations that shield hope from the void's influence.
 
+        This modifier is also affected if a character has the Mist Attuned custom Experience — see Mist Attuned below.
+
     - name: Everything
       type: corruptionAndProtection
       valueRange: 1-3
@@ -461,7 +463,7 @@ mistWarding:
     Mist Warding 2. The first and second uses cost 1 Hope each and negate 1 token each. The third costs 2 Hope and still negates 1. The fourth costs 3.
 
 mistAttuned:
-  summary: Carry the mist rather than resist it. Capacity, not protection — and it does not reverse.
+  summary: Carry the mist rather than resist it. Capacity, not protection — and it does not reverse. From value 2 it also blunts the Nothing modifier (see each rank's grants).
   coreMechanic: |
     Your corruption curve shifts right by a number of steps equal to your Mist Attuned value. Tokens up to that value have no effect, every consequence tier begins that much later, and you are not consumed until **10 + your value**.
 
@@ -485,6 +487,7 @@ mistAttuned:
       grants:
         - Fire Born items can still be used, but any action roll made with one deals you 2 direct damage — the flame reacting against mist-tainted flesh.
         - When you would gain Mist tokens from a source, you may choose to gain 1 fewer.
+        - Reduce a location's Nothing value by 1 against you, to a minimum of 0 — a Nothing(3) location treats you as Nothing(2). The void takes less from someone already carrying it.
         - Basic Mist Born creatures ignore you, unless you attack them.
       expectation: |
         Treated as a mercenary or a minion, not an ally. Expect small, transactional asks. Refusing costs nothing yet, but the relationship doesn't move forward without doing what's asked.
@@ -495,6 +498,7 @@ mistAttuned:
       grants:
         - Fire Born items can still be used, but any action roll made with one deals you 3 direct damage — the flame reacting against mist-tainted flesh.
         - When you would gain Mist tokens from a source, you may choose to gain 2 fewer.
+        - Reduce a location's Nothing value by 2 against you, to a minimum of 0 — a Nothing(3) location treats you as Nothing(1).
         - Basic Mist Born creatures obey your commands as though you were one of their own, no roll required.
         - Each action you take in a Flame-Touched location costs 1 Stress.
       expectation: |
@@ -508,6 +512,7 @@ mistAttuned:
       grants:
         - Fire Born items can still be used, but any action roll made with one deals you 4 direct damage — the flame reacting against mist-tainted flesh.
         - When you would gain Mist tokens from a source, you may choose to gain 3 fewer.
+        - Reduce a location's Nothing value by 3 against you, to a minimum of 0.
         - Basic and higher-ranking Mist Born creatures obey your commands as though you were one of their own, no roll required.
         - Each action you take in a Flame-Touched location costs 2 Stress.
       expectation: |
