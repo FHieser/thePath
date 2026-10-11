@@ -82,9 +82,9 @@ bigRunes:
     glyph: ᚠ
     status: open
     summary: The rune of the offering.
-    location: Produces blood. TBD.
-    carried: Blood from the rune is brought to the ritual in some form. TBD.
-    chargeCondition: 1 willing sacrifice per charge. The rune is carved on the sacrifice's body.
+    location: The blood stone beneath the Great Mangrove in The Reeds. The stone is the rune itself, made from the blood of the many killed on it. Its grooves still hold that blood. What else the stone does is TBD.
+    carried: The stone stays where it is. In the ascension ritual, Fehu is represented by sacrifices who bear the rune on their bodies.
+    chargeCondition: In the ritual, 1 willing sacrifice bearing the rune per charge.
 
   - name: Humanity
     rune: Mannaz

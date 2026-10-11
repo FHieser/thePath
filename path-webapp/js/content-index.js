@@ -177,6 +177,7 @@ const CONTENT_INDEX = {
       "details": "faction-details.yaml",
       "npcs": [
         "archon-of-mercy.yaml",
+        "the-ancestor.yaml",
         "the-bound-raven.yaml",
         "the-host.yaml",
         "timothy.yaml"
