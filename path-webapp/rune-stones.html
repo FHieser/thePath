@@ -46,6 +46,35 @@
             padding: 0.5rem 0.75rem;
         }
 
+        .rune-sidebar .toc-group {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-amber);
+            opacity: 0.6;
+            margin: 0.6rem 0 0.1rem 0.2rem;
+        }
+
+        .rune-sidebar .toc-entry.sub {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.75rem;
+            font-size: 0.78rem;
+        }
+
+        .rune-sidebar .toc-entry.sub .rune-glyph {
+            font-size: 1rem;
+            margin-right: 0;
+            width: 1rem;
+            text-align: center;
+        }
+
+        .rune-purpose {
+            opacity: 0.6;
+            font-weight: 400;
+        }
+
         .rune-content h2 {
             color: var(--rune-red);
             font-size: 1.3rem;
@@ -205,9 +234,21 @@
         }
 
         try {
-            const res = await fetch('../the-path-campaign/items/rune-stones.yaml');
+            const [res, runeRes] = await Promise.all([
+                fetch('../the-path-campaign/items/rune-stones.yaml'),
+                fetch('../the-path-campaign/flavor/runes.yaml')
+            ]);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const data = jsyaml.load(await res.text());
+
+            // Rune colours come from the Readings list, so both pages show a rune the same way
+            const runeColors = {};
+            if (runeRes.ok) {
+                const runeData = jsyaml.load(await runeRes.text());
+                for (const aett of runeData.aetts || []) {
+                    for (const r of aett.runes || []) runeColors[r.name] = r.color;
+                }
+            }
 
             let html = '';
             let tocHtml = '';
@@ -219,7 +260,7 @@
             // Charging — shared by every small rune
             if (data.charging) {
                 const c = data.charging;
-                tocHtml += `<a href="#charging" class="toc-entry">Charging</a>`;
+                tocHtml += `<div class="toc-group">Rules</div><a href="#charging" class="toc-entry">Charging</a>`;
                 html += `<h2 id="charging">Charging</h2>`;
                 html += `<div class="charge-stats">
                     <span class="charge-stat"><strong>Cost</strong>${escapeHtml(c.costPerCharge)} per charge</span>
@@ -234,9 +275,15 @@
 
             function runeCard(rune) {
                 const isOpen = rune.status === 'open';
-                tocHtml += `<a href="#${slugify(rune.name)}" class="toc-entry">${escapeHtml(rune.name)}</a>`;
-                return `<div id="${slugify(rune.name)}" class="rune-card${isOpen ? ' open' : ''}">
-                    <h3>${rune.glyph ? `<span class="rune-glyph">${escapeHtml(rune.glyph)}</span>` : ''}${escapeHtml(rune.name)}${rune.rune ? `<span class="rune-status">${escapeHtml(rune.rune)}</span>` : ''}${isOpen ? '<span class="rune-status">In design</span>' : ''}</h3>
+                const color = runeColors[rune.rune] || 'var(--rune-red)';
+                const glyph = rune.glyph ? `<span class="rune-glyph" style="color:${color}">${escapeHtml(rune.glyph)}</span>` : '';
+                // Rune name first, purpose in brackets: ᚲ Kenaz (Finding)
+                const title = rune.rune
+                    ? `${escapeHtml(rune.rune)} <span class="rune-purpose">(${escapeHtml(rune.name)})</span>`
+                    : escapeHtml(rune.name);
+                tocHtml += `<a href="#${slugify(rune.name)}" class="toc-entry sub">${glyph}<span>${title}</span></a>`;
+                return `<div id="${slugify(rune.name)}" class="rune-card${isOpen ? ' open' : ''}" style="border-left-color:${color}">
+                    <h3>${glyph}${title}${isOpen ? '<span class="rune-status">In design</span>' : ''}</h3>
                     ${rune.summary ? `<div class="rune-summary">${escapeHtml(rune.summary)}</div>` : ''}
                     ${field('Location', rune.location)}
                     ${field('Carried', rune.carried)}
@@ -248,21 +295,21 @@
 
             // Small runes
             if (data.smallRunes?.length) {
-                tocHtml += `<a href="#small-runes" class="toc-entry">Small Runes</a>`;
+                tocHtml += `<div class="toc-group">Small Runes</div>`;
                 html += `<h2 id="small-runes">Small Runes</h2>`;
                 for (const rune of data.smallRunes) html += runeCard(rune);
             }
 
             // Big runes
             if (data.bigRunes?.length) {
-                tocHtml += `<a href="#big-runes" class="toc-entry">Big Runes</a>`;
+                tocHtml += `<div class="toc-group">Big Runes</div>`;
                 html += `<h2 id="big-runes">Big Runes</h2>`;
                 for (const rune of data.bigRunes) html += runeCard(rune);
             }
 
             // Ascension
             if (data.ascension) {
-                tocHtml += `<a href="#ascension" class="toc-entry">The Ascension</a>`;
+                tocHtml += `<div class="toc-group">Ritual</div><a href="#ascension" class="toc-entry">The Ascension</a>`;
                 html += `<h2 id="ascension">The Ascension</h2>`;
                 html += `<div class="rune-card">
                     <div class="rune-body">${formatDescription(data.ascension.description)}</div>
