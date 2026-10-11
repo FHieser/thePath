@@ -1,6 +1,6 @@
 # Todo
+- Holzschwert
 
-- Add leviathan in meteorite crater loaction
 - Add rust clan items tobuild
 
 - Modify unstable mist location to trigger guardian projection event
@@ -13,16 +13,27 @@
 
 - redesign geothermal caverns
 
-- Questline for working with Netos
-  - Quests
-    - Destroy artifacts
-      - Natural flame places in the mist
-
 - do underground locations 
-  - Create Clan Hub
   - Do Deeper Levels
 
 - Crystal infested fire
+
+- Hidden locations
+  - Access via Mist traversal
+  - Can only be found via Circle Ash consumable
+    - Druid Location
+        - Connect to Tiki
+          - tiki Island
+  - Can be found via the unstable mist location, by bringing a certain trinket there
+    - Cat location
+      - Trinket
+
+- Amaris
+  - Story for the Host: blood magic, maybe set in the burrows — it yields the Regeneration rune (Eihwaz ᛇ)
+  - Timothy carries the Finding rune (add to his NPC file)
+  - Eisenwald: Inheritance rune still in its socket
+  - Runen Weltuntergang / Dauerhafte Veränderung
+
 
 - Finish starfall city
   - Top Level
@@ -35,14 +46,3 @@
   - Dungeon
     - **Forgotten Oubliette** - Secret dungeon cells below the dungeon, prisoners who were left to starve in darkness
   - Hidden temple
-
-- Hidden locations
-  - Access via Mist traversal
-  - Can only be found via Circle Ash consumable
-    - Druid Location
-        - Connect to Tiki
-          - tiki Island
-  - Can be found via the unstable mist location, by bringing a certain trinket there
-    - Cat location
-      - Trinket
-
