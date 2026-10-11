@@ -85,6 +85,8 @@ features:
       8–10: Teleport to a random location on the current Path (GM's choice). The player does not immediately know where they are.
 
       Items that aid mushroom circle navigation negate this effect.
+
+      GM note: The blood stone is the great rune Fehu, and the blood in its grooves belongs to the tribe the Ancestor slaughtered on it. Once per day it can charge a rune stone laid in its grooves. See items/rune-stones.yaml (Big Runes — Sacrifice) and lore/factions/factionless/npcs/the-ancestor.yaml.
     questions: |
       What does the symbol feel like to a player who traces it with a finger? Does anything happen when someone other than Croa presses blood into the grooves?
 
