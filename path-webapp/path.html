@@ -147,7 +147,7 @@
             html += `<h3 style="margin:1rem 0 0.4rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--accent-amber);font-weight:700">Underground</h3>`;
             html += buildTable(ex.gridUnderground, ex.rowLabels, true, globalMinCol, globalMaxCol, globalMinRow, globalMaxRow);
           }
-          html += `<div style="margin-top:1rem"><a href="path-creator.html?load=${encodeURIComponent(ex._id)}" class="btn btn-primary">Load into Creator</a></div>`;
+
           return html;
         }
       })();

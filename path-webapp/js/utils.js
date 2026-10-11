@@ -385,7 +385,7 @@ async function loadModifierDescriptions() {
 
 // ---------------------------------------------------------------------------
 // Path library loader — discovers, loads, and sorts all YAML paths.
-// Used by path-library.js (index page cards), paths.js (path-creator storage),
+// Used by path-library.js (index page cards)
 // and paths.html (path library page).
 // ---------------------------------------------------------------------------
 const PATH_LIBRARY_URL = '../the-path-campaign/example-path/path-library/';
