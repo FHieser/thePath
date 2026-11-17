@@ -295,6 +295,37 @@
     description: |
       Break the talisman to tear a screaming shape free of it: the ghost falls upon a single enemy of your choice within sight and destroys it outright. If the target is a Leviathan-class Colossus, the ghost instead destroys one of its segments that is not marked as vital. Every PC in the party marks 1 HP as the ghost tears free on its way out.
 
+- name: Folding Lab
+  type: Blood
+  usage: Reusable
+  tier: 2
+  tradeValue: 2.5
+  flavor: "The Red Lab, folded into a case the length of a forearm — copper, glass, and a red cell at the centre that doesn't start until you bleed into it."
+  effect:
+    category: Utility
+    description: |
+      A portable workshop for the crafting downtime move. Before a crafting action, mark 1 HP to start the cell, then choose one setting:
+
+      - **Yield:** add +0.5 to the rest multiplier (Short Rest ×1.75, Long Rest ×2.5).
+      - **Precision:** raise the crafting ceiling for this action from 2 to 3 trade points.
+
+      If every item produced by the crafting action is a Blood item, apply both settings.
+
+      The cell runs on one start per crafting action. It does not replace a better facility: at a location with its own crafting rules, such as the Red Lab, use whichever is better, not both.
+
+- name: Separator Roll
+  type: Blood
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.25
+  flavor: "He calls them separators. They take what's wanted and leave the rest asleep."
+  effect:
+    category: Utility
+    description: |
+      Use the tools to inject hemomancy into a plague crystal, isolating it from the network, then cut it free. Gain 1 Crystal. The harvest does not advance the Awakening Counter at a Crystal-Plague location, or the Wake counter in Starfall City.
+
+      The edges dull on the crystal. The roll is spent after one harvest.
+
 # ============================================================
 # ROOTBOUND ITEMS
 # ============================================================
