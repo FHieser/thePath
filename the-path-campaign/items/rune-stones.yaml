@@ -87,9 +87,9 @@ bigRunes:
     glyph: ᚨ
     status: open
     summary: The rune of ascension.
-    location: The ascension site in the Eisenwald — a forest that turned to iron when the ritual was performed. A temple holds 7 sockets, one per rune. Location file TBD.
+    location: The Iron Altar at the center of the Eisenwald — a forest that turned to iron when the ritual was performed. Godhood is carved into one of the altar's seven standing stones. See the Eisenwald location.
     carried: Carved on the body of the one who ascends.
-    chargeCondition: Each charge costs the one who ascends 1 max HP, permanently. Max HP lost this way cannot be restored during the ritual.
+    chargeCondition: In the ritual, Godhood is represented by the one who ascends. The rune is carved into their body, which costs them 7 max HP, permanently.
 
   - name: Sacrifice
     rune: Fehu
@@ -100,24 +100,26 @@ bigRunes:
       The blood stone beneath the Great Mangrove in The Reeds. The stone is the rune itself, made from the blood of the many killed on it. Its grooves still hold that blood.
 
       The stone is a well. Once per day, a rune stone laid in the grooves gains 1 charge without anyone marking HP — the blood in the stone pays for it. This ignores the rune's own charge condition.
-    carried: The stone stays where it is. In the ascension ritual, Fehu is represented by sacrifices who bear the rune on their bodies.
-    chargeCondition: In the ritual, 1 willing sacrifice bearing the rune per charge.
+    carried: The stone stays where it is. Fehu is also carved into one of the Iron Altar's standing stones.
+    chargeCondition: In the ritual, Sacrifice is represented by seven willing people, each bearing the rune on their body. The ritual does not kill them. It takes what they are.
 
   - name: Humanity
     rune: Mannaz
     glyph: ᛗ
     status: open
-    summary: The rune of the self — getting to know oneself.
-    location: TBD.
+    summary: The rune of the self — the identity of the god.
+    location: TBD. Mannaz is also carved into one of the Iron Altar's standing stones.
     carried: Carved on the body of the one who ascends.
-    chargeCondition: TBD.
+    chargeCondition: TBD. In the ritual, Humanity binds the other runes together, and their combination sets the god's domain. What represents it is TBD.
 
 ascension:
   description: |
-    The ascension ritual takes place at the Godhood rune's site. It needs 49 charges in total.
+    The ascension ritual makes a minor god. It takes place at the Iron Altar in the Eisenwald and needs the power of seven runes, enclosed in the altar's seven standing stones — 49 charges in total.
 
-    Four runes are required and must be fully charged (7 charges each, 28 in total): Godhood (Ansuz), Sacrifice (Fehu), Humanity (Mannaz) and Fate (Perthro).
+    Three standing stones have the big runes carved into them: Godhood (Ansuz), Sacrifice (Fehu) and Humanity (Mannaz). They are not charged with rune stones. Each needs something in the ritual to represent it (see each big rune's charge condition).
 
-    The site has 7 slots, one rune each. The other 3 slots take any other runes, each fully charged (21 charges). A partly charged rune does not count. These runes only fill the ritual.
+    The other four standing stones each have a slot for a small rune stone with all 7 charges. One must be Fate (Perthro). The other three can be any rune. A partly charged stone does not count, and the ritual cannot begin until all four slots are filled.
+
+    When the ritual begins, it triggers the Apotheosis event (TBD). Afterwards, each slotted rune stone has 2 charges left and can be taken out again.
   outcome: |
-    What the one who ascends becomes is the GM's call. For the ancestor, the GM decides which runes he used. If a PC attempts the ritual, the GM offers options based on which runes filled it.
+    The one who ascends becomes a minor god. The GM sets the god's domain from the combination of runes that filled the ritual — Humanity is what binds them into one identity. The ascension also changes the land around the altar in a way that fits that domain. For the Ancestor, the GM decides which runes he used; the Eisenwald turning to iron is a clue to his domain.

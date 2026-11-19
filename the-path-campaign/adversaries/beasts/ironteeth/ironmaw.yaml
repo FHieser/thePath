@@ -1,0 +1,42 @@
+name: Ironmaw
+category: Solo
+description: The largest of the Ironteeth, as big as a horse, its grey coat crossed with old scars. The spikes on its back are long and heavy, and they grind against each other when it moves. The rune Fehu covers its whole flank. When it opens its jaws, the iron teeth go back further than they should.
+motives: Lead the hunt, claim the strongest prey, drive the pack, guard the iron forest
+lore: The Ironteeth descend from the seven who gave themselves at the Ancestor's ascension. The ritual took what they were and left beasts, and those beasts have bred in the Eisenwald ever since. The Ironmaw leads them. When the forest has smelled enough blood, it comes itself.
+tiers:
+- tier: 3
+  difficulty: 18
+  thresholds:
+    major: 21
+    severe: 40
+  hp: 10
+  stress: 6
+  attack:
+    bonus: '+6'
+    name: Iron Maw
+    range: Melee
+    damage: 3d12+6 physical
+  experience:
+  - name: Pack Leader
+    value: 4
+  - name: Track by Blood
+    value: 4
+  features:
+  - name: Relentless (2)
+    type: Passive
+    description: The Ironmaw can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight it.
+  - name: Iron Blood
+    type: Passive
+    description: When the Ironmaw takes the spotlight, if it has any marked Hit Points, it clears **1 HP**.
+  - name: Blood Frenzy
+    type: Action
+    cost: Mark a Hit Point
+    description: Drive the pack into a frenzy. One ally within Far range takes the spotlight right away. **Spend 1 Fear** for each additional ally to spotlight. Their attacks this turn get **+2**.
+  - name: Pounce
+    type: Action
+    cost: Mark a Stress
+    description: Leap up to **Far** range into Melee with a target and make an attack. On a success, deal **3d12+6** physical damage. The target is knocked down and **Vulnerable** until they next take the spotlight.
+  - name: Iron Roar
+    type: Action
+    cost: Spend a Fear
+    description: All PCs within **Far** range mark **1 Stress**. Every Ironteeth within Far range clears **1 HP**.

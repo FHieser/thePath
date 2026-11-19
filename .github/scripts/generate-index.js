@@ -13,6 +13,7 @@ const OUTPUT = path.join(REPO_ROOT, 'path-webapp/js/content-index.js');
 const FOLDERS = [
   'the-path-campaign/adversaries/antagonists',
   'the-path-campaign/adversaries/beasts',
+  'the-path-campaign/adversaries/beasts/ironteeth',
   'the-path-campaign/adversaries/mist',
   'the-path-campaign/adversaries/spider-queen',
   'the-path-campaign/adversaries/crystal-plague',

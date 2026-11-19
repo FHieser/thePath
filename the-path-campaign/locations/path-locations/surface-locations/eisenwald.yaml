@@ -1,0 +1,97 @@
+name: Eisenwald
+tier: 3
+category: Exploration
+tarotCard:
+  type: Swords
+  number: 14
+description: |
+  A primeval forest turned to iron around an open temple at its center. A meteor shower falls without end in its colourless sky. One rune stone still sits in the temple's standing stones. The Ironteeth hunt anything that bleeds among the trees.
+tagline: In the forest of iron, a ritual happened long ago. Eyes follow you through the razor-sharp leaves.
+impulses: |
+  Cut everyone who passes through, hunt whatever bleeds, hold open the way to godhood
+difficulty: 17
+modifiers:
+  - name: Unstable
+  - name: Wild Beasts
+potentialAdversaries: Ironshade, Ironfang, Ironmaw
+features:
+  - name: The Iron Forest
+    type: Passive
+    description: |
+      A primeval forest of giant trees, their trunks wider than a house and their crowns lost high overhead. Everything is grey. The earth is grey in a dozen shades, the leaves are dark, almost black, and the sky above is a strange colourless tone. A meteor shower falls through it without end.
+
+      Up close, the trees are metal. The bark is iron, cold and hard under the hand. The moss on it is iron. The leaves are thin iron plates with edges as sharp as razors. Where the trees open into clearings, the ground is covered in fallen leaves, and every step has to be placed carefully. A river of quicksilver runs through the forest, heavy and bright, reflecting the sky.
+
+      The forest does not feel dead. Trunks creak. Branches shift. Every so often a leaf comes loose and falls, and the crash of it rings through the trees.
+
+      At the outer edge, the trees are still wood at their roots, with the iron starting partway up the trunk. The further in, the more of everything is metal. At the center stands a temple. The iron spread outward from there.
+
+      Each time a player passes through the forest, to reach the temple at its center or to leave it again, they make a **Finesse reaction roll**. On a failure, they **mark 1 Hit Point**. Crossing the location from one side to the other takes two passes: in to the center, and back out.
+    questions: |
+      If the moment is held, why do the leaves still fall? What is the forest growing from?
+
+  - name: The Iron Altar
+    type: Passive/Action
+    description: |
+      At the center of the forest the trees give way to a temple. It was built of stone, and it has turned to iron like everything else. It has no walls and no roof, just a wide, open floor of rough slabs. A heptagram is cut into the floor, with a raised platform at its center.
+
+      A tall standing stone rises at each of the seven points. Three of them form a triangle, and on these the runes are carved straight into the stone: **Godhood (Ansuz)** at the top, **Sacrifice (Fehu)** to the left, **Humanity (Mannaz)** to the right. Each of the other four has a slot for a rune stone. Three of the slots are empty. The fourth holds the **Inheritance rune stone (Othala)**.
+
+      Above the temple the sky stands still, all but the meteor shower. The stars fall without end and never stop.
+
+      **Endless Stars:** The sky above the altar is always open. A player at the altar can make Wandering Stars readings without the once-per-rest limit: up to **3 readings** each per Path. Each reading after the third costs Stress, 1 more than the last: the 4th costs **1 Stress**, the 5th **2 Stress**, and so on.
+
+      **The Last Rune:** The Inheritance rune stone holds **2 charges**. It can be lifted from its slot. Doing so raises the Awakening counter (see Awakening).
+    questions: |
+      Who pried the six runes from their slots, and why did they leave Inheritance behind?
+
+  - name: The Ascension
+    type: Action
+    description: |
+      The ascension ritual makes a minor god. It needs the power of seven runes, enclosed in the seven standing stones of the Iron Altar.
+
+      The four slotted stones must each hold a rune stone with all **7 charges**. One of them must be **Fate (Perthro)**. The other three can be any rune. A stone with fewer charges does not count, and the ritual cannot begin until all four slots are filled.
+
+      The three carved stones need to be charged differently. Each needs something in the ritual to stand for it:
+
+      - **Godhood (Ansuz)** is the one who ascends. The rune is carved into their body, and they stand on the central platform. The carving costs them **7 max Hit Points, permanently**.
+      - **Sacrifice (Fehu)** is seven willing people, each bearing the rune on their body. Each one stands at a point of the heptagram. The ritual does not kill them. It takes what they are.
+      - **Humanity (Mannaz)** is the identity of the god. In the ritual it binds the other runes together, and their combination sets the god's domain. What stands for it is TBD.
+
+      **The ritual.** When the four slotted stones are full and all three big runes are represented, the ritual begins. This triggers the **Apotheosis** event (TBD), which decides how it ends: what the one who ascends becomes, and what happens to the land around the altar.
+
+      Afterwards, each slotted rune stone has **2 charges** left and can be taken out again.
+    questions: |
+      What was the Ancestor's domain, that his ascension turned a forest to iron?
+
+  - name: Awakening
+    type: Counter System + Reaction
+    description: |
+      The werecats follow blood. Start the **Awakening** counter at 0 on each visit. Increase it when:
+
+      - any creature marks a Hit Point in the forest or at the altar: **+1** per Hit Point
+      - something else disturbs the forest (combat, breaking iron, loud noise): **+1**
+      - a PC interacts with the altar (lifts or sets a rune stone, begins the ritual): **+4**
+      - the GM spends 1 Fear: **+1**
+
+      While the Ironshade is following the party, each of these increases the counter by **1 more**.
+
+      **1–2:** Signs. Tracks in the iron leaves, a shape between the trunks, eyes in the dark.
+
+      **3:** An **Ironshade** starts following the party. It keeps its distance and watches. When a player says their character is watching their surroundings, the GM may call for an **Instinct reaction roll** to spot it.
+
+      - If a PC is singled out — alone, or separated from the party — the Ironshade attacks them once and then retreats.
+      - If the Ironshade is attacked, it tries to run. If it gets away, the counter jumps to 7.
+
+      **7:** The **Ironmaw** attacks with its pack of **Ironfangs**. The Ironshade joins them if it is still following. Build the pack from the full Battle Point budget. The GM gains **2 Fear**.
+
+      The counter resets when the party leaves the Eisenwald.
+    questions: |
+      What does an Ironshade see when it looks at a catfolk?
+
+featureQuestions:
+  - Where are the six runes now, and who carries them?
+  - Why do the leaves still fall, if the moment is held?
+  - Does anything of the seven remain in the oldest of the Ironteeth?
+  - What would a second ascension do to a forest that is already iron?
+  - Why did the Ancestor need this sky in particular?

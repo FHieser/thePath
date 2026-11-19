@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 53** (34 Surface + 16 Underground + 3 Special)
+**Total Locations: 54** (35 Surface + 16 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (34 locations)
+## 🌄 Surface Locations (35 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -44,6 +44,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Dark Forest](./surface-locations/dark-forest.yaml)                 | Lightless old-growth crossing where finding the way costs hours — and running out of hours costs a short rest |
 | ☑        | ☑     | [Cloudburst Inn](./surface-locations/cloudburst-inn.yaml)           | Storm-lashed cobbled road with one inn on it, kept by a headless Host who trades drinks for stories |
 | ☑        | ☑     | [The Deep Harbour](./surface-locations/the-deep-harbour.yaml)       | Tier 3 Mist Born harbour around a crater the mist drains into — a watching Eye on the lighthouse, leviathans rising to the dock, hostile to anyone carrying flame |
+| ☑        | ☑     | [Eisenwald](./surface-locations/eisenwald.yaml)                     | Tier 3 iron forest around the Ancestor's ascension altar — razor leaves, an endless meteor shower, and the Ironteeth following the blood |
 
 ---
 
@@ -85,7 +86,7 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 53** | **Unassigned: 25** (32.1% remaining)
+**Assigned: 54** | **Unassigned: 24** (30.8% remaining)
 
 ### 🔮 Major Arcana (17 of 22 assigned)
 
@@ -133,7 +134,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Wands  | Blood Fern Valley    |
 | King of Wands   |                      |
 
-### ⚔️ Minor Arcana - Swords (6 of 14 assigned)
+### ⚔️ Minor Arcana - Swords (7 of 14 assigned)
 
 | Card             | Location |
 | ---------------- | -------- |
@@ -150,7 +151,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Page of Swords   |                  |
 | Knight of Swords |          |
 | Queen of Swords  | Coldspire Keep   |
-| King of Swords   |          |
+| King of Swords   | Eisenwald |
 
 ### ⚙️ Minor Arcana - Discs (Pentacles) (11 of 14 assigned)
 

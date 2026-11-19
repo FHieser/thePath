@@ -1,0 +1,34 @@
+name: Ironfang
+category: Bruiser
+description: A grey cat larger than a lion, lean and low to the ground, with a ridge of iron spikes running down its back. Its teeth are iron. On its flank, a darker pattern in the fur forms the rune Fehu. It moves through the iron forest without a sound until it is close enough to strike.
+motives: Follow blood, circle and flank, drag down the wounded, hunt as a pack
+lore: The Ironteeth descend from the seven who gave themselves at the Ancestor's ascension. The ritual took what they were and left beasts, and those beasts have bred in the Eisenwald ever since. Nothing of the catfolk remains in them except the rune in their fur.
+tiers:
+- tier: 3
+  difficulty: 17
+  thresholds:
+    major: 21
+    severe: 40
+  hp: 8
+  stress: 4
+  attack:
+    bonus: '+4'
+    name: Iron Teeth
+    range: Melee
+    damage: 3d10+2 physical
+  experience:
+  - name: Track by Blood
+    value: 3
+  - name: Ambush
+    value: 2
+  features:
+  - name: Iron Blood
+    type: Passive
+    description: When the Ironfang takes the spotlight, if it has any marked Hit Points, it clears **1 HP**.
+  - name: Pack Tactics
+    type: Passive
+    description: If the Ironfang makes a successful standard attack and another Ironteeth is within Melee range of the target, it deals **4d10+2** physical damage instead of its standard damage.
+  - name: Steel Volley
+    type: Action
+    cost: Mark a Stress
+    description: Shake the iron spikes loose from the Ironfang's back. Make an attack against all targets within **Close** range. Targets the Ironfang succeeds against take **2d10+4** physical damage. The spikes grow back.

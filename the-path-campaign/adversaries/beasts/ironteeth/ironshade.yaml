@@ -1,0 +1,33 @@
+name: Ironshade
+category: Skulk
+description: Smaller and leaner than the Ironfang, with long legs and a narrow head. The spikes on its back lie flat against its spine, and its grey coat blends into the iron trunks. On its flank, a darker pattern in the fur forms the rune Fehu. It watches from just beyond where the eye can follow, and it is gone before anyone can turn.
+motives: Follow at a distance, single out the alone, strike and vanish, bring the pack
+lore: The Ironteeth descend from the seven who gave themselves at the Ancestor's ascension. The ritual took what they were and left beasts, and those beasts have bred in the Eisenwald ever since. The Ironshade is the pack's eyes. It finds what is bleeding in the forest and follows it until the others come.
+tiers:
+- tier: 3
+  difficulty: 15
+  thresholds:
+    major: 16
+    severe: 30
+  hp: 4
+  stress: 4
+  attack:
+    bonus: '+3'
+    name: Iron Claws
+    range: Melee
+    damage: 2d8+7 physical
+  experience:
+  - name: Stealth
+    value: 3
+  - name: Track by Blood
+    value: 3
+  features:
+  - name: Iron Blood
+    type: Passive
+    description: When the Ironshade takes the spotlight, if it has any marked Hit Points, it clears **1 HP**.
+  - name: Strike and Fade
+    type: Passive
+    description: After the Ironshade makes a standard attack, it can move up to **Close** range.
+  - name: Unseen Teeth
+    type: Passive
+    description: When the Ironshade makes a successful attack, you gain **1 Fear**.

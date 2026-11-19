@@ -8,6 +8,7 @@
 const ADVERSARY_FOLDERS = [
   { key: 'antagonists',    name: 'Antagonists',          path: '../the-path-campaign/adversaries/antagonists/' },
   { key: 'beasts',         name: 'Beasts',               path: '../the-path-campaign/adversaries/beasts/' },
+  { key: 'ironteeth',      name: 'Ironteeth',            path: '../the-path-campaign/adversaries/beasts/ironteeth/' },
   { key: 'mist',           name: 'Mist Creatures',       path: '../the-path-campaign/adversaries/mist/' },
   { key: 'spider-queen',   name: "Spider Queen's Brood", path: '../the-path-campaign/adversaries/spider-queen/' },
   { key: 'crystal-plague', name: 'Crystal-Plague',       path: '../the-path-campaign/adversaries/crystal-plague/' },
