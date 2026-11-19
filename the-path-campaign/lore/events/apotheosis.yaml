@@ -1,0 +1,59 @@
+# PLACEHOLDER — structure and intent only. Full design via /create-event later.
+name: Apotheosis
+category: Exploration # TBD
+description: A mortal stands at the center of seven runes and stops being one. (placeholder tagline)
+impulses: Make a god, take the price, change the land # TBD
+potentialAdversaries: TBD
+
+trigger: |
+  Activate when both are true — every rune the ascension ritual needs is in place at an ascension site, and the one who ascends begins the ritual.
+
+  Examples: the four slotted stones of the Iron Altar hold fully charged rune stones and Godhood, Sacrifice and Humanity are represented; a PC steps onto the central platform with the rune carved into their body; an NPC completes the ritual the party failed to stop.
+
+  End condition: TBD — the ritual completes, is interrupted, or fails.
+
+tiers:
+  - tier: 3
+    difficulty: 17
+    features:
+      - name: The One Who Ascends
+        type: Passive
+        description: |
+          **TBD (activation).** When this event activates, designate the one who ascends. Their NPC or PC entry governs who they are; the event governs what happens to them. The GM gains Fear (amount TBD).
+        questions: TBD
+
+      - name: The Rite
+        type: Passive
+        description: |
+          **TBD (spine).** A counter or countdown that structures the ritual from its first step to its end.
+        questions: TBD
+
+      - name: The Price
+        type: Passive
+        description: |
+          **TBD.** What happens to the seven sacrifices who represent Sacrifice (Fehu). The ritual does not kill them. It takes what they are.
+        questions: TBD
+
+      - name: Domain
+        type: Passive
+        description: |
+          **TBD.** Humanity (Mannaz) binds the ritual's runes into one identity. The GM sets the new god's domain from the combination of runes that filled the ritual.
+        questions: TBD
+
+      - name: The Changed Land
+        type: Passive
+        description: |
+          **TBD.** The ascension changes the land around the site in a way that fits the god's domain.
+        questions: TBD
+
+      - name: Broken Rite
+        type: Reaction
+        description: |
+          **TBD (boundary).** What happens if the ritual is interrupted or fails — to the one who ascends, the sacrifices, the runes and the site.
+        questions: TBD
+
+featureQuestions:
+  - What does the new god want first?
+  - Who notices when a god is made — and who comes to see?
+  - Can an ascension be undone?
+  - What does the ritual take from the seven, and do they know beforehand?
