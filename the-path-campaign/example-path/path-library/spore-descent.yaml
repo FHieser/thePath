@@ -1,0 +1,33 @@
+name: Spore Descent
+tier: 3
+
+rowLabels:
+  "-1": "C'"
+  "0": "B'"
+  "1": "A'"
+  "2": A
+
+gridSurface:
+  "2,-1": { location: mantaray-tree, modifiers: [Stable] }
+  "4,-1": the-beacon
+  "-1,0": { location: mist-gate, modifiers: [Mist-Touched] }
+  "0,0": { location: shrinewood, modifiers: [Mushroom Circle, Mist-Protected] }
+  "1,0": { location: hollow-woods, modifiers: [Mushroom Circle] }
+  "2,0": { location: dark-forest, modifiers: [Cave Mouth, Mushroom Circle] }
+  "4,0": { location: stone-works, modifiers: [Cave Mouth] }
+  "0,1": blood-fern-valley
+  "5,1": { location: coldspire-keep, modifiers: [Mist-Touched, Cave Mouth] }
+  "6,1": hibernia
+  "0,2": { location: village-in-the-mist, modifiers: [Stable] }
+  "5,2": { location: sacred-mountain-pass, modifiers: [Stable] }
+
+gridUnderground:
+  "0,0": black-beach
+  "1,0": flooded-network
+  "2,0": sporerain-bridge
+  "3,0": fungal-depths
+  "4,0": mining-complex
+  "5,0": sacred-underground
+  "0,1": black-falls
+  "5,1": needle-tunnels
+  "0,2": { location: underground-access-card, modifiers: [Stable] }
