@@ -65,6 +65,17 @@
 
       Each Short Rest, in plain sight, the spider spins a small open-weave net and releases it to the wind. It drifts away on the breeze — visible to anyone watching, gone within moments. The net carries encoded information: scent-traces, the shape of where you have been, the faces of those nearby. The Queen's drones intercept these nets. She accumulates knowledge of your movements and will act on what she learns when the time is right.
 
+- name: Health Rod
+  type: General
+  usage: Consumable
+  tier: 1
+  tradeValue: 0.5
+  flavor: "A red rod of something gummy. Has healing properties."
+  effect:
+    category: Restoration
+    description: |
+      Clear 1 Hit Point.
+
 # ============================================================
 # VILLAGE ITEMS
 # ============================================================
