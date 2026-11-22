@@ -22,6 +22,7 @@ smallRunes:
     glyph: ᚲ
     status: done
     summary: Reveal what waits on the Path ahead.
+    stone: Whereabouts open.
     chargeCondition: The ritual must be performed under an open sky. The GM decides where the sky is open above the mist.
     passive: |
       The holder can read runes in the sky. When they make a Wandering Stars reading, the GM also reveals the runes that stand among the stars that night.
@@ -33,6 +34,7 @@ smallRunes:
     glyph: ᚱ
     status: done
     summary: Step into the mist between locations on the current Path without getting lost.
+    stone: One is held by the Archon of Mercy (see the Meteorite Lab).
     chargeCondition: The ritual must be performed on a Stable location.
     passive: |
       If the Path ends while the party is on an Unstable location, the holder draws 2 location cards for each off-Path step instead of 1 and chooses which one the party moves to. The other card goes back into the deck.
@@ -48,6 +50,7 @@ smallRunes:
     glyph: ᛟ
     status: done
     summary: Claim a location so the mist cannot take it.
+    stone: One still sits in its slot at the Iron Altar in the Eisenwald, holding 2 charges.
     chargeCondition: Each charge also requires giving up goods worth 1 Trade Point (see Crafting & Trading). The goods are consumed by the ritual.
     passive: |
       While in a location made Stable by this rune, the holder can choose to gain 1 fewer Mist token whenever they would gain Mist tokens.
@@ -61,6 +64,7 @@ smallRunes:
     glyph: ᛈ
     status: done
     summary: Rewrite what a character is.
+    stone: The Ancestor's Fate stone was taken from the Iron Altar in the Eisenwald. Whereabouts open.
     chargeCondition: The blood must be taken unwillingly. A PC's own blood does not take.
     passive: |
       Fate pulls harder on the holder's rolls. When the holder rolls with Hope, they gain 1 additional Hope. When they roll with Fear, the GM gains 1 additional Fear. On a critical success, they gain 1 additional Hope.
@@ -72,6 +76,7 @@ smallRunes:
     glyph: ᛇ
     status: done
     summary: Return from what should have killed you.
+    stone: Whereabouts open.
     chargeCondition: The ritual must be performed directly after a fight, before anyone rests.
     passive: |
       When the holder rests, they clear 1 additional Hit Point.
@@ -80,6 +85,32 @@ smallRunes:
 
       - **Against death:** they clear 1 Hit Point right after marking the last one. They are left with 1 Hit Point, stay standing, and make no death move.
       - **Against the mist:** they lose Mist tokens until they are one below the number that would consume them.
+
+  - name: Harvest
+    rune: Jera
+    glyph: ᛃ
+    status: done
+    summary: Life to life. Growing nature's gifts.
+    stone: None. It has to be created at the Rune Forge in Hibernia.
+    location: Carved above the grow beds in the Ancestor's tower in Hibernia.
+    chargeCondition: The holder must have grown a plant themselves, from a seed or a cutting, and cared for it. In the ritual, the blood is poured onto its roots. It must still be alive. What counts is up to the GM, but it should have been part of play.
+    passive: |
+      When the holder rolls to find out how much they harvest or gather, they can reroll. They must take the new result.
+    description: |
+      The holder can spend charges to turn them into goods. Each charge spent becomes goods worth **0.25 Trade Points**.
+
+  - name: Light
+    rune: Sowilo
+    glyph: ᛊ
+    status: done
+    summary: Burn the mist away.
+    stone: None. It has to be created at the Rune Forge in Hibernia.
+    location: Carved above the hot pool at the Black Shore in Hibernia.
+    chargeCondition: The holder must be clean. They cannot have any Mist tokens when the ritual is performed.
+    passive: |
+      Once per rest, when an ally within Close range would gain Mist tokens, they gain 1 fewer.
+    description: |
+      The holder can spend 1 charge to remove **2 Mist tokens** from themselves or from a character they touch.
 
 bigRunes:
   - name: Godhood

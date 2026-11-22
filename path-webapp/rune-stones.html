@@ -286,6 +286,7 @@
                     <h3>${glyph}${title}${isOpen ? '<span class="rune-status">In design</span>' : ''}</h3>
                     ${rune.summary ? `<div class="rune-summary">${escapeHtml(rune.summary)}</div>` : ''}
                     ${field('Location', rune.location)}
+                    ${field('Stone', rune.stone)}
                     ${field('Carried', rune.carried)}
                     ${field('Charge condition', rune.chargeCondition)}
                     ${field('Passive', rune.passive)}
