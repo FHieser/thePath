@@ -1,0 +1,100 @@
+name: Sporerain Bridge
+tier: 2
+category: Exploration
+tarotCard:
+  type: Swords
+  number: 7
+description: |
+  A deep chasm crosses an underground cavern, spanned by a bridge of woven mycelium cables. Spores fall from the ceiling without end and settle on everything. Below the bridge, the chasm walls drop through three levels to the bottom, where something has cut a perfectly round hollow into the rock.
+tagline: The beautiful rain of spores leaves the lungs clogged and the breath short — in the darkness below, rewards await.
+impulses: |
+  Smother those who linger in falling spores, pull climbers deeper with richer finds, make every crossing cost speed or breath
+difficulty: 14
+modifiers:
+  - name: Unstable
+  - name: Underground
+potentialAdversaries: Fungal Creatures (Spore Cloud, Mycelium Mass)
+features:
+  - name: Sporerain Bridge
+    type: Passive
+    description: |
+      A deep chasm cuts across the cavern. A bridge of thick, woven mycelium cables spans it at the top, connecting the passages on either side. Spores fall constantly from the cavern ceiling and settle on everything (see **Sporerain**).
+
+      Below the bridge, the chasm walls drop through three levels. Each level is a ledge or side cave reached by climbing down the walls (see **The Climb**). Level 3 is the bottom.
+    questions: |
+      Where do the spores come from — what grows on the ceiling that no one can see? Who wove the bridge, or did it grow on its own?
+
+  - name: Sporerain
+    type: Passive/Counter
+    description: |
+      Spores fall constantly and settle on everything. Track a shared **Spore counter**, starting at **0**.
+
+      - Each action roll made at this location: **+1**.
+      - Each time the party arrives on a level, the spores lie thicker the deeper they go: **Level 1 +1**, **Level 2 +2**, **Level 3 +3**.
+      - The GM can spend **1 Fear** to add **+2**.
+
+      When the counter reaches **8**, every PC marks **1 Stress** and **1 HP**, and the counter resets to **0**.
+
+      **Protection:** if the whole party covers mouth and nose (wet cloths, masks), the counter fills at **10** instead of 8.
+    questions: |
+      What do the spores look like as they fall — and how does breathing change as the counter climbs? What do the PCs cough up afterwards?
+
+  - name: The Bridge
+    type: Action
+    description: |
+      The mycelium bridge is wide and easy to walk, but every movement shakes spores loose from the cables. The party chooses how to cross:
+
+      - **All at once:** a quick crossing. The bridge sags and shudders under the weight: **+6** to the Spore counter.
+      - **One by one:** **+1** per PC crossing, and the GM gains **1 Fear**.
+    questions: |
+      How does the bridge react to weight — does it tighten, sag, or move on its own? What can the PCs see of the levels below while they cross?
+
+  - name: The Climb
+    type: Counter System
+    description: |
+      The chasm walls can be climbed using the mycelium growth and broken rock. The climb has three sections: from the bridge to Level 1, from Level 1 to Level 2, and from Level 2 to Level 3. Each section takes one **group Agility roll**:
+
+      - If at least half the group succeeds, the party reaches the next level (up or down).
+      - On a failure, all PCs mark **1 Stress** and the party stays where it is.
+      - On a failure with Fear, all PCs mark **1 Stress**, and one PC (players choose) loses their grip and falls to the bottom of the chasm. Fall damage depends on the section: **3d8+3** from the top section, **2d8+3** from the middle, **1d8+3** from the bottom.
+
+      **Crossing:** when climbing a section, the party can climb across to the opposite wall instead of straight up or down, ending on the other side of the chasm. No extra roll is needed.
+    questions: |
+      Which handholds are growth and which are rock — and which give way? What does a PC who fell to the bottom see before the others arrive?
+
+  - name: Level 1 — Healing Mushrooms
+    type: Action
+    description: |
+      The first ledge below the bridge is a shallow cave thick with old mycelium. Thin red mushrooms grow from it in clusters. **2** of them are ripe each Path. They count as **Health Rods** (clear 1 Hit Point).
+
+      Picking a mushroom shakes loose a burst of spores: **+2** to the Spore counter.
+    questions: |
+      What do the mushrooms taste like? Has anyone else been harvesting here?
+
+  - name: Level 2 — The Buried Traveler
+    type: Action
+    description: |
+      Spores have drifted into the back of this ledge and piled up knee-deep. A hand and the edge of a pack stick out of the drift. The body is old, the clothes long rotted.
+
+      Digging the body out stirs up the drift: **+3** to the Spore counter. In the pack is a rune stone carved with **ᚲ**, the **Finding** rune (Kenaz), holding **1 charge** (see Rune Stones).
+    questions: |
+      Who was the traveler, and what were they trying to find? Did they climb down, or fall?
+
+  - name: Level 3 — The Crystal Origin
+    type: Action
+    description: |
+      At the bottom of the chasm, a perfectly round hollow is cut into the side of the rock, smooth as polished stone, as if a sphere had been scooped out. The floor is wet with a heavy, cold condensate. Mushrooms grow in it, and the oldest have turned to crystal, standing in clusters like frost.
+
+      **Condensed mist:** each PC who enters the hollow gains **2 Mist tokens**.
+
+      **Crystals:** the hollow holds crystals worth **4 Trade Points** in total. They are excellent crafting ingredients and count as immediately usable raw materials. Once taken, they are gone for good. If the location appears on a later Path, the hollow is empty.
+
+      **The tunnel:** behind the growth on the far wall, a narrow tunnel is hidden, grown almost shut. It leads up to the top of the chasm. Forcing it open takes a **group Strength roll**. On a success, the party squeezes through to the top. On a failure, every PC marks **1 Stress**, the growth releases spores (**+2** to the Spore counter), and they can try again.
+    questions: |
+      What could cut stone this cleanly? Why is the condensate so cold — and why is the air in the hollow so clear? Does a fungril feel anything when touching the crystals?
+
+featureQuestions:
+  - What grows on the cavern ceiling that keeps the spores falling?
+  - Who first found the hollow at the bottom, and did they understand what made it?
+  - Why does the mist gather in the hollow as condensate instead of hanging in the air?
+  - Will whatever cut the hollow come back — and what happens to the crystals if it does?

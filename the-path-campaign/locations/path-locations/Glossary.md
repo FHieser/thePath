@@ -2,11 +2,11 @@
 
 _Complete reference for all locations in the Path Network system_
 
-**Total Locations: 54** (35 Surface + 16 Underground + 3 Special)
+**Total Locations: 56** (36 Surface + 17 Underground + 3 Special)
 
 ---
 
-## 🌄 Surface Locations (35 locations)
+## 🌄 Surface Locations (36 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                 |
 | -------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -45,10 +45,11 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [Cloudburst Inn](./surface-locations/cloudburst-inn.yaml)           | Storm-lashed cobbled road with one inn on it, kept by a headless Host who trades drinks for stories |
 | ☑        | ☑     | [The Deep Harbour](./surface-locations/the-deep-harbour.yaml)       | Tier 3 Mist Born harbour around a crater the mist drains into — a watching Eye on the lighthouse, leviathans rising to the dock, hostile to anyone carrying flame |
 | ☑        | ☑     | [Eisenwald](./surface-locations/eisenwald.yaml)                     | Tier 3 iron forest around the Ancestor's ascension altar — razor leaves, an endless meteor shower, and the Ironteeth following the blood |
+| ☑        | ☐     | [Hibernia](./surface-locations/hibernia.yaml)                       | Tier 3 frozen wasteland around the Ancestor's lair — a serpent ring that drinks rune charges, a tower sunk beneath the ice, and the forge where runes are made (placeholder) |
 
 ---
 
-## 🪨 Underground Locations (16 locations)
+## 🪨 Underground Locations (17 locations)
 
 | Assigned | Ready | Location                                                            | Description                                                        |
 | -------- | ----- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -68,6 +69,7 @@ _Complete reference for all locations in the Path Network system_
 | ☑        | ☑     | [The Red Cellar](./underground-locations/red-cellar.yaml)           | Winery vaults turned hemomancy lab, haunted by the Archon's experiment (Linked to The Monastery) |
 | ☑        | ☑     | [Reed Marsh Caverns](./underground-locations/reed-marsh-caverns.md) | Underground wetland with bioluminescent grotto and hermit dwelling |
 | ☑        | ☑     | [Sacred Underground](./underground-locations/sacred-underground.md) | Hallowed sanctuary beneath the earth                               |
+| ☑        | ☑     | [Sporerain Bridge](./underground-locations/sporerain-bridge.yaml)   | Tier 2 mycelium bridge over a spore-raining chasm — climb three levels for healing mushrooms, a buried Finding rune, and a crystal hollow at the bottom |
 
 ---
 
@@ -86,9 +88,9 @@ _Complete reference for all locations in the Path Network system_
 _Physical card mappings for location representation during play. Select cards based on visual fit and thematic resonance._
 
 **Total Cards: 78** (22 Major + 14 Wands + 14 Swords + 14 Discs + 14 Goblets)
-**Assigned: 54** | **Unassigned: 24** (30.8% remaining)
+**Assigned: 56** | **Unassigned: 22** (28.2% remaining)
 
-### 🔮 Major Arcana (17 of 22 assigned)
+### 🔮 Major Arcana (18 of 22 assigned)
 
 | Card                  | Location             |
 | --------------------- | -------------------- |
@@ -96,7 +98,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | I The Magician        |                      |
 | II The High Priestess | The Reeds            |
 | III The Empress       |                      |
-| IV The Emperor        |                      |
+| IV The Emperor        | Hibernia             |
 | V The Hierophant      | The Giant Walls      |
 | VI The Lovers         | Misty Waters         |
 | VII The Chariot       | Underground Access   |
@@ -134,7 +136,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | Queen of Wands  | Blood Fern Valley    |
 | King of Wands   |                      |
 
-### ⚔️ Minor Arcana - Swords (7 of 14 assigned)
+### ⚔️ Minor Arcana - Swords (8 of 14 assigned)
 
 | Card             | Location |
 | ---------------- | -------- |
@@ -144,7 +146,7 @@ _Physical card mappings for location representation during play. Select cards ba
 | 4 of Swords      | Mist Gate        |
 | 5 of Swords      | Lost Flame       |
 | 6 of Swords      |          |
-| 7 of Swords      |          |
+| 7 of Swords      | Sporerain Bridge |
 | 8 of Swords      |          |
 | 9 of Swords      | Needle Tunnels   |
 | 10 of Swords     | Barnacle Gardens |

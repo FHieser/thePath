@@ -1,15 +1,19 @@
 # PLACEHOLDER — work in progress. The Ancestor's lair and the site of Humanity (Mannaz).
-# Still open: the great hall and its rooms, the Rune Forge, modifiers, tarot card,
-# tagline, impulses, adversaries, featureQuestions, and the Glossary entry.
+# Still open: the great hall and its rooms, the Rune Forge, tagline, impulses,
+# adversaries and featureQuestions.
 name: Hibernia
 tier: 3
 category: Exploration # TBD
+tarotCard:
+  type: Major
+  number: 4
 description: |
   A frozen wasteland around a giant frozen lake. At its center, a serpent ring carved into the stone beneath the ice is the door to the Ancestor's tower, sunk beneath the lake, where he made his runes and shaped the god he would become.
 tagline: TBD
 impulses: TBD
 difficulty: 17
-modifiers: [] # TBD
+modifiers:
+  - name: Unstable
 potentialAdversaries: TBD
 features:
   - name: The Frozen Lake
