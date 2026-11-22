@@ -18,6 +18,9 @@
         <div class="breadcrumb">
           <a href="paths.html">← Path Library</a>
         </div>
+        <p id="off-path-link" style="display:none;margin-bottom:1rem">
+          <a class="btn btn-primary" href="#">🌫️ Off-Path Travel from this Path</a>
+        </p>
         <div id="path-content"></div>
       </main>
       <footer>
@@ -65,6 +68,9 @@
           const meta = [ex.tier ? `Tier ${ex.tier}` : null, ex.personal_ranking ? `Difficulty ${ex.personal_ranking}` : null].filter(Boolean).join(" · ");
           subtitleEl.textContent = meta;
           contentEl.innerHTML = buildPathHTML(ex);
+          const offPathLink = document.getElementById("off-path-link");
+          offPathLink.querySelector("a").href = `off-path.html?path=${encodeURIComponent(id)}`;
+          offPathLink.style.display = "block";
         } catch (e) {
           titleEl.textContent = "Path not found";
           contentEl.innerHTML = '<p style="opacity:0.7">Could not load path data.</p>';

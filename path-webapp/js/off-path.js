@@ -52,12 +52,61 @@ async function loadLocations() {
       isStable: false,
     });
 
+    await applyPathFromUrl();
+
     renderAvailableLocations();
     updateCounts();
   } catch (error) {
     console.error('Error loading locations:', error);
     document.getElementById('available-list').innerHTML =
       '<p style="color: var(--danger-red);">Error loading locations. Please refresh the page.</p>';
+  }
+}
+
+// If opened as off-path.html?path=<path-library id>, pre-mark that path's grid:
+// every placed location becomes a Path location, and cells the path flags as
+// Stable (or locations that are Stable on their own card) are marked Stable.
+async function applyPathFromUrl() {
+  const pathId = new URLSearchParams(window.location.search).get("path");
+  if (!pathId) return;
+  const banner = document.getElementById("loaded-path");
+  try {
+    const res = await fetch(`../the-path-campaign/example-path/path-library/${encodeURIComponent(pathId)}.yaml`);
+    if (!res.ok) throw new Error("Not found");
+    const path = jsyaml.load(await res.text());
+
+    // Location files load under ids with "-card" stripped, so match on that.
+    const normalise = (id) => String(id).replace(/-card$/, "");
+    const cells = [...Object.values(path.gridSurface || {}), ...Object.values(path.gridUnderground || {})];
+    const pathIds = new Set();
+    const stableIds = new Set();
+    cells.forEach((cell) => {
+      const locId = typeof cell === "object" ? cell.location : cell;
+      if (!locId) return;
+      pathIds.add(normalise(locId));
+      const mods = typeof cell === "object" && Array.isArray(cell.modifiers) ? cell.modifiers : [];
+      if (mods.some((m) => String(m).toLowerCase() === "stable")) stableIds.add(normalise(locId));
+    });
+
+    availableLocations.forEach((loc) => {
+      if (pathIds.has(loc.id)) loc.isPath = true;
+      if (stableIds.has(loc.id)) loc.isStable = true;
+    });
+
+    // The village hub is a grid marker, not a drawable card.
+    const missing = [...pathIds].filter((id) => id !== "village-in-the-mist" && !availableLocations.some((loc) => loc.id === id));
+    if (missing.length) console.warn("Path locations not found in the off-path pool:", missing);
+
+    if (banner) {
+      banner.innerHTML = `Path loaded: <a href="path.html?id=${encodeURIComponent(pathId)}">${escapeHtml(path.name || pathId)}</a> — ${pathIds.size} locations marked as Path`;
+      banner.style.display = "block";
+    }
+  } catch (e) {
+    console.warn(`Could not load path "${pathId}":`, e);
+    if (banner) {
+      banner.textContent = `Could not load path "${pathId}".`;
+      banner.style.display = "block";
+    }
   }
 }
 
