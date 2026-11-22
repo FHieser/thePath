@@ -22,7 +22,7 @@ smallRunes:
     glyph: ᚲ
     status: done
     summary: Reveal what waits on the Path ahead.
-    stone: Whereabouts open.
+    stone: One lies with a long-dead traveler on Level 2 of Sporerain Bridge, holding 1 charge.
     chargeCondition: The ritual must be performed under an open sky. The GM decides where the sky is open above the mist.
     passive: |
       The holder can read runes in the sky. When they make a Wandering Stars reading, the GM also reveals the runes that stand among the stars that night.
