@@ -63,9 +63,8 @@ async function loadLocations() {
   }
 }
 
-// If opened as off-path.html?path=<path-library id>, pre-mark that path's grid:
-// every placed location becomes a Path location, and cells the path flags as
-// Stable (or locations that are Stable on their own card) are marked Stable.
+// If opened as off-path.html?path=<path-library id>, the draw pool is limited to
+// that path's grid locations; cells the path flags as Stable are marked Stable.
 async function applyPathFromUrl() {
   const pathId = new URLSearchParams(window.location.search).get("path");
   if (!pathId) return;
@@ -88,8 +87,9 @@ async function applyPathFromUrl() {
       if (mods.some((m) => String(m).toLowerCase() === "stable")) stableIds.add(normalise(locId));
     });
 
+    // Restrict the draw pool to this path's locations (Vanishing Mist stays in).
+    availableLocations = availableLocations.filter((loc) => pathIds.has(loc.id) || loc.id === "vanishing-mist");
     availableLocations.forEach((loc) => {
-      if (pathIds.has(loc.id)) loc.isPath = true;
       if (stableIds.has(loc.id)) loc.isStable = true;
     });
 
@@ -98,7 +98,7 @@ async function applyPathFromUrl() {
     if (missing.length) console.warn("Path locations not found in the off-path pool:", missing);
 
     if (banner) {
-      banner.innerHTML = `Path loaded: <a href="path.html?id=${encodeURIComponent(pathId)}">${escapeHtml(path.name || pathId)}</a> — ${pathIds.size} locations marked as Path`;
+      banner.innerHTML = `Path loaded: <a href="path.html?id=${encodeURIComponent(pathId)}">${escapeHtml(path.name || pathId)}</a> — drawing only from its ${availableLocations.filter((l) => l.id !== "vanishing-mist").length} locations · <a href="off-path.html">use all locations</a>`;
       banner.style.display = "block";
     }
   } catch (e) {
