@@ -1,0 +1,80 @@
+# PLACEHOLDER — work in progress. The Ancestor's lair and the site of Humanity (Mannaz).
+# Still open: the great hall and its rooms, the Rune Forge, modifiers, tarot card,
+# tagline, impulses, adversaries, featureQuestions, and the Glossary entry.
+name: Hibernia
+tier: 3
+category: Exploration # TBD
+description: |
+  A frozen wasteland around a giant frozen lake. At its center, a serpent ring carved into the stone beneath the ice is the door to the Ancestor's tower, sunk beneath the lake, where he made his runes and shaped the god he would become.
+tagline: TBD
+impulses: TBD
+difficulty: 17
+modifiers: [] # TBD
+potentialAdversaries: TBD
+features:
+  - name: The Frozen Lake
+    type: Passive
+    description: |
+      A white waste under a low grey sky. Snow covers everything, deep and smooth, and the wind never stops. Nothing grows here, and nothing moves but the snow.
+
+      In the middle of the waste lies a huge frozen lake. Out on the ice, the only sounds are the wind and, now and then, a deep crack somewhere below. At the center, the snow gives way to clear ice. Beneath it lies a stone floor, and on the floor a giant serpent is carved into the stone, coiled in a ring with its tail in its mouth.
+
+      The cold here is bitter. It cuts through clothing and settles into the bones.
+
+      When crossing the lake to the serpent ring, or leaving it again, each player makes a **Strength reaction roll**. On a failure, they **mark 1 Stress**.
+    questions: |
+      Why does the snow never cover the ice above the ring?
+
+  - name: The Serpent Ring
+    type: Passive
+    description: |
+      Up close, the serpent is enormous. Its body is as thick as a person is tall, and every scale is cut sharp into the stone beneath the ice. Seven scales along its back are larger than the rest, spaced evenly around the ring. The serpent's eyes are open. Its tail is in its mouth.
+
+      **The Sign:** A character carrying the **Finding rune stone (Kenaz)** who makes a Wandering Stars reading and chooses Hibernia as its subject sees **Humanity (Mannaz)** among the stars of that reading.
+
+      **Feeding the Serpent:** When a character walks onto the ice above the ring, the serpent drains the charges from every rune stone they carry. The charges sink down through the ice, and for each one, one of the seven large scales begins to glow. The holder chooses which stones are drained first, but they cannot stop it. Lit scales stay lit, even when the players leave the location.
+
+      When the seventh scale lights, the serpent **lets go of its tail**. The ring splits open where its jaws were, the ice above melts in a perfect circle, and a stair leads down into the dark. From then on the door stays open, and the serpent drains nothing more.
+    questions: |
+      What does the serpent do with the charges it drinks?
+
+  - name: The Tower
+    type: Passive/Action
+    description: |
+      The stair winds down through the rock beneath the ring. The tower is built downward, floor below floor, with the stair running along its walls. Through the ceiling, the ice groans now and then.
+
+      The walls along the stair are grow beds. Black earth is packed into deep stone shelves, row on row, all the way down, and things grow in them: pale mushrooms, hanging roots, moss. A rune is carved above every shelf: **Harvest (Jera)**. The further down, the warmer and damper the air, rising from somewhere below.
+
+      At the bottom, the stair opens into a great hall beneath the tower, with several rooms leading off from it.
+
+      **Harvest:** Once per Path, one PC can spend a rest working the beds. They gather goods worth **0.25 × 1d4 Trade Points**.
+    questions: |
+      Who tended these beds after the Ancestor was gone?
+
+  - name: The Great Hall
+    type: Passive
+    description: |
+      **TBD.** The hub beneath the tower. Several rooms lead off from it: the Black Shore, the Rune Forge, and others still to be decided.
+    questions: TBD
+
+  - name: The Black Shore
+    type: Passive/Action
+    description: |
+      One of the doorways off the hall opens into a cavern filled with steam. After the cold above, the air is warm and wet and heavy to breathe.
+
+      The floor is black sand, fine and soft, sloping down to a pool that fills most of the cavern. The water is hot. It steams, and in places it bubbles up from somewhere deep below.
+
+      A waterfall pours out of the far wall. Meltwater from the lake breaks through a crack high in the rock and falls in a long white sheet into the pool. Where the ice-cold water meets the hot, the steam is thickest, and it rolls across the sand in slow waves. Above the pool, a rune is cut into the rock: **Light (Sowilo)**.
+
+      **The Hot Pool:** A PC who rests here and bathes in the pool removes **2 Mist tokens**. The mist cannot stand the heat.
+    questions: |
+      What burns so hot, deep beneath a frozen lake?
+
+  - name: The Rune Forge
+    type: Action
+    description: |
+      **TBD.** One of the rooms off the hall. Small rune stones are created here, by a blood ritual — including Harvest (Jera) and Light (Sowilo), which exist nowhere else as stones. Creating a rune is how a PC learns what Humanity (Mannaz) means for them.
+    questions: TBD
+
+featureQuestions:
+  - TBD
