@@ -70,6 +70,19 @@ function envelope(ctx, t, { attack = 0.01, hold = 0, release = 0.3, peak = 1 }) 
     return g;
 }
 
+// Envelope for sustained sounds: fade in, hold, fade out, filling exactly `dur`.
+function sustain(ctx, t, dur, peak, { attack = Math.min(0.6, dur * 0.3), release = Math.min(0.9, dur * 0.4) } = {}) {
+    return envelope(ctx, t, { attack, hold: Math.max(0, dur - attack - release), release, peak });
+}
+
+// An oscillator gliding from f to `to` over the sound's length.
+function glide(ctx, type, f, to, t, dur) {
+    const o = osc(ctx, type, f, t, dur);
+    o.frequency.setValueAtTime(f, t);
+    if (to !== f) o.frequency.exponentialRampToValueAtTime(to, t + dur);
+    return o;
+}
+
 function filter(ctx, type, freq, q = 0.7) {
     const f = ctx.createBiquadFilter();
     f.type = type;
@@ -428,6 +441,94 @@ const SOUNDS = {
     rest(ctx, dest, t, p) {
         return p.dur ?? 0.5;
     },
+
+    // ── Base sounds (WIP palette) ─────────────────────────────────────────
+
+    // Deep tones a fraction of a Hz apart, so they beat slowly: felt more than heard.
+    lowDrone(ctx, dest, t, p, rnd, pj) {
+        const dur = p.dur ?? 3;
+        const f = (p.pitch ?? 48) * pj;
+        const to = p.to != null ? p.to * pj : f;
+        const beat = p.beat ?? 0.7;
+        const lp = filter(ctx, 'lowpass', 500);
+        [[1, 0, 1], [1, beat, 0.9], [0.5, 0, 0.6], [2, beat * 1.5, 0.4], [3, 0, 0.15]].forEach(([r, off, a]) => {
+            const g = ctx.createGain();
+            g.gain.value = a;
+            glide(ctx, 'sine', f * r + off, to * r + off, t, dur).connect(g).connect(lp);
+        });
+        lp.connect(sustain(ctx, t, dur, (p.gain ?? 1) * 0.3)).connect(dest);
+        return dur;
+    },
+
+    // A thin glassy tone with a slow shimmer (two tones a few Hz apart) and slight vibrato.
+    highDrone(ctx, dest, t, p, rnd, pj) {
+        const dur = p.dur ?? 3;
+        const f = (p.pitch ?? 1100) * pj;
+        const to = p.to != null ? p.to * pj : f;
+        const beat = p.beat ?? 3;
+        const sum = ctx.createGain();
+        const vibDepth = ctx.createGain();
+        vibDepth.gain.value = f * 0.003;
+        osc(ctx, 'sine', 5 + rnd(), t, dur).connect(vibDepth);
+        [[1, 0, 1], [1, beat, 0.7], [1.5, 0, 0.18], [2.01, 0, 0.12]].forEach(([r, off, a]) => {
+            const o = glide(ctx, 'sine', f * r + off, to * r + off, t, dur);
+            vibDepth.connect(o.frequency);
+            const g = ctx.createGain();
+            g.gain.value = a;
+            o.connect(g).connect(sum);
+        });
+        sum.connect(sustain(ctx, t, dur, (p.gain ?? 1) * 0.08)).connect(dest);
+        return dur;
+    },
+
+    // A floating, throbbing tone: volume pulses at `rate` (the "wub"), pitch drifts slowly.
+    hover(ctx, dest, t, p, rnd, pj) {
+        const dur = p.dur ?? 3;
+        const f = (p.pitch ?? 180) * pj;
+        const to = p.to != null ? p.to * pj : f;
+        const rate = p.rate ?? 6;
+        const lp = filter(ctx, 'lowpass', 1000, 1);
+        const main = glide(ctx, 'triangle', f, to, t, dur);
+        const driftDepth = ctx.createGain();
+        driftDepth.gain.value = f * 0.04;
+        osc(ctx, 'sine', 0.25 + rnd() * 0.2, t, dur).connect(driftDepth).connect(main.frequency);
+        main.connect(lp);
+        const subGain = ctx.createGain();
+        subGain.gain.value = 0.6;
+        glide(ctx, 'sine', f * 0.5, to * 0.5, t, dur).connect(subGain).connect(lp);
+
+        const throb = ctx.createGain();
+        throb.gain.value = 0.55;
+        const lfo = osc(ctx, 'sine', rate, t, dur);
+        lfo.frequency.setValueAtTime(rate, t);
+        if (p.toRate) lfo.frequency.linearRampToValueAtTime(p.toRate, t + dur);
+        const depth = ctx.createGain();
+        depth.gain.value = 0.45;
+        lfo.connect(depth).connect(throb.gain);
+
+        const env = p.fade
+            ? sustain(ctx, t, dur, (p.gain ?? 1) * 0.35, { attack: 0.2, release: dur * 0.75 })
+            : sustain(ctx, t, dur, (p.gain ?? 1) * 0.35);
+        lp.connect(throb).connect(env).connect(dest);
+        return dur;
+    },
+
+    // Soft, dark, breathy noise that swells and fades and wavers like breath. Hiss's gentle twin.
+    hush(ctx, dest, t, p, rnd) {
+        const dur = p.dur ?? 2;
+        const breath = ctx.createGain();
+        breath.gain.value = 0.75;
+        const depth = ctx.createGain();
+        depth.gain.value = 0.25;
+        osc(ctx, 'sine', 0.6 + rnd() * 0.3, t, dur).connect(depth).connect(breath.gain);
+        noiseSource(ctx, t, dur)
+            .connect(filter(ctx, 'bandpass', p.pitch ?? 1600, 0.5))
+            .connect(filter(ctx, 'lowpass', 3200))
+            .connect(breath)
+            .connect(envelope(ctx, t, { attack: dur * 0.4, release: dur * 0.6, peak: (p.gain ?? 1) * 0.5 }))
+            .connect(dest);
+        return dur;
+    },
 };
 
 // ─── Sequencing ──────────────────────────────────────────────────────────────
@@ -546,6 +647,22 @@ function playWords(words, { onWord, onEnd } = {}) {
 
 const phrase = [];
 let wordsById = {};
+let baseSounds = [];
+
+function renderBaseSound(s, i) {
+    const variants = (s.variants || []).map((v, j) =>
+        `<button class="variant-btn" data-base="${i}" data-variant="${j}">${escapeHtml(v.label)}</button>`).join('');
+    return `
+        <div class="word-card base-card">
+            <button class="word-play" data-base="${i}" data-variant="-1" title="Play">
+                <span class="word-icon">▶</span>
+                <span class="word-name">${escapeHtml(s.name)}</span>
+            </button>
+            <p class="base-desc">${escapeHtml(s.description || '')}</p>
+            ${s.meaning ? `<p class="word-note">Proposed meaning: ${escapeHtml(s.meaning)}</p>` : ''}
+            ${variants ? `<div class="variant-row">${variants}</div>` : ''}
+        </div>`;
+}
 
 function renderWordCard(word) {
     const roots = (word.roots || []).map(r => `<span class="root-chip">${escapeHtml(r)}</span>`).join('');
@@ -582,6 +699,9 @@ function render(data) {
 
     document.getElementById('noise-intro').innerHTML = formatDescription(data.description || '');
 
+    baseSounds = data.base_sounds || [];
+    document.getElementById('noise-base').innerHTML = baseSounds.map(renderBaseSound).join('');
+
     document.getElementById('noise-words').innerHTML = categories.map(cat => {
         const inCat = words.filter(w => w.category === cat);
         if (!inCat.length) return '';
@@ -607,6 +727,17 @@ function render(data) {
 
 function wireEvents() {
     document.addEventListener('click', e => {
+        const base = e.target.closest('[data-base]');
+        if (base) {
+            const s = baseSounds[Number(base.dataset.base)];
+            const variant = Number(base.dataset.variant);
+            const sequence = variant >= 0 ? s.variants[variant].sequence : s.sequence;
+            const el = variant >= 0 ? base : base.closest('.base-card');
+            if (el.classList.contains('playing')) { stopAll(); setPlaying(null); return; }
+            setPlaying(el);
+            playWords([{ sequence }], { onEnd: () => setPlaying(null) });
+            return;
+        }
         const play = e.target.closest('[data-play]');
         if (play) {
             const card = play.closest('.word-card');

@@ -9,6 +9,69 @@ description: |
   only get the noise. Over time, players who listen closely can pick up the roots and start
   understanding pieces of it.
 
+# WIP — the six base sounds the language is being rebuilt from. Shown at the top of the Noise
+# page so each can be heard on its own. Meanings are proposals, not settled yet.
+base_sounds:
+  - id: low-drone
+    name: Low Drone
+    description: A deep, steady hum you feel in your chest, like a carrier idling.
+    meaning: We / weight / statement
+    sequence: [{ p: lowDrone, dur: 3.5 }]
+    variants:
+      - { label: Rising, sequence: [{ p: lowDrone, pitch: 40, to: 62, dur: 3 }] }
+      - { label: Falling, sequence: [{ p: lowDrone, pitch: 62, to: 38, dur: 3 }] }
+      - { label: Deeper, sequence: [{ p: lowDrone, pitch: 36, dur: 3.5, beat: 0.4 }] }
+
+  - id: flame-crackle
+    name: Flame Crackle
+    description: Embers popping, uneven and alive.
+    meaning: Flame / life / yes
+    sequence: [{ p: crackle, dur: 2.5, density: 28 }]
+    variants:
+      - { label: Flaring, sequence: [{ p: roar, dur: 2.2, gain: 0.9 }] }
+      - { label: Dying, sequence: [{ p: crackle, dur: 3, density: 35, dying: true }] }
+      - { label: Sparse, sequence: [{ p: crackle, dur: 2.5, density: 8 }] }
+
+  - id: hiss
+    name: Hiss
+    description: Sharp steam venting. Aggressive and bright.
+    meaning: Danger / foe / warning
+    sequence: [{ p: hiss, dur: 1.2, pitch: 5500 }]
+    variants:
+      - { label: Rising, sequence: [{ p: hiss, dur: 1.2, pitch: 3000, toPitch: 9000 }] }
+      - { label: Falling, sequence: [{ p: hiss, dur: 1.2, pitch: 9000, toPitch: 3000 }] }
+      - { label: Bursts, sequence: [{ p: hiss, dur: 0.25, pitch: 6000 }, { p: hiss, dur: 0.25, pitch: 6000, gap: 0.08 }, { p: hiss, dur: 0.25, pitch: 6000, gap: 0.08 }] }
+
+  - id: high-drone
+    name: High Drone
+    description: A thin, glassy tone hanging in the air, slightly shimmering.
+    meaning: Sacred / the god / attention
+    sequence: [{ p: highDrone, dur: 3.5 }]
+    variants:
+      - { label: Rising, sequence: [{ p: highDrone, pitch: 800, to: 1500, dur: 3 }] }
+      - { label: Falling, sequence: [{ p: highDrone, pitch: 1500, to: 750, dur: 3 }] }
+      - { label: Higher, sequence: [{ p: highDrone, pitch: 1900, dur: 3, beat: 5 }] }
+
+  - id: hover
+    name: Hovering
+    description: A tone that floats and throbs, like something suspended and slowly turning.
+    meaning: Movement / place / follow
+    sequence: [{ p: hover, dur: 3.5 }]
+    variants:
+      - { label: Slow, sequence: [{ p: hover, dur: 3.5, rate: 2.5 }] }
+      - { label: Fast, sequence: [{ p: hover, dur: 3, rate: 11 }] }
+      - { label: Drifting away, sequence: [{ p: hover, dur: 4, pitch: 200, to: 130, rate: 7, toRate: 2, fade: true }] }
+
+  - id: hush
+    name: Hushing
+    description: A soft, breathy "shhh", like wind or a calming whisper. Hiss's gentle twin.
+    meaning: Mist / quiet / calm / leave
+    sequence: [{ p: hush, dur: 2.5 }]
+    variants:
+      - { label: Long swell, sequence: [{ p: hush, dur: 4.5 }] }
+      - { label: Darker, sequence: [{ p: hush, dur: 2.5, pitch: 900 }] }
+      - { label: Repeated, sequence: [{ p: hush, dur: 0.7 }, { p: hush, dur: 0.7, gap: 0.1 }, { p: hush, dur: 0.7, gap: 0.1 }] }
+
 # The logic that holds the language together. Words that share a meaning share a sound, so the
 # language can be learned by ear, slowly, the way a scholar who followed a carrier might have.
 roots:
@@ -84,6 +147,18 @@ sounds:
   - id: rest
     description: Silence.
     params: "dur"
+  - id: lowDrone
+    description: "(Base sound, WIP) Deep beating hum, felt more than heard."
+    params: "pitch (Hz, ~35-70), to, beat (Hz between the beating tones), dur, gain"
+  - id: highDrone
+    description: "(Base sound, WIP) Thin glassy tone with a slow shimmer and slight vibrato."
+    params: "pitch (Hz, ~600-2000), to, beat, dur, gain"
+  - id: hover
+    description: "(Base sound, WIP) Floating, throbbing tone. Volume pulses, pitch drifts."
+    params: "pitch, to, rate (throbs per second), toRate, fade (true fades out like it drifts away), dur, gain"
+  - id: hush
+    description: "(Base sound, WIP) Soft, dark, breathy noise that swells and wavers."
+    params: "pitch (filter center, lower = darker), dur, gain"
 
 categories:
   - Greetings & Answers

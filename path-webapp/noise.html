@@ -98,6 +98,32 @@
         .word-note { font-size: 0.8rem; opacity: 0.7; font-style: italic; }
         .phrase-chip.playing, .sound-play.playing { border-color: var(--accent-amber); color: var(--accent-amber); }
 
+        .wip-tag {
+            font-size: 0.65rem;
+            vertical-align: middle;
+            padding: 0.1rem 0.4rem;
+            border-radius: 0.2rem;
+            border: 1px solid var(--accent-amber);
+            color: var(--accent-amber);
+            letter-spacing: 0.08em;
+        }
+        .base-hint { font-size: 0.85rem; opacity: 0.7; margin-bottom: 0.6rem; }
+        .base-desc, .variant-row { grid-column: 1 / -1; }
+        .base-desc { font-size: 0.82rem; opacity: 0.85; }
+        .variant-row { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+        .variant-btn {
+            font: inherit;
+            font-size: 0.75rem;
+            color: var(--text-light);
+            background: rgba(20, 70, 100, 0.35);
+            border: 1px solid var(--primary-blue);
+            border-radius: 0.2rem;
+            padding: 0.15rem 0.5rem;
+            cursor: pointer;
+        }
+        .variant-btn:hover { border-color: var(--accent-amber); }
+        .variant-btn.playing { border-color: var(--accent-amber); color: var(--accent-amber); }
+
         details.noise-ref { margin-top: 1rem; border-top: 1px solid var(--primary-blue); padding-top: 0.75rem; }
         details.noise-ref summary { cursor: pointer; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.5rem; }
         .roots-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
@@ -121,6 +147,12 @@
 
         <main>
             <div id="noise-intro" class="noise-intro"></div>
+
+            <section class="nav-section">
+                <h2>Base Sounds <span class="wip-tag">WIP</span></h2>
+                <p class="base-hint">The six sounds the language is built from. Try the variants to hear how rising, falling and pulsing change the feel.</p>
+                <div id="noise-base" class="word-grid"></div>
+            </section>
 
             <div class="phrase-bar">
                 <span class="phrase-label">Phrase</span>
