@@ -109,7 +109,7 @@ function bufferSource(ctx, buf, t) {
 // in the sequence. Params come straight from the YAML; anything left out uses its default.
 
 const SOUNDS = {
-    // Ground. Deep tones a fraction of a Hz apart, so they beat slowly: felt more than heard.
+    // Things. Deep tones a fraction of a Hz apart, so they beat slowly: felt more than heard.
     lowDrone(ctx, dest, t, p, rnd, pj) {
         const dur = p.dur ?? 3;
         const f = (p.pitch ?? 48) * pj;
@@ -125,7 +125,7 @@ const SOUNDS = {
         return dur;
     },
 
-    // Flame. Pops scattered through time. Density and loudness can ramp (density → toDensity,
+    // Life. Pops scattered through time. Density and loudness can ramp (density → toDensity,
     // gain → toGain): ramping both up makes the fire flare, ramping density down lets it die.
     crackle(ctx, dest, t, p, rnd) {
         const dur = p.dur ?? 1.2;
@@ -158,7 +158,7 @@ const SOUNDS = {
         return dur;
     },
 
-    // Danger. Bright, sharp noise, like steam venting; the filter can sweep (pitch → toPitch).
+    // Mist. Bright, sharp noise, like steam venting; the filter can sweep (pitch → toPitch).
     hiss(ctx, dest, t, p) {
         const dur = p.dur ?? 0.9;
         const from = p.pitch ?? 5000;
@@ -173,7 +173,7 @@ const SOUNDS = {
         return dur;
     },
 
-    // Sacred. A glassy tone with a slow shimmer (two tones a few Hz apart), slight vibrato, and
+    // The God. A glassy tone with a slow shimmer (two tones a few Hz apart), slight vibrato, and
     // deeper undertones an octave and two octaves below (`under` scales them; 0 removes them).
     highDrone(ctx, dest, t, p, rnd, pj) {
         const dur = p.dur ?? 3;
@@ -230,7 +230,7 @@ const SOUNDS = {
         return dur;
     },
 
-    // Mist. Soft, dark, breathy noise that swells, fades and wavers like breath. Hiss's gentle
+    // Tactics. Soft, dark, breathy noise that swells, fades and wavers like breath. Hiss's gentle
     // twin; the filter can sweep (pitch → toPitch) so it can recede or creep in.
     hush(ctx, dest, t, p, rnd) {
         const dur = p.dur ?? 2;
@@ -379,7 +379,12 @@ let shapeNames = new Set();
 
 function renderBaseSound(s, i) {
     const root = rootsByName[s.root];
-    const variants = (s.variants || []).map((v, j) => `
+    const steady = s.meaning ? `
+        <div class="variant-line">
+            <button class="variant-btn" data-base="${i}" data-variant="-1">▶ Steady</button>
+            <span class="variant-meaning">${escapeHtml(s.meaning)}</span>
+        </div>` : '';
+    const variants = steady + (s.variants || []).map((v, j) => `
         <div class="variant-line">
             <button class="variant-btn" data-base="${i}" data-variant="${j}">▶ ${escapeHtml(v.label)}</button>
             ${v.meaning ? `<span class="variant-meaning">${escapeHtml(v.meaning)}</span>` : ''}

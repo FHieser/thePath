@@ -19,20 +19,23 @@ Their speech is not a voice. It is the sound of what they are: the drone of some
 The cosmology pits **Fire Born = Everything (sound, presence)** against **Mist Born = Nothing (silence, absence)**. Lean into it:
 
 - Fire Born words **fill the air**. Drones hang, crackle lives.
-- The Mist root is the **hush**: the one soft sound in the language. Even when naming the mist, the Fire Born go quiet.
+- The Mist root is the **hiss**: water hitting a brazier. When a Fire Born names the mist, it makes the sound of itself being smothered. To them, the mist and danger are one and the same thing.
+- **Flame (Life) against hiss (Mist)** is the core opposition of the language. Death is the two together: a dying crackle doused by a hiss.
 
 ### Six roots, one per sound
 
-Each base sound is one root. Every word is one root on its own or a combination of them.
+Each base sound is one root with its own category. Every word is one root on its own or a combination of them.
 
 | Base sound | Root | Use it for |
 |---|---|---|
-| Low Drone | **Ground** | Places, weight, bodies, things, standing still |
-| Flame Crackle | **Flame** | Fire, life, the Fire Born, yes |
-| Hiss | **Danger** | Threat, foes, warning, no |
-| High Drone | **Sacred** | The god, relics, asking, attention |
-| Hovering | **Motion** | Movement, travel, pointing, following |
-| Hushing | **Mist** | The mist, the Mist Born, quiet, calm, death |
+| Low Drone | **Things** | Objects and places, here and there, the deep |
+| Flame Crackle | **Life** | We, the Fire Born, being alive, strength and weakness |
+| Hiss | **Mist** | The mist, the Mist Born, danger, threat, foes |
+| High Drone | **The God** | The god, holy things and artifacts (the same word), prayer, asking |
+| Hovering | **Motion** | Coming and going |
+| Hushing | **Tactics** | Waiting, hiding, quiet, holding position |
+
+A high tone is holy and a low tone is mundane: a relic is a high drone, an ordinary object a low one. Tactics is the one root players might guess straight away, because "shh" means "quiet" to humans too. That's intended: it gives them a foothold.
 
 ### Three shapes
 
@@ -40,38 +43,49 @@ A root can be said in different shapes. The shape changes the meaning:
 
 | Shape | How | Meaning |
 |---|---|---|
-| **Toward** | The sound rises in pitch | Approach, welcome, positive, a question |
-| **Away** | The sound falls in pitch, or recedes and fades | Departure, refusal, negative |
+| **Toward** | The sound rises in pitch | Approach, here, positive, a question |
+| **Away** | The sound falls in pitch, or recedes and fades | Departure, there, negative |
 | **Repeated** | The sound is said two or three times | Urgency, emphasis |
 
-Hello and Bye are the clearest example: both are Flame + Ground, said Toward (the drone rises, the crackle builds) or Away (the drone sinks, the crackle settles).
+Hello and Bye are the clearest example: both are Life + Things, said Toward ("alive, here": the drone rises, the crackle builds) or Away ("alive, there": the drone sinks, the crackle settles).
 
 ### Each root in its shapes
 
-Every base sound has three variants on the Noise page, and each variant is a word of its own. Rising and falling follow the Toward/Away shapes. The other variants change the root's intensity (deeper, sparser, faster, darker) and carry their own meaning.
+Every base sound has a steady form and three variants on the Noise page, and each one is a word of its own. Rising and falling follow the Toward/Away shapes. The other variants change the root's intensity (deeper, sparser, faster, darker) and carry their own meaning.
 
 | Root | Variant | Meaning |
 |---|---|---|
-| **Ground** | Rising | Here / arrive / come to this place |
-| | Falling | There / far away / gone from here |
+| **Things** | Steady | Thing / object / something |
+| | Rising | Here / this place / near |
+| | Falling | There / that place / far |
 | | Deeper | Below / underground / the deep |
-| **Flame** | Flaring | Strong / alight / anger |
-| | Dying | Weak / failing / going out |
-| | Sparse | Little / few / a spark of |
-| **Danger** | Rising | Danger coming / a threat approaches |
-| | Falling | Danger passing / the threat is gone |
-| | Bursts | Now! / alarm |
-| **Sacred** | Rising | Asking / a question / prayer |
-| | Falling | Forbidden / defiled |
-| | Higher | The god himself / divine attention |
-| **Motion** | Slow | Wander / drift / travel |
+| **Life** | Steady | We / the Fire Born / alive |
+| | Flaring | Strong / burning bright |
+| | Dying | Weak / fading / hurt |
+| | Sparse | A spark: small / few / young |
+| **Mist** | Steady | The mist / danger |
+| | Rising | The mist is coming / a threat approaches |
+| | Falling | The mist withdraws / the threat is gone |
+| | Bursts | Danger now! / alarm |
+| **The God** | Steady | Holy / artifact |
+| | Rising | Prayer / asking (What?) |
+| | Falling | Defiled / destroyed |
+| | Higher | The God himself |
+| **Motion** | Steady | Moving / travel |
+| | Coming | Come / approach / toward us |
+| | Going | Go / leave / away from us |
 | | Fast | Hurry / charge / flee |
-| | Drifting away | Leave / go away |
-| **Mist** | Long swell | The mist rising / it is coming in |
-| | Darker | The deep mist / the Nothing |
+| **Tactics** | Steady | Careful / a plan |
+| | Long swell | Wait / hold position |
+| | Darker | Hide / stay unseen |
 | | Repeated | Quiet! / be still |
 
-These are stored in the YAML as `meaning:` on each variant under `base_sounds`. When you add a variant, give it a meaning too.
+These are stored in the YAML under `base_sounds`: `meaning:` on the base sound for the steady form, and `meaning:` on each variant. When you add a variant, give it a meaning too.
+
+**Yes and No are combination words.** Each is an evaluation plus a direction:
+
+- **Yes** = Life flaring + Motion coming: "I burn bright, it comes to me."
+- **No** = Mist + Motion going: "Mist, away."
 
 ### Building a new word
 
@@ -79,22 +93,22 @@ These are stored in the YAML as `meaning:` on each variant under `base_sounds`. 
 2. **Decide the shape.** Is it toward, away, urgent, or neutral (steady)?
 3. **Let one root lead.** Make it the loudest, or put it first. Three equal roots sound like mush.
 
-**Example: "Carrier".** A carrier is a place (Ground) that holds the flame (Flame) and walks (Motion). So: a low drone with crackle on top and a slow hover underneath. Tag it `roots: [Ground, Flame, Motion]`.
+**Example: "Carrier".** A carrier is a thing (Things) that holds a living flame (Life) and walks (Motion). So: a low drone with crackle on top and a slow hover underneath. Tag it `roots: [Things, Life, Motion]`.
 
-**Example: "Fear".** Danger that comes from the mist, coming closer. So: a hush, then a hiss rising in pitch (Toward). Tag it `roots: [Mist, Danger, Toward]`.
+**Example: "Ambush".** Hiding (Tactics), then danger (Mist) coming at someone. So: a dark hush, then a hiss rising in pitch (Toward). Tag it `roots: [Tactics, Mist, Toward]`.
 
-**Example: "Hurry".** Motion, urgently. So: a fast hover, said twice. Tag it `roots: [Motion, Repeated]`.
+**Example: "Mortals".** Small flames (Life, sparse), many of them. So: a sparse crackle, said twice. Tag it `roots: [Life, Repeated]`.
 
 ### Rules of thumb
 
 1. **Never translate at the table.** The players hear only the noise. Their understanding should come from repetition and the roots, not from you.
 2. **Keep words short:** about 1 to 3 seconds. Phrases are built by chaining words in the phrase bar. Long words make phrases tiring.
-3. **One meaning, one sound.** Don't let a root drift. If Hiss means Danger, never use it for something friendly, or the players can't learn it.
+3. **One meaning, one sound.** Don't let a root drift. If Hiss means Mist, never use it for something friendly, or the players can't learn it.
 4. **The shape carries the most meaning.** If you're unsure how a word should sound, decide first whether it's toward or away.
 
 ### Using it in play
 
-- Use the **phrase bar** for conversation: queue words with **+**, then press **Speak**. "Mist Born · Danger · Follow" is a whole message.
+- Use the **phrase bar** for conversation: queue words with **+**, then press **Speak**. "Mist Born · Here · Hide" is a whole message.
 - Add **What?** after a word to make it a question: "Relic · What?" is "Is that a relic?"
 - The Fire Born talk through their flame as well. Describe the brazier brightening toward allies and dimming toward threats while the sound plays. Together, the sound and the flame are all the players get.
 - When players start guessing roots correctly, let them. Their sense of slowly understanding is the payoff.
@@ -105,19 +119,19 @@ These are stored in the YAML as `meaning:` on each variant under `base_sounds`. 
 
 All sound is made in the browser with the **Web Audio API**: oscillators (pure tones), noise, filters and volume envelopes, connected together. The engine is `path-webapp/js/noise.js`. You don't need to read it to make words, but knowing what each sound does helps when tuning parameters.
 
-### Low Drone (`lowDrone`): Ground
+### Low Drone (`lowDrone`): Things
 
 Several deep tones (around 48 Hz by default) plus an octave below and a couple of harmonics above. The trick is **beating**: two of the tones sit a fraction of a Hz apart (`beat`), so they drift in and out of step and the volume swells and dips slowly. A single pure tone sounds electronic; a beating pair sounds like a presence in the room. `pitch` → `to` glides it up (Toward) or down (Away).
 
-### Flame Crackle (`crackle`): Flame
+### Flame Crackle (`crackle`): Life
 
 Random pops of different sizes. Each pop is a tiny burst of noise that fades in a few milliseconds. The engine places pops one at a time by asking "how long until the next one?", based on the density at that moment. So `density` → `toDensity` makes the fire build up (flaring) or thin out (dying) naturally, and `gain` → `toGain` makes it louder or quieter over time.
 
-### Hiss (`hiss`): Danger
+### Hiss (`hiss`): Mist
 
 Bright noise (random static) through a filter that keeps only the high, sharp part, around 5,000 to 9,000 Hz. The filter can sweep (`pitch` → `toPitch`): sweeping up sounds like pressure building, sweeping down like steam letting off. `attack` and `release` set how fast it fades in and out. Short values give a sharp hiss; long values give a soft swell.
 
-### High Drone (`highDrone`): Sacred
+### High Drone (`highDrone`): The God
 
 A glassy tone (650 Hz by default) with a second tone a few Hz away for a shimmer, a slight vibrato (the pitch wavers about five times a second), and two **undertones** an octave and two octaves below. The undertones blend in as part of one sound, giving it body instead of a thin whistle. `under: 0` removes them for a purer, higher tone.
 
@@ -125,9 +139,9 @@ A glassy tone (650 Hz by default) with a second tone a few Hz away for a shimmer
 
 A soft mid tone (180 Hz by default) whose volume pulses on and off at `rate` times per second, the "wub-wub", while its pitch drifts slowly. Slow rates feel like floating; fast rates feel like something charging. `rate` → `toRate` makes the throb speed up (pulling you along) or slow down. `fade: true` lets it drift away into silence.
 
-### Hushing (`hush`): Mist
+### Hushing (`hush`): Tactics
 
-The same noise as the hiss, but filtered much lower and softer (around 1,600 Hz), with a slow swell in and out and a gentle wavering in volume, like breath. Lower `pitch` makes it darker. `pitch` → `toPitch` makes it creep in or recede. Hiss and hush are deliberately twins: the same material, one sharp and one gentle, for Danger and Mist.
+The same noise as the hiss, but filtered much lower and softer (around 1,600 Hz), with a slow swell in and out and a gentle wavering in volume, like breath. Lower `pitch` makes it darker. `pitch` → `toPitch` makes it creep in or recede. Hiss and hush are deliberately twins: the same material, one sharp and one gentle, for Mist and Tactics. Keep Tactics words soft and slow and Mist words sharp so the two stay apart.
 
 ### The room
 
@@ -141,7 +155,7 @@ Every word goes through a reverb (an echo built from decaying noise, so it sound
 - id: carrier                    # unique, kebab-case
   word: Carrier                  # shown on the button
   category: Things               # must match one of `categories`
-  roots: [Ground, Flame, Motion] # roots and shapes it uses (shown as tags)
+  roots: [Things, Life, Motion]  # roots and shapes it uses (shown as tags)
   note: Optional GM note shown under the word.
   sequence:
     - { p: lowDrone, pitch: 44, dur: 2.5 }

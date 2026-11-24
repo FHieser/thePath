@@ -6,103 +6,109 @@ description: |
 
   The words below are the GM's dictionary. Each word is built from six base sounds and synthesized
   live by the Noise page in the webapp (no audio files). Never translate for the players: they only
-  get the noise. Each base sound is one root, so players who listen closely can learn the language
-  slowly, root by root.
+  get the noise. Each base sound is one root with its own category, and each variant of it is a word
+  of its own, so players who listen closely can learn the language slowly, root by root.
 
   See fire-born-noise-guide.md in this folder for how to make new words and how the synthesis works.
 
 # The six base sounds. Each one is a single root of the language (see `roots`). Shown at the top
-# of the Noise page so each can be heard on its own, with variants showing the shapes.
+# of the Noise page so each can be heard on its own; every variant carries its own meaning.
 base_sounds:
   - id: low-drone
     name: Low Drone
-    root: Ground
+    root: Things
     description: A deep, steady hum you feel in your chest, like a carrier idling.
+    meaning: "Thing / object / something"
     sequence: [{ p: lowDrone, dur: 3.5 }]
     variants:
-      - { label: Rising, meaning: "Here / arrive / come to this place", sequence: [{ p: lowDrone, pitch: 40, to: 62, dur: 3 }] }
-      - { label: Falling, meaning: "There / far away / gone from here", sequence: [{ p: lowDrone, pitch: 62, to: 38, dur: 3 }] }
+      - { label: Rising, meaning: "Here / this place / near", sequence: [{ p: lowDrone, pitch: 40, to: 62, dur: 3 }] }
+      - { label: Falling, meaning: "There / that place / far", sequence: [{ p: lowDrone, pitch: 62, to: 38, dur: 3 }] }
       - { label: Deeper, meaning: "Below / underground / the deep", sequence: [{ p: lowDrone, pitch: 36, dur: 3.5, beat: 0.4 }] }
 
   - id: flame-crackle
     name: Flame Crackle
-    root: Flame
+    root: Life
     description: Embers popping, uneven and alive.
+    meaning: "We / the Fire Born / alive"
     sequence: [{ p: crackle, dur: 2.5, density: 28 }]
     variants:
-      - { label: Flaring, meaning: "Strong / alight / anger", sequence: [{ p: crackle, dur: 3.5, density: 6, toDensity: 80, gain: 0.5, toGain: 1.6 }] }
-      - { label: Dying, meaning: "Weak / failing / going out", sequence: [{ p: crackle, dur: 3, density: 35, dying: true }] }
-      - { label: Sparse, meaning: "Little / few / a spark of", sequence: [{ p: crackle, dur: 2.5, density: 8 }] }
+      - { label: Flaring, meaning: "Strong / burning bright", sequence: [{ p: crackle, dur: 3.5, density: 6, toDensity: 80, gain: 0.5, toGain: 1.6 }] }
+      - { label: Dying, meaning: "Weak / fading / hurt", sequence: [{ p: crackle, dur: 3, density: 35, dying: true }] }
+      - { label: Sparse, meaning: "A spark: small / few / young", sequence: [{ p: crackle, dur: 2.5, density: 8 }] }
 
   - id: hiss
     name: Hiss
-    root: Danger
-    description: Sharp steam venting. Aggressive and bright.
+    root: Mist
+    description: Sharp steam venting, the sound of water on a brazier. For the Fire Born, the mist and danger are one thing.
+    meaning: "The mist / danger"
     sequence: [{ p: hiss, dur: 1.2, pitch: 5500, attack: 0.04, release: 0.26 }]
     variants:
-      - { label: Rising, meaning: "Danger coming / a threat approaches", sequence: [{ p: hiss, dur: 1.8, pitch: 3000, toPitch: 9000, attack: 0.6, release: 0.7 }] }
-      - { label: Falling, meaning: "Danger passing / the threat is gone", sequence: [{ p: hiss, dur: 1.8, pitch: 9000, toPitch: 3000, attack: 0.6, release: 0.7 }] }
-      - { label: Bursts, meaning: "Now! / alarm", sequence: [{ p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }] }
+      - { label: Rising, meaning: "The mist is coming / a threat approaches", sequence: [{ p: hiss, dur: 1.8, pitch: 3000, toPitch: 9000, attack: 0.6, release: 0.7 }] }
+      - { label: Falling, meaning: "The mist withdraws / the threat is gone", sequence: [{ p: hiss, dur: 1.8, pitch: 9000, toPitch: 3000, attack: 0.6, release: 0.7 }] }
+      - { label: Bursts, meaning: "Danger now! / alarm", sequence: [{ p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }] }
 
   - id: high-drone
     name: High Drone
-    root: Sacred
+    root: The God
     description: A glassy tone hanging in the air, slightly shimmering, with deeper undertones beneath it.
+    meaning: "Holy / artifact"
     sequence: [{ p: highDrone, dur: 3.5 }]
     variants:
-      - { label: Rising, meaning: "Asking / a question / prayer", sequence: [{ p: highDrone, pitch: 500, to: 900, dur: 3 }] }
-      - { label: Falling, meaning: "Forbidden / defiled", sequence: [{ p: highDrone, pitch: 900, to: 450, dur: 3 }] }
-      - { label: Higher, meaning: "The god himself / divine attention", sequence: [{ p: highDrone, pitch: 1900, dur: 3, beat: 5, under: 0 }] }
+      - { label: Rising, meaning: "Prayer / asking (What?)", sequence: [{ p: highDrone, pitch: 500, to: 900, dur: 3 }] }
+      - { label: Falling, meaning: "Defiled / destroyed", sequence: [{ p: highDrone, pitch: 900, to: 450, dur: 3 }] }
+      - { label: Higher, meaning: "The God himself", sequence: [{ p: highDrone, pitch: 1900, dur: 3, beat: 5, under: 0 }] }
 
   - id: hover
     name: Hovering
     root: Motion
     description: A tone that floats and throbs, like something suspended and slowly turning.
+    meaning: "Moving / travel"
     sequence: [{ p: hover, dur: 3.5 }]
     variants:
-      - { label: Slow, meaning: "Wander / drift / travel", sequence: [{ p: hover, dur: 3.5, rate: 2.5 }] }
+      - { label: Coming, meaning: "Come / approach / toward us", sequence: [{ p: hover, dur: 3, pitch: 160, to: 230, rate: 3, toRate: 9 }] }
+      - { label: Going, meaning: "Go / leave / away from us", sequence: [{ p: hover, dur: 4, pitch: 200, to: 130, rate: 7, toRate: 2, fade: true }] }
       - { label: Fast, meaning: "Hurry / charge / flee", sequence: [{ p: hover, dur: 3, rate: 11 }] }
-      - { label: Drifting away, meaning: "Leave / go away", sequence: [{ p: hover, dur: 4, pitch: 200, to: 130, rate: 7, toRate: 2, fade: true }] }
 
   - id: hush
     name: Hushing
-    root: Mist
-    description: A soft, breathy "shhh", like wind or a calming whisper. Hiss's gentle twin.
+    root: Tactics
+    description: A soft, breathy "shhh", like wind or a whisper. Hiss's gentle twin.
+    meaning: "Careful / a plan"
     sequence: [{ p: hush, dur: 2.5 }]
     variants:
-      - { label: Long swell, meaning: "The mist rising / it is coming in", sequence: [{ p: hush, dur: 4.5 }] }
-      - { label: Darker, meaning: "The deep mist / the Nothing", sequence: [{ p: hush, dur: 2.5, pitch: 900 }] }
+      - { label: Long swell, meaning: "Wait / hold position", sequence: [{ p: hush, dur: 4.5 }] }
+      - { label: Darker, meaning: "Hide / stay unseen", sequence: [{ p: hush, dur: 2.5, pitch: 900 }] }
       - { label: Repeated, meaning: "Quiet! / be still", sequence: [{ p: hush, dur: 0.7 }, { p: hush, dur: 0.7, gap: 0.1 }, { p: hush, dur: 0.7, gap: 0.1 }] }
 
-# One root per base sound. Every word is built from one or more of these.
+# One root per base sound, each with its own category. Every word is built from one or more of these.
 roots:
-  - root: Ground
+  - root: Things
     sound: Low Drone
-    meaning: Places, weight, bodies, things, standing still
-  - root: Flame
+    meaning: Objects and places, here and there, the deep
+  - root: Life
     sound: Flame Crackle
-    meaning: Fire, life, the Fire Born, yes
-  - root: Danger
+    meaning: We, the Fire Born, being alive, strength and weakness
+  - root: Mist
     sound: Hiss
-    meaning: Threat, foes, warning, no
-  - root: Sacred
+    meaning: The mist, the Mist Born, danger, threat, foes (one and the same to them)
+  - root: The God
     sound: High Drone
-    meaning: The god, relics, asking, attention
+    meaning: The god, holy things and artifacts (the same word), prayer, asking
   - root: Motion
     sound: Hovering
-    meaning: Movement, travel, pointing, following
-  - root: Mist
+    meaning: Coming and going
+  - root: Tactics
     sound: Hushing
-    meaning: The mist, the Mist Born, quiet, calm, death
+    meaning: Waiting, hiding, quiet, holding position
 
 # Shapes change how a root is said. Any root can take any shape.
 shapes:
   - shape: Toward
     how: The sound rises in pitch
-    meaning: Approach, welcome, positive, a question
+    meaning: Approach, here, positive, a question
   - shape: Away
     how: The sound falls in pitch (or recedes and fades)
-    meaning: Departure, refusal, negative
+    meaning: Departure, there, negative
   - shape: Repeated
     how: The sound is said two or three times
     meaning: Urgency, emphasis
@@ -116,22 +122,22 @@ shapes:
 #   at: 1.2    starts 1.2 seconds after the word begins
 sounds:
   - id: lowDrone
-    description: "Ground. Deep beating hum, felt more than heard."
+    description: "Things. Deep beating hum, felt more than heard."
     params: "pitch (Hz, ~35-70, default 48), to (pitch at the end), beat (Hz between the beating tones), dur, gain"
   - id: crackle
-    description: "Flame. Embers popping."
+    description: "Life. Embers popping."
     params: "dur, density (pops per second), toDensity (density at the end), gain, toGain (loudness at the end), dying (shortcut: thins out toward the end)"
   - id: hiss
-    description: "Danger. Sharp steam venting."
+    description: "Mist. Sharp steam venting."
     params: "pitch, toPitch (filter sweep in Hz), dur, attack, release (fade in/out seconds; soft by default), gain"
   - id: highDrone
-    description: "Sacred. Glassy tone with a slow shimmer, slight vibrato and deeper undertones."
+    description: "The God. Glassy tone with a slow shimmer, slight vibrato and deeper undertones."
     params: "pitch (Hz, ~450-2000, default 650), to, beat, under (undertone amount, 0 = none, default 1), dur, gain"
   - id: hover
     description: "Motion. Floating, throbbing tone. Volume pulses, pitch drifts."
     params: "pitch, to, rate (throbs per second), toRate, fade (true fades out like it drifts away), dur, gain"
   - id: hush
-    description: "Mist. Soft, dark, breathy noise that swells and wavers."
+    description: "Tactics. Soft, dark, breathy noise that swells and wavers."
     params: "pitch (filter center, lower = darker, default 1600), toPitch (sweep), dur, gain"
   - id: rest
     description: Silence.
@@ -149,8 +155,8 @@ words:
   - id: hello
     word: Hello
     category: Greetings & Answers
-    roots: [Flame, Ground, Toward]
-    note: More acknowledgment than greeting. "You are seen. You stand in the light."
+    roots: [Life, Things, Toward]
+    note: More acknowledgment than greeting. "Alive, here." The brazier builds as the drone rises.
     sequence:
       - { p: crackle, dur: 2.0, density: 8, toDensity: 35, gain: 0.6, toGain: 1 }
       - { p: lowDrone, pitch: 42, to: 60, dur: 2.0, with: true }
@@ -158,43 +164,61 @@ words:
   - id: bye
     word: Bye
     category: Greetings & Answers
-    roots: [Flame, Ground, Away]
-    note: The brazier settles and the drone sinks away. They do not wait for a reply.
+    roots: [Life, Things, Away]
+    note: '"Alive, there." The brazier settles and the drone sinks away. They do not wait for a reply.'
     sequence:
       - { p: crackle, dur: 2.0, density: 30, toDensity: 6, gain: 1, toGain: 0.5 }
       - { p: lowDrone, pitch: 60, to: 40, dur: 2.0, with: true }
 
-  - id: yes
+  - id: "yes"
     word: Yes
     category: Greetings & Answers
-    roots: [Flame, Repeated]
+    roots: [Life, Motion, Toward]
+    note: '"I burn bright, it comes to me." The flame flares while the hover comes closer.'
     sequence:
-      - { p: lowDrone, pitch: 52, dur: 1.2, gain: 0.7 }
-      - { p: crackle, dur: 0.45, density: 45, at: 0 }
-      - { p: crackle, dur: 0.45, density: 45, gap: 0.15 }
+      - { p: crackle, dur: 1.8, density: 10, toDensity: 60, gain: 0.6, toGain: 1.3 }
+      - { p: hover, dur: 1.8, pitch: 170, to: 230, rate: 4, toRate: 8, gain: 0.7, with: true }
 
-  - id: no
+  - id: "no"
     word: No
     category: Greetings & Answers
-    roots: [Danger, Away]
+    roots: [Mist, Motion, Away]
+    note: '"Mist, away." A hiss, and the hover pushed off.'
     sequence:
-      - { p: hiss, dur: 1.2, pitch: 7000, toPitch: 2500, attack: 0.1, release: 0.5 }
-      - { p: lowDrone, pitch: 55, to: 40, dur: 1.2, gain: 0.7, with: true }
+      - { p: hiss, dur: 1.4, pitch: 6500, attack: 0.1, release: 0.5 }
+      - { p: hover, dur: 1.8, pitch: 220, to: 140, rate: 7, toRate: 2, fade: true, gain: 0.7, with: true }
 
   - id: question
     word: What? (question)
     category: Greetings & Answers
-    roots: [Sacred, Toward]
-    note: Put it after another word to make a question. "Relic · What?" is "Is that a relic?"
+    roots: [The God, Toward]
+    note: For them, asking is a kind of prayer. Put it after another word to make a question. "Relic · What?" is "Is that a relic?"
     sequence:
       - { p: highDrone, pitch: 520, to: 1000, dur: 1.2 }
 
   # ── Beings ───────────────────────────────────────────────────────
+  - id: we
+    word: We (the Fire Born)
+    category: Beings
+    roots: [Life]
+    note: The plain, steady crackle. It is also simply "alive".
+    sequence:
+      - { p: crackle, dur: 2.4, density: 26 }
+
+  - id: you
+    word: You
+    category: Beings
+    roots: [Life, Motion, Toward]
+    note: '"Small flame, coming." Mortals are sparks to them. Usually comes with the brazier turning toward someone.'
+    sequence:
+      - { p: crackle, dur: 1.4, density: 8, gain: 0.8 }
+      - { p: hover, dur: 1.4, pitch: 170, to: 240, rate: 8, with: true }
+
   - id: friend
     word: Friend
     category: Beings
-    roots: [Flame, Sacred, Toward]
-    note: Rare. Said of someone who has fed or defended a flame.
+    roots: [Life, The God, Toward]
+    note: Rare. "A flame we pray with." Said of someone who has fed or defended a flame.
     sequence:
       - { p: crackle, dur: 2.4, density: 12, gain: 0.6 }
       - { p: highDrone, pitch: 560, to: 720, dur: 2.4, with: true }
@@ -202,40 +226,26 @@ words:
   - id: foe
     word: Foe
     category: Beings
-    roots: [Danger, Mist]
+    roots: [Mist, Motion, Toward]
+    note: '"Mist, coming at us." A foe is danger that moves.'
     sequence:
-      - { p: hush, dur: 2.0, pitch: 1000 }
-      - { p: hiss, dur: 1.4, pitch: 3000, toPitch: 8000, attack: 0.5, release: 0.4, at: 0.5 }
-
-  - id: you
-    word: You
-    category: Beings
-    roots: [Motion, Toward]
-    note: Short and pointed. Usually comes with the brazier turning toward someone.
-    sequence:
-      - { p: hover, dur: 1.2, pitch: 170, to: 240, rate: 8 }
-
-  - id: we
-    word: We (the Fire Born)
-    category: Beings
-    roots: [Ground, Flame]
-    sequence:
-      - { p: lowDrone, pitch: 46, dur: 2.4 }
-      - { p: crackle, dur: 2.4, density: 18, gain: 0.7, with: true }
+      - { p: hover, dur: 2.0, pitch: 150, to: 210, rate: 5, toRate: 10, gain: 0.7 }
+      - { p: hiss, dur: 1.6, pitch: 3000, toPitch: 8000, attack: 0.5, release: 0.4, at: 0.3 }
 
   - id: mist-born
     word: Mist Born
     category: Beings
-    roots: [Mist, Ground, Away]
+    roots: [Mist, Things]
+    note: '"The mist from the deep." A hiss over the deepest drone.'
     sequence:
-      - { p: hush, dur: 2.4, pitch: 900 }
-      - { p: lowDrone, pitch: 50, to: 34, dur: 2.4, gain: 0.8, with: true }
+      - { p: lowDrone, pitch: 36, dur: 2.6, beat: 0.4 }
+      - { p: hiss, dur: 2.2, pitch: 4000, toPitch: 3000, attack: 0.5, release: 0.8, gain: 0.8, at: 0.2 }
 
   # ── Actions ──────────────────────────────────────────────────────
   - id: attack
     word: Attack
     category: Actions
-    roots: [Motion, Danger, Repeated]
+    roots: [Motion, Mist, Repeated]
     sequence:
       - { p: hover, dur: 1.9, pitch: 150, to: 200, rate: 12 }
       - { p: hiss, dur: 0.5, pitch: 6500, attack: 0.08, release: 0.3, at: 0.3 }
@@ -245,14 +255,14 @@ words:
   - id: help
     word: Help
     category: Actions
-    roots: [Sacred, Toward, Repeated]
-    note: Urgent. A Paladin with a guttering flame might make this sound.
+    roots: [The God, Toward, Repeated]
+    note: An urgent prayer. A Paladin with a guttering flame might make this sound.
     sequence:
       - { p: highDrone, pitch: 500, to: 850, dur: 0.9 }
       - { p: highDrone, pitch: 500, to: 900, dur: 0.9, gap: 0.12 }
 
-  - id: follow
-    word: Follow / That way
+  - id: come
+    word: Come / Follow
     category: Actions
     roots: [Motion, Toward]
     note: The throb quickens as it rises, pulling you along.
@@ -260,58 +270,75 @@ words:
       - { p: hover, dur: 2.4, pitch: 160, to: 230, rate: 3, toRate: 9 }
 
   - id: leave
-    word: Leave / Back away
+    word: Go / Leave
     category: Actions
     roots: [Motion, Away]
     sequence:
       - { p: hover, dur: 2.8, pitch: 220, to: 130, rate: 8, toRate: 2, fade: true }
 
   - id: wait
-    word: Wait / Stay
+    word: Wait / Hold
     category: Actions
-    roots: [Ground, Mist]
-    note: Ground held still, then quiet.
+    roots: [Tactics]
+    note: One long hush.
     sequence:
-      - { p: lowDrone, pitch: 50, dur: 2.2 }
-      - { p: hush, dur: 1.2, gain: 0.5, gap: -0.6 }
+      - { p: hush, dur: 3.0 }
+
+  - id: hide
+    word: Hide
+    category: Actions
+    roots: [Tactics]
+    note: The hush, darker and lower.
+    sequence:
+      - { p: hush, dur: 2.2, pitch: 900 }
+
+  - id: quiet
+    word: Quiet!
+    category: Actions
+    roots: [Tactics, Repeated]
+    sequence:
+      - { p: hush, dur: 0.6 }
+      - { p: hush, dur: 0.6, gap: 0.1 }
+      - { p: hush, dur: 0.6, gap: 0.1 }
 
   # ── Things ───────────────────────────────────────────────────────
-  - id: flame
-    word: Flame
+  - id: sacred-flame
+    word: Sacred Flame
     category: Things
-    roots: [Flame]
+    roots: [Life, The God]
+    note: A living, holy flame. Any brazier, and the Village's Sacred Flame.
     sequence:
-      - { p: crackle, dur: 2.4, density: 10, toDensity: 60, gain: 0.6, toGain: 1.3 }
+      - { p: crackle, dur: 2.6, density: 14, toDensity: 40, gain: 0.7, toGain: 1.1 }
+      - { p: highDrone, pitch: 620, dur: 2.6, under: 0.6, with: true }
 
   - id: mist
     word: Mist
     category: Things
     roots: [Mist]
-    note: The only word they say softly.
+    note: Water hitting the brazier. Naming the mist sounds like being smothered by it.
     sequence:
-      - { p: hush, dur: 3.0 }
+      - { p: hiss, dur: 2.0, pitch: 4500, attack: 0.4, release: 0.8 }
 
   - id: object
     word: Object / Thing
     category: Things
-    roots: [Ground]
+    roots: [Things]
     note: A single short weight.
     sequence:
       - { p: lowDrone, pitch: 58, dur: 0.9 }
 
   - id: relic
-    word: Relic
+    word: Relic / Holy
     category: Things
-    roots: [Ground, Sacred]
-    note: A sacred thing. Includes Fire Born items the players carry.
+    roots: [The God]
+    note: Holy and artifact are the same word. Includes Fire Born items the players carry.
     sequence:
-      - { p: lowDrone, pitch: 50, dur: 2.0 }
-      - { p: highDrone, pitch: 700, dur: 2.0, under: 0.4, with: true }
+      - { p: highDrone, dur: 2.2 }
 
   - id: chain
     word: Chain
     category: Things
-    roots: [Ground, Away, Repeated]
+    roots: [Things, Away, Repeated]
     note: The god's chains. Said link by link, every link lower.
     sequence:
       - { p: lowDrone, pitch: 60, to: 54, dur: 0.7 }
@@ -321,18 +348,31 @@ words:
   - id: god
     word: God
     category: Things
-    roots: [Sacred, Ground, Flame]
-    note: The imprisoned god of War and Expansion. All three roots at once, slowly.
+    roots: [The God]
+    note: The imprisoned god of War and Expansion. The highest tone in the language.
     sequence:
-      - { p: lowDrone, pitch: 38, dur: 4.5, beat: 0.4 }
-      - { p: highDrone, pitch: 600, to: 640, dur: 4.0, at: 0.5 }
-      - { p: crackle, dur: 3.5, density: 8, toDensity: 25, gain: 0.5, at: 1.0 }
+      - { p: highDrone, pitch: 1900, dur: 3.5, beat: 5, under: 0 }
 
   # ── Places & States ──────────────────────────────────────────────
+  - id: here
+    word: Here
+    category: Places & States
+    roots: [Things, Toward]
+    sequence:
+      - { p: lowDrone, pitch: 42, to: 62, dur: 1.6 }
+
+  - id: there
+    word: There
+    category: Places & States
+    roots: [Things, Away]
+    sequence:
+      - { p: lowDrone, pitch: 62, to: 40, dur: 1.6 }
+
   - id: location
     word: Location / Place
     category: Places & States
-    roots: [Ground, Motion]
+    roots: [Things, Motion]
+    note: A thing you come and go from.
     sequence:
       - { p: lowDrone, pitch: 48, dur: 2.2 }
       - { p: hover, dur: 2.2, pitch: 190, rate: 2.5, gain: 0.7, with: true }
@@ -340,7 +380,7 @@ words:
   - id: danger
     word: Danger
     category: Places & States
-    roots: [Danger, Repeated]
+    roots: [Mist, Repeated]
     sequence:
       - { p: hiss, dur: 0.45, pitch: 6500, attack: 0.08, release: 0.3 }
       - { p: hiss, dur: 0.45, pitch: 6500, attack: 0.08, release: 0.3, gap: 0.05 }
@@ -349,17 +389,25 @@ words:
   - id: safe
     word: Safe
     category: Places & States
-    roots: [Flame, Mist, Away]
-    note: Flame, and the mist receding.
+    roots: [Life, Mist, Away]
+    note: Flame, and the mist withdrawing.
     sequence:
       - { p: crackle, dur: 2.4, density: 20, gain: 0.8 }
-      - { p: hush, dur: 2.0, pitch: 1800, toPitch: 700, gain: 0.7, at: 0.3 }
+      - { p: hiss, dur: 2.0, pitch: 7000, toPitch: 2500, attack: 0.5, release: 0.9, gain: 0.6, at: 0.3 }
+
+  - id: defiled
+    word: Defiled / Destroyed
+    category: Places & States
+    roots: [The God, Away]
+    note: A holy thing broken or desecrated. To them, both are the same loss.
+    sequence:
+      - { p: highDrone, pitch: 900, to: 450, dur: 2.4 }
 
   - id: death
     word: Death / Extinguished
     category: Places & States
-    roots: [Flame, Mist]
-    note: For a Fire Born, death and a flame going out are the same word. The fire dies and the mist takes it.
+    roots: [Life, Mist]
+    note: For a Fire Born, death and a flame going out are the same word. The fire dies and the mist douses it with a hiss.
     sequence:
       - { p: crackle, dur: 3.0, density: 35, dying: true }
-      - { p: hush, dur: 3.0, pitch: 1000, at: 0.8 }
+      - { p: hiss, dur: 2.4, pitch: 3500, toPitch: 2000, attack: 0.6, release: 1.0, gain: 0.7, at: 1.0 }
