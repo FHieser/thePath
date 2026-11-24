@@ -46,6 +46,33 @@ A root can be said in different shapes. The shape changes the meaning:
 
 Hello and Bye are the clearest example: both are Flame + Ground, said Toward (the drone rises, the crackle builds) or Away (the drone sinks, the crackle settles).
 
+### Each root in its shapes
+
+Every base sound has three variants on the Noise page, and each variant is a word of its own. Rising and falling follow the Toward/Away shapes. The other variants change the root's intensity (deeper, sparser, faster, darker) and carry their own meaning.
+
+| Root | Variant | Meaning |
+|---|---|---|
+| **Ground** | Rising | Here / arrive / come to this place |
+| | Falling | There / far away / gone from here |
+| | Deeper | Below / underground / the deep |
+| **Flame** | Flaring | Strong / alight / anger |
+| | Dying | Weak / failing / going out |
+| | Sparse | Little / few / a spark of |
+| **Danger** | Rising | Danger coming / a threat approaches |
+| | Falling | Danger passing / the threat is gone |
+| | Bursts | Now! / alarm |
+| **Sacred** | Rising | Asking / a question / prayer |
+| | Falling | Forbidden / defiled |
+| | Higher | The god himself / divine attention |
+| **Motion** | Slow | Wander / drift / travel |
+| | Fast | Hurry / charge / flee |
+| | Drifting away | Leave / go away |
+| **Mist** | Long swell | The mist rising / it is coming in |
+| | Darker | The deep mist / the Nothing |
+| | Repeated | Quiet! / be still |
+
+These are stored in the YAML as `meaning:` on each variant under `base_sounds`. When you add a variant, give it a meaning too.
+
 ### Building a new word
 
 1. **Decide which roots the meaning touches.** Usually one or two, three at most.

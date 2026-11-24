@@ -379,8 +379,11 @@ let shapeNames = new Set();
 
 function renderBaseSound(s, i) {
     const root = rootsByName[s.root];
-    const variants = (s.variants || []).map((v, j) =>
-        `<button class="variant-btn" data-base="${i}" data-variant="${j}">${escapeHtml(v.label)}</button>`).join('');
+    const variants = (s.variants || []).map((v, j) => `
+        <div class="variant-line">
+            <button class="variant-btn" data-base="${i}" data-variant="${j}">▶ ${escapeHtml(v.label)}</button>
+            ${v.meaning ? `<span class="variant-meaning">${escapeHtml(v.meaning)}</span>` : ''}
+        </div>`).join('');
     return `
         <div class="word-card base-card">
             <button class="word-play" data-base="${i}" data-variant="-1" title="Play">

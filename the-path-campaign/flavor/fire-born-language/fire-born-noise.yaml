@@ -20,9 +20,9 @@ base_sounds:
     description: A deep, steady hum you feel in your chest, like a carrier idling.
     sequence: [{ p: lowDrone, dur: 3.5 }]
     variants:
-      - { label: Rising, sequence: [{ p: lowDrone, pitch: 40, to: 62, dur: 3 }] }
-      - { label: Falling, sequence: [{ p: lowDrone, pitch: 62, to: 38, dur: 3 }] }
-      - { label: Deeper, sequence: [{ p: lowDrone, pitch: 36, dur: 3.5, beat: 0.4 }] }
+      - { label: Rising, meaning: "Here / arrive / come to this place", sequence: [{ p: lowDrone, pitch: 40, to: 62, dur: 3 }] }
+      - { label: Falling, meaning: "There / far away / gone from here", sequence: [{ p: lowDrone, pitch: 62, to: 38, dur: 3 }] }
+      - { label: Deeper, meaning: "Below / underground / the deep", sequence: [{ p: lowDrone, pitch: 36, dur: 3.5, beat: 0.4 }] }
 
   - id: flame-crackle
     name: Flame Crackle
@@ -30,9 +30,9 @@ base_sounds:
     description: Embers popping, uneven and alive.
     sequence: [{ p: crackle, dur: 2.5, density: 28 }]
     variants:
-      - { label: Flaring, sequence: [{ p: crackle, dur: 3.5, density: 6, toDensity: 80, gain: 0.5, toGain: 1.6 }] }
-      - { label: Dying, sequence: [{ p: crackle, dur: 3, density: 35, dying: true }] }
-      - { label: Sparse, sequence: [{ p: crackle, dur: 2.5, density: 8 }] }
+      - { label: Flaring, meaning: "Strong / alight / anger", sequence: [{ p: crackle, dur: 3.5, density: 6, toDensity: 80, gain: 0.5, toGain: 1.6 }] }
+      - { label: Dying, meaning: "Weak / failing / going out", sequence: [{ p: crackle, dur: 3, density: 35, dying: true }] }
+      - { label: Sparse, meaning: "Little / few / a spark of", sequence: [{ p: crackle, dur: 2.5, density: 8 }] }
 
   - id: hiss
     name: Hiss
@@ -40,9 +40,9 @@ base_sounds:
     description: Sharp steam venting. Aggressive and bright.
     sequence: [{ p: hiss, dur: 1.2, pitch: 5500, attack: 0.04, release: 0.26 }]
     variants:
-      - { label: Rising, sequence: [{ p: hiss, dur: 1.8, pitch: 3000, toPitch: 9000, attack: 0.6, release: 0.7 }] }
-      - { label: Falling, sequence: [{ p: hiss, dur: 1.8, pitch: 9000, toPitch: 3000, attack: 0.6, release: 0.7 }] }
-      - { label: Bursts, sequence: [{ p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }] }
+      - { label: Rising, meaning: "Danger coming / a threat approaches", sequence: [{ p: hiss, dur: 1.8, pitch: 3000, toPitch: 9000, attack: 0.6, release: 0.7 }] }
+      - { label: Falling, meaning: "Danger passing / the threat is gone", sequence: [{ p: hiss, dur: 1.8, pitch: 9000, toPitch: 3000, attack: 0.6, release: 0.7 }] }
+      - { label: Bursts, meaning: "Now! / alarm", sequence: [{ p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }] }
 
   - id: high-drone
     name: High Drone
@@ -50,9 +50,9 @@ base_sounds:
     description: A glassy tone hanging in the air, slightly shimmering, with deeper undertones beneath it.
     sequence: [{ p: highDrone, dur: 3.5 }]
     variants:
-      - { label: Rising, sequence: [{ p: highDrone, pitch: 500, to: 900, dur: 3 }] }
-      - { label: Falling, sequence: [{ p: highDrone, pitch: 900, to: 450, dur: 3 }] }
-      - { label: Higher, sequence: [{ p: highDrone, pitch: 1900, dur: 3, beat: 5, under: 0 }] }
+      - { label: Rising, meaning: "Asking / a question / prayer", sequence: [{ p: highDrone, pitch: 500, to: 900, dur: 3 }] }
+      - { label: Falling, meaning: "Forbidden / defiled", sequence: [{ p: highDrone, pitch: 900, to: 450, dur: 3 }] }
+      - { label: Higher, meaning: "The god himself / divine attention", sequence: [{ p: highDrone, pitch: 1900, dur: 3, beat: 5, under: 0 }] }
 
   - id: hover
     name: Hovering
@@ -60,9 +60,9 @@ base_sounds:
     description: A tone that floats and throbs, like something suspended and slowly turning.
     sequence: [{ p: hover, dur: 3.5 }]
     variants:
-      - { label: Slow, sequence: [{ p: hover, dur: 3.5, rate: 2.5 }] }
-      - { label: Fast, sequence: [{ p: hover, dur: 3, rate: 11 }] }
-      - { label: Drifting away, sequence: [{ p: hover, dur: 4, pitch: 200, to: 130, rate: 7, toRate: 2, fade: true }] }
+      - { label: Slow, meaning: "Wander / drift / travel", sequence: [{ p: hover, dur: 3.5, rate: 2.5 }] }
+      - { label: Fast, meaning: "Hurry / charge / flee", sequence: [{ p: hover, dur: 3, rate: 11 }] }
+      - { label: Drifting away, meaning: "Leave / go away", sequence: [{ p: hover, dur: 4, pitch: 200, to: 130, rate: 7, toRate: 2, fade: true }] }
 
   - id: hush
     name: Hushing
@@ -70,9 +70,9 @@ base_sounds:
     description: A soft, breathy "shhh", like wind or a calming whisper. Hiss's gentle twin.
     sequence: [{ p: hush, dur: 2.5 }]
     variants:
-      - { label: Long swell, sequence: [{ p: hush, dur: 4.5 }] }
-      - { label: Darker, sequence: [{ p: hush, dur: 2.5, pitch: 900 }] }
-      - { label: Repeated, sequence: [{ p: hush, dur: 0.7 }, { p: hush, dur: 0.7, gap: 0.1 }, { p: hush, dur: 0.7, gap: 0.1 }] }
+      - { label: Long swell, meaning: "The mist rising / it is coming in", sequence: [{ p: hush, dur: 4.5 }] }
+      - { label: Darker, meaning: "The deep mist / the Nothing", sequence: [{ p: hush, dur: 2.5, pitch: 900 }] }
+      - { label: Repeated, meaning: "Quiet! / be still", sequence: [{ p: hush, dur: 0.7 }, { p: hush, dur: 0.7, gap: 0.1 }, { p: hush, dur: 0.7, gap: 0.1 }] }
 
 # One root per base sound. Every word is built from one or more of these.
 roots:

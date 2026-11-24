@@ -128,7 +128,10 @@
         .base-sound-name { font-size: 0.8rem; opacity: 0.75; }
         .base-desc, .variant-row { grid-column: 1 / -1; }
         .base-desc { font-size: 0.82rem; opacity: 0.85; }
-        .variant-row { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+        .variant-row { display: flex; flex-direction: column; gap: 0.3rem; }
+        .variant-line { display: grid; grid-template-columns: 7.5rem 1fr; gap: 0.5rem; align-items: center; }
+        .variant-line .variant-btn { text-align: left; }
+        .variant-meaning { font-size: 0.8rem; }
         .variant-btn {
             font: inherit;
             font-size: 0.75rem;
