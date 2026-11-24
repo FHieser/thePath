@@ -125,7 +125,14 @@ Several deep tones (around 48 Hz by default) plus an octave below and a couple o
 
 ### Flame Crackle (`crackle`): Life
 
-Random pops of different sizes. Each pop is a tiny burst of noise that fades in a few milliseconds. The engine places pops one at a time by asking "how long until the next one?", based on the density at that moment. So `density` → `toDensity` makes the fire build up (flaring) or thin out (dying) naturally, and `gain` → `toGain` makes it louder or quieter over time.
+Random pops of different sizes. Each pop is a tiny burst of noise that fades in a few milliseconds. The engine places pops one at a time by asking "how long until the next one?", based on the density at that moment. So `density` → `toDensity` makes the fire build up or thin out naturally, and `gain` → `toGain` makes it louder or quieter over time.
+
+Density alone isn't enough to tell a flare from a dying fire: both are the same pops, just in reverse. Two more controls make them sound different:
+
+- **Pop size** (`size` → `toSize`): bigger pops last longer and sound fuller, like logs splitting. A flare grows from small pops to big ones; a dying fire shrinks to tiny ticks. Lower `highpass` (default 1200) lets the body of big pops through.
+- **Brightness** (`tone` → `toTone`): a filter that dulls the sound as it sweeps down, like embers under ash.
+
+`dying: true` is a shortcut that does all of it at once: fewer pops, quieter, smaller and duller toward the end.
 
 ### Hiss (`hiss`): Mist
 

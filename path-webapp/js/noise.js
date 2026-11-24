@@ -125,14 +125,21 @@ const SOUNDS = {
         return dur;
     },
 
-    // Life. Pops scattered through time. Density and loudness can ramp (density → toDensity,
-    // gain → toGain): ramping both up makes the fire flare, ramping density down lets it die.
+    // Life. Pops scattered through time. Density, loudness, pop size and brightness can all ramp
+    // (density → toDensity, gain → toGain, size → toSize, tone → toTone). A flare grows denser,
+    // louder and fuller (bigger pops, lower `highpass` lets their body through); a dying fire
+    // thins out, shrinks and goes dull (tone sweeping down muffles it like embers).
     crackle(ctx, dest, t, p, rnd) {
         const dur = p.dur ?? 1.2;
+        const dying = !!p.dying;
         const d0 = p.density ?? 25;
-        const d1 = p.toDensity ?? (p.dying ? d0 * 0.08 : d0);
+        const d1 = p.toDensity ?? (dying ? d0 * 0.08 : d0);
         const g0 = p.gain ?? 1;
-        const g1 = p.toGain ?? g0;
+        const g1 = p.toGain ?? (dying ? g0 * 0.3 : g0);
+        const s0 = p.size ?? 1;
+        const s1 = p.toSize ?? (dying ? s0 * 0.4 : s0);
+        const tone0 = p.tone ?? 14000;
+        const tone1 = p.toTone ?? (dying ? 1600 : tone0);
         const sr = ctx.sampleRate;
         const n = Math.ceil(dur * sr);
         const buf = ctx.createBuffer(1, n, sr);
@@ -144,15 +151,18 @@ const SOUNDS = {
             time += -Math.log(1 - rnd()) / Math.max(d0 + (d1 - d0) * x, 0.5);
             if (time >= dur) break;
             const pos = Math.floor(time * sr);
-            const level = g0 + (g1 - g0) * (time / dur);
+            const y = time / dur;
+            const level = g0 + (g1 - g0) * y;
+            const size = s0 + (s1 - s0) * y;
             const amp = (0.2 + 0.8 * rnd() * rnd()) * level;
-            const len = 30 + Math.floor(rnd() * 220);
+            const len = Math.floor((30 + rnd() * 220) * size);
             for (let k = 0; k < len && pos + k < n; k++) {
                 d[pos + k] += amp * (rnd() * 2 - 1) * Math.exp(-k / (len * 0.3));
             }
         }
         bufferSource(ctx, buf, t)
-            .connect(filter(ctx, 'highpass', 1200))
+            .connect(filter(ctx, 'highpass', p.highpass ?? 1200))
+            .connect(sweepFilter(ctx, 'lowpass', tone0, tone1, 0.7, t, dur))
             .connect(envelope(ctx, t, { attack: 0.05, hold: Math.max(0, dur - 0.2), release: 0.15, peak: 0.7 }))
             .connect(dest);
         return dur;

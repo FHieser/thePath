@@ -32,8 +32,8 @@ base_sounds:
     meaning: "We / the Fire Born / alive"
     sequence: [{ p: crackle, dur: 2.5, density: 28 }]
     variants:
-      - { label: Flaring, meaning: "Strong / burning bright", sequence: [{ p: crackle, dur: 3.5, density: 6, toDensity: 80, gain: 0.5, toGain: 1.6 }] }
-      - { label: Dying, meaning: "Weak / fading / hurt", sequence: [{ p: crackle, dur: 3, density: 35, dying: true }] }
+      - { label: Flaring, meaning: "Strong / burning bright", sequence: [{ p: crackle, dur: 4, density: 4, toDensity: 160, gain: 0.3, toGain: 2.6, size: 0.6, toSize: 2.8, highpass: 450 }] }
+      - { label: Dying, meaning: "Weak / fading / hurt", sequence: [{ p: crackle, dur: 3.5, density: 45, tone: 9000, dying: true }] }
       - { label: Sparse, meaning: "A spark: small / few / young", sequence: [{ p: crackle, dur: 2.5, density: 8 }] }
 
   - id: hiss
@@ -126,7 +126,7 @@ sounds:
     params: "pitch (Hz, ~35-70, default 48), to (pitch at the end), beat (Hz between the beating tones), dur, gain"
   - id: crackle
     description: "Life. Embers popping."
-    params: "dur, density (pops per second), toDensity (density at the end), gain, toGain (loudness at the end), dying (shortcut: thins out toward the end)"
+    params: "dur, density (pops per second), toDensity, gain, toGain, size (pop size, 1 = normal, bigger = fuller), toSize, tone (brightness cutoff in Hz, lower = duller), toTone, highpass (default 1200; lower lets big pops sound fuller), dying (shortcut: thins out, quietens, shrinks and goes dull toward the end)"
   - id: hiss
     description: "Mist. Sharp steam venting."
     params: "pitch, toPitch (filter sweep in Hz), dur, attack, release (fade in/out seconds; soft by default), gain"
@@ -176,7 +176,7 @@ words:
     roots: [Life, Motion, Toward]
     note: '"I burn bright, it comes to me." The flame flares while the hover comes closer.'
     sequence:
-      - { p: crackle, dur: 1.8, density: 10, toDensity: 60, gain: 0.6, toGain: 1.3 }
+      - { p: crackle, dur: 1.8, density: 8, toDensity: 120, gain: 0.4, toGain: 2.2, size: 0.7, toSize: 2.4, highpass: 500 }
       - { p: hover, dur: 1.8, pitch: 170, to: 230, rate: 4, toRate: 8, gain: 0.7, with: true }
 
   - id: "no"
