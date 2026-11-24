@@ -255,6 +255,8 @@ Auto-generated index of all tracked, non-gitignored files. Organized by director
 | [the-path-campaign/lore/celestial-events.md](the-path-campaign/lore/celestial-events.md) | Calendar of celestial events affecting The Path |
 | [the-path-campaign/flavor/wandering-stars.md](the-path-campaign/flavor/wandering-stars.md) | The twenty-five Wandering Stars and their domains (Open Skies reading) |
 | [the-path-campaign/flavor/runes.yaml](the-path-campaign/flavor/runes.yaml) | Elder Futhark rune reference — names, meanings, sources |
+| [the-path-campaign/flavor/fire-born-language/fire-born-noise.yaml](the-path-campaign/flavor/fire-born-language/fire-born-noise.yaml) | Fire Born dictionary — words as sequences of synthesized sounds, sound roots (played on `noise.html`) |
+| [the-path-campaign/flavor/fire-born-language/fire-born-noise-guide.md](the-path-campaign/flavor/fire-born-language/fire-born-noise-guide.md) | Guide to making Fire Born words (flavor rules) and how the sound synthesis works |
 
 #### Factions
 | File | Description |

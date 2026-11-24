@@ -30,6 +30,7 @@ This is "The Path" - a custom Daggerheart RPG campaign frame featuring a mist-sh
   - `flavor/` - Setting texture shown on the webapp's Flavor section
     - `wandering-stars.md` - The Wandering Stars (Open Skies reading); the webapp's `readings.js` holds its own copy of the planet data
     - `runes.yaml` - Elder Futhark rune reference; `readings.html` (the Readings page) fetches it for runes in the sky
+    - `fire-born-language/` - The Fire Born's spoken "noise": `fire-born-noise.yaml` (dictionary of words, each a sequence of building-block sounds, plus shared sound roots) and `fire-born-noise-guide.md` (flavor rules for new words + how the synthesis works). `noise.html` / `js/noise.js` synthesize the sounds live with the Web Audio API — the JS holds only the sound engine, words live in the YAML
   - `campaign/` - Active campaign tracking (e.g., Moonfield, FreeMountain)
   - `example-path/` - Example Path configurations, incl. `path-library/` of reusable path YAMLs
   - `zarchive/` - Deprecated/superseded content kept for reference

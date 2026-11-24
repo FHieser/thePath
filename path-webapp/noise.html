@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise — The Path</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .noise-intro { max-width: 760px; margin: 0 auto 1rem auto; opacity: 0.85; }
+
+        .phrase-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 0.75rem;
+            margin-bottom: 1rem;
+            background: rgba(26, 37, 48, 0.96);
+            border: 0.15rem solid var(--primary-blue);
+            border-radius: 0.3rem;
+        }
+        .phrase-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-amber);
+        }
+        #phrase-words { display: flex; flex-wrap: wrap; gap: 0.3rem; flex: 1 1 240px; min-width: 0; }
+        .phrase-empty { font-style: italic; opacity: 0.5; font-size: 0.85rem; }
+        .phrase-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+        .phrase-controls label { font-size: 0.75rem; opacity: 0.7; display: flex; align-items: center; gap: 0.3rem; }
+        .phrase-controls input[type=range] { width: 90px; }
+
+        .noise-btn, .phrase-chip, .word-add, .sound-play {
+            font: inherit;
+            color: var(--text-light);
+            background: rgba(20, 70, 100, 0.35);
+            border: 1px solid var(--primary-blue);
+            border-radius: 0.2rem;
+            cursor: pointer;
+            padding: 0.25rem 0.6rem;
+            font-size: 0.85rem;
+        }
+        .noise-btn:hover:not(:disabled), .phrase-chip:hover, .word-add:hover, .sound-play:hover {
+            border-color: var(--accent-amber);
+        }
+        .noise-btn:disabled { opacity: 0.4; cursor: default; }
+        .noise-btn.primary { background: rgba(212, 165, 116, 0.18); border-color: var(--accent-amber); color: var(--accent-amber); font-weight: 700; }
+
+        .word-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 0.5rem;
+        }
+        .word-card {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 0.35rem;
+            padding: 0.5rem;
+            background: rgba(20, 70, 100, 0.15);
+            border: 1px solid var(--primary-blue);
+            border-radius: 0.3rem;
+            transition: border-color 0.15s, background 0.15s;
+        }
+        .word-card.playing { border-color: var(--accent-amber); background: rgba(212, 165, 116, 0.12); }
+        .word-play {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font: inherit;
+            text-align: left;
+            color: var(--text-light);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .word-icon { color: var(--accent-amber); font-size: 0.8rem; }
+        .word-name { font-weight: 700; font-size: 1rem; }
+        .word-add { padding: 0 0.55rem; font-size: 1rem; line-height: 1.6; }
+        .word-roots, .word-note { grid-column: 1 / -1; }
+        .root-chip {
+            display: inline-block;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 0 0.35rem;
+            margin-right: 0.25rem;
+            border-radius: 0.2rem;
+            background: rgba(212, 165, 116, 0.15);
+            color: var(--accent-amber);
+        }
+        .word-note { font-size: 0.8rem; opacity: 0.7; font-style: italic; }
+        .phrase-chip.playing, .sound-play.playing { border-color: var(--accent-amber); color: var(--accent-amber); }
+
+        details.noise-ref { margin-top: 1rem; border-top: 1px solid var(--primary-blue); padding-top: 0.75rem; }
+        details.noise-ref summary { cursor: pointer; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.5rem; }
+        .roots-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        .roots-table td { padding: 0.3rem 0.5rem; border-bottom: 1px solid rgba(20, 70, 100, 0.6); vertical-align: top; }
+        .sound-row { display: grid; grid-template-columns: 7rem 1fr; gap: 0.6rem; align-items: start; padding: 0.35rem 0; font-size: 0.85rem; }
+        .sound-params { opacity: 0.55; font-size: 0.75rem; }
+
+        @media (max-width: 520px) {
+            .sound-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <a class="home-btn" href="index.html">&#8962; Home</a>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb"><a href="index.html#flavor">← Back to Flavor</a></nav>
+            <h1>Noise</h1>
+            <p class="subtitle">The words of the Fire Born — iron, flame and bell, synthesized live</p>
+        </header>
+
+        <main>
+            <div id="noise-intro" class="noise-intro"></div>
+
+            <div class="phrase-bar">
+                <span class="phrase-label">Phrase</span>
+                <div id="phrase-words"></div>
+                <div class="phrase-controls">
+                    <button id="phrase-play" class="noise-btn primary" disabled>▶ Speak</button>
+                    <button id="phrase-clear" class="noise-btn" disabled>Clear</button>
+                    <button id="stop-all" class="noise-btn">■ Stop</button>
+                    <label>Vol <input id="volume" type="range" min="0" max="1.5" step="0.05" value="0.8"></label>
+                </div>
+            </div>
+
+            <div id="noise-words"><div class="loading">Loading the Fire Born dictionary...</div></div>
+
+            <details class="noise-ref">
+                <summary>Roots — why the words sound the way they do</summary>
+                <table class="roots-table"><tbody id="noise-roots"></tbody></table>
+            </details>
+
+            <details class="noise-ref">
+                <summary>Building blocks — every sound a word is made of</summary>
+                <div id="noise-sounds"></div>
+            </details>
+        </main>
+
+        <footer><p>The Path - Daggerheart Campaign Frame</p></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/noise.js"></script>
+</body>
+</html>
