@@ -385,9 +385,11 @@ function renderBaseSound(s, i) {
         <div class="word-card base-card">
             <button class="word-play" data-base="${i}" data-variant="-1" title="Play">
                 <span class="word-icon">▶</span>
-                <span class="word-name">${escapeHtml(s.name)}</span>
+                <span class="base-title">
+                    <span class="base-root">${escapeHtml(s.root || s.name)}</span>
+                    ${s.root ? `<span class="base-sound-name">${escapeHtml(s.name)}</span>` : ''}
+                </span>
             </button>
-            ${s.root ? `<div class="word-roots"><span class="root-chip">${escapeHtml(s.root)}</span></div>` : ''}
             <p class="base-desc">${escapeHtml(s.description || '')}</p>
             ${root ? `<p class="word-note">${escapeHtml(root.meaning)}</p>` : ''}
             ${variants ? `<div class="variant-row">${variants}</div>` : ''}
