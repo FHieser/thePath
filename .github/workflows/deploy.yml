@@ -21,7 +21,7 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -47,6 +47,20 @@ jobs:
         with:
           path: _site
 
+      # GitHub's Pages backend is sometimes slow to see the uploaded artifact or to report the
+      # deployment status (deploy-pages gives up after its maximum of 10 minutes). If it fails,
+      # retry once inside this same run, reusing the same artifact. Never use "Re-run" on a failed
+      # Pages run: it uploads a second artifact and the deploy fails with "Multiple artifacts found".
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Wait before retrying
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - name: Deploy to GitHub Pages (retry)
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
