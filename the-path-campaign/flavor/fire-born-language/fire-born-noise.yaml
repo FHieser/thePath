@@ -30,11 +30,11 @@ base_sounds:
     root: Life
     description: Embers popping, uneven and alive.
     meaning: "We / the Fire Born / alive"
-    sequence: [{ p: crackle, dur: 2.5, density: 28 }]
+    sequence: [{ p: crackle, dur: 2.5, density: 20 }]
     variants:
-      - { label: Flaring, meaning: "Strong / burning bright", sequence: [{ p: crackle, dur: 4, density: 4, toDensity: 160, gain: 0.3, toGain: 2.6, size: 0.6, toSize: 2.8, highpass: 450 }] }
-      - { label: Dying, meaning: "Weak / fading / hurt", sequence: [{ p: crackle, dur: 3.5, density: 45, tone: 9000, dying: true }] }
-      - { label: Sparse, meaning: "A spark: small / few / young", sequence: [{ p: crackle, dur: 2.5, density: 8 }] }
+      - { label: Flaring, meaning: "Strong / burning bright", sequence: [{ p: crackle, dur: 4, density: 3, toDensity: 90, gain: 0.4, toGain: 1.8, size: 0.6, toSize: 2.4, body: 0.1, toBody: 1.2 }] }
+      - { label: Dying, meaning: "Weak / fading / hurt", sequence: [{ p: crackle, dur: 3.5, density: 35, tone: 9000, dying: true }] }
+      - { label: Sparse, meaning: "A spark: small / few / young", sequence: [{ p: crackle, dur: 2.5, density: 6, body: 0.12 }] }
 
   - id: hiss
     name: Hiss
@@ -125,8 +125,8 @@ sounds:
     description: "Things. Deep beating hum, felt more than heard."
     params: "pitch (Hz, ~35-70, default 48), to (pitch at the end), beat (Hz between the beating tones), dur, gain"
   - id: crackle
-    description: "Life. Embers popping."
-    params: "dur, density (pops per second), toDensity, gain, toGain, size (pop size, 1 = normal, bigger = fuller), toSize, tone (brightness cutoff in Hz, lower = duller), toTone, highpass (default 1200; lower lets big pops sound fuller), dying (shortcut: thins out, quietens, shrinks and goes dull toward the end)"
+    description: "Life. A fire: low flickering lapping, ringing crackles and a faint hiss."
+    params: "dur, density (pops per second, default 20), toDensity, gain, toGain, size (1 = normal; bigger = lower, longer pops and more big ones), toSize, body (level of the low lapping under the pops, default 0.35), toBody, tone (brightness cutoff in Hz, lower = duller), toTone, dying (shortcut: thins out, quietens, shrinks and goes dull toward the end)"
   - id: hiss
     description: "Mist. Sharp steam venting."
     params: "pitch, toPitch (filter sweep in Hz), dur, attack, release (fade in/out seconds; soft by default), gain"
@@ -176,7 +176,7 @@ words:
     roots: [Life, Motion, Toward]
     note: '"I burn bright, it comes to me." The flame flares while the hover comes closer.'
     sequence:
-      - { p: crackle, dur: 1.8, density: 8, toDensity: 120, gain: 0.4, toGain: 2.2, size: 0.7, toSize: 2.4, highpass: 500 }
+      - { p: crackle, dur: 1.8, density: 6, toDensity: 70, gain: 0.4, toGain: 1.6, size: 0.7, toSize: 2, body: 0.1, toBody: 0.9 }
       - { p: hover, dur: 1.8, pitch: 170, to: 230, rate: 4, toRate: 8, gain: 0.7, with: true }
 
   - id: "no"
@@ -211,7 +211,7 @@ words:
     roots: [Life, Motion, Toward]
     note: '"Small flame, coming." Mortals are sparks to them. Usually comes with the brazier turning toward someone.'
     sequence:
-      - { p: crackle, dur: 1.4, density: 8, gain: 0.8 }
+      - { p: crackle, dur: 1.4, density: 8, gain: 0.8, body: 0.12 }
       - { p: hover, dur: 1.4, pitch: 170, to: 240, rate: 8, with: true }
 
   - id: friend

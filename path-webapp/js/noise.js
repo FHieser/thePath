@@ -125,45 +125,81 @@ const SOUNDS = {
         return dur;
     },
 
-    // Life. Pops scattered through time. Density, loudness, pop size and brightness can all ramp
-    // (density → toDensity, gain → toGain, size → toSize, tone → toTone). A flare grows denser,
-    // louder and fuller (bigger pops, lower `highpass` lets their body through); a dying fire
-    // thins out, shrinks and goes dull (tone sweeping down muffles it like embers).
+    // Life. A fire in three layers, rendered sample by sample:
+    //   1. lapping: low rumbling noise with a slow random flicker (the body of the fire),
+    //   2. crackles: short noise bursts through a resonator at a random pitch, so each pop
+    //      rings like splitting wood instead of sounding like static,
+    //   3. a faint bright hiss riding the same flicker.
+    // Everything can ramp over the sound: density → toDensity (pops per second), gain → toGain,
+    // size → toSize (bigger = lower, longer, more big pops), body → toBody (lapping level),
+    // tone → toTone (brightness). `dying: true` thins, quietens, shrinks and dulls it.
     crackle(ctx, dest, t, p, rnd) {
         const dur = p.dur ?? 1.2;
         const dying = !!p.dying;
-        const d0 = p.density ?? 25;
-        const d1 = p.toDensity ?? (dying ? d0 * 0.08 : d0);
-        const g0 = p.gain ?? 1;
-        const g1 = p.toGain ?? (dying ? g0 * 0.3 : g0);
-        const s0 = p.size ?? 1;
-        const s1 = p.toSize ?? (dying ? s0 * 0.4 : s0);
+        const ramp = (a, b) => y => a + (b - a) * y;
+        const density = ramp(p.density ?? 20, p.toDensity ?? (dying ? (p.density ?? 20) * 0.1 : p.density ?? 20));
+        const gain = ramp(p.gain ?? 1, p.toGain ?? (dying ? (p.gain ?? 1) * 0.3 : p.gain ?? 1));
+        const size = ramp(p.size ?? 1, p.toSize ?? (dying ? (p.size ?? 1) * 0.4 : p.size ?? 1));
+        const body = ramp(p.body ?? 0.35, p.toBody ?? (dying ? (p.body ?? 0.35) * 0.15 : p.body ?? 0.35));
         const tone0 = p.tone ?? 14000;
         const tone1 = p.toTone ?? (dying ? 1600 : tone0);
+
         const sr = ctx.sampleRate;
         const n = Math.ceil(dur * sr);
         const buf = ctx.createBuffer(1, n, sr);
         const d = buf.getChannelData(0);
+
+        // 1 + 3. Lapping and hiss, sharing one flicker.
+        const aLap = 1 - Math.exp(-2 * Math.PI * 320 / sr);
+        const aHiss = 1 - Math.exp(-2 * Math.PI * 3000 / sr);
+        let lp1 = 0, lp2 = 0, hl = 0, flick = 0.5, target = 0.5;
+        const flickRate = 1 - Math.exp(-1 / (0.04 * sr));
+        for (let i = 0; i < n; i++) {
+            if (i % 1024 === 0) target = 0.25 + 0.75 * rnd();
+            flick += (target - flick) * flickRate;
+            const w = rnd() * 2 - 1;
+            lp1 += aLap * (w - lp1);
+            lp2 += aLap * (lp1 - lp2);
+            hl += aHiss * (w - hl);
+            const y = i / n;
+            const level = body(y) * gain(y);
+            d[i] = level * (lp2 * 5 * flick + (w - hl) * 0.15 * flick * flick);
+        }
+
+        // 2. Crackles: resonated noise bursts, placed by asking "how long until the next one?".
+        const pop = new Float32Array(Math.ceil(0.15 * sr));
         let time = 0;
         while (true) {
-            const x = time / dur;
-            // Wait time to the next pop depends on the density at this moment.
-            time += -Math.log(1 - rnd()) / Math.max(d0 + (d1 - d0) * x, 0.5);
+            time += -Math.log(1 - rnd()) / Math.max(density(time / dur), 0.5);
             if (time >= dur) break;
-            const pos = Math.floor(time * sr);
             const y = time / dur;
-            const level = g0 + (g1 - g0) * y;
-            const size = s0 + (s1 - s0) * y;
-            const amp = (0.2 + 0.8 * rnd() * rnd()) * level;
-            const len = Math.floor((30 + rnd() * 220) * size);
-            for (let k = 0; k < len && pos + k < n; k++) {
-                d[pos + k] += amp * (rnd() * 2 - 1) * Math.exp(-k / (len * 0.3));
+            const sz = Math.max(size(y), 0.1);
+            const big = rnd() < Math.min(0.6, 0.12 * sz);
+            const freq = (big ? 250 + rnd() * 1100 : 1400 + rnd() * 5000) / Math.sqrt(sz);
+            const decay = (big ? 0.005 + rnd() * 0.012 : 0.0007 + rnd() * 0.0025) * Math.sqrt(sz);
+            const amp = (big ? 1 : 0.55) * (0.3 + 0.7 * rnd() * rnd()) * gain(y);
+            const r = Math.exp(-1 / (decay * sr));
+            const c = 2 * r * Math.cos(2 * Math.PI * Math.min(freq, sr * 0.45) / sr);
+            const exLen = big ? 40 + Math.floor(rnd() * 80) : 4 + Math.floor(rnd() * 12);
+            const len = Math.min(pop.length, Math.ceil(decay * sr * 7) + exLen);
+            let y1 = 0, y2 = 0, peak = 1e-9;
+            for (let k = 0; k < len; k++) {
+                const x = k < exLen ? (rnd() * 2 - 1) * (1 - k / exLen) : 0;
+                const out = x + c * y1 - r * r * y2;
+                y2 = y1;
+                y1 = out;
+                pop[k] = out;
+                peak = Math.max(peak, Math.abs(out));
             }
+            const pos = Math.floor(time * sr);
+            const scale = amp / peak;
+            for (let k = 0; k < len && pos + k < n; k++) d[pos + k] += pop[k] * scale;
         }
+
         bufferSource(ctx, buf, t)
-            .connect(filter(ctx, 'highpass', p.highpass ?? 1200))
+            .connect(filter(ctx, 'highpass', p.highpass ?? 70))
             .connect(sweepFilter(ctx, 'lowpass', tone0, tone1, 0.7, t, dur))
-            .connect(envelope(ctx, t, { attack: 0.05, hold: Math.max(0, dur - 0.2), release: 0.15, peak: 0.7 }))
+            .connect(envelope(ctx, t, { attack: 0.08, hold: Math.max(0, dur - 0.3), release: 0.22, peak: 0.6 }))
             .connect(dest);
         return dur;
     },
