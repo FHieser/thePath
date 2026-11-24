@@ -272,18 +272,26 @@ const SOUNDS = {
         return dur;
     },
 
+    // Pops scattered through time. Density and loudness can ramp (density → toDensity,
+    // gain → toGain): ramping both up makes the fire flare, ramping density down lets it die.
     crackle(ctx, dest, t, p, rnd) {
         const dur = p.dur ?? 1.2;
-        const density = p.density ?? 25;
+        const d0 = p.density ?? 25;
+        const d1 = p.toDensity ?? (p.dying ? d0 * 0.08 : d0);
+        const g0 = p.gain ?? 1;
+        const g1 = p.toGain ?? g0;
         const sr = ctx.sampleRate;
         const n = Math.ceil(dur * sr);
         const buf = ctx.createBuffer(1, n, sr);
         const d = buf.getChannelData(0);
-        const pops = Math.round(density * dur);
-        for (let j = 0; j < pops; j++) {
-            const r = rnd();
-            const pos = Math.floor(n * (p.dying ? r * r : r));
-            const amp = 0.2 + 0.8 * rnd() * rnd();
+        let time = 0;
+        while (true) {
+            const x = time / dur;
+            time += -Math.log(1 - rnd()) / Math.max(d0 + (d1 - d0) * x, 0.5);
+            if (time >= dur) break;
+            const pos = Math.floor(time * sr);
+            const level = g0 + (g1 - g0) * (time / dur);
+            const amp = (0.2 + 0.8 * rnd() * rnd()) * level;
             const len = 30 + Math.floor(rnd() * 220);
             for (let k = 0; k < len && pos + k < n; k++) {
                 d[pos + k] += amp * (rnd() * 2 - 1) * Math.exp(-k / (len * 0.3));
@@ -291,9 +299,7 @@ const SOUNDS = {
         }
         bufferSource(ctx, buf, t)
             .connect(filter(ctx, 'highpass', 1200))
-            .connect(envelope(ctx, t, {
-                attack: 0.05, hold: Math.max(0, dur - 0.2), release: 0.15, peak: (p.gain ?? 1) * 0.7,
-            }))
+            .connect(envelope(ctx, t, { attack: 0.05, hold: Math.max(0, dur - 0.2), release: 0.15, peak: 0.7 }))
             .connect(dest);
         return dur;
     },
@@ -306,8 +312,9 @@ const SOUNDS = {
         noiseSource(ctx, t, dur)
             .connect(filter(ctx, 'highpass', 1200))
             .connect(bp)
-            .connect(envelope(ctx, t, {
-                attack: 0.04, hold: Math.max(0, dur - 0.3), release: 0.26, peak: (p.gain ?? 1) * 0.35,
+            .connect(sustain(ctx, t, dur, (p.gain ?? 1) * 0.35, {
+                attack: p.attack ?? Math.min(0.35, dur * 0.3),
+                release: p.release ?? Math.min(0.6, dur * 0.45),
             }))
             .connect(dest);
         return dur;
@@ -460,24 +467,28 @@ const SOUNDS = {
         return dur;
     },
 
-    // A thin glassy tone with a slow shimmer (two tones a few Hz apart) and slight vibrato.
+    // A glassy tone with a slow shimmer (two tones a few Hz apart), slight vibrato, and deeper
+    // undertones an octave and two octaves below (`under` scales them; 0 removes them).
     highDrone(ctx, dest, t, p, rnd, pj) {
         const dur = p.dur ?? 3;
-        const f = (p.pitch ?? 1100) * pj;
+        const f = (p.pitch ?? 650) * pj;
         const to = p.to != null ? p.to * pj : f;
         const beat = p.beat ?? 3;
+        const under = p.under ?? 1;
         const sum = ctx.createGain();
         const vibDepth = ctx.createGain();
         vibDepth.gain.value = f * 0.003;
         osc(ctx, 'sine', 5 + rnd(), t, dur).connect(vibDepth);
-        [[1, 0, 1], [1, beat, 0.7], [1.5, 0, 0.18], [2.01, 0, 0.12]].forEach(([r, off, a]) => {
+        [[1, 0, 1], [1, beat, 0.7], [1.5, 0, 0.18], [2.01, 0, 0.12],
+         [0.5, beat * 0.5, 0.55 * under], [0.25, 0, 0.4 * under]].forEach(([r, off, a]) => {
+            if (a <= 0) return;
             const o = glide(ctx, 'sine', f * r + off, to * r + off, t, dur);
             vibDepth.connect(o.frequency);
             const g = ctx.createGain();
             g.gain.value = a;
             o.connect(g).connect(sum);
         });
-        sum.connect(sustain(ctx, t, dur, (p.gain ?? 1) * 0.08)).connect(dest);
+        sum.connect(sustain(ctx, t, dur, (p.gain ?? 1) * 0.09)).connect(dest);
         return dur;
     },
 

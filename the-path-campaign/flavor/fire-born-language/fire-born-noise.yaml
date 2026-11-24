@@ -28,7 +28,7 @@ base_sounds:
     meaning: Flame / life / yes
     sequence: [{ p: crackle, dur: 2.5, density: 28 }]
     variants:
-      - { label: Flaring, sequence: [{ p: roar, dur: 2.2, gain: 0.9 }] }
+      - { label: Flaring, sequence: [{ p: crackle, dur: 3.5, density: 6, toDensity: 80, gain: 0.5, toGain: 1.6 }] }
       - { label: Dying, sequence: [{ p: crackle, dur: 3, density: 35, dying: true }] }
       - { label: Sparse, sequence: [{ p: crackle, dur: 2.5, density: 8 }] }
 
@@ -36,21 +36,21 @@ base_sounds:
     name: Hiss
     description: Sharp steam venting. Aggressive and bright.
     meaning: Danger / foe / warning
-    sequence: [{ p: hiss, dur: 1.2, pitch: 5500 }]
+    sequence: [{ p: hiss, dur: 1.2, pitch: 5500, attack: 0.04, release: 0.26 }]
     variants:
-      - { label: Rising, sequence: [{ p: hiss, dur: 1.2, pitch: 3000, toPitch: 9000 }] }
-      - { label: Falling, sequence: [{ p: hiss, dur: 1.2, pitch: 9000, toPitch: 3000 }] }
-      - { label: Bursts, sequence: [{ p: hiss, dur: 0.25, pitch: 6000 }, { p: hiss, dur: 0.25, pitch: 6000, gap: 0.08 }, { p: hiss, dur: 0.25, pitch: 6000, gap: 0.08 }] }
+      - { label: Rising, sequence: [{ p: hiss, dur: 1.8, pitch: 3000, toPitch: 9000, attack: 0.6, release: 0.7 }] }
+      - { label: Falling, sequence: [{ p: hiss, dur: 1.8, pitch: 9000, toPitch: 3000, attack: 0.6, release: 0.7 }] }
+      - { label: Bursts, sequence: [{ p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }, { p: hiss, dur: 0.6, pitch: 6000, attack: 0.2, release: 0.3, gap: 0.05 }] }
 
   - id: high-drone
     name: High Drone
-    description: A thin, glassy tone hanging in the air, slightly shimmering.
+    description: A glassy tone hanging in the air, slightly shimmering, with deeper undertones beneath it.
     meaning: Sacred / the god / attention
     sequence: [{ p: highDrone, dur: 3.5 }]
     variants:
-      - { label: Rising, sequence: [{ p: highDrone, pitch: 800, to: 1500, dur: 3 }] }
-      - { label: Falling, sequence: [{ p: highDrone, pitch: 1500, to: 750, dur: 3 }] }
-      - { label: Higher, sequence: [{ p: highDrone, pitch: 1900, dur: 3, beat: 5 }] }
+      - { label: Rising, sequence: [{ p: highDrone, pitch: 500, to: 900, dur: 3 }] }
+      - { label: Falling, sequence: [{ p: highDrone, pitch: 900, to: 450, dur: 3 }] }
+      - { label: Higher, sequence: [{ p: highDrone, pitch: 1900, dur: 3, beat: 5, under: 0 }] }
 
   - id: hover
     name: Hovering
@@ -122,10 +122,10 @@ sounds:
     params: "dur, gain"
   - id: crackle
     description: Embers popping.
-    params: "dur, density (pops per second), dying (true thins out toward the end), gain"
+    params: "dur, density (pops per second), toDensity (density at the end), gain, toGain (loudness at the end), dying (shortcut: thins out toward the end)"
   - id: hiss
     description: Steam venting, or the mist itself.
-    params: "pitch, toPitch (filter sweep in Hz), dur, gain"
+    params: "pitch, toPitch (filter sweep in Hz), dur, attack, release (fade in/out seconds; soft by default), gain"
   - id: hum
     description: A deep resonant drone that shimmers. The air around a carrier.
     params: "pitch (Hz), dur, gain"
@@ -151,8 +151,8 @@ sounds:
     description: "(Base sound, WIP) Deep beating hum, felt more than heard."
     params: "pitch (Hz, ~35-70), to, beat (Hz between the beating tones), dur, gain"
   - id: highDrone
-    description: "(Base sound, WIP) Thin glassy tone with a slow shimmer and slight vibrato."
-    params: "pitch (Hz, ~600-2000), to, beat, dur, gain"
+    description: "(Base sound, WIP) Glassy tone with a slow shimmer, slight vibrato and deeper undertones."
+    params: "pitch (Hz, ~450-2000, default 650), to, beat, under (undertone amount, 0 = none, default 1), dur, gain"
   - id: hover
     description: "(Base sound, WIP) Floating, throbbing tone. Volume pulses, pitch drifts."
     params: "pitch, to, rate (throbs per second), toRate, fade (true fades out like it drifts away), dur, gain"
