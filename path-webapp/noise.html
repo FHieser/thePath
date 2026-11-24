@@ -95,7 +95,16 @@
             background: rgba(212, 165, 116, 0.15);
             color: var(--accent-amber);
         }
+        .root-chip.shape { background: rgba(20, 70, 100, 0.5); color: var(--text-light); }
         .word-note { font-size: 0.8rem; opacity: 0.7; font-style: italic; }
+        .roots-table th {
+            text-align: left;
+            padding: 0.6rem 0.5rem 0.3rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent-amber);
+        }
         .phrase-chip.playing, .sound-play.playing { border-color: var(--accent-amber); color: var(--accent-amber); }
 
         .wip-tag {
@@ -142,7 +151,7 @@
         <header>
             <nav class="breadcrumb"><a href="index.html#flavor">← Back to Flavor</a></nav>
             <h1>Noise</h1>
-            <p class="subtitle">The words of the Fire Born — iron, flame and bell, synthesized live</p>
+            <p class="subtitle">The words of the Fire Born — drone, flame and breath, synthesized live</p>
         </header>
 
         <main>
@@ -150,7 +159,7 @@
 
             <section class="nav-section">
                 <h2>Base Sounds <span class="wip-tag">WIP</span></h2>
-                <p class="base-hint">The six sounds the language is built from. Try the variants to hear how rising, falling and pulsing change the feel.</p>
+                <p class="base-hint">The six sounds the language is built from — each one is a root. The variants show the shapes: rising (Toward), falling (Away), repeated.</p>
                 <div id="noise-base" class="word-grid"></div>
             </section>
 
@@ -168,7 +177,7 @@
             <div id="noise-words"><div class="loading">Loading the Fire Born dictionary...</div></div>
 
             <details class="noise-ref">
-                <summary>Roots — why the words sound the way they do</summary>
+                <summary>Roots &amp; shapes — how the words are built</summary>
                 <table class="roots-table"><tbody id="noise-roots"></tbody></table>
             </details>
 

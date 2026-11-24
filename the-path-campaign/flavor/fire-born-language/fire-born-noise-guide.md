@@ -2,7 +2,7 @@
 
 _How to make new Fire Born words, and how the sounds are synthesized._
 
-The dictionary lives in [`fire-born-noise.yaml`](./fire-born-noise.yaml). The webapp's **Noise** page (`path-webapp/noise.html`, under Flavor) reads it and plays every word live. There are no audio files: each word is built from a few basic sounds the moment you press play. To add or change a word, edit the YAML and reload the page.
+The dictionary lives in [`fire-born-noise.yaml`](./fire-born-noise.yaml). The webapp's **Noise** page (`path-webapp/noise.html`, under Flavor) reads it and plays every word live. There are no audio files: each word is built from six base sounds the moment you press play. To add or change a word, edit the YAML and reload the page.
 
 ---
 
@@ -12,121 +12,117 @@ The dictionary lives in [`fire-born-noise.yaml`](./fire-born-noise.yaml). The we
 
 The Fire Born were divine servants, built to carry out a god's will. They refused to abandon him when he was imprisoned, and were bound to their braziers as punishment. Thousands of years of that have made them alien. They no longer fully understand mortal language, and mortals do not understand them.
 
-Their sound comes from three sources, and every word should feel like it is made of these:
-
-| Source | What it sounds like | Building blocks |
-|---|---|---|
-| **The iron body** | Groaning, creaking, grinding, being struck | `groan`, `creak`, `grind`, `clank`, `thud` |
-| **The brazier** | Roaring, crackling, hissing steam | `roar`, `crackle`, `hiss` |
-| **The god** | Bells and a humming in the air | `chime`, `hum`, `horn` |
+Their speech is not a voice. It is the sound of what they are: the drone of something vast, the brazier crackling, steam, and a hush. Everything they say is built from six sounds.
 
 ### Everything vs. Nothing
 
 The cosmology pits **Fire Born = Everything (sound, presence)** against **Mist Born = Nothing (silence, absence)**. Lean into it:
 
-- Fire Born words are **loud, heavy and resonant**. They take up space.
-- The only quiet words are the ones about the mist (`Mist`, `Mist Born`). Even saying its name, the Fire Born go muffled, as if the word itself swallows sound. Mist words use the `mm` vowel and a `drop` stutter, so the voice cuts out.
+- Fire Born words **fill the air**. Drones hang, crackle lives.
+- The Mist root is the **hush**: the one soft sound in the language. Even when naming the mist, the Fire Born go quiet.
 
-### Roots: make it learnable
+### Six roots, one per sound
 
-The words share sound **roots** (listed in the YAML under `roots`). This is what separates a language from random noise. A new word should be built from the roots its meaning touches:
+Each base sound is one root. Every word is one root on its own or a combination of them.
 
-| Root | Sound | Use it for |
+| Base sound | Root | Use it for |
 |---|---|---|
-| Toward | Rising groan | Approach, welcome, asking, anything good |
-| Away | Falling groan | Leaving, refusal, threat, anything bad |
-| Flame | Roar | Fire, the Fire Born, safety |
-| Mist | Hiss + muffled groan | The mist, Mist Born, the Nothing |
-| Thing | Clank | Objects, matter |
-| Sacred | Chime | The god, relics, what must be honored |
-| Ground | Thud | Places, standing, moving across land |
-| Alarm | Rapid clanks | Urgency, danger |
+| Low Drone | **Ground** | Places, weight, bodies, things, standing still |
+| Flame Crackle | **Flame** | Fire, life, the Fire Born, yes |
+| Hiss | **Danger** | Threat, foes, warning, no |
+| High Drone | **Sacred** | The god, relics, asking, attention |
+| Hovering | **Motion** | Movement, travel, pointing, following |
+| Hushing | **Mist** | The mist, the Mist Born, quiet, calm, death |
 
-**Example: building "Carrier".** A carrier is a place (Ground) that holds the flame (Flame) and walks. So: two `thud`s like footsteps, a `roar` underneath, and a slow `grind` of its joints. Tag it `roots: [Ground, Flame]`.
+### Three shapes
 
-**Example: building "Fear".** Something bad (Away) that comes from the mist (Mist). So: a `hiss` with a falling `groan` in the `mm` vowel.
+A root can be said in different shapes. The shape changes the meaning:
+
+| Shape | How | Meaning |
+|---|---|---|
+| **Toward** | The sound rises in pitch | Approach, welcome, positive, a question |
+| **Away** | The sound falls in pitch, or recedes and fades | Departure, refusal, negative |
+| **Repeated** | The sound is said two or three times | Urgency, emphasis |
+
+Hello and Bye are the clearest example: both are Flame + Ground, said Toward (the drone rises, the crackle builds) or Away (the drone sinks, the crackle settles).
+
+### Building a new word
+
+1. **Decide which roots the meaning touches.** Usually one or two, three at most.
+2. **Decide the shape.** Is it toward, away, urgent, or neutral (steady)?
+3. **Let one root lead.** Make it the loudest, or put it first. Three equal roots sound like mush.
+
+**Example: "Carrier".** A carrier is a place (Ground) that holds the flame (Flame) and walks (Motion). So: a low drone with crackle on top and a slow hover underneath. Tag it `roots: [Ground, Flame, Motion]`.
+
+**Example: "Fear".** Danger that comes from the mist, coming closer. So: a hush, then a hiss rising in pitch (Toward). Tag it `roots: [Mist, Danger, Toward]`.
+
+**Example: "Hurry".** Motion, urgently. So: a fast hover, said twice. Tag it `roots: [Motion, Repeated]`.
 
 ### Rules of thumb
 
 1. **Never translate at the table.** The players hear only the noise. Their understanding should come from repetition and the roots, not from you.
 2. **Keep words short:** about 1 to 3 seconds. Phrases are built by chaining words in the phrase bar. Long words make phrases tiring.
-3. **One root should lead.** If a word mixes three roots at equal weight, it sounds like mush. Let the main root be loudest or come first.
-4. **Repetition means intensity.** "Help" is a rising groan said twice. "Danger" is clanks stacked fast. Repeating a part is how the Fire Born add emphasis.
-5. **Rising vs. falling carries the most meaning.** If you're unsure how a word should sound, decide first whether it's toward or away.
-6. **Keep a little wrongness.** Leave some roughness (`rough`) in groans. A perfectly clean tone sounds like a machine; a slightly broken one sounds ancient.
+3. **One meaning, one sound.** Don't let a root drift. If Hiss means Danger, never use it for something friendly, or the players can't learn it.
+4. **The shape carries the most meaning.** If you're unsure how a word should sound, decide first whether it's toward or away.
 
 ### Using it in play
 
 - Use the **phrase bar** for conversation: queue words with **+**, then press **Speak**. "Mist Born · Danger · Follow" is a whole message.
 - Add **What?** after a word to make it a question: "Relic · What?" is "Is that a relic?"
 - The Fire Born talk through their flame as well. Describe the brazier brightening toward allies and dimming toward threats while the sound plays. Together, the sound and the flame are all the players get.
-- When players start guessing meanings correctly, let them. Their sense of slowly understanding is the payoff.
+- When players start guessing roots correctly, let them. Their sense of slowly understanding is the payoff.
 
 ---
 
 ## Part 2 — How the synthesis works
 
-All sound is made in the browser with the **Web Audio API**: oscillators (pure tones), noise, filters and volume envelopes, connected together. The engine is `path-webapp/js/noise.js`. You don't need to read it to make words, but knowing what each building block does helps when tuning parameters.
+All sound is made in the browser with the **Web Audio API**: oscillators (pure tones), noise, filters and volume envelopes, connected together. The engine is `path-webapp/js/noise.js`. You don't need to read it to make words, but knowing what each sound does helps when tuning parameters.
 
-### The iron-golem voice (`groan`, `horn`, `creak`, `grind`)
+### Low Drone (`lowDrone`): Ground
 
-The heavy, creaky voice comes from three stages:
+Several deep tones (around 48 Hz by default) plus an octave below and a couple of harmonics above. The trick is **beating**: two of the tones sit a fraction of a Hz apart (`beat`), so they drift in and out of step and the volume swells and dips slowly. A single pure tone sounds electronic; a beating pair sounds like a presence in the room. `pitch` → `to` glides it up (Toward) or down (Away).
 
-1. **A pulse train: the vocal cords.** A stream of tiny clicks. The number of clicks per second is the pitch (`from` → `to`, in Hz). The trick is that each click is a little **early or late** (`rough`) and a little **louder or softer** (shimmer). A perfectly regular stream sounds electronic; an irregular one sounds like metal grinding against metal.
-   - Slow clicks (under ~25 per second) are heard individually: a **creaking hinge**. That's `creak`.
-   - Fast clicks (30 to 120 per second) blur into a buzzing tone: a **voice**. That's `groan`.
-   - `drop` randomly skips clicks, so the voice stutters and catches.
-   - `wobble` adds a slow waver to the pitch, like strain.
-2. **Formant filters: the mouth.** Four narrow filters pick out the frequencies that make a vowel sound like a vowel (`oo`, `oh`, `ah`, `eh`, `ee`, `uh`, and the closed `mm`). Sliding from `vowel` to `toVowel` makes the groan "say" something without it being a real word.
-3. **A comb filter: the hollow iron chest.** The sound is fed back into itself after a few milliseconds. That makes it ring at one pitch, the way a voice would sound coming from inside a hollow metal body. `ring` sets how strongly it resonates (0 to 0.9).
+### Flame Crackle (`crackle`): Flame
 
-`horn` is the same voice with very little roughness and a deep extra tone underneath, so it sounds like a long call across distance. `grind` is a very rough, slow pulse train plus chopped noise: gears catching.
+Random pops of different sizes. Each pop is a tiny burst of noise that fades in a few milliseconds. The engine places pops one at a time by asking "how long until the next one?", based on the density at that moment. So `density` → `toDensity` makes the fire build up (flaring) or thin out (dying) naturally, and `gain` → `toGain` makes it louder or quieter over time.
 
-### Struck metal (`clank`, `thud`, `chime`)
+### Hiss (`hiss`): Danger
 
-A struck metal plate doesn't ring at one pitch. It rings at several pitches that **don't fit together musically**, and the high ones fade faster than the low ones. The clank adds up eight such tones (modal synthesis) plus a tiny burst of noise for the moment of impact.
+Bright noise (random static) through a filter that keeps only the high, sharp part, around 5,000 to 9,000 Hz. The filter can sweep (`pitch` → `toPitch`): sweeping up sounds like pressure building, sweeping down like steam letting off. `attack` and `release` set how fast it fades in and out. Short values give a sharp hiss; long values give a soft swell.
 
-- `pitch`: how big the piece of metal is (lower = heavier).
-- `ring`: how long it rings.
-- `weight`: adds a falling low thump, like something very heavy.
-- `damp`: muffles it, like metal hit while held or wrapped.
+### High Drone (`highDrone`): Sacred
 
-`chime` uses the same idea with bell proportions (from Jean-Claude Risset's classic synthesized bell). `thud` is a deep falling tone, a burst of low noise, and a muffled low clank: one footstep of a construct.
+A glassy tone (650 Hz by default) with a second tone a few Hz away for a shimmer, a slight vibrato (the pitch wavers about five times a second), and two **undertones** an octave and two octaves below. The undertones blend in as part of one sound, giving it body instead of a thin whistle. `under: 0` removes them for a purer, higher tone.
 
-### The brazier (`roar`, `crackle`, `hiss`)
+### Hovering (`hover`): Motion
 
-These are all built from **noise** (random static) shaped by filters:
+A soft mid tone (180 Hz by default) whose volume pulses on and off at `rate` times per second, the "wub-wub", while its pitch drifts slowly. Slow rates feel like floating; fast rates feel like something charging. `rate` → `toRate` makes the throb speed up (pulling you along) or slow down. `fade: true` lets it drift away into silence.
 
-- `roar`: low noise whose filter opens up and closes again, so it swells and settles like a flame flaring. It carries some crackle on top.
-- `crackle`: random pops of different sizes scattered through time. `density` is pops per second. `dying: true` bunches them toward the start, so the fire dies out.
-- `hiss`: high noise through a filter that can sweep (`pitch` → `toPitch`). A downward sweep sounds like steam settling, or mist creeping in.
+### Hushing (`hush`): Mist
 
-### The air (`hum`)
-
-Several pure tones, some tuned slightly apart so they **beat** against each other, plus a slow swell in volume. That gives a deep shimmering drone, the "air that shimmers" from the rumors about the Fire Born.
+The same noise as the hiss, but filtered much lower and softer (around 1,600 Hz), with a slow swell in and out and a gentle wavering in volume, like breath. Lower `pitch` makes it darker. `pitch` → `toPitch` makes it creep in or recede. Hiss and hush are deliberately twins: the same material, one sharp and one gentle, for Danger and Mist.
 
 ### The room
 
-Every word goes through a reverb (an echo built from decaying noise, so it sounds like a dark metal hall) and a compressor that keeps loud words from clipping. Each play also shifts pitch and timing slightly at random, so the same word never sounds exactly the same twice. That's what keeps it feeling alive rather than recorded.
+Every word goes through a reverb (an echo built from decaying noise, so it sounds like a dark hall) and a compressor that keeps loud words from clipping. Each play also shifts pitch slightly at random, so the same word never sounds exactly the same twice. That's what keeps it feeling alive rather than recorded.
 
 ---
 
 ## Part 3 — Writing a word in the YAML
 
 ```yaml
-- id: carrier                 # unique, kebab-case
-  word: Carrier               # shown on the button
-  category: Things            # must match one of `categories`
-  roots: [Ground, Flame]      # which roots it uses (shown as tags)
+- id: carrier                    # unique, kebab-case
+  word: Carrier                  # shown on the button
+  category: Things               # must match one of `categories`
+  roots: [Ground, Flame, Motion] # roots and shapes it uses (shown as tags)
   note: Optional GM note shown under the word.
   sequence:
-    - { p: thud }
-    - { p: thud, gap: 0.3 }
-    - { p: roar, dur: 1.6, gain: 0.6, at: 0 }
-    - { p: grind, dur: 1.0, rate: 24, gain: 0.5, at: 0.4 }
+    - { p: lowDrone, pitch: 44, dur: 2.5 }
+    - { p: crackle, dur: 2.5, density: 15, gain: 0.7, with: true }
+    - { p: hover, dur: 2.5, pitch: 160, rate: 2, gain: 0.6, with: true }
 ```
 
-Each step in `sequence` names a building block (`p`) plus any parameters. The full parameter list for each block is in the YAML under `sounds`. Leave a parameter out to use its default.
+Each step in `sequence` names a sound (`p`) plus any parameters. The full parameter list for each sound is in the YAML under `sounds`. Leave a parameter out to use its default.
 
 **Timing:**
 
@@ -137,11 +133,19 @@ Each step in `sequence` names a building block (`p`) plus any parameters. The fu
 | `with: true` | Starts at the same moment as the previous sound |
 | `at: 1.0` | Starts 1.0 s after the word begins, regardless of what came before |
 
+**Saying a root in a shape:**
+
+| Shape | How to write it |
+|---|---|
+| Toward | Drones and hover: `to` higher than `pitch`. Hiss and hush: `toPitch` higher. Crackle: `toDensity` higher |
+| Away | The same, but lower. Hover can also use `fade: true` |
+| Repeated | The same step two or three times, with a small `gap` |
+
 **Tuning tips:**
 
 - **Too quiet or too loud?** Change `gain` (1 is the default; 0.5 is half).
-- **Groan too buzzy?** Lower `from`/`to` toward 30 to 45. **Too creaky?** Raise them above 60, or lower `rough`.
-- **Groan too clean or electronic?** Raise `rough` (0.2 to 0.35) and add some `drop`.
-- **Clank too bright?** Lower `pitch` or add `damp: true`.
-- **Too much echo on the groan?** Lower `ring`.
-- Each building block can be played on its own with default settings under "Building blocks" at the bottom of the Noise page. Start there to hear what a block does before using it in a word.
+- **Low drone inaudible?** It's very deep. Raise `pitch` toward 60, or listen on headphones; phone and laptop speakers barely play it.
+- **High drone too piercing?** Lower `pitch`, or keep `under` at 1 for more body.
+- **Hiss too abrupt?** Raise `attack` and `release`.
+- **Hover too wobbly?** Lower `rate`.
+- Each base sound and its variants can be played at the top of the Noise page. Start there to hear what a sound does before using it in a word.
